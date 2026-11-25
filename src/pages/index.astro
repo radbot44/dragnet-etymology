@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_ACRONYM, SITE_EXPANDED, SITE_TAGLINE } from '../consts';
+
+const cases = (await getCollection('cases')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const totalCerts = cases.reduce((acc, c) => acc + c.data.certificateCounts.total, 0);
+const totalVerified = cases.reduce((acc, c) => acc + c.data.certificateCounts.verified, 0);
+const totalFalsified = cases.reduce((acc, c) => acc + c.data.certificateCounts.falsified, 0);
+---
+
+<BaseLayout
+  title={`${SITE_ACRONYM} — ${SITE_EXPANDED}`}
+  description={SITE_TAGLINE}
+>
+  <section class="hero">
+    <div class="hero-eyebrow">Open Archival Lexicography · Primary-Ink Verification</div>
+    <h1>{SITE_ACRONYM}: {SITE_EXPANDED}</h1>
+    <p>
+      Readable, primary-scan case files distilled from full-length philological monographs. Every
+      attestation is audited against original printed mastheads and physical ink—separating proven
+      chronological facts from explicit origin hypotheses, and documenting OCR ghosts so other
+      researchers never chase dead ends.
+    </p>
+
+    <div class="stat-strip">
+      <div class="stat-card">
+        <div class="stat-label">Published Case Files</div>
+        <div class="stat-value">{cases.length}</div>
+        <div class="stat-sub">Distilled from full monographs</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Audited Certificates</div>
+        <div class="stat-value">{totalCerts}</div>
+        <div class="stat-sub">Machine-validated JSON ledgers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Primary-Scan Verified</div>
+        <div class="stat-value">{totalVerified}</div>
+        <div class="stat-sub">Masthead & ink confirmed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Myths & OCR Ghosts Killed</div>
+        <div class="stat-value">{totalFalsified}</div>
+        <div class="stat-sub">Traps A–D documented publicly</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cases-heading">
+    <h2 id="cases-heading" style="font-family: var(--font-serif); font-size: 1.6rem; margin-top: 2rem; margin-bottom: 0.25rem;">
+      Word Origin Case Files
+    </h2>
+    <p style="color: var(--ink-muted); font-size: 0.94rem; margin-top: 0;">
+      Each dossier includes zoomed archival proof plates, diplomatic transcriptions, falsified leads,
+      raw JSON ledgers, and ready-to-paste Wiktionary, Wikipedia (<code>WP:PRIMARY</code>), OED, and ADS-L citations.
+    </p>
+
+    <div class="case-grid">
+      {cases.map((entry) => (
+        <article class="case-card">
+          <div>
+            <div class="case-meta-row">
+              <span>{entry.data.caseNumber} · {entry.data.targetId}</span>
+              <span class="delta-pill">{entry.data.netDeltaLabel}</span>
+            </div>
+            <h2>
+              <a href={`/cases/${entry.id}/`}>{entry.data.title}</a>
+            </h2>
+            <p class="case-subtitle">{entry.data.subtitle}</p>
+          </div>
+          <div style="border-top: 1px solid var(--border); padding-top: 0.75rem; font-size: 0.83rem; color: var(--ink-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+            <span>
+              Earliest scan: <strong>{entry.data.earliestScan.date}</strong> ({entry.data.earliestScan.location})
+            </span>
+            <a href={`/cases/${entry.id}/`} style="font-weight: 700;">Read Case File →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

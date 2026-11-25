@@ -1,0 +1,137 @@
+---
+import {
+  SITE_ACRONYM,
+  SITE_EXPANDED,
+  SITE_INSTITUTION,
+  SITE_LICENSE_URL,
+} from '../consts';
+
+interface CoAuthor {
+  name: string;
+  citationName: string;
+  orcid?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  isArticle?: boolean;
+  pubDate?: Date;
+  updatedDate?: Date;
+  author?: string;
+  authorCitation?: string;
+  authorOrcid?: string;
+  coAuthors?: CoAuthor[];
+  keywords?: string[];
+  zenodoDoi?: string;
+  pdfUrl?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  isArticle = false,
+  pubDate,
+  updatedDate,
+  author = 'Joshua Callahan',
+  authorCitation = 'Callahan, Joshua',
+  authorOrcid,
+  coAuthors = [],
+  keywords = [],
+  zenodoDoi,
+  pdfUrl,
+  ogImage,
+} = Astro.props;
+
+const formatScholarDate = (d: Date) => {
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  return `${yyyy}/${mm}/${dd}`;
+};
+
+const authorsSchema = [
+  {
+    '@type': 'Person',
+    name: author,
+    ...(authorOrcid ? { '@id': authorOrcid } : {}),
+  },
+  ...coAuthors.map((ca) => ({
+    '@type': 'Person',
+    name: ca.name,
+    ...(ca.orcid ? { '@id': ca.orcid } : {}),
+  })),
+];
+
+const jsonLd = isArticle && pubDate
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'ScholarlyArticle',
+      headline: title,
+      description,
+      author: authorsSchema.length === 1 ? authorsSchema[0] : authorsSchema,
+      publisher: {
+        '@type': 'Organization',
+        name: `${SITE_ACRONYM} (${SITE_EXPANDED})`,
+      },
+      datePublished: pubDate.toISOString(),
+      dateModified: (updatedDate || pubDate).toISOString(),
+      mainEntityOfPage: canonicalUrl,
+      license: SITE_LICENSE_URL,
+      keywords: keywords.join(', '),
+      ...(zenodoDoi ? { identifier: `https://doi.org/${zenodoDoi}` } : {}),
+    }
+  : {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: `${SITE_ACRONYM} — ${SITE_EXPANDED}`,
+      description,
+      url: canonicalUrl,
+      license: SITE_LICENSE_URL,
+    };
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="canonical" href={canonicalUrl} />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={`${SITE_ACRONYM} — ${SITE_EXPANDED} (Full-Text RSS)`}
+  href={new URL('/rss.xml', Astro.site).toString()}
+/>
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta property="og:type" content={isArticle ? 'article' : 'website'} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{ogImage && <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />}
+
+{isArticle && pubDate && (
+  <>
+    <!-- Highwire Press meta tags for Google Scholar, Zotero, and Mendeley -->
+    <meta name="citation_title" content={title} />
+    <meta name="citation_author" content={authorCitation} />
+    {coAuthors.map((ca) => (
+      <meta name="citation_author" content={ca.citationName} />
+    ))}
+    <meta name="citation_publication_date" content={formatScholarDate(pubDate)} />
+    <meta name="citation_online_date" content={formatScholarDate(updatedDate || pubDate)} />
+    <meta name="citation_technical_report_institution" content={SITE_INSTITUTION} />
+    <meta name="citation_journal_title" content={`${SITE_ACRONYM}: ${SITE_EXPANDED}`} />
+    <meta name="citation_language" content="en" />
+    <meta name="citation_fulltext_html_url" content={canonicalUrl} />
+    {keywords.length > 0 && <meta name="citation_keywords" content={keywords.join('; ')} />}
+    {zenodoDoi && <meta name="citation_doi" content={zenodoDoi} />}
+    {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
+    <meta name="DC.rights" content={SITE_LICENSE_URL} />
+  </>
+)}
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

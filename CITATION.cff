@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "DRAgNEt: Deep Research Agent Network for Etymology"
+message: "If you use DRAgNEt Case Files, primary-scan proof plates, or verified JSON ledgers in your research, please cite the individual Case File or this repository."
+type: dataset
+authors:
+  - family-names: "Callahan"
+    given-names: "Joshua"
+repository-code: "https://github.com/radbot44/dragnet-etymology"
+url: "https://dragnet.tch.one"
+license: "CC-BY-4.0"
+keywords:
+  - etymology
+  - historical lexicography
+  - antedating
+  - American slang
+  - archival verification

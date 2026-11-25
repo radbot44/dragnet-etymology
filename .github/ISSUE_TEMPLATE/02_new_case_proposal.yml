@@ -1,0 +1,29 @@
+name: "Propose a Full Word-Origin Case File"
+description: "Pitch a new headword dossier (either one you want to author via PR or a target for DRAgNEt to investigate)."
+title: "[Case Proposal] <headword>"
+labels: ["case-proposal"]
+body:
+  - type: input
+    id: headword
+    attributes:
+      label: "Target Headword"
+      placeholder: "e.g., hoodlum, moolah, yegg, hokum"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Contribution Mode"
+      options:
+        - "I plan to submit a Pull Request authoring this Case File"
+        - "I have archival leads and want to collaborate / run the DRAgNEt pipeline on it"
+        - "Nominating an 'origin unknown' headword for the target queue"
+    validations:
+      required: true
+  - type: textarea
+    id: baseline_and_leads
+    attributes:
+      label: "Current Dictionary Baselines & Initial Archival Leads"
+      description: "List current OED / Green's / HDAS / Etymonline dates, prior literature (ADS-L, Comments on Etymology, American Speech), and any primary scans you already have."
+    validations:
+      required: true

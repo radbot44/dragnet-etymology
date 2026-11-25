@@ -1,0 +1,214 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProofPlateGallery from '../../components/ProofPlateGallery.astro';
+import ReuseCitationDrawer from '../../components/ReuseCitationDrawer.astro';
+import { SITE_ACRONYM, SITE_EXPANDED } from '../../consts';
+
+export async function getStaticPaths() {
+  const cases = await getCollection('cases');
+  return cases.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const canonicalUrl = new URL(`/cases/${entry.id}/`, Astro.site).toString();
+const pubYear = d.pubDate.getUTCFullYear();
+
+const leadSurname = (d.authorCitation.split(',')[0] || 'author').trim().toLowerCase().replace(/[^a-z0-9]/g, '');
+const allAuthorsBib = [d.authorCitation, ...(d.coAuthors || []).map((c) => c.citationName)].join(' and ');
+const bibtex = `@techreport{${leadSurname}_${pubYear}_${entry.id.replace(/[^a-z0-9]/gi, '_')},
+  author      = {${allAuthorsBib}},
+  title       = {{${d.title}}},
+  institution = {${SITE_ACRONYM} --- ${SITE_EXPANDED}},
+  year        = {${pubYear}},
+  month       = {${d.pubDate.getUTCMonth() + 1}},
+  number      = {${d.caseNumber} (${d.targetId})},
+  url         = {${canonicalUrl}}${d.zenodoDoi ? `,\n  doi         = {${d.zenodoDoi}}` : ''}
+}`;
+---
+
+<BaseLayout
+  title={`${d.title} | ${SITE_ACRONYM}`}
+  description={d.subtitle}
+  isArticle={true}
+  pubDate={d.pubDate}
+  updatedDate={d.updatedDate}
+  author={d.author}
+  authorCitation={d.authorCitation}
+  authorOrcid={d.authorOrcid}
+  coAuthors={d.coAuthors}
+  keywords={d.keywords}
+  zenodoDoi={d.zenodoDoi}
+  pdfUrl={d.pdfUrl}
+  ogImage={d.proofPlates[0]?.imagePath}
+>
+  <article style="padding: 2rem 0;">
+    <header class="prose-container">
+      <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+        {d.caseNumber} · Target {d.targetId} · Headword: {d.headword}
+      </div>
+      <h1 class="citation_title" style="font-family: var(--font-serif); font-size: clamp(1.9rem, 3.6vw, 2.65rem); line-height: 1.16; margin: 0.35rem 0 0.6rem;">
+        {d.title}
+      </h1>
+      <p style="font-size: 1.1rem; color: var(--ink-muted); margin: 0 0 0.85rem;">
+        {d.subtitle}
+      </p>
+      <div style="font-size: 0.88rem; color: var(--ink-muted); display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 0.6rem 0;">
+        <span class="citation_author">
+          By <strong>{d.author}</strong>
+          {d.coAuthors && d.coAuthors.length > 0 && (
+            <span> &amp; {d.coAuthors.map((c) => c.name).join(', ')}</span>
+          )}
+        </span>
+        {d.reviewedBy && (
+          <>
+            <span>·</span>
+            <span>
+              Audit:{' '}
+              {d.reviewUrl ? (
+                <a href={d.reviewUrl} target="_blank" rel="noopener noreferrer">{d.reviewedBy}</a>
+              ) : (
+                <strong>{d.reviewedBy}</strong>
+              )}
+            </span>
+          </>
+        )}
+        <span>·</span>
+        <time datetime={d.pubDate.toISOString()}>
+          Published {d.pubDate.toISOString().slice(0, 10)}
+        </time>
+        <span>·</span>
+        <a href={d.ledgerPath} target="_blank" rel="noopener noreferrer">
+          Machine-Validated Ledger ({d.certificateCounts.total} Certs)
+        </a>
+        <span>·</span>
+        <a href={`/cases/${entry.id}.bib`} download={`${entry.id}.bib`}>Cite (.bib)</a>
+      </div>
+    </header>
+
+    <div class="stat-strip">
+      <div class="stat-card">
+        <div class="stat-label">OED Baseline ({d.oedBaseline.form})</div>
+        <div class="stat-value">{d.oedBaseline.year}</div>
+        <div class="stat-sub">
+          <a href={d.oedBaseline.url} target="_blank" rel="noopener noreferrer">{d.oedBaseline.source}</a>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">DRAgNEt Earliest Verified Scan</div>
+        <div class="stat-value">{d.earliestScan.date}</div>
+        <div class="stat-sub">
+          <a href={d.earliestScan.archiveUrl} target="_blank" rel="noopener noreferrer">
+            {d.earliestScan.source}
+          </a>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Chronological Shift</div>
+        <div class="stat-value" style="color: var(--verified);">{d.netDeltaLabel}</div>
+        <div class="stat-sub">{d.earliestScan.location}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Audit Ledger Breakdown</div>
+        <div class="stat-value">{d.certificateCounts.verified} Verified</div>
+        <div class="stat-sub">
+          {d.certificateCounts.falsified} myths/OCR ghosts ruled out
+        </div>
+      </div>
+    </div>
+
+    {d.priorArtNote && (
+      <div class="prose-container" style="background: var(--surface-alt); border-left: 4px solid var(--ink); padding: 0.85rem 1.1rem; border-radius: 4px; font-size: 0.92rem; margin: 1.25rem auto;">
+        <strong>Prior-Art Credit:</strong> {d.priorArtNote}
+      </div>
+    )}
+
+    <div class="epistemic-grid">
+      <section class="epistemic-box epistemic-verified">
+        <div class="epistemic-tag">✓ Established in Primary Ink (PRIMARY-SCAN-VERIFIED)</div>
+        <ul>
+          {d.establishedFacts.map((fact) => (
+            <li>{fact}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="epistemic-box epistemic-hypothesis">
+        <div class="epistemic-tag">⚑ Proposed Origin Mechanism ({d.originHypothesis.badge})</div>
+        <p style="margin: 0.35rem 0 0.6rem; font-size: 0.94rem;">
+          {d.originHypothesis.summary}
+        </p>
+        <p style="margin: 0; font-size: 0.84rem; color: var(--ink-muted);">
+          <strong>Epistemic Boundary:</strong> {d.originHypothesis.boundaryNote}
+        </p>
+      </section>
+    </div>
+
+    <ProofPlateGallery plates={d.proofPlates} />
+
+    <div class="prose-container article-prose">
+      <Content />
+    </div>
+
+    <section class="prose-container" style="margin-top: 2.5rem;" aria-labelledby="graveyard-heading">
+      <h2 id="graveyard-heading" style="font-family: var(--font-serif); font-size: 1.55rem; margin-bottom: 0.35rem;">
+        Graveyard of Falsified Myths & Archival OCR Ghosts
+      </h2>
+      <p style="color: var(--ink-muted); font-size: 0.92rem; margin-top: 0;">
+        Published to save fellow researchers from dead ends: every rejected folk etymology, misdated
+        bound serial (Trap A), broken-type OCR hallucination (Trap B), and proper-noun homograph (Trap C).
+      </p>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Cert ID</th>
+            <th>Tested Claim or Raw Hit</th>
+            <th>Trap / Audit Class</th>
+            <th>Physical-Scan Reality</th>
+          </tr>
+        </thead>
+        <tbody>
+          {d.falsifiedMyths.map((m) => (
+            <tr>
+              <td style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;">
+                {m.sourceUrl ? (
+                  <a href={m.sourceUrl} target="_blank" rel="noopener noreferrer">{m.certId}</a>
+                ) : (
+                  m.certId
+                )}
+              </td>
+              <td><strong>{m.claim}</strong></td>
+              <td style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--falsified);">
+                {m.trapType}
+              </td>
+              <td>{m.inkReality}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <div class="prose-container">
+      <ReuseCitationDrawer
+        slug={entry.id}
+        title={d.title}
+        author={d.author}
+        pubYear={pubYear}
+        canonicalUrl={canonicalUrl}
+        ledgerPath={d.ledgerPath}
+        zenodoDoi={d.zenodoDoi}
+        bibtex={bibtex}
+        wikipediaPrimaryRef={d.reuseKit.wikipediaPrimaryRef}
+        wikipediaGuidance={d.reuseKit.wikipediaGuidance}
+        wiktionaryQuote={d.reuseKit.wiktionaryQuote}
+        adsLDispatch={d.reuseKit.adsLDispatch}
+        oedSlipSummary={d.reuseKit.oedSlipSummary}
+      />
+    </div>
+  </article>
+</BaseLayout>

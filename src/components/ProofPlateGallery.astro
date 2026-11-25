@@ -1,0 +1,107 @@
+---
+interface Plate {
+  certId: string;
+  title: string;
+  date: string;
+  imagePath: string;
+  archiveUrl: string;
+  caption: string;
+  diplomaticQuote: string;
+}
+
+interface Props {
+  plates: Plate[];
+}
+
+const { plates } = Astro.props;
+---
+
+<section class="plates-section" aria-labelledby="proof-plates-heading">
+  <h2 id="proof-plates-heading" style="font-family: var(--font-serif); font-size: 1.55rem; margin-bottom: 0.35rem;">
+    Primary-Scan Proof Plates (Physical Ink & Masthead Verified)
+  </h2>
+  <p style="color: var(--ink-muted); font-size: 0.92rem; margin-top: 0; margin-bottom: 1rem;">
+    Click any composite proof plate to inspect the high-resolution crop, or open the unmodified
+    public-domain scan directly at the host archive.
+  </p>
+
+  <div class="plates-grid">
+    {plates.map((plate, idx) => {
+      const dialogId = `plate-modal-${idx}`;
+      return (
+        <article class="plate-card">
+          <button
+            type="button"
+            class="plate-img-btn"
+            data-open-modal={dialogId}
+            aria-label={`Zoom proof plate ${plate.certId}: ${plate.title}`}
+          >
+            <img src={plate.imagePath} alt={`${plate.certId} — ${plate.title}`} loading="lazy" />
+          </button>
+          <div class="plate-body">
+            <div>
+              <div class="plate-cert">{plate.certId} · {plate.date}</div>
+              <div class="plate-title">{plate.title}</div>
+              <div style="color: var(--ink-muted); font-size: 0.85rem;">{plate.caption}</div>
+              <blockquote class="plate-quote">“{plate.diplomaticQuote}”</blockquote>
+            </div>
+            <div class="plate-actions">
+              <button
+                type="button"
+                class="reuse-tab"
+                data-open-modal={dialogId}
+                style="padding: 0.25rem 0.6rem; font-size: 0.78rem;"
+              >
+                Inspect High-Res Plate
+              </button>
+              <a href={plate.archiveUrl} target="_blank" rel="noopener noreferrer">
+                Open Original Archive Scan →
+              </a>
+            </div>
+          </div>
+
+          <dialog id={dialogId} class="plate-modal">
+            <div class="modal-header">
+              <div>
+                <strong style="font-family: var(--font-mono); color: var(--accent);">{plate.certId}</strong>
+                {' — '}
+                <strong>{plate.title}</strong> ({plate.date})
+              </div>
+              <button type="button" class="modal-close" data-close-modal={dialogId}>
+                Close ✕
+              </button>
+            </div>
+            <img
+              src={plate.imagePath}
+              alt={`${plate.certId} full resolution`}
+              style="width: 100%; height: auto; border: 1px solid var(--border); border-radius: 4px;"
+            />
+            <p style="font-size: 0.88rem; margin: 0.65rem 0 0;">
+              <strong>Verbatim Ink:</strong> “{plate.diplomaticQuote}” ·{' '}
+              <a href={plate.archiveUrl} target="_blank" rel="noopener noreferrer">
+                Verify on Host Archive
+              </a>
+            </p>
+          </dialog>
+        </article>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('[data-open-modal]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-open-modal');
+      const modal = id ? (document.getElementById(id) as HTMLDialogElement | null) : null;
+      if (modal && typeof modal.showModal === 'function') modal.showModal();
+    });
+  });
+  document.querySelectorAll('[data-close-modal]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-close-modal');
+      const modal = id ? (document.getElementById(id) as HTMLDialogElement | null) : null;
+      if (modal) modal.close();
+    });
+  });
+</script>

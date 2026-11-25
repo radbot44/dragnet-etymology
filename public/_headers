@@ -1,0 +1,17 @@
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/proof-plates/*
+  Cache-Control: public, max-age=604800
+
+/ledgers/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+
+/cases/*.bib
+  Access-Control-Allow-Origin: *
+  Content-Type: application/x-bibtex; charset=utf-8
+
+/rss.xml
+  Access-Control-Allow-Origin: *
+  Content-Type: application/rss+xml; charset=utf-8

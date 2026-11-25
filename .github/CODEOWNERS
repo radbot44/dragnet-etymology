@@ -1,0 +1,6 @@
+# Require editorial review from DRAgNEt maintainers before merging Case Files, ledgers, or proof plates
+# Replace @YOUR_GITHUB_USERNAME with your actual GitHub handle after creating the repository.
+/src/content/cases/ @radbot44
+/public/proof-plates/ @radbot44
+/public/ledgers/ @radbot44
+/.github/ @radbot44

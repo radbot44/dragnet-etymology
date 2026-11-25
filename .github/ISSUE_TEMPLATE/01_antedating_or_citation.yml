@@ -1,0 +1,72 @@
+name: "Primary-Scan Antedating or Citation"
+description: "Submit an earlier newspaper/book scan or key primary attestation (no Git or coding required)."
+title: "[Citation] <headword> (<YYYY-MM-DD>)"
+labels: ["antedating", "needs-scan-audit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **DRAgNEt**! Drop a primary scan link and screenshot below. Once verified against physical ink and printed masthead dates, your discovery will be added with full contributor/co-author credit.
+  - type: input
+    id: headword
+    attributes:
+      label: "Headword & Sense"
+      description: "Which word (and specific sense or part of speech) does this scan attest?"
+      placeholder: "e.g., shill (noun, decoy bidder) or new headword: ballyhoo"
+    validations:
+      required: true
+  - type: input
+    id: exact_date
+    attributes:
+      label: "Exact Printed Issue / Publication Date"
+      description: "Read directly from the printed masthead, running header, or edition colophon (YYYY-MM-DD)."
+      placeholder: "1883-01-24"
+    validations:
+      required: true
+  - type: input
+    id: bibliographic_source
+    attributes:
+      label: "Publication Title, Location, Page & Column"
+      placeholder: "The Janesville Daily Gazette (Janesville, WI), Vol. 26, No. 268, p. 3, cols. 2–3"
+    validations:
+      required: true
+  - type: input
+    id: scan_url
+    attributes:
+      label: "Direct Scan URL"
+      description: "Link to the exact page on Internet Archive, Chronicling America, HathiTrust, Google Books, state library, etc."
+      placeholder: "https://archive.org/details/..."
+    validations:
+      required: true
+  - type: textarea
+    id: diplomatic_quote
+    attributes:
+      label: "Diplomatic Transcription (Verbatim Ink)"
+      description: "Transcribe exact spelling, punctuation, and surrounding context from the page image (not raw OCR)."
+    validations:
+      required: true
+  - type: textarea
+    id: proof_plate_upload
+    attributes:
+      label: "Proof Plate Screenshot(s)"
+      description: "Drag and drop 1–2 PNG/JPG crops showing (a) the printed masthead/running date on the page and (b) a zoomed crop of the target word in ink."
+    validations:
+      required: true
+  - type: checkboxes
+    id: trap_audit
+    attributes:
+      label: "Trap A–D Self-Check"
+      options:
+        - label: "Trap A (Masthead Checked): I verified the date printed on the actual page/issue masthead, not just archive catalog metadata on a bound serial."
+          required: true
+        - label: "Trap B (Ink Checked): I inspected high-resolution page ink to rule out broken-type OCR ghosts."
+          required: true
+        - label: "CC BY 4.0 Attribution: I agree to publish this citation note under CC BY 4.0 with credit to me."
+          required: true
+  - type: input
+    id: contributor_credit
+    attributes:
+      label: "How Should We Credit You? (Name + Optional ORCID)"
+      placeholder: "Jane Smith (Citation: Smith, Jane | ORCID: https://orcid.org/0000-0000-0000-0000)"
+    validations:
+      required: true

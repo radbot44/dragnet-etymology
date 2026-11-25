@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE, SITE_LICENSE_URL } from '../consts';
+---
+
+<BaseLayout
+  title={`Submit a Scan or Case File | ${SITE_ACRONYM}`}
+  description={`How external researchers, archivists, and developers can contribute primary-scan antedatings, Trap A–D falsifications, or full Case Files to ${SITE_ACRONYM} via GitHub Issues or Pull Requests.`}
+>
+  <section class="prose-container" style="padding: 2.5rem 0;">
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+      Open Peer Review &amp; Community Intake
+    </div>
+    <h1 style="font-family: var(--font-serif); font-size: clamp(1.9rem, 3.4vw, 2.5rem); margin: 0.35rem 0 0.9rem;">
+      Contribute to {SITE_ACRONYM}
+    </h1>
+    <p style="font-size: 1.08rem; color: var(--ink-muted);">
+      <strong>{SITE_ACRONYM}</strong> ({SITE_EXPANDED}) accepts external primary-scan discoveries, antedatings,
+      OCR-ghost falsifications, and full word-origin dossiers through our public GitHub repository. Every accepted
+      contribution carries full named authorship (Highwire Press <code>citation_author</code>, BibTeX, and optional ORCID)
+      and undergoes a transparent Trap A–D physical-ink and masthead check.
+    </p>
+
+    <h2>Choose Your Submission Path</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem;">
+      <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: var(--surface);">
+        <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">
+          Lane 1 · No Git or Coding Needed
+        </div>
+        <h3 style="margin: 0.4rem 0 0.6rem;">GitHub Issue Form (2 Minutes)</h3>
+        <p style="font-size: 0.94rem; color: var(--ink-muted);">
+          Ideal if you found an earlier newspaper/book scan, a misdated bound volume, or an OCR ghost. Paste the archive URL,
+          drag-and-drop a screenshot showing the masthead and ink, and include your name + ORCID for credit.
+        </p>
+        <p style="margin-top: 0.9rem;">
+          <a href={`${SITE_GITHUB_URL}/issues/new/choose`} target="_blank" rel="noopener noreferrer">
+            <strong>Open a Structured Submission Form →</strong>
+          </a>
+        </p>
+      </div>
+
+      <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: var(--surface);">
+        <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">
+          Lane 2 · Full Case File or Ledger Update
+        </div>
+        <h3 style="margin: 0.4rem 0 0.6rem;">GitHub Pull Request</h3>
+        <p style="font-size: 0.94rem; color: var(--ink-muted);">
+          Fork the repository, add <code>src/content/cases/&lt;slug&gt;.md</code> plus proof plates in
+          <code>public/proof-plates/&lt;slug&gt;/</code> (or scaffold directly from a JSON ledger with
+          <code>scripts/ingest_monograph_ledger.py</code>), and open a Pull Request.
+        </p>
+        <p style="margin-top: 0.9rem;">
+          <a href={`${SITE_GITHUB_URL}/blob/main/CONTRIBUTING.md`} target="_blank" rel="noopener noreferrer">
+            <strong>Read CONTRIBUTING.md &amp; PR Spec →</strong>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <h2>The Four Archival Verification Checks (Trap A–D)</h2>
+    <p>
+      Automated GitHub Actions CI checks schema and asset rules on every Pull Request, followed by human editorial review
+      against four archival failure modes:
+    </p>
+    <ul>
+      <li><strong>Trap A (Bound-Serial &amp; Reprint Misdates):</strong> Dates must come from the printed issue masthead, running header, or colophon on the scan itself—never catalog metadata on multi-year bound volumes or later stereotype reprints.</li>
+      <li><strong>Trap B (Broken-Type OCR Ghosts):</strong> Every key quotation must be transcribed diplomatically from high-resolution page ink (catching worn <code>k → h</code> in <em>skill → shill</em> or smudged headlines like <code>GREENBACKS → GIMMICKS</code>).</li>
+      <li><strong>Trap C (Surname &amp; Homograph Collisions):</strong> Surnames, proper nouns, and unrelated homographs must be separated from genuine lexical attestations.</li>
+      <li><strong>Trap D (Two-Tier Epistemic Discipline):</strong> Keep attested print chronology (<em>Established in Primary Ink</em>) visually and rhetorically separate from any unattested oral transfer or morphological reconstruction (<em>Proposed Origin Mechanism</em>), and credit prior lexicographers generously.</li>
+    </ul>
+
+    <h2>Open Licensing &amp; Credit</h2>
+    <p>
+      By submitting an Issue or Pull Request, contributors license prose, ledgers, and proof-plate compilations under{' '}
+      <a href={SITE_LICENSE_URL} target="_blank" rel="noopener noreferrer">{SITE_LICENSE}</a> (and any code improvements under MIT),
+      with permanent author attribution in HTML scholarly meta tags, downloadable BibTeX citations, full-text RSS, and Zenodo release archives.
+    </p>
+  </section>
+</BaseLayout>

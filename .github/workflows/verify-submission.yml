@@ -1,0 +1,40 @@
+name: Verify DRAgNEt Submission & Astro Build
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    name: Trap A-D Asset Lint & Static Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python YAML validator dependency
+        run: pip install pyyaml
+
+      - name: Validate Case File frontmatter, proof plates, and JSON ledgers
+        run: python3 scripts/validate_submission.py
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Build Astro static site (Zod schema + BibTeX + RSS + Sitemap)
+        run: npx astro build

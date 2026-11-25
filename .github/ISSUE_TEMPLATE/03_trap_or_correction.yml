@@ -1,0 +1,24 @@
+name: "Report an OCR Ghost, Misdated Volume, or Prior-Art Addition"
+description: "Flag a Trap A–D error, add missed prior scholarship, or refine an existing DRAgNEt Case File."
+title: "[Correction / Prior Art] <Case or Headword>"
+labels: ["correction-or-prior-art"]
+body:
+  - type: input
+    id: target_case
+    attributes:
+      label: "Case Number or Headword"
+      placeholder: "e.g., Case 1200 (shill / shillaber)"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Evidence, Scan Link, or Prior-Art Citation"
+      description: "Share the bibliographic reference or scan link so we can update the Case File and credit your correction."
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: "Your Name (for Acknowledgment / Updated Audit Log)"
+      placeholder: "Name or handle"
