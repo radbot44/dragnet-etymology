@@ -51,7 +51,7 @@ const bibtex = `@techreport{${leadSurname}_${pubYear}_${entry.id.replace(/[^a-z0
   year        = {${pubYear}},
   month       = {${d.pubDate.getUTCMonth() + 1}},
   number      = {${d.caseNumber} (${d.targetId})},
-  url         = {${canonicalUrl}}${d.zenodoDoi ? `,\n  doi         = {${d.zenodoDoi}}` : ''}
+  url         = {${canonicalUrl}}${d.journalDoi ? `,\n  doi         = {${d.journalDoi}}` : ''}
 }`;
 
 const statusLabels: Record<string, string> = {
@@ -74,7 +74,7 @@ const statusLabels: Record<string, string> = {
   authorOrcid={d.authorOrcid}
   coAuthors={d.coAuthors}
   keywords={d.keywords}
-  zenodoDoi={d.zenodoDoi}
+  journalDoi={d.journalDoi}
   pdfUrl={d.pdfUrl}
   ogImage={featuredScans[0]?.scan.hosted_path || undefined}
 >

@@ -48,4 +48,4 @@ Both `scripts/validate-site.mjs` (hooked directly into `astro.config.mjs` during
 ## 3. Automated Deployment & Releases
 
 - **Cloudflare Workers Static Assets (`https://dragnet.tch.one`):** Connected via Cloudflare Workers Builds (`wrangler.jsonc` serving `./dist`). Pushing to `main` automatically runs `astro build` (including `validate-site.mjs`) and deploys globally.
-- **Automated GitHub Releases (`.github/workflows/release.yml`):** Any push to `main` touching `public/ledgers/**`, `src/content/cases/**`, or `package.json` automatically runs the test/validation suite, packages `dragnet-ledgers-vX.Y.Z.zip` + `SHA256SUMS.txt` + live ledger release notes via `scripts/package_release_assets.py`, and publishes a GitHub Release (triggering automatic Zenodo DOI archiving when linked).
+- **Automated GitHub Releases (`.github/workflows/release.yml`):** Any push to `main` touching `public/ledgers/**`, `src/content/cases/**`, or `package.json` automatically runs the test/validation suite, packages `dragnet-ledgers-vX.Y.Z.zip` + `SHA256SUMS.txt` + live ledger release notes via `scripts/package_release_assets.py`, and publishes a versioned GitHub Release.

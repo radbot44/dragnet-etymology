@@ -24,7 +24,7 @@ interface Props {
   authorOrcid?: string;
   coAuthors?: CoAuthor[];
   keywords?: string[];
-  zenodoDoi?: string;
+  journalDoi?: string;
   pdfUrl?: string;
   ogImage?: string;
 }
@@ -41,7 +41,7 @@ const {
   authorOrcid,
   coAuthors = [],
   keywords = [],
-  zenodoDoi,
+  journalDoi,
   pdfUrl,
   ogImage,
 } = Astro.props;
@@ -82,7 +82,7 @@ const jsonLd = isArticle && pubDate
       mainEntityOfPage: canonicalUrl,
       license: SITE_LICENSE_URL,
       keywords: keywords.join(', '),
-      ...(zenodoDoi ? { identifier: `https://doi.org/${zenodoDoi}` } : {}),
+      ...(journalDoi ? { identifier: `https://doi.org/${journalDoi}` } : {}),
     }
   : {
       '@context': 'https://schema.org',
@@ -128,7 +128,7 @@ const jsonLd = isArticle && pubDate
     <meta name="citation_language" content="en" />
     <meta name="citation_fulltext_html_url" content={canonicalUrl} />
     {keywords.length > 0 && <meta name="citation_keywords" content={keywords.join('; ')} />}
-    {zenodoDoi && <meta name="citation_doi" content={zenodoDoi} />}
+    {journalDoi && <meta name="citation_doi" content={journalDoi} />}
     {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
     <meta name="DC.rights" content={SITE_LICENSE_URL} />
   </>

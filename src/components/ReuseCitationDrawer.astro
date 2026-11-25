@@ -6,7 +6,7 @@ interface Props {
   pubYear: number;
   canonicalUrl: string;
   ledgerPath: string;
-  zenodoDoi?: string;
+  journalDoi?: string;
   bibtex: string;
   wikipediaPrimaryRef: string;
   wikipediaGuidance: string;
@@ -18,7 +18,7 @@ interface Props {
 const {
   slug,
   ledgerPath,
-  zenodoDoi,
+  journalDoi,
   bibtex,
   wikipediaPrimaryRef,
   wikipediaGuidance,
@@ -42,11 +42,11 @@ const {
       <a href={`/cases/${slug}.bib`} download={`${slug}.bib`}>Download .bib</a>
       <span>·</span>
       <a href={ledgerPath} target="_blank" rel="noopener noreferrer">Raw JSON Ledger</a>
-      {zenodoDoi && (
+      {journalDoi && (
         <>
           <span>·</span>
-          <a href={`https://doi.org/${zenodoDoi}`} target="_blank" rel="noopener noreferrer">
-            DOI: {zenodoDoi}
+          <a href={`https://doi.org/${journalDoi}`} target="_blank" rel="noopener noreferrer">
+            DOI: {journalDoi}
           </a>
         </>
       )}

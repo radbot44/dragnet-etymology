@@ -35,7 +35,7 @@ python scripts/add_case.py --slug shindy --target-id TGT-019 --status under_revi
 ## Automated Deployment & GitHub Releases
 
 1. **Cloudflare Workers Builds (`npx astro build`):** `astro.config.mjs` runs `scripts/validate-site.mjs` automatically at build start, enforcing schema `3.0`, bidirectional citation cross-references, pre-1931 scan rights, and workspace sanitization before deploying to `https://dragnet.tch.one` on every push to `main`.
-2. **Automatic GitHub Releases (`.github/workflows/release.yml`):** Whenever `public/ledgers/**`, `src/content/cases/**`, or `package.json` changes on `main`, GitHub Actions validates the repository, packages `dragnet-ledgers-vX.Y.Z.zip` + `SHA256SUMS.txt` + ledger-computed release notes via `scripts/package_release_assets.py`, and publishes a versioned GitHub Release (which also auto-mints a Zenodo DOI if linked via `CITATION.cff`).
+2. **Automatic GitHub Releases (`.github/workflows/release.yml`):** Whenever `public/ledgers/**`, `src/content/cases/**`, or `package.json` changes on `main`, GitHub Actions validates the repository, packages `dragnet-ledgers-vX.Y.Z.zip` + `SHA256SUMS.txt` + ledger-computed release notes via `scripts/package_release_assets.py`, and publishes a versioned GitHub Release.
 
 ## Local Development & Verification
 

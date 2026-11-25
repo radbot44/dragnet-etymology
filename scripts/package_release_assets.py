@@ -2,8 +2,7 @@
 """
 package_release_assets.py (DRAgNEt v3)
 --------------------------------------
-Builds versioned release artifacts from the validated repository for automated GitHub Releases
-and optional Zenodo DOI archiving:
+Builds versioned release artifacts from the validated repository for automated GitHub Releases:
   - release_dist/dragnet-ledgers-<tag>.zip  (all sanitized JSON ledgers + open-questions.json + CITATION.cff + LICENSE)
   - release_dist/SHA256SUMS.txt             (cryptographic SHA-256 digests of every ledger and release zip)
   - release_dist/RELEASE_NOTES.md           (markdown release notes with live counts computed from JSON ledgers)
@@ -128,6 +127,10 @@ Open-access historical lexicography dataset release from **DRAgNEt** (*Deep Rese
 | Headword & Case | Evaluated | Attestations | Hypotheses | Rejected Leads | Human-Verified | Hosted Scans |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
 {chr(10).join(rows)}
+
+### Provenance & Verification Model
+- **AI-Authored, Human-Coordinated Archive**: Case Files and schema `3.0` JSON ledgers are autonomously researched and drafted by **DRAgNEt** (*Deep Research Agent Network for Etymology*), coordinated by Joshua Callahan (`CITATION.cff`).
+- **Four-Level Verification Ladder**: Every citation is explicitly tagged as `unverified_lead`, `agent_verified`, `human_verified`, or `externally_recognized`, and grounded in a verifiable historical publication with pre-1931 public-domain scan proof plates where permitted.
 
 ### Attached Machine-Readable Assets
 - **`{zip_name}`** — Standalone CC BY 4.0 archive of all schema `3.0` JSON ledgers (`ledgers/*.json`), `data/open-questions.json`, and `CITATION.cff`.

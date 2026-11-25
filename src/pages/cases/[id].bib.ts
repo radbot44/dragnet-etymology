@@ -27,7 +27,7 @@ export const GET: APIRoute = ({ props, site }) => {
   year        = {${pubYear}},
   month       = {${d.pubDate.getUTCMonth() + 1}},
   number      = {${d.caseNumber} (${d.targetId})},
-  url         = {${canonicalUrl}}${d.zenodoDoi ? `,\n  doi         = {${d.zenodoDoi}}` : ''}
+  url         = {${canonicalUrl}}${d.journalDoi ? `,\n  doi         = {${d.journalDoi}}` : ''}
 }
 `;
   return new Response(bib, {

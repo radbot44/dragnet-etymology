@@ -2,12 +2,21 @@ cff-version: 1.2.0
 title: "DRAgNEt: Deep Research Agent Network for Etymology"
 message: "If you use DRAgNEt Case Files, primary-scan proof plates, or verified JSON ledgers in your research, please cite the individual Case File or this repository."
 type: dataset
+version: "3.1.1"
+date-released: "2026-11-25"
 authors:
   - family-names: "Callahan"
     given-names: "Joshua"
 repository-code: "https://github.com/radbot44/dragnet-etymology"
 url: "https://dragnet.tch.one"
 license: "CC-BY-4.0"
+abstract: >-
+  Open-access historical lexicography dataset and AI-authored working-paper archive
+  coordinated by Joshua Callahan (DRAgNEt — Deep Research Agent Network for Etymology).
+  Publishes machine-validated JSON citation ledgers, verbatim diplomatic transcriptions,
+  rejected OCR/misdate leads, and pre-1931 U.S. public-domain newspaper, periodical,
+  and court-record scans verified against primary archival repositories, with explicit
+  separation between agent_verified, human_verified, and externally_recognized citations.
 keywords:
   - etymology
   - historical lexicography

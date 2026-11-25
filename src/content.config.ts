@@ -74,7 +74,7 @@ const cases = defineCollection({
     featuredScanIds: z.array(z.string()),
     rejectedLeadIds: z.array(z.string()),
     openQuestions: z.array(z.string()).default([]),
-    zenodoDoi: z.string().optional(),
+    journalDoi: z.string().optional(),
     pdfUrl: z.string().url().optional(),
     reuseKit: z.object({
       wikipediaPrimaryRef: z.string(),

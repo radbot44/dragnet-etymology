@@ -100,7 +100,7 @@ jobs:
       - name: Package JSON ledger archive, SHA-256 checksums & release notes
         run: python3 scripts/package_release_assets.py --tag "${{ steps.resolve_tag.outputs.tag }}" --out-dir release_dist
 
-      - name: Create GitHub Release (triggers Zenodo DOI minting if linked)
+      - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ steps.resolve_tag.outputs.tag }}

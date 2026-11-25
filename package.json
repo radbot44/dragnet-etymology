@@ -1,8 +1,8 @@
 {
   "name": "dragnet-etymology",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": true,
-  "description": "DRAgNEt — Deep Research Agent Network for Etymology: Open-access archival case files, primary-scan proof plates, and machine-validated lexicons deployed on Cloudflare Static Assets.",
+  "description": "DRAgNEt \u2014 Deep Research Agent Network for Etymology: Open-access archival case files, primary-scan proof plates, and machine-validated lexicons deployed on Cloudflare Static Assets.",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
