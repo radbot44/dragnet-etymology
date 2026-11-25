@@ -1,0 +1,113 @@
+name: Auto-Publish DRAgNEt GitHub Release & Optional Edge Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/ledgers/**'
+      - 'src/content/cases/**'
+      - 'package.json'
+  workflow_dispatch:
+    inputs:
+      custom_tag:
+        description: 'Optional custom release tag (e.g. v3.1.0); leave blank to auto-derive from package.json'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  validate-build-and-release:
+    name: Validate, Build & Cut Versioned Dataset Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository with full tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run OCR & phonetic research harness self-tests
+        run: python3 research-system/ocr_phonetic_harness.py --self-test
+
+      - name: Validate JSON ledgers, cross-refs, scan rights & workspace sanitization
+        run: python3 scripts/validate_submission.py
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Reproducible dependency install (npm ci)
+        run: npm ci
+
+      - name: Build Astro static site (runs validate-site.mjs build gate)
+        run: npm run build
+
+      - name: Optional Cloudflare Workers deploy (only if secrets are configured; otherwise Cloudflare Workers Builds handles git push automatically)
+        if: ${{ env.CF_TOKEN != '' && env.CF_ACCOUNT != '' }}
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+
+      - name: Determine next non-colliding release tag
+        id: resolve_tag
+        env:
+          INPUT_TAG: ${{ inputs.custom_tag }}
+        run: |
+          python3 - << 'PY'
+          import json, os, subprocess
+          from pathlib import Path
+
+          custom = (os.environ.get("INPUT_TAG") or "").strip()
+          pkg = json.loads(Path("package.json").read_text(encoding="utf-8"))
+          base_ver = str(pkg.get("version") or "3.0.0").lstrip("v")
+
+          existing = set(
+              subprocess.check_output(["git", "tag", "--list"], text=True).split()
+          )
+
+          if custom:
+              tag = custom if custom.startswith("v") else f"v{custom}"
+          else:
+              candidate = f"v{base_ver}"
+              if candidate not in existing:
+                  tag = candidate
+              else:
+                  parts = [int(x) if x.isdigit() else 0 for x in base_ver.split(".")]
+                  while len(parts) < 3:
+                      parts.append(0)
+                  while f"v{parts[0]}.{parts[1]}.{parts[2]}" in existing:
+                      parts[2] += 1
+                  tag = f"v{parts[0]}.{parts[1]}.{parts[2]}"
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"tag={tag}\n")
+          print(f"Resolved release tag: {tag}")
+          PY
+
+      - name: Package JSON ledger archive, SHA-256 checksums & release notes
+        run: python3 scripts/package_release_assets.py --tag "${{ steps.resolve_tag.outputs.tag }}" --out-dir release_dist
+
+      - name: Create GitHub Release (triggers Zenodo DOI minting if linked)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.resolve_tag.outputs.tag }}
+        run: |
+          gh release create "$TAG" \
+            "release_dist/dragnet-ledgers-${TAG}.zip" \
+            "release_dist/SHA256SUMS.txt" \
+            --target "${{ github.sha }}" \
+            --title "DRAgNEt ${TAG}" \
+            --notes-file "release_dist/RELEASE_NOTES.md"

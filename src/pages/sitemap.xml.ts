@@ -5,7 +5,7 @@ import { getAllCitations } from '../lib/ledgers';
 export const GET: APIRoute = async ({ site }) => {
   const cases = await getCollection('cases');
   const citations = getAllCitations();
-  const base = site || new URL('https://dragnet-etymology.workers.dev');
+  const base = site || new URL('https://dragnet.tch.one');
   const urls = [
     new URL('/', base).toString(),
     new URL('/citations/', base).toString(),

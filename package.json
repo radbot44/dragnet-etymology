@@ -1,6 +1,6 @@
 {
   "name": "dragnet-etymology",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
   "description": "DRAgNEt \u2014 Deep Research Agent Network for Etymology: Open-access archival case files, primary-scan proof plates, and machine-validated lexicons deployed on Cloudflare Static Assets.",
   "type": "module",
@@ -9,8 +9,11 @@
     "build": "astro build",
     "preview": "astro build && wrangler dev",
     "deploy": "astro build && wrangler deploy",
+    "add-case": "python3 scripts/add_case.py",
     "ingest": "python3 scripts/ingest_monograph_ledger.py",
-    "validate": "python3 scripts/validate_submission.py"
+    "validate": "node scripts/validate-site.mjs",
+    "validate:py": "python3 scripts/validate_submission.py",
+    "package-release": "python3 scripts/package_release_assets.py"
   },
   "dependencies": {
     "@astrojs/rss": "4.0.9",
