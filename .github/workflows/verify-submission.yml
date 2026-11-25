@@ -22,9 +22,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install validator YAML parser
-        run: pip install pyyaml
-
       - name: Run OCR & phonetic research harness self-tests
         run: python3 research-system/ocr_phonetic_harness.py --self-test
 
@@ -40,5 +37,5 @@ jobs:
       - name: Reproducible dependency install (npm ci)
         run: npm ci
 
-      - name: Build Astro static site & 119 citation pages
-        run: npx astro build
+      - name: Build Astro static site (runs Node build-gate + generates static pages)
+        run: npm run build
