@@ -191,7 +191,7 @@
       "baseline_year": 1843,
       "baseline_summary": "Claimed 1843 US frontier print cutoff retained (Etymonline dates 'shindig' to 1851 and OED to 1859 J. R. Bartlett, while sailor precursor 'shindy' is attested 1821 in Pierce Egan)",
       "open_question": "Alteration of sailors' shindy ('rowdy dance or brawl', possibly from Scots shinty or Irish sinteag 'skip, caper') + dig ('kick in the shins')",
-      "status": "under_investigation",
+      "status": "under_review",
       "case_slug": null
     },
     {
@@ -381,8 +381,8 @@
       "baseline_year": 1920,
       "baseline_summary": "American English slang 'money, cash' (c. 1920-1935 in underworld/turf columns), of unknown origin",
       "open_question": "Irish Gaelic moll óir ('heap of gold')",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "moolah"
     },
     {
       "target_id": "TGT-039",
@@ -531,8 +531,8 @@
       "baseline_year": 1871,
       "baseline_summary": "Popularized 1871 in San Francisco newspapers ('California word' for anti-Chinese street gang youths); local oral use c. 1868-1870",
       "open_question": "Bavarian/Swabian German dialectal Huddellump / Hadelump ('ragamuffin, scoundrel') via German forty-niners",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "hoodlum"
     },
     {
       "target_id": "TGT-054",
@@ -731,7 +731,7 @@
       "baseline_year": 1893,
       "baseline_summary": "Electric Review, 11 Mar. 1893 (Green's: 'tricky device/gadget'); 1921 carnival/gambling wheel brake contrivance",
       "open_question": "Carnival magicians' deliberate anagram of magic ('gimac / gimix')",
-      "status": "published_case_file",
+      "status": "published_case",
       "case_slug": "gimmick"
     },
     {
@@ -1041,8 +1041,8 @@
       "baseline_year": 1917,
       "baseline_summary": "Theatrical/vaudeville slang 'cheap melodramatic stage device or claptrap' (1917)",
       "open_question": "Blend of hocus-pocus + bunkum",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "hokum"
     },
     {
       "target_id": "TGT-105",
@@ -1201,7 +1201,7 @@
       "baseline_year": 1908,
       "baseline_summary": "Carnival/fake-auction cant 'shillaber' (1908) shortened to 'shill' (1911), 'confederate posing as eager customer'",
       "open_question": "Shortening of carnival cant shillaber (1908), of unknown origin (possibly eponymous from humorist B. P. Shillaber)",
-      "status": "published_case_file",
+      "status": "published_case",
       "case_slug": "shill-shillaber"
     },
     {
@@ -1321,8 +1321,8 @@
       "baseline_year": 1900,
       "baseline_summary": "American Bankers' Association proceedings (1900, pseudonym 'John Yegg' on Nov. 1899 St. Paul bank-burglar letter); 'yegg' (1901)",
       "open_question": "Pseudonym 'John Yegg' popularized by Pinkerton National Detective Agency circulars (1900)",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "yegg"
     },
     {
       "target_id": "TGT-133",
