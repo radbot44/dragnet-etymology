@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 """
-validate_submission.py
-----------------------
-Automated CI gatekeeper for DRAgNEt pull requests and local authoring.
-Checks every Case File in src/content/cases/*.md for:
-  1. Valid YAML frontmatter and Last, First Highwire Press citation_author format.
-  2. Existing proof-plate images under public/proof-plates/ (each <= 5 MB).
-  3. Existing, valid JSON certificate ledgers under public/ledgers/ matching declared counts.
-  4. HTTPS-only archive links and no raw 4-decimal harness scores leaked into public prose.
+validate_submission.py (DRAgNEt v3)
+-----------------------------------
+Automated structural, cross-reference, rights-boundary, and sanitization validator.
+
+What this script ACTUALLY verifies:
+  1. Workspace Sanitization: Zero Google Drive/Docs links or internal workspace IDs in src/, public/, or research-system/.
+  2. Ledger Schema & Verification Rules: Every record in public/ledgers/*.json has valid record_type and verification_level;
+     records marked 'human_verified' MUST name human_verified_by and human_verified_date; records marked 'externally_recognized'
+     MUST include external_recognition.
+  3. Evidence & Image-Rights Gate: Every attestation/hypothesis has an https:// source_url; every hosted_path exists on disk
+     (<= 5 MB); works with publication_year > 1930 may NOT bundle scans in public/scans/ unless explicitly cleared.
+  4. Bidirectional Cross-Referencing: Every citation ID referenced in a Case File's YAML frontmatter OR Markdown prose
+     exists in that Case File's JSON ledger.
+  5. Editorial Lint: Author citations use 'Last, First' format; prose and frontmatter contain no raw 4-decimal harness
+     scores or artificial decimal-year antedating strings (e.g., '-30.9 yrs').
+
+What this script DOES NOT verify (requires human philological review):
+  - Historical accuracy of diplomatic transcriptions against page ink, semantic interpretation, or completeness of prior art.
 """
 from __future__ import annotations
 import json
@@ -23,98 +33,195 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES_DIR = ROOT / "src" / "content" / "cases"
+LEDGERS_DIR = ROOT / "public" / "ledgers"
 PUBLIC_DIR = ROOT / "public"
-MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5 MB per proof plate keeps git clones fast
-RAW_SCORE_RE = re.compile(r"\b(?:SLPL|JW|jaro[_ -]?winkler)\s*=\s*\d\.\d{4}\b", re.IGNORECASE)
+
+VALID_RECORD_TYPES = {"attestation", "contextual_evidence", "hypothesis", "rejected_lead"}
+VALID_VER_LEVELS = {"discovered", "agent_verified", "human_verified", "externally_recognized"}
+MAX_IMAGE_BYTES = 5 * 1024 * 1024
+
+WORKSPACE_LEAK_RE = re.compile(
+    r"(?:drive\.google\.com|docs\.google\.com|googledrive://|workspace_drive_folder_id|evidence_scans_folder_id|scan_evidence_drive_id)",
+    re.IGNORECASE,
+)
+RAW_SCORE_RE = re.compile(r"\b(?:SLPL|JW|jaro[_ -]?winkler|skeleton_similarity)\s*=\s*\d\.\d{3,4}\b", re.IGNORECASE)
+DECIMAL_YEAR_RE = re.compile(r"(?:-?\b\d+\.\d+\s*(?:yrs?|years?)\b)", re.IGNORECASE)
+CERT_ID_RE = re.compile(r"\bCERT-\d{3,4}-\d{3}\b")
 
 
-def validate_case(md_path: Path) -> list[str]:
+def check_workspace_leaks() -> list[str]:
+    errors: list[str] = []
+    for folder in (ROOT / "src", ROOT / "public", ROOT / "research-system"):
+        if not folder.exists():
+            continue
+        for p in folder.rglob("*"):
+            if p.is_file() and p.suffix.lower() in {".json", ".md", ".astro", ".ts", ".js", ".py"}:
+                txt = p.read_text(encoding="utf-8", errors="ignore")
+                m = WORKSPACE_LEAK_RE.search(txt)
+                if m:
+                    errors.append(f"Workspace identifier/URL leak '{m.group(0)}' found in {p.relative_to(ROOT)}")
+    return errors
+
+
+def validate_ledger(ledger_path: Path) -> tuple[set[str], list[str]]:
+    errors: list[str] = []
+    try:
+        data = json.loads(ledger_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        return set(), [f"{ledger_path.name}: Invalid JSON: {exc}"]
+
+    if data.get("schema_version") != "3.0":
+        errors.append(f"{ledger_path.name}: Expected schema_version '3.0', got {data.get('schema_version')!r}")
+
+    citations = data.get("citations")
+    if not isinstance(citations, list) or not citations:
+        return set(), [f"{ledger_path.name}: Missing or empty 'citations' array"]
+
+    seen_ids: set[str] = set()
+    for c in citations:
+        cid = str(c.get("id") or "")
+        if not cid:
+            errors.append(f"{ledger_path.name}: Citation record missing 'id'")
+            continue
+        if cid in seen_ids:
+            errors.append(f"{ledger_path.name}: Duplicate citation id '{cid}'")
+        seen_ids.add(cid)
+
+        rt = c.get("record_type")
+        if rt not in VALID_RECORD_TYPES:
+            errors.append(f"{ledger_path.name} [{cid}]: Invalid record_type {rt!r}")
+
+        vl = c.get("verification_level")
+        if vl not in VALID_VER_LEVELS:
+            errors.append(f"{ledger_path.name} [{cid}]: Invalid verification_level {vl!r}")
+
+        if vl == "human_verified":
+            if not c.get("human_verified_by") or not c.get("human_verified_date"):
+                errors.append(
+                    f"{ledger_path.name} [{cid}]: verification_level 'human_verified' requires non-empty human_verified_by and human_verified_date"
+                )
+        if vl == "externally_recognized" and not c.get("external_recognition"):
+            errors.append(
+                f"{ledger_path.name} [{cid}]: verification_level 'externally_recognized' requires external_recognition note"
+            )
+
+        surl = str(c.get("source_url") or "")
+        if not surl.startswith("https://"):
+            errors.append(f"{ledger_path.name} [{cid}]: source_url must use https:// (got {surl!r})")
+
+        scan = c.get("scan") or {}
+        hosted = scan.get("hosted_path")
+        pub_yr = c.get("publication_year")
+        if hosted:
+            full_img = PUBLIC_DIR / str(hosted).lstrip("/")
+            if not full_img.is_file():
+                errors.append(f"{ledger_path.name} [{cid}]: Missing hosted scan file at public/{str(hosted).lstrip('/')}")
+            elif full_img.stat().st_size > MAX_IMAGE_BYTES:
+                errors.append(f"{ledger_path.name} [{cid}]: Hosted scan exceeds 5 MB limit")
+            if isinstance(pub_yr, int) and pub_yr > 1930 and scan.get("rights_status") != "explicit_permission_or_cc":
+                errors.append(
+                    f"{ledger_path.name} [{cid}]: Post-1930 work (publication_year={pub_yr}) cannot host scan locally without explicit rights clearance"
+                )
+
+    return seen_ids, errors
+
+
+def validate_case(md_path: Path, ledgers_map: dict[str, set[str]]) -> list[str]:
     errors: list[str] = []
     raw = md_path.read_text(encoding="utf-8")
     if not raw.startswith("---\n"):
-        return [f"{md_path.name}: Missing opening YAML frontmatter delimiter '---'"]
+        return [f"{md_path.name}: Missing YAML frontmatter"]
     parts = raw.split("---\n", 2)
     if len(parts) < 3:
-        return [f"{md_path.name}: Missing closing YAML frontmatter delimiter '---'"]
+        return [f"{md_path.name}: Unclosed YAML frontmatter"]
 
     try:
         fm = yaml.safe_load(parts[1])
     except Exception as exc:
-        return [f"{md_path.name}: Invalid YAML frontmatter: {exc}"]
+        return [f"{md_path.name}: Invalid YAML: {exc}"]
 
     body = parts[2]
-    author_cit = str(fm.get("authorCitation", ""))
-    if "," not in author_cit:
-        errors.append(
-            f"{md_path.name}: authorCitation '{author_cit}' must use 'Last, First' format for Google Scholar meta tags."
-        )
+    if "certificateCounts" in fm:
+        errors.append(f"{md_path.name}: Duplicate 'certificateCounts' in frontmatter is prohibited; counts derive from JSON ledger")
 
-    for ca in fm.get("coAuthors", []) or []:
-        if "," not in str(ca.get("citationName", "")):
-            errors.append(
-                f"{md_path.name}: coAuthor citationName '{ca.get('citationName')}' must use 'Last, First' format."
-            )
+    if "," not in str(fm.get("authorCitation", "")):
+        errors.append(f"{md_path.name}: authorCitation must use 'Last, First' format")
 
-    ear_url = str((fm.get("earliestScan") or {}).get("archiveUrl", ""))
-    if not ear_url.startswith("https://"):
-        errors.append(f"{md_path.name}: earliestScan.archiveUrl must start with https:// (got '{ear_url}').")
+    lslug = str(fm.get("ledgerSlug") or "")
+    if lslug not in ledgers_map:
+        errors.append(f"{md_path.name}: ledgerSlug '{lslug}' has no matching public/ledgers/{lslug}.json")
+        return errors
 
-    plates = fm.get("proofPlates") or []
-    if not plates:
-        errors.append(f"{md_path.name}: At least 1 primary-scan proof plate is required in proofPlates.")
-    for p in plates:
-        cid = p.get("certId", "UNKNOWN")
-        img_rel = str(p.get("imagePath", "")).lstrip("/")
-        img_full = PUBLIC_DIR / img_rel
-        if not img_rel or not img_full.is_file():
-            errors.append(f"{md_path.name} [{cid}]: Missing proof-plate file at public/{img_rel}")
-        elif img_full.stat().st_size > MAX_IMAGE_BYTES:
-            mb = img_full.stat().st_size / (1024 * 1024)
-            errors.append(f"{md_path.name} [{cid}]: Proof plate public/{img_rel} is {mb:.2f} MB (max 5.00 MB).")
-        aurl = str(p.get("archiveUrl", ""))
-        if not aurl.startswith("https://"):
-            errors.append(f"{md_path.name} [{cid}]: proofPlates archiveUrl must use https://")
+    valid_ids = ledgers_map[lslug]
 
-    ledger_rel = str(fm.get("ledgerPath", "")).lstrip("/")
-    ledger_full = PUBLIC_DIR / ledger_rel
-    if not ledger_rel or not ledger_full.is_file():
-        errors.append(f"{md_path.name}: Missing JSON ledger at public/{ledger_rel}")
-    else:
-        try:
-            json.loads(ledger_full.read_text(encoding="utf-8"))
-        except Exception as exc:
-            errors.append(f"{md_path.name}: Invalid JSON in public/{ledger_rel}: {exc}")
+    # Collect every citation ID referenced in frontmatter and prose and cross-reference against ledger!
+    referenced_ids: set[str] = set()
+    end_cid = (fm.get("earliestNewDiscovery") or {}).get("certId")
+    if end_cid:
+        referenced_ids.add(str(end_cid))
+    eka_cid = (fm.get("earliestKnownAttestation") or {}).get("certId")
+    if eka_cid:
+        referenced_ids.add(str(eka_cid))
+    for cid in fm.get("featuredScanIds") or []:
+        referenced_ids.add(str(cid))
+    for cid in fm.get("rejectedLeadIds") or []:
+        referenced_ids.add(str(cid))
+    for item in fm.get("chronologyTimeline") or []:
+        if item.get("certId"):
+            referenced_ids.add(str(item["certId"]))
+    for cid in CERT_ID_RE.findall(body):
+        referenced_ids.add(cid)
 
-    score_hits = RAW_SCORE_RE.findall(body)
-    if score_hits:
-        errors.append(
-            f"{md_path.name}: Found internal 4-decimal harness score(s) in public prose ({score_hits}); keep raw scores in JSON ledgers only."
-        )
+    missing = sorted(referenced_ids - valid_ids)
+    if missing:
+        errors.append(f"{md_path.name}: References citation ID(s) absent from {lslug}.json: {missing}")
+
+    if RAW_SCORE_RE.search(raw):
+        errors.append(f"{md_path.name}: Contains raw 4-decimal harness score; keep internal triage scores out of articles")
+    dec_yr = DECIMAL_YEAR_RE.findall(raw)
+    if dec_yr:
+        errors.append(f"{md_path.name}: Uses decimal-year phrasing {dec_yr}; express spans in natural years, months, and days")
 
     return errors
 
 
 def main() -> int:
-    case_files = sorted(CASES_DIR.glob("*.md"))
-    if not case_files:
-        print("ERROR: No case files found in src/content/cases/", file=sys.stderr)
+    errors = check_workspace_leaks()
+
+    ledger_files = sorted(LEDGERS_DIR.glob("*.json"))
+    if not ledger_files:
+        print("ERROR: No JSON ledgers found in public/ledgers/", file=sys.stderr)
         return 1
 
-    all_errors: list[str] = []
-    for cf in case_files:
-        errs = validate_case(cf)
-        if errs:
-            all_errors.extend(errs)
-        else:
-            print(f"[PASS] {cf.name}")
+    ledgers_map: dict[str, set[str]] = {}
+    total_records = 0
+    for lf in ledger_files:
+        ids, l_errs = validate_ledger(lf)
+        errors.extend(l_errs)
+        ledgers_map[lf.stem] = ids
+        total_records += len(ids)
+        if not l_errs:
+            print(f"[LEDGER OK] {lf.name} ({len(ids)} schema-validated records)")
 
-    if all_errors:
-        print("\nSUBMISSION VALIDATION FAILED:", file=sys.stderr)
-        for e in all_errors:
+    case_files = sorted(CASES_DIR.glob("*.md"))
+    for cf in case_files:
+        c_errs = validate_case(cf, ledgers_map)
+        errors.extend(c_errs)
+        if not c_errs:
+            print(f"[CASE OK]   {cf.name} (all citation IDs cross-referenced)")
+
+    if errors:
+        print("\nVALIDATION FAILED:", file=sys.stderr)
+        for e in errors:
             print(f"  - {e}", file=sys.stderr)
         return 1
 
-    print(f"\nAll {len(case_files)} DRAgNEt Case File(s) passed Trap A-D & asset validation.")
+    print(
+        f"\n[STRUCTURAL CHECKS PASSED] {len(case_files)} Case Files and {total_records} ledger citations passed "
+        "schema, cross-reference, pre-1931 image-rights, and workspace-sanitization checks.\n"
+        "NOTE: Automated checks do NOT establish transcription accuracy or historical interpretation; "
+        "records remain 'agent_verified' until independently signed off by a named human reviewer."
+    )
     return 0
 
 

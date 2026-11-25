@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE_ACRONYM, SITE_GITHUB_URL } from '../../consts';
+import {
+  getAllCitations,
+  VERIFICATION_LABELS,
+  RECORD_TYPE_LABELS,
+  type CitationRecord,
+} from '../../lib/ledgers';
+
+export function getStaticPaths() {
+  const citations = getAllCitations();
+  return citations.map((c) => ({
+    params: { id: c.slug },
+    props: { citation: c },
+  }));
+}
+
+const { citation: c } = Astro.props as { citation: CitationRecord };
+const verifyTitle = `[Human Verification] ${c.id} (${c.attested_form}, ${c.date_display})`;
+const verifyBody = [
+  `I independently inspected the primary source scan for **${c.id}** (${c.source_url}):`,
+  '',
+  `- [ ] Printed masthead/edition date matches '${c.date_display}'`,
+  '- [ ] Diplomatic quote matches the original page ink',
+  '- [ ] Reviewer Name & ORCID: ',
+].join('\n');
+const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent(verifyTitle)}&body=${encodeURIComponent(verifyBody)}`;
+---
+
+<BaseLayout
+  title={`${c.id}: "${c.attested_form}" (${c.date_display}) | ${SITE_ACRONYM} Citation Record`}
+  description={`${c.short_gloss} — ${c.source_publication} (${c.date_display}). Permanent citation record in ${SITE_ACRONYM}.`}
+  ogImage={c.scan.hosted_path || undefined}
+>
+  <article class="prose-container" style="padding: 2.2rem 0 3rem;">
+    <nav style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1rem;">
+      <a href="/citations/">← Citation Index</a>
+      <span> · </span>
+      <a href={`/cases/${c.case_slug}/`}>Case File ({c.headword})</a>
+      <span> · </span>
+      <a href={`/ledgers/${c.case_slug}.json`} target="_blank" rel="noopener noreferrer">Raw JSON Ledger</a>
+    </nav>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.6rem;">
+      <span style="font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; color: var(--accent);">{c.id}</span>
+      <span class={`badge badge-type-${c.record_type}`}>{RECORD_TYPE_LABELS[c.record_type]}</span>
+      {c.record_subtype && <span class="badge">{c.record_subtype.replace(/_/g, ' ')}</span>}
+      <span class={`badge badge-ver-${c.verification_level}`}>{VERIFICATION_LABELS[c.verification_level]}</span>
+    </div>
+
+    <h1 style="font-family: var(--font-serif); font-size: clamp(1.65rem, 3vw, 2.2rem); margin: 0.25rem 0 0.5rem;">
+      “{c.attested_form}” — {c.date_display}
+    </h1>
+    <p style="font-size: 1.05rem; color: var(--ink-muted); margin: 0 0 1.35rem;">{c.short_gloss}</p>
+
+    <section style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface); margin-bottom: 1.6rem;">
+      <h2 style="font-size: 0.95rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.75rem;">
+        Bibliographic &amp; Verification Record
+      </h2>
+      <dl style="display: grid; grid-template-columns: minmax(150px, 190px) 1fr; gap: 0.45rem 1rem; margin: 0; font-size: 0.92rem;">
+        <dt style="color: var(--ink-muted);">Headword</dt>
+        <dd style="margin: 0;"><a href={`/cases/${c.case_slug}/`}><strong>{c.headword}</strong></a></dd>
+
+        <dt style="color: var(--ink-muted);">Source Publication</dt>
+        <dd style="margin: 0;">{c.source_publication}</dd>
+
+        {c.page_and_column && (
+          <>
+            <dt style="color: var(--ink-muted);">Page / Column / Leaf</dt>
+            <dd style="margin: 0;">{c.page_and_column}</dd>
+          </>
+        )}
+
+        <dt style="color: var(--ink-muted);">Archive Source</dt>
+        <dd style="margin: 0;">
+          <a href={c.source_url} target="_blank" rel="noopener noreferrer">{c.source_archive} — Open Original Page ↗</a>
+        </dd>
+
+        <dt style="color: var(--ink-muted);">Masthead vs. Catalog Year</dt>
+        <dd style="margin: 0;">
+          {c.masthead_date_verified ? 'Printed masthead/edition date inspected' : 'Pending masthead check'}
+          {c.catalog_year && c.masthead_year && c.catalog_year !== c.masthead_year && (
+            <strong style="color: #842029;"> (Catalog stamped {c.catalog_year}; actual printed date is {c.masthead_year})</strong>
+          )}
+        </dd>
+
+        <dt style="color: var(--ink-muted);">Verification Level</dt>
+        <dd style="margin: 0;">
+          <strong>{VERIFICATION_LABELS[c.verification_level]}</strong>
+          {c.verified_by_agent && <span> · AI scan check: {c.verified_by_agent}</span>}
+          {c.human_verified_by ? (
+            <span> · Human sign-off: <strong>{c.human_verified_by}</strong> ({c.human_verified_date})</span>
+          ) : (
+            <span> · Human sign-off: <em>Not yet independently human-verified</em> (<a href={verifyIssueUrl} target="_blank" rel="noopener noreferrer">submit sign-off</a>)</span>
+          )}
+        </dd>
+
+        {c.external_recognition && (
+          <>
+            <dt style="color: var(--ink-muted);">External Recognition</dt>
+            <dd style="margin: 0;">{c.external_recognition}</dd>
+          </>
+        )}
+      </dl>
+    </section>
+
+    <h2>Diplomatic Transcription</h2>
+    <blockquote>{c.verbatim_quote}</blockquote>
+
+    {c.linguistic_note && (
+      <>
+        <h2>Classification &amp; Linguistic Context</h2>
+        <p>{c.linguistic_note}</p>
+      </>
+    )}
+
+    {c.analysis_notes && (
+      <>
+        <h2>Archival Inspection Notes</h2>
+        <p>{c.analysis_notes}</p>
+      </>
+    )}
+
+    <h2 id="scan">Primary-Source Scan</h2>
+    {c.scan.hosted_path ? (
+      <figure style="margin: 1rem 0; border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem; background: var(--surface);">
+        <a href={c.scan.hosted_path} target="_blank" rel="noopener noreferrer">
+          <img
+            src={c.scan.hosted_path}
+            alt={`Primary-source scan for ${c.id} (${c.attested_form}, ${c.date_display})`}
+            style="width: 100%; height: auto; border-radius: 4px; display: block;"
+            loading="lazy"
+          />
+        </a>
+        <figcaption style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 0.6rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+          <span>{c.scan.rights_note}</span>
+          <span>
+            <a href={c.scan.hosted_path} target="_blank" rel="noopener noreferrer">Open full-resolution image ↗</a> ·{' '}
+            <a href={c.source_url} target="_blank" rel="noopener noreferrer">Verify at host archive ↗</a>
+          </span>
+        </figcaption>
+      </figure>
+    ) : (
+      <div class="pub-notice">
+        <strong>External Archive Image ({c.scan.rights_status.replace(/_/g, ' ')}):</strong> {c.scan.rights_note}{' '}
+        <a href={c.source_url} target="_blank" rel="noopener noreferrer"><strong>Inspect scan directly at {c.source_archive} ↗</strong></a>
+      </div>
+    )}
+  </article>
+</BaseLayout>

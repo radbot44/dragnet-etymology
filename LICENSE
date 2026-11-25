@@ -1,34 +1,21 @@
-Dual License Notice — DRAgNEt (Deep Research Agent Network for Etymology)
-=========================================================================
+Licensing & Archival Image Rights Notice — DRAgNEt
+==================================================
 
-1. Research Content, Case Files, Proof-Plate Compilations & JSON Ledgers
-   (`src/content/**`, `public/ledgers/**`, `public/proof-plates/**`):
-   Copyright (c) 2026 Joshua Callahan and individual named DRAgNEt contributors.
-   Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
-   Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
-   (Underlying nineteenth- and early twentieth-century newspaper and book scans remain
-   in the public domain or are reproduced as brief archival proof crops for scholarly
-   criticism and lexicographical verification.)
+1. Original Research Prose, Transcriptions & Structured Metadata
+   (`src/content/**`, `public/ledgers/**`, `public/data/**`, `research-system/*.md`):
+   Copyright (c) 2026 Joshua Callahan and individual named contributors.
+   Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
+   https://creativecommons.org/licenses/by/4.0/legalcode
 
-2. Website Source Code, Astro Components & Python Scripts
-   (`src/components/**`, `src/layouts/**`, `src/pages/**`, `scripts/**`, config files):
+2. Software, Website Components & Research Scripts
+   (`src/components/**`, `src/layouts/**`, `src/lib/**`, `src/pages/**`, `scripts/**`, `research-system/*.py`):
    Copyright (c) 2026 Joshua Callahan.
-   Licensed under the MIT License:
+   Licensed under the MIT License.
 
-   Permission is hereby granted, free of charge, to any person obtaining a copy
-   of this software and associated documentation files (the "Software"), to deal
-   in the Software without restriction, including without limitation the rights
-   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-   copies of the Software, and to permit persons to whom the Software is
-   furnished to do so, subject to the following conditions:
-
-   The above copyright notice and this permission notice shall be included in all
-   copies or substantial portions of the Software.
-
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   SOFTWARE.
+3. Third-Party Historical Page Images (`public/scans/**` & External Links):
+   Separated from the CC BY 4.0 license above. Images hosted in `public/scans/` reproduce pages
+   published in the United States on or before December 31, 1930, which are in the United States
+   public domain (17 U.S.C. § 304; Public Domain Day, January 1, 2026). Readers reusing scans outside
+   the United States should verify local copyright terms or host-archive policies. Works published in
+   1931 or later are NOT redistributed in this repository and are linked directly at their institutional
+   archives.

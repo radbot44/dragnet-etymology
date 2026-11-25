@@ -37,10 +37,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </a>
         <nav class="nav-links" aria-label="Primary">
           <a href="/">Case Files</a>
-          <a href="/submit/">Submit a Scan</a>
-          <a href="/about/">Methodology</a>
+          <a href="/citations/">Citation Index</a>
+          <a href="/open-questions/">Open Questions</a>
+          <a href="/protocols/">Evidence &amp; Methods</a>
+          <a href="/submit/">Submit</a>
           <a href={SITE_GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="/rss.xml">RSS</a>
         </nav>
       </div>
     </header>
@@ -50,11 +51,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <strong>{SITE_ACRONYM}</strong> ({SITE_EXPANDED}) — Open-access historical lexicography,
-        physical-ink proof plates, and machine-validated JSON ledgers. Licensed under{' '}
-        <a href={SITE_LICENSE_URL} target="_blank" rel="noopener noreferrer">{SITE_LICENSE}</a> for
-        unrestricted scholarly reuse, dictionary ingestion, and archival preservation.
+      <div class="container" style="display: flex; flex-direction: column; gap: 0.45rem;">
+        <div>
+          <strong>{SITE_ACRONYM}</strong> ({SITE_EXPANDED}) — Investigating the unknown origins of English words through
+          AI-assisted archival research, primary-source scans, and open historical lexicography.
+        </div>
+        <div style="font-size: 0.82rem; color: var(--ink-muted);">
+          Original research prose and citation metadata licensed under{' '}
+          <a href={SITE_LICENSE_URL} target="_blank" rel="noopener noreferrer">{SITE_LICENSE}</a>; site code under MIT.
+          Hosted archival page images are pre-1931 U.S. public-domain works; post-1930 sources are linked externally (
+          <a href="/protocols/#rights">Image Rights &amp; Publication Policy</a> ·{' '}
+          <a href="/protocols/#corrections">Corrections Log</a> · <a href="/rss.xml">Full-Text RSS</a>).
+        </div>
       </div>
     </footer>
   </body>

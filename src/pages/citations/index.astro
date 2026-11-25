@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE_ACRONYM } from '../../consts';
+import {
+  getAllCitations,
+  computeLedgerStats,
+  VERIFICATION_LABELS,
+  RECORD_TYPE_LABELS,
+} from '../../lib/ledgers';
+
+const citations = getAllCitations();
+const stats = computeLedgerStats(citations);
+const headwords = Array.from(new Set(citations.map((c) => c.headword)));
+---
+
+<BaseLayout
+  title={`Historical Citation Index (${stats.totalEvaluated} Records) | ${SITE_ACRONYM}`}
+  description="Searchable database of historical attestations, primary-source scans, contextual controls, linguistic hypotheses, and rejected OCR or misdated leads."
+>
+  <section style="padding: 2.2rem 0 2.8rem;">
+    <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+      Searchable Citation Database
+    </div>
+    <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.2vw, 2.45rem); margin: 0.35rem 0 0.55rem;">
+      Historical Citation Index
+    </h1>
+    <p style="color: var(--ink-muted); max-width: 68ch; margin: 0 0 1.2rem;">
+      Every evaluated citation has its own permanent record URL, verbatim diplomatic transcription, direct link to the host
+      archive, and explicit verification level distinguishing search discovery, AI scan inspection, independent human verification,
+      and external dictionary recognition.
+    </p>
+
+    <div class="filter-bar" role="search" aria-label="Filter citation database">
+      <input
+        id="cit-search"
+        class="filter-input"
+        type="search"
+        placeholder="Search word, spelling, quote, publication, city, or ID (e.g., shillaber, 1883, Comealong, Evans)..."
+      />
+      <select id="cit-headword" class="filter-select" aria-label="Filter by headword">
+        <option value="">All headwords ({citations.length})</option>
+        {headwords.map((hw) => (
+          <option value={hw}>{hw}</option>
+        ))}
+      </select>
+      <select id="cit-type" class="filter-select" aria-label="Filter by classification">
+        <option value="">All record types</option>
+        <option value="attestation">Attestations ({stats.attestations})</option>
+        <option value="hypothesis">Hypotheses ({stats.hypotheses})</option>
+        <option value="contextual_evidence">Contextual controls ({stats.contextualControls})</option>
+        <option value="rejected_lead">Rejected leads ({stats.rejectedLeads})</option>
+      </select>
+      <select id="cit-ver" class="filter-select" aria-label="Filter by verification level">
+        <option value="">All verification levels</option>
+        <option value="externally_recognized">Externally recognized ({stats.externallyRecognized})</option>
+        <option value="human_verified">Human-verified ({stats.humanVerified})</option>
+        <option value="agent_verified">Agent-verified ({stats.agentVerified})</option>
+        <option value="discovered">Discovered ({stats.discovered})</option>
+      </select>
+      <label style="font-size: 0.86rem; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+        <input id="cit-scan-only" type="checkbox" /> Hosted scan only ({stats.hostedScans})
+      </label>
+    </div>
+
+    <div id="cit-count" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 0.65rem;">
+      Showing {citations.length} of {citations.length} evaluated records
+    </div>
+
+    <div class="citation-table-wrap">
+      <table class="citation-table" id="cit-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Form</th>
+            <th>Publication</th>
+            <th>Summary &amp; Quote Preview</th>
+            <th>Type</th>
+            <th>Verification</th>
+            <th>Scan</th>
+          </tr>
+        </thead>
+        <tbody>
+          {citations.map((c) => (
+            <tr
+              class="cit-row"
+              data-headword={c.headword}
+              data-type={c.record_type}
+              data-ver={c.verification_level}
+              data-scan={c.scan.hosted_path ? 'yes' : 'no'}
+              data-haystack={`${c.id} ${c.headword} ${c.attested_form} ${c.date_display} ${c.source_publication} ${c.short_gloss} ${c.verbatim_quote}`.toLowerCase()}
+            >
+              <td style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;">
+                <div>{c.date_display}</div>
+                <div style="font-size: 0.7rem; color: var(--ink-muted);">{c.id}</div>
+              </td>
+              <td>
+                <a href={`/citations/${c.slug}/`} style="font-weight: 700;">{c.attested_form}</a>
+                <div style="font-size: 0.76rem; color: var(--ink-muted);">{c.headword}</div>
+              </td>
+              <td style="max-width: 240px;">
+                <div style="font-size: 0.86rem;">{c.source_publication.split('(')[0].trim()}</div>
+                {c.page_and_column && (
+                  <div style="font-size: 0.75rem; color: var(--ink-muted);">{c.page_and_column.slice(0, 56)}</div>
+                )}
+              </td>
+              <td style="max-width: 340px;">
+                <div style="font-weight: 600; font-size: 0.88rem; margin-bottom: 0.2rem;">{c.short_gloss}</div>
+                <div style="font-size: 0.8rem; color: var(--ink-muted);">
+                  {c.verbatim_quote.slice(0, 135)}{c.verbatim_quote.length > 135 ? '…' : ''}
+                </div>
+              </td>
+              <td>
+                <span class={`badge badge-type-${c.record_type}`}>
+                  {RECORD_TYPE_LABELS[c.record_type]}
+                </span>
+              </td>
+              <td>
+                <span class={`badge badge-ver-${c.verification_level}`}>
+                  {VERIFICATION_LABELS[c.verification_level]}
+                </span>
+              </td>
+              <td style="white-space: nowrap; font-size: 0.82rem;">
+                {c.scan.hosted_path ? (
+                  <a href={`/citations/${c.slug}/#scan`}>View scan</a>
+                ) : (
+                  <a href={c.source_url} target="_blank" rel="noopener noreferrer">Archive ↗</a>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const qInput = document.getElementById('cit-search');
+      const hwSel = document.getElementById('cit-headword');
+      const typeSel = document.getElementById('cit-type');
+      const verSel = document.getElementById('cit-ver');
+      const scanChk = document.getElementById('cit-scan-only');
+      const countEl = document.getElementById('cit-count');
+      const rows = Array.from(document.querySelectorAll('.cit-row'));
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('q')) qInput.value = params.get('q');
+      if (params.get('headword')) hwSel.value = params.get('headword');
+      if (params.get('type')) typeSel.value = params.get('type');
+      if (params.get('ver')) verSel.value = params.get('ver');
+
+      function applyFilters() {
+        const q = qInput.value.trim().toLowerCase();
+        const hw = hwSel.value;
+        const tp = typeSel.value;
+        const vr = verSel.value;
+        const scanOnly = scanChk.checked;
+        let shown = 0;
+        for (const r of rows) {
+          const ok =
+            (!q || r.dataset.haystack.includes(q)) &&
+            (!hw || r.dataset.headword === hw) &&
+            (!tp || r.dataset.type === tp) &&
+            (!vr || r.dataset.ver === vr) &&
+            (!scanOnly || r.dataset.scan === 'yes');
+          r.style.display = ok ? '' : 'none';
+          if (ok) shown++;
+        }
+        countEl.textContent = `Showing ${shown} of ${rows.length} evaluated records`;
+      }
+
+      [qInput, hwSel, typeSel, verSel, scanChk].forEach((el) => {
+        el.addEventListener('input', applyFilters);
+        el.addEventListener('change', applyFilters);
+      });
+      applyFilters();
+    })();
+  </script>
+</BaseLayout>

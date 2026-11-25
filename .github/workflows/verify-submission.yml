@@ -1,4 +1,4 @@
-name: Verify DRAgNEt Submission & Astro Build
+name: Verify DRAgNEt Ledger Schema, Cross-Refs & Astro Build
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   validate-and-build:
-    name: Trap A-D Asset Lint & Static Build
+    name: Schema, Cross-Ref, Sanitization & Reproducible Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -22,19 +22,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install Python YAML validator dependency
+      - name: Install validator YAML parser
         run: pip install pyyaml
 
-      - name: Validate Case File frontmatter, proof plates, and JSON ledgers
+      - name: Run OCR & phonetic research harness self-tests
+        run: python3 research-system/ocr_phonetic_harness.py --self-test
+
+      - name: Validate JSON ledgers, cross-references, image rights & workspace sanitization
         run: python3 scripts/validate_submission.py
 
       - name: Set up Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'npm'
 
-      - name: Install Node dependencies
-        run: npm install
+      - name: Reproducible dependency install (npm ci)
+        run: npm ci
 
-      - name: Build Astro static site (Zod schema + BibTeX + RSS + Sitemap)
+      - name: Build Astro static site & 119 citation pages
         run: npx astro build

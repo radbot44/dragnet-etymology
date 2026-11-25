@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_ACRONYM, SITE_GITHUB_URL } from '../consts';
+import { getOpenQuestionsData } from '../lib/ledgers';
+
+const data = getOpenQuestionsData();
+const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort();
+---
+
+<BaseLayout
+  title={`Open Etymological Questions (${data.total_targets} Words) | ${SITE_ACRONYM}`}
+  description="Public list of unsolved or under-antedated English word origins tracked by DRAgNEt, plus open archival gaps on published Case Files."
+>
+  <section style="padding: 2.2rem 0 2.8rem;">
+    <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+      Active Research Queue
+    </div>
+    <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.2vw, 2.45rem); margin: 0.35rem 0 0.55rem;">
+      Open Etymological Questions
+    </h1>
+    <p style="color: var(--ink-muted); max-width: 68ch; margin: 0 0 1.4rem;">
+      Historical lexicography advances fastest when open gaps are stated plainly. Below are the specific archival gaps still
+      open on our published investigations, followed by the full searchable queue of {data.total_targets} English words and
+      expressions of unknown or disputed origin.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+      <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface);">
+        <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent); font-weight: 700;">OPEN GAP · SHILL / SHILLABER</div>
+        <h2 style="font-size: 1.1rem; margin: 0.35rem 0 0.45rem;">The 1884–1907 Print Gap &amp; Bilingual Auction Evidence</h2>
+        <p style="font-size: 0.9rem; color: var(--ink-muted); margin: 0;">
+          We have verified 1883 Chicago mock-auction attestations of <em>shillaber</em> and 1908–1910 carnival/midway attestations,
+          but no verified newspaper or court tokens yet between July 1883 and January 1908—nor direct metalinguistic testimony
+          catching bilingual Chicago auctioneers switching between Rotwelsch <em>Schlepper</em> and English <em>shillaber</em>.
+        </p>
+      </div>
+      <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface);">
+        <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent); font-weight: 700;">OPEN GAP · GIMMICK</div>
+        <h2 style="font-size: 1.1rem; margin: 0.35rem 0 0.45rem;">Pre-1893 Shop-Floor Citations of Mechanical <em>Gimmer / Gimmal</em></h2>
+        <p style="font-size: 0.9rem; color: var(--ink-muted); margin: 0;">
+          American dictionaries (1828–1898) prescribed hard <code>/ɡ/</code> on mechanical <em>gimmal</em> and <em>gimmer</em>, and
+          Boston line crews used unquoted <em>Gimmick</em> for a come-along clamp in 1897, but pre-1893 shop-floor letters, diaries,
+          or trade notes catching the morphological step to <em>-ick</em> in situ remain unrecovered.
+        </p>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <input id="oq-search" class="filter-input" type="search" placeholder="Search 160 target headwords, baseline dates, or hypotheses (e.g., hoodlum, moolah, yegg, shebang)..." />
+      <select id="oq-cat" class="filter-select" aria-label="Filter by category">
+        <option value="">All categories ({data.targets.length})</option>
+        {categories.map((cat) => (
+          <option value={cat}>{cat.replace(/_/g, ' ')}</option>
+        ))}
+      </select>
+    </div>
+
+    <div id="oq-count" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 0.65rem;">
+      Showing {data.targets.length} of {data.targets.length} target headwords
+    </div>
+
+    <div class="citation-table-wrap">
+      <table class="citation-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Headword</th>
+            <th>Baseline</th>
+            <th>Current Baseline &amp; Open Question</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.targets.map((t) => (
+            <tr
+              class="oq-row"
+              data-cat={t.category}
+              data-haystack={`${t.target_id} ${t.headword} ${t.category} ${t.baseline_year} ${t.baseline_summary} ${t.open_question}`.toLowerCase()}
+            >
+              <td style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;">{t.target_id}</td>
+              <td><strong>{t.headword}</strong></td>
+              <td style="font-family: var(--font-mono); font-size: 0.84rem; white-space: nowrap;">{t.baseline_year}</td>
+              <td style="font-size: 0.85rem;">
+                <div>{t.baseline_summary}</div>
+                {t.open_question && <div style="color: var(--ink-muted); margin-top: 0.2rem;">Lead to test: {t.open_question}</div>}
+              </td>
+              <td style="white-space: nowrap; font-size: 0.82rem;">
+                {t.case_slug ? (
+                  <a href={`/cases/${t.case_slug}/`}><span class="badge badge-type-attestation">Published Case →</span></a>
+                ) : (
+                  <a
+                    href={`${SITE_GITHUB_URL}/issues/new?template=01_antedating_or_citation.yml&title=${encodeURIComponent(`[Citation] ${t.headword} ()`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Submit scan ↗
+                  </a>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const q = document.getElementById('oq-search');
+      const cat = document.getElementById('oq-cat');
+      const count = document.getElementById('oq-count');
+      const rows = Array.from(document.querySelectorAll('.oq-row'));
+      function filter() {
+        const s = q.value.trim().toLowerCase();
+        const c = cat.value;
+        let n = 0;
+        for (const r of rows) {
+          const ok = (!s || r.dataset.haystack.includes(s)) && (!c || r.dataset.cat === c);
+          r.style.display = ok ? '' : 'none';
+          if (ok) n++;
+        }
+        count.textContent = `Showing ${n} of ${rows.length} target headwords`;
+      }
+      q.addEventListener('input', filter);
+      cat.addEventListener('change', filter);
+    })();
+  </script>
+</BaseLayout>

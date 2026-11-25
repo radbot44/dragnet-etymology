@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '../consts';
+---
+
+<BaseLayout
+  title={`Evidence Standards, Verification & Research Protocols | ${SITE_ACRONYM}`}
+  description="How DRAgNEt separates finding types from four verification levels, publishes reproducible search scripts, manages archival image rights, and logs corrections."
+>
+  <article class="prose-container" style="padding: 2.4rem 0 3rem;">
+    <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+      Methodology &amp; Governance
+    </div>
+    <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.2vw, 2.45rem); margin: 0.35rem 0 0.85rem;">
+      Evidence Standards, Verification &amp; Protocols
+    </h1>
+    <p style="font-size: 1.06rem; color: var(--ink-muted);">
+      Readers have good reason to be skeptical of AI-assisted historical research: automated searches routinely mistake broken
+      newsprint type for early words, trust misdated bound-volume catalog records, or overstate speculative etymologies.
+      <strong> {SITE_ACRONYM}</strong> ({SITE_EXPANDED}) is built on a simple principle: rather than asking anyone to trust an
+      agent, publish the primary scan, the exact page link, the diplomatic transcription, and the explicit verification status so
+      trusting the agent is unnecessary.
+    </p>
+
+    <h2>1. Separating What a Record Is from Who Verified It</h2>
+    <p>
+      Every record in our JSON ledgers (<a href="/ledgers/shill-shillaber.json"><code>shill-shillaber.json</code></a>,{' '}
+      <a href="/ledgers/gimmick.json"><code>gimmick.json</code></a>) carries two independent classifications:
+    </p>
+    <ul>
+      <li>
+        <strong>Record Type (<code>record_type</code>):</strong>
+        <ul>
+          <li><code>attestation</code> — A dated primary-source occurrence of the headword or variant in historical print.</li>
+          <li><code>contextual_evidence</code> — A comparative catalog, patent, prosopographical record, or negative-corpus control.</li>
+          <li><code>hypothesis</code> — A linguistic donor, pronunciation, or morphological comparison (marked either <em>supporting</em> or <em>weakened/unlikely</em>—scholarly proposals weakened by new evidence are never labeled "myths").</li>
+          <li><code>rejected_lead</code> — A demonstrable false lead: an optical character recognition (OCR) misread, a misdated bound serial, an unrelated proper surname, or an uncorroborated folk-etymological claim.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Verification Level (<code>verification_level</code>):</strong>
+        <ul>
+          <li><strong>Discovered (<code>discovered</code>):</strong> Candidate citation surfaced via archival search or secondary literature; original page scan not yet inspected.</li>
+          <li><strong>Agent-verified (<code>agent_verified</code>):</strong> An AI research agent inspected the page image, checked the printed issue masthead or edition date against catalog metadata, and transcribed the passage. Records stay at <code>agent_verified</code> until a named human independently inspects them.</li>
+          <li><strong>Human-verified (<code>human_verified</code>):</strong> A named human reviewer (recorded in <code>human_verified_by</code> and <code>human_verified_date</code>) independently inspected the original scan and confirmed the date, transcription, and sense.</li>
+          <li><strong>Externally recognized (<code>externally_recognized</code>):</strong> Citation or finding already recorded in or subsequently accepted by a historical dictionary (<em>OED</em>, <em>Green's Dictionary of Slang</em>, <em>HDAS</em>), peer-reviewed journal, or independent specialist.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>2. What Our Automated Validation Script Actually Checks (and What It Cannot Check)</h2>
+    <p>
+      On every GitHub Pull Request, <a href={`${SITE_GITHUB_URL}/blob/main/scripts/validate_submission.py`} target="_blank" rel="noopener noreferrer"><code>scripts/validate_submission.py</code></a> runs in CI before Astro builds the site. To avoid overstating automated checks:
+    </p>
+    <ul>
+      <li><strong>Verified by software:</strong> JSON ledger schema validity; bidirectional cross-referencing of every citation ID between Markdown articles and JSON ledgers; presence and size limits of hosted scans; HTTPS archive URLs; exclusion of raw 4-decimal string-similarity scores or decimal-year antedatings in prose; blocking <code>human_verified</code> status unless a named verifier and date are present; blocking local hosting of post-1930 scans; and stripping internal workspace or Google Drive identifiers.</li>
+      <li><strong>Requires human philological review:</strong> Diplomatic accuracy of transcriptions against worn ink, semantic interpretation in context, completeness of prior-scholarship credit, and soundness of linguistic arguments.</li>
+    </ul>
+
+    <h2>3. Reproducible Research System &amp; Corpus Manifests</h2>
+    <p>
+      The repository includes the underlying research protocols and search utilities in{' '}
+      <a href={`${SITE_GITHUB_URL}/tree/main/research-system`} target="_blank" rel="noopener noreferrer"><code>research-system/</code></a>:
+    </p>
+    <ul>
+      <li><code>research-system/01_research_and_verification_protocol.md</code> — Archival search protocol, printed-masthead dating checks, OCR-error screening, and editorial calibration rules.</li>
+      <li><code>research-system/ocr_phonetic_harness.py</code> — Zero-dependency Python 3 utility for generating 18th/19th-century broken-type OCR search variants, consonant-skeleton triage scores, and Chronicling America / Internet Archive query URLs.</li>
+      <li><code>public/ledgers/*.json</code> — Embeds the exact corpus search summaries and multi-edition dictionary tables used in each investigation.</li>
+    </ul>
+
+    <h2 id="publication-policy">4. Academic Journal Prior-Dissemination Policy</h2>
+    <p>
+      Because lexicographical findings may also be submitted to peer-reviewed journals (such as <em>American Speech</em>,{' '}
+      <em>Notes and Queries</em>, or <em>Comments on Etymology</em>), every investigation tracks an explicit{' '}
+      <code>publicationStatus</code> (<code>working_paper</code>, <code>manuscript_in_preparation</code>, <code>under_review</code>,{' '}
+      <code>published_article</code>, or <code>dictionary_submitted</code>). While publishers such as Oxford University Press permit
+      posting an unrefereed Author's Original Version (preprint) prior to submission, other journals restrict overlapping prose
+      dissemination. Check the target journal's current preprint and self-archiving rules before publishing overlapping manuscript
+      text on {SITE_ACRONYM}, and update the Case File with the Version of Record DOI upon publication.
+    </p>
+
+    <h2 id="rights">5. Licensing &amp; Third-Party Archival Image Rights</h2>
+    <ul>
+      <li><strong>Original Research Prose &amp; Structured Metadata:</strong> Licensed under <a href={SITE_LICENSE_URL} target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>.</li>
+      <li><strong>Website Source Code &amp; Scripts:</strong> Licensed under the MIT License.</li>
+      <li><strong>Archival Page Scans:</strong> Separated strictly from our CC BY 4.0 license. Only works published in the United States on or before <strong>December 31, 1930</strong> (in the U.S. public domain as of January 1, 2026) are hosted directly in <code>public/scans/</code>. Works published in <strong>1931 or later</strong> (such as Walter A. Schwartz's 1931 <em>CIGAM</em> and 1933 <em>GIMAC</em> booklets held at State Library Victoria) are never redistributed in the repository and are linked directly at their host archive viewer.</li>
+    </ul>
+
+    <h2 id="corrections">6. Versioned Corrections &amp; Retractions Log</h2>
+    <p>
+      Substantive factual corrections, count reconciliations, and reclassified citations are logged permanently in{' '}
+      <a href={`${SITE_GITHUB_URL}/blob/main/CHANGELOG_CORRECTIONS.md`} target="_blank" rel="noopener noreferrer"><code>CHANGELOG_CORRECTIONS.md</code></a>:
+    </p>
+    <ul>
+      <li><strong>2026-11-25 (v3.0 Audit — <code>gimmick</code> 1893 Baseline Paraphrase Fix):</strong> Corrected three unverified paraphrase glosses in the preliminary <code>prior_art_calibration</code> metadata of Case 1100 (which had erroneously glossed OED3's 24 Feb. 1893 <em>Bangor Daily News</em> quotation as referring to pool rooms and 1906 <em>Connecticut Western News</em> as "hand-shaking gimmick"). Verified directly against <em>OED Online</em> (<code>gimmick, n.</code>) that OED3's 24 Feb. 1893 quotation is indeed the Bucksport electric-plant engine item (<em>"caused the flopper to fall down on the mizzen reciprocal eccentricity gimmick"</em>), matching the 11 March 1893 <em>Electrical Review</em> scan (<code>CERT-900-101</code>).</li>
+      <li><strong>2026-11-25 (v3.0 Audit — Single-Source Ledger Counts &amp; Reclassification):</strong> Removed hardcoded frontmatter counts (which had drifted to 20/43 vs. 25/38 in Case 1100) so all counts are computed dynamically at build time from <code>public/ledgers/*.json</code>; separated 27 comparative catalog, prosopographical, and negative-corpus controls (<code>contextual_evidence</code>) and 11 weakened donor comparisons (<code>hypothesis</code>) from genuine OCR/misdate <code>rejected_lead</code> records.</li>
+      <li><strong>2026-11-25 (v3.0 Audit — Post-1930 Image Removal &amp; Workspace Sanitization):</strong> Removed locally bundled 1931/1933 booklet images from repository storage in favor of direct State Library Victoria viewer links, hosted all 66 pre-1931 U.S. public-domain scans, and stripped internal Google Drive identifiers from all public JSON files.</li>
+    </ul>
+  </article>
+</BaseLayout>

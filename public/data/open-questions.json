@@ -1,0 +1,1608 @@
+{
+  "schema_version": "3.0",
+  "updated_at": "2026-11-25",
+  "total_targets": 160,
+  "description": "English words and phrases of unknown, disputed, or insufficiently antedated origin tracked by DRAgNEt.",
+  "targets": [
+    {
+      "target_id": "TGT-001",
+      "headword": "shenanigans",
+      "category": "vernacular_slang",
+      "baseline_year": 1854,
+      "baseline_summary": "The Nevada Journal (Coyoteville, CA), 18 Aug. 1854 ('come the \"shenanigan\"'); also Portage County Democrat (Ravenna, OH), 10 Jan. 1855 — superseding April 1855 San Francisco Town Talk",
+      "open_question": "Irish Gaelic sionnachuighim ('I play the fox / play tricks')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-002",
+      "headword": "skedaddle",
+      "category": "vernacular_slang",
+      "baseline_year": 1859,
+      "baseline_summary": "1859 Northern US newspapers reprinting Missouri/Hoosier story ('You'd oughter seen that gang skedaddle') and Wellsboro (PA) Agitator, 12 Jan. 1860 — superseding August 1861 Civil War popularization",
+      "open_question": "Dumfriesshire / Northern English dialect skedaddle ('to spill milk/scatter')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-003",
+      "headword": "bamboozle",
+      "category": "underworld_and_cant",
+      "baseline_year": 1702,
+      "baseline_summary": "Colley Cibber 'She Wou'd and She Wou'd Not' Act IV sc. i ('I'll have a Touch of the Bamboozle with him'), premiered Drury Lane 26 Nov. 1702 (printed 1703); Swift Tatler (1710) flags it as recent cant",
+      "open_question": "17th-century London thieves' cant (possibly linked to bam 'to hoax')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-004",
+      "headword": "bogus",
+      "category": "technical_and_criminal",
+      "baseline_year": 1798,
+      "baseline_summary": "Counterfeiters' cant glossary in 'Band of Brothers' (1798, cited in Lighter HDAS): 'Coney means Counterfeit paper money ... Bogus means spurious coin' — 29 years earlier than May/July 1827 Painesville (Ohio) Telegraph counterfeiting-press report",
+      "open_question": "Tantrabobus / tantrabogus (18th-c. New England/Devonshire dialectal name for a bogey/strange contraption)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-005",
+      "headword": "gadget",
+      "category": "maritime_and_technical",
+      "baseline_year": 1868,
+      "baseline_summary": "10th Report of the Commissioners on Organization & Rules of Trades Unions (1868, OED rev. June 2018), denoting a glassmaking spring-pontil tool — 18 years prior to Robert Brown's 1886 'Spunyarn and Spindrift' maritime placeholder sense",
+      "open_question": "French gâchette ('lock mechanism, catch, trigger') via Channel/Mediterranean sailors",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-006",
+      "headword": "hornswoggle",
+      "category": "vernacular_slang",
+      "baseline_year": 1829,
+      "baseline_summary": "Virginia Literary Museum (1829, OED earliest citation); followed by W. A. Caruthers 'The Kentuckian in New-York' II.106 (1834, 'I'm hornswoggled')",
+      "open_question": "Fanciful frontier blend of horn + swoggle/swiggle (regional British dialectal verbs for shaking/cheating)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-007",
+      "headword": "cockamamie",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1931,
+      "baseline_summary": "Arthur Kober 'Mrs. Gittleson', The New Yorker (24 Oct. 1931, p. 73) 'cockamanies' (lick-and-stick decalcomania wrist transfers); Sidney Kingsley 'Dead End' Act III (1935) 'cockamamee' ('eccentric/frivolous person'); 'Woman of the Year' (1942, adj.)",
+      "open_question": "Phonetic alteration of decalcomania ('paper transfer tattoo') in NYC street/Yiddish-inflected English",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-008",
+      "headword": "persnickety",
+      "category": "dialect_shift",
+      "baseline_year": 1885,
+      "baseline_summary": "Canton (Ohio) Repository (1885, OED earliest evidence for US rhotic 'persnickety', tightening 1889 by 4 years); derived from Scots 'pernickety / pernicktie' (Jamieson 1808), whose root remains of uncertain origin",
+      "open_question": "Scots expressive formation on nick / nicket ('precise notch/detail') with intensive prefix per-",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-009",
+      "headword": "bloke",
+      "category": "underworld_and_cant",
+      "baseline_year": 1829,
+      "baseline_summary": "Proceedings of the Old Bailey V (1829, OED & Green's: 'The bloke come, i spelld away [...] The bloke bufts to me'), 22 years prior to Etymonline's 1851 date; cf. Vaux (1812) cant 'gloak'",
+      "open_question": "Shelta / Irish Traveler cant loke ('man')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-010",
+      "headword": "yokel",
+      "category": "underworld_and_cant",
+      "baseline_year": 1812,
+      "baseline_summary": "James Hardy Vaux 'Vocabulary of the Flash Language' (compiled Newcastle, NSW 1812; published London 1819, OED 1819); retained at 1812 composition cutoff",
+      "open_question": "German Jokel / Jockel (diminutive of Jakob used for a country bumpkin) via Rotwelsch/Yiddish cant",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-011",
+      "headword": "jalopy",
+      "category": "vernacular_slang",
+      "baseline_year": 1924,
+      "baseline_summary": "1924 US newspaper cartoons and columns ('jaloppy', 'jaloupy', 'gillopy'), 5 years ahead of OED/Green's 1929 Hostetter & Beesley 'It's a Racket!' ('Jaloppi')",
+      "open_question": "Scrap-auto export trade to Jalapa (Xalapa), Mexico via New Orleans",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-012",
+      "headword": "copacetic",
+      "category": "vernacular_slang",
+      "baseline_year": 1919,
+      "baseline_summary": "Irving Bacheller 'A Man for the Ages' (Indianapolis: Bobbs-Merrill, 1919, pp. 69, 287, 401); followed by Tom Delaney & Sidney Easton song 'At the New Jump Steady Ball' (1920) and Chicago Daily Tribune (21 Aug. 1920)",
+      "open_question": "Louisiana Creole French coupé-sétique",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-013",
+      "headword": "scalawag",
+      "category": "vernacular_slang",
+      "baseline_year": 1832,
+      "baseline_summary": "Ithaca (NY) Chronicle, 11 Apr. 1832 ('scalliwag ticket', discovered by Nathaniel Sharpe / ADS 2013); Burlington (VT) Sentinel, 5 Apr. 1838 ('scalliwags'); Daily Buffalonian (NY), 14 May 1838 ('scalawags') — 16 years prior to Bartlett 1848",
+      "open_question": "Scalloway (Shetland Islands) stunted cattle/ponies via Scottish livestock trade",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-014",
+      "headword": "malarkey",
+      "category": "vernacular_slang",
+      "baseline_year": 1922,
+      "baseline_summary": "T. A. 'Tad' Dorgan 'Indoor Sports' cartoon, San Francisco Call and Post, 9 Mar. 1922 (p. 23, 'Malachy'); Davis J. Walsh, Defiance (OH) Crescent-News, 8 Sept. 1923 (OED); cf. 1894 Sydney Truth 'Captain Mullurky' onomastic precursor",
+      "open_question": "Irish surname Mullarkey used eponymously in Bay Area slang",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-015",
+      "headword": "phoney",
+      "category": "underworld_and_cant",
+      "baseline_year": 1890,
+      "baseline_summary": "Detroit Plaindealer, 4 Apr. 1890 (p. 2, 'quite a \"phoney\" joke' telephone/sham pun) and unambiguous sham sense in Washington (DC) Evening Star, 7 May 1892 (p. 12, 'a little on the phony order') — prior to 1893 OED racing-bookmaker citation; British cant precursor 'fawney' attested 1781 (George Parker)",
+      "open_question": "18th-c. Anglo-Irish thieves' cant fawney ('gilt brass ring dropped in the fawney-rig confidence trick', from Irish fáinne 'ring')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-016",
+      "headword": "flummox",
+      "category": "dialect_shift",
+      "baseline_year": 1832,
+      "baseline_summary": "1832 British criminal trial testimony ('beat/pummel so as to bewilder', Etymonline); 1833 'Poll Tomkinson' in The Convivialist ('flummux'd', Green's); 1834 Delicious Chanter; 20 Mar. 1835 The Australian — 5 years prior to Dickens's 1837 Pickwick Papers",
+      "open_question": "Herefordshire/Gloucestershire dialectal flummocks ('to maul, mangle, untidy')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-017",
+      "headword": "hootenanny",
+      "category": "dialect_shift",
+      "baseline_year": 1906,
+      "baseline_summary": "Richard T. Wiley 'Sim Greene: A Narrative of the Whisky Insurrection' (1906, OED: 'That hootenanny that she shovels her bread with'), predating 1918 WWI 'hootnanny' (body louse) and 1940-1941 Seattle folk-party sense",
+      "open_question": "Scottish/Cumbrian dialectal hootenanny / hoot-toot",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-018",
+      "headword": "lollapalooza",
+      "category": "vernacular_slang",
+      "baseline_year": 1896,
+      "baseline_summary": "George Ade 'Artie: A Story of the Streets and Town' (Chicago, 1896, pp. 76-77: 'Lollypaloozers!'), ahead of Etymonline (1901) and OED (1904 'Hugh McHugh'); stem precursors 'lalla' (Los Angeles Daily Herald, 13 Aug. 1881) and 'lu-lu' (1886)",
+      "open_question": "Irish/Ulster dialectal lallapalooza / wallapahooza",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-019",
+      "headword": "shindig",
+      "category": "vernacular_slang",
+      "baseline_year": 1843,
+      "baseline_summary": "Claimed 1843 US frontier print cutoff retained (Etymonline dates 'shindig' to 1851 and OED to 1859 J. R. Bartlett, while sailor precursor 'shindy' is attested 1821 in Pierce Egan)",
+      "open_question": "Alteration of sailors' shindy ('rowdy dance or brawl', possibly from Scots shinty or Irish sinteag 'skip, caper') + dig ('kick in the shins')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-020",
+      "headword": "highfalutin",
+      "category": "vernacular_slang",
+      "baseline_year": 1839,
+      "baseline_summary": "Spirit of the Times (New York, 1839, OED & Etymonline earliest evidence: 'high-faluting'); noun use by 1848",
+      "open_question": "High-fluting (playing high ornamental notes on a flute)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-021",
+      "headword": "absquatulate",
+      "category": "vernacular_slang",
+      "baseline_year": 1829,
+      "baseline_summary": "Camden (South Carolina) Journal (1829, OED s.v. 'absquatulize') and Georgia Messenger (1830, OED s.v. 'absquatulate') — falsifying attribution to William Bayle Bernard's 1833 London play 'The Kentuckian'",
+      "open_question": "Mock-Latinate coinage ab- + squat + -ulate by dramatist or frontier journalists prior to 1830",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-022",
+      "headword": "the whole nine yards",
+      "category": "technical_idiom",
+      "baseline_year": 1907,
+      "baseline_summary": "Mitchell Commercial (Indiana), 2 May 1907 ('the full nine yards') and 4 June 1908 ('give him the whole nine yards', Bonnie Taylor-Blake / ADS); cf. 4 Dec. 1850 Louisiana (MO) Democratic Banner figurative 'nine yards'",
+      "open_question": "Standard bolt/dress-pattern cloth yardage in rural dry-goods trade",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-023",
+      "headword": "get down to brass tacks",
+      "category": "technical_idiom",
+      "baseline_year": 1863,
+      "baseline_summary": "Tri-Weekly Telegraph (Houston, TX), 21 Jan. 1863 ('when you come down to \"brass tacks\"'); preceded by shorter idiom 'down to the brass' in Planter's Banner (Franklin, LA), 30 June 1853, and Wisconsin State Journal, 21 Apr. 1854",
+      "open_question": "Dry-goods store counter brass tacks hammered at exact yard/quarter-yard intervals for measuring cloth (vs thumb-rule guessing)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-024",
+      "headword": "cut to the chase",
+      "category": "technical_idiom",
+      "baseline_year": 1929,
+      "baseline_summary": "J. P. McEvoy 'Hollywood Girl' (1929, OED earliest verified print citation: 'Jannings escapes ... Cut to chase'); general figurative sense in Winnipeg Free Press (10 Mar. 1944) and Berkshire Evening Eagle (24 Feb. 1947); 'cut to [scene]' attested 1913 (E. W. Sargent 'Technique of the Photoplay')",
+      "open_question": "Silent-cinema title-card / script instruction ('Cut to chase') transitioning into figurative prose in 1915-1926 film trade journals",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-025",
+      "headword": "out of sorts",
+      "category": "technical_idiom",
+      "baseline_year": 1621,
+      "baseline_summary": "Samuel Ward 'The Life of Faith' vii. 48 (1621, OED earliest figurative health/spirits citation: 'to bee at any time out of tune or out of sorts'), predating Moxon's 1683 printing-type 'sorts' and Benjamin Franklin's 1784 typographical pun",
+      "open_question": "General sense of sort ('lot, condition, stock/supply', French être hors d'assiette)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-026",
+      "headword": "razzmatazz",
+      "category": "vernacular_slang",
+      "baseline_year": 1894,
+      "baseline_summary": "Listed by 1894 in US slang ('swift and adroit deception', DAS/Etymonline); George Ade (1899, adj.); vaudeville (1908)",
+      "open_question": "Infixed reduplication modeled on earlier US slang razzle-dazzle (1886)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-027",
+      "headword": "namby-pamby",
+      "category": "vernacular_slang",
+      "baseline_year": 1725,
+      "baseline_summary": "Henry Carey's 1725 satirical poem 'Namby-Pamby' mocking Ambrose Philips's infant pastorals; adjectival use attested by 1745",
+      "open_question": "Reduplicative baby-talk play on Ambrose ('Namby') Philips's given name by Henry Carey (1725)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-028",
+      "headword": "humdinger",
+      "category": "vernacular_slang",
+      "baseline_year": 1883,
+      "baseline_summary": "American English slang attested 1883 (Etymonline; popularized c. 1905), 'remarkable or superlative person or thing'",
+      "open_question": "Blend of slang hummer ('energetic/exceptional thing') + dinger ('superlative example', early 19c.)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-029",
+      "headword": "doozy",
+      "category": "vernacular_slang",
+      "baseline_year": 1903,
+      "baseline_summary": "Attested 1903 as adjective ('excellent, splendid', Ohio) and 1916 as noun ('extraordinary thing')",
+      "open_question": "Phonetic alteration of 19th-c. slang daisy ('first-rate specimen')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-030",
+      "headword": "dander",
+      "category": "dialect_shift",
+      "baseline_year": 1831,
+      "baseline_summary": "American English slang 'temper, anger, indignation' (1831, 'get one's dander up'), of unknown origin",
+      "open_question": "Figurative extension of dander ('dandruff/scurf rising on skin or hair')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-031",
+      "headword": "gumption",
+      "category": "dialect_shift",
+      "baseline_year": 1719,
+      "baseline_summary": "Originally Scots (1719), 'common sense, shrewdness, practical initiative'",
+      "open_question": "Mock-Latinate '-tion' noun built on Middle English gome / Old Norse gaumr ('heed, attention')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-032",
+      "headword": "poppycock",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1865,
+      "baseline_summary": "American English slang 'trivial talk, nonsense' (1865, Artemus Ward / US press)",
+      "open_question": "Borrowing from Dutch dialectal pappekak ('soft dung', Middle Dutch pappe + kak)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-033",
+      "headword": "ballyhoo",
+      "category": "maritime_and_technical",
+      "baseline_year": 1836,
+      "baseline_summary": "Nautical 'ballahoo/ballahou' (c. 1836-1850, lubberly West Indian schooner); 'give ballyhoo' (1875); carnival barker 'ballyhoo' (1901)",
+      "open_question": "West Indian Spanish balahú ('fast two-masted schooner') -> sailor term of contempt",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-034",
+      "headword": "snollygoster",
+      "category": "vernacular_slang",
+      "baseline_year": 1845,
+      "baseline_summary": "Attested 1845 ('snolly goster') in US frontier slang; 1895 sense 'unprincipled politician / shyster'",
+      "open_question": "Fanciful frontier tall-tale compound built on dialectal goster ('boisterous braggart', 1670s < ME galstren)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-035",
+      "headword": "sockdolager",
+      "category": "vernacular_slang",
+      "baseline_year": 1830,
+      "baseline_summary": "American English slang 'decisive finishing blow or conclusive argument' (1830, multiple phonetic variants)",
+      "open_question": "Jocular metathesis/blend of sock ('hit hard') + doxology ('final liturgical hymn = finisher')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-036",
+      "headword": "hullabaloo",
+      "category": "dialect_shift",
+      "baseline_year": 1762,
+      "baseline_summary": "Attested 1762 as 'hollo-ballo' ('uproar, noisy commotion'), chiefly Scottish and Northern English",
+      "open_question": "Rhyming reduplication of hunting/hailing cry hollo / halloo",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-037",
+      "headword": "slumgullion",
+      "category": "maritime_and_technical",
+      "baseline_year": 1857,
+      "baseline_summary": "Placerville (CA) Mountain Democrat, 3 Jan. 1857 (gold-sluice muddy tailings), antedating OED's 1869 C. G. Leland; cf. Melville 'Moby-Dick' (1851) 'slobgollion' (whale-blubber offal)",
+      "open_question": "Whalers' jargon ('slobgollion/slumgudgeon' = blubber offal) carried into 1849 California gold camps by deserting seamen",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-038",
+      "headword": "moolah",
+      "category": "underworld_and_cant",
+      "baseline_year": 1920,
+      "baseline_summary": "American English slang 'money, cash' (c. 1920-1935 in underworld/turf columns), of unknown origin",
+      "open_question": "Irish Gaelic moll óir ('heap of gold')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-039",
+      "headword": "buckaroo",
+      "category": "maritime_and_technical",
+      "baseline_year": 1827,
+      "baseline_summary": "Attested 1827 as 'bakhara' (Texas/Gulf), 1889 'buckayro', 1907 'buckaroo' ('cowboy, ranch hand')",
+      "open_question": "Anglicization of Mexican Spanish vaquero ('cowherd') reshaped by English buck",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-040",
+      "headword": "juke",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1933,
+      "baseline_summary": "Attested 1933 as verb ('dance at a roadhouse') and 1935 in 'jook joint' (African-American vernacular, Florida/Georgia); cf. Scots 'jouk/jook' (1510s)",
+      "open_question": "Gullah joog / juke ('disorderly, wicked, rowdy') < Wolof dzug / Bambara jugu ('unsavory, wicked')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-041",
+      "headword": "mojo",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1926,
+      "baseline_summary": "1920s (1926 blues recordings) African-American vernacular 'magic charm, hoodoo amulet'",
+      "open_question": "Gullah moco ('witchcraft, magic') < Fula moco'o ('medicine man, shaman')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-042",
+      "headword": "jazz",
+      "category": "vernacular_slang",
+      "baseline_year": 1912,
+      "baseline_summary": "Los Angeles Times, 2 Apr. 1912 (Ben Henderson's 'jazz curve' baseball slang = 'pep, vigor'); Chicago musical sense by 1915",
+      "open_question": "Alteration of 19th-c. American slang jasm ('energy, vitality, spirit', 1860) < gism (1842)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-043",
+      "headword": "boondocks",
+      "category": "maritime_and_technical",
+      "baseline_year": 1909,
+      "baseline_summary": "Adopted c. 1909-1910s by US Marines/soldiers in Philippine-American War ('remote backcountry'), rare in print prior to 1930s-1944",
+      "open_question": "Tagalog bundok ('mountain') pluralized and semantically shifted to 'impassable brush/hinterland' in US military argot",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-044",
+      "headword": "whole shebang",
+      "category": "vernacular_slang",
+      "baseline_year": 1862,
+      "baseline_summary": "Walt Whitman (1862) 'shebang' ('soldier's hut/shelter'); phrase 'the whole shebang' attested 1869",
+      "open_question": "Anglo-Irish shebeen ('unlicensed alehouse', 1781 < Irish síbín), though 'tavern' sense in US lags behind 'hut'",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-045",
+      "headword": "kick the bucket",
+      "category": "technical_idiom",
+      "baseline_year": 1775,
+      "baseline_summary": "The London Magazine, Aug. 1775 ('The History of Edward and Maria', sailor dialogue: 'glad I had not kicked the bucket') — 10 years prior to Grose (1785)",
+      "open_question": "Norfolk/East Anglian slaughterhouse bucket ('wooden gambrel/beam from which slaughtered pigs hang by heels', < OF buquet)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-046",
+      "headword": "hubbub",
+      "category": "dialect_shift",
+      "baseline_year": 1555,
+      "baseline_summary": "Attested 1550s ('whobub', 'confused uproar'), included as prompt-designated Tier-1 benchmark",
+      "open_question": "Irish Gaelic battle cry abú! ('to victory!') or exclamation ub! ('fie!') heard by English troops in Ireland",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-047",
+      "headword": "ragamuffin",
+      "category": "dialect_shift",
+      "baseline_year": 1393,
+      "baseline_summary": "Langland 'Piers Plowman' C-text (1393 'Ragamoffyn' demon name; 1344 surname; 1580s 'ragged urchin'), Tier-1 benchmark",
+      "open_question": "Middle English raggi ('ragged') + fanciful Anglo-French mystery-play demon suffix -muffyn",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-048",
+      "headword": "curmudgeon",
+      "category": "dialect_shift",
+      "baseline_year": 1568,
+      "baseline_summary": "Thomas Drant (1568, 'a bolde curmogine chuffe', antedating 1577 Holinshed), Tier-1 benchmark of unknown origin",
+      "open_question": "Scots/Irish Gaelic muigean ('disagreeable, surly person') + intensive prefix ker-/cur- (Liberman)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-049",
+      "headword": "banter",
+      "category": "underworld_and_cant",
+      "baseline_year": 1676,
+      "baseline_summary": "1670s Restoration London street slang (noted by Jonathan Swift as low cant in A Tale of a Tub preface), Tier-1 benchmark",
+      "open_question": "17th-c. London thieves' or university cant coinage of unknown root",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-050",
+      "headword": "balderdash",
+      "category": "vernacular_slang",
+      "baseline_year": 1596,
+      "baseline_summary": "1590s (Thomas Nashe, 'jumbled frothy mix of liquors'; 1670s 'senseless jumble of words'), Tier-1 benchmark",
+      "open_question": "Cognate with Danish balder ('noise, clatter') + dash ('splash/mix liquids')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-051",
+      "headword": "riffraff",
+      "category": "dialect_shift",
+      "baseline_year": 1470,
+      "baseline_summary": "Late 15c. ('persons of disreputable class'), from mid-14c. Anglo-French 'rif et raf', Tier-1 benchmark",
+      "open_question": "Old French rif et raf ('every scrap', from rifler 'strip/plunder' + raffler 'snatch')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-052",
+      "headword": "codswallop",
+      "category": "vernacular_slang",
+      "baseline_year": 1959,
+      "baseline_summary": "First verified print 1959 (UK), widely reputed to be 19th-c. British pub slang; Tier-1 benchmark",
+      "open_question": "Compound of slang cod ('hoax, joke; or scrotum/testicles') + British slang wallop ('weak/gassy beer')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-053",
+      "headword": "hoodlum",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1871,
+      "baseline_summary": "Popularized 1871 in San Francisco newspapers ('California word' for anti-Chinese street gang youths); local oral use c. 1868-1870",
+      "open_question": "Bavarian/Swabian German dialectal Huddellump / Hadelump ('ragamuffin, scoundrel') via German forty-niners",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-054",
+      "headword": "skulduggery",
+      "category": "dialect_shift",
+      "baseline_year": 1856,
+      "baseline_summary": "American English 'underhanded intrigue' (1856), altered from Scots 'sculdudrie / sculduddery' (1713, 'fornication, bawdry') of unknown origin",
+      "open_question": "Scots kirk-session euphemism sculduddery (1713) undergoing inexplicable t->g shift and desexualization in 1850s US",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-055",
+      "headword": "humbug",
+      "category": "underworld_and_cant",
+      "baseline_year": 1751,
+      "baseline_summary": "Exploded simultaneously in 1751 Oxford/Cambridge student miscellanies ('The Student') and London coffeehouse slang ('hoax, jest, deception')",
+      "open_question": "Compound of cant hum ('deceive, applaud hypocritically') + bug ('specter, false terror')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-056",
+      "headword": "kibosh",
+      "category": "underworld_and_cant",
+      "baseline_year": 1836,
+      "baseline_summary": "Charles Dickens 'Sketches by Boz' (1836, 'put the kye-bosk on' in Irish-populated Seven Dials, London)",
+      "open_question": "Irish Gaelic caip bháis / caipín báis ('cap of death' or pitch-capping punishment in 1798 rebellion)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-057",
+      "headword": "kerfuffle",
+      "category": "dialect_shift",
+      "baseline_year": 1813,
+      "baseline_summary": "Scots noun 'carfuffle / curfuffle' (1813, 'agitation, disorder'), from Scots verb 'fuffle' (1530s) + disputed prefix",
+      "open_question": "Scottish Gaelic car ('twist, turn, bend') + Scots expressive fuffle ('dishevel')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-058",
+      "headword": "hunky-dory",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1864,
+      "baseline_summary": "Brooklyn Eagle, 22 Oct. 1864 (political rally banner slogan) and 1860s minstrel songs ('hunkey dorey')",
+      "open_question": "Rhyming elaboration of NYC street-game slang hunky ('safe on home base', 1861 < hunk 1847 < Dutch honk 'goal, home')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-059",
+      "headword": "rigmarole",
+      "category": "dialect_shift",
+      "baseline_year": 1736,
+      "baseline_summary": "Attested 1736 ('rambling, incoherent harangue'), conjectured Kentish/colloquial survival of Middle English 'ragman roll'",
+      "open_question": "200-year oral survival and phonetic distortion of ME ragman roll ('scroll of verses/accusations')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-060",
+      "headword": "cantankerous",
+      "category": "dialect_shift",
+      "baseline_year": 1772,
+      "baseline_summary": "Attested 1772 (Oliver Goldsmith 'She Stoops to Conquer' / Sheridan; noted by Grose as a Wiltshire word)",
+      "open_question": "Dialectal alteration of Middle English contakour ('troublemaker', < Anglo-French contec 'strife') + raucous/cankerous",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-061",
+      "headword": "discombobulate",
+      "category": "vernacular_slang",
+      "baseline_year": 1834,
+      "baseline_summary": "Attested 1834 as 'discombobricate' in US humorous print ('upset, disconcert, baffle')",
+      "open_question": "1830s American mock-Latinate prefixation dis- + com- + playful alteration of discompose / bobbery",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-062",
+      "headword": "flabbergast",
+      "category": "vernacular_slang",
+      "baseline_year": 1772,
+      "baseline_summary": "Annual Register (1772) lists 'flabbergasted' alongside 'bored' as a newly fashionable London vogue word",
+      "open_question": "Dialectal (Sussex/Suffolk) compound of flabby / flap + aghast ('strike with sudden astonishment')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-063",
+      "headword": "rambunctious",
+      "category": "vernacular_slang",
+      "baseline_year": 1824,
+      "baseline_summary": "Attested 1824 as 'rumbunctious' and 1834 ('Major Jack Downing') as 'rambunctious'",
+      "open_question": "American alteration of British colloquial rumbustious (1778) influenced by ram and bumptious",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-064",
+      "headword": "rumbustious",
+      "category": "vernacular_slang",
+      "baseline_year": 1778,
+      "baseline_summary": "Attested 1778 ('boisterous, unruly, turbulent'), part of an 18th-c. cluster of 'rum-/ram-' intensives",
+      "open_question": "Blend of cant rum ('strong, fine') + robustious ('violent, boisterous', 1540s)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-065",
+      "headword": "cahoots",
+      "category": "vernacular_slang",
+      "baseline_year": 1829,
+      "baseline_summary": "Southern and Western US slang 'in cahoots / cahoot' ('partnership, collusion', 1829)",
+      "open_question": "French cahute ('cabin, shared hut') via Mississippi Valley Voyageur/Creole contact ('sharing a cabin')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-066",
+      "headword": "hobo",
+      "category": "vernacular_slang",
+      "baseline_year": 1889,
+      "baseline_summary": "Attested 1889 in Pacific Northwest (Ellensburg, WA / Western US railroad slang) for 'migratory worker, tramp'",
+      "open_question": "Railroad mail-handlers' or brakemen's call 'Ho, boy!' on Western lines",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-067",
+      "headword": "galoot",
+      "category": "maritime_and_technical",
+      "baseline_year": 1808,
+      "baseline_summary": "Nautical slang attested by 1808 ('raw marine recruit, green hand'; general US slang 'awkward fellow' by 1866)",
+      "open_question": "Sierra Leone Krio galut < Spanish galeoto ('galley slave / soldier-rower on a galliot')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-068",
+      "headword": "palooka",
+      "category": "vernacular_slang",
+      "baseline_year": 1925,
+      "baseline_summary": "Mid-1920s (by 1925-1926, Jack Conway in Variety / US boxing columns) 'mediocre prizefighter, clumsy lout'",
+      "open_question": "Slavic/Polish immigrant surname or nickname popularized in ring promotions",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-069",
+      "headword": "dingbat",
+      "category": "vernacular_slang",
+      "baseline_year": 1838,
+      "baseline_summary": "American English slang attested 1838 (originally a spiced/mixed alcoholic drink, later 'thrown missile', 'gadget', 'eccentric')",
+      "open_question": "Compound of ding ('strike, hurl') + bat ('lump, brickbat, piece')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-070",
+      "headword": "thingamajig",
+      "category": "vernacular_slang",
+      "baseline_year": 1824,
+      "baseline_summary": "Attested 1824 ('thingumajig') as indefinite placeholder noun alongside 'jigamaree' (1824)",
+      "open_question": "Elaboration of 17th-c. thingum (1680s) + nautical/mechanical jig ('small tackle/contrivance')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-071",
+      "headword": "doodad",
+      "category": "vernacular_slang",
+      "baseline_year": 1898,
+      "baseline_summary": "Chiefly US colloquial placeholder for an unnamed ornament or small gadget (attested 1898)",
+      "open_question": "Reduplicative alteration of doodah (from 1850 Stephen Foster 'Camptown Races' refrain)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-072",
+      "headword": "doohickey",
+      "category": "maritime_and_technical",
+      "baseline_year": 1914,
+      "baseline_summary": "Our Navy magazine, Nov. 1914 ('do-hickeys, gadgets and gilguys'), US Navy enlisted slang",
+      "open_question": "Blend of doodad (1898) + hickey ('small unnamed electrical/plumbing fitting', attested 1909)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-073",
+      "headword": "gimmick",
+      "category": "technical_and_criminal",
+      "baseline_year": 1893,
+      "baseline_summary": "Electric Review, 11 Mar. 1893 (Green's: 'tricky device/gadget'); 1921 carnival/gambling wheel brake contrivance",
+      "open_question": "Carnival magicians' deliberate anagram of magic ('gimac / gimix')",
+      "status": "published_case_file",
+      "case_slug": "gimmick"
+    },
+    {
+      "target_id": "TGT-074",
+      "headword": "moniker",
+      "category": "underworld_and_cant",
+      "baseline_year": 1849,
+      "baseline_summary": "Attested 1849 (and 1851 Mayhew London cant 'monekeer') for 'tramp's mark, signature, alias'",
+      "open_question": "Shelta (Irish Traveler cant) munnik ('name', metathesized from Irish ainm)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-075",
+      "headword": "bloviate",
+      "category": "vernacular_slang",
+      "baseline_year": 1857,
+      "baseline_summary": "Midwestern (Ohio) slang attested 1857 ('talk aimlessly and boastingly'; Farmer 1890; revived by Warren G. Harding)",
+      "open_question": "Mock-Latinate verb formed on blow ('boast, brag') + -viate (modeled on deviate / obviate)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-076",
+      "headword": "lollygag",
+      "category": "vernacular_slang",
+      "baseline_year": 1859,
+      "baseline_summary": "American English slang 'dawdle, fool around, kiss amorously' (1859; also 'lallygag')",
+      "open_question": "Northern English dialectal lolly ('tongue') + cant gag ('deceive, lounge')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-077",
+      "headword": "lollipop",
+      "category": "dialect_shift",
+      "baseline_year": 1784,
+      "baseline_summary": "Attested 1784 ('lolly-pops', soft treacle-and-butter sweetmeat), described by OED as 'of obscure formation'",
+      "open_question": "Northern English dialectal lolly ('the tongue') + pop ('slap, dab')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-078",
+      "headword": "boondoggle",
+      "category": "technical_idiom",
+      "baseline_year": 1927,
+      "baseline_summary": "Rochester (NY) Democrat and Chronicle, 23 July 1927 (Boy Scout braided lanyard, antedating 1929 Jamboree); April 1935 New Deal waste sense",
+      "open_question": "Arbitrary coinage c. 1925-1927 by Scoutmaster Robert H. Link in Rochester, NY (modeled on woggle)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-079",
+      "headword": "shoddy",
+      "category": "maritime_and_technical",
+      "baseline_year": 1832,
+      "baseline_summary": "Yorkshire textile trade noun 'recycled rag-wool' (1832); US Civil War contractor fraud sense 'sham, inferior' (1862)",
+      "open_question": "Yorkshire mill dialect word of unknown root, possibly connected to OE sceadan / shed ('waste fibers shed in carding')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-080",
+      "headword": "flunk",
+      "category": "vernacular_slang",
+      "baseline_year": 1823,
+      "baseline_summary": "Yale College student slang (1823, 'back out through fear, fail an examination'), of obscure origin",
+      "open_question": "Alteration of Oxford student slang funk ('shrink in panic', 1737) blended with flink / flinch",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-081",
+      "headword": "scrumptious",
+      "category": "dialect_shift",
+      "baseline_year": 1834,
+      "baseline_summary": "Mid-1830s US/British slang ('first-rate, delightful'; cf. 1834 US Southern 'scrimption'), origin unknown",
+      "open_question": "Alteration of Suffolk dialectal scrimptious ('fastidious, close-fisted' -> 'dainty, choice')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-082",
+      "headword": "flapdoodle",
+      "category": "maritime_and_technical",
+      "baseline_year": 1833,
+      "baseline_summary": "Frederick Marryat 'Peter Simple' (1833, Royal Navy slang: 'the stuff they feed fools on')",
+      "open_question": "Sailors' jocular compound of flap ('blow/stroke' or 'frothy talk') + doodle ('simpleton')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-083",
+      "headword": "ramshackle",
+      "category": "dialect_shift",
+      "baseline_year": 1809,
+      "baseline_summary": "Attested 1809 ('loosely joined, rickety'; Scots 1825 'thoughtless fellow'), conjectured link to 'ransackled' (1670s)",
+      "open_question": "Phonetic metathesis/alteration of obsolete ranshackled / ransackled ('plundered, gutted')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-084",
+      "headword": "fuddy-duddy",
+      "category": "vernacular_slang",
+      "baseline_year": 1871,
+      "baseline_summary": "American English 'stuffy, old-fashioned person' (1871), of uncertain origin",
+      "open_question": "Reduplication built on Scots fud ('rabbit tail, buttocks') or fuddle + duddy ('dressed in ragged duds', 1725)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-085",
+      "headword": "mumbo jumbo",
+      "category": "maritime_and_technical",
+      "baseline_year": 1738,
+      "baseline_summary": "Francis Moore 'Travels into the Inland Parts of Africa' (1738, describing 1732 River Gambia masked ritual figure); 1896 'meaningless talk'",
+      "open_question": "Mandinka Maamajomboo / mama dyambo ('pompom-wearing masked ancestor adjudicator')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-086",
+      "headword": "bimbo",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1837,
+      "baseline_summary": "1837 NY/Boston tavern punch ('arrack/brandy punch' < bumbo 1748); 1919 US slang 'tough guy / foolish woman'",
+      "open_question": "Italian bimbo ('little boy, baby', masculine of bimba) entering 1910s NYC/Chicago immigrant street slang",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-087",
+      "headword": "bozo",
+      "category": "vernacular_slang",
+      "baseline_year": 1913,
+      "baseline_summary": "Vaudeville billing 'The Original Bozo' (Bob Archer, 1913); boxing/street slang 'muscular stupid fellow' (1920)",
+      "open_question": "Vaudeville tramp metathesis/alteration of hobo (claimed by performer Bob Archer in 1926)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-088",
+      "headword": "hanky-panky",
+      "category": "underworld_and_cant",
+      "baseline_year": 1841,
+      "baseline_summary": "Punch magazine (1841, British slang 'conjuring trickery, underhanded dealing')",
+      "open_question": "Rhyming alteration of hoky-poky / hocus-pocus",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-089",
+      "headword": "snob",
+      "category": "dialect_shift",
+      "baseline_year": 1781,
+      "baseline_summary": "Attested 1781 ('cobbler, shoemaker's apprentice'), c. 1796 Cambridge slang ('townsman'), 1843-1848 ('social climber')",
+      "open_question": "Germanic sn- root connected to dialectal snab ('boy, cobbler's apprentice') and snub",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-090",
+      "headword": "spiv",
+      "category": "underworld_and_cant",
+      "baseline_year": 1934,
+      "baseline_summary": "Attested 1934 in London racing/underworld memoirs ('flashily dressed petty crook living by wits')",
+      "open_question": "Voiced final-consonant variant of dialectal/cant spiff ('well-dressed dandy; retail commission', 1850s)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-091",
+      "headword": "larrikin",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1867,
+      "baseline_summary": "Australian (Melbourne) police-court slang 'young street rowdy' (1867-1868), of disputed origin",
+      "open_question": "Warwickshire/Worcestershire English dialectal larrikin ('mischievous, frolicsome youth', attested in J. Wright EDD)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-092",
+      "headword": "toff",
+      "category": "underworld_and_cant",
+      "baseline_year": 1851,
+      "baseline_summary": "Henry Mayhew 'London Labour and the London Poor' (1851), Cockney slang 'stylish upper-class gentleman'",
+      "open_question": "Cockney phonetic alteration of Oxford/Cambridge tuft ('gold tassel worn on peer's son's cap', 1755)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-093",
+      "headword": "bullyrag",
+      "category": "dialect_shift",
+      "baseline_year": 1790,
+      "baseline_summary": "Attested 1790 as 'ballarag' ('badger, scold, intimidate'; cf. verb 'rag' 1739), of uncertain origin",
+      "open_question": "Compound of bally/balla (possibly Anglo-Irish faction-fight element) + rag ('scold', 1739, origin unknown)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-094",
+      "headword": "conniption",
+      "category": "vernacular_slang",
+      "baseline_year": 1833,
+      "baseline_summary": "American English 'conniption fit' ('hysterical tantrum', 1833), of uncertain origin",
+      "open_question": "Jocular pseudo-Latinate deformation of corruption (used in US dialect for 'anger, bile' from 1799)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-095",
+      "headword": "diddle",
+      "category": "underworld_and_cant",
+      "baseline_year": 1806,
+      "baseline_summary": "Slang verb 'cheat, swindle' (1806), hotly disputed between stage eponym and Old English survival",
+      "open_question": "Back-formation from character 'Jeremy Diddler' in James Kenney's hit 1803 farce 'Raising the Wind'",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-096",
+      "headword": "floozy",
+      "category": "vernacular_slang",
+      "baseline_year": 1902,
+      "baseline_summary": "Attested 1902 ('floozie', 'disreputable or flashy woman'), of uncertain origin",
+      "open_question": "Alteration of 1890s slang flossy ('saucy, frilly, showily dressed')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-097",
+      "headword": "dinky",
+      "category": "dialect_shift",
+      "baseline_year": 1788,
+      "baseline_summary": "Scots 'dinkie' (1788, 'neat, trim, dainty', from Scots 'dink' c. 1500 of unknown origin); US 'small/insignificant' (1859)",
+      "open_question": "Scots dink ('finely dressed, trim'), of unknown Germanic or Celtic root",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-098",
+      "headword": "fudge",
+      "category": "maritime_and_technical",
+      "baseline_year": 1766,
+      "baseline_summary": "Oliver Goldsmith 'Vicar of Wakefield' (1766, interjection 'Fudge!' = 'nonsense, lies!'); noun 'rubbish' (1791); candy (1886)",
+      "open_question": "Extension of verb fudge / fadge ('patch together clumsily or dishonestly', 1670s)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-099",
+      "headword": "goof",
+      "category": "vernacular_slang",
+      "baseline_year": 1916,
+      "baseline_summary": "American English slang 'stupid, ridiculous person' (1916; verb 'waste time' 1922), of uncertain origin",
+      "open_question": "Survival of English dialectal goff ('foolish clown', 1869; 16c. goffe < French goffe 'awkward')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-100",
+      "headword": "grifter",
+      "category": "underworld_and_cant",
+      "baseline_year": 1906,
+      "baseline_summary": "Circus and carnival underworld cant 'grifter' ('confidence trickster', 1906; 'grift' c. 1900-1903)",
+      "open_question": "Phonetic alteration of grafter ('corrupt operator, swindler', 1865)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-101",
+      "headword": "hijinks",
+      "category": "dialect_shift",
+      "baseline_year": 1715,
+      "baseline_summary": "Scots 'high jinks' (early 18c. tavern dice/forfeit drinking game, Allan Ramsay; 'jink' v. 1715, of unknown origin)",
+      "open_question": "Scots jink ('dart nimbly, dodge', 1715) of unknown echoic or Celtic root",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-102",
+      "headword": "heebie-jeebies",
+      "category": "vernacular_slang",
+      "baseline_year": 1923,
+      "baseline_summary": "Attributed to cartoonist Billy DeBeck in 'Barney Google' comic strip (26 Oct. 1923, New York American)",
+      "open_question": "Fanciful rhyming coinage by Billy DeBeck (parallel to his 'horsefeathers' and 'hotsy-totsy')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-103",
+      "headword": "hep",
+      "category": "underworld_and_cant",
+      "baseline_year": 1908,
+      "baseline_summary": "Saturday Evening Post (1908; also 1904 George Vere Hobart 'Jim Hickey' stories) underworld slang 'aware, in the know' (later 'hip')",
+      "open_question": "Wolof hepi / hipi ('to open one's eyes, be aware of what is going on') — disputed phonetic/chronological gap",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-104",
+      "headword": "hokum",
+      "category": "vernacular_slang",
+      "baseline_year": 1917,
+      "baseline_summary": "Theatrical/vaudeville slang 'cheap melodramatic stage device or claptrap' (1917)",
+      "open_question": "Blend of hocus-pocus + bunkum",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-105",
+      "headword": "jerry-built",
+      "category": "maritime_and_technical",
+      "baseline_year": 1856,
+      "baseline_summary": "Attested 1856 in a Liverpool building context ('built hastily of shoddy materials', antedating 1869 press notes)",
+      "open_question": "Nautical jury-rigged / jury-mast ('temporary makeshift', 1610s) merged with pejorative name Jerry",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-106",
+      "headword": "jamboree",
+      "category": "vernacular_slang",
+      "baseline_year": 1858,
+      "baseline_summary": "Attested 1858 ('noisy drinking bout / brawl') and 1860s US euchre/cribbage card-hand term ('five highest cards')",
+      "open_question": "Louisiana/Provençal French jambaraia / jambalaia ('mishmash, disorderly crowd') — Anthony Buccini hypothesis",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-107",
+      "headword": "jinx",
+      "category": "vernacular_slang",
+      "baseline_year": 1911,
+      "baseline_summary": "American baseball slang 'person or thing bringing bad luck' (1911; verb 1912)",
+      "open_question": "Alteration of classical/17th-c. jynx / jyng ('wryneck bird used in witchcraft; spell', 1690s < Greek iynx)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-108",
+      "headword": "jive",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1928,
+      "baseline_summary": "Chicago/Harlem African-American vernacular (1928, 'deceptive/playful talk; lively swing music')",
+      "open_question": "Wolof jev / jeu ('talk disparagingly or misleadingly about someone') preserved in AAVE",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-109",
+      "headword": "on the lam",
+      "category": "underworld_and_cant",
+      "baseline_year": 1886,
+      "baseline_summary": "US criminal/pickpocket slang verb 'lam' ('flee hastily', 1886), 'do a lam' (1897), 'on the lam' (1928)",
+      "open_question": "Figurative extension of archaic/dialectal lam ('beat soundly', 1590s < ON lemja), parallel to 'beat it'",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-110",
+      "headword": "lickety-split",
+      "category": "vernacular_slang",
+      "baseline_year": 1817,
+      "baseline_summary": "Attested 1817 as 'licketie' and 1852 as 'lickety-split' ('at headlong speed'), alongside 'lickety-cut'",
+      "open_question": "Fanciful adverbial extension of dialectal lick ('fast sprint; full speed', 1809) + split ('run fast')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-111",
+      "headword": "loafer",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1830,
+      "baseline_summary": "Attested 1830-1835 in New York City press ('idler, street corner lounger'), of disputed contact origin",
+      "open_question": "Partial loan-adaptation of German Landläufer / Dutch landlooper ('vagabond, land-runner')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-112",
+      "headword": "lummox",
+      "category": "dialect_shift",
+      "baseline_year": 1825,
+      "baseline_summary": "East Anglian dialect glossary (1825, Edward Moor / Forby: 'heavy, clumsy, stupid person'), of unknown origin",
+      "open_question": "Dialectal verb lummock ('move heavily or clumsily') with -s/-x expressive ending (cf. flummox)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-113",
+      "headword": "pipsqueak",
+      "category": "vernacular_slang",
+      "baseline_year": 1910,
+      "baseline_summary": "Attested 1910 ('insignificant, contemptible person'); 1915 WWI slang for small German artillery shell",
+      "open_question": "Echoic compound of pip ('faint chirp of a chick / tiny seed') + squeak",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-114",
+      "headword": "quiz",
+      "category": "vernacular_slang",
+      "baseline_year": 1782,
+      "baseline_summary": "Fanny Burney diary (24 June 1782: 'odd or eccentric person'); verb 'mock/question' (1780s); US school 'short test' (1847)",
+      "open_question": "University slang truncation/play on Latinate quis ('who?') or inquisitive",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-115",
+      "headword": "ruckus",
+      "category": "vernacular_slang",
+      "baseline_year": 1872,
+      "baseline_summary": "Attested 1872 in Missouri ('roocus', 'noisy commotion, brawl'), spreading across US South and West",
+      "open_question": "Blend of Anglo-Irish ruction ('insurrection, row', 1809) + rumpus (1764)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-116",
+      "headword": "rowdy",
+      "category": "vernacular_slang",
+      "baseline_year": 1808,
+      "baseline_summary": "American frontier noun 'lawless backwoodsman, rough brawler' (1808; adj. 1819), 'quite obscure origin' (OED)",
+      "open_question": "Derivative of British cant row ('noisy disturbance', 1746, itself of unknown origin)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-117",
+      "headword": "scrounge",
+      "category": "dialect_shift",
+      "baseline_year": 1909,
+      "baseline_summary": "Northern English/Scots dialectal 'scrunge' ('rummage, pilfer', 1909) -> WWI trench slang 'scrounge' (1915)",
+      "open_question": "Alteration of provincial English scringe ('pry about') or scrouge ('squeeze, press', 1755)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-118",
+      "headword": "scrimshaw",
+      "category": "maritime_and_technical",
+      "baseline_year": 1825,
+      "baseline_summary": "Pacific/New England whaling logbooks: 'scrimshonting' (1825), 'scrimshander' (Melville 1851), 'scrimshaw' (1864)",
+      "open_question": "Nautical adaptation of English surname Scrimshaw (< OF escremisseor 'fencing-master')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-119",
+      "headword": "scuttlebutt",
+      "category": "maritime_and_technical",
+      "baseline_year": 1805,
+      "baseline_summary": "Literal ship's deck drinking-water cask ('scuttle-butt', 1805; 'scuttle cask' 1777); naval slang 'rumor, gossip' (1901)",
+      "open_question": "Metonymic transfer from sailors congregating around the deck water-cask ('scuttlebutt') to trade rumors",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-120",
+      "headword": "shill",
+      "category": "underworld_and_cant",
+      "baseline_year": 1908,
+      "baseline_summary": "Carnival/fake-auction cant 'shillaber' (1908) shortened to 'shill' (1911), 'confederate posing as eager customer'",
+      "open_question": "Shortening of carnival cant shillaber (1908), of unknown origin (possibly eponymous from humorist B. P. Shillaber)",
+      "status": "published_case_file",
+      "case_slug": "shill-shillaber"
+    },
+    {
+      "target_id": "TGT-121",
+      "headword": "skidoo",
+      "category": "vernacular_slang",
+      "baseline_year": 1905,
+      "baseline_summary": "National US vogue word of 1905 ('23 skidoo!' = 'leave hurriedly, scram'), of obscure connection to '23'",
+      "open_question": "Playful remodeling of Civil War skedaddle (1859/1861) paired with racetrack/telegraph code '23'",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-122",
+      "headword": "skiffle",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1926,
+      "baseline_summary": "African-American Chicago rent-party jazz slang (1926, Paramount Records 'Hometown Skiffle' 1929), of uncertain origin",
+      "open_question": "Western/dialectal English skiffle ('make a slight shuffling/scuffling sound')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-123",
+      "headword": "smidgen",
+      "category": "dialect_shift",
+      "baseline_year": 1841,
+      "baseline_summary": "Attested 1841 ('smitchin', 'tiny bit or quantity'), related to Scots 'smitch' (1822) and OE 'smeddum'",
+      "open_question": "Diminutive (-in/-en) of Scots smitch ('jot, speck') < obscure smudge/smeddum cluster",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-124",
+      "headword": "splurge",
+      "category": "vernacular_slang",
+      "baseline_year": 1828,
+      "baseline_summary": "Western US frontier noun 'ostentatious blustering display' (1828; verb 1839; 'spend lavishly' 1927)",
+      "open_question": "Phonaesthetic frontier blend of splash + surge",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-125",
+      "headword": "spiflicate",
+      "category": "underworld_and_cant",
+      "baseline_year": 1749,
+      "baseline_summary": "Henry Fielding 'Tom Jones' (1749, cant verb 'confound, beat soundly, annihilate'); 1882 US/Scots 'drunk'",
+      "open_question": "18th-c. London street/tavern cant mock-Latinate coinage on stifle / spill",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-126",
+      "headword": "spiffy",
+      "category": "dialect_shift",
+      "baseline_year": 1860,
+      "baseline_summary": "Attested 1853-1860 ('spiff / spiffy', 'smartly dressed, spruce'; 'spiffing' 1872), of unknown origin",
+      "open_question": "Drapery-trade slang spiff ('percentage commission given to shopmen for selling old stock', 1859)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-127",
+      "headword": "tizzy",
+      "category": "vernacular_slang",
+      "baseline_year": 1922,
+      "baseline_summary": "American English colloquial 'state of nervous agitation, dither' (1922); uncertain link to 1804 cant 'tizzy' ('sixpence')",
+      "open_question": "Independent 20th-c. expressive blend of dizzy + tipsy/fizzy",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-128",
+      "headword": "stymie",
+      "category": "dialect_shift",
+      "baseline_year": 1834,
+      "baseline_summary": "Scottish golf noun 'opponent's ball blocking putting line on green' (1834; verb 1857; general 'thwart' 1902)",
+      "open_question": "Scots stymie ('nearsighted person') < ME stime ('slightest gleam of light', itself of unknown origin)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-129",
+      "headword": "wangle",
+      "category": "technical_and_criminal",
+      "baseline_year": 1888,
+      "baseline_summary": "British printers' slang (1888, 'falsify/adjust type or accounts by manipulation'); WWI general slang 'obtain by scheming' (1918)",
+      "open_question": "Compositors' chapel alteration of waggle or dialectal wankle ('unsteady, tottering' < OE wancol)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-130",
+      "headword": "wonky",
+      "category": "dialect_shift",
+      "baseline_year": 1919,
+      "baseline_summary": "British slang 'shaky, unstable, awry' (1919), of uncertain dialectal continuity",
+      "open_question": "Unrecorded dialectal survival of Old English wancol ('unstable, tottering, fluctuating')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-131",
+      "headword": "catawampus",
+      "category": "vernacular_slang",
+      "baseline_year": 1834,
+      "baseline_summary": "Attested 1834 ('catawampusly', 'fiercely, utterly'), 1843 ('hobgoblin'), 1864 ('askew, diagonal')",
+      "open_question": "Compound of dialectal cater ('set diagonally', < French quatre) + Scots wampish ('wriggle, twist')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-132",
+      "headword": "yegg",
+      "category": "underworld_and_cant",
+      "baseline_year": 1900,
+      "baseline_summary": "American Bankers' Association proceedings (1900, pseudonym 'John Yegg' on Nov. 1899 St. Paul bank-burglar letter); 'yegg' (1901)",
+      "open_question": "Pseudonym 'John Yegg' popularized by Pinkerton National Detective Agency circulars (1900)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-133",
+      "headword": "zilch",
+      "category": "vernacular_slang",
+      "baseline_year": 1921,
+      "baseline_summary": "'Joe Zilch' generic nonentity name (1921; Walter Winchell 1928; Ballyhoo magazine 'Elmer Zilch' Aug. 1931; 'nothing/zero' 1957)",
+      "open_question": "Comedic use of authentic German-Slavic surname Zilch chosen for z-initial zero/end-of-alphabet phonaesthetics",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-134",
+      "headword": "kit and caboodle",
+      "category": "vernacular_slang",
+      "baseline_year": 1848,
+      "baseline_summary": "'Caboodle' ('crowd, whole lot', 1848), 'kit and boodle' (1855), 'kit and caboodle' (1870)",
+      "open_question": "Intensive prefix ca-/ker- + boodle ('crowd, lot', 1833 < Dutch boedel 'estate, household effects')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-135",
+      "headword": "collywobbles",
+      "category": "dialect_shift",
+      "baseline_year": 1823,
+      "baseline_summary": "Attested 1823 ('stomach ache, intestinal rumbling, nervous dread')",
+      "open_question": "Fanciful blend of colic + wobble",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-136",
+      "headword": "folderol",
+      "category": "vernacular_slang",
+      "baseline_year": 1701,
+      "baseline_summary": "George Farquhar 'Sir Harry Wildair' (1701 song refrain 'Fal, al, deral!'); noun 'trifle, nonsense' attested 1820",
+      "open_question": "Substantivization of 18th-c. ballad nonsense-syllable refrain fal-de-ral / fol-de-rol",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-137",
+      "headword": "widget",
+      "category": "maritime_and_technical",
+      "baseline_year": 1920,
+      "baseline_summary": "Attested c. 1920 (popularized on Broadway by Kaufman & Connelly's 1924 play 'Beggar on Horseback')",
+      "open_question": "Alteration of gadget (1868/1886) blended with which-it",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-138",
+      "headword": "razzle-dazzle",
+      "category": "vernacular_slang",
+      "baseline_year": 1886,
+      "baseline_summary": "Attested 1886 in US slang ('bewilderment, riotous spree, deceptive flashiness, carousel')",
+      "open_question": "Rhyming reduplication of dazzle with playful r- onset",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-139",
+      "headword": "brouhaha",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1890,
+      "baseline_summary": "Borrowed 1890 from French 'brouhaha' ('uproar, hubbub', 15c. medieval theater devil's cry of disputed origin)",
+      "open_question": "French medieval stage distortion of Hebrew barukh habba' ('blessed be he who comes', Gamillscheg)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-140",
+      "headword": "boodle",
+      "category": "technical_and_criminal",
+      "baseline_year": 1722,
+      "baseline_summary": "Green's Dictionary of Slang: 1722 ('booty, illicit money'), 1822 ('bootle/boodle' = counterfeit money), 1833 ('crowd'), 1883 ('municipal graft')",
+      "open_question": "Dutch boedel / inboedel ('property, household estate, inheritance') via New Amsterdam/Hudson Valley",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-141",
+      "headword": "joskin",
+      "category": "underworld_and_cant",
+      "baseline_year": 1811,
+      "baseline_summary": "Lexicon Balatronicum (1811, OED & Green's: 'country bumpkin, rustic yokel'), British cant/slang of unknown origin",
+      "open_question": "Anglo-Romani or Shelta fairground horse-traders' cant",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-142",
+      "headword": "hush puppy",
+      "category": "vernacular_slang",
+      "baseline_year": 1899,
+      "baseline_summary": "Kirk Munroe novel (1899, 'hush-puppy gravy/stew', Wordorigins); New York Tribune, 8 Sept. 1912 (fried cornmeal ball)",
+      "open_question": "Campfire/riverbank cook lore ('pitched to whining hounds to keep puppies quiet')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-143",
+      "headword": "posh",
+      "category": "underworld_and_cant",
+      "baseline_year": 1830,
+      "baseline_summary": "Old Bailey Proceedings, 8 July 1830 (Charles Wells trial, cant 'posh' = 'money/halfpenny'); 1890s 'dandy'; 1914/1918 adj. 'smart, upper-class'",
+      "open_question": "Anglo-Romani posh ('half', as in posh-kooroona 'half-crown' -> 'money')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-144",
+      "headword": "slum",
+      "category": "underworld_and_cant",
+      "baseline_year": 1812,
+      "baseline_summary": "James Hardy Vaux 'Flash Dictionary' (1812, cant 'room, back room; racket/nonsense'); Pierce Egan 'back slum' (1825); 'squalid district' (1845)",
+      "open_question": "18th-c. London thieves' cant of unknown root (possibly Shelta or Romani)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-145",
+      "headword": "stash",
+      "category": "underworld_and_cant",
+      "baseline_year": 1797,
+      "baseline_summary": "Humphry Potter 'New Dictionary of all the Cant and Flash Languages' (c. 1795-1797, 'stop, conceal, hide'), of unknown origin",
+      "open_question": "Blend of stow + cache (though cache itself enters English c. 1797 from Canadian French)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-146",
+      "headword": "hooligan",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1898,
+      "baseline_summary": "Summer 1898 Southwark/London police-court newspaper reports ('young street gang rowdy')",
+      "open_question": "Southwark Irish gang figure Patrick Hooligan/Hoolihan (Clarence Rook 1899; 1897 Old Bailey theft record)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-147",
+      "headword": "jitney",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1903,
+      "baseline_summary": "1903 St. Louis newspaper ('gitney/jetney' = five-cent nickel coin); 1906/1914 'jitney bus' (five-cent shared auto)",
+      "open_question": "Louisiana French jeton ('metal token, counter, slug')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-148",
+      "headword": "jitters",
+      "category": "vernacular_slang",
+      "baseline_year": 1925,
+      "baseline_summary": "American English slang 'extreme nervous shakes' (1925; verb 'jitter' 1931), of unknown origin",
+      "open_question": "Voiced initial alteration of dialectal/Scots chitter ('shiver, tremble with cold or fear')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-149",
+      "headword": "mosey",
+      "category": "vernacular_slang",
+      "baseline_year": 1829,
+      "baseline_summary": "American English slang 'move off, saunter away' (1829), of unknown origin",
+      "open_question": "British Gloucestershire/Midlands dialectal mose about ('wander in a dull, dreamy way')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-150",
+      "headword": "rumpus",
+      "category": "vernacular_slang",
+      "baseline_year": 1764,
+      "baseline_summary": "Samuel Foote 'The Patron' (1764, 'uproar, noisy disturbance, brawl'), of unknown origin",
+      "open_question": "Fanciful 18th-c. slang formation, possibly deforming robustious",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-151",
+      "headword": "taradiddle",
+      "category": "vernacular_slang",
+      "baseline_year": 1796,
+      "baseline_summary": "Attested 1796 in British colloquial speech ('petty fib, pretentious nonsense'), of unknown origin",
+      "open_question": "Playful nonsense prefix tara- (cf. tarantara) + diddle ('cheat, hoax')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-152",
+      "headword": "twerp",
+      "category": "vernacular_slang",
+      "baseline_year": 1874,
+      "baseline_summary": "Attested 1874 ('twirp', 'insignificant or obnoxious person'; popularized c. 1912-1925), of unknown origin",
+      "open_question": "British regional dialectal twirp ('chirp, unpleasant person') or blend of twit + chirp",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-153",
+      "headword": "wingding",
+      "category": "underworld_and_cant",
+      "baseline_year": 1927,
+      "baseline_summary": "Hobo/narcotics underworld cant (1927, 'faked epileptic fit thrown by addict/beggar to win sympathy or drugs'; 1949 'wild party')",
+      "open_question": "Rhyming compound of wing ('flail arms / fly') + ding ('fit, blow, dingbat')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-154",
+      "headword": "baloney",
+      "category": "urban_immigrant_slang",
+      "baseline_year": 1915,
+      "baseline_summary": "Spelling 'baloney' (1894 sausage); slang 'idiot' (1915), 'mediocre boxer' (1920 H. C. Witwer), 'nonsense' (1922)",
+      "open_question": "Metaphor from bologna sausage (traditionally stuffed with mixed scraps/odds and ends)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-155",
+      "headword": "funk",
+      "category": "dialect_shift",
+      "baseline_year": 1737,
+      "baseline_summary": "Scots/Northern English verb (1737) and Oxford University slang noun (1743, 'cowering panic, depression')",
+      "open_question": "Flemish fonck ('perturbation, distress, panic') via North Sea trade",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-156",
+      "headword": "goon",
+      "category": "maritime_and_technical",
+      "baseline_year": 1921,
+      "baseline_summary": "Frederick L. Allen 'The Goon and His Style' (Harper's Monthly, Dec. 1921, 'stolid, heavy-handed person'); 1938 Segar 'Alice the Goon' -> union 'hired thug'",
+      "open_question": "Sailors' gony / gooney ('albatross, booby bird; clumsy simpleton', 1839, from dialectal gawney)",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-157",
+      "headword": "punk",
+      "category": "underworld_and_cant",
+      "baseline_year": 1896,
+      "baseline_summary": "1896 US slang ('worthless, inferior'); 1904 tramp/criminal cant 'punk kid' ('hobo's apprentice / young hoodlum')",
+      "open_question": "Semantic transfer from New England punk ('decayed touchwood tinder', 1680s < Lenape ponk 'ashes/dust')",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-158",
+      "headword": "duffer",
+      "category": "underworld_and_cant",
+      "baseline_year": 1735,
+      "baseline_summary": "Proceedings of the Old Bailey, 11 Sept. 1735 (Green's: 'Charles Hooper a Duffer' = pedlar of fake smuggled goods, 12 years prior to 1747 Moll King); 1842 'incompetent person'",
+      "open_question": "Scots/Northern dialectal dowf ('dull, hollow, inert') -> 'worthless/counterfeit goods'",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-159",
+      "headword": "son of a gun",
+      "category": "maritime_and_technical",
+      "baseline_year": 1705,
+      "baseline_summary": "The Observator, 27-31 Jan. 1705, and The British Apollo, 7-9 July 1708 (Wordorigins), predating Admiral Smyth's 1867 naval myth by 162 years",
+      "open_question": "Rhyming/euphemistic substitution for 'son of a bitch' / 'son of a whore' in early 18th-c. street print",
+      "status": "under_investigation",
+      "case_slug": null
+    },
+    {
+      "target_id": "TGT-160",
+      "headword": "devil to pay",
+      "category": "maritime_and_technical",
+      "baseline_year": 1703,
+      "baseline_summary": "Letters from the Dead to the Living (1703) and Jonathan Swift (1738, 'the Devil and all to pay'); nautical 'no pitch hot' expansion much later",
+      "open_question": "Faustian/tavern reckoning metaphor ('paying Satan what is owed'), only later punned on aboard ship",
+      "status": "under_investigation",
+      "case_slug": null
+    }
+  ]
+}
