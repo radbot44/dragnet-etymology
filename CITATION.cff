@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: "DRAgNEt: Deep Research Agent Network for Etymology"
 message: "If you use DRAgNEt Case Files, primary-scan proof plates, or verified JSON ledgers in your research, please cite the individual Case File or this repository."
 type: dataset
-version: "3.1.1"
+version: "3.2.0"
 date-released: "2026-11-25"
 authors:
   - family-names: "Callahan"
