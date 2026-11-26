@@ -17,12 +17,11 @@ interface Props {
   journalDoi?: string;
   pdfUrl?: string;
   ogImage?: string;
-  wide?: boolean;
 }
 
 const props = Astro.props;
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
-const active = (path: string) => (path === '/' ? currentPath === '/' : currentPath === path || currentPath.startsWith(path + '/'));
+const active = (path: string) => (path === '/' ? currentPath === '/' || currentPath.startsWith('/cases/') : currentPath === path || currentPath.startsWith(path + '/') || (path === '/protocols' && currentPath === '/about'));
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
@@ -31,7 +30,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <head>
     <ScholarHead {...props} canonicalUrl={canonicalUrl} />
   </head>
-  <body class:list={{ "wide-layout": props.wide }}>
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">

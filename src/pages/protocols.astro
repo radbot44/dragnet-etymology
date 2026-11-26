@@ -7,7 +7,8 @@ import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '
   title={`Evidence Standards, Verification & Research Protocols | ${SITE_ACRONYM}`}
   description="How DRAgNEt separates finding types from four verification levels, publishes reproducible search scripts, manages archival image rights, and logs corrections."
 >
-  <article class="prose-container" style="padding: 2.4rem 0 3rem;">
+  <article class="split-section" style="padding: 2.4rem 0 3rem;">
+    <header class="page-intro">
     <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
       Methodology &amp; Governance
     </div>
@@ -22,7 +23,21 @@ import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '
       trusting the agent is unnecessary.
     </p>
 
-    <h2>1. Separating What a Record Is from Who Verified It</h2>
+    </header>
+    <div class="reading-spread">
+      <nav class="reading-rail" aria-label="Evidence and methods sections">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#record-classification">Record types and verification</a></li>
+          <li><a href="#automated-checks">What automation checks</a></li>
+          <li><a href="#research-system">Research system</a></li>
+          <li><a href="#publication-policy">Publication policy</a></li>
+          <li><a href="#rights">Licensing and image rights</a></li>
+          <li><a href="#corrections">Corrections log</a></li>
+        </ul>
+      </nav>
+      <div class="reading-column">
+    <h2 id="record-classification">1. Separating What a Record Is from Who Verified It</h2>
     <p>
       Every record in our JSON ledgers (<a href="/ledgers/shill-shillaber.json"><code>shill-shillaber.json</code></a>,{' '}
       <a href="/ledgers/gimmick.json"><code>gimmick.json</code></a>) carries two independent classifications:
@@ -48,7 +63,7 @@ import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '
       </li>
     </ul>
 
-    <h2>2. What Our Automated Validation Script Actually Checks (and What It Cannot Check)</h2>
+    <h2 id="automated-checks">2. What Our Automated Validation Script Actually Checks (and What It Cannot Check)</h2>
     <p>
       On every GitHub Pull Request, <a href={`${SITE_GITHUB_URL}/blob/main/scripts/validate_submission.py`} target="_blank" rel="noopener noreferrer"><code>scripts/validate_submission.py</code></a> runs in CI before Astro builds the site. To avoid overstating automated checks:
     </p>
@@ -57,7 +72,7 @@ import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '
       <li><strong>Requires human philological review:</strong> Diplomatic accuracy of transcriptions against worn ink, semantic interpretation in context, completeness of prior-scholarship credit, and soundness of linguistic arguments.</li>
     </ul>
 
-    <h2>3. Reproducible Research System &amp; Corpus Manifests</h2>
+    <h2 id="research-system">3. Reproducible Research System &amp; Corpus Manifests</h2>
     <p>
       The repository includes the underlying research protocols and search utilities in{' '}
       <a href={`${SITE_GITHUB_URL}/tree/main/research-system`} target="_blank" rel="noopener noreferrer"><code>research-system/</code></a>:
@@ -96,5 +111,7 @@ import { SITE_ACRONYM, SITE_EXPANDED, SITE_GITHUB_URL, SITE_LICENSE_URL } from '
       <li><strong>2026-11-25 (v3.0 Audit — Single-Source Ledger Counts &amp; Reclassification):</strong> Removed hardcoded frontmatter counts (which had drifted to 20/43 vs. 25/38 in Case 1100) so all counts are computed dynamically at build time from <code>public/ledgers/*.json</code>; separated 27 comparative catalog, prosopographical, and negative-corpus controls (<code>contextual_evidence</code>) and 11 weakened donor comparisons (<code>hypothesis</code>) from genuine OCR/misdate <code>rejected_lead</code> records.</li>
       <li><strong>2026-11-25 (v3.0 Audit — Post-1930 Image Removal &amp; Workspace Sanitization):</strong> Removed locally bundled 1931/1933 booklet images from repository storage in favor of direct State Library Victoria viewer links, hosted all 66 pre-1931 U.S. public-domain scans, and stripped internal Google Drive identifiers from all public JSON files.</li>
     </ul>
+      </div>
+    </div>
   </article>
 </BaseLayout>

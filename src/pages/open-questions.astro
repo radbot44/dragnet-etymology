@@ -1,9 +1,11 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_ACRONYM, SITE_GITHUB_URL } from '../consts';
 import { getOpenQuestionsData } from '../lib/ledgers';
 
 const data = getOpenQuestionsData();
+const casesByTarget = new Map((await getCollection('cases')).map((entry) => [entry.data.targetId, entry.id]));
 const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort();
 ---
 
@@ -24,7 +26,9 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       expressions of unknown or disputed origin.
     </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <details class="question-highlights">
+      <summary>Featured research gaps</summary>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem; margin-top: 0.85rem;">
       <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface);">
         <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent); font-weight: 700;">OPEN GAP · SHILL / SHILLABER</div>
         <h2 style="font-size: 1.1rem; margin: 0.35rem 0 0.45rem;">The 1884–1907 Print Gap &amp; Bilingual Auction Evidence</h2>
@@ -45,10 +49,12 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       </div>
     </div>
 
+    </details>
+
     <div class="filter-bar" role="search" aria-label="Filter open questions">
       <input id="oq-search" class="filter-input" type="search" aria-label="Search open questions" placeholder="Search headwords, dates, or hypotheses" />
       <select id="oq-cat" class="filter-select" aria-label="Filter by category">
-        <option value="">All categories ({data.targets.length})</option>
+        <option value="">All categories ({categories.length})</option>
         {categories.map((cat) => (
           <option value={cat}>{cat.replace(/_/g, ' ')}</option>
         ))}
@@ -60,35 +66,37 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
     </div>
 
     <p class="citation-empty" id="oq-empty" hidden>No questions match. Try a different search or select All categories.</p>
-    <p class="evidence-notice index-scroll-hint">Swipe or scroll sideways to see all columns.</p>
     <div class="citation-table-wrap" role="region" aria-label="Open research questions" tabindex="0">
-      <table class="citation-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Headword</th>
-            <th>Baseline</th>
-            <th>Current Baseline &amp; Open Question</th>
-            <th>Status</th>
+      <table class="citation-table responsive-evidence-table questions-table" role="table">
+        <colgroup><col class="oq-id" /><col class="oq-word" /><col class="oq-year" /><col /><col class="oq-status" /></colgroup>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th role="columnheader" scope="col">ID</th>
+            <th role="columnheader" scope="col">Headword</th>
+            <th role="columnheader" scope="col">Baseline</th>
+            <th role="columnheader" scope="col">Current Baseline &amp; Open Question</th>
+            <th role="columnheader" scope="col">Status</th>
           </tr>
         </thead>
-        <tbody>
-          {data.targets.map((t) => (
-            <tr
+        <tbody role="rowgroup">
+          {data.targets.map((t) => {
+            const caseSlug = casesByTarget.get(t.target_id) ?? t.case_slug;
+            return (
+            <tr role="row"
               class="oq-row"
               data-cat={t.category}
               data-haystack={`${t.target_id} ${t.headword} ${t.category} ${t.baseline_year} ${t.baseline_summary} ${t.open_question}`.toLowerCase()}
             >
-              <td style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;">{t.target_id}</td>
-              <td><strong>{t.headword}</strong></td>
-              <td style="font-family: var(--font-mono); font-size: 0.84rem; white-space: nowrap;">{t.baseline_year}</td>
-              <td style="font-size: 0.85rem;">
+              <td role="cell" style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;"><span class="mobile-label" aria-hidden="true">ID</span>{t.target_id}</td>
+              <td role="cell"><span class="mobile-label" aria-hidden="true">Headword</span><strong>{t.headword}</strong></td>
+              <td role="cell" style="font-family: var(--font-mono); font-size: 0.84rem; white-space: nowrap;"><span class="mobile-label" aria-hidden="true">Baseline year</span>{t.baseline_year}</td>
+              <td role="cell" style="font-size: 0.85rem;"><span class="mobile-label" aria-hidden="true">Current baseline and question</span>
                 <div>{t.baseline_summary}</div>
                 {t.open_question && <div style="color: var(--ink-muted); margin-top: 0.2rem;">Lead to test: {t.open_question}</div>}
               </td>
-              <td style="white-space: nowrap; font-size: 0.82rem;">
-                {t.case_slug ? (
-                  <a href={`/cases/${t.case_slug}/`}><span class="badge badge-type-attestation">Published Case →</span></a>
+              <td role="cell" style="white-space: nowrap; font-size: 0.82rem;"><span class="mobile-label" aria-hidden="true">Status</span>
+                {caseSlug ? (
+                  <a href={`/cases/${caseSlug}/`}><span class="badge badge-type-attestation">View case →</span></a>
                 ) : (
                   <a
                     href={`${SITE_GITHUB_URL}/issues/new?template=01_antedating_or_citation.yml&title=${encodeURIComponent(`[Citation] ${t.headword} ()`)}`}
@@ -100,7 +108,8 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
                 )}
               </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </div>

@@ -14,16 +14,16 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
 ---
 
 <BaseLayout title={`${SITE_ACRONYM} — ${SITE_HEADLINE}`} description={SITE_TAGLINE}>
-  <section style="padding: 2.75rem 0 2rem; border-bottom: 1px solid var(--border);">
+  <section class="overview-layout home-overview" style="padding: 2.75rem 0 2rem; border-bottom: 1px solid var(--border);">
+    <div class="page-intro">
     <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
       Open-Access Historical Lexicography
     </div>
     <h1 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.14; margin: 0.4rem 0 0.65rem; max-width: 24ch;">
       {SITE_HEADLINE}
     </h1>
-    <p style="font-size: 1.12rem; color: var(--ink-muted); max-width: 62ch; margin: 0 0 1.4rem;">
-      {SITE_TAGLINE} Every claim is paired with inspectable primary-source scans, diplomatic transcriptions,
-      explicit verification levels, and machine-readable JSON ledgers so you never have to take an agent's word on trust.
+    <p style="font-size: 1.08rem; color: var(--ink-muted); max-width: 62ch; margin: 0 0 1.4rem;">
+      {SITE_TAGLINE} Follow the evidence from a word’s case file to its transcription, verification status, or archival scan.
     </p>
 
     <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.75rem;">
@@ -38,7 +38,8 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
       </a>
     </div>
 
-    <div class="stat-strip" style="margin: 0;">
+    </div>
+    <div class="stat-strip overview-stats">
       <div class="stat-card">
         <div class="stat-label">Evaluated Citations</div>
         <div class="stat-value">{globalStats.totalEvaluated}</div>
@@ -68,28 +69,33 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
       <span style="font-size: 0.88rem; color: var(--ink-muted);">Counts generated at build time from JSON ledgers</span>
     </div>
 
-    <div style="display: grid; gap: 1.35rem;">
+    <div class="filter-bar case-filter" role="search" aria-label="Find a case file" hidden>
+      <input class="filter-input" id="case-search" type="search" aria-label="Search case files" placeholder="Find a word or case title" />
+      <p id="case-count" role="status" class="evidence-notice"></p>
+    </div>
+    <p class="citation-empty" id="case-empty" hidden>No case files match. Try a shorter word or <a href="/citations/">search the Citation Index</a>.</p>
+    <div class="case-grid case-directory">
       {cases.map((entry) => {
         const d = entry.data;
         const ledger = getLedgerBySlug(d.ledgerSlug);
         const st = computeLedgerStats(ledger.citations);
         return (
-          <article style="border: 1px solid var(--border); border-radius: 8px; padding: 1.4rem; background: var(--surface);">
+          <article class="case-card" data-case-search={`${d.headword} ${d.relatedForms.join(" ")} ${d.title}`.toLowerCase()}>
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">
-              <span>{d.caseNumber} · Headword: {d.headword}</span>
-              <span>{d.earliestNewDiscovery.antedatingSummary}</span>
+              <span>{d.caseNumber}</span>
             </div>
-            <h3 style="font-family: var(--font-serif); font-size: 1.42rem; margin: 0.4rem 0 0.45rem;">
-              <a href={`/cases/${entry.id}/`} style="color: inherit; text-decoration: none;">{d.title}</a>
+            <h3 class="case-card-title">
+              <a href={`/cases/${entry.id}/`}>{d.headword}</a>
             </h3>
-            <p style="color: var(--ink-muted); margin: 0 0 0.9rem; font-size: 0.96rem;">{d.subtitle}</p>
+            <p style="color: var(--ink-muted); margin: 0 0 0.9rem; font-size: 0.96rem;">{d.title}</p>
+            <p class="case-result">{d.earliestNewDiscovery.antedatingSummary}</p>
             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font-size: 0.83rem; color: var(--ink-muted);">
               <span class="badge badge-type-attestation">{st.attestations} attestations</span>
               <span class="badge">{st.hostedScans} hosted scans</span>
               <span class="badge badge-type-hypothesis">{st.hypotheses} evaluated hypotheses</span>
               <span class="badge badge-type-rejected_lead">{st.rejectedLeads} rejected leads</span>
               <span style="margin-left: auto;">
-                <a href={`/cases/${entry.id}/`}><strong>Read Case File →</strong></a>
+                <a href={`/cases/${entry.id}/`}><strong>Read case file →</strong></a>
               </span>
             </div>
           </article>
@@ -103,28 +109,27 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
       <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0;">Sample Records from the Citation Index</h2>
       <a href="/citations/" style="font-size: 0.9rem;">Search &amp; filter all {globalStats.totalEvaluated} records →</a>
     </div>
-    <p class="evidence-notice index-scroll-hint">Swipe or scroll sideways to see all columns.</p>
     <div class="citation-table-wrap" role="region" aria-label="Sample citation records" tabindex="0">
-      <table class="citation-table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Form</th>
-            <th>Source</th>
-            <th>Sense / Classification</th>
-            <th>Verification</th>
+      <table class="citation-table responsive-evidence-table homepage-table" role="table">
+        <thead role="rowgroup">
+          <tr role="row">
+            <th role="columnheader" scope="col">Date</th>
+            <th role="columnheader" scope="col">Form</th>
+            <th role="columnheader" scope="col">Source</th>
+            <th role="columnheader" scope="col">Sense / Classification</th>
+            <th role="columnheader" scope="col">Verification</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup">
           {sampleCitations.map((c) => (
-            <tr>
-              <td style="font-family: var(--font-mono); font-size: 0.82rem;">{c.date_display}</td>
-              <td>
+            <tr role="row">
+              <td role="cell" style="font-family: var(--font-mono); font-size: 0.82rem;"><span class="mobile-label" aria-hidden="true">Date</span>{c.date_display}</td>
+              <td role="cell"><span class="mobile-label" aria-hidden="true">Form</span>
                 <a href={`/citations/${c.slug}/`}><strong>{c.attested_form}</strong></a>
               </td>
-              <td>{c.source_publication.split('(')[0].trim()}</td>
-              <td>{c.short_gloss}</td>
-              <td>
+              <td role="cell"><span class="mobile-label" aria-hidden="true">Source</span>{c.source_publication.split('(')[0].trim()}</td>
+              <td role="cell"><span class="mobile-label" aria-hidden="true">Sense / classification</span>{c.short_gloss}</td>
+              <td role="cell"><span class="mobile-label" aria-hidden="true">Verification</span>
                 <span class={`badge badge-ver-${c.verification_level}`}>
                   {VERIFICATION_LABELS[c.verification_level]}
                 </span>
@@ -135,4 +140,23 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
       </table>
     </div>
   </section>
+  <script>
+    const bar = document.querySelector<HTMLElement>('.case-filter');
+    const input = document.querySelector<HTMLInputElement>('#case-search');
+    const counter = document.querySelector('#case-count');
+    const empty = document.querySelector<HTMLElement>('#case-empty');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-case-search]'));
+    if (bar && input && counter && empty) {
+      const filter = () => {
+        const tokens = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+        cards.forEach(card => { card.hidden = !tokens.every(token => card.dataset.caseSearch?.includes(token)); });
+        const visible = cards.filter(card => !card.hidden).length;
+        counter.textContent = `${visible} of ${cards.length} case files`;
+        empty.hidden = visible > 0;
+      };
+      bar.hidden = false;
+      input.addEventListener('input', filter);
+      filter();
+    }
+  </script>
 </BaseLayout>

@@ -33,7 +33,8 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
   description={`${c.short_gloss} — ${c.source_publication} (${c.date_display}). Permanent citation record in ${SITE_ACRONYM}.`}
   ogImage={c.scan.hosted_path || undefined}
 >
-  <article class="prose-container" style="padding: 2.2rem 0 3rem;">
+  <article class="split-section" style="padding: 2.2rem 0 3rem;">
+    <header class="page-intro">
     <nav aria-label="Citation record navigation" style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1rem;">
       <a href={`/citations/?headword=${encodeURIComponent(c.headword)}`}>← More citations for {c.headword}</a>
       <span> · </span>
@@ -54,6 +55,14 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
     </h1>
     <p style="font-size: 1.05rem; color: var(--ink-muted); margin: 0 0 1.35rem;">{c.short_gloss}</p>
 
+    <nav class="jump-links" aria-label="On this record">
+      <a href="#scan">{c.scan.hosted_path ? 'View scan' : 'Find at the archive'}</a>
+      <a href="#transcription">Read transcription</a>
+    </nav>
+    </header>
+
+    <div class="evidence-spread">
+    <div class="reading-column">
     <section style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface); margin-bottom: 1.6rem;">
       <h2 style="font-size: 0.95rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.75rem;">
         Bibliographic &amp; Verification Record
@@ -105,7 +114,7 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
       </dl>
     </section>
 
-    <h2>Diplomatic Transcription</h2>
+    <h2 id="transcription">Diplomatic Transcription</h2>
     <blockquote>{c.verbatim_quote}</blockquote>
 
     {c.linguistic_note && (
@@ -122,6 +131,8 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
       </>
     )}
 
+    </div>
+    <section class="scan-column" aria-labelledby="scan">
     <h2 id="scan">Primary-Source Scan</h2>
     {c.scan.hosted_path ? (
       <figure style="margin: 1rem 0; border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem; background: var(--surface);">
@@ -147,5 +158,7 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
         <a href={c.source_url} target="_blank" rel="noopener noreferrer"><strong>Inspect scan directly at {c.source_archive} ↗</strong></a>
       </div>
     )}
+    </section>
+    </div>
   </article>
 </BaseLayout>

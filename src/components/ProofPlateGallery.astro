@@ -10,7 +10,7 @@ interface Props {
 const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
 ---
 
-<section style="margin: 2.2rem 0;">
+<section id="primary-scans" class="split-section" style="margin: 2.2rem 0;">
   <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem;">
     <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0;">
       Primary-Source Scans ({featuredScans.length + additionalScans.length} Public-Domain Scans Hosted)
@@ -18,7 +18,7 @@ const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
     <span style="font-size: 0.84rem; color: var(--ink-muted);">Click any scan to inspect full image or open permanent citation record</span>
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.15rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 1.15rem;">
     {featuredScans.map((c) => (
       <figure style="margin: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); display: flex; flex-direction: column;">
         <a href={c.scan.hosted_path!} target="_blank" rel="noopener noreferrer" style="display: block; background: #111;">
@@ -30,7 +30,7 @@ const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
           />
         </a>
         <figcaption style="padding: 0.85rem 1rem; font-size: 0.86rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.4rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.4rem;">
             <a href={`/citations/${c.slug}/`} style="font-family: var(--font-mono); font-size: 0.76rem; font-weight: 700;">{c.id}</a>
             <span class={`badge badge-ver-${c.verification_level}`}>{VERIFICATION_LABELS[c.verification_level]}</span>
           </div>
@@ -54,7 +54,7 @@ const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
       <summary style="cursor: pointer; font-weight: 600; font-size: 0.94rem;">
         Browse all {additionalScans.length} additional rights-cleared primary-source scans in this investigation
       </summary>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.9rem; margin-top: 1rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 0.9rem; margin-top: 1rem;">
         {additionalScans.map((c) => (
           <div style="border: 1px solid var(--border); border-radius: 6px; padding: 0.7rem; background: var(--bg); font-size: 0.83rem;">
             <a href={c.scan.hosted_path!} target="_blank" rel="noopener noreferrer">
