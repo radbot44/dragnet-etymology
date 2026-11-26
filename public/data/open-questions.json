@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "total_targets": 160,
   "description": "English words and phrases of unknown, disputed, or insufficiently antedated origin tracked by DRAgNEt.",
   "targets": [
@@ -151,8 +151,8 @@
       "baseline_year": 1890,
       "baseline_summary": "Detroit Plaindealer, 4 Apr. 1890 (p. 2, 'quite a \"phoney\" joke' telephone/sham pun) and unambiguous sham sense in Washington (DC) Evening Star, 7 May 1892 (p. 12, 'a little on the phony order') — prior to 1893 OED racing-bookmaker citation; British cant precursor 'fawney' attested 1781 (George Parker)",
       "open_question": "18th-c. Anglo-Irish thieves' cant fawney ('gilt brass ring dropped in the fawney-rig confidence trick', from Irish fáinne 'ring')",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "phoney"
     },
     {
       "target_id": "TGT-016",
@@ -541,8 +541,8 @@
       "baseline_year": 1856,
       "baseline_summary": "American English 'underhanded intrigue' (1856), altered from Scots 'sculdudrie / sculduddery' (1713, 'fornication, bawdry') of unknown origin",
       "open_question": "Scots kirk-session euphemism sculduddery (1713) undergoing inexplicable t->g shift and desexualization in 1850s US",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "skulduggery"
     },
     {
       "target_id": "TGT-055",
@@ -661,8 +661,8 @@
       "baseline_year": 1889,
       "baseline_summary": "Attested 1889 in Pacific Northwest (Ellensburg, WA / Western US railroad slang) for 'migratory worker, tramp'",
       "open_question": "Railroad mail-handlers' or brakemen's call 'Ho, boy!' on Western lines",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "hobo"
     },
     {
       "target_id": "TGT-067",
@@ -1001,8 +1001,8 @@
       "baseline_year": 1906,
       "baseline_summary": "Circus and carnival underworld cant 'grifter' ('confidence trickster', 1906; 'grift' c. 1900-1903)",
       "open_question": "Phonetic alteration of grafter ('corrupt operator, swindler', 1865)",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "grifter"
     },
     {
       "target_id": "TGT-101",
