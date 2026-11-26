@@ -359,6 +359,44 @@ def normalize_certificate(
     }
 
 
+def prose_excerpt(text: str, limit: int) -> str:
+    """Shorten UI prose at a word boundary and visibly mark the omission."""
+    if len(text) <= limit:
+        return text
+    words = text[:limit].rsplit(maxsplit=1)
+    return (words[0].rstrip(" ,;:") if len(words) > 1 else "").rstrip() + "…"
+
+
+def check_monograph_format(path: Path) -> None:
+    """Reject flattened multi-row tables rather than silently publishing them as prose."""
+    raw = path.read_text(encoding="utf-8-sig")
+    lines = raw.splitlines()
+    fence: tuple[str, int] | None = None
+    indented_cells = 0
+    for line in lines:
+        match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
+        if match:
+            marker, rest = match.groups()
+            if fence is None:
+                fence = (marker[0], len(marker))
+            elif marker[0] == fence[0] and len(marker) >= fence[1] and not rest.strip():
+                fence = None
+            indented_cells = 0
+            continue
+        if fence is not None:
+            continue
+        if line.startswith("\t") and line.strip():
+            indented_cells += 1
+            if indented_cells >= 7:
+                raise SystemExit(
+                    f"ERROR: {path} contains a likely flattened table or unfenced tab-indented block. "
+                    "Export actual Markdown: use pipe-delimited tables and explicit # headings, "
+                    "or fence intentional code blocks."
+                )
+        else:
+            indented_cells = 0
+
+
 def parse_monograph_body(monograph_path: Path | None, valid_cert_ids: set[str], headword: str) -> tuple[str, list[str], str]:
     if not monograph_path or not monograph_path.exists():
         default_body = f"""## 1. Prior Scholarship and Lexicographical Baseline
@@ -375,7 +413,7 @@ Assess the competing linguistic derivations alongside any archival misdates, OCR
 """
         return default_body, [], ""
 
-    raw_txt = monograph_path.read_text(encoding="utf-8", errors="ignore")
+    raw_txt = monograph_path.read_text(encoding="utf-8-sig")
     # Strip downstream OED web-form boxes and journal submission drafts (Sections 6-7)
     cutoff_patterns = [
         r"(?m)^#{0,3}\s*(?:Section\s*)?[67]\.\s+(?:Ready-to-Paste|Oxford English Dictionary|OED\s+Antedating|Submission-Ready)",
@@ -402,14 +440,14 @@ Assess the competing linguistic derivations alongside any archival misdates, OCR
 
     for line in cleaned.splitlines():
         stripped = line.strip()
-        if re.match(r"^[1-5]\.\s+[A-Z][A-Za-z0-9 ,&'()/:—–-]{8,95}$", stripped) and not stripped.endswith("."):
+        if monograph_path.suffix.lower() == ".txt" and re.match(r"^[1-5]\.\s+[A-Z][A-Za-z0-9 ,&'()/:—–-]{8,95}$", stripped) and not stripped.endswith("."):
             out_lines.append(f"\n## {stripped}\n")
             continue
         out_lines.append(line)
         if not prior_summary and len(stripped) > 90 and ("OED" in stripped or "Oxford English Dictionary" in stripped or "Green" in stripped):
-            prior_summary = sanitize_inline(stripped)[:420]
+            prior_summary = prose_excerpt(sanitize_inline(stripped), 420)
         if len(facts) < 4 and len(stripped) > 70 and any(cid in stripped for cid in valid_cert_ids):
-            facts.append(sanitize_inline(stripped.lstrip("*-0123456789. "))[:320])
+            facts.append(prose_excerpt(sanitize_inline(stripped.lstrip("*-0123456789. ")), 320))
 
     body = "\n".join(out_lines).strip() + "\n"
     return body, facts, prior_summary
@@ -476,11 +514,12 @@ def build_case_markdown(
     if not mono_facts:
         mono_facts = [f"Evaluated {len(citations)} archival records for {headword}."]
 
-    hyp_summary = (
+    hyp_summary = prose_excerpt(
         hyps[0]["analysis_notes"] or hyps[0]["linguistic_note"]
         if hyps
-        else f"Evaluates candidate donor and morphological pathways for {headword} against chronological constraints."
-    )[:360]
+        else f"Evaluates candidate donor and morphological pathways for {headword} against chronological constraints.",
+        360,
+    )
 
     timeline_items = primary_atts[:6] if primary_atts else citations[:4]
     featured_ids = [c["id"] for c in hosted_scans[:8]]
@@ -550,7 +589,7 @@ def build_case_markdown(
         "chronologyTimeline:",
     ])
     for item in timeline_items:
-        note_txt = (item.get("analysis_notes") or item.get("short_gloss") or item.get("attested_form") or "")[:160]
+        note_txt = prose_excerpt(item.get("analysis_notes") or item.get("short_gloss") or item.get("attested_form") or "", 160)
         lines.extend([
             f"- date: {yaml_str(item['date_display'])}",
             f"  form: {yaml_str(item['attested_form'])}",
@@ -677,6 +716,12 @@ def main() -> int:
         or args.slug
     )
     slug = args.slug or slugify(headword.split("/")[0].strip())
+    out_case_md = root / "src" / "content" / "cases" / f"{slug}.md"
+    mono_path = Path(args.monograph).resolve() if args.monograph else None
+    if mono_path and not args.ledger_only and (args.overwrite or not out_case_md.exists()):
+        if not mono_path.is_file():
+            raise SystemExit(f"ERROR: Monograph file not found: {mono_path}")
+        check_monograph_format(mono_path)
     target_id = (
         args.target_id
         or (raw_payload.get("target_id") if isinstance(raw_payload, dict) else None)
@@ -735,11 +780,9 @@ def main() -> int:
     print(f"[OK] Wrote ledger -> {out_ledger_path.relative_to(root)} ({len(final_citations)} citations, {hosted_cnt} hosted pre-1931 WebP scans)")
 
     if not args.ledger_only:
-        out_case_md = root / "src" / "content" / "cases" / f"{slug}.md"
         if out_case_md.exists() and not args.overwrite:
             print(f"[SKIP] {out_case_md.relative_to(root)} already exists (pass --overwrite to regenerate Markdown).")
         else:
-            mono_path = Path(args.monograph).resolve() if args.monograph else None
             md_text = build_case_markdown(
                 slug=slug,
                 headword=headword,

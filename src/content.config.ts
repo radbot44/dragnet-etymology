@@ -38,6 +38,7 @@ const cases = defineCollection({
     keywords: z.array(z.string()).default([]),
     priorArtSummary: z.string(),
     earliestKnownAttestation: z.object({
+      label: z.string().optional(),
       form: z.string(),
       dateDisplay: z.string(),
       year: z.number(),
@@ -47,6 +48,9 @@ const cases = defineCollection({
       certId: z.string().optional(),
     }),
     earliestNewDiscovery: z.object({
+      label: z.string().optional(),
+      summaryLabel: z.string().optional(),
+      summaryNote: z.string().optional(),
       form: z.string(),
       dateDisplay: z.string(),
       year: z.number(),

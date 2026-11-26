@@ -4,10 +4,10 @@ import { VERIFICATION_LABELS, type CitationRecord } from '../lib/ledgers';
 interface Props {
   featuredScans: CitationRecord[];
   additionalScans: CitationRecord[];
-  externalPost1930: CitationRecord[];
+  externalAttestations: CitationRecord[];
 }
 
-const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
+const { featuredScans, additionalScans, externalAttestations } = Astro.props;
 ---
 
 <section id="primary-scans" class="split-section" style="margin: 2.2rem 0;">
@@ -80,11 +80,10 @@ const { featuredScans, additionalScans, externalPost1930 } = Astro.props;
     </details>
   )}
 
-  {externalPost1930.length > 0 && (
+  {externalAttestations.length > 0 && (
     <div class="pub-notice" style="margin-top: 1rem;">
-      <strong>Post-1930 Attestations (External Archive Links Only):</strong> To respect the U.S. pre-1931 public-domain boundary,
-      scans published in 1931 or later are linked directly at their institutional viewers rather than redistributed in this repository:{' '}
-      {externalPost1930.map((c, idx) => (
+      <strong>Attestations with external sources:</strong> These records link to an outside source rather than a scan hosted by DRAgNEt:{' '}
+      {externalAttestations.map((c, idx) => (
         <>
           {idx > 0 && ' · '}
           <a href={`/citations/${c.slug}/`}>{c.id} ({c.date_display})</a> [
