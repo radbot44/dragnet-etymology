@@ -1,13 +1,5 @@
 ---
-interface Props {
-  slug: string;
-  title: string;
-  author: string;
-  pubYear: number;
-  canonicalUrl: string;
-  ledgerPath: string;
-  journalDoi?: string;
-  bibtex: string;
+interface ReuseKitObj {
   wikipediaPrimaryRef: string;
   wikipediaGuidance: string;
   wiktionaryQuote: string;
@@ -15,17 +7,33 @@ interface Props {
   oedSlipSummary: string;
 }
 
-const {
-  slug,
-  ledgerPath,
-  journalDoi,
-  bibtex,
-  wikipediaPrimaryRef,
-  wikipediaGuidance,
-  wiktionaryQuote,
-  adsLDispatch,
-  oedSlipSummary,
-} = Astro.props;
+interface Props {
+  slug: string;
+  title?: string;
+  author?: string;
+  pubYear?: number;
+  canonicalUrl?: string;
+  ledgerPath: string;
+  journalDoi?: string;
+  bibtex: string;
+  reuseKit?: ReuseKitObj;
+  wikipediaPrimaryRef?: string;
+  wikipediaGuidance?: string;
+  wiktionaryQuote?: string;
+  adsLDispatch?: string;
+  oedSlipSummary?: string;
+}
+
+const props = Astro.props;
+const slug = props.slug;
+const ledgerPath = props.ledgerPath;
+const journalDoi = props.journalDoi;
+const bibtex = props.bibtex;
+const wikipediaPrimaryRef = props.wikipediaPrimaryRef ?? props.reuseKit?.wikipediaPrimaryRef ?? '';
+const wikipediaGuidance = props.wikipediaGuidance ?? props.reuseKit?.wikipediaGuidance ?? '';
+const wiktionaryQuote = props.wiktionaryQuote ?? props.reuseKit?.wiktionaryQuote ?? '';
+const adsLDispatch = props.adsLDispatch ?? props.reuseKit?.adsLDispatch ?? '';
+const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ?? '';
 ---
 
 <section class="reuse-drawer" aria-labelledby="reuse-kit-heading">

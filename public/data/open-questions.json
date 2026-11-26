@@ -109,8 +109,8 @@
       "headword": "jalopy",
       "category": "vernacular_slang",
       "baseline_year": 1924,
-      "baseline_summary": "1924 US newspaper cartoons and columns ('jaloppy', 'jaloupy', 'gillopy'), 5 years ahead of OED/Green's 1929 Hostetter & Beesley 'It's a Racket!' ('Jaloppi')",
-      "open_question": "Scrap-auto export trade to Jalapa (Xalapa), Mexico via New Orleans",
+      "baseline_summary": "1924 US newspaper baseline reported in HDAS Vol. 2 ('jaloupy', 'jaloppi', 'gillopy'), ahead of OED/Green's May 1929 Hostetter & Beesley 'It's a Racket!' ('Jaloppi'); earliest verified automotive scan in Case 1900 is 3 Apr. 1927 Chicago Sunday Tribune ('jaloppi sedan'), with 1921/1925 Brookline school-name tokens tracked separately",
+      "open_question": "Inspect 1924 Boonville Standard microfilm (Indiana Historical Society reel 295243, Jan. 4–Dec. 26, 1924) for the reported unplated rental 'jalopies' item, July 10, 1928 Chicago Daily News (p. 12) for the reported Riverview Park 'Bring the family \"jalopy\"' ad, and Merriam-Webster's unattributed 1928 'giloppy' slip",
       "status": "published_case",
       "case_slug": "jalopy"
     },
@@ -151,8 +151,8 @@
       "baseline_year": 1890,
       "baseline_summary": "Detroit Plaindealer, 4 Apr. 1890 (p. 2, 'quite a \"phoney\" joke' telephone/sham pun) and unambiguous sham sense in Washington (DC) Evening Star, 7 May 1892 (p. 12, 'a little on the phony order') — prior to 1893 OED racing-bookmaker citation; British cant precursor 'fawney' attested 1781 (George Parker)",
       "open_question": "18th-c. Anglo-Irish thieves' cant fawney ('gilt brass ring dropped in the fawney-rig confidence trick', from Irish fáinne 'ring')",
-      "status": "published_case",
-      "case_slug": "phoney"
+      "status": "under_investigation",
+      "case_slug": null
     },
     {
       "target_id": "TGT-016",
@@ -239,8 +239,8 @@
       "headword": "cut to the chase",
       "category": "technical_idiom",
       "baseline_year": 1929,
-      "baseline_summary": "J. P. McEvoy 'Hollywood Girl' (1929, OED earliest verified print citation: 'Jannings escapes ... Cut to chase'); general figurative sense in Winnipeg Free Press (10 Mar. 1944) and Berkshire Evening Eagle (24 Feb. 1947); 'cut to [scene]' attested 1913 (E. W. Sargent 'Technique of the Photoplay')",
-      "open_question": "Silent-cinema title-card / script instruction ('Cut to chase') transitioning into figurative prose in 1915-1926 film trade journals",
+      "baseline_summary": "J. P. McEvoy, Hollywood Girl (1929 book: full form 'cut to the chase' documented by Word Histories [2017] on p. 86 alongside article-free 'Cut to chase' on pp. 105–106 in page-marked OCR; exact book page scans still to be verified; Grammarphobia [2022] noted OED then cited an abbreviated article-free passage, live OED wording to be re-checked); figurative prose in Winnipeg Free Press (10 Mar. 1944) and Berkshire Evening Eagle (24 Feb. 1947)",
+      "open_question": "Check Liberty magazine under the serial title 'Show Girl in Hollywood' (not 'Hollywood Girl'): Part V opens p. 45 of July 20, 1929 (vol. 6, no. 28); inspect neighboring issues July 27, 1929 (vol. 6, no. 29, Part VI; copyright reg. B35554) and August 3, 1929 (vol. 6, no. 30, Part VII; copyright reg. B36498, secondary lead for article-free text) via Gale's Liberty Magazine Historical Archive or Delaware Art Museum Howard Pyle / Thrasher folder 15 (July–Dec. 1929, holdings unverified), recording full and article-free forms separately with masthead, page, and context to refine the date within 1929",
       "status": "under_investigation",
       "case_slug": null
     },
@@ -541,8 +541,8 @@
       "baseline_year": 1856,
       "baseline_summary": "American English 'underhanded intrigue' (1856), altered from Scots 'sculdudrie / sculduddery' (1713, 'fornication, bawdry') of unknown origin",
       "open_question": "Scots kirk-session euphemism sculduddery (1713) undergoing inexplicable t->g shift and desexualization in 1850s US",
-      "status": "published_case",
-      "case_slug": "skulduggery"
+      "status": "under_investigation",
+      "case_slug": null
     },
     {
       "target_id": "TGT-055",
@@ -661,8 +661,8 @@
       "baseline_year": 1889,
       "baseline_summary": "Attested 1889 in Pacific Northwest (Ellensburg, WA / Western US railroad slang) for 'migratory worker, tramp'",
       "open_question": "Railroad mail-handlers' or brakemen's call 'Ho, boy!' on Western lines",
-      "status": "published_case",
-      "case_slug": "hobo"
+      "status": "under_investigation",
+      "case_slug": null
     },
     {
       "target_id": "TGT-067",
@@ -1001,8 +1001,8 @@
       "baseline_year": 1906,
       "baseline_summary": "Circus and carnival underworld cant 'grifter' ('confidence trickster', 1906; 'grift' c. 1900-1903)",
       "open_question": "Phonetic alteration of grafter ('corrupt operator, swindler', 1865)",
-      "status": "published_case",
-      "case_slug": "grifter"
+      "status": "under_investigation",
+      "case_slug": null
     },
     {
       "target_id": "TGT-101",

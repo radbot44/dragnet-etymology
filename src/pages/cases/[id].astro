@@ -257,7 +257,18 @@ const statusLabels: Record<string, string> = {
         </>
       )}
 
-      <ReuseCitationDrawer reuseKit={d.reuseKit} bibtex={bibtex} />
+      <ReuseCitationDrawer
+        slug={entry.id}
+        title={d.title}
+        author={d.author}
+        pubYear={pubYear}
+        canonicalUrl={canonicalUrl}
+        ledgerPath={`/ledgers/${d.ledgerSlug}.json`}
+        journalDoi={d.journalDoi}
+        reuseKit={d.reuseKit}
+        {...d.reuseKit}
+        bibtex={bibtex}
+      />
     </div>
   </article>
 </BaseLayout>

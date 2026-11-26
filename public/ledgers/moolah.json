@@ -6,14 +6,14 @@
   "headword": "moolah",
   "publication_status": "working_paper",
   "publication_status_note": "Open working paper; verify target journal preprint/prior-dissemination policies before overlapping submission.",
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "prior_art_baselines": {
     "oed_online": {
       "moolah_n_url": "https://www.oed.com/dictionary/moolah_n",
       "moo_n2_url": "https://www.oed.com/dictionary/moo_n2",
       "mazoola_n_url": "https://www.oed.com/dictionary/mazoola_n",
       "baselines": "moolah, n. (rev. Dec. 2002; mod. July 2023): 21 Feb. 1936 New York Daily News, p. 46/1 ('Mulah — Money'), 'of unknown origin'; moo, n.2 (mod. July 2023): 1941 Pittsburgh Courier (improving OED2's 1945 baseline); mazoola, n. (first pub. Mar. 2001; mod. July 2023): 1944 Winnipeg Free Press (blend of mazuma and moolah).",
-      "dragnet_contribution": "Identifies African American vaudeville duo Fiddler & Shelton (1908–1936) behind the 1936 stage-Pidgin origin report; bridges 1936 and 1940 with Feb. 1939 Winchell 'moo-lah' and May 1940 Motion Picture Daily 'box-office moolah (that's French for gelt)'; adds Mar. & Sept. 1943 Down Beat clipped 'Moo'/'moo' (-2 years vs. OED2 1945); and antedates OED3 mazoola, n. (1944) to 12 Oct. 1943 in The Evening Star (p. A-13/1)."
+      "dragnet_contribution": "Identifies African American vaudeville duo Fiddler & Shelton (1908–1936) behind the 1936 stage-Pidgin origin report; bridges 1936 and 1940 with Feb. 1939 Winchell 'moo-lah' and May 1940 Motion Picture Daily 'box-office moolah (that's French for gelt)'; corroborates Mar. & Sept. 1943 Down Beat clipped 'Moo'/'moo' (two years earlier than OED2's 1945 baseline, though later than OED3's 1941 Pittsburgh Courier baseline); and adds separate scan-verified mazoola records from 12 Oct. 1943 (The Evening Star, CERT-1300-076—check live OED entry and exact 1944 Winnipeg date before claiming an antedating) and 14 May 1946 (Lethbridge Herald, CERT-1300-077)."
     },
     "greens_dictionary_of_slang_and_hdas": {
       "greens_url": "https://greensdictofslang.com/entry/h2s46ja",
@@ -23,7 +23,8 @@
     },
     "specialist_scholarship_and_chapman_1995": {
       "american_speech_notes": "Einar Haugen (26.4, Dec. 1951, p. 305); Atcheson L. Hench (27.2, May 1952, pp. 150–51); Harold Wentworth (27.4, Dec. 1952, pp. 286–88); Kevin M. McCarthy (48.3/4, 1973, pp. 305–6); Alan S. Kaye (55.2, 1980, pp. 159–60).",
-      "archives_and_critiques": "Checked Peter Tamony Collection inventory (SHSMO C3939: no dedicated moolah folder), Gerald Cohen's Aug. 2026 Research CV (no moolah monograph), Barry Popik (2019 'Moola Shmoola'), and anti-Cassidy analyses by Grant Barrett (2007), Sesquiotica (2011), and David L. Gold / CassidySlangScam (2019). Traces Etymonline's uncited 'c. 1920' date to Robert L. Chapman's Dictionary of American Slang (3rd ed., 1995, p. 374, 'by about 1920')."
+      "archives_and_critiques": "Checked Peter Tamony Collection inventory (SHSMO C3939: no dedicated moolah folder), Gerald Cohen's Aug. 2026 Research CV (no moolah monograph), Barry Popik (2019 'Moola Shmoola'), and anti-Cassidy analyses by Grant Barrett (2007), Sesquiotica (2011), and David L. Gold / CassidySlangScam (2019). Traces Etymonline's uncited 'c. 1920' date to Robert L. Chapman's Dictionary of American Slang (3rd ed., 1995, p. 374, 'by about 1920').",
+      "mazoola_scholarship": "Lilian Mermin Feinsilver, The Taste of Yiddish (1970; repr. 'The Yiddish is Showing' in Joey L. Dillard, ed., Perspectives on American English, 1980, pp. 229–230, https://doi.org/10.1515/9783110813340), analyzes mazoola as mazuma combined with moola; Michael Quinion (World Wide Words, 2007, https://www.worldwidewords.org/qa-maz1.html) instead treats mazoola as a variant of mazuma and doubts a link to moola."
     }
   },
   "corpus_search_summary": {
@@ -916,7 +917,7 @@
       "catalog_year": 1922,
       "masthead_year": 1922,
       "linguistic_note": "Trap B + C Turf Falsification: Sole full-text hit ('4 mULAH') across 10,956 digitized Daily Racing Form issues (1920s-1930s) is broken-type OCR on 2-year-old bay filly 'MISS BEULAH'",
-      "analysis_notes": "[1300-A DAILY RACING FORM 10,956-ISSUE SWEEP KILL] Masthead (n0) and p. 7 (n6) verified for July 6, 1922. Across all 10,956 Daily Racing Form issues in collection:dailyracingform, 'drf1922070601' was the ONLY match for moolah/moola/mulah—and zoomed physical-ink inspection exposes raw OCR '4 mULAH. b. f 2' as 'MISS BEULAH, b. f, 2' (paralleling Hope Star Nov. 13, 1939 'MULAH BONDI' = actress 'BEULAH BONDI'). Proves zero 1920s racetrack print currency. Proof plate: CERT-1300-007_daily_racing_form_1922_07_06_trap_b_miss_beulah.png (",
+      "analysis_notes": "[1300-A DAILY RACING FORM 10,956-ISSUE SWEEP KILL] Masthead (n0) and p. 7 (n6) verified for July 6, 1922. Across all 10,956 Daily Racing Form issues in collection:dailyracingform, 'drf1922070601' was the ONLY match for moolah/moola/mulah—and zoomed physical-ink inspection exposes raw OCR '4 mULAH. b. f 2' as 'MISS BEULAH, b. f, 2' (paralleling Hope Star Nov. 13, 1939 'MULAH BONDI' = actress 'BEULAH BONDI'). yields zero 1920s racetrack print currency. Proof plate: CERT-1300-007_daily_racing_form_1922_07_06_trap_b_miss_beulah.png (",
       "scan": {
         "hosted_path": "/scans/moolah/CERT-1300-007.webp",
         "rights_status": "us_public_domain_pre_1931",
@@ -2415,7 +2416,7 @@
       "headword": "moolah",
       "attested_form": "mazoola",
       "record_type": "rejected_lead",
-      "record_subtype": "myth_falsification",
+      "record_subtype": "rejected_derivation",
       "verification_level": "agent_verified",
       "verified_by_agent": "DRAgNEt 1300-C",
       "human_verified_by": null,
@@ -2424,7 +2425,7 @@
       "publication_year": 1943,
       "date_display": "12 Oct 1943",
       "sort_date": "1943-10-12",
-      "short_gloss": "Rejected lead (myth falsification): mazoola (12 Oct 1943)",
+      "short_gloss": "Analytical rejected-derivation record: mazoola -> moolah chronology test (see CERT-1300-076 & CERT-1300-077)",
       "source_publication": "The Evening Star (Washington, D.C.), Oct. 12, 1943, p. A-13, col. 1 (Ned Nordness AP World Series column) & Victoria Daily Times, Nov. 7, 1944, p. 8 ('mazoola'); cf. Dixon Evening Telegraph, Oct. 30, 1945, p. 7",
       "source_archive": "Library of Congress (Chronicling America) & Internet Archive",
       "source_url": "https://www.loc.gov/resource/sn83045462/1943-10-12/ed-1/?sp=13",
@@ -2434,7 +2435,7 @@
       "catalog_year": null,
       "masthead_year": 1943,
       "linguistic_note": "",
-      "analysis_notes": "Reverses directionality of the mazoola hypothesis and antedates OED3 mazoola, n. (currently 1944, Winnipeg Free Press) by one year: exhaustive sweeps of Chronicling America (1770–1945) and Internet Archive (1800–1946) yield zero pre-1936 attestations of mazoola (pre-1940 'mazoo' hits are column-wrap hyphenations of Kala-mazoo). Earliest printings appear on 12 Oct. 1943 (The Evening Star, p. A-13, col. 1, LCCN sn83045462) and 7 Nov. 1944 (Victoria Daily Times, p. 8, https://archive.org/details/victoriadailytimes1944-11-07/page/n8/mode/1up), proving mazoola (1943–) is a wartime blend of mazuma (1899–) and moola(h) (1936–).",
+      "analysis_notes": "Analytical record testing the reverse-clipping claim (mazoola -> moolah; for positive ink-verified mazoola citations, see CERT-1300-076 and CERT-1300-077): searches of Chronicling America (1770–1945) and Internet Archive periodicals (1800–1946) found no pre-1936 tokens of mazoola (pre-1940 'mazoo' hits are line-wrap hyphenations of Kala-mazoo), whereas moolah/Mulah is attested from Feb. 1936 (CERT-1300-025) and reported mazoola printings appear in 1943–1946 (12 Oct. 1943 Evening Star, CERT-1300-076; indexed-only 19 Apr. 1944 Prince Albert Daily Herald p. 6 paraphrasing Jack Park; 7 Nov. 1944 Victoria Daily Times p. 8 'garner more mazoola than the pros' alongside Syd Thomas's likely same-dispatch Canadian Press variant 'offer him more mazoola than the pros' in the 7 Nov. 1944 Prince Albert Daily Herald p. 5; and 14 May 1946 Lethbridge Herald, CERT-1300-077). While this sequence favors Lilian Mermin Feinsilver's (1970/1980, pp. 229–230) mazuma + moola blend proposal—or Michael Quinion's (2007) treatment of mazoola as a mazuma variant—over a reverse clipping from mazoola to moolah, chronology alone does not prove either word-formation mechanism.",
       "scan": {
         "hosted_path": null,
         "rights_status": "post_1930_external_archive_link",
@@ -2505,6 +2506,72 @@
         "hosted_path": null,
         "rights_status": "post_1930_external_archive_link",
         "rights_note": "Published 1959 (> 1930): full-page image not redistributed; bibliographic metadata, short quotation, and external archive link provided."
+      }
+    },
+    {
+      "id": "CERT-1300-076",
+      "slug": "cert-1300-076",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "attested_form": "mazoola",
+      "record_type": "attestation",
+      "record_subtype": "related_form_mazoola",
+      "verification_level": "agent_verified",
+      "verified_by_agent": "DRAgNEt Archival Pipeline",
+      "human_verified_by": null,
+      "human_verified_date": null,
+      "external_recognition": null,
+      "publication_year": 1943,
+      "date_display": "12 Oct 1943",
+      "sort_date": "1943-10-12",
+      "short_gloss": "Positive 'mazoola' citation (separate lexeme, not 'moolah') in Ned Nordness AP column, The Evening Star (Washington, D.C.), 12 Oct. 1943, p. A-13",
+      "source_publication": "Ned Nordness (Associated Press), World Series column, The Evening Star (Washington, D.C.), Tuesday, October 12, 1943, p. A-13, col. 1",
+      "source_archive": "Library of Congress (Chronicling America, LCCN sn83045462)",
+      "source_url": "https://www.loc.gov/resource/sn83045462/1943-10-12/ed-1/?sp=13",
+      "page_and_column": "Sports, p. A-13, col. 1, 'Nordness (Continued From Page A-12.)' (LoC sequence sp=13, batch dlc_1young_ver01, tile 0617)",
+      "verbatim_quote": "The Redbird management is letting a lot of dough slip through its fingers—but of necessity. Refunds to holders of tickets marked Game No. 6 will be started Saturday morning. And there is all that mazoola gone to waste on tickets already prepared for sale for the seventh game. Optimism is a wonderful thing.",
+      "masthead_date_verified": true,
+      "catalog_year": 1943,
+      "masthead_year": 1943,
+      "linguistic_note": "Positive attestation of mazoola, n. (distinct from moolah, n.; linked to analytical derivation record CERT-1300-069).",
+      "analysis_notes": "Separate positive primary-scan record for mazoola, n. (linked to CERT-1300-069; not an attestation of moolah, n.): printed running header ('Evening Star Sports | TUESDAY, OCTOBER 12, 1943—A—13') and column 1 text visually checked on Library of Congress IIIF tile 0617. Precedes the 1944 Winnipeg Free Press date cited for OED3 mazoola, n. in secondary notes, though both the live OED entry and the exact 1944 Winnipeg date should be verified directly before claiming a formal dictionary antedating, and searched archives do not establish that this AP dispatch was the absolute first printing.",
+      "scan": {
+        "hosted_path": null,
+        "rights_status": "post_1930_external_archive_link",
+        "rights_note": "Published 1943 (> 1930): page image not hosted in repository; inspect via Library of Congress Chronicling America link."
+      }
+    },
+    {
+      "id": "CERT-1300-077",
+      "slug": "cert-1300-077",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "attested_form": "mazoola",
+      "record_type": "attestation",
+      "record_subtype": "related_form_mazoola",
+      "verification_level": "agent_verified",
+      "verified_by_agent": "DRAgNEt Archival Pipeline",
+      "human_verified_by": null,
+      "human_verified_date": null,
+      "external_recognition": null,
+      "publication_year": 1946,
+      "date_display": "14 May 1946",
+      "sort_date": "1946-05-14",
+      "short_gloss": "Positive 'mazoola' citation (separate lexeme, not 'moolah') in Lorimer Fenwick, 'Out on a Limb,' Lethbridge Herald, 14 May 1946, p. 9, col. 1",
+      "source_publication": "Lorimer Fenwick, 'Out on a Limb,' The Lethbridge Herald (Lethbridge, Alberta), May 14, 1946, p. 9, col. 1",
+      "source_archive": "University of Lethbridge Digital Library",
+      "source_url": "https://digitallibrary.uleth.ca/digital/api/collection/herald/id/19300/download",
+      "page_and_column": "p. 9, col. 1",
+      "verbatim_quote": "This does not include the amount of mazoola that was bet on the sly with the bookies.",
+      "masthead_date_verified": true,
+      "catalog_year": 1946,
+      "masthead_year": 1946,
+      "linguistic_note": "Positive attestation of mazoola, n. (distinct from moolah, n.) documenting independent postwar Canadian sports-page usage.",
+      "analysis_notes": "Scan-checked positive citation for mazoola, n. (not moolah, n., and not an antedating): physical ink, date (May 14, 1946), p. 9, col. 1, and Lorimer Fenwick's byline visually verified on the University of Lethbridge archival scan. Demonstrates independent Canadian sports-column circulation beyond Canadian Press wire items.",
+      "scan": {
+        "hosted_path": null,
+        "rights_status": "post_1930_external_archive_link",
+        "rights_note": "Published 1946 (> 1930): page image not redistributed; inspect directly via University of Lethbridge Digital Library."
       }
     }
   ]
