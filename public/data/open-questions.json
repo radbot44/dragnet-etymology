@@ -239,8 +239,8 @@
       "headword": "cut to the chase",
       "category": "technical_idiom",
       "baseline_year": 1929,
-      "baseline_summary": "J. P. McEvoy, Hollywood Girl (1929 book: full form 'cut to the chase' documented by Word Histories [2017] on p. 86 alongside article-free 'Cut to chase' on pp. 105–106 in page-marked OCR; exact book page scans still to be verified; Grammarphobia [2022] noted OED then cited an abbreviated article-free passage, live OED wording to be re-checked); figurative prose in Winnipeg Free Press (10 Mar. 1944) and Berkshire Evening Eagle (24 Feb. 1947)",
-      "open_question": "Check Liberty magazine under the serial title 'Show Girl in Hollywood' (not 'Hollywood Girl'): Part V opens p. 45 of July 20, 1929 (vol. 6, no. 28); inspect neighboring issues July 27, 1929 (vol. 6, no. 29, Part VI; copyright reg. B35554) and August 3, 1929 (vol. 6, no. 30, Part VII; copyright reg. B36498, secondary lead for article-free text) via Gale's Liberty Magazine Historical Archive or Delaware Art Museum Howard Pyle / Thrasher folder 15 (July–Dec. 1929, holdings unverified), recording full and article-free forms separately with masthead, page, and context to refine the date within 1929",
+      "baseline_summary": "J. P. McEvoy, Hollywood Girl (1929 book: full form 'cut to the chase' documented by Word Histories [2017] on p. 86 alongside article-free 'Cut to chase' on pp. 105–106 in page-marked OCR; exact book page scans still to be verified; Grammarphobia [2022] noted OED then cited an abbreviated article-free passage, live OED wording to be re-checked). Figurative: Frank Scully, Variety, 13 Nov. 1946, p. 53, right col., “when one of the cabinet cut to the chase” (scan checked; credit Dave Wilton). Scully narrates a conversation from 1942. National Guardian, 30 Aug. 1954, p. 6, col. 1, “being a great one for cutting to the chase,” describes an immigration inquiry (scan checked).",
+      "open_question": "Check Liberty magazine under the serial title 'Show Girl in Hollywood' (not 'Hollywood Girl'): Part V opens p. 45 of July 20, 1929 (vol. 6, no. 28); inspect neighboring issues July 27, 1929 (vol. 6, no. 29, Part VI; copyright reg. B35554) and August 3, 1929 (vol. 6, no. 30, Part VII; copyright reg. B36498, secondary lead for article-free text) via Gale's Liberty Magazine Historical Archive or Delaware Art Museum Howard Pyle / Thrasher folder 15 (July–Dec. 1929, holdings unverified), recording full and article-free forms separately with masthead, page, and context to refine the date within 1929; verify the reported March 1944 Winnipeg source separately. The reported 24 Feb. 1947 Berkshire Evening Eagle tax quotation is excluded from the verified chronology: its credits match measures debated in 1992, but the original page and date remain unverified.",
       "status": "under_investigation",
       "case_slug": null
     },
@@ -440,7 +440,7 @@
       "category": "vernacular_slang",
       "baseline_year": 1862,
       "baseline_summary": "Walt Whitman (1862) 'shebang' ('soldier's hut/shelter'); phrase 'the whole shebang' attested 1869",
-      "open_question": "Anglo-Irish shebeen ('unlicensed alehouse', 1781 < Irish síbín), though 'tavern' sense in US lags behind 'hut'",
+      "open_question": "Test proposed connections to Anglo-Irish shebeen. The 1852 Chebang and Restaurant is an apparent venue designation, distinct from common-noun examples and the later fixed phrase.",
       "status": "published_case",
       "case_slug": "whole-shebang"
     },
@@ -658,11 +658,11 @@
       "target_id": "TGT-066",
       "headword": "hobo",
       "category": "vernacular_slang",
-      "baseline_year": 1889,
-      "baseline_summary": "Attested 1889 in Pacific Northwest (Ellensburg, WA / Western US railroad slang) for 'migratory worker, tramp'",
+      "baseline_year": 1885,
+      "baseline_summary": "St. Paul Daily Globe, 30 Nov. 1885, p. 8: attention call and ordinary noun; Sacramento team and Horton, Kansas, pen name are separate 1888 context.",
       "open_question": "Railroad mail-handlers' or brakemen's call 'Ho, boy!' on Western lines",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "hobo"
     },
     {
       "target_id": "TGT-067",
@@ -1060,7 +1060,7 @@
       "category": "vernacular_slang",
       "baseline_year": 1858,
       "baseline_summary": "Attested 1858 ('noisy drinking bout / brawl') and 1860s US euchre/cribbage card-hand term ('five highest cards')",
-      "open_question": "Louisiana/Provençal French jambaraia / jambalaia ('mishmash, disorderly crowd') — Anthony Buccini hypothesis",
+      "open_question": "Louisiana/Provençal French jambaraia / jambalaia ('mishmash, disorderly crowd') — Anthony Buccini hypothesis. Verify the reported songbook advertisement (Pittsburgh Daily Morning Post, 3 July 1850, p. 2) against the original issue; Pitt lists the microfilm run. A song title would establish form, not a generic sense.",
       "status": "under_investigation",
       "case_slug": null
     },
