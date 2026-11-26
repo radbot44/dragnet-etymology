@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_ACRONYM, SITE_EXPANDED, SITE_HEADLINE, SITE_TAGLINE } from '../consts';
-import { getAllCitations, getLedgerBySlug, computeLedgerStats, getOpenQuestionsData } from '../lib/ledgers';
+import { getAllCitations, getLedgerBySlug, computeLedgerStats, getOpenQuestionsData, VERIFICATION_LABELS } from '../lib/ledgers';
 
 const cases = (await getCollection('cases')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -100,10 +100,11 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
 
   <section style="padding: 1.8rem 0 2.5rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem;">
-      <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0;">Recent Records in the Citation Index</h2>
+      <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0;">Sample Records from the Citation Index</h2>
       <a href="/citations/" style="font-size: 0.9rem;">Search &amp; filter all {globalStats.totalEvaluated} records →</a>
     </div>
-    <div class="citation-table-wrap">
+    <p class="evidence-notice index-scroll-hint">Swipe or scroll sideways to see all columns.</p>
+    <div class="citation-table-wrap" role="region" aria-label="Sample citation records" tabindex="0">
       <table class="citation-table">
         <thead>
           <tr>
@@ -117,7 +118,7 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
         <tbody>
           {sampleCitations.map((c) => (
             <tr>
-              <td style="font-family: var(--font-mono); font-size: 0.82rem; white-space: nowrap;">{c.date_display}</td>
+              <td style="font-family: var(--font-mono); font-size: 0.82rem;">{c.date_display}</td>
               <td>
                 <a href={`/citations/${c.slug}/`}><strong>{c.attested_form}</strong></a>
               </td>
@@ -125,7 +126,7 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
               <td>{c.short_gloss}</td>
               <td>
                 <span class={`badge badge-ver-${c.verification_level}`}>
-                  {c.verification_level.replace('_', '-')}
+                  {VERIFICATION_LABELS[c.verification_level]}
                 </span>
               </td>
             </tr>

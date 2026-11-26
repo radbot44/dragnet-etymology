@@ -34,8 +34,8 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
   ogImage={c.scan.hosted_path || undefined}
 >
   <article class="prose-container" style="padding: 2.2rem 0 3rem;">
-    <nav style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1rem;">
-      <a href="/citations/">← Citation Index</a>
+    <nav aria-label="Citation record navigation" style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1rem;">
+      <a href={`/citations/?headword=${encodeURIComponent(c.headword)}`}>← More citations for {c.headword}</a>
       <span> · </span>
       <a href={`/cases/${c.case_slug}/`}>Case File ({c.headword})</a>
       <span> · </span>
@@ -58,7 +58,7 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
       <h2 style="font-size: 0.95rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.75rem;">
         Bibliographic &amp; Verification Record
       </h2>
-      <dl style="display: grid; grid-template-columns: minmax(150px, 190px) 1fr; gap: 0.45rem 1rem; margin: 0; font-size: 0.92rem;">
+      <dl class="citation-bibliography">
         <dt style="color: var(--ink-muted);">Headword</dt>
         <dd style="margin: 0;"><a href={`/cases/${c.case_slug}/`}><strong>{c.headword}</strong></a></dd>
 

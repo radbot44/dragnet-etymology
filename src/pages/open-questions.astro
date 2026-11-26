@@ -24,7 +24,7 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       expressions of unknown or disputed origin.
     </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem; margin-bottom: 2rem;">
       <div style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem; background: var(--surface);">
         <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent); font-weight: 700;">OPEN GAP · SHILL / SHILLABER</div>
         <h2 style="font-size: 1.1rem; margin: 0.35rem 0 0.45rem;">The 1884–1907 Print Gap &amp; Bilingual Auction Evidence</h2>
@@ -45,8 +45,8 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       </div>
     </div>
 
-    <div class="filter-bar">
-      <input id="oq-search" class="filter-input" type="search" placeholder="Search 160 target headwords, baseline dates, or hypotheses (e.g., hoodlum, moolah, yegg, shebang)..." />
+    <div class="filter-bar" role="search" aria-label="Filter open questions">
+      <input id="oq-search" class="filter-input" type="search" aria-label="Search open questions" placeholder="Search headwords, dates, or hypotheses" />
       <select id="oq-cat" class="filter-select" aria-label="Filter by category">
         <option value="">All categories ({data.targets.length})</option>
         {categories.map((cat) => (
@@ -55,11 +55,13 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       </select>
     </div>
 
-    <div id="oq-count" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 0.65rem;">
+    <div id="oq-count" role="status" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 0.65rem;">
       Showing {data.targets.length} of {data.targets.length} target headwords
     </div>
 
-    <div class="citation-table-wrap">
+    <p class="citation-empty" id="oq-empty" hidden>No questions match. Try a different search or select All categories.</p>
+    <p class="evidence-notice index-scroll-hint">Swipe or scroll sideways to see all columns.</p>
+    <div class="citation-table-wrap" role="region" aria-label="Open research questions" tabindex="0">
       <table class="citation-table">
         <thead>
           <tr>
@@ -109,6 +111,7 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
       const q = document.getElementById('oq-search');
       const cat = document.getElementById('oq-cat');
       const count = document.getElementById('oq-count');
+      const empty = document.getElementById('oq-empty');
       const rows = Array.from(document.querySelectorAll('.oq-row'));
       function filter() {
         const s = q.value.trim().toLowerCase();
@@ -116,9 +119,10 @@ const categories = Array.from(new Set(data.targets.map((t) => t.category))).sort
         let n = 0;
         for (const r of rows) {
           const ok = (!s || r.dataset.haystack.includes(s)) && (!c || r.dataset.cat === c);
-          r.style.display = ok ? '' : 'none';
+          r.hidden = !ok;
           if (ok) n++;
         }
+        empty.hidden = n !== 0;
         count.textContent = `Showing ${n} of ${rows.length} target headwords`;
       }
       q.addEventListener('input', filter);

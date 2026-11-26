@@ -10,11 +10,12 @@ import {
 
 const citations = getAllCitations();
 const stats = computeLedgerStats(citations);
-const headwords = Array.from(new Set(citations.map((c) => c.headword)));
+const headwords = Array.from(new Set(citations.map((c) => c.headword))).sort((a, b) => a.localeCompare(b));
 ---
 
 <BaseLayout
   title={`Historical Citation Index (${stats.totalEvaluated} Records) | ${SITE_ACRONYM}`}
+  wide
   description="Searchable database of historical attestations, primary-source scans, contextual controls, linguistic hypotheses, and rejected OCR or misdated leads."
 >
   <section style="padding: 2.2rem 0 2.8rem;">
@@ -25,20 +26,20 @@ const headwords = Array.from(new Set(citations.map((c) => c.headword)));
       Historical Citation Index
     </h1>
     <p style="color: var(--ink-muted); max-width: 68ch; margin: 0 0 1.2rem;">
-      Every evaluated citation has its own permanent record URL, verbatim diplomatic transcription, direct link to the host
-      archive, and explicit verification level distinguishing search discovery, AI scan inspection, independent human verification,
-      and external dictionary recognition.
+      Search historical evidence by word, source, or verification level. Open any form for the full transcription,
+      publication details, and original source.
     </p>
 
-    <div class="filter-bar" role="search" aria-label="Filter citation database">
+    <div class="filter-bar citation-filters" role="search" aria-label="Filter citation database">
       <input
         id="cit-search"
         class="filter-input"
         type="search"
-        placeholder="Search word, spelling, quote, publication, city, or ID (e.g., shillaber, 1883, Comealong, Evans)..."
+        aria-label="Search citations"
+        placeholder="Search word, quote, publication, year, or ID"
       />
       <select id="cit-headword" class="filter-select" aria-label="Filter by headword">
-        <option value="">All headwords ({citations.length})</option>
+        <option value="">All words ({headwords.length})</option>
         {headwords.map((hw) => (
           <option value={hw}>{hw}</option>
         ))}
@@ -51,79 +52,90 @@ const headwords = Array.from(new Set(citations.map((c) => c.headword)));
         <option value="rejected_lead">Rejected leads ({stats.rejectedLeads})</option>
       </select>
       <select id="cit-ver" class="filter-select" aria-label="Filter by verification level">
-        <option value="">All verification levels</option>
+        <option value="">Any verification level</option>
         <option value="externally_recognized">Externally recognized ({stats.externallyRecognized})</option>
         <option value="human_verified">Human-verified ({stats.humanVerified})</option>
         <option value="agent_verified">Agent-verified ({stats.agentVerified})</option>
         <option value="discovered">Discovered ({stats.discovered})</option>
       </select>
-      <label style="font-size: 0.86rem; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+      <label class="scan-filter" style="font-size: 0.86rem; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;">
         <input id="cit-scan-only" type="checkbox" /> Hosted scan only ({stats.hostedScans})
       </label>
     </div>
 
-    <div id="cit-count" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 0.65rem;">
-      Showing {citations.length} of {citations.length} evaluated records
+    <div class="citation-results" id="citation-results" tabindex="-1">
+      <p id="cit-count" role="status">Showing {citations.length} evaluated records</p>
+      <button class="filter-button" id="cit-clear" type="button" hidden>Clear filters</button>
     </div>
+    <p class="citation-empty" id="cit-empty" hidden>No citations match these filters. Try a shorter search or clear the filters.</p>
 
     <div class="citation-table-wrap">
-      <table class="citation-table" id="cit-table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Form</th>
-            <th>Publication</th>
-            <th>Summary &amp; Quote Preview</th>
-            <th>Type</th>
-            <th>Verification</th>
-            <th>Scan</th>
+      <table class="citation-table citation-index-table" id="cit-table" role="table" aria-label="Citation search results">
+        <colgroup><col class="col-date" /><col class="col-form" /><col class="col-source" /><col /><col class="col-type" /><col class="col-verification" /><col class="col-scan" /></colgroup>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th scope="col" role="columnheader">Date</th>
+            <th scope="col" role="columnheader">Form</th>
+            <th scope="col" role="columnheader">Publication</th>
+            <th scope="col" role="columnheader">Summary &amp; Quote Preview</th>
+            <th scope="col" role="columnheader">Type</th>
+            <th scope="col" role="columnheader">Verification</th>
+            <th scope="col" role="columnheader">Scan</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup">
           {citations.map((c) => (
             <tr
               class="cit-row"
+              role="row"
               data-headword={c.headword}
               data-type={c.record_type}
               data-ver={c.verification_level}
               data-scan={c.scan.hosted_path ? 'yes' : 'no'}
               data-haystack={`${c.id} ${c.headword} ${c.attested_form} ${c.date_display} ${c.source_publication} ${c.short_gloss} ${c.verbatim_quote}`.toLowerCase()}
             >
-              <td style="font-family: var(--font-mono); font-size: 0.8rem; white-space: nowrap;">
+              <td class="citation-date" role="cell" data-label="Date">
+                <span class="mobile-label" aria-hidden="true">Date</span>
                 <div>{c.date_display}</div>
                 <div style="font-size: 0.7rem; color: var(--ink-muted);">{c.id}</div>
               </td>
-              <td>
+              <td class="citation-form" role="cell" data-label="Form">
+                <span class="mobile-label" aria-hidden="true">Form</span>
                 <a href={`/citations/${c.slug}/`} style="font-weight: 700;">{c.attested_form}</a>
                 <div style="font-size: 0.76rem; color: var(--ink-muted);">{c.headword}</div>
               </td>
-              <td style="max-width: 240px;">
-                <div style="font-size: 0.86rem;">{c.source_publication.split('(')[0].trim()}</div>
+              <td role="cell" data-label="Publication">
+                <span class="mobile-label" aria-hidden="true">Publication</span>
+                <div class="citation-source-title">{c.source_publication}</div>
                 {c.page_and_column && (
-                  <div style="font-size: 0.75rem; color: var(--ink-muted);">{c.page_and_column.slice(0, 56)}</div>
+                  <div class="citation-source-location">{c.page_and_column}</div>
                 )}
               </td>
-              <td style="max-width: 340px;">
-                <div style="font-weight: 600; font-size: 0.88rem; margin-bottom: 0.2rem;">{c.short_gloss}</div>
-                <div style="font-size: 0.8rem; color: var(--ink-muted);">
+              <td class="citation-preview" role="cell" data-label="Summary &amp; quote">
+                <span class="mobile-label" aria-hidden="true">Summary &amp; quote</span>
+                <div class="citation-summary">{c.short_gloss}</div>
+                <div class="citation-quote">
                   {c.verbatim_quote.slice(0, 135)}{c.verbatim_quote.length > 135 ? '…' : ''}
                 </div>
               </td>
-              <td>
+              <td role="cell" data-label="Type">
+                <span class="mobile-label" aria-hidden="true">Type</span>
                 <span class={`badge badge-type-${c.record_type}`}>
                   {RECORD_TYPE_LABELS[c.record_type]}
                 </span>
               </td>
-              <td>
+              <td role="cell" data-label="Verification">
+                <span class="mobile-label" aria-hidden="true">Verification</span>
                 <span class={`badge badge-ver-${c.verification_level}`}>
                   {VERIFICATION_LABELS[c.verification_level]}
                 </span>
               </td>
-              <td style="white-space: nowrap; font-size: 0.82rem;">
+              <td class="citation-scan" role="cell" data-label="Scan">
+                <span class="mobile-label" aria-hidden="true">Scan</span>
                 {c.scan.hosted_path ? (
-                  <a href={`/citations/${c.slug}/#scan`}>View scan</a>
+                  <a href={`/citations/${c.slug}/#scan`} aria-label={`View scan for ${c.id}`}>View scan</a>
                 ) : (
-                  <a href={c.source_url} target="_blank" rel="noopener noreferrer">Archive ↗</a>
+                  <a href={c.source_url} target="_blank" rel="noopener noreferrer" aria-label={`Open archive for ${c.id} (new tab)`}>Archive ↗</a>
                 )}
               </td>
             </tr>
@@ -131,6 +143,11 @@ const headwords = Array.from(new Set(citations.map((c) => c.headword)));
         </tbody>
       </table>
     </div>
+    <nav class="citation-pagination" aria-label="Citation result pages" id="cit-pages" hidden>
+      <button type="button" class="filter-button" id="cit-prev">Previous</button>
+      <span id="cit-page-label"></span>
+      <button type="button" class="filter-button" id="cit-next">Next</button>
+    </nav>
   </section>
 
   <script is:inline>
@@ -143,36 +160,94 @@ const headwords = Array.from(new Set(citations.map((c) => c.headword)));
       const countEl = document.getElementById('cit-count');
       const rows = Array.from(document.querySelectorAll('.cit-row'));
 
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('q')) qInput.value = params.get('q');
-      if (params.get('headword')) hwSel.value = params.get('headword');
-      if (params.get('type')) typeSel.value = params.get('type');
-      if (params.get('ver')) verSel.value = params.get('ver');
+      const clear = document.getElementById('cit-clear');
+      const empty = document.getElementById('cit-empty');
+      const tableWrap = document.getElementById('cit-table').parentElement;
+      const results = document.getElementById('citation-results');
+      const pages = document.getElementById('cit-pages');
+      const prev = document.getElementById('cit-prev');
+      const next = document.getElementById('cit-next');
+      const pageLabel = document.getElementById('cit-page-label');
+      const pageSize = 50;
+      const controls = [qInput, hwSel, typeSel, verSel, scanChk];
+      let page = 1;
+
+      function readUrl() {
+        const params = new URLSearchParams(location.search);
+        qInput.value = params.get('q') || '';
+        hwSel.value = params.get('headword') || '';
+        typeSel.value = params.get('type') || '';
+        verSel.value = params.get('ver') || '';
+        scanChk.checked = params.get('scan') === '1';
+        page = Math.max(1, Number.parseInt(params.get('page'), 10) || 1);
+      }
 
       function applyFilters() {
-        const q = qInput.value.trim().toLowerCase();
+        const query = qInput.value.trim();
+        const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
         const hw = hwSel.value;
         const tp = typeSel.value;
         const vr = verSel.value;
         const scanOnly = scanChk.checked;
-        let shown = 0;
-        for (const r of rows) {
-          const ok =
-            (!q || r.dataset.haystack.includes(q)) &&
-            (!hw || r.dataset.headword === hw) &&
-            (!tp || r.dataset.type === tp) &&
-            (!vr || r.dataset.ver === vr) &&
-            (!scanOnly || r.dataset.scan === 'yes');
-          r.style.display = ok ? '' : 'none';
-          if (ok) shown++;
+        const matches = rows.filter((r) =>
+          terms.every((term) => r.dataset.haystack.includes(term)) &&
+          (!hw || r.dataset.headword === hw) &&
+          (!tp || r.dataset.type === tp) &&
+          (!vr || r.dataset.ver === vr) &&
+          (!scanOnly || r.dataset.scan === 'yes')
+        );
+        const pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
+        page = Math.min(page, pageCount);
+        const start = (page - 1) * pageSize;
+        const visible = new Set(matches.slice(start, start + pageSize));
+        for (const row of rows) row.hidden = !visible.has(row);
+        const number = new Intl.NumberFormat();
+        const range = visible.size === 1 ? String(start + 1) : `${start + 1}–${start + visible.size}`;
+        countEl.textContent = matches.length
+          ? `Showing ${range} of ${number.format(matches.length)} ${matches.length === rows.length ? 'records' : (matches.length === 1 ? 'match' : 'matches')}`
+          : 'No matching records';
+        empty.hidden = matches.length > 0;
+        tableWrap.hidden = matches.length === 0;
+        pages.hidden = pageCount === 1;
+        prev.disabled = page === 1;
+        next.disabled = page === pageCount;
+        pageLabel.textContent = `Page ${page} of ${pageCount}`;
+        clear.hidden = !(query || hw || tp || vr || scanOnly);
+
+        const url = new URL(location.href);
+        for (const [key, value] of Object.entries({
+          q: query, headword: hw, type: tp, ver: vr,
+          scan: scanOnly ? '1' : '', page: page > 1 ? String(page) : '',
+        })) {
+          if (value) url.searchParams.set(key, value);
+          else url.searchParams.delete(key);
         }
-        countEl.textContent = `Showing ${shown} of ${rows.length} evaluated records`;
+        if (url.href !== location.href) history.replaceState(history.state, '', url);
       }
 
-      [qInput, hwSel, typeSel, verSel, scanChk].forEach((el) => {
-        el.addEventListener('input', applyFilters);
-        el.addEventListener('change', applyFilters);
+      controls.forEach((control) => control.addEventListener('input', () => {
+        page = 1;
+        applyFilters();
+      }));
+      clear.addEventListener('click', () => {
+        for (const el of controls) {
+          if (el === scanChk) el.checked = false;
+          else el.value = '';
+        }
+        page = 1;
+        qInput.focus();
+        applyFilters();
       });
+      function turnPage(delta) {
+        page += delta;
+        applyFilters();
+        results.focus({ preventScroll: true });
+        results.scrollIntoView({ block: 'start' });
+      }
+      prev.addEventListener('click', () => turnPage(-1));
+      next.addEventListener('click', () => turnPage(1));
+      window.addEventListener('popstate', () => { readUrl(); applyFilters(); });
+      readUrl();
       applyFilters();
     })();
   </script>

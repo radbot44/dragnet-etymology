@@ -46,7 +46,7 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
         Cite, Verify, or Reuse This Case File
       </h2>
     </div>
-    <div style="display: flex; gap: 0.75rem; font-size: 0.84rem; font-weight: 600;">
+    <div style="display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; font-size: 0.84rem; font-weight: 600;">
       <a href={`/cases/${slug}.bib`} download={`${slug}.bib`}>Download .bib</a>
       <span>·</span>
       <a href={ledgerPath} target="_blank" rel="noopener noreferrer">Raw JSON Ledger</a>
@@ -62,24 +62,24 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
   </div>
 
   <div class="reuse-tabs" role="tablist" aria-label="Citation formats">
-    <button type="button" class="reuse-tab" role="tab" aria-selected="true" data-tab-target="panel-wiki">
-      Wikipedia (WP:PRIMARY Safe Ref)
+    <button type="button" class="reuse-tab" role="tab" aria-selected="true" id="tab-wiki" aria-controls="panel-wiki" tabindex="0" data-tab-target="panel-wiki">
+      Wikipedia
     </button>
-    <button type="button" class="reuse-tab" role="tab" aria-selected="false" data-tab-target="panel-wikt">
-      Wiktionary (WT:CFI Quote)
+    <button type="button" class="reuse-tab" role="tab" aria-selected="false" id="tab-wikt" aria-controls="panel-wikt" tabindex="-1" data-tab-target="panel-wikt">
+      Wiktionary
     </button>
-    <button type="button" class="reuse-tab" role="tab" aria-selected="false" data-tab-target="panel-adsl">
-      ADS-L Listserv Dispatch
+    <button type="button" class="reuse-tab" role="tab" aria-selected="false" id="tab-adsl" aria-controls="panel-adsl" tabindex="-1" data-tab-target="panel-adsl">
+      ADS-L
     </button>
-    <button type="button" class="reuse-tab" role="tab" aria-selected="false" data-tab-target="panel-oed">
-      OED Submission Slip
+    <button type="button" class="reuse-tab" role="tab" aria-selected="false" id="tab-oed" aria-controls="panel-oed" tabindex="-1" data-tab-target="panel-oed">
+      OED
     </button>
-    <button type="button" class="reuse-tab" role="tab" aria-selected="false" data-tab-target="panel-bib">
-      BibTeX / Scholar
+    <button type="button" class="reuse-tab" role="tab" aria-selected="false" id="tab-bib" aria-controls="panel-bib" tabindex="-1" data-tab-target="panel-bib">
+      BibTeX
     </button>
   </div>
 
-  <div id="panel-wiki" class="reuse-panel active" role="tabpanel">
+  <div id="panel-wiki" aria-labelledby="tab-wiki" tabindex="0" class="reuse-panel active" role="tabpanel">
     <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
       <strong>Policy note:</strong> {wikipediaGuidance}
     </p>
@@ -87,7 +87,7 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
     <button type="button" class="copy-btn" data-copy-from="code-wiki">Copy Wikipedia Primary Ref</button>
   </div>
 
-  <div id="panel-wikt" class="reuse-panel" role="tabpanel">
+  <div id="panel-wikt" aria-labelledby="tab-wikt" tabindex="0" hidden class="reuse-panel" role="tabpanel">
     <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
       Formatted for direct insertion on Wiktionary entry or Citations pages under <code>WT:CFI</code> (durably archived print media):
     </p>
@@ -95,7 +95,7 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
     <button type="button" class="copy-btn" data-copy-from="code-wikt">Copy Wiktionary Citation</button>
   </div>
 
-  <div id="panel-adsl" class="reuse-panel" role="tabpanel">
+  <div id="panel-adsl" aria-labelledby="tab-adsl" tabindex="0" hidden class="reuse-panel" role="tabpanel">
     <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
       Ready-to-post plain-text note for the American Dialect Society mailing list (<code>ADS-L@LISTSERV.UGA.EDU</code>):
     </p>
@@ -103,7 +103,7 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
     <button type="button" class="copy-btn" data-copy-from="code-adsl">Copy ADS-L Dispatch</button>
   </div>
 
-  <div id="panel-oed" class="reuse-panel" role="tabpanel">
+  <div id="panel-oed" aria-labelledby="tab-oed" tabindex="0" hidden class="reuse-panel" role="tabpanel">
     <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
       Formatted for the Oxford English Dictionary Antedatings & Other Evidence submission portal:
     </p>
@@ -111,24 +111,44 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
     <button type="button" class="copy-btn" data-copy-from="code-oed">Copy OED Slip</button>
   </div>
 
-  <div id="panel-bib" class="reuse-panel" role="tabpanel">
+  <div id="panel-bib" aria-labelledby="tab-bib" tabindex="0" hidden class="reuse-panel" role="tabpanel">
     <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
       Standard BibTeX record (Zotero browser connector also detects this page's Highwire Press <code>citation_*</code> meta tags automatically):
     </p>
     <pre class="code-box" id="code-bib">{bibtex}</pre>
     <button type="button" class="copy-btn" data-copy-from="code-bib">Copy BibTeX</button>
   </div>
+  <p class="evidence-notice" data-copy-status role="status"></p>
 </section>
 
 <script>
   document.querySelectorAll('.reuse-drawer').forEach((drawer) => {
-    const tabs = drawer.querySelectorAll('.reuse-tab[role="tab"]');
-    const panels = drawer.querySelectorAll('.reuse-panel');
-    tabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        const targetId = tab.getAttribute('data-tab-target');
-        tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
-        panels.forEach((p) => p.classList.toggle('active', p.id === targetId));
+    const tabs = Array.from(drawer.querySelectorAll<HTMLButtonElement>('.reuse-tab'));
+    const panels = drawer.querySelectorAll<HTMLElement>('.reuse-panel');
+    const status = drawer.querySelector('[data-copy-status]');
+    function select(tab: HTMLButtonElement) {
+      tabs.forEach((t) => {
+        t.setAttribute('aria-selected', String(t === tab));
+        t.tabIndex = t === tab ? 0 : -1;
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+        panel.classList.toggle('active', !panel.hidden);
+      });
+      if (status) status.textContent = '';
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', (event) => {
+        let next: number;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        select(tabs[next]);
+        tabs[next].focus();
       });
     });
 
@@ -136,13 +156,13 @@ const oedSlipSummary = props.oedSlipSummary ?? props.reuseKit?.oedSlipSummary ??
       btn.addEventListener('click', async () => {
         const id = btn.getAttribute('data-copy-from');
         const el = id ? document.getElementById(id) : null;
-        if (!el) return;
-        const original = btn.textContent;
-        await navigator.clipboard.writeText(el.textContent || '');
-        btn.textContent = 'Copied ✓';
-        setTimeout(() => {
-          btn.textContent = original;
-        }, 1600);
+        if (!el || !status) return;
+        try {
+          await navigator.clipboard.writeText(el.textContent || '');
+          status.textContent = 'Copied to clipboard.';
+        } catch {
+          status.textContent = 'Couldn’t access the clipboard. Select and copy the text above.';
+        }
       });
     });
   });

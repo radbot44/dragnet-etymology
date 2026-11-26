@@ -17,9 +17,12 @@ interface Props {
   journalDoi?: string;
   pdfUrl?: string;
   ogImage?: string;
+  wide?: boolean;
 }
 
 const props = Astro.props;
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const active = (path: string) => (path === '/' ? currentPath === '/' : currentPath === path || currentPath.startsWith(path + '/'));
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
@@ -28,7 +31,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <head>
     <ScholarHead {...props} canonicalUrl={canonicalUrl} />
   </head>
-  <body>
+  <body class:list={{ "wide-layout": props.wide }}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="brand-link">
@@ -36,17 +40,17 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
           <span class="brand-expanded">{SITE_EXPANDED}</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="/">Case Files</a>
-          <a href="/citations/">Citation Index</a>
-          <a href="/open-questions/">Open Questions</a>
-          <a href="/protocols/">Evidence &amp; Methods</a>
-          <a href="/submit/">Submit</a>
+          <a href="/" aria-current={active('/') ? (currentPath === '/' ? 'page' : 'location') : undefined}>Case Files</a>
+          <a href="/citations/" aria-current={active('/citations') ? (currentPath === '/citations' ? 'page' : 'location') : undefined}>Citation Index</a>
+          <a href="/open-questions/" aria-current={active('/open-questions') ? (currentPath === '/open-questions' ? 'page' : 'location') : undefined}>Open Questions</a>
+          <a href="/protocols/" aria-current={active('/protocols') ? (currentPath === '/protocols' ? 'page' : 'location') : undefined}>Evidence &amp; Methods</a>
+          <a href="/submit/" aria-current={active('/submit') ? (currentPath === '/submit' ? 'page' : 'location') : undefined}>Submit</a>
           <a href={SITE_GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</a>
         </nav>
       </div>
     </header>
 
-    <main class="container">
+    <main class="container" id="main-content" tabindex="-1">
       <slot />
     </main>
 
