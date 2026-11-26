@@ -6,12 +6,12 @@
   "headword": "whole shebang",
   "publication_status": "working_paper",
   "publication_status_note": "Open working paper; verify target journal preprint and prior-dissemination policies before overlapping external submission.",
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-26",
   "prior_art_baselines": {
     "oed_online": {
       "shebang_n_url": "https://www.oed.com/dictionary/shebang_n",
       "baselines": "shebang, n. (unrevised 1914 OED1 entry, modified March 2025; labeled 'Of unknown origin'): Sense 1a ('hut, shed; one's dwelling, quarters') opens in 1867 (Warren Lee Goss, The Soldier's Story of His Captivity at Andersonville); Sense 1b ('saloon, tavern') opens in 1878; Sense 2 ('thing, affair, concern', chiefly in 'the whole shebang') opens in 1869/1872 (Mark Twain).",
-      "dragnet_contribution": "Antedates OED shebang, n. overall by 14 years, 1 month via the 17 Dec 1852 Kentucky Whig ('the Chebang and Restaurant', CERT-2000-102); antedates Sense 1b ('saloon/tavern') by 25 years; antedates Sense 1a ('Civil War quarters/hut') in contemporary print by more than 5 years (28 Sep 1861 & 21 Dec 1861 Columbia Spy, CERT-2000-113, CERT-2000-201); and antedates collective 'the whole chebang / shebang' by 5 to 6 years (4 Jul 1863 American Medical Times, CERT-2000-207; 5 Mar 1864 Quincy Union, CERT-2000-209; 5 Dec 1865 Louisville Daily Journal, CERT-2000-214; 21 Jul 1867 unquoted Augusta Daily Press, CERT-2000-218)."
+      "dragnet_contribution": "Preserves the 1852 Kentucky Whig venue designation as context (CERT-2000-102); antedates Sense 1a ('Civil War quarters/hut') in contemporary print by more than 5 years (28 Sep 1861 & 21 Dec 1861 Columbia Spy, CERT-2000-113, CERT-2000-201); and antedates collective 'the whole chebang / shebang' by 5 to 6 years (4 Jul 1863 American Medical Times, CERT-2000-207; 5 Mar 1864 Quincy Union, CERT-2000-209; 5 Dec 1865 Louisville Daily Journal, CERT-2000-214; 21 Jul 1867 unquoted Augusta Daily Press, CERT-2000-218)."
     },
     "greens_hdas_and_etymonline": {
       "greens_shebang_url": "https://greensdictofslang.com/entry/sbjmfsa",
@@ -19,7 +19,7 @@
       "etymonline_url": "https://www.etymonline.com/word/shebang",
       "wilton_url": "https://www.wordorigins.org/big-list-entries/whole-shebang",
       "baselines": "Green's Dictionary of Slang dates shebang, n. Sense 2 ('saloon, bar') to 3 Sep 1859 (Weekly Varieties, Boston), Sense 3 ('house, dwelling') to Nov 1863, Sense 1 ('vehicle') to 1872 (Twain, Roughing It), and whole shebang, n. to 1869/1870; Etymonline and Merriam-Webster cite Walt Whitman's Dec 1862 Falmouth camp notes (first printed in John Burroughs, 1867/1871, CERT-2000-221).",
-      "dragnet_contribution": "Pushes the saloon/restaurant sense back 6 years, 9 months before Weekly Varieties (to 17 Dec 1852, CERT-2000-102), pushes Civil War camp quarters back 1 year, 3 months before Whitman's Dec 1862 diary (to 28 Sep 1861, CERT-2000-113), and traces five distinct 1863–1868 pre-Twain stages of 'the whole chebang / shebang'."
+      "dragnet_contribution": "Separates the 1852 venue designation from the 1859 common tavern noun already cited by Green; pushes Civil War camp quarters back 1 year, 3 months before Whitman's Dec 1862 diary (to 28 Sep 1861, CERT-2000-113), and traces five distinct 1863–1868 pre-Twain stages of 'the whole chebang / shebang'."
     },
     "reitan_ads_l_2015_2016": {
       "ads_l_url": "https://listserv.linguistlist.org/pipermail/ads-l/2015-November/139602.html",
@@ -332,8 +332,8 @@
       "case_slug": "whole-shebang",
       "headword": "whole shebang",
       "attested_form": "Chebang",
-      "record_type": "attestation",
-      "record_subtype": "primary_attestation",
+      "record_type": "contextual_evidence",
+      "record_subtype": "venue_designation",
       "verification_level": "agent_verified",
       "verified_by_agent": "DRAgNEt Archival Pipeline",
       "human_verified_by": null,
@@ -342,7 +342,7 @@
       "publication_year": 1852,
       "date_display": "17 Dec 1852",
       "sort_date": "1852-12-17",
-      "short_gloss": "Chebang in The Kentucky Whig (Mount Sterling, KY)",
+      "short_gloss": "“The Chebang and Restaurant,” W. F. Blackburn’s establishment",
       "source_publication": "The Kentucky Whig (Mount Sterling, KY)",
       "source_archive": "Internet Archive / University of Kentucky NDNP Batch",
       "source_url": "https://archive.org/details/xt7ffb4whv97/page/n2/mode/1up",
@@ -351,8 +351,8 @@
       "masthead_date_verified": true,
       "catalog_year": null,
       "masthead_year": 1852,
-      "linguistic_note": "Anglo-Irish shebeen ('unlicensed dram-shop / low tavern', < Irish síbín) blended in antebellum U.S. sporting, oyster-saloon, lodge, and variety cant with frontier echoic gun-blast che-bang! / ker-bang! (> chebang, 1852; shebang, 1859), entering Union volunteer regiments in 1861 for a quartermaster's or soldier's shanty/outfit",
-      "analysis_notes": "MAJOR NEW BREAKTHROUGH (-10y vs. 1862 board baseline; -1 year, 7 months vs. July 15, 1854 Raftsman's Journal; -6 years, 9 months vs. Sept. 3, 1859 Weekly Varieties): Earliest known attestation of 'Chebang'/'shebang' in English. Corroborated on the same page (p. 3, col. 5) by W. F. Blackburn's 'FRESH OYSTERS!' ad shipping fresh Baltimore oysters via Cincinnati & Lexington. Directly overturns the long-standing lexicographical objection that the U.S. 'tavern' sense lagged behind the Civil War 'hut' sense.",
+      "linguistic_note": "",
+      "analysis_notes": "The report identifies Blackburn’s establishment as “the Chebang and Restaurant.” A separate oyster advertisement by Blackburn on the same page (col. 5) supplies business context. This is an early printed form and apparent venue designation; it does not by itself establish a productive tavern noun or attest the fixed phrase. Compare the 1854 Raftsman’s Journal plural (CERT-2000-103) and Green’s 1859 “keeper of a shebang” citation (CERT-2000-106).",
       "scan": {
         "hosted_path": "/scans/whole-shebang/CERT-2000-102.webp",
         "rights_status": "us_public_domain_pre_1931",
