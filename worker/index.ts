@@ -228,14 +228,77 @@ export function compileDirtyOcrRegexPattern(word: string): string {
     m: '(?:m|rn|nn)', n: '[nu]', o: '[oa0]', r: '[r]', s: '[sfſz]',
     t: '[tl]', u: '[un]', w: '(?:w|vv)', y: '[yv]', z: '[zs]',
   };
+  const clean = word.toLowerCase().trim();
+  const joiner = '(?:-\\s*\\n\\s*|\\s*-?\\s*)?';
+
+  // Handle common English -y / -ey / -ie / -ies word-final alternations (e.g. doozy/doozie/doozey/doozies)
+  let stem = clean;
+  let terminalPattern = '';
+  if (clean.length >= 4 && (clean.endsWith('ey') || clean.endsWith('ie'))) {
+    stem = clean.slice(0, -2);
+    terminalPattern = '(?:[eco]?[yv]|[il1!][eco]s?)';
+  } else if (clean.length >= 3 && clean.endsWith('y') && !/[aeiou]y$/.test(clean)) {
+    stem = clean.slice(0, -1);
+    terminalPattern = '(?:[eco]?[yv]|[il1!][eco]s?)';
+  }
+
   const pieces: string[] = [];
-  for (const ch of word.toLowerCase().trim()) {
+  for (const ch of stem) {
     if (ch === ' ') pieces.push('\\s+');
     else if (ch === '-') pieces.push('[-\\s]*');
     else pieces.push(charClasses[ch] ?? ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   }
-  const joiner = '(?:-\\s*\\n\\s*|\\s*-?\\s*)?';
-  return `\\b${pieces.join(joiner)}s?\\b`;
+  if (terminalPattern) {
+    pieces.push(terminalPattern);
+  }
+  return `\\b${pieces.join(joiner)}(?:e?s)?\\b`;
+}
+
+export function compileOrthographicVariantRegex(word: string): string {
+  const all = new Set<string>([
+    word.toLowerCase().trim(),
+    ...generatePhoneticVariants(word, 60),
+    ...generateOcrVariants(word, 30),
+  ]);
+  // Explicitly include -y / -ie / -ey / -ies family if word ends in -y, -ey, or -ie
+  const clean = word.toLowerCase().trim();
+  const yStem = clean.endsWith('ey') || clean.endsWith('ie')
+    ? clean.slice(0, -2)
+    : clean.endsWith('y')
+    ? clean.slice(0, -1)
+    : null;
+  if (yStem && yStem.length >= 2) {
+    for (const suf of ['y', 'ie', 'ey', 'ies', 'eys', 'ys']) {
+      all.add(`${yStem}${suf}`);
+    }
+  }
+  const escaped = Array.from(all)
+    .filter(Boolean)
+    .sort((a, b) => b.length - a.length || a.localeCompare(b))
+    .map((v) => v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+'));
+  return `\\b(?:${escaped.join('|')})\\b`;
+}
+
+export function extractSenseMilestoneYears(baselineYear: number, baselineSummary: string): {
+  earliest_baseline_year: number;
+  latest_sense_baseline_year: number;
+  sense_milestone_years: number[];
+} {
+  const found = new Set<number>([baselineYear]);
+  const matches = baselineSummary.match(/\b(1[5-9]\d{2}|20[0-2]\d)\b/g) || [];
+  for (const m of matches) {
+    const yr = Number(m);
+    // Keep historical attestation/sense years (>= baselineYear and <= 1985, excluding modern citation parentheses > 1995 unless baseline itself is late)
+    if (yr >= baselineYear && (yr <= 1985 || yr <= baselineYear + 40)) {
+      found.add(yr);
+    }
+  }
+  const sorted = Array.from(found).sort((a, b) => a - b);
+  return {
+    earliest_baseline_year: sorted[0],
+    latest_sense_baseline_year: sorted[sorted.length - 1],
+    sense_milestone_years: sorted,
+  };
 }
 
 export function consonantSkeleton(form: string): string {
@@ -668,9 +731,14 @@ async function opGetPipelineStatus(env: Env, queueLimit = 10) {
     .all();
 
   const statusCounts: Record<string, number> = {};
-  for (const r of countsRes.results) statusCounts[r.status] = r.count;
+  let totalTargets = 0;
+  for (const r of countsRes.results) {
+    statusCounts[r.status] = r.count;
+    totalTargets += Number(r.count || 0);
+  }
 
   return {
+    total_targets: totalTargets,
     next_open_block: Number(metaRow?.value || 3000),
     status_counts: statusCounts,
     active_run: activeRun ?? null,
@@ -702,21 +770,56 @@ async function opGetTargetBrief(env: Env, slugOrId: string) {
     .bind(target.target_id)
     .first();
 
-  const endYear = Math.max(1700, baselineYear - 1);
+  const baselineSummary = String(target.baseline_summary || '');
+  const priorAuditContext = String(target.prior_audit_context || '');
+  const milestones = extractSenseMilestoneYears(baselineYear, baselineSummary);
+  const preBaselineEndYear = Math.max(1650, milestones.earliest_baseline_year - 1);
+  const hasSecondarySenseWindow = milestones.latest_sense_baseline_year > milestones.earliest_baseline_year;
+
   const chronAmUrl =
     `https://chroniclingamerica.loc.gov/search/pages/results/?proxtext=${encodeURIComponent(headword)}` +
-    `&dateFilterType=yearRange&date1=1770&date2=${endYear}&format=json&page=1`;
-  const iaQuery = `("${headword}") AND mediatype:(texts) AND date:[1650-01-01 TO ${endYear}-12-31]`;
+    `&dateFilterType=yearRange&date1=1770&date2=${preBaselineEndYear}&format=json&page=1`;
+  const iaQuery = `("${headword}") AND mediatype:(texts) AND date:[1650-01-01 TO ${preBaselineEndYear}-12-31]`;
+
+  const secondarySenseWindow = hasSecondarySenseWindow
+    ? {
+        window_years: `${milestones.earliest_baseline_year}..${milestones.latest_sense_baseline_year}`,
+        note: 'Covers sense/part-of-speech milestones after earliest_baseline_year (e.g. nominal vs. adjectival or figurative shifts noted in baseline_summary).',
+        chronicling_america_sense_window_url:
+          `https://chroniclingamerica.loc.gov/search/pages/results/?proxtext=${encodeURIComponent(headword)}` +
+          `&dateFilterType=yearRange&date1=${milestones.earliest_baseline_year}&date2=${milestones.latest_sense_baseline_year}&format=json&page=1`,
+        internet_archive_sense_window_query:
+          `("${headword}") AND mediatype:(texts) AND date:[${milestones.earliest_baseline_year}-01-01 TO ${milestones.latest_sense_baseline_year}-12-31]`,
+      }
+    : null;
 
   return {
     target,
+    baseline_windows: {
+      earliest_baseline_year: milestones.earliest_baseline_year,
+      latest_sense_baseline_year: milestones.latest_sense_baseline_year,
+      sense_milestone_years: milestones.sense_milestone_years,
+      pre_baseline_cutoff_year: preBaselineEndYear,
+      secondary_sense_window: secondarySenseWindow,
+    },
     phonetics_and_ocr: {
-      consonant_skeleton: target.consonant_skeleton || consonantSkeleton(headword),
-      dirty_ocr_regex: target.dirty_ocr_regex || compileDirtyOcrRegexPattern(headword),
+      consonant_skeleton: consonantSkeleton(headword),
+      dirty_ocr_regex: compileDirtyOcrRegexPattern(headword),
+      phonetic_orthographic_regex: compileOrthographicVariantRegex(headword),
       ocr_variants: generateOcrVariants(headword, 40),
       phonetic_variants: generatePhoneticVariants(headword, 40),
       chronicling_america_pre_cutoff_url: chronAmUrl,
       internet_archive_pre_cutoff_query: iaQuery,
+      secondary_sense_queries: secondarySenseWindow,
+    },
+    prior_art_gate: {
+      has_prior_audit_context: priorAuditContext.trim().length > 0,
+      prior_audit_context: priorAuditContext || null,
+      mandatory_step_0_checklist: [
+        'Audit OED Online, Green\'s Dictionary of Slang, Lighter (HDAS), DARE, and Etymonline for sense-by-sense and POS-by-POS baseline dates before claiming any antedating.',
+        'Search ADS-L archives, Wordorigins.org (Dave Wilton), Language Log, World Wide Words (Michael Quinion), Barry Popik, and Comments on Etymology (Gerald Cohen) to credit prior independent discoveries.',
+        'Cross-check target.prior_audit_context and existing_citations so previously killed OCR/masthead mirages (Traps A-D) are not resurrected.',
+      ],
     },
     existing_citations: existingCites.results,
     latest_run: latestRun ?? null,
@@ -1403,7 +1506,7 @@ const MCP_TOOLS = [
     annotations: READ_ONLY_ANNOTATIONS,
     _meta: READ_SECURITY_META,
     description:
-      'Return DRAgNEt queue counts across all 160 targets, any active Proposer/Red-Team run lock, next_open_block, and top queued headwords.',
+      'Return total_targets, DRAgNEt queue counts across all tracked targets, any active Proposer/Red-Team run lock, next_open_block, and top queued headwords.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -1577,6 +1680,7 @@ async function dispatchToolCall(name: string, args: Record<string, any>, env: En
         english_headword: hw,
         consonant_skeleton: consonantSkeleton(hw),
         dirty_ocr_regex: compileDirtyOcrRegexPattern(hw),
+        phonetic_orthographic_regex: compileOrthographicVariantRegex(hw),
         ocr_variants: generateOcrVariants(hw, 50),
         phonetic_variants: generatePhoneticVariants(hw, 50),
         donor_comparison: args.donor_form
