@@ -18,7 +18,7 @@
     {
       "binding": "DB",
       "database_name": "dragnet-db",
-      "database_id": "[YOUR_D1_DATABASE_ID]"
+      "database_id": "75ef2563-a46c-459f-943f-09adf7b496d5"
     }
   ],
   "r2_buckets": [
