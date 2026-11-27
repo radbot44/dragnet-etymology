@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "case_slug": "newport-news",
+  "target_id": "TGT-161",
+  "headword": "Newport News",
+  "updated_at": "2026-11-26T23:40:00Z",
+  "claim_count": 6,
+  "principal_claim_count": 6,
+  "claims": [
+    {
+      "claim_id": "CLM-2900-01",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "chronological_baseline",
+      "status": "established",
+      "statement": "Prior to 1619, Newport News Point was mapped as unlabeled (1608 Tindall/Zuniga) or engraved as 'Poynt hope' (1612 Smith/Hole & 1618 Hondius); the earliest surviving dated manuscript attestation is 'Newportes Newes' on November 11, 1619, with John Rolfe's January 1619/20 letter documenting spoken currency ('neere Newports Newes') during Capt. Stallinge's spring/May 1619 grounding.",
+      "supporting_citation_ids": [
+        "CERT-2900-101",
+        "CERT-2900-102",
+        "CERT-2900-103",
+        "CERT-2900-105",
+        "CERT-2900-113",
+        "CERT-2900-309"
+      ],
+      "evidence_sha256": "86176a87b4923a27f8b0bcf429e482f81bb36044a4936a33b02f3eb08133c868",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    },
+    {
+      "claim_id": "CLM-2900-02",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "orthographic_and_morphological_distribution",
+      "status": "established",
+      "statement": "Across 32 contemporaneous primary documentary entries from 1619 to 1634, 28 of 32 (87.5%) carry overt genitive -s or -es ('Newportes Newes', 'Newports Newes', 'Nuports-newes'), 4 of 32 (12.5%) omit -s via sibilant haplology before initial /n/, and 0 of 32 (0.0%) spell the second element 'Newce', 'Nuce', 'Nuse', or 'Ness', while identical scribes distinguish 'Newports news' from 'Capt Newces' / 'Sir William Nuce' on the same page.",
+      "supporting_citation_ids": [
+        "CERT-2900-103",
+        "CERT-2900-106",
+        "CERT-2900-108",
+        "CERT-2900-109",
+        "CERT-2900-111",
+        "CERT-2900-114",
+        "CERT-2900-115"
+      ],
+      "evidence_sha256": "1c0507e4634792fc6424598d1ab9586641b92c9a3f756b020b9c7a338add73eb",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    },
+    {
+      "claim_id": "CLM-2900-03",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "myth_falsification",
+      "status": "falsified_rival_hypothesis",
+      "statement": "The 'New Port Newce' / 'Port Newce' hypothesis is falsified topographically, prosopographically, and chronologically: 'Port Newce' occurs 0 times across 5 volumes of CSPI James I (inland Nucestowne in Co. Cork lies 12-14 miles from the coast and was first indexed as 'Newce's Town or Port' by Alexander Brown in 1898); Capt. Thomas Newce settled at Elizabeth City (May 1620 - Sept. 1622); Daniel Gookin arrived Nov. 22, 1621 at pre-existing 'Newports news' and named his plantation 'Marie's Mount'; and Sir William Newce did not arrive in Virginia until October 1622 (per the Old-Style Jan. 20, 1622/23 Council dispatch), nearly three years after Nov. 11, 1619.",
+      "supporting_citation_ids": [
+        "CERT-2900-201",
+        "CERT-2900-202",
+        "CERT-2900-203",
+        "CERT-2900-205",
+        "CERT-2900-206",
+        "CERT-2900-210",
+        "CERT-2900-212",
+        "CERT-2900-216",
+        "CERT-2900-307",
+        "CERT-2900-409",
+        "CERT-2900-414"
+      ],
+      "evidence_sha256": "e7a95bf3a4684dbdb762eeedd92f80b2a06c96bdb18ae301de608c91bee00b8f",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    },
+    {
+      "claim_id": "CLM-2900-04",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "myth_falsification",
+      "status": "falsified_rival_hypothesis",
+      "statement": "The June 1610 Starving-Time rescue legend (printed by Benson J. Lossing in 1866) is falsified by all five contemporary 1610-1625 Jamestown narratives: Capt. Christopher Newport was already aboard the retreating ships with Sir Thomas Gates after wrecking on Bermuda, Lord De La Warr's relief message was carried from Point Comfort by Capt. Edward Brewster, and the encounter occurred 12-15 miles upriver at Mulberry Island ('Mulbery point'), not at Newport News Point.",
+      "supporting_citation_ids": [
+        "CERT-2900-401",
+        "CERT-2900-402",
+        "CERT-2900-403",
+        "CERT-2900-404",
+        "CERT-2900-405",
+        "CERT-2900-410"
+      ],
+      "evidence_sha256": "d60d28388740950213f38db982428b322dca19969c260dcda670c0811a1d0b04",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    },
+    {
+      "claim_id": "CLM-2900-05",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "cartographic_and_dialectal_audit",
+      "status": "falsified_rival_hypothesis",
+      "statement": "Edward Everett Hale's (1867) and John Fiske's (1897) claim that several old maps write 'Newport Ness' (< OE naess 'headland') is falsified 0/11 across inspected 17th-century Chesapeake copperplate maps (1612-1693, which engrave 'Poynt hope', 'Newportnews', or 'Newport / news'), while OED1 (1908) and Wright's EDD (1903) exclude <ew> spellings for ness and exclude OE niwan husum (> Newsham) or ghost OE *news = 'new town'.",
+      "supporting_citation_ids": [
+        "CERT-2900-308",
+        "CERT-2900-309",
+        "CERT-2900-310",
+        "CERT-2900-311",
+        "CERT-2900-312",
+        "CERT-2900-313",
+        "CERT-2900-314",
+        "CERT-2900-415"
+      ],
+      "evidence_sha256": "c2b8bceae141324689f71e7886158219fe9bc4c04809ba0e07f0291bd5c68d1d",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    },
+    {
+      "claim_id": "CLM-2900-06",
+      "case_slug": "newport-news",
+      "is_principal": true,
+      "claim_type": "etymological_synthesis",
+      "status": "supported_hypothesis",
+      "statement": "'Newportes Newes' ('Christopher Newport's news') was coined between 1612 and spring 1619 as a canonical member of the 1617-1624 lower James River [Surname + -s] + [Abstract/Affective Noun] alliterative naming micro-system alongside 'Jordans Jorney', 'Paces Paines', 'Cawseys Care', and 'Chaplains Choyse'; while its morphological structure and eponym are established, the exact unrecorded 1612-1619 christening occasion (habitual 5-voyage lookout anchorage where Newport was famed 'for carrying newes' vs. the Sept. 1618-1619 arrival of Newport's death news aboard the Hope and family land claims) remains open.",
+      "supporting_citation_ids": [
+        "CERT-2900-104",
+        "CERT-2900-301",
+        "CERT-2900-303",
+        "CERT-2900-304",
+        "CERT-2900-305",
+        "CERT-2900-306",
+        "CERT-2900-311",
+        "CERT-2900-315"
+      ],
+      "evidence_sha256": "a91659bf97ae9ae14ff2fac564805b8503f57a9ca4defd149ef326bc6d68bdce",
+      "revision": 1,
+      "review_status": "independently_agent_reviewed"
+    }
+  ]
+}
