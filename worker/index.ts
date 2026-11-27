@@ -1591,10 +1591,11 @@ async function opOpenCasePullRequest(
 
   // Acquire atomic PR lock in pipeline_meta (compatible with existing D1 runs.status CHECK constraint)
   const prLockKey = `opening_pr_lock:${params.run_id}`;
+  const lockTs = nowIso();
   const lockRes = await env.DB.prepare(
-    `INSERT INTO pipeline_meta (key, value) VALUES (?, ?) ON CONFLICT(key) DO NOTHING`
+    `INSERT INTO pipeline_meta (key, value, updated_at) VALUES (?, ?, ?) ON CONFLICT(key) DO NOTHING`
   )
-    .bind(prLockKey, nowIso())
+    .bind(prLockKey, lockTs, lockTs)
     .run();
   if (Number(lockRes.meta?.changes ?? 0) !== 1) {
     throw new Error(`Concurrency conflict: another request is already opening a pull request for '${params.run_id}'.`);
