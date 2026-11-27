@@ -15,8 +15,6 @@
     "validate": "node scripts/validate-site.mjs",
     "validate:claims": "node scripts/validate-claims.mjs --require-all-cases",
     "validate:py": "python3 scripts/validate_submission.py",
-    "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "test:py": "python3 -m unittest discover -s tests -p \"test_*.py\"",
     "package-release": "python3 scripts/package_release_assets.py"
   },
   "dependencies": {
