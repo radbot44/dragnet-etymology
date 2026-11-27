@@ -50,7 +50,7 @@ const featuredSet = new Set(featuredScans.map((c) => c.id));
 const additionalScans = ledger.citations.filter(
   (c) => Boolean(c.scan.hosted_path) && !featuredSet.has(c.id)
 );
-const externalPost1930 = ledger.citations.filter(
+const externalAttestations = ledger.citations.filter(
   (c) => c.record_type === 'attestation' && !c.scan.hosted_path
 );
 const rejectedLeads = d.rejectedLeadIds
@@ -172,7 +172,7 @@ const statusLabels: Record<string, string> = {
 
     <div class="stat-strip overview-stats">
       <div class="stat-card">
-        <div class="stat-label">Earliest Known Attestation</div>
+        <div class="stat-label">{d.earliestKnownAttestation.label ?? 'Earliest Known Attestation'}</div>
         <div class="stat-value">{d.earliestKnownAttestation.dateDisplay}</div>
         <div class="stat-sub">
           <a href={d.earliestKnownAttestation.url} target="_blank" rel="noopener noreferrer">
@@ -182,16 +182,16 @@ const statusLabels: Record<string, string> = {
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Earliest Newly Uncovered Evidence</div>
+        <div class="stat-label">{d.earliestNewDiscovery.label ?? 'Earliest Newly Uncovered Evidence'}</div>
         <div class="stat-value">{d.earliestNewDiscovery.dateDisplay}</div>
         <div class="stat-sub">
           <a href={`/citations/${d.earliestNewDiscovery.certId.toLowerCase()}/`}>{d.earliestNewDiscovery.source}</a>
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Antedating / Chronological Advance</div>
+        <div class="stat-label">{d.earliestNewDiscovery.summaryLabel ?? 'Antedating / Chronological Advance'}</div>
         <div class="stat-value" style="font-size: 1.15rem;">{d.earliestNewDiscovery.antedatingSummary}</div>
-        <div class="stat-sub">{d.earliestNewDiscovery.location}</div>
+        <div class="stat-sub">{d.earliestNewDiscovery.summaryNote ?? d.earliestNewDiscovery.location}</div>
       </div>
       <div class="stat-card">
         <div class="stat-label">Evaluated Citations &amp; Claims</div>
@@ -383,7 +383,7 @@ const statusLabels: Record<string, string> = {
     <ProofPlateGallery
       featuredScans={featuredScans}
       additionalScans={additionalScans}
-      externalPost1930={externalPost1930}
+      externalAttestations={externalAttestations}
     />
 
     <section id="research" class="reading-spread" aria-label="Full case study">
