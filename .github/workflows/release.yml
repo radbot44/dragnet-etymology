@@ -5,12 +5,14 @@ on:
     branches: [main]
     paths:
       - 'public/ledgers/**'
+      - 'public/claims/**'
+      - 'schemas/**'
       - 'src/content/cases/**'
       - 'package.json'
   workflow_dispatch:
     inputs:
       custom_tag:
-        description: 'Optional custom release tag (e.g. v3.1.0); leave blank to auto-derive from package.json'
+        description: 'Optional custom release tag (e.g. v3.4.0); leave blank to auto-derive from package.json'
         required: false
         default: ''
 
@@ -35,8 +37,13 @@ jobs:
       - name: Run OCR & phonetic research harness self-tests
         run: python3 research-system/ocr_phonetic_harness.py --self-test
 
-      - name: Validate JSON ledgers, cross-refs, scan rights & workspace sanitization
+      - name: Validate JSON citation ledgers, cross-refs, scan rights & workspace sanitization
         run: python3 scripts/validate_submission.py
+
+      - name: Validate v1.0 JSON claim ledgers, inferential DAG & SHA-256 review fingerprints
+        run: |
+          python3 scripts/validate_claims.py
+          python3 scripts/record_claim_review.py --verify-fingerprints
 
       - name: Set up Node.js 22
         uses: actions/setup-node@v4
@@ -46,6 +53,11 @@ jobs:
 
       - name: Reproducible dependency install (npm ci)
         run: npm ci
+
+      - name: Run Node.js claim validator & test suite
+        run: |
+          node scripts/validate-claims.mjs
+          npm test --if-present
 
       - name: Build Astro static site (runs validate-site.mjs build gate)
         run: npm run build
@@ -97,7 +109,7 @@ jobs:
           print(f"Resolved release tag: {tag}")
           PY
 
-      - name: Package JSON ledger archive, SHA-256 checksums & release notes
+      - name: Package JSON citation & claim ledgers, schemas, review provenance, checksums & release notes
         run: python3 scripts/package_release_assets.py --tag "${{ steps.resolve_tag.outputs.tag }}" --out-dir release_dist
 
       - name: Create GitHub Release
@@ -107,6 +119,7 @@ jobs:
         run: |
           gh release create "$TAG" \
             "release_dist/dragnet-ledgers-${TAG}.zip" \
+            "release_dist/review-provenance.json" \
             "release_dist/SHA256SUMS.txt" \
             --target "${{ github.sha }}" \
             --title "DRAgNEt ${TAG}" \

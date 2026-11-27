@@ -17,11 +17,17 @@ interface Props {
   journalDoi?: string;
   pdfUrl?: string;
   ogImage?: string;
+  noindex?: boolean;
 }
 
 const props = Astro.props;
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
-const active = (path: string) => (path === '/' ? currentPath === '/' || currentPath.startsWith('/cases/') : currentPath === path || currentPath.startsWith(path + '/') || (path === '/protocols' && currentPath === '/about'));
+const active = (path: string) =>
+  path === '/'
+    ? currentPath === '/' || currentPath.startsWith('/cases/')
+    : currentPath === path ||
+      currentPath.startsWith(path + '/') ||
+      (path === '/protocols' && currentPath === '/about');
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
@@ -29,6 +35,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 <html lang="en">
   <head>
     <ScholarHead {...props} canonicalUrl={canonicalUrl} />
+    {props.noindex && <meta name="robots" content="noindex" />}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -40,6 +47,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </a>
         <nav class="nav-links" aria-label="Primary">
           <a href="/" aria-current={active('/') ? (currentPath === '/' ? 'page' : 'location') : undefined}>Case Files</a>
+          <a href="/claims/" aria-current={active('/claims') ? (currentPath === '/claims' ? 'page' : 'location') : undefined}>Claim Index</a>
           <a href="/citations/" aria-current={active('/citations') ? (currentPath === '/citations' ? 'page' : 'location') : undefined}>Citation Index</a>
           <a href="/open-questions/" aria-current={active('/open-questions') ? (currentPath === '/open-questions' ? 'page' : 'location') : undefined}>Open Questions</a>
           <a href="/protocols/" aria-current={active('/protocols') ? (currentPath === '/protocols' ? 'page' : 'location') : undefined}>Evidence &amp; Methods</a>
@@ -60,7 +68,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
           AI-assisted archival research, primary-source scans, and open historical lexicography.
         </div>
         <div style="font-size: 0.82rem; color: var(--ink-muted);">
-          Original research prose and citation metadata licensed under{' '}
+          Original research prose, structured claim ledgers, and citation metadata licensed under{' '}
           <a href={SITE_LICENSE_URL} target="_blank" rel="noopener noreferrer">{SITE_LICENSE}</a>; site code under MIT.
           Hosted archival page images are pre-1931 U.S. public-domain works; post-1930 sources are linked externally (
           <a href="/protocols/#rights">Image Rights &amp; Publication Policy</a> ·{' '}

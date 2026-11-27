@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * validate-site.mjs (DRAgNEt v3)
- * ------------------------------
+ * validate-site.mjs (DRAgNEt v3 + Claim Architecture v1.0)
+ * --------------------------------------------------------
  * Zero-dependency Node.js validator executed automatically before/during `astro build`
  * (including inside Cloudflare Workers Builds, GitHub Actions, and local `npm run build`).
  *
@@ -11,13 +11,16 @@
  *      mandatory human_verified_by/date on 'human_verified', external_recognition on 'externally_recognized'.
  *   3. Evidence & Image-Rights Gate: HTTPS source_url on attestations/hypotheses; hosted_path exists (<= 5 MB);
  *      works with publication_year > 1930 cannot bundle scans in public/scans/ unless rights_cleared === true.
- *   4. Bidirectional Cross-Referencing: Every CERT-... ID in a Case File's frontmatter or body exists in its ledger.
+ *   4. Bidirectional Cross-Referencing: Every CERT-... ID in a Case File's frontmatter or body exists in its ledger,
+ *      and every published Case File is synchronized with public/data/open-questions.json when present.
  *   5. Editorial Lint: 'Last, First' authorCitation; zero raw 4-decimal harness scores or decimal-year strings.
+ *   6. Claim-Level Architecture v1.0: Delegates to validateClaims() across public/claims/*.json.
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateClaims } from './validate-claims.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -58,6 +61,7 @@ export function validateSite(rootDir = ROOT) {
   const errors = [];
   const casesDir = path.join(rootDir, 'src', 'content', 'cases');
   const ledgersDir = path.join(rootDir, 'public', 'ledgers');
+  const claimsDir = path.join(rootDir, 'public', 'claims');
   const publicDir = path.join(rootDir, 'public');
 
   // 1. Check workspace leaks
@@ -166,8 +170,22 @@ export function validateSite(rootDir = ROOT) {
     errors.push('No Case File Markdown files found in src/content/cases/');
   }
 
+  const openQuestionsPath = path.join(publicDir, 'data', 'open-questions.json');
+  let openTargetsById = null;
+  if (fs.existsSync(openQuestionsPath)) {
+    try {
+      const oqData = JSON.parse(fs.readFileSync(openQuestionsPath, 'utf-8'));
+      if (Array.isArray(oqData.targets)) {
+        openTargetsById = new Map(oqData.targets.map((t) => [String(t.id || ''), t]));
+      }
+    } catch (err) {
+      errors.push(`open-questions.json: Invalid JSON (${err.message})`);
+    }
+  }
+
   for (const cf of caseFiles) {
     const cp = path.join(casesDir, cf);
+    const caseSlug = path.basename(cf, '.md');
     const raw = fs.readFileSync(cp, 'utf-8');
     if (!raw.startsWith('---')) {
       errors.push(`${cf}: Missing YAML frontmatter block`);
@@ -183,6 +201,16 @@ export function validateSite(rootDir = ROOT) {
     if (!ledgerMap.has(ledgerSlug)) {
       errors.push(`${cf}: ledgerSlug '${ledgerSlug}' has no matching public/ledgers/${ledgerSlug}.json`);
       continue;
+    }
+
+    const targetId = extractFrontmatterField(fmText, 'targetId');
+    if (openTargetsById && targetId && openTargetsById.has(targetId)) {
+      const tgt = openTargetsById.get(targetId);
+      if (tgt.status !== 'published_case' || tgt.case_slug !== caseSlug) {
+        errors.push(
+          `${cf}: open-questions.json target '${targetId}' must have status='published_case' and case_slug='${caseSlug}' (got status='${tgt.status}', case_slug='${tgt.case_slug}')`
+        );
+      }
     }
 
     const authorCite = extractFrontmatterField(fmText, 'authorCitation');
@@ -207,6 +235,22 @@ export function validateSite(rootDir = ROOT) {
     }
   }
 
+  // 4. Validate v1.0 Claim Ledgers
+  const claimFiles = fs.existsSync(claimsDir)
+    ? fs.readdirSync(claimsDir).filter((f) => f.endsWith('.json')).sort()
+    : [];
+  const allowEmptyClaims = caseFiles.length < 18 && claimFiles.length === 0;
+  const claimRes = validateClaims({
+    rootDir,
+    allowEmpty: allowEmptyClaims,
+    requireAllCases: caseFiles.length >= 18,
+  });
+  if (!claimRes.ok) {
+    for (const ce of claimRes.errors) {
+      errors.push(`[claims] ${ce}`);
+    }
+  }
+
   return {
     ok: errors.length === 0,
     errors,
@@ -215,6 +259,8 @@ export function validateSite(rootDir = ROOT) {
       ledgers: ledgerFiles.length,
       citations: totalCitations,
       hostedScans: totalHostedScans,
+      claimLedgers: claimRes.stats?.claimLedgers ?? 0,
+      claims: claimRes.stats?.totalClaims ?? 0,
     },
   };
 }
@@ -227,6 +273,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     process.exit(1);
   }
   console.log(
-    `STRUCTURAL_AND_SCHEMA_CHECKS_PASSED (${res.stats.cases} case files, ${res.stats.citations} ledger citations, ${res.stats.hostedScans} pre-1931 scans verified; diplomatic transcription accuracy still requires human philological inspection).`
+    `STRUCTURAL_AND_SCHEMA_CHECKS_PASSED (${res.stats.cases} case files, ${res.stats.citations} ledger citations, ${res.stats.claims} claims across ${res.stats.claimLedgers} claim ledgers, ${res.stats.hostedScans} pre-1931 scans verified; diplomatic transcription accuracy still requires human philological inspection).`
   );
 }

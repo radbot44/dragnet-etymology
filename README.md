@@ -5,45 +5,65 @@
 
 Live site: [https://dragnet.tch.one](https://dragnet.tch.one)
 
-DRAgNEt is an open-access historical lexicography database and working-paper series built with **Astro** and deployed on **Cloudflare Workers Static Assets**. Instead of asking readers to trust AI research agents, every investigation publishes its machine-readable JSON citation ledger, verbatim diplomatic transcriptions, rights-cleared primary-source scans, rejected OCR/misdate leads, and reproducible search utilities.
+DRAgNEt is an open-access historical lexicography database and working-paper series built with **Astro** and deployed on **Cloudflare Workers Static Assets**. Instead of asking readers to trust AI research agents, every investigation separates its evidence into two machine-validated layers:
+1. **Primary-Source Citation Ledgers (`public/ledgers/*.json`, schema `3.0`):** Verbatim diplomatic transcriptions, printed masthead audits, rights-cleared pre-1931 WebP scans, and rejected OCR/misdate leads (`CERT-*`).
+2. **Claim-Level Evidence Graphs (`public/claims/*.json`, schema `1.0`):** Atomic documentary and interpretive propositions (`CLM-*`, validated against [`schemas/claim-ledger.schema.json`](./schemas/claim-ledger.schema.json) and specified in [`docs/claim-architecture.md`](./docs/claim-architecture.md)) linked via directed `evidence` edges, precision-bounded antedating baselines, negative-evidence denominators, and SHA-256-fingerprinted review provenance.
 
-## One-Command Plug-and-Play Monograph Ingestion
+## One-Command Monograph, Citation & Claim Ingestion
 
-Add a newly completed monograph, JSON ledger, and pre-1931 archival scans with a single command (zero extra Python packages required):
+Add or upgrade a completed monograph, citation ledger, claim ledger, and pre-1931 archival scans with zero external Python packages required:
 
 ```bash
-# Add a new word (auto-sanitizes Drive links & 4-decimal scores, converts <=1930 PNGs to WebP, updates open-questions.json, and bumps version):
-python scripts/add_case.py \
-  --ledger "M:/etymology/1602_hokum_verified_ledger.json" \
-  --monograph "M:/etymology/1601_hokum_origin_and_word_family_monograph.md" \
-  --scans "M:/etymology/evidence_scans" \
+# 1. Add a completed word (monograph + citation ledger + claim ledger + <=1930 scans):
+python3 scripts/add_case.py \
+  --ledger /path/to/1602_hokum_verified_ledger.json \
+  --claims /path/to/1603_hokum_claims.json \
+  --monograph /path/to/1601_hokum_origin_and_word_family_monograph.md \
+  --scans /path/to/evidence_scans \
   --slug hokum
 
-# Upgrade an existing case with a Phase-2 ledger:
-python scripts/add_case.py \
-  --ledger "M:/etymology/1402_shill_phase2_verified_ledger.json" \
-  --monograph "M:/etymology/1401_shill_shillaber_american_speech_definitive_monograph.md" \
-  --scans "M:/etymology/evidence_scans" \
+# 2. Ingest or merge ONLY a v1.0 claim ledger for an existing published case
+#    (preserves CLM-* IDs and historical reviews[], downgrading stale reviews on material edits):
+python3 scripts/add_case.py \
   --slug shill-shillaber \
-  --merge-existing \
-  --overwrite
+  --claims /path/to/1403_shill_claims.json \
+  --claims-only \
+  --merge-existing
 
-# Mark an embargoed journal submission on /open-questions/ without publishing full text:
-python scripts/add_case.py --slug shindy --target-id TGT-019 --status under_review
+# 3. Record an embargoed journal submission on /open-questions/ without publishing full text:
+python3 scripts/add_case.py --slug shindig --target-id TGT-019 --status under_review
+
+# 4. Record independent human scan verification (CERT-*) or claim review (CLM-*):
+python3 scripts/record_human_verification.py \
+  --ledger public/ledgers/gimmick.json \
+  --id CERT-900-102 \
+  --verifier "Joshua Callahan"
+
+python3 scripts/record_claim_review.py \
+  --slug gimmick \
+  --id CLM-1100-001 \
+  --status human_reviewed \
+  --reviewer "Joshua Callahan" \
+  --findings "Verified March 11, 1893 Electrical Review p. 36 reprint credit against OED3 Feb. 24, 1893 Bangor Daily News baseline."
 ```
 
 ## Automated Deployment & GitHub Releases
 
-1. **Cloudflare Workers Builds (`npx astro build`):** `astro.config.mjs` runs `scripts/validate-site.mjs` automatically at build start, enforcing schema `3.0`, bidirectional citation cross-references, pre-1931 scan rights, and workspace sanitization before deploying to `https://dragnet.tch.one` on every push to `main`.
-2. **Automatic GitHub Releases (`.github/workflows/release.yml`):** Whenever `public/ledgers/**`, `src/content/cases/**`, or `package.json` changes on `main`, GitHub Actions validates the repository, packages `dragnet-ledgers-vX.Y.Z.zip` + `SHA256SUMS.txt` + ledger-computed release notes via `scripts/package_release_assets.py`, and publishes a versioned GitHub Release.
+1. **Cloudflare Workers Builds (`npx astro build`):** `astro.config.mjs` runs build-time validation automatically before generating static pages, enforcing citation schema `3.0`, claim schema `1.0`, bidirectional cross-references, inferential DAG acyclicity, pre-1931 scan rights, and workspace sanitization on every push to `main`.
+2. **Automatic GitHub Releases (`.github/workflows/release.yml`):** Whenever `public/ledgers/**`, `public/claims/**`, `schemas/**`, `src/content/cases/**`, or `package.json` changes on `main`, GitHub Actions runs the Python and Node.js validation suites, packages `dragnet-ledgers-vX.Y.Z.zip` (`ledgers/*.json`, `claims/*.json`, `schemas/claim-ledger.schema.json`, `docs/claim-architecture.md`, `provenance/review-provenance.json`, `data/open-questions.json`, and `CITATION.cff`) alongside standalone `review-provenance.json`, `SHA256SUMS.txt`, and live release notes via `scripts/package_release_assets.py`, and publishes a versioned GitHub Release.
 
 ## Local Development & Verification
 
+Astro 5 requires **Node.js `>= 18.20.8`** (Node.js 22 LTS recommended) and **Python `>= 3.10`**:
+
 ```bash
 npm ci
-python research-system/ocr_phonetic_harness.py --self-test
-python scripts/validate_submission.py
+python3 research-system/ocr_phonetic_harness.py --self-test
+python3 scripts/validate_submission.py
+python3 scripts/validate_claims.py
+node scripts/validate-claims.mjs
+npm run validate
 npx astro build
 ```
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for submitting primary-scan citations (via zero-Git GitHub Issue Forms or Pull Requests) and recording independent human verification sign-offs (`scripts/record_human_verification.py`).
+See [CONTRIBUTING.md](./CONTRIBUTING.md) and [docs/claim-architecture.md](./docs/claim-architecture.md) for authoring Case Files, schema `3.0` citation ledgers, schema `1.0` claim ledgers, and independent review records.

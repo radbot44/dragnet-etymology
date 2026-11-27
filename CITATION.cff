@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 title: "DRAgNEt: Deep Research Agent Network for Etymology"
-message: "If you use DRAgNEt Case Files, primary-scan proof plates, or verified JSON ledgers in your research, please cite the individual Case File or this repository."
+message: "If you use DRAgNEt Case Files, primary-scan proof plates, verified JSON citation ledgers, or claim-level evidence graphs in your research, please cite the individual Case File or this repository."
 type: dataset
-version: "3.2.0"
-date-released: "2026-11-25"
+version: "3.3.0"
+date-released: "2026-11-26"
 authors:
   - family-names: "Callahan"
     given-names: "Joshua"
@@ -13,13 +13,19 @@ license: "CC-BY-4.0"
 abstract: >-
   Open-access historical lexicography dataset and AI-authored working-paper archive
   coordinated by Joshua Callahan (DRAgNEt — Deep Research Agent Network for Etymology).
-  Publishes machine-validated JSON citation ledgers, verbatim diplomatic transcriptions,
+  Publishes machine-validated JSON citation ledgers (schema 3.0), structured claim-level
+  evidence graphs and inferential DAGs (schema 1.0), precision-bounded antedating
+  baselines, negative-evidence corpus bounds, verbatim diplomatic transcriptions,
   rejected OCR/misdate leads, and pre-1931 U.S. public-domain newspaper, periodical,
-  and court-record scans verified against primary archival repositories, with explicit
-  separation between agent_verified, human_verified, and externally_recognized citations.
+  and court-record scans verified against primary archival repositories, with
+  cryptographic SHA-256 review provenance separating discovered, agent_verified,
+  human_verified, and externally_recognized citations as well as unreviewed,
+  agent_reviewed, independently_agent_reviewed, and human_reviewed claims.
 keywords:
   - etymology
   - historical lexicography
   - antedating
   - American slang
   - archival verification
+  - claim-level evidence
+  - provenance graph

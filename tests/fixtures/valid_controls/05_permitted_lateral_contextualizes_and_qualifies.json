@@ -1,0 +1,137 @@
+{
+  "_qa_meta": {
+    "domain": 5,
+    "target_filename": "hoodlum.json",
+    "stamp_before_validate": true
+  },
+  "schema_version": "1.0",
+  "claim_ledger_id": "hoodlum",
+  "case_slug": "hoodlum",
+  "case_number": "Case 1000",
+  "target_id": "TGT-053",
+  "headword": "hoodlum",
+  "updated_at": "2026-11-26",
+  "summary_note": "Adversarial QA fixture ledger for hoodlum.",
+  "claims": [
+    {
+      "id": "CLM-1000-001",
+      "slug": "clm-1000-001",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 2: Primary-Source Chronology",
+      "short_label": "QA test claim CLM-1000-001",
+      "statement": "Primary newsprint in the San Francisco Daily Evening Bulletin attests plural 'Hoodlums' on 14 December 1866.",
+      "rationale": "Direct visual inspection of the primary archival page image verifies printed date and word sense.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Documented print usage at the stated date and venue.",
+        "does_not_establish": "Ultimate pre-print oral coinage or donor-language etymology.",
+        "remaining_uncertainty": "Undigitized ephemeral print prior to 1866 remains unsearched."
+      },
+      "limitations": [
+        "Bounded by surviving digitized San Francisco police-court newspaper runs."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-020",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary witness",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1000-002",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Mutual lateral link A -> B",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 QA fixture extraction.",
+          "content_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-002",
+      "slug": "clm-1000-002",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 2: Primary-Source Chronology",
+      "short_label": "QA test claim CLM-1000-002",
+      "statement": "Primary newsprint in the San Francisco Daily Evening Bulletin attests plural 'Hoodlums' on 14 December 1866.",
+      "rationale": "Direct visual inspection of the primary archival page image verifies printed date and word sense.",
+      "type": "historical_context",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Documented print usage at the stated date and venue.",
+        "does_not_establish": "Ultimate pre-print oral coinage or donor-language etymology.",
+        "remaining_uncertainty": "Undigitized ephemeral print prior to 1866 remains unsearched."
+      },
+      "limitations": [
+        "Bounded by surviving digitized San Francisco police-court newspaper runs."
+      ],
+      "resolution_criteria": [
+        "Locate direct San Francisco German-language newspaper tokens linking Hudellump to local gangs prior to December 1866."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1000-020",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents 1691 compound",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1000-001",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Mutual lateral link B -> A (non-inferential, permitted!)",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 QA fixture extraction.",
+          "content_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

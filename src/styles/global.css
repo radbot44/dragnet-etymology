@@ -845,3 +845,454 @@ dialog.plate-modal::backdrop {
   padding: 0.7rem 0.95rem;
 }
 .question-highlights summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+
+/* ==========================================================================
+   DRAgNEt Claim-Level Evidence Architecture Styles (WCAG AA, Zero Checkmarks)
+   ========================================================================== */
+
+/* Epistemic Kind Badges (Documentary Findings vs. Interpretive Hypotheses) */
+.badge-class-documentary {
+  color: #1d3b4c;
+  background: #ebf2f6;
+  border-color: #bad0dc;
+}
+.badge-class-interpretive {
+  color: #6e4206;
+  background: #fcf3e3;
+  border-color: #e6ca96;
+}
+.badge-claim-type {
+  color: var(--ink);
+  background: var(--surface-alt);
+  border-color: var(--border);
+}
+
+/* Evidence Assessment Badges (Muted spruce-slate for supported — NOT pass-green) */
+.badge-assess-supported {
+  color: #194d47;
+  background: #e9f3f1;
+  border-color: #b0d0cb;
+}
+.badge-assess-partially_supported {
+  color: #704508;
+  background: #fdf4e3;
+  border-color: #e6ca96;
+}
+.badge-assess-inconclusive {
+  color: #464038;
+  background: #f1eee8;
+  border-color: #d2cabe;
+}
+.badge-assess-contradicted {
+  color: #7f231c;
+  background: #faeae8;
+  border-color: #e5b9b5;
+}
+.badge-assess-unassessed {
+  color: #524c43;
+  background: #f5f2ec;
+  border-color: #cbc3b5;
+}
+
+/* Claim Review Status Badges (Explicit AI vs. Human Distinction) */
+.badge-review-unreviewed {
+  color: #575046;
+  background: #f7f4ed;
+  border-color: #dcd3c2;
+}
+.badge-review-agent_reviewed {
+  color: #1e4d6b;
+  background: #eef6fb;
+  border-color: #bdd7ea;
+}
+.badge-review-independently_agent_reviewed {
+  color: #283b66;
+  background: #edf0fa;
+  border-color: #bdcae8;
+}
+.badge-review-human_reviewed {
+  color: #165b33;
+  background: #eaf7ef;
+  border-color: #a9dec0;
+}
+.badge-review-stale {
+  color: #842029;
+  background: #fdf0f1;
+  border-color: #efc2c6;
+}
+.badge-ext-recognized {
+  color: #4b2c7a;
+  background: #f4effc;
+  border-color: #d2c1ee;
+}
+.badge-lifecycle-superseded,
+.badge-lifecycle-withdrawn {
+  color: #7f231c;
+  background: #faeae8;
+  border-color: #e5b9b5;
+}
+
+/* Evidence Edge Relationship & Directness Badges */
+.badge-rel-supports {
+  color: #194d47;
+  background: #eef6f4;
+  border-color: #b8d5d0;
+}
+.badge-rel-qualifies,
+.badge-rel-contextualizes {
+  color: #6e4206;
+  background: #fcf4e6;
+  border-color: #e5cb99;
+}
+.badge-rel-weakens,
+.badge-rel-contradicts {
+  color: #7f231c;
+  background: #faeae8;
+  border-color: #e5b9b5;
+}
+.badge-rel-depends_on {
+  color: #283b66;
+  background: #eef1fa;
+  border-color: #c0cde8;
+}
+.badge-directness {
+  color: var(--ink-muted);
+  background: var(--bg);
+  border-color: var(--border);
+  font-weight: 500;
+}
+
+.claim-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+/* Plain-English AI vs. Human Review Disclosure & Stale Banner */
+.claim-review-disclosure {
+  border: 1px solid var(--border);
+  border-left: 4px solid #1e4d6b;
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.05rem;
+  margin: 1rem 0 1.25rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.claim-review-disclosure.is-unreviewed {
+  border-left-color: #7a6b53;
+}
+.claim-review-disclosure.is-human {
+  border-left-color: #165b33;
+  background: #f7fcf9;
+}
+.claim-stale-banner {
+  border: 1px solid #efc2c6;
+  border-left: 4px solid #842029;
+  background: #fdf5f6;
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.05rem;
+  margin: 0.85rem 0 1.25rem;
+  font-size: 0.9rem;
+  color: #58151c;
+}
+
+/* Mandatory 3-Part Evidence Boundary Box */
+.claim-boundary-box {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 1.2rem 1.3rem;
+  margin: 1.5rem 0;
+}
+.claim-boundary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16.5rem), 1fr));
+  gap: 0.95rem;
+  margin-top: 0.85rem;
+}
+.boundary-pane {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  background: var(--bg);
+  min-width: 0;
+}
+.boundary-pane h3 {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.45rem;
+}
+.boundary-pane p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.boundary-establishes {
+  border-top: 3px solid #194d47;
+  background: #f6faf9;
+}
+.boundary-establishes h3 { color: #194d47; }
+.boundary-does-not {
+  border-top: 3px solid var(--accent);
+  background: #fcf7f5;
+}
+.boundary-does-not h3 { color: var(--accent); }
+.boundary-uncertainty {
+  border-top: 3px solid var(--hypothesis);
+  background: #fdfaf2;
+}
+.boundary-uncertainty h3 { color: var(--hypothesis); }
+
+/* Antedating Baseline & Negative-Evidence Bounds Cards */
+.claim-baseline-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 1.2rem 1.3rem;
+  margin: 1.5rem 0;
+}
+.baseline-advance-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding: 0.7rem 0.95rem;
+  margin: 0.75rem 0 1rem;
+  background: #eef6f4;
+  border: 1px solid #b8d5d0;
+  border-radius: 6px;
+}
+.baseline-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+}
+.baseline-col {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  background: var(--bg);
+  min-width: 0;
+}
+.baseline-col h3 {
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+  margin: 0 0 0.45rem;
+}
+.query-term-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.query-term-chip {
+  font-family: var(--font-mono);
+  font-size: 0.77rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.12rem 0.45rem;
+}
+.witness-note {
+  margin-top: 0.35rem;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+/* Searchable Claim Index Table & Filter Layout */
+.claim-filters .filter-ref-input {
+  flex: 1 1 210px;
+}
+.claim-index-table {
+  table-layout: fixed;
+}
+.claim-index-table :is(th, td) {
+  padding-inline: 0.65rem;
+}
+.claim-index-table .col-clm-id { width: 12.5%; }
+.claim-index-table .col-clm-prop { width: 35.5%; }
+.claim-index-table .col-clm-type { width: 15%; }
+.claim-index-table .col-clm-assess { width: 13%; }
+.claim-index-table .col-clm-review { width: 14%; }
+.claim-index-table .col-clm-ev { width: 10%; }
+.claim-index-table .mobile-label { display: none; }
+.claim-prop-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.38;
+  margin-bottom: 0.22rem;
+}
+.claim-prop-statement,
+.claim-prop-boundary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+.claim-prop-boundary {
+  margin-top: 0.22rem;
+  font-size: 0.77rem;
+}
+
+@media (max-width: 56rem) {
+  .claim-index-table,
+  .claim-index-table tbody {
+    display: block;
+  }
+  .claim-index-table colgroup {
+    display: none;
+  }
+  .claim-index-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .claim-index-table tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 1rem;
+    padding: 0.95rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .claim-index-table tr:last-child {
+    border-bottom: 0;
+  }
+  .claim-index-table td {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+  }
+  .claim-index-table tr:hover td {
+    background: transparent;
+  }
+  .claim-index-table .claim-prop-cell {
+    grid-column: 1 / -1;
+  }
+  .claim-index-table .mobile-label {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--ink-muted);
+    font: 0.69rem/1.4 var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+  }
+}
+
+@media (max-width: 40rem) {
+  .claim-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+  .claim-filters :is(#clm-search, #clm-ref, .scan-filter) {
+    grid-column: 1 / -1;
+  }
+  .claim-filters :is(.filter-input, .filter-select) {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 22rem) {
+  .claim-filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Three-Layer Architecture Strip & Principal Claims Cards */
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+.architecture-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  min-width: 0;
+}
+.architecture-step {
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+.architecture-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin: 0.25rem 0 0.4rem;
+}
+.architecture-card p {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.65rem;
+}
+
+.principal-claims-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.1rem;
+  margin: 1rem 0 1.25rem;
+}
+.principal-claim-group {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 1.1rem 1.2rem;
+  min-width: 0;
+}
+.principal-claim-group.is-documentary {
+  border-top: 3px solid #1d3b4c;
+}
+.principal-claim-group.is-interpretive {
+  border-top: 3px solid #6e4206;
+}
+.principal-claim-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.principal-claim-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem 0.95rem;
+  background: var(--bg);
+}
+.related-claims-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 0.95rem;
+  margin: 0.9rem 0 1.5rem;
+}
+.related-claim-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  min-width: 0;
+}

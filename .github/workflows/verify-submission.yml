@@ -1,5 +1,7 @@
-name: Verify DRAgNEt Ledger Schema, Cross-Refs & Astro Build
+name: Verify DRAgNEt Citation & Claim Schemas, Cross-Refs & Astro Build
 
+# Runs on all pull requests and pushes to main (including public/claims/**,
+# schemas/**, public/ledgers/**, public/data/**, src/**, scripts/**, docs/**, tests/**).
 on:
   pull_request:
     branches: [main]
@@ -11,7 +13,7 @@ permissions:
 
 jobs:
   validate-and-build:
-    name: Schema, Cross-Ref, Sanitization & Reproducible Build
+    name: Citation & Claim Schema, DAG, Sanitization & Reproducible Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,8 +27,13 @@ jobs:
       - name: Run OCR & phonetic research harness self-tests
         run: python3 research-system/ocr_phonetic_harness.py --self-test
 
-      - name: Validate JSON ledgers, cross-references, image rights & workspace sanitization
+      - name: Validate JSON citation ledgers, cross-references, image rights & workspace sanitization
         run: python3 scripts/validate_submission.py
+
+      - name: Validate v1.0 JSON claim ledgers, inferential DAG & SHA-256 review fingerprints
+        run: |
+          python3 scripts/validate_claims.py
+          python3 scripts/record_claim_review.py --verify-fingerprints
 
       - name: Set up Node.js 22
         uses: actions/setup-node@v4
@@ -37,5 +44,15 @@ jobs:
       - name: Reproducible dependency install (npm ci)
         run: npm ci
 
+      - name: Run Node.js claim validator & test suite
+        run: |
+          node scripts/validate-claims.mjs
+          npm test --if-present
+
       - name: Build Astro static site (runs Node build-gate + generates static pages)
         run: npm run build
+
+      - name: Smoke-test release asset packaging & SHA-256 checksums
+        run: |
+          python3 scripts/package_release_assets.py --tag v0.0.0-ci --out-dir /tmp/dragnet-ci-release
+          rm -rf /tmp/dragnet-ci-release

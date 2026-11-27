@@ -1,0 +1,492 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClaimBadges from '../../components/ClaimBadges.astro';
+import { SITE_ACRONYM } from '../../consts';
+import {
+  CLAIM_ASSESSMENT_LABELS,
+  CLAIM_TYPE_LABELS,
+  DOCUMENTARY_CLAIM_TYPES,
+  INTERPRETIVE_CLAIM_TYPES,
+  computeCaseClaimStats,
+  computeGlobalClaimStats,
+  getAllClaims,
+  getClaimsForCase,
+} from '../../lib/claims';
+
+const claims = getAllClaims({ includeNonActive: false });
+const stats = computeCaseClaimStats(claims);
+const globalGraphStats = computeGlobalClaimStats();
+
+const allCases = (await getCollection('cases')).sort((a, b) =>
+  a.data.headword.localeCompare(b.data.headword)
+);
+const caseOptions = allCases.map((entry) => ({
+  slug: entry.data.ledgerSlug,
+  headword: entry.data.headword,
+  caseNumber: entry.data.caseNumber,
+  count: getClaimsForCase(entry.data.ledgerSlug, { includeNonActive: false }).length,
+}));
+const casesWithClaims = caseOptions.filter((c) => c.count > 0);
+const casesPendingClaims = caseOptions.filter((c) => c.count === 0);
+
+const aiReviewedCount =
+  stats.byReviewStatus.agent_reviewed + stats.byReviewStatus.independently_agent_reviewed;
+---
+
+<BaseLayout
+  title={`Claim & Hypothesis Index (${stats.activeClaims} Propositions) | ${SITE_ACRONYM}`}
+  description="Searchable index of falsifiable Documentary Findings and Interpretive Hypotheses across DRAgNEt investigations, with explicit evidence assessments, AI-vs-human review status, and scope boundaries."
+>
+  <section style="padding: 2.2rem 0 2.8rem;">
+    <div class="overview-layout" style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem;">
+      <div class="page-intro">
+        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;">
+          Structured Claim Graph
+        </div>
+        <h1 style="font-family: var(--font-serif); font-size: clamp(1.85rem, 3.2vw, 2.45rem); margin: 0.35rem 0 0.55rem;">
+          Claim &amp; Hypothesis Index
+        </h1>
+        <p style="color: var(--ink-muted); max-width: 68ch; margin: 0;">
+          Every investigation separates empirical <strong>Documentary Findings</strong> (primary-source attestations,
+          chronological antedatings, reprint lineages, and bounded negative-corpus sweeps) from{' '}
+          <strong>Interpretive Hypotheses</strong> (semantic shifts, derivational origins, phonology, transmission pathways,
+          and rebuttals). Each proposition carries an explicit scope boundary and distinguishes AI-agent evaluation from
+          independent human review.
+        </p>
+      </div>
+
+      <div class="stat-strip overview-stats">
+        <div class="stat-card">
+          <div class="stat-label">Active Claims</div>
+          <div class="stat-value">{stats.activeClaims}</div>
+          <div class="stat-sub">
+            {stats.documentaryClaims} documentary · {stats.interpretiveClaims} interpretive
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Evidence Assessments</div>
+          <div class="stat-value">{stats.byAssessment.supported} Supported</div>
+          <div class="stat-sub">
+            {stats.byAssessment.partially_supported} partial · {stats.byAssessment.inconclusive} inconclusive ·{' '}
+            {stats.byAssessment.contradicted} contradicted
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Review Transparency</div>
+          <div class="stat-value">
+            {stats.byReviewStatus.human_reviewed} Human / {aiReviewedCount} AI
+          </div>
+          <div class="stat-sub">
+            {stats.byReviewStatus.unreviewed} unreviewed · {stats.externallyRecognizedClaims} externally recognized
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Citation Graph Coverage</div>
+          <div class="stat-value">{globalGraphStats.uniqueCitationsReferenced} Citations</div>
+          <div class="stat-sub">
+            Across {globalGraphStats.claimLedgersCount} of {allCases.length} published case files
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar claim-filters" role="search" aria-label="Filter claim database">
+      <input
+        id="clm-search"
+        class="filter-input"
+        type="search"
+        aria-label="Search claims"
+        placeholder="Search proposition, word, lexeme, boundary, or claim ID"
+      />
+
+      <select id="clm-case" class="filter-select" aria-label="Filter by case or headword">
+        <option value="">All cases ({casesWithClaims.length} loaded)</option>
+        {casesWithClaims.length > 0 && (
+          <optgroup label="Published Claim Ledgers">
+            {casesWithClaims.map((c) => (
+              <option value={c.slug} data-headword={c.headword.toLowerCase()}>
+                {c.headword} ({c.count})
+              </option>
+            ))}
+          </optgroup>
+        )}
+        {casesPendingClaims.length > 0 && (
+          <optgroup label="Case Files Pending Claim Ledger">
+            {casesPendingClaims.map((c) => (
+              <option value={c.slug} data-headword={c.headword.toLowerCase()}>
+                {c.headword} (0)
+              </option>
+            ))}
+          </optgroup>
+        )}
+      </select>
+
+      <select id="clm-type" class="filter-select" aria-label="Filter by claim type">
+        <option value="">All claim types ({stats.activeClaims})</option>
+        <optgroup label="By Epistemic Category">
+          <option value="kind:documentary">All Documentary Findings ({stats.documentaryClaims})</option>
+          <option value="kind:interpretive">All Interpretive Hypotheses ({stats.interpretiveClaims})</option>
+        </optgroup>
+        <optgroup label="Documentary Findings">
+          {DOCUMENTARY_CLAIM_TYPES.map((t) => (
+            <option value={t}>
+              {CLAIM_TYPE_LABELS[t]} ({stats.byType[t]})
+            </option>
+          ))}
+        </optgroup>
+        <optgroup label="Interpretive Hypotheses">
+          {INTERPRETIVE_CLAIM_TYPES.map((t) => (
+            <option value={t}>
+              {CLAIM_TYPE_LABELS[t]} ({stats.byType[t]})
+            </option>
+          ))}
+        </optgroup>
+      </select>
+
+      <select id="clm-assess" class="filter-select" aria-label="Filter by evidence assessment">
+        <option value="">Any assessment</option>
+        <option value="supported">Supported ({stats.byAssessment.supported})</option>
+        <option value="partially_supported">Partially supported ({stats.byAssessment.partially_supported})</option>
+        <option value="inconclusive">Inconclusive ({stats.byAssessment.inconclusive})</option>
+        <option value="contradicted">Contradicted ({stats.byAssessment.contradicted})</option>
+        <option value="unassessed">Unassessed ({stats.byAssessment.unassessed})</option>
+      </select>
+
+      <select id="clm-review" class="filter-select" aria-label="Filter by review status">
+        <option value="">Any review status</option>
+        <option value="human_reviewed">Human-reviewed ({stats.byReviewStatus.human_reviewed})</option>
+        <option value="independently_agent_reviewed">
+          Independent AI audit ({stats.byReviewStatus.independently_agent_reviewed})
+        </option>
+        <option value="agent_reviewed">AI-agent reviewed ({stats.byReviewStatus.agent_reviewed})</option>
+        <option value="unreviewed">Unreviewed ({stats.byReviewStatus.unreviewed})</option>
+      </select>
+
+      <input
+        id="clm-ref"
+        class="filter-input filter-ref-input"
+        type="search"
+        aria-label="Filter by referenced CERT or CLM ID"
+        placeholder="Ref ID (CERT-... or CLM-...)"
+      />
+
+      <label
+        class="scan-filter"
+        style="font-size: 0.86rem; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;"
+      >
+        <input id="clm-ext-only" type="checkbox" /> Externally recognized ({stats.externallyRecognizedClaims})
+      </label>
+    </div>
+
+    <div class="citation-results" id="claim-results" tabindex="-1">
+      <p id="clm-count" role="status">Showing {claims.length} structured claims</p>
+      <button class="filter-button" id="clm-clear" type="button" hidden>Clear filters</button>
+    </div>
+
+    <p class="citation-empty" id="clm-empty" hidden>
+      No claims match these filters. Try broadening your search, checking the referenced <code>CERT-*</code> /{' '}
+      <code>CLM-*</code> identifier, or clearing the filters.
+    </p>
+
+    <div class="citation-table-wrap">
+      <table class="citation-table claim-index-table" id="clm-table" role="table" aria-label="Claim search results">
+        <colgroup>
+          <col class="col-clm-id" />
+          <col class="col-clm-prop" />
+          <col class="col-clm-type" />
+          <col class="col-clm-assess" />
+          <col class="col-clm-review" />
+          <col class="col-clm-ev" />
+        </colgroup>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th scope="col" role="columnheader">Claim &amp; Word</th>
+            <th scope="col" role="columnheader">Proposition &amp; Scope Boundary</th>
+            <th scope="col" role="columnheader">Classification</th>
+            <th scope="col" role="columnheader">Assessment</th>
+            <th scope="col" role="columnheader">Review Status</th>
+            <th scope="col" role="columnheader">Evidence</th>
+          </tr>
+        </thead>
+        <tbody role="rowgroup">
+          {claims.map((clm) => {
+            const allRefTokens = Array.from(
+              new Set([
+                ...clm.evidence.map((e) => e.ref.toUpperCase()),
+                ...(clm.antedating_baseline?.advancing_citation_ref
+                  ? [clm.antedating_baseline.advancing_citation_ref.toUpperCase()]
+                  : []),
+              ])
+            ).join(' ');
+            const certCount = clm.referenced_citation_ids.length;
+            const claimEdgeCount = clm.evidence.filter((e) => e.ref.startsWith('CLM-')).length;
+            const hasExt = clm.external_recognition.length > 0;
+
+            return (
+              <tr
+                class="clm-row"
+                role="row"
+                data-case={clm.case_slug}
+                data-headword={clm.headword.toLowerCase()}
+                data-kind={clm.epistemic_kind}
+                data-type={clm.type}
+                data-assess={clm.assessment}
+                data-review={clm.review_status}
+                data-ext={hasExt ? 'yes' : 'no'}
+                data-refs={allRefTokens.toLowerCase()}
+                data-haystack={`${clm.id} ${clm.headword} ${clm.target_lexeme || ''} ${clm.short_label} ${clm.statement} ${clm.rationale} ${clm.evidence_boundary.establishes} ${clm.evidence_boundary.does_not_establish} ${allRefTokens}`.toLowerCase()}
+              >
+                <td class="citation-date" role="cell" data-label="Claim &amp; word">
+                  <span class="mobile-label" aria-hidden="true">Claim &amp; word</span>
+                  <div>
+                    <a href={`/claims/${clm.slug}/`} style="font-weight: 700;">{clm.id}</a>
+                  </div>
+                  <div style="font-family: var(--font-sans); font-size: 0.78rem; margin-top: 0.12rem;">
+                    <a href={`/cases/${clm.case_slug}/`} style="color: var(--ink-muted);">{clm.headword}</a>
+                  </div>
+                  {clm.is_principal && (
+                    <div style="font-size: 0.68rem; color: var(--accent); margin-top: 0.15rem; font-weight: 700; text-transform: uppercase;">
+                      Principal claim
+                    </div>
+                  )}
+                </td>
+
+                <td class="claim-prop-cell" role="cell" data-label="Proposition &amp; boundary">
+                  <span class="mobile-label" aria-hidden="true">Proposition &amp; boundary</span>
+                  <div class="claim-prop-title">
+                    <a href={`/claims/${clm.slug}/`}>{clm.short_label}</a>
+                  </div>
+                  <div class="claim-prop-statement">{clm.statement}</div>
+                  <div class="claim-prop-boundary">
+                    <strong>Boundary:</strong> {clm.evidence_boundary.does_not_establish}
+                  </div>
+                </td>
+
+                <td role="cell" data-label="Classification">
+                  <span class="mobile-label" aria-hidden="true">Classification</span>
+                  <div class="claim-badge-row">
+                    <span class={`badge badge-class-${clm.epistemic_kind}`}>
+                      {clm.epistemic_kind === 'documentary' ? 'Documentary finding' : 'Interpretive hypothesis'}
+                    </span>
+                    <span class="badge badge-claim-type">{CLAIM_TYPE_LABELS[clm.type]}</span>
+                  </div>
+                </td>
+
+                <td role="cell" data-label="Assessment">
+                  <span class="mobile-label" aria-hidden="true">Assessment</span>
+                  <span class={`badge badge-assess-${clm.assessment}`}>
+                    {CLAIM_ASSESSMENT_LABELS[clm.assessment]}
+                  </span>
+                </td>
+
+                <td role="cell" data-label="Review status">
+                  <span class="mobile-label" aria-hidden="true">Review status</span>
+                  <ClaimBadges
+                    type={clm.type}
+                    assessment={clm.assessment}
+                    reviewStatus={clm.review_status}
+                    hasStaleReviews={clm.has_stale_reviews}
+                    externallyRecognized={hasExt}
+                    showKind={false}
+                    showType={false}
+                  />
+                </td>
+
+                <td class="citation-scan" role="cell" data-label="Evidence">
+                  <span class="mobile-label" aria-hidden="true">Evidence</span>
+                  {certCount > 0 || claimEdgeCount > 0 ? (
+                    <a href={`/claims/${clm.slug}/#supporting-evidence`}>
+                      {certCount} {certCount === 1 ? 'citation' : 'citations'}
+                      {claimEdgeCount > 0 ? ` · ${claimEdgeCount} ${claimEdgeCount === 1 ? 'claim' : 'claims'}` : ''}
+                    </a>
+                  ) : clm.negative_evidence_bounds ? (
+                    <a href={`/claims/${clm.slug}/#baseline-bounds`}>Corpus manifest</a>
+                  ) : (
+                    <span style="color: var(--ink-muted);">0 links</span>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+
+    <nav class="citation-pagination" aria-label="Claim result pages" id="clm-pages" hidden>
+      <button type="button" class="filter-button" id="clm-prev">Previous</button>
+      <span id="clm-page-label"></span>
+      <button type="button" class="filter-button" id="clm-next">Next</button>
+    </nav>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const qInput = document.getElementById('clm-search');
+      const caseSel = document.getElementById('clm-case');
+      const typeSel = document.getElementById('clm-type');
+      const assessSel = document.getElementById('clm-assess');
+      const reviewSel = document.getElementById('clm-review');
+      const refInput = document.getElementById('clm-ref');
+      const extChk = document.getElementById('clm-ext-only');
+
+      const countEl = document.getElementById('clm-count');
+      const clear = document.getElementById('clm-clear');
+      const empty = document.getElementById('clm-empty');
+      const tableWrap = document.getElementById('clm-table').parentElement;
+      const results = document.getElementById('claim-results');
+      const pages = document.getElementById('clm-pages');
+      const prev = document.getElementById('clm-prev');
+      const next = document.getElementById('clm-next');
+      const pageLabel = document.getElementById('clm-page-label');
+
+      const rows = Array.from(document.querySelectorAll('.clm-row'));
+      const controls = [qInput, caseSel, typeSel, assessSel, reviewSel, refInput, extChk];
+      const pageSize = 50;
+      let page = 1;
+
+      function readUrl() {
+        const params = new URLSearchParams(location.search);
+        qInput.value = params.get('q') || '';
+        const caseParam = params.get('case') || '';
+        const hwParam = (params.get('headword') || '').toLowerCase();
+        if (caseParam) {
+          caseSel.value = caseParam;
+        } else if (hwParam) {
+          const matchedOpt = Array.from(caseSel.options).find(
+            (opt) => opt.dataset.headword === hwParam || opt.value === hwParam
+          );
+          caseSel.value = matchedOpt ? matchedOpt.value : '';
+        } else {
+          caseSel.value = '';
+        }
+
+        const kindParam = params.get('kind') || params.get('class') || '';
+        const typeParam = params.get('type') || '';
+        if (typeParam) {
+          typeSel.value = typeParam;
+        } else if (kindParam === 'documentary' || kindParam === 'interpretive') {
+          typeSel.value = `kind:${kindParam}`;
+        } else {
+          typeSel.value = '';
+        }
+
+        assessSel.value = params.get('assessment') || params.get('assess') || '';
+        reviewSel.value = params.get('review') || '';
+        refInput.value = params.get('ref') || params.get('evidence') || '';
+        extChk.checked = params.get('external') === '1';
+        page = Math.max(1, Number.parseInt(params.get('page'), 10) || 1);
+      }
+
+      function applyFilters() {
+        const query = qInput.value.trim();
+        const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+        const cs = caseSel.value;
+        const tp = typeSel.value;
+        const as = assessSel.value;
+        const rv = reviewSel.value;
+        const refQuery = refInput.value.trim();
+        const refTerms = refQuery.toLowerCase().split(/[\s,]+/).filter(Boolean);
+        const extOnly = extChk.checked;
+
+        const matches = rows.filter((r) => {
+          const typeOk = !tp
+            ? true
+            : tp === 'kind:documentary'
+            ? r.dataset.kind === 'documentary'
+            : tp === 'kind:interpretive'
+            ? r.dataset.kind === 'interpretive'
+            : r.dataset.type === tp;
+
+          return (
+            terms.every((term) => r.dataset.haystack.includes(term)) &&
+            (!cs || r.dataset.case === cs) &&
+            typeOk &&
+            (!as || r.dataset.assess === as) &&
+            (!rv || r.dataset.review === rv) &&
+            refTerms.every((rt) => r.dataset.refs.includes(rt)) &&
+            (!extOnly || r.dataset.ext === 'yes')
+          );
+        });
+
+        const pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
+        page = Math.min(page, pageCount);
+        const start = (page - 1) * pageSize;
+        const visible = new Set(matches.slice(start, start + pageSize));
+        for (const row of rows) row.hidden = !visible.has(row);
+
+        const number = new Intl.NumberFormat();
+        const range = visible.size === 1 ? String(start + 1) : `${start + 1}–${start + visible.size}`;
+        countEl.textContent = matches.length
+          ? `Showing ${range} of ${number.format(matches.length)} ${
+              matches.length === rows.length ? 'structured claims' : matches.length === 1 ? 'match' : 'matches'
+            }`
+          : 'No matching claims';
+
+        empty.hidden = matches.length > 0;
+        tableWrap.hidden = matches.length === 0;
+        pages.hidden = pageCount === 1;
+        prev.disabled = page === 1;
+        next.disabled = page === pageCount;
+        pageLabel.textContent = `Page ${page} of ${pageCount}`;
+        clear.hidden = !(query || cs || tp || as || rv || refQuery || extOnly);
+
+        const url = new URL(location.href);
+        url.searchParams.delete('headword');
+        url.searchParams.delete('kind');
+        url.searchParams.delete('class');
+        url.searchParams.delete('assess');
+        url.searchParams.delete('evidence');
+        for (const [key, value] of Object.entries({
+          q: query,
+          case: cs,
+          type: tp,
+          assessment: as,
+          review: rv,
+          ref: refQuery,
+          external: extOnly ? '1' : '',
+          page: page > 1 ? String(page) : '',
+        })) {
+          if (value) url.searchParams.set(key, value);
+          else url.searchParams.delete(key);
+        }
+        if (url.href !== location.href) history.replaceState(history.state, '', url);
+      }
+
+      controls.forEach((control) => {
+        const evtName = control.tagName === 'SELECT' || control === extChk ? 'change' : 'input';
+        control.addEventListener(evtName, () => {
+          page = 1;
+          applyFilters();
+        });
+      });
+
+      clear.addEventListener('click', () => {
+        for (const el of controls) {
+          if (el === extChk) el.checked = false;
+          else el.value = '';
+        }
+        page = 1;
+        qInput.focus();
+        applyFilters();
+      });
+
+      function turnPage(delta) {
+        page += delta;
+        applyFilters();
+        results.focus({ preventScroll: true });
+        results.scrollIntoView({ block: 'start' });
+      }
+
+      prev.addEventListener('click', () => turnPage(-1));
+      next.addEventListener('click', () => turnPage(1));
+      window.addEventListener('popstate', () => {
+        readUrl();
+        applyFilters();
+      });
+
+      readUrl();
+      applyFilters();
+    })();
+  </script>
+</BaseLayout>

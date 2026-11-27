@@ -1,0 +1,1062 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "yegg",
+  "case_slug": "yegg",
+  "case_number": "Case 1500",
+  "target_id": "TGT-132",
+  "headword": "yegg",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence ledger for Case 1500 (yegg): separates un-scanned 1893-1894 tramp reports from scan-verified 22 January 1900 safecracker yegg, n. and 2 June 1905 yegg, v. antedatings, 1896 Horne edition bounds, ABA William Barrett sneak-theft prosopography, German Jäger/yagăr derivation, and Cantonese/John Yegg rebuttals.",
+  "claims": [
+    {
+      "id": "CLM-1500-001",
+      "slug": "clm-1500-001",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n. (tramp sense)",
+      "case_section": "Section 1: Pre-1900 Tramp Usage vs. Primary Scans",
+      "short_label": "Secondary-reported 1893 'yeager' and 1894 'yeggs' tramp attestations (un-scanned external reports)",
+      "statement": "External scholarly reports cite tramp 'yeager' in the 23 January 1893 Hartford Courant (Green's) and 'yegg'/'yeggs' ('beg money') in the 14 January 1894 Cincinnati Enquirer (Grammarphobia), establishing pre-1900 tramp-beggar currency distinct from primary-scan safecracker attestations.",
+      "rationale": "Because both pre-1900 tramp-beggar citations (23 January 1893 Hartford Courant in Green's and 14 January 1894 Cincinnati Enquirer in Grammarphobia) rest on external scholarly transcriptions whose full-page public-domain newspaper scans are not yet hosted in DRAgNEt, the claim is graded 'partially_supported' pending direct masthead-scan collation.",
+      "type": "attestation",
+      "assessment": "partially_supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Externally reported 1893-1894 newspaper evidence for 'yeager'/'yegg' in the intransitive/nominal tramp-beggar sense prior to documented safecracker specialization.",
+        "does_not_establish": "Independent primary-scan verification of the 1893 Hartford Courant or 1894 Cincinnati Enquirer pages within this repository, or safecracker specialization by 1894.",
+        "remaining_uncertainty": "Full-page public-domain scans of the 1893 and 1894 issues remain to be collated directly into public/scans/yegg/."
+      },
+      "limitations": [
+        "CERT-1500-101, CERT-1500-102, and CERT-1500-107 rely on externally published scholarly citations rather than locally hosted page scans."
+      ],
+      "resolution_criteria": [
+        "Collate full-page public-domain newspaper scans with visible masthead dates for the 23 January 1893 Hartford Courant and 14 January 1894 Cincinnati Enquirer into public/scans/yegg/."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1500-101",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Records Green's 23 January 1893 Hartford Courant quotation ('a moucher or yeager').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-102",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Records Grammarphobia's 14 January 1894 Cincinnati Enquirer quotation ('mooch, or yegg' = 'beg money').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-107",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Records Sam Clements's ADS-L 28 June 1900 Fort Wayne News safecracker baseline ('language of the \"yegg\"').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3f12369ea088f429cc0ea8317b0d56b0fc8ff187ed3cad36c50103b4e1932ea0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "8c8530ed130c760646da3215cedd0e48194ef2f93b8662290b338605d373d6f3"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Downgraded pre-1900 external secondary citations (CERT-1500-101, CERT-1500-102) from supported to partially_supported pending full-page masthead scan collation.",
+          "content_fingerprint": "3f12369ea088f429cc0ea8317b0d56b0fc8ff187ed3cad36c50103b4e1932ea0"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1500-001-01",
+          "claim_id": "CLM-1500-001",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1500-101",
+            "CERT-1500-102",
+            "CERT-1500-107"
+          ],
+          "findings": "Upheld at revision 2 after recalibrating un-scanned 1893 Hartford Courant and 1894 Cincinnati Enquirer secondary citations to partially_supported with explicit masthead-scan resolution criteria.",
+          "objections": [],
+          "material_fingerprint_at_review": "3f12369ea088f429cc0ea8317b0d56b0fc8ff187ed3cad36c50103b4e1932ea0",
+          "evidence_fingerprints_at_review": {
+            "CERT-1500-101": "e85429d8a032c46f99137bb92bc2ad7687c0af02f48555d20b3f47b27f19897f",
+            "CERT-1500-102": "e818d4b84569a0201bda90dfb9adc0832f958a5ca704b19f81c831ba653efbdc",
+            "CERT-1500-107": "726f8d9cd33b73d4f5fbf036497e6f8c6afbf15f9f022dc91b3e1a42cf5439c3"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": [
+        {
+          "recognizer": "Green's Dictionary of Slang & Grammarphobia (O'Conner & Kellerman)",
+          "publication": "Green's Dictionary of Slang, yegg, n.; Grammarphobia blog ('The Case of the Mysterious Yegg', 2015/2017)",
+          "date": "2017-06-12",
+          "url_or_ref": "https://greensdictofslang.com/entry/3flnmoa",
+          "exact_scope": "Reports 23 January 1893 ('yeager') and 14 January 1894 ('yegg'/'yeggs') tramp-beggar newspaper quotations."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1500-002",
+      "slug": "clm-1500-002",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n. (safecracker sense)",
+      "case_section": "Section 1: Safecracker Noun Antedating",
+      "short_label": "22 January 1900 Lowell Sun antedating of safecracker yegg, n. (vs. OED 23 June 1903)",
+      "statement": "Primary newspaper print in The Lowell Sun on 22 January 1900 attests '\"Yegg Fraternity\" of safe-crackers', antedating OED's unrevised 23 June 1903 baseline for safecracker 'yegg, n.' by 3 years, 5 months, and 1 day.",
+      "rationale": "Scan-verified wire dispatches on 22-23 January 1900 (Lowell Sun, Norwich Bulletin) and Robert A. Pinkerton's 23 January 1900 report printed 14 February 1900 in Jewelers' Circular-Weekly ('\"yeggs\" or \"yeggmen\"') push safecracker usage back to January 1900.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of 'Yegg' and 'yeggmen' in the specialized tramp-safecracker sense by January-February 1900.",
+        "does_not_establish": "First spoken emergence of safecracker 'yegg' among Pinkerton detectives or hobo safe-blowers in 1898-1899.",
+        "remaining_uncertainty": "Late-1899 Pinkerton circular Bulletins not preserved in trade journals could contain slightly earlier printings."
+      },
+      "limitations": [
+        "CERT-1500-103 and CERT-1500-104 transmit the same Associated Press dispatch across two New England dailies."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests '\"Yegg Fraternity\" of safe-crackers' in The Lowell Sun on 22 January 1900, p. 1, col. 5.",
+          "witness_note": "Earliest print witness of Jan 1900 AP dispatch (paired with CERT-1500-104)."
+        },
+        {
+          "ref": "CERT-1500-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Syndicated reprint of the same dispatch in Norwich Bulletin on 23 January 1900.",
+          "witness_note": "Syndicated wire sibling of CERT-1500-103."
+        },
+        {
+          "ref": "CERT-1500-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Prints R. A. Pinkerton's report dated 23 January 1900 ('\"yeggs\" or \"yeggmen\"') in Jewelers' Circular-Weekly on 14 February 1900.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests safecracker 'yeggs' in St. Louis Post-Dispatch on 3 June 1900.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "yegg, n. ('an itinerant burglar; a safe-breaker')",
+        "edition_or_revision": "OED 1921 entry (unrevised in OED Online)",
+        "baseline_date": "1903-06-23",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/yegg_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1500-103",
+        "attested_date": "1900-01-22",
+        "attested_date_precision": "day",
+        "computed_advance_display": "3 years, 5 months, and 1 day (22 January 1900 vs. 23 June 1903)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "fe36c2861f0ba3c455e5291b433e6c6e9e8035a8d69e76d37427abbdf19f8a61",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "fe36c2861f0ba3c455e5291b433e6c6e9e8035a8d69e76d37427abbdf19f8a61"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1500-002-01",
+          "claim_id": "CLM-1500-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1500-103",
+            "CERT-1500-104",
+            "CERT-1500-105",
+            "CERT-1500-106"
+          ],
+          "findings": "Directly inspected CERT-1500-103.webp (Jan. 22, 1900 Lowell Sun, p. 1, col. 5, Associated Press NY dispatch: 'Members of \"Yegg Fraternity\" Under Arrest ... \"Yegg Fraternity\" of safe-crackers'), confirming 3-year, 5-month, 1-day advance over OED's June 23, 1903 safecracker baseline and explicit AP wire deduplication across CERT-1500-103 and CERT-1500-104.",
+          "objections": [],
+          "material_fingerprint_at_review": "fe36c2861f0ba3c455e5291b433e6c6e9e8035a8d69e76d37427abbdf19f8a61",
+          "evidence_fingerprints_at_review": {
+            "CERT-1500-103": "6b5c0fb88ea18cc50ab15cfadf30aa43695f9044126010bde01bb6e6dc4694d7",
+            "CERT-1500-104": "362f8364b69c152376943c60da6c7834e5bf993c2965df1099b13a5d90d74f98",
+            "CERT-1500-105": "6694bd00fbe95c1867d2291f34c99db94e34bd45e1c149c6e927a760413bca8d",
+            "CERT-1500-106": "7c56ce4431cf1cfa1d49dee6ec82eb3bebee36d78e0ce4c00cfb7fa80b3cdc92"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-003",
+      "slug": "clm-1500-003",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, v.",
+      "case_section": "Section 2: Verbal & Compound Antedatings",
+      "short_label": "2 June 1905 St. Louis Post-Dispatch antedating of safecracking yegg, v. (vs. OED 1916)",
+      "statement": "The St. Louis Post-Dispatch attests verbal gerund 'yegging' ('safecracking') on 2 June 1905—followed by infinitive 'to yegg' on 9 June 1906 and finite 'yegged' in 1910-1912—eleven calendar years before OED's 1916 baseline for 'yegg, v.'.",
+      "rationale": "Six scan-verified newspaper, magazine, and fiction citations between 1905 and 1913 establish productive verbal inflection well before Jack Lait (1916).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Productive verbal conversion of 'yegg' ('yegging', 'to yegg', 'yegged') in American print from 2 June 1905.",
+        "does_not_establish": "Antedating of the pre-1900 tramp 'beg money' verbal sense reported in 1894.",
+        "remaining_uncertainty": "OED's 1916 Jack Lait baseline is recorded at year precision."
+      },
+      "limitations": [
+        "Year-precision 1916 baseline bounds the chronological advance display to 11 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests safecracking 'yegging' in St. Louis Post-Dispatch on 2 June 1905.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests infinitive 'to yegg' in Judge on 9 June 1906.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'yegging' in The Saturday Evening Post on 16 January 1909.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests past-tense 'yegged' in Everybody's Magazine (March 1910).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'yegged' in St. Louis Post-Dispatch on 25 September 1912.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'yegging' in Harold MacGrath's Deuces Wild (1913).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "yegg, v. ('to commit burglary or safe-breaking')",
+        "edition_or_revision": "OED Additions Series Vol. 2 (1993, unrevised)",
+        "baseline_date": "1916",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/yegg_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1500-116",
+        "attested_date": "1905-06-02",
+        "attested_date_precision": "day",
+        "computed_advance_display": "11 calendar years (2 June 1905 vs. 1916)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f8a1e4b56f35d24e2d3e433ea7f3789746b5eb000a6dc80d22cf4bd5703e6af8",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "f8a1e4b56f35d24e2d3e433ea7f3789746b5eb000a6dc80d22cf4bd5703e6af8"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-004",
+      "slug": "clm-1500-004",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "Johnny Yegg / Johnny Yeggman",
+      "case_section": "Section 2: Verbal & Compound Antedatings",
+      "short_label": "8 September 1900 'Johnny Yeggmen' antedating of Green's Johnny-yegg (1924)",
+      "statement": "The South San Francisco Enterprise attests generic 'Johnny Yeggmen' on 8 September 1900 (followed by singular 'Johnny Yegg' in February 1903), twenty-four calendar years before Green's 1924 baseline for 'Johnny-yegg', demonstrating early generic 'John/Johnny' personification before the 'John Yegg' surname myth.",
+      "rationale": "Generic hobo personifications ('Johnny Hobo', 'Johnny Yeggmen') explain how speakers later reinterpreted 'Johnny Yegg' as a historical individual named 'John Yegg'.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of generic 'Johnny Yeggmen' (8 Sept 1900) and 'Johnny Yegg' (Feb 1903) prior to 1903-1904 'John Yegg' eponym tales.",
+        "does_not_establish": "Existence of any real burglar named John Yegg.",
+        "remaining_uncertainty": "Green's 1924 baseline is recorded at year precision."
+      },
+      "limitations": [
+        "Compares plural compound 'Johnny Yeggmen' (1900) and singular 'Johnny Yegg' (1903) against year-precision 1924 baseline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests 'Johnny Yeggmen' in The Enterprise (South San Francisco) on 8 September 1900.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests singular 'Johnny Yegg' in Rand-McNally Bankers' Monthly (February 1903).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "Johnny-yegg, n. ('an itinerant safecracker')",
+        "edition_or_revision": "Green's Dictionary of Slang Online",
+        "baseline_date": "1924",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/3flnmoa",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-1500-202",
+        "attested_date": "1900-09-08",
+        "attested_date_precision": "day",
+        "computed_advance_display": "24 calendar years (8 September 1900 vs. 1924)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ae01cf7796e8f1bc3981c62a4374de77d6776dca31353703fd0390a4c9ec4539",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "ae01cf7796e8f1bc3981c62a4374de77d6776dca31353703fd0390a4c9ec4539"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-005",
+      "slug": "clm-1500-005",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 3: Witness Deduplication & Edition Dating",
+      "short_label": "Deduplication of six cross-shard pairs and 1896 edition boundary on Horne's Pennsylvania German Manual",
+      "statement": "Six cross-shard pairs in the yegg ledger represent identical print sources (108=201, 109=202, 111=207, 112=211, 114=213, 225=303), and the hosted scan of A. R. Horne's Pennsylvania German Manual (CERT-1500-301) depicts the 1896 Revised and Enlarged Edition rather than its 1875 copyright notice.",
+      "rationale": "Explicitly dating Horne's 'yagăr' / 'yawgă' plate to the inspected 1896 edition prevents silently treating an 1875 copyright date on a later edition as proof of 1875 wording.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact independent witness count across 1900-1909 diffusion items and honest 1896 edition dating for Horne's Pennsylvania German glossary scan.",
+        "does_not_establish": "Whether Horne's 1st edition (1875) already printed the identical 'yagăr' / 'yawgă' lines (unverified without a 1875 1st-edition scan).",
+        "remaining_uncertainty": "A separate physical scan of Horne's 1875 first edition has not yet been inspected."
+      },
+      "limitations": [
+        "CERT-1500-301 bundles 1877 Grimm DWB metadata with the 1896 Horne Revised Edition scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Inspected scan shows Horne's 1896 Revised Edition title/verso behind the 1875 copyright year.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 Aug 1900 New York Times witness paired with CERT-1500-201.",
+          "witness_note": "Same 12 Aug 1900 NYT article as CERT-1500-201."
+        },
+        {
+          "ref": "CERT-1500-201",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 12 Aug 1900 New York Times.",
+          "witness_note": "Duplicate of CERT-1500-108."
+        },
+        {
+          "ref": "CERT-1500-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 Sep 1900 South San Francisco Enterprise witness paired with CERT-1500-202.",
+          "witness_note": "Same 8 Sep 1900 article as CERT-1500-202."
+        },
+        {
+          "ref": "CERT-1500-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Feb 1901 McClure's Josiah Flynt witness paired with CERT-1500-207.",
+          "witness_note": "Same Feb 1901 McClure's piece as CERT-1500-207."
+        },
+        {
+          "ref": "CERT-1500-207",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for Feb 1901 McClure's.",
+          "witness_note": "Duplicate of CERT-1500-111."
+        },
+        {
+          "ref": "CERT-1500-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "16 May 1901 Savannah Morning News witness paired with CERT-1500-211.",
+          "witness_note": "Byte-identical scan witness with CERT-1500-211."
+        },
+        {
+          "ref": "CERT-1500-211",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 16 May 1901 Savannah Morning News.",
+          "witness_note": "Duplicate of CERT-1500-112."
+        },
+        {
+          "ref": "CERT-1500-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 Sep 1901 NYT Illustrated Magazine baseline witness paired with CERT-1500-213.",
+          "witness_note": "Same 15 Sep 1901 NYT piece as CERT-1500-213."
+        },
+        {
+          "ref": "CERT-1500-213",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 15 Sep 1901 NYT.",
+          "witness_note": "Duplicate of CERT-1500-114."
+        },
+        {
+          "ref": "CERT-1500-225",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1909 Century Dictionary Supplement '*yegger' entry paired with CERT-1500-303.",
+          "witness_note": "Same 1909 Century Supplement page as CERT-1500-303."
+        },
+        {
+          "ref": "CERT-1500-303",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Companion record for 1909 Century Dictionary Supplement.",
+          "witness_note": "Duplicate of CERT-1500-225."
+        },
+        {
+          "ref": "CERT-1500-203",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 25 Sep 1900 Chicago Abendpost German-American adoption ('Yeggmen').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-110",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 24 Jan 1901 Kentucky press diffusion ('yeggs').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-208",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents Josiah Flynt's June 1901 book collection The World of Graft.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-113",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 13 Aug 1901 NYT diffusion.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-212",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 17 Aug 1901 Literary Digest diffusion.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-215",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 7 Nov 1901 Fort Leavenworth Penitentiary official reward poster ('Yegg men').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-115",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 28 Jul 1902 Chicago Daily Tribune diffusion.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-217",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 6 Mar 1904 St. Louis Post-Dispatch feature.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-219",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents 25 Dec 1904 NYT feature.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-118",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents June 1908 Everybody's Magazine usage.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "4178086c0301e5b571c5aa59a686bd20a3b37f8060db5c5c8311180304823551",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "4178086c0301e5b571c5aa59a686bd20a3b37f8060db5c5c8311180304823551"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-006",
+      "slug": "clm-1500-006",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 4: ABA Archival Prosopography",
+      "short_label": "1899 St. Paul bank crime identified as William Barrett sneak theft rather than 'John Yegg' safecracking",
+      "statement": "American Bankers' Association Protective Committee proceedings (1900-1908) establish that the 9 August 1899 St. Paul First National Bank theft cited in early 'yegg' lore was a daytime telephone-distraction window sneak theft tied to urban sneak thief William Barrett (Portrait 345S), not a nitroglycerin raid by a 'John Yegg'.",
+      "rationale": "Primary ABA convention reports directly refute Pinkerton/press mythology linking the 1899 St. Paul incident to an eponymous safe-blower named John Yegg.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Modus operandi and perpetrator identity (William Barrett, sneak theft) of the 9 August 1899 St. Paul bank theft.",
+        "does_not_establish": "How Pinkerton agents transferred a tramp noun onto rural post-office safe-blowers in late 1899.",
+        "remaining_uncertainty": "Internal unpublished Pinkerton agency case ledgers from late 1899 remain in archival collections."
+      },
+      "limitations": [
+        "ABA published summaries condense underlying Pinkerton operative reports."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents the 9 Aug 1899 St. Paul daytime sneak theft in the October 1900 Bankers' Magazine / CFC.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies sneak thief William Barrett (Portrait 345S) in the October 1905 ABA Proceedings.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Corroborates ABA Protective Committee classification of 'yegg' vs. sneak operations in October 1906.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Corroborates sneak-thief taxonomy in the December 1908 ABA Journal.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "aa2e4ca7b8d267ab0f87a9cfa4f11c9e337f878dd9ba04063e6325c2236a55e1",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "aa2e4ca7b8d267ab0f87a9cfa4f11c9e337f878dd9ba04063e6325c2236a55e1"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-007",
+      "slug": "clm-1500-007",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 4: Negative Criminological & Directory Controls",
+      "short_label": "Zero pre-1900 'yegg' detective entries or 'John Yegg' individuals across 3.71M chars and prison/city registers",
+      "statement": "Full-text sweeps across 3,714,729 characters of 1886-1905 criminological and tramp works (Byrnes 1886, Flynt 1899/1900, Wooldridge 1901/1906, Hapgood 1903) and 1870-1905 city directories and prison registers find zero pre-1900 detective occurrences of 'yegg' and zero individuals named 'John Yegg'.",
+      "rationale": "Flynt's own October 1899 Tramping with Tramps glossary lacks 'yegg' before he adopts it in February 1901 McClure's.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'yegg' from standard 1886-1899 published detective/tramp glossaries and absence of surname 'Yegg' in audited 1870-1905 directories/registers.",
+        "does_not_establish": "Non-existence of 'yeager'/'yegg' in localized oral hobo speech during the 1890s.",
+        "remaining_uncertainty": "Manuscript county jail blotters not digitized on Internet Archive remain outside the search scope."
+      },
+      "limitations": [
+        "Covers digitized directories and five major criminological volumes rather than every manuscript state prison ledger."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero 'yegg' tokens in Thomas Byrnes's Professional Criminals of America (1886).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero 'yegg' tokens in Josiah Flynt's Tramping with Tramps (October 1899), including its tramp glossary.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Byrnes (1886), Flynt Tramping with Tramps (1899) & Powers That Prey (1900), Wooldridge (1901/1906), Hapgood (1903), plus 1870-1905 IA U.S. city directories and prison registers",
+        "search_date": "2026-11-25",
+        "search_period": "1870-1905",
+        "query_terms": [
+          "yegg",
+          "yegger",
+          "yeggman",
+          "John Yegg"
+        ],
+        "search_method": "Exact and OCR-tolerant regex sweep across 3,714,729 characters of criminological texts plus surname index checks.",
+        "corpus_coverage": "3,714,729 characters across 5 foundational criminological monographs plus 1870-1905 directory/prison indices.",
+        "known_limitations": [
+          "Excludes unindexed state penitentiary manuscript intake ledgers.",
+          "Flynt's pre-1900 field notebooks do not survive independently of his published books."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "64a06a77a7bbcc346f74c7bc3994e620ebc16d676da2caca440b7ef027fb2816",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "64a06a77a7bbcc346f74c7bc3994e620ebc16d676da2caca440b7ef027fb2816"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-008",
+      "slug": "clm-1500-008",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 5: German/Pennsylvania German Derivation Hypothesis",
+      "short_label": "Proposed derivation from German Jäger / Pennsylvania German yagăr ('hunter') via 1890s tramp 'yeager/yegg'",
+      "statement": "Tramp 'yeager' (1893) -> 'yegg' (1894/1900) plausibly derives via apocope from German 'Jäger' / Pennsylvania German 'yagăr' ('hunter, forager'; cf. PG 'yawgă', 'ransack', Horne 1896, and Century 1909 '*yegger'), though secondary reinforcement from Scots/Shetland 'yagger' ('pedlar') or Anglo-Romani 'yag' ('fire') cannot be excluded.",
+      "rationale": "1893 Hartford Courant 'yeager' and 1904 Reading Railroad 'John Yeager' lore point to Pennsylvania/Midwest German-English hobo contact before 1900 safecracker narrowing.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Documented phonological bridge ('Jäger'/'yagăr' -> 1893 'yeager' -> 1894 'yegg') and semantic plausibility in Pennsylvania-Midwest hobo foraging.",
+        "does_not_establish": "Direct documentary proof of apocope ('yeager' -> 'yegg') or the exact semantic shift from tramp beggar to nitroglycerin safe-blower.",
+        "remaining_uncertainty": "Why 'yegg' narrowed abruptly from tramp begging (1894) to post-office safe-blowing (Jan 1900) remains undocumented."
+      },
+      "limitations": [
+        "Horne's Pennsylvania German 'yagăr'/'yawgă' scan is verified in the 1896 edition rather than an 1875 first-edition scan, and Rotwelsch dictionaries (Avé-Lallemant 1862) do not gloss 'Jäger' as 'safecracker'."
+      ],
+      "resolution_criteria": [
+        "Verify original 1893-1899 Midwest/Pennsylvania hobo newspaper items linking 'yeager' and monosyllabic 'yegg' in the same camp or rail-line context.",
+        "Inspect a physical copy of Horne's 1875 first edition to confirm whether 'yagăr'/'yawgă' appeared identically in 1875."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-1500-001",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Supplies the 1893 'yeager' and 1894 'yegg' tramp-beggar chronological bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1500-005",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Bounds Horne's Pennsylvania German Manual scan to its inspected 1896 Revised Edition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-301",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents Pennsylvania German 'yagăr' ('hunter') and 'yawgă' ('ransack') in Horne (1896 ed.).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-225",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents the 1909 Century Dictionary Supplement reconstruction '*yegger, < G. jäger, hunter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-307",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Documents Shetland/Scots 'Yagger' ('pedlar, clandestine buyer') in Edmondston (1866) as a rival dialectal parallel.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-308",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Documents Anglo-Romani 'yag' ('fire') in Smart & Crofton (1875) as a possible safe-blowing reinforcement.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f6b065e85f45505faa991d6f2dfd6557283369291e6a6de1ed4b57a14f85aaa0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "ce90ff31956b15ccb868d7cebbb9ebee9b148d4f314b690e4297dfa9b132f9e3"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "f6b065e85f45505faa991d6f2dfd6557283369291e6a6de1ed4b57a14f85aaa0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-009",
+      "slug": "clm-1500-009",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 5: Rebuttal of Chinatown & Eponym Myths",
+      "short_label": "Rebuttal of Jack Black's 1926 Cantonese 'yekk' ('beggar') story and the 'John Yegg' safecracker myth",
+      "statement": "Jack Black's 1926 memoir claim that 'yegg' derived from a San Francisco Chinatown Cantonese word 'yekk' ('beggar') is contradicted by 19th-century Cantonese dictionaries (Williams 1856, Eitel 1877), and the 'John Yegg' safecracker eponym is uncorroborated in prison, ABA, and directory records.",
+      "rationale": "Cantonese beggar terms ('乞兒' hat1 ji4) bear no phonological resemblance to 'yekk', while 'yik' syllables denote unrelated morphemes ('change, wing, post').",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Lexicographical refutation of the 1926 Cantonese 'yekk' = 'beggar' story and archival refutation of a historic safe-blower named 'John Yegg'.",
+        "does_not_establish": "Refutation of the separate Pennsylvania tramp surname 'Yeager' story (Popik & Cohen 1999).",
+        "remaining_uncertainty": "None regarding standard 19th-century Cantonese 'beggar' vocabulary."
+      },
+      "limitations": [
+        "Evaluates standard Guangzhou/Taishan Cantonese lexicons of the Gold Rush and Chinatown era."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CLM-1500-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Demonstrates the 1899 St. Paul bank case involved sneak thief William Barrett, not a 'John Yegg'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1500-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Confirms zero 'John Yegg' records across 1870-1905 directories and criminological texts.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Jack Black's 1926 You Can't Win Chinatown 'yekk' ('beggar') origin claim.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows S. Wells Williams's 1856 Cantonese dictionary lacks any 'yekk'/'yik' noun meaning 'beggar'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Ernest John Eitel's 1877 Cantonese dictionary likewise lacks any 'yekk'/'yik' = 'beggar'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents early conflicting 12 July 1903 Los Angeles Times 'John Yegg' folklore.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms German Rotwelsch in Avé-Lallemant (1862) lacks an underworld 'Jäger' = 'safecracker' sense.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Leland's 1882 Romani vocabulary lacks a 'yegg' thief/beggar stem.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Hotten (1874) 'Yack' denotes 'watch', unrelated to 'yegg'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "52b536b54e4bfecd9f9c9c5990ed24175e1f6d84a4017715cdd511dd3a23b8b2",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "52b536b54e4bfecd9f9c9c5990ed24175e1f6d84a4017715cdd511dd3a23b8b2"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1500-010",
+      "slug": "clm-1500-010",
+      "case_slug": "yegg",
+      "headword": "yegg",
+      "target_lexeme": "yegg, n.",
+      "case_section": "Section 6: Quarantined OCR Ghosts & Misdated Serials",
+      "short_label": "Quarantine of 1891 OCR ghosts and misdated 1903-1907 serials in the yegg ledger",
+      "statement": "Seven rejected leads in the yegg ledger—including 13 June 1891 OCR misreads and mis-indexed 1903-1907 periodical/dictionary records—represent typographical ghosts or post-baseline citations rather than pre-1900 safecracker attestations.",
+      "rationale": "Page-image verification prevents polluted OCR strings from distorting the January 1900 safecracker boundary.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of seven false-positive or misdated citations from the yegg attestation timeline.",
+        "does_not_establish": "Any positive lexical evidence.",
+        "remaining_uncertainty": "None; scan and metadata checks are conclusive for these seven items."
+      },
+      "limitations": [
+        "Applies strictly to the seven audited rejected_lead records."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1500-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes 13 June 1891 St. Louis / Galesville OCR misreads.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags 3 Sep 1903 Ypsilanti item as post-baseline folk-etymology repetition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags Sep 1904 William A. Pinkerton IACP paper 'John Yegg' folklore.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags Sep 1904 Everybody's Magazine derivative repetition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags 30 Mar 1905 German criminological summary derivative of English reports.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags 27 Jan 1906 Scientific American derivative post-baseline item.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1500-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flags 1907 Brynildsen Dano-Norwegian glossary derivative of English slang.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "2778bd6b2ac2326fb4a1fd5d6d091f9f596444faaa6d028b01bf9bab3467a2f5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for yegg.",
+          "content_fingerprint": "2778bd6b2ac2326fb4a1fd5d6d091f9f596444faaa6d028b01bf9bab3467a2f5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

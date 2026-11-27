@@ -1,0 +1,53 @@
+{
+  "_qa_meta": {
+    "domain": 19,
+    "expected_error_substrings": [
+      "1948"
+    ]
+  },
+  "schema_version": "3.0",
+  "ledger_id": "hoodlum",
+  "case_number": "Case 1000",
+  "target_id": "TGT-053",
+  "headword": "hoodlum",
+  "publication_status": "working_paper",
+  "publication_status_note": "Synthetic QA rights-boundary test.",
+  "updated_at": "2026-11-26",
+  "prior_art_baselines": {},
+  "citations": [
+    {
+      "id": "CERT-1000-020",
+      "slug": "cert-1000-020",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "attested_form": "hoodlum",
+      "record_type": "attestation",
+      "record_subtype": "primary_attestation",
+      "verification_level": "agent_verified",
+      "verified_by_agent": "QA Probe",
+      "human_verified_by": null,
+      "human_verified_date": null,
+      "external_recognition": null,
+      "publication_year": 1948,
+      "date_display": "12 May 1948",
+      "sort_date": "1948-05-12",
+      "short_gloss": "Post-1930 rights boundary violation fixture",
+      "source_publication": "Modern Test Chronicle",
+      "source_archive": "Test Archive",
+      "source_url": "https://archive.org/details/test1948",
+      "page_and_column": "p. 4",
+      "verbatim_quote": "Synthetic post-1930 quotation used to falsify missing scan rights clearance.",
+      "masthead_date_verified": true,
+      "catalog_year": 1948,
+      "masthead_year": 1948,
+      "linguistic_note": "",
+      "analysis_notes": "",
+      "scan": {
+        "hosted_path": "/scans/hoodlum/CERT-1000-020.webp",
+        "rights_status": "post_1930_unauthorized_test",
+        "rights_note": "Deliberately missing rights_cleared=true",
+        "rights_cleared": false
+      }
+    }
+  ]
+}

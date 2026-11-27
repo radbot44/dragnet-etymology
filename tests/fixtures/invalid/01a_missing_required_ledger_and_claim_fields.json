@@ -1,0 +1,19 @@
+{
+  "_qa_meta": {
+    "domain": 1,
+    "target_filename": "hoodlum.json",
+    "stamp_before_validate": false,
+    "expected_error_substrings": [
+      "Invalid claim_ledger_id",
+      "Missing evidence_boundary object",
+      "rationale must be a non-empty string"
+    ]
+  },
+  "schema_version": "1.0",
+  "case_slug": "hoodlum",
+  "claims": [
+    {
+      "id": "CLM-1000-001"
+    }
+  ]
+}

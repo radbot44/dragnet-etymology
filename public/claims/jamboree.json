@@ -1,0 +1,1913 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "jamboree",
+  "case_slug": "jamboree",
+  "case_number": "Case 2500",
+  "target_id": "TGT-106",
+  "headword": "jamboree",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence decomposition for Case 2500 (jamboree, working_paper): separates the unverified July 3, 1850 Pittsburgh songbook-title lead and pre-May 1, 1856 Christy's Panorama Songster refrain from the June 16–17, 1858 Brooklyn murder-trial saloon noun, March 1862 Meehan euchre antedatings, June 25, 1864 public-festival bleaching, February 12, 1875 verbal conversion, 1878/1881 sheet-music medleys, December 10, 1884 UK Huckleberry Finn priority, 1913–1920 sea-shanty priority, May 14, 1919 Scouting rally antedating, convergent Romance/riverboat and English -oree derivations, and folk-myth/Trap A–D exclusions across all 93 top-level ledger citations.",
+  "claims": [
+    {
+      "id": "CLM-2500-001",
+      "slug": "clm-2500-001",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "Whoop! Jam-bo-ree! (minstrel song title and refrain lead)",
+      "case_section": "2. Antebellum Minstrelsy (`1849–1858`) and the June 1858 Brooklyn Murder Trial",
+      "short_label": "Unverified July 3, 1850 Pittsburgh Daily Morning Post songbook advertisement lead",
+      "statement": "Peter Reitan (ADS-L, 2018–2019) reported a July 3, 1850 Pittsburgh Daily Morning Post (p. 2) advertisement for H. Long & Brother's White's New Ethiopian Song Book listing the song title 'Whoop! Jam-bo-ree!' alongside an 1854 T. B. Peterson omnibus (Christy's and White's Ethiopian Melodies), whereas the widely digitized Temple University standalone copy of White's New Ethiopian Song Book is a post-1857 ('306 Chestnut Street', 1858+) stereotype reissue; until the July 3, 1850 newspaper microfilm is directly inspected, the 1850 citation remains an unverified retrieval lead for a minstrel song title rather than a verified common-noun attestation.",
+      "rationale": "Collation of the secondary ADS-L thread (CERT-2500-905) with Temple University's digitized copy of White's New Ethiopian Song Book (CERT-2500-102) shows that T. B. Peterson reorganized as 'T. B. Peterson and Brothers' and renumbered 102 Chestnut Street to 306 Chestnut Street only in 1858, disqualifying the standalone Temple scan as pre-1858 evidence while bounding the 1850 newspaper report as an un-scanned proper-title lead.",
+      "type": "attestation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Existence of a published secondary report (Reitan 2018–2019) pointing to a July 3, 1850 Pittsburgh newspaper songbook advertisement for 'Whoop! Jam-bo-ree!' and physical proof that Temple University's standalone White's New Ethiopian Song Book scan is an 1858+ stereotype reissue.",
+        "does_not_establish": "Direct page-image verification of the July 3, 1850 Pittsburgh Daily Morning Post issue or any generic common-noun usage of 'jamboree' in the sense 'drinking bout, spree, or noisy revel'.",
+        "remaining_uncertainty": "Exact typography, punctuation, and surrounding book-list context on p. 2 of the July 3, 1850 Pittsburgh Daily Morning Post microfilm reel held at the University of Pittsburgh."
+      },
+      "limitations": [
+        "No primary page scan of the July 3, 1850 Pittsburgh Daily Morning Post or of an intact 1850 H. Long & Brother first-edition imprint is currently hosted in the repository.",
+        "Even if confirmed on microfilm, a listed song title ('Whoop! Jam-bo-ree!') attests the trisyllabic minstrel refrain form rather than an uncapitalized count noun."
+      ],
+      "resolution_criteria": [
+        "Inspect the University of Pittsburgh microfilm reel of the Pittsburgh Daily Morning Post for July 3, 1850 (p. 2) and capture masthead and column proof.",
+        "Locate an intact 1850 H. Long & Brother printing or verified 1854 T. B. Peterson omnibus title/copyright leaf preserving pp. 15–17 of White's New Ethiopian Song Book."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2500-905",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents Peter Reitan's Feb. 14, 2018 / Mar. 14, 2019 ADS-L report of the July 3, 1850 Pittsburgh Daily Post advertisement and 1854 omnibus reference.",
+          "witness_note": "Secondary mailing-list citation (verification_level: discovered, no hosted primary newspaper scan)."
+        },
+        {
+          "ref": "CERT-2500-102",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Proves Temple University's digitized standalone copy of White's New Ethiopian Song Book carries T. B. Peterson and Brothers' 1858+ 'No. 306 Chestnut Street' imprint and lacks pp. 15–16.",
+          "witness_note": "Masthead/imprint audit of stereotype reissue penciled '1851' in catalog metadata."
+        },
+        {
+          "ref": "CERT-2500-103",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Confirms 0 tokens of 'jamboree' across the 1848 Ethiopian Glee Book, bracketing the minstrel jig's stage emergence after 1848.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9cb3f475de60844871b430e1e6d66f834e3c5905fc81e82783db74d576a0e369",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction bounding the unverified July 3, 1850 Pittsburgh songbook-title lead.",
+          "content_fingerprint": "9cb3f475de60844871b430e1e6d66f834e3c5905fc81e82783db74d576a0e369"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-002",
+      "slug": "clm-2500-002",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "Whoop, jam-bo-ree! (minstrel boatman jig refrain and tune title)",
+      "case_section": "2. Antebellum Minstrelsy (`1849–1858`) and the June 1858 Brooklyn Murder Trial",
+      "short_label": "Pre-May 1, 1856 Christy's Panorama Songster print witness of Dan Emmett's 'Whoop, Jam-bo-ree!'",
+      "statement": "William H. Murphy's undated New York pocket songster Christy's Panorama Songster ('384 Pearl Street', pp. 135–136)—securely bounded by New York City street directories prior to Murphy's May 1, 1856 move to 65 Fulton Street ('c. 1849-1856')—supplies the earliest scan-verified print witness of the word family in Dan Emmett's riverboat jig 'WHOOP, JAM-BO-REE' ('Chorus—Whoop, jam-bo-ree!'), followed in 1858 by Phil. Rice's instrumental 'Whoop Jamboree' and on March 3, 1864 by the standalone tune label 'AIR—\"Jamboree\"'.",
+      "rationale": "Collation of the songster's '384 Pearl Street' imprint and pre-1857 '12 1-2 Cents' wrapper with Doggett's, Rode's, and Trow's New York City Directories (1855–56 p. 605 at 384 Pearl vs. 1856–57 p. 605 at 65 Fulton) establishes a hard May 1, 1856 terminus ante quem ahead of OED Online's June 1858 baseline, while keeping the minstrel refrain strictly separated from common-noun saloon usage.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Scan-verified print attestation of trisyllabic oxytonic 'jam-bo-ree' as a western-boatman minstrel jig title and chorus at Charles White's Bowery Melodeon prior to May 1, 1856, with instrumental and clipped tune-title continuation in 1858 and 1864.",
+        "does_not_establish": "An exact calendar year of printing within William H. Murphy's 1848–April 1856 occupancy at 384 Pearl Street, or syntactic conversion of the refrain into a common count noun meaning 'noisy spree or brawl'.",
+        "remaining_uncertainty": "Exact year between 1849 and April 1856 in which Murphy first stereotyped pp. 135–136 of Christy's Panorama Songster."
+      },
+      "limitations": [
+        "Christy's Panorama Songster is undated on its wrapper and title page; chronology rests on NYC directory address bounds (384 Pearl Street occupied through April 30, 1856) rather than a printed imprint date.",
+        "Attests a vocal refrain and jig title ('Whoop, jam-bo-ree!') rather than OED Sense 1a ('noisy drinking bout')."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides full-page scans of Christy's Panorama Songster (384 Pearl St., pp. 135–136) printing Dan Emmett's 'WHOOP, JAM-BO-REE,—Jig' paired with Trow's 1855–56 and 1856–57 NYC Directory proof.",
+          "witness_note": "Earliest scan-verified print witness in the word family; directory-bounded prior to May 1, 1856."
+        },
+        {
+          "ref": "CERT-2500-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unhyphenated instrumental title 'Whoop Jamboree' in Phil. Rice's Correct Method for the Banjo (copyright 1858, p. 51) in rapid 2/4 boatman jig rhythm.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests simplex tune designation 'AIR—\"Jamboree\"' atop an adaptation of Emmett's riverboat verses in the March 3, 1864 Clearfield Raftsman's Journal.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-103",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Establishes absence (0 hits) of 'Whoop, Jam-bo-ree' across the 4-part 1848 Ethiopian Glee Book.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-104",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Establishes absence (0 hits) of 'Whoop Jamboree' in Elias Howe's 1851 Complete Preceptor for the Banjo and Thomas F. Briggs's 1855 Banjo Instructor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Records OED Online's June 1858 word-family chronological horizon for jamboree, n.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-001",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Notes the earlier unverified July 3, 1850 Pittsburgh newspaper advertisement lead for the same minstrel jig.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jamboree, n. (word-family print horizon; attested here as minstrel jig refrain 'Whoop, jam-bo-ree!')",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1858-06",
+        "baseline_date_precision": "month",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jamboree_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earliest_in_search_scope",
+        "advancing_citation_ref": "CERT-2500-101",
+        "attested_date": "c. 1849-1856",
+        "attested_date_precision": "circa",
+        "computed_advance_display": "circa comparison (approximately 2 years; c. 1849-1856 vs. 1858-06)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "03c0f731cf560383581040362747b4164dd03bae38128cf3e6c642264642e6bf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for directory-bounded pre-May 1856 Christy's Panorama Songster refrain witness.",
+          "content_fingerprint": "03c0f731cf560383581040362747b4164dd03bae38128cf3e6c642264642e6bf"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2500-002-01",
+          "claim_id": "CLM-2500-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2500-101",
+            "CERT-2500-105",
+            "CERT-2500-106",
+            "CERT-2500-103",
+            "CERT-2500-104",
+            "CERT-2500-903",
+            "CLM-2500-001"
+          ],
+          "findings": "Directly inspected CERT-2500-101.webp (Christy's Panorama Songster, W. H. Murphy, 384 Pearl St., pp. 135–136 'WHOOP, JAM-BO-REE' + Trow's 1855–56 and 1856–57 NYC Directory proof), confirming conservative 'circa' directory bounding (c. 1849–1856, pre-May 1, 1856), strict sense separation between the minstrel refrain and OED's June 1858 saloon noun, and proper qualification of the un-scanned 1850 Pittsburgh playbill lead (CLM-2500-001).",
+          "objections": [],
+          "material_fingerprint_at_review": "03c0f731cf560383581040362747b4164dd03bae38128cf3e6c642264642e6bf",
+          "evidence_fingerprints_at_review": {
+            "CERT-2500-101": "2f26a08d91095cdeda2fd52da67f219549d13a0bf1542680dbfb489b30992d6f",
+            "CERT-2500-103": "a9cc00b254ce4eddf7063b962146b7ed009228d72d493881ddbd55acbfd2d5e1",
+            "CERT-2500-104": "c344fee66ad773c100c4f1903169324449bf2a4da3665e171286378508434e76",
+            "CERT-2500-105": "871b8a61a453e9af57397287314d3d0916385b0d1327f347cd6c0d775dc0ac49",
+            "CERT-2500-106": "66dda063d9a99ce7af7ed31dab5737f2aaadd03c1e4c883b4af7726f70b6f027",
+            "CERT-2500-903": "4b8b2fa0d886055b2037eba48ae8fdc0252089d4b4c1a2fbf5d8a00624c72c9c",
+            "CLM-2500-001": "e4540739d396d43f04f3ab085c2c0f1a9988dc6d0bc426b3dd06ca1f4cba74d6"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-003",
+      "slug": "clm-2500-003",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (Sense 1a: 'noisy drinking bout, drunken row, carousal')",
+      "case_section": "2. Antebellum Minstrelsy (`1849–1858`) and the June 1858 Brooklyn Murder Trial",
+      "short_label": "June 16–17, 1858 NYT and NY Herald courtroom transcripts reconstructing OED's June 1858 baseline",
+      "statement": "Independent courtroom transcriptions in The New-York Times (June 16, 1858, 'jam- beree' / 'Jamberee') and The New York Herald (June 17, 1858, 'jamboree' twice) reconstruct OED Online's paywalled June 1858 Brooklyn Daily Times baseline as witness testimony from the June 15, 1858 Kings County trial of Patrick Lally for the murder of butcher George H. Simonson, explicitly glossing 'jamboree' as 'a fight or drunk' in Brooklyn saloon and volunteer fire-company vernacular prior to its 1861–1897 national newspaper and port-side diffusion.",
+      "rationale": "Collating the New-York Times and New York Herald transcripts proves two independent reporters recorded the same spoken courtroom exchange on June 15, 1858 (producing phonetic variant 'Jamberee' vs. 'jamboree' and recording '[Laughter]' at the slang gloss), anchoring common-noun emergence in New York metropolitan saloon/fireman speech and preceding Green's July 10, 1868 baseline by over ten years and OED1's 1872 baseline by fourteen years.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact event context, June 16–17, 1858 publication dates, explicit vernacular gloss ('a fight or drunk'), and subsequent 1861–1897 urban, frontier, and waterfront count-noun continuity of jamboree, n.",
+        "does_not_establish": "A pre-June 1858 chronological antedating of OED Online's June 1858 baseline for the common count noun, since the Times, Herald, and Brooklyn Daily Times all report the same June 15, 1858 trial.",
+        "remaining_uncertainty": "Exact wording and column date (June 15 or June 16, 1858) of the un-scanned Brooklyn Daily Times report cited via Lighter (1997) in OED Online."
+      },
+      "limitations": [
+        "CERT-2500-302 (New-York Times, June 16, 1858) and CERT-2500-303 (New York Herald, June 17, 1858) are independent stenographic reports of a single underlying courtroom event (the June 15, 1858 trial of Patrick Lally for murdering George H. Simonson) and must count as 1 spoken occurrence.",
+        "CERT-2500-401 (April 28, 1864 Chicago Daily Tribune) adapts the burlesque stanza first printed in CERT-2500-305 (January 25, 1862 Vanity Fair)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the June 16, 1858 New-York Times transcript of People v. Patrick Lally ('a regular jam- beree [meaning a fight or drunk]').",
+          "witness_note": "Independent stenographer #1 covering the June 15, 1858 Kings County Oyer and Terminer trial (victim George H. Simonson)."
+        },
+        {
+          "ref": "CERT-2500-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the June 17, 1858 New York Herald transcript spelling 'jamboree' twice, recording courtroom '[Laughter]', and adding volunteer-fireman cross-examination.",
+          "witness_note": "Independent stenographer #2 covering the same June 15, 1858 Patrick Lally trial; collapse with CERT-2500-302 as 1 historical trial event."
+        },
+        {
+          "ref": "CERT-2500-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unglossed New York saloon count-noun usage ('such a jamboree') in the December 28, 1861 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-305",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests expressive exclamation 'pummadiddle nat-bang sollygoggle jamboree!' in the January 25, 1862 New York Vanity Fair.",
+          "witness_note": "Parent stanza adapted in CERT-2500-401."
+        },
+        {
+          "ref": "CERT-2500-401",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents Midwestern newspaper adaptation of Vanity Fair's 'jamboree!' stanza in the April 28, 1864 Chicago Daily Tribune.",
+          "witness_note": "Derivative wartime adaptation of CERT-2500-305."
+        },
+        {
+          "ref": "CERT-2500-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests post-war Washington police-blotter usage ('After the jamboree was over') in the September 1, 1865 National Republican.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Far Western mining-camp plural usage ('frequent \"jamborees\"') in the July 7, 1866 Montana Post.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-402",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests triple wordplay across sobriquet 'Young Jam-Bo-Ree', saloon bust ('on the jam-bo-ree'), and euchre bowers in the January 11, 1868 Daily Rocky Mountain News.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-902",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records Maximilian Schele De Vere's 1872 Americanisms entry defining jamboree as 'a noisy entertainment' and quoting Jan. 1870 Putnam's Magazine.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-408",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unquoted San Francisco waterfront usage ('a grand jamboree, an unmitigated howl') in the March 28, 1875 Daily Alta California.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests shore-leave sailor carousal ('\"jamboree\" on shore') in the July 29, 1875 Weekly Kansas Chief.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-708",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents first inclusion of jamboree ('A row; a disturbance') in John Russell Bartlett's 1877 Dictionary of Americanisms (4th ed.).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-203",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Shows Samuel C. Upham's 1878 retrospective California Gold Rush chapter heading 'Grand Jamboree' paraphrasing an 1849 diary entry that used 'jollification'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-806",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests British sporting-novel adoption ('post-prandial jamboree') in J. MacLaren Cobban's 1896 The King of Andaman, registering an 1896 OED quotation milestone.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests merchant-marine shore-drinking usage ('having a \"jamboree\"') in Frederick B. Williams's 1897 On Many Seas.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-901",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Provides OED First Edition's (Oct. 1900 / 1901) original 1872 baseline entry labeling jamboree 'U.S. slang. Also jambaree. Of unknown origin.'",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's current June 1858 Brooklyn Daily Times baseline for Sense 1a.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-904",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records Green's Dictionary of Slang's July 10, 1868 New York Herald noun baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7b559613d5effd2c0729517e87ccc2ef9c5c635ff6ee6007b560ed9f13791fd1",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction reconstructing the June 15–17, 1858 Brooklyn courtroom baseline.",
+          "content_fingerprint": "7b559613d5effd2c0729517e87ccc2ef9c5c635ff6ee6007b560ed9f13791fd1"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-004",
+      "slug": "clm-2500-004",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n.",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Zero-hit absence of jamboree from 1848–1874 Anglo-American cant and slang dictionaries",
+      "statement": "Full-text and alphabetical page audits confirm zero entries or occurrences of jamboree (and variants jambaree / jambone) in George W. Matsell's New York thieves' glossary Vocabulum; or, The Rogue's Lexicon (May 23, 1859), John Russell Bartlett's Dictionary of Americanisms across its 1st (1848) and 2nd (1859) editions (prior to its 1877 4th edition addition), and John Camden Hotten's British Slang Dictionary across all 1859–1874 editions.",
+      "rationale": "Direct alphabetical inspection of J-entries and full-text OCR sweeps across canonical mid-19th-century underworld cant and British metropolitan slang lexicons demonstrate that jamboree was neither inherited British flash cant nor an established pre-1859 literary Americanism when it surfaced in 1850s Bowery minstrelsy and Brooklyn saloon speech.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete lexicographical absence of jamboree from Matsell (1859), Bartlett (1848, 1859), and Hotten (1859–1874), contrasting with its subsequent American entry in Schele De Vere (1872) and Bartlett (1877).",
+        "does_not_establish": "Absence of oral vernacular circulation among New York boatmen, minstrels, or volunteer firemen prior to 1859, since slang dictionaries lag spoken innovation.",
+        "remaining_uncertainty": "Whether transient 1850s New York penny-press flash glossaries outside Matsell recorded the noun before June 1858."
+      },
+      "limitations": [
+        "Published slang and Americanism dictionaries exhibit compilation lag and register selectivity; absence constrains thieves'-cant and British-import hypotheses without proving exact oral date of coinage."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-706",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries between 'Jacks' and 'Jammed' on p. 47 of Matsell's Vocabulum (deposited May 23, 1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-610",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries for jamboree in Bartlett's 1st edition Dictionary of Americanisms (1848).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-705",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries between 'Jag' and 'Jehu' on p. 217 of Bartlett's enlarged 2nd edition (1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-707",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries between 'Jolly' and 'Jump' on p. 203 of Hotten's British Slang Dictionary across 1859–1874 editions.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-708",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Provides positive diachronic contrast showing Bartlett adding 'JAMBOREE. A row; a disturbance' in his 4th edition (1877, p. 318).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Canonical mid-19th-century Anglo-American cant, slang, and Americanism dictionaries (Matsell 1859; Bartlett 1848 & 1859; Hotten 1859–1874)",
+        "search_date": "2026-11-26",
+        "search_period": "1848-1874",
+        "query_terms": [
+          "jamboree",
+          "jambaree",
+          "jamberee",
+          "jambone",
+          "jam-bo-ree"
+        ],
+        "search_method": "Direct visual inspection of alphabetical J-lemma ranges on hosted page scans combined with full-volume OCR string search.",
+        "corpus_coverage": "4 reference editions inspected directly in alphabetical lemma sequence (Bartlett 1848, Bartlett 1859, Matsell 1859, Hotten 1874 cumulative edition covering 1859–1873 printings).",
+        "known_limitations": [
+          "Lexicographical compilation lags colloquial speech by years or decades.",
+          "Matsell (1859) focuses on criminal underworld cant rather than theatrical minstrelsy or saloon vernacular."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "73fb6e84954274dfcccb2bbcc5069465e3377d89dc1973d5162ef1d2846dc9d6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 negative-evidence claim covering 1848–1874 cant and slang dictionaries.",
+          "content_fingerprint": "73fb6e84954274dfcccb2bbcc5069465e3377d89dc1973d5162ef1d2846dc9d6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-005",
+      "slug": "clm-2500-005",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (Sense 2: euchre five-highest-trumps hand) and jambone, n.",
+      "case_section": "3. Resolving Register Priority: Saloon Brawl vs. Euchre Card Table (`1862`) and Sea Shanty (`1913–1920`)",
+      "short_label": "March 1862 Meehan euchre manual antedating OED's 1864 baseline for euchre Jambone and Jamboree",
+      "statement": "Charles H. W. Meehan's The Law and Practice of the Game of Euchre (Philadelphia: T. B. Peterson & Brothers, Preface dated March 1862; reviewed in The New-York Times on May 4, 1862 as 'for the first time in print') attests both 8-point euchre Jambone and 16-point euchre Jamboree two calendar years before OED Online's 1864 American Hoyle baseline, exposes Internet Archive's cataloged '1864' American Hoyle scan as a c. 1868 Fourth Edition, and—together with 1850 and 1857 Hoyle negative controls (0 hits)—proves that minstrel and saloon jamboree (pre-1856 / June 1858) preceded the printed card-table terms.",
+      "rationale": "Direct page-scan inspection of Meehan's March 1862 manual (pp. 59–63, 74) and its May 4, 1862 New-York Times notice establishes the earliest printed codification of the euchre rules, while zero-hit checks of Bohn (1850) and Frere (1857) bound card-table adoption after 1857.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Two-calendar-year antedating (March 1862 vs. 1864) of OED Online's baselines for euchre jambone, n. and jamboree, n. (Sense 2), plus chronological priority of minstrel/saloon jamboree over printed euchre manuals.",
+        "does_not_establish": "Exact date of oral Southern/Mississippi River card-room coinage prior to Meehan's March 1862 codification.",
+        "remaining_uncertainty": "Whether undigitized 1858–1861 St. Louis, Natchez, or New Orleans sporting columns mention euchre 'jambone' or 'jamboree' ahead of March 1862."
+      },
+      "limitations": [
+        "OED Online's 1864 American Hoyle baseline is recorded at year precision, bounding computed advance display to 2 calendar years.",
+        "CERT-2500-503 (pp. 59–63 'Jambone'), CERT-2500-504 (p. 74 'Jamboree'), and CERT-2500-508 (1877 reissue) represent a single treatise by Charles H. W. Meehan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-503",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests euchre 'Jambone' (pp. 59–63) in Meehan's March 1862 Law and Practice of the Game of Euchre.",
+          "witness_note": "Same March 1862 treatise as CERT-2500-504 (reissued 1877 in CERT-2500-508); count as 1 authorial manual."
+        },
+        {
+          "ref": "CERT-2500-504",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 16-point euchre 'Jamboree' (holding the five highest trumps, p. 74) in Meehan's March 1862 manual.",
+          "witness_note": "Same March 1862 treatise as CERT-2500-503."
+        },
+        {
+          "ref": "CERT-2500-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides independent May 4, 1862 New-York Times publication timestamp noting Meehan's manual sets down 'Laps, Slam, Jambone and Jamboree' 'for the first time in print'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-505",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests W. B. Dick's 1866 American Card-Player recording 'Laps, Slam, Jambone and Jamboree' as 'peculiarities of the game of Euchre, of Southern origin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-506",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Demonstrates that Internet Archive's cataloged '1864' scan of Dick's American Hoyle is actually a post-1866 Fourth Edition (c. 1868).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-507",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Midwestern newspaper rule-query diffusion of euchre 'jambone' and 'jamboree' in the November 15, 1868 Chicago Republican.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-508",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents T. B. Peterson's 1877 commercial reissue of Meehan's 1862 plates under the title Euchre and Its Laws.",
+          "witness_note": "Plate reissue of CERT-2500-503/504."
+        },
+        {
+          "ref": "CERT-2500-501",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Confirms 0 occurrences of 'jambone' or 'jamboree' in Henry G. Bohn's 1850 Hand-Book of Games (earliest major Euchre chapter).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-502",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Confirms 0 occurrences of 'jambone' or 'jamboree' in Thomas Frere's 1857 Hoyle's Games (New York).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's 1864 American Hoyle baseline for euchre jambone, n. and jamboree, n. Sense 2.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes June 1858 New York saloon count-noun currency nearly four years before Meehan's March 1862 euchre manual.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jamboree, n., Sense 2 ('in Euchre, the holding of the five highest trump cards') and jambone, n.",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1864",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jamboree_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2500-504",
+        "attested_date": "1862-03",
+        "attested_date_precision": "month",
+        "computed_advance_display": "2 calendar years (1862-03 vs. 1864)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a8bfefd60e77094b6f7647a3d3246d0cf16b75aa51e5f234529de73b59bc114c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for March 1862 Meehan euchre antedating and register priority.",
+          "content_fingerprint": "a8bfefd60e77094b6f7647a3d3246d0cf16b75aa51e5f234529de73b59bc114c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-006",
+      "slug": "clm-2500-006",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (bleached sense: 'public merrymaking, festive entertainment, civic celebration')",
+      "case_section": "4. Semantic Bleaching, Word-Family Radiation, and the Boy Scout Jamboree (`1864–1920`)",
+      "short_label": "June 25, 1864 New York Clipper antedating of benign public-entertainment jamboree",
+      "statement": "Theatrical and civic reporting in The New York Clipper—starting June 25, 1864 (Johnny Lazarus's ticketed Stuyvesant Institute variety benefit 'a grand jamboree'), August 6, 1864 ('jambaree' explicitly glossed 'singing, dancing, and merry-making generally'), August 13, 1864 ('Grand Emancipation \"Jamboree\"' family picnic), and May 6, 1865, followed by 1868–1875 Southern and national civic celebrations—antedates OED Online's 1870 baseline for benign 'merrymaking, celebration, entertainment' by six calendar years.",
+      "rationale": "Direct scans of summer-1864 New York Clipper columns demonstrate that semantic bleaching from violent saloon row ('a fight or drunk', 1858) to peaceful ticketed public concert, jubilee, and family picnic occurred in New York variety journalism during the Civil War rather than in 1870s magazine prose.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Six-calendar-year antedating (June 25, 1864 vs. 1870) of benign public-entertainment and civic-festival jamboree, tracing continuous post-war expansion through 1875 Centennial rallies.",
+        "does_not_establish": "Disappearance of the older 'drunken brawl' sense, which persisted in parallel into the late 19th century.",
+        "remaining_uncertainty": "Whether theatrical handbills from 1860–1863 used 'jamboree' for ticketed minstrel benefits prior to June 1864."
+      },
+      "limitations": [
+        "OED Online's 1870 baseline (Putnam's Magazine) is recorded at year precision in the structured baseline summary, bounding computed advance display to 6 calendar years.",
+        "CERT-2500-803 (Dec. 27, 1875 Cincinnati Daily Star) and CERT-2500-804 (Dec. 31, 1875 Nevada Silver State) report the same Cincinnati municipal 'Centennial jamboree' planning story."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'a grand jamboree' for Johnny Lazarus's ticketed variety benefit at the Stuyvesant Institute in the June 25, 1864 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Pairs headline 'JUBILEE' with body text 'jambaree' glossed 'singing, dancing, and merry-making generally' in the August 6, 1864 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests peaceful civic festival 'Grand Emancipation \"Jamboree\"' in Paterson, NJ in the August 13, 1864 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests variety-hall benefit 'the Hickey and Ford jamboree' in Washington, D.C. in the May 6, 1865 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-403",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests institutional railroad-delegation hospitality ('having a jamboree here') in the March 26, 1868 Memphis Daily Appeal.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-405",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests polite fraternal-banquet praise ('the finest jamboree of the season') in the March 3, 1872 Atlanta Daily Sun.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-803",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests municipal patriotic planning for a 'Centennial jamboree' in the December 27, 1875 Cincinnati Daily Star.",
+          "witness_note": "Local Cincinnati report later telegraphed in CERT-2500-804."
+        },
+        {
+          "ref": "CERT-2500-804",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Western telegraph syndication ('a grand Centennial jamboree') in Winnemucca, Nevada's Silver State on December 31, 1875.",
+          "witness_note": "Telegraph dispatch reporting the same Cincinnati event as CERT-2500-803."
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's 1870 baseline for the bleached 'merrymaking, festive celebration' sense.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jamboree, n. ('merrymaking, festive celebration, entertainment')",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1870",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jamboree_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2500-307",
+        "attested_date": "1864-06-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "6 calendar years (1864-06-25 vs. 1870)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e706dbe3436f74553c4e071e8e7d49ff8fff50eb32e6966475d89413d539f137",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for June 25, 1864 benign public-entertainment antedating.",
+          "content_fingerprint": "e706dbe3436f74553c4e071e8e7d49ff8fff50eb32e6966475d89413d539f137"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-007",
+      "slug": "clm-2500-007",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, v. (intransitive: 'to carouse, go on a spree')",
+      "case_section": "4. Semantic Bleaching, Word-Family Radiation, and the Boy Scout Jamboree (`1864–1920`)",
+      "short_label": "February 12, 1875 New Orleans Bulletin verbal antedating ('had jamboreed around')",
+      "statement": "Zero-derived intransitive verbal jamboree, v. is attested in The New Orleans Bulletin on February 12, 1875 ('had jamboreed around', crediting M. Quad in the Detroit Free Press and reprinted February 28, 1875 in the New York Dispatch) and in participial form in The Cincinnati Daily Star on January 4, 1876 ('went jamboreeing on New Year's eve'), antedating Green's Dictionary of Slang's June 4, 1905 verb baseline by 30 years, 3 months, and 23 days.",
+      "rationale": "Primary newsprint scans establish full morphological verbalization (-ed past participle and -ing complement of 'went') in Midwestern and Gulf press three decades prior to Green's 1905 Australian citation and supply a part of speech currently unlemmatized in OED Online.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Scan-verified 1875–1876 American newspaper attestations of finite/participial jamboree, v. ('jamboreed', 'jamboreeing') more than thirty years before the June 4, 1905 dictionary baseline.",
+        "does_not_establish": "Exact January or early-February 1875 issue date of the parent Detroit Free Press sketch credited by the New Orleans Bulletin.",
+        "remaining_uncertainty": "Exact publication date of M. Quad's original Detroit Free Press column in early 1875."
+      },
+      "limitations": [
+        "CERT-2500-801 (Feb. 12, 1875 New Orleans Bulletin) and CERT-2500-802 (Feb. 28, 1875 New York Dispatch) are exchange reprints of a single Detroit Free Press police-court sketch and count as 1 authorial witness."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-801",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests past-participial 'had jamboreed around' in the February 12, 1875 New Orleans Bulletin (crediting Detroit Free Press).",
+          "witness_note": "Earliest verified print witness of jamboree, v.; same syndicated M. Quad text as CERT-2500-802."
+        },
+        {
+          "ref": "CERT-2500-802",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents New York exchange reprinting of the same 'had jamboreed around' sketch in the February 28, 1875 New York Dispatch.",
+          "witness_note": "Exchange reprint of CERT-2500-801; count as 1 authorial text."
+        },
+        {
+          "ref": "CERT-2500-805",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies an independent witness for -ing verbal inflection ('went jamboreeing on New Year's eve') in the January 4, 1876 Cincinnati Daily Star.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-904",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records Green's Dictionary of Slang's June 4, 1905 Perth Sunday Times baseline for jamboree, v.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang (GDoS)",
+        "entry_and_sense": "jamboree, v. ('to go on a spree, carouse')",
+        "edition_or_revision": "GDoS online edition (consulted November 2026)",
+        "baseline_date": "1905-06-04",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/wjohmpy",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2500-801",
+        "attested_date": "1875-02-12",
+        "attested_date_precision": "day",
+        "computed_advance_display": "30 years, 3 months, and 23 days (1875-02-12 vs. 1905-06-04)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "172f1ee19766a424e644891d8d9b1b41f164f0f8e4f8ec50f2c5f88b0572ad76",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for 1875–1876 verbal jamboree antedating.",
+          "content_fingerprint": "172f1ee19766a424e644891d8d9b1b41f164f0f8e4f8ec50f2c5f88b0572ad76"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-008",
+      "slug": "clm-2500-008",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "Jamboree, n. (musical 'medley, potpourri' title and genre subtitle)",
+      "case_section": "4. Semantic Bleaching, Word-Family Radiation, and the Boy Scout Jamboree (`1864–1920`)",
+      "short_label": "1878 and 1881 Boston sheet-music deposits attesting musical 'medley' sense",
+      "statement": "Library of Congress sheet-music copyright deposits published in Boston by White, Smith & Company—Charles A. White's Jamboree: Medley for the Piano-Forte (copyright 1878, stitching heterogeneous patriotic and parlor airs) and E. Beyer's Musical \"Pow-Wow.\" Serio-Comic Jamboree (deposited August 5, 1881)—attest Jamboree in the sense 'musical medley or potpourri' 107 calendar years prior to OED Online's 1985 figurative 'medley' citation.",
+      "rationale": "Cover typography and score inspection confirm that Beyer (1881) uses 'Serio-Comic Jamboree' as a classified genre subtitle for an instrumental potpourri, supplying a 19th-century musical bridge toward the modern figurative 'heterogeneous medley' sense while noting title-register bounds.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1878 and August 5, 1881 sheet-music title and genre-subtitle attestations equating 'Jamboree' with a multi-tune musical medley or potpourri.",
+        "does_not_establish": "Lowercase non-musical prose usage of 'a jamboree of [things]' meaning 'a miscellaneous assortment' in the 19th century.",
+        "remaining_uncertainty": "When lowercase non-musical prose 'medley/assortment' detached from musical program titles in 20th-century journalism."
+      },
+      "limitations": [
+        "Both 1878 and 1881 witnesses occur in capitalized musical-work titles/subtitles rather than ordinary lowercase running prose; comparison_kind is therefore bounded to earliest_in_search_scope."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the 1878 Library of Congress sheet-music deposit Jamboree: Medley for the Piano-Forte by C. A. White.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the August 5, 1881 LoC deposit Musical 'Pow-Wow.' Serio-Comic Jamboree by E. Beyer using 'Jamboree' as a potpourri genre label.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's 1985 baseline for the figurative 'medley' sense.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jamboree, n. (figurative sense: 'medley, potpourri'; attested here in musical titles/subtitles)",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1985",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jamboree_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earliest_in_search_scope",
+        "advancing_citation_ref": "CERT-2500-111",
+        "attested_date": "1878",
+        "attested_date_precision": "year",
+        "computed_advance_display": "107 calendar years (1878 vs. 1985)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "560e7d5ddcae9780f864b772ce61b1ff8d5b198bce55fb10fd8a2fd5b36ba4f9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for 1878/1881 sheet-music medley attestations.",
+          "content_fingerprint": "560e7d5ddcae9780f864b772ce61b1ff8d5b198bce55fb10fd8a2fd5b36ba4f9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-009",
+      "slug": "clm-2500-009",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "whoopjamboreehoo, n. and Australian jamberoo, n.",
+      "case_section": "4. Semantic Bleaching, Word-Family Radiation, and the Boy Scout Jamboree (`1864–1920`)",
+      "short_label": "December 10, 1884 UK Huckleberry Finn first-edition priority for solid 'whoopjamboreehoo'",
+      "statement": "First-edition page scans of Mark Twain's The Adventures of Huckleberry Finn prove that Chapter XXXIX prints solid, unhyphenated italic 'whoopjamboreehoo' first in the London Chatto & Windus edition (December 10, 1884, p. 402 / leaf 424), two months and eight days ahead of the New York Charles L. Webster first American edition (February 18, 1885, p. 338), while Australian slang 'jamberoo' ('noisy drinking spree', cited from the 1889 Sydney Bulletin in Baker 1945 and AND 1988) reflects Antipodean remodeling of imported US jamboree onto the NSW Dharawal toponym Jamberoo and productive -eroo.",
+      "rationale": "Collating the British and American first editions establishes exact transatlantic publication priority and unhyphenated orthography for Twain's compound of Emmett's 'Whoop, jam-bo-ree!' refrain, while chronological comparison with Wells's 1848 NSW gazetteer confirms reverse folk-toponymic assimilation in Australia.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact 2-month, 8-day British first-edition priority (December 10, 1884 vs. February 18, 1885) and solid unhyphenated spelling of 'whoopjamboreehoo', plus secondary lexicographical calibration of Australian jamberoo (1889 AND vs. 1955 GDoS).",
+        "does_not_establish": "Independent coinage across two works—both Huckleberry Finn citations print the same Twain manuscript passage—or a direct primary page scan of the 1889 Sydney Bulletin issue.",
+        "remaining_uncertainty": "Exact month and day of the 1889 Sydney Bulletin occurrence of Australian 'jamberoo' cited secondarily by Baker (1945) and the Australian National Dictionary (1988)."
+      },
+      "limitations": [
+        "CERT-2500-410 (UK 1st ed., Dec. 10, 1884) and CERT-2500-411 (US 1st ed., Feb. 18, 1885) are transatlantic editions of one novel passage and count as 1 literary witness.",
+        "CERT-2500-809 (Baker 1945 citing 1889/1898 Sydney Bulletin) is a post-1930 secondary scholarly citation (verification_level: discovered) rather than a primary 1889 newsprint scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-410",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the December 10, 1884 Chatto & Windus 1st UK edition scan (Ch. XXXIX, p. 402, leaf 424) printing solid italic 'whoopjamboreehoo'.",
+          "witness_note": "Transatlantic printing #1 of Twain's Ch. XXXIX passage; collapse with CERT-2500-411 as 1 authorial work."
+        },
+        {
+          "ref": "CERT-2500-411",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Provides the February 18, 1885 Charles L. Webster 1st US edition scan (Ch. XXXIX, p. 338) traditionally cited by American dictionaries.",
+          "witness_note": "Transatlantic printing #2 of the same passage as CERT-2500-410."
+        },
+        {
+          "ref": "CERT-2500-809",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Cites Sidney J. Baker's The Australian Language (1945, p. 176) and AND (1988) documenting Australian slang 'jamberoo' back to 1889.",
+          "witness_note": "Secondary scholarly source (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2500-911",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Attests the pre-existing NSW Dharawal toponym 'JAMBEROO' in William H. Wells's 1848 Geographical Dictionary of the Australian Colonies.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online / HDAS (1st US Edition baseline)",
+        "entry_and_sense": "whoopjamboreehoo, n. (expressive derivative under jamboree, n.)",
+        "edition_or_revision": "Standard US 1st edition Huckleberry Finn citation (18 February 1885)",
+        "baseline_date": "1885-02-18",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://archive.org/details/adventureshuckle00twaiiala/page/338/mode/1up",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-2500-410",
+        "attested_date": "1884-12-10",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 months and 8 days (1884-12-10 vs. 1885-02-18)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f9bfb43df5c7121091ab2958cb4a78fed00b0e4df06ab023f03f71021d76c45c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for UK Huckleberry Finn priority on whoopjamboreehoo and Australian jamberoo.",
+          "content_fingerprint": "f9bfb43df5c7121091ab2958cb4a78fed00b0e4df06ab023f03f71021d76c45c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-010",
+      "slug": "clm-2500-010",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "Whip Jamboree / Whoop Jamboree (maritime capstan shanty)",
+      "case_section": "3. Resolving Register Priority: Saloon Brawl vs. Euchre Card Table (`1862`) and Sea Shanty (`1913–1920`)",
+      "short_label": "Zero-hit sweep of 1879–1928 sea-shanty collections proving 58-year minstrel-over-shanty print priority",
+      "statement": "Systematic audit of eleven canonical sea-shanty collections published between 1879 and 1928 returns zero occurrences of any 'Jamboree' / 'Whip Jamboree' shanty before December 12, 1913 (New-York Tribune), 1914 (Cecil Sharp), February 1920 (Capt. W. B. Whall's posthumous 4th ed., correcting 'Whall 1910' misdates and explicitly deriving the capstan shanty from a minstrel song), and 1926 (R. R. Terry), proving that maritime shanty usage followed rather than originated 1850s American minstrel and saloon jamboree.",
+      "rationale": "Whereas sailor memoirs from 1875–1897 use 'jamboree' exclusively for shore-side drinking sprees, the homeward-bound capstan shanty enters print 58 years after Christy's Panorama Songster, and Whall's 1st–3rd editions (1910–1913) omit it entirely before its posthumous 1920 insertion.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero occurrences of the 'Whip/Whoop Jamboree' sea shanty across 11 major shanty anthologies (1879–1928 outside Sharp 1914, Whall 4th ed. 1920, and Terry 1926), falsifying claims of a pre-1855 deep-water shanty origin and correcting '1910' secondary misdates.",
+        "does_not_establish": "Exact decade in the late 19th century when packet-ship shantymen orally adapted Emmett's minstrel chorus prior to Cecil Sharp's August 1912 fieldwork.",
+        "remaining_uncertainty": "Precise oral date between the 1860s and 1912 at which Atlantic sailors adapted 'Whoop, jam-bo-ree!' to capstan work."
+      },
+      "limitations": [
+        "Sea shanties circulated orally aboard ship before folkloric transcription; the sweep establishes print chronology and minstrel-to-maritime directionality (corroborated by Whall's explicit minstrel note) rather than denying pre-1912 shipboard singing."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents 0 hits across 11 canonical sea-shanty collections (Alden 1879, Davis & Tozer 1887, Smith 1888, Bullen & Arnold 1914, Whall 1st–3rd eds. 1910–1913, King 1918, Colcord 1924, Shay 1925, Harlow 1928).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-207",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Supplies the earliest located newspaper printing of the homeward-bound shanty ('Jamboree, oh, jamboree') in the December 12, 1913 New-York Tribune.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-208",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Supplies Cecil J. Sharp's 1914 English Folk-Chanteys ('Whip Jamboree', collected Aug. 14, 1912 from John Short) and refutes 'Sharp 1910' misdates.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-211",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Proves 'Whoop Jamboree' entered Capt. W. B. Whall's Ships, Sea Songs and Shanties only in the Feb. 1920 4th ed. (p. 140), with headnote 'taken from a minstrel song'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-212",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Supplies Sir Richard Runciman Terry's The Shanty Book, Part II (1926, pp. 42–43) explaining glottalized 'Whup!' -> 'Whip Jamboree'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-202",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Shows 1875 maritime prose using 'jamboree' strictly for a shore-leave drinking spree rather than a shanty.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-206",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Confirms veteran sailor Frederick B. Williams (1897) used 'jamboree' solely for port-side carousing.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the pre-May 1856 Bowery minstrel boatman jig ('Whoop, jam-bo-ree!') from which the 20th-century shanty chorus derived.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Eleven canonical Anglo-American sea-shanty collections and folkloric anthologies (Alden 1879 through Harlow 1928, including Whall 1st–3rd eds. 1910–1913)",
+        "search_date": "2026-11-26",
+        "search_period": "1879-1928",
+        "query_terms": [
+          "jamboree",
+          "Whip Jamboree",
+          "Whoop Jamboree",
+          "jamberoo"
+        ],
+        "search_method": "Table-of-contents, index, and full-text OCR page inspection across 11 digitized shanty editions on Internet Archive and HathiTrust.",
+        "corpus_coverage": "11 published sea-shanty collections and editions (1879–1928) prior to or independent of Sharp (1914) and Whall 4th ed. (1920).",
+        "known_limitations": [
+          "19th-century work songs were inconsistently collected before the 1910s folk-song revival.",
+          "Bowdlerization by Victorian collectors occasionally suppressed rowdy shanty lyrics."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "bd54da9d2d439e74d0d4dd34bde4f5e30654a031cf7c7ff1361324339c88b45a",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 negative-evidence and register-priority claim for maritime shanty 'Whip/Whoop Jamboree'.",
+          "content_fingerprint": "bd54da9d2d439e74d0d4dd34bde4f5e30654a031cf7c7ff1361324339c88b45a"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-011",
+      "slug": "clm-2500-011",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (Sense 3: 'large national or international rally of Boy Scouts')",
+      "case_section": "4. Semantic Bleaching, Word-Family Radiation, and the Boy Scout Jamboree (`1864–1920`)",
+      "short_label": "May 14, 1919 Washington Evening Star antedating of Baden-Powell's Scouting jamboree",
+      "statement": "The Evening Star (Washington, D.C., May 14, 1919, p. 30, col. 2) reports Sir Robert Baden-Powell's announcement during his American tour of 'an \"international jamboree,\" in which scouts from all over the world would congregate'—antedating OED Online's July 1919 British Headquarters Gazette baseline by two months—before Baden-Powell inadvertently seeded the Native American folk etymology in Boys' Life (January 1920) while disclaiming personal coinage of the English word in United Empire (October 1920).",
+      "rationale": "Primary newsprint and magazine scans document Baden-Powell's public launch of the Scouting sense on American soil in May 1919 and trace both the origin of the 'Indian word' misconception and Baden-Powell's own explicit acknowledgment that jamboree already meant 'a joyful gathering' in prior slang.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Two-month print antedating (May 1919 vs. July 1919) of OED Online's Scouting rally sense (Sense 3), plus primary documentation of Baden-Powell's January and October 1920 etymological remarks.",
+        "does_not_establish": "Unpublished internal British Boy Scouts committee minutes reportedly dated July 26, 1916 prior to public print announcement.",
+        "remaining_uncertainty": "Exact wording of the July 26, 1916 internal Boy Scouts committee minute referenced in the 1920 Official Jamboree Book."
+      },
+      "limitations": [
+        "OED Online's July 1919 Headquarters Gazette baseline carries month precision ('1919-07'), bounding the computed advance display to 2 months without day subtraction."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-807",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Baden-Powell's public announcement of an 'international jamboree' for world Scouts in the May 14, 1919 Washington Evening Star.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-808",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Baden-Powell's January 1920 Boys' Life article ('after the example of the North American Indians, we call a \"Jamboree\"') that sparked the Native American origin myth.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-912",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Baden-Powell's October 1920 United Empire lecture confirming he selected an existing slang word ('What else could you call it?') rather than coining jamboree ex nihilo.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-903",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's July 1919 Headquarters Gazette baseline for Sense 3 (Scouting rally).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jamboree, n., Sense 3 ('large rally or gathering of Scouts')",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1919-07",
+        "baseline_date_precision": "month",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jamboree_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2500-807",
+        "attested_date": "1919-05-14",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 months (1919-05 vs. 1919-07)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a9ee95df6f15488519a142445dd079e47cbfc2b12b3e757debd58a42c3e0de29",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for May 14, 1919 Scouting jamboree antedating.",
+          "content_fingerprint": "a9ee95df6f15488519a142445dd079e47cbfc2b12b3e757debd58a42c3e0de29"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-012",
+      "slug": "clm-2500-012",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (< Provençal jambaraia / Louisiana French Creole jambalaya)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Provençal jambaraia / Gulf Creole jambalaya riverboat-to-minstrel contact hypothesis",
+      "statement": "Coastal Provençal preserved initial affricate [dʒ] (Honnorat 1847 jambineta), Marseille verse paired jambaraya ('drunken noisy rabble') with chavararin (Chailan 1837/1894; Mistral 1886 JAMBALAIA / JAMBARAIA 'méli-mélo, cohue'), Gulf Coast English borrowed jambalaya by May 1849, and Mobile oral vernacular 'Jumberlie' (Abby Fisher 1881) independently attests medial vowel reduction and final -ee remodeling—supporting Anthony F. Buccini's (2018) Romance/Gulf Creole donor pathway only if mediated northward via antebellum Mississippi-Ohio riverboat and Bowery minstrel performance rather than post-Civil War diffusion.",
+      "rationale": "Primary Romance and Gulf Coast scans confirm every phonetic and semantic building block of Buccini's hypothesis, yet pre-1858 New York print priority (Christy's Panorama Songster and the 1858 Brooklyn trial) combined with zero antebellum Southern print tokens of jamboree requires western-boatman/minstrel mediation or convergence with domestic English -oree templates.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Verified primary lexical support for Provençal initial [dʒ], Marseille jambaraya ('noisy rabble'), May 1849 New Orleans jambalaya, and 1881 Mobile oral 'Jumberlie' (-ee phonetic remodeling), alongside Emmett's explicit New Orleans / western-boatman stage framing.",
+        "does_not_establish": "Direct unmediated Gulf Creole transmission of 'jamboree' in the 'drinking spree' sense prior to 1850s New York print, or pre-1837 Provençal dictionary attestation of jambaraia.",
+        "remaining_uncertainty": "Whether oral Lower Mississippi boatman slang already used 'jamboree' / 'jamberlie' for a noisy frolic before Dan Emmett performed 'Whoop, Jam-bo-ree!' in New York."
+      },
+      "limitations": [
+        "jambaraia / jambalaia is absent from Achard (1785), Avril (1839), and Honnorat (1847), first appearing in Chailan's Marseille verse (1837/1894) and Mistral's Tresor (1886); Honnorat's chambard means only 'knock-kneed'.",
+        "Buccini's 2018 culinary essay (CERT-2500-612) is a modern secondary specialist source (verification_level: discovered) whose chronological assumption of post-Civil War diffusion is corrected by 1855–1858 New York print evidence."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1855 New Orleans, Mobile, or Lower Mississippi Valley vernacular print or manuscript attestations of 'jamboree' / 'jamberlie' in the sense 'noisy crowd, revel, or spree'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2500-612",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Articulates Anthony F. Buccini's (2018) derivation linking Provençal jambaraia and Louisiana Creole jambalaya to American jamboree.",
+          "witness_note": "Modern specialist scholarship (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2500-604",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms coastal Provençal retention of initial affricate [dʒ] (jambineta) alongside JHIMBÊLÔTO ('confusion, mélange') while bounding absence of jambalaia in Honnorat (1847).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-605",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides Mistral's Tresor dóu Felibrige (Vol. II, 1886, p. 152) pairing JAMBALAIA and rhotic JAMBARAIA in the figurative sense 'méli-mélo, cohue' ('noisy crowd, press').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-606",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Fortuné Chailan's Marseille poem 'Lou Paysan au Thiatre' (Lou Gangui, 1837/1894) pairing 'jambaraya' ('drunken, disorderly crowd') with 'chavararin' ('charivari').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-607",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies the earliest English print attestation of 'Jambalaya' in Solon Robinson's May 2, 1849 New Orleans dispatch (American Agriculturist, June 1849, p. 191).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-608",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides Abby Fisher's 1881 phonetic dictation 'Jumberlie' (Mobile, AL oral form of jambalaya), proving unstressed vowel reduction and final -ee substitution in Southern vernacular.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-601",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Shows Marseille lexicographer C.-F. Achard (1785) recorded JHIMBÊLÔTO ('confusion') but not yet jambalaia/jambaraia.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-603",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Shows J.-T. Avril (1839) recorded jhimboula ('crumple, jumble') and chambard ('knock-kneed'), refuting an early Provençal chambard ('uproar') etymon.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the pre-May 1856 New York minstrel text explicitly set in New Orleans ('in imitation of the western boatmen') that bridges riverboat and Northern print.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Bounds any Gulf Creole pathway by demonstrating that common-noun 'jamboree' first appears in June 1858 New York courtroom testimony rather than post-Civil War Southern print.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-013",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Presents the convergent domestic English jam/jamber + -oree expressive-template pathway.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9233fafff23d30460cae260142f6359230455835aec5365bac81a1a6198476d9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction evaluating the Provençal jambaraia / Gulf Creole jambalaya contact hypothesis.",
+          "content_fingerprint": "9233fafff23d30460cae260142f6359230455835aec5365bac81a1a6198476d9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-013",
+      "slug": "clm-2500-013",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (< jam / jamber + -oree / -aree expressive template)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Domestic English jam/jamber + American -oree/-aree expressive-template hypothesis",
+      "statement": "English and provincial jam / jamb ('crush, tight crowd', cited by Schele De Vere 1872 and Wright EDD 1902 beside jamber 'stammer, jaw') combined with the productive antebellum American oxytonic /-əˈriː/ noisy-commotion template established by Mississippi Valley charivari -> sherri-varries / shevaree (Watson 1843; Bartlett 1848), jigamarees (1844), and minstrel jubilee (explicitly paired with jambaree in 1864) provides a structurally well-supported domestic morphological pathway—either independently or in convergence with riverboat jambalaya/jambaraia—for Emmett's 'Whoop, Jam-bo-ree!'.",
+      "rationale": "Primary antebellum scans confirm that trisyllabic/tetrasyllabic words in stressed -aree/-oree denoting boisterous revels and mock-serenades were already active in Mississippi Valley and New York theatrical speech before 1850, accounting directly for the oxytone stress pattern of jamboree.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-1850 American availability of both base stems (jam 'crowd, squeeze'; dialectal jamber 'jaw, chatter') and the final-stressed -aree/-oree noisy-gathering suffixal template (charivari/shevaree, jigamarees, jubilee).",
+        "does_not_establish": "Exclusive domestic coinage ruling out phonetic reinforcement from Lower Mississippi jambalaya / jambaraia.",
+        "remaining_uncertainty": "Whether Dan Emmett coined 'Whoop, Jam-bo-ree!' directly on the -oree/-aree template or remodeled a phrase heard among Ohio-Mississippi flatboatmen."
+      },
+      "limitations": [
+        "Expressive slang blends and rhyming/prosodic remodelings rarely leave explicit metalinguistic coinage testimony; domestic template formation and Gulf riverboat contact are mutually reinforcing rather than mutually exclusive."
+      ],
+      "resolution_criteria": [
+        "Locate Dan Emmett's surviving manuscript songbooks or pre-1850 riverboat diaries documenting intermediate forms (*jam-aree, *jamber-ee) or explicit glossing."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2500-902",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Records Schele De Vere's (1872, p. 611) earliest published etymological proposal linking jamboree to 'a jam—a crowd in close contact'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-702",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents British regional JAM / JAMB ('crowd, crush') and JAMBER ('stammer, jaw') in Wright's English Dialect Dictionary (Vol. III, 1902, p. 345).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-609",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Establishes Mississippi Valley assimilation of French charivari into 'sherri-varries' ('noisy warmings', 1804 New Orleans) in John F. Watson's 1843 Annals of Philadelphia.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-610",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents widespread American 'CHARIVARI' ('mock serenade with kettles, tin horns, and shouting') in Bartlett's 1848 Dictionary of Americanisms.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-704",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests pre-1850 American colloquial -aree productivity in 'cutting up all sorts of jigamarees' (New-York Daily Tribune, February 5, 1844).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows contemporary variety writers pairing headline 'JUBILEE' directly with body text 'jambaree' in the August 6, 1864 New York Clipper.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Displays hyphenated prosodic segmentation 'WHOOP, JAM-BO-REE' in Emmett's pre-May 1856 boatman jig.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Grounds the morphological analysis in the earliest verified minstrel refrain form.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-006",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Demonstrates ongoing prosodic pairing of jubilee and jambaree/jamboree during 1864 public-festival expansion.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-012",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Represents the companion Romance/Gulf Creole riverboat contact pathway capable of converging on the same -oree template.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "5e87f5f857e32ef216799fc7b36f66036ada3b3e3c49fea029e98ed5b4fa981b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for the English jam/jamber + American -oree/-aree morphological hypothesis.",
+          "content_fingerprint": "5e87f5f857e32ef216799fc7b36f66036ada3b3e3c49fea029e98ed5b4fa981b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-014",
+      "slug": "clm-2500-014",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jambone, n. and jamboree, n. (card-table vs. general slang directionality)",
+      "case_section": "3. Resolving Register Priority: Saloon Brawl vs. Euchre Card Table (`1862`) and Sea Shanty (`1913–1920`)",
+      "short_label": "Secondary gaming formation of euchre Jambone modeled on pre-existing jamboree",
+      "statement": "Standard French jambon (Académie Française 1835: strictly literal 'salted/smoked ham', 0 card-playing senses) and the 1855/1858 vs. March 1862 print chronology weigh against deriving general American jamboree from French jambon or euchre jambone; instead, Southern euchre players secondarily coined 8-point jambone (blending French jambon and English bone/ham-bone on the shared jam- onset) as a subordinate gaming partner to 16-point jamboree ('supreme celebration hand').",
+      "rationale": "Because general minstrel and saloon jamboree precedes the first euchre rules by four to seven years and French jambon lacks any card-game sense in standard French dictionaries, the direction of lexical transfer runs from saloon slang into card-table scoring rather than the reverse.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of card-game senses under French jambon (1835) and chronological priority of saloon jamboree (1858) over printed euchre jambone/jamboree (1862), supporting secondary analogical coinage of euchre jambone.",
+        "does_not_establish": "Complete impossibility of unrecorded pre-1855 New Orleans French/English gaming slang.",
+        "remaining_uncertainty": "Exact Southern riverboat or saloon milieu in which 8-point 'Jambone' and 16-point 'Jamboree' were paired between 1857 and March 1862."
+      },
+      "limitations": [
+        "Relies on negative controls in 1850/1857 Hoyle editions and standard French lexicography; regional Louisiana French gaming ephemera before 1862 remain sparsely digitized."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1855 Louisiana French or Mississippi steamboat gaming sources attesting 'jambon(e)' or 'jamboree' as a card-hand score if card-table priority is to be revived."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2500-611",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies in the Dictionnaire de l'Académie française (6th ed., 1835, Vol. II, p. 66) that French jambon carries strictly culinary senses with 0 gaming idioms.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-501",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of jambone/jamboree from Bohn's 1850 Euchre rules.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-502",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of jambone/jamboree from Frere's 1857 New York Hoyle.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-503",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Meehan (March 1862) treating 8-point 'Jambone' as a companion declaration alongside 16-point 'Jamboree'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-504",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 16-point 'Jamboree' crowning the euchre scoring hierarchy at double the value of 'Jambone'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-505",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Records W. B. Dick's (1866) testimony that euchre Jambone and Jamboree were 'of Southern origin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes general saloon count-noun currency in June 1858 prior to euchre codification.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the March 1862 print debut and post-1857 window of euchre Jambone and Jamboree.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b01c929dbe1b012b5eea75b634f1fc06185013dad00ff4cac9337b76536ed12c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction evaluating French jambon and card-table Jambone directionality.",
+          "content_fingerprint": "b01c929dbe1b012b5eea75b634f1fc06185013dad00ff4cac9337b76536ed12c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-015",
+      "slug": "clm-2500-015",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (proposed Scots bourach/bourie and Irish geamaire donors)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Phonological evaluation weakening single-source Scots bourach and Irish geamaire proposals",
+      "statement": "Primary-lexicon audit of John Jamieson's Etymological Dictionary of the Scottish Language (1808, BOURACH 'confused heap, crowd' and BOURIE 'rabbit burrow') and Patrick S. Dinneen's Foclóir Gaedhilge agus Béarla (1904, Geamaire [ˈɟamˠəɾʲə] 'buffoon, wedding mummer, prattler' and Geamaireacht) leaves single-source Scots or Irish Gaelic derivations of jamboree phonologically unsubstantiated: Scots bourach/bourie lacks the initial /dʒæmb-/ syllable (*jam-bourie is unattested), while Irish geamaire carries initial stress, palatalized /ɟ/, and no bilabial stop /b/.",
+      "rationale": "Evaluating both scholarly dialect/Celtic proposals directly against their historical dictionaries shows substantive prosodic and segmental mismatches with oxytonic /ˌdʒæmbəˈriː/, rendering standalone derivation unlikely without labeling serious comparative conjectures folk myths.",
+      "type": "phonological",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact phonological and semantic profiles of Scots bourach/bourie (Jamieson 1808) and Irish geamaire/geamaireacht (Dinneen 1904), demonstrating missing onset /dʒæmb-/ in Scots and missing /-b-/ plus initial stress in Irish.",
+        "does_not_establish": "Categorical impossibility of minor secondary reinforcement by Irish-American mumming vocabulary in 1850s Bowery/Five Points slang.",
+        "remaining_uncertainty": "Whether any unrecorded 1840s–1850s Hiberno-English epenthetic form (*gambery / *jambery) bridged Irish geamaire toward the American -oree stress pattern."
+      },
+      "limitations": [
+        "Evaluates single-source donor viability on phonological and lexicographical grounds; per DRAgNEt scholarly register rules, weakened academic proposals are graded inconclusive rather than contradicted folk myths."
+      ],
+      "resolution_criteria": [
+        "Attest a pre-1858 Scots compound *jam-bourie ('crowded gathering') or a pre-1858 Hiberno-English bridging spelling with labial -b- and final-syllable stress."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2500-701",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Verifies in Jamieson (1808, Vol. I) that Scots BOURACH ('crowd, ring') and BOURIE ('burrow') lack initial /dʒæm-/ and any attested *jam-bourie compound.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-703",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Verifies in Dinneen (1904, p. 355) that Irish Geamaire ('fool, mummer at a wedding') has initial stress and lacks medial bilabial /b/.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "bfd30be767bbcca342a8c94fb1f0ad8202ec8da4caa73608cbdf65ae573ce677",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 phonological claim evaluating Scots bourach and Irish geamaire donor proposals.",
+          "content_fingerprint": "bfd30be767bbcca342a8c94fb1f0ad8202ec8da4caa73608cbdf65ae573ce677"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-016",
+      "slug": "clm-2500-016",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree, n. (popular non-European and Scouting folk etymologies)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Refutation of Swahili, Hindi/Urdu, Native American, Dharawal, and WPA-Mandinka origin myths",
+      "statement": "Popular derivations of jamboree from East African Swahili jambo ('hello!; matter'), Hindi/Urdu jumhūr ('multitude, republic'), Choctaw or Algonquian words for 'peaceful tribal gathering', the New South Wales Dharawal toponym Jamberoo, or Mandinka jomboroo (via an alleged 1854 Cleveland abolitionist usage) fail chronological, phonological, and documentary tests against pre-1856/1858 American print evidence.",
+      "rationale": "Primary-lexicon and archival checks prove that Krapf's Swahili dictionary (1882) postdates American jamboree by over twenty-five years and lacks -ree; Urdu jumhūr (Shakespear 1834) lacks -b- and is absent from Anglo-Indian Hobson-Jobson (1886/1903); Choctaw (Byington 1915) and Natick/Algonquian (Trumbull 1903) lack native /dʒ/ and /r/ phonemes (tracing the myth to Baden-Powell's Jan. 1920 Boys' Life remark); NSW Jamberoo (1848) was borrowed in reverse into 1889 Australian slang; and Zola Sohna's 1854 Cleveland witness was a 1936 WPA abstractor's paraphrase rather than 1854 newspaper text.",
+      "type": "rebuttal",
+      "assessment": "contradicted",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Decisive chronological, phonological, and archival refutation of Swahili jambo, Hindi/Urdu jumhūr, Native American 'tribal gathering', Dharawal Jamberoo, and 1936-WPA-paraphrase Mandinka origin claims.",
+        "does_not_establish": "The positive etymology of jamboree among competing riverboat/Romance and English -oree pathways.",
+        "remaining_uncertainty": "None regarding these five popular folk etymologies; all fail primary chronological or textual-authenticity gates."
+      },
+      "limitations": [
+        "Applies strictly to documented folk-etymological myths and the 1936 WPA abstractor anachronism identified by Andy Bach (ADS-L, March 14, 2019)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-907",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Shows in Krapf's Dictionary of the Suahili Language (1882, p. 112) that Swahili jambo ('state, matter; greeting') had zero pre-1880 American contact and lacks *-ree.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-908",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Shows in Shakespear's Hindustani Dictionary (1834) and Yule & Burnell's Hobson-Jobson (1903) that Arabic-Urdu jumhūr lacks labial -b- and never entered Anglo-Indian slang.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-909",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Proves in Byington's Dictionary of the Choctaw Language (1915) that Choctaw lacks native /dʒ/ and /r/ phonemes and gathers under itanaha.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-910",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Proves in Trumbull's Natick Dictionary (1903) that Southern New England Algonquian lacks native /dʒ/ and uses mukkinnuk / powwow for 'gathering'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-808",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Identifies the exact source of the 'Indian word' legend in Baden-Powell's January 1920 Boys' Life article.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-912",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Records Baden-Powell's October 1920 admission that he adopted an existing English slang word rather than an indigenous term.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-911",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Confirms Jamberoo, NSW (Wells 1848) was a local Shoalhaven parish name with zero pre-1858 American circulation.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-905",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Documents Andy Bach's March 14, 2019 ADS-L proof that the alleged May 24, 1854 Cleveland 'jamboree' cited for Mandinka jomboroo was a 1936 WPA Annals of Cleveland abstractor's paraphrase.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2500-002",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Establishes pre-May 1856 New York minstrel boatman usage decades prior to 1880s East African or 1919–1920 Scouting diffusion.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a207bcf0f1a3887dd9dc98373c1ccbd09f4fd1265769ec00815e924466e7ac2e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 rebuttal claim falsifying popular non-European and Scouting folk etymologies.",
+          "content_fingerprint": "a207bcf0f1a3887dd9dc98373c1ccbd09f4fd1265769ec00815e924466e7ac2e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-017",
+      "slug": "clm-2500-017",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree (Trap A serial misdates and Trap D modern wrapper/paraphrase intrusions)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Disqualification of 1835–1864 serial founding-year misdates and post-1930 archive wrapper hits",
+      "statement": "Masthead, colophon, and archival-series verification disqualifies apparent pre-1858 and Civil War hits generated by Trap A serial founding-year metadata ('1857' Atlantic Monthly = Dec. 1903; '1841' Punch = May 18, 1895; '1835' Lowell Daily Courier = Oct. 26, 1881; '1864' The Telegrapher = Dec. 11, 1875) and Trap D modern wrapper or retrospective paraphrase intrusions ('1838' Foreign Office FO 407/237 = 1958 Sudan Scout dispatch; 1878 Upham retrospective Gold Rush chapter heading vs. 1849 diary 'jollification').",
+      "rationale": "Checking physical volume title pages, issue mastheads, and Foreign Office series bounds eliminates every catalog-induced chronological mirage between 1835 and 1857 that would otherwise distort the 1855–1858 emergence baseline.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 170,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "True publication dates (1875, 1878, 1881, 1895, 1903, and 1958) for six catalog-misdated or retrospectively framed search hits appearing under 1835–1864 metadata.",
+        "does_not_establish": "Absence of genuine mid-19th-century occurrences in properly dated newspapers.",
+        "remaining_uncertainty": "None on the audited serial volumes; each masthead or series date is directly verified."
+      },
+      "limitations": [
+        "CERT-2500-962 (FO 407/237, 1958) is verified via National Archives (Kew) catalog series bounds (verification_level: discovered, no hosted scan due to post-1930 copyright cutoff)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-951",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1857' Atlantic Monthly hit prints in Vol. XCII (December 1903, p. 817).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-952",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves '1841' Punch hit prints in Vol. CVIII (May 18, 1895, p. 237).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-953",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves '1835' Lowell Daily Courier hit prints in the October 26, 1881 issue (p. 1, col. 6).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-412",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves '1864' Telegrapher hit prints in Vol. XI, No. 495 (December 11, 1875, p. 297).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-962",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1838' British Foreign Office snippet ('World Scout Jamboree') belongs to FO 407/237 (Sudan Confidential Print, 1958).",
+          "witness_note": "Post-1930 catalog-metadata audit (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2500-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Demonstrates that Upham's 1878 chapter synopsis 'Grand Jamboree' is retrospective 1878 framing over an August 6, 1849 diary entry reading 'grand jollification'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7a75d9d71f6849e860a3d9c3077c2c67a8c8421fc5850c9afa16163430b10aac",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim disqualifying Trap A serial misdates and Trap D wrapper hits.",
+          "content_fingerprint": "7a75d9d71f6849e860a3d9c3077c2c67a8c8421fc5850c9afa16163430b10aac"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2500-018",
+      "slug": "clm-2500-018",
+      "case_slug": "jamboree",
+      "headword": "jamboree",
+      "target_lexeme": "jamboree (Trap B dirty-OCR ghosts and Trap C proper-noun homographs)",
+      "case_section": "5. Evaluating Origin Pathways, Folk-Myth Refutations, and Trap A–D Exclusions",
+      "short_label": "Disqualification of 1809–1868 dirty-OCR hallucinations and Senegambian/maritime homographs",
+      "statement": "Zoomed letterpress and onomastic inspection disqualifies all pre-1858 OCR ghosts across Internet Archive, Google Books, BSB, and Open-ONI—1809 Nicholson ('will not be' -> 'jamboree'), 1821 Fraktur ('Samborer' -> 'Gamboree'), July 30, 1849 Pittsburgh Daily Gazette ('discharges' -> 'Jamborees'), September 12, 1853 Daily Pittsburgh Gazette ('Spear & Jackson's' -> 'Jamboree'), and April 25, 1868 Army and Navy Journal (dotted leaders)—alongside proper-noun homographs in Mungo Park's 1815 'Kingdom of Jamberoo' (Senegambia) and the 1894 Mercantile Navy List Nova Scotia yawl 'Jamboree' (misdated '1850').",
+      "rationale": "Direct ink inspection confirms that 100% of machine-indexed tokens of jamboree/jamborees prior to 1850–1855 are OCR character-segmentation hallucinations or unrelated proper names.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 180,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete paleographic and onomastic falsification of seven pre-1858/1868 OCR ghosts and proper-noun homographs across book and newspaper databases.",
+        "does_not_establish": "Absence of unindexed handbills or un-digitized newspapers outside the audited repositories.",
+        "remaining_uncertainty": "None on the seven inspected scans; actual printed letterforms are directly legible."
+      },
+      "limitations": [
+        "Bounds OCR false-positive elimination to the indexed digital repositories audited (Open-ONI, Chronicling America, Google Books, Internet Archive, BSB)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2500-957",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1809 British Encyclopedia OCR hit 'jamboree' actually prints 'will not be' across a degraded column gutter.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-958",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1821 German Fraktur OCR hit 'Gamboree' actually prints Galician ethnonym 'Samborer' (from Sambor).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves July 30, 1849 Pittsburgh Daily Gazette OCR hit 'Jamborees' actually prints medical plural 'discharges' in an Ayers' Cherry Pectoral ad.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-955",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves September 12, 1853 Daily Pittsburgh Gazette OCR hit 'Jamboree' actually prints Sheffield cutler 'Spear & Jackson's'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves April 25, 1868 U.S. Army and Navy Journal OCR hit 'jamboree' is tabular dotted-leader noise.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-961",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Mungo Park's 1815 'Kingdom of Jamberoo' is an unrelated Senegambian polity name rather than English slang.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2500-954",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1850' Mercantile Navy List entry for yawl 'Jamboree' (built Lunenburg, NS, 1893) actually prints in the May 1894 volume.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a6b595c5ce54c04b521b45b4cce19c2d0666d223d59e159a4c6a013f3dc1f8b0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim eliminating Trap B OCR ghosts and Trap C homographs.",
+          "content_fingerprint": "a6b595c5ce54c04b521b45b4cce19c2d0666d223d59e159a4c6a013f3dc1f8b0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

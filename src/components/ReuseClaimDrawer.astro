@@ -1,0 +1,248 @@
+---
+import { SITE_ACRONYM, SITE_EXPANDED } from '../consts';
+import {
+  CLAIM_ASSESSMENT_LABELS,
+  CLAIM_TYPE_LABELS,
+  isDocumentaryClaimType,
+  type HydratedClaimRecord,
+} from '../lib/claims';
+import type { CitationRecord } from '../lib/ledgers';
+
+interface Props {
+  claim: HydratedClaimRecord;
+  caseNumber: string;
+  targetId: string;
+  caseTitle: string;
+  author: string;
+  authorCitation: string;
+  coAuthors?: { name: string; citationName: string; orcid?: string }[];
+  pubYear: number;
+  pubMonth?: number;
+  canonicalUrl: string;
+  claimLedgerPath: string;
+  primaryWitness?: CitationRecord | null;
+}
+
+const {
+  claim,
+  caseNumber,
+  targetId,
+  caseTitle,
+  author,
+  authorCitation,
+  coAuthors = [],
+  pubYear,
+  pubMonth = 11,
+  canonicalUrl,
+  claimLedgerPath,
+  primaryWitness = null,
+} = Astro.props;
+
+const isDocumentary = isDocumentaryClaimType(claim.type);
+const kindLabel = isDocumentary ? 'Documentary finding' : 'Interpretive hypothesis';
+const assessmentLabel = CLAIM_ASSESSMENT_LABELS[claim.assessment];
+
+const reviewDisclosureText: Record<string, string> = {
+  unreviewed: 'unreviewed extraction record (not yet human-reviewed)',
+  agent_reviewed: 'AI-agent reviewed only (not yet human-reviewed)',
+  independently_agent_reviewed: 'independently AI-audited (not yet human-reviewed)',
+  human_reviewed: 'human-reviewed',
+};
+
+const allAuthorsDisplay = coAuthors.length > 0
+  ? `${author} and ${coAuthors.map((c) => c.name).join(', ')}`
+  : author;
+const allAuthorsBib = [authorCitation, ...coAuthors.map((c) => c.citationName)].join(' and ');
+const leadSurname = (authorCitation.split(',')[0] || 'author')
+  .trim()
+  .toLowerCase()
+  .replace(/[^a-z0-9]/g, '');
+const bibKey = `${leadSurname}_${pubYear}_${claim.slug.replace(/[^a-z0-9]/gi, '_')}`;
+
+const plainScholarlyCitation = `${allAuthorsDisplay} (${pubYear}). "${claim.id}: ${claim.short_label}." In ${caseTitle} (${caseNumber}, ${targetId}). ${SITE_ACRONYM} (${SITE_EXPANDED}). [${kindLabel}; ${CLAIM_TYPE_LABELS[claim.type]}; assessment: ${assessmentLabel.toLowerCase()}; review status: ${reviewDisclosureText[claim.review_status]}]. ${canonicalUrl}`;
+
+const bibtex = `@misc{${bibKey},
+  author       = {${allAuthorsBib}},
+  title        = {{${claim.id}: ${claim.short_label} (${claim.headword})}},
+  howpublished = {${SITE_ACRONYM} --- ${SITE_EXPANDED}, ${caseNumber} (${targetId})},
+  year         = {${pubYear}},
+  month        = {${pubMonth}},
+  note         = {${kindLabel} (${CLAIM_TYPE_LABELS[claim.type]}); assessment: ${assessmentLabel}; review status: ${reviewDisclosureText[claim.review_status]}},
+  url          = {${canonicalUrl}}
+}`;
+
+const bibDataHref = `data:application/x-bibtex;charset=utf-8,${encodeURIComponent(bibtex + '\n')}`;
+
+const wikipediaGuidance = isDocumentary && primaryWitness
+  ? 'Cite the historical primary publication directly under WP:PRIMARY for straightforward descriptive/chronological statements only; do not cite unrefereed DRAgNEt working-paper synthesis as peer-reviewed secondary consensus.'
+  : 'Caution (WP:NOR / WP:RS): Interpretive etymological hypotheses and unrefereed working-paper claims must not be stated in Wikipedia’s voice unless independently published in a peer-reviewed journal or historical dictionary.';
+
+const wikipediaRef = primaryWitness
+  ? `<ref name="${claim.slug}">{{cite news |title=${primaryWitness.attested_form} |work=${primaryWitness.source_publication.split('(')[0].trim()} |date=${primaryWitness.date_display} |page=${primaryWitness.page_and_column || 'n.p.'} |url=${primaryWitness.source_url} |quote=${primaryWitness.verbatim_quote.slice(0, 180).replace(/\|/g, '&#124;')}}}</ref>`
+  : `<!-- ${claim.id} (${kindLabel}, ${assessmentLabel}, ${reviewDisclosureText[claim.review_status]}): Verify target venue WP:RS / WP:NOR rules before citing ${canonicalUrl} -->`;
+
+const certRefs = claim.referenced_citation_ids.join(', ') || 'None (corpus-bound or premise-linked)';
+const adsLDispatch = [
+  `Subject: [${claim.headword}] ${claim.id} — ${claim.short_label}`,
+  '',
+  `Proposition (${claim.id}, ${kindLabel} — ${CLAIM_TYPE_LABELS[claim.type]}):`,
+  claim.statement,
+  '',
+  `Evidentiary status: ${assessmentLabel} | Review status: ${reviewDisclosureText[claim.review_status]}`,
+  `Primary ledger witnesses: ${certRefs}`,
+  `Boundary (does not establish): ${claim.evidence_boundary.does_not_establish}`,
+  `Claim record & scans: ${canonicalUrl}`,
+].join('\n');
+---
+
+<section class="reuse-drawer" aria-labelledby="reuse-claim-heading">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.75rem;">
+    <div>
+      <div style="font-family: var(--font-mono); font-size: 0.74rem; text-transform: uppercase; color: var(--accent); font-weight: 700;">
+        Permanent Claim Identifier &amp; Citation Kit
+      </div>
+      <h2 id="reuse-claim-heading" style="font-family: var(--font-serif); font-size: 1.4rem; margin: 0.15rem 0 0;">
+        Cite or Reuse {claim.id}
+      </h2>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; font-size: 0.84rem; font-weight: 600;">
+      <a href={bibDataHref} download={`${claim.slug}.bib`}>Download .bib</a>
+      <span>·</span>
+      <a href={claimLedgerPath} target="_blank" rel="noopener noreferrer">Raw Claim JSON</a>
+      <span>·</span>
+      <a href={`/cases/${claim.case_slug}/`}>Parent Case File</a>
+    </div>
+  </div>
+
+  <div class="reuse-tabs" role="tablist" aria-label="Claim citation formats">
+    <button
+      type="button"
+      class="reuse-tab"
+      role="tab"
+      aria-selected="true"
+      id="tab-clm-scholarly"
+      aria-controls="panel-clm-scholarly"
+      tabindex="0"
+    >
+      Scholarly Citation
+    </button>
+    <button
+      type="button"
+      class="reuse-tab"
+      role="tab"
+      aria-selected="false"
+      id="tab-clm-bib"
+      aria-controls="panel-clm-bib"
+      tabindex="-1"
+    >
+      BibTeX
+    </button>
+    <button
+      type="button"
+      class="reuse-tab"
+      role="tab"
+      aria-selected="false"
+      id="tab-clm-wiki"
+      aria-controls="panel-clm-wiki"
+      tabindex="-1"
+    >
+      Wikipedia
+    </button>
+    <button
+      type="button"
+      class="reuse-tab"
+      role="tab"
+      aria-selected="false"
+      id="tab-clm-adsl"
+      aria-controls="panel-clm-adsl"
+      tabindex="-1"
+    >
+      ADS-L
+    </button>
+  </div>
+
+  <div id="panel-clm-scholarly" aria-labelledby="tab-clm-scholarly" tabindex="0" class="reuse-panel active" role="tabpanel">
+    <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
+      Includes explicit epistemic classification, assessment, and AI-vs-human review status disclosure:
+    </p>
+    <pre class="code-box" id="code-clm-scholarly">{plainScholarlyCitation}</pre>
+    <button type="button" class="copy-btn" data-copy-from="code-clm-scholarly">Copy Scholarly Citation</button>
+  </div>
+
+  <div id="panel-clm-bib" aria-labelledby="tab-clm-bib" tabindex="0" hidden class="reuse-panel" role="tabpanel">
+    <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
+      Standard BibTeX entry for reference managers (Zotero also detects this page’s Highwire Press metadata tags):
+    </p>
+    <pre class="code-box" id="code-clm-bib">{bibtex}</pre>
+    <button type="button" class="copy-btn" data-copy-from="code-clm-bib">Copy BibTeX</button>
+  </div>
+
+  <div id="panel-clm-wiki" aria-labelledby="tab-clm-wiki" tabindex="0" hidden class="reuse-panel" role="tabpanel">
+    <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
+      <strong>Editorial note:</strong> {wikipediaGuidance}
+    </p>
+    <pre class="code-box" id="code-clm-wiki">{wikipediaRef}</pre>
+    <button type="button" class="copy-btn" data-copy-from="code-clm-wiki">Copy Wikipedia Snippet</button>
+  </div>
+
+  <div id="panel-clm-adsl" aria-labelledby="tab-clm-adsl" tabindex="0" hidden class="reuse-panel" role="tabpanel">
+    <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0.35rem 0;">
+      Plain-text summary for the American Dialect Society mailing list (<code>ADS-L@LISTSERV.UGA.EDU</code>):
+    </p>
+    <pre class="code-box" id="code-clm-adsl">{adsLDispatch}</pre>
+    <button type="button" class="copy-btn" data-copy-from="code-clm-adsl">Copy ADS-L Note</button>
+  </div>
+
+  <p class="evidence-notice" data-copy-status role="status"></p>
+</section>
+
+<script>
+  document.querySelectorAll('.reuse-drawer').forEach((drawer) => {
+    if ((drawer as HTMLElement).dataset.bound === '1') return;
+    (drawer as HTMLElement).dataset.bound = '1';
+    const tabs = Array.from(drawer.querySelectorAll<HTMLButtonElement>('.reuse-tab'));
+    const panels = drawer.querySelectorAll<HTMLElement>('.reuse-panel');
+    const status = drawer.querySelector('[data-copy-status]');
+
+    function select(tab: HTMLButtonElement) {
+      tabs.forEach((t) => {
+        t.setAttribute('aria-selected', String(t === tab));
+        t.tabIndex = t === tab ? 0 : -1;
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+        panel.classList.toggle('active', !panel.hidden);
+      });
+      if (status) status.textContent = '';
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', (event) => {
+        let next: number;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault();
+        select(tabs[next]);
+        tabs[next].focus();
+      });
+    });
+
+    drawer.querySelectorAll('[data-copy-from]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const id = btn.getAttribute('data-copy-from');
+        const el = id ? document.getElementById(id) : null;
+        if (!el || !status) return;
+        try {
+          await navigator.clipboard.writeText(el.textContent || '');
+          status.textContent = 'Copied to clipboard.';
+        } catch {
+          status.textContent = 'Couldn’t access the clipboard. Select and copy the text above.';
+        }
+      });
+    });
+  });
+</script>

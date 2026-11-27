@@ -1,0 +1,894 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "hoodlum",
+  "case_slug": "hoodlum",
+  "case_number": "Case 1000",
+  "target_id": "TGT-053",
+  "headword": "hoodlum",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence ledger for Case 1000 (hoodlum): separates December 1866 San Francisco Police Court emergence, 1866-1871 Pacific-slope continuity, and 1 May 1871 'Hoodlum neck-tie' compound antedating from Upper German Hudel/Hudelump contact hypotheses and 1877 'Muldoon' folk-etymology rebuttals.",
+  "claims": [
+    {
+      "id": "CLM-1000-001",
+      "slug": "clm-1000-001",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 1: San Francisco Police Court Emergence",
+      "short_label": "December 1866 San Francisco Police Court emergence of Hoodlum",
+      "statement": "San Francisco Police Court reports in the Daily Evening Bulletin and Daily Alta California attest 'Hoodlum', 'Hoodlum Band', and 'Hoodlum Gang' between 14 and 27 December 1866.",
+      "rationale": "Multiple contemporary police items document the group designation and singular member noun in San Francisco municipal reporting in mid-December 1866.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of 'Hoodlum' and 'Hoodlum Band/Gang' in San Francisco court journalism from 14 December 1866.",
+        "does_not_establish": "The etymological source or exact date of oral coinage among San Francisco youths prior to December 1866.",
+        "remaining_uncertainty": "CERT-1000-003 (15 Dec 1866 Daily Alta California) remains a un-scanned 'discovered' citation alongside scan-verified Bulletin items."
+      },
+      "limitations": [
+        "CERT-1000-003 lacks a locally hosted scan and relies on indexed archival transcription."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlum' in the 14 December 1866 San Francisco Daily Evening Bulletin Police Court column.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlum Band' in the 15 December 1866 Daily Evening Bulletin.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-003",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Corroborates 'Hoodlum Gang' in the 15 December 1866 Daily Alta California (discovered level).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-004",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlum Band' in the 20 December 1866 Daily Evening Bulletin.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-006",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlum band' in the 27 December 1866 Daily Evening Bulletin.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c982f089bbced88e87e2877e5c3b1f717794d4bd729104cbb99e21ce618cb216",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "c982f089bbced88e87e2877e5c3b1f717794d4bd729104cbb99e21ce618cb216"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Oxford English Dictionary (OED3) / Fred Shapiro & Frederick Bee History Project",
+          "publication": "OED Online, hoodlum, n. (revised September 2026)",
+          "date": "2026-09-01",
+          "url_or_ref": "https://www.oed.com/dictionary/hoodlum_n",
+          "exact_scope": "Recognizes the 14 December 1866 San Francisco Daily Evening Bulletin quotation (CERT-1000-001) as earliest known English attestation while leaving the etymology 'Of uncertain origin'."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1000-002",
+      "slug": "clm-1000-002",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 2: Regional Diffusion (1866-1871)",
+      "short_label": "1866-1871 Nevada and California regional print continuity",
+      "statement": "Newspaper and periodical print in Carson City, Gold Hill, Sonora, and San Francisco documents continuous regional usage of 'Hoodlum(s)' between 21 December 1866 and August 1871, bridging OED3's 1866-to-1877 quotation gap.",
+      "rationale": "Scan-verified items in The Carson Daily Appeal (21 Dec 1866), Gold Hill Daily News (Apr-May 1871), Carson City Daily State Register (May 1871), Sonora Union Democrat (Jul 1871), and Overland Monthly (Aug 1871) demonstrate sustained Pacific-slope currency.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous California and Nevada newspaper currency of 'Hoodlum(s)' from December 1866 through August 1871.",
+        "does_not_establish": "Exact route of oral spread from San Francisco street gangs to Comstock Lode mining towns between 1867 and 1870.",
+        "remaining_uncertainty": "California newspaper runs for 1867-1870 remain incompletely digitized."
+      },
+      "limitations": [
+        "Surviving 1867-1870 San Francisco minor dailies have partial microfilm gaps."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-005",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Reprints and extends San Francisco 'Hoodlum Band' reporting in The Carson Daily Appeal on 21 December 1866.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-007",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests plural 'Hoodlums' in Gold Hill Daily News on 15 April 1871.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-008",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlums' in Gold Hill Daily News on 17 April 1871.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-010",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlums' in Carson City Daily State Register on 18 May 1871.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-011",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlums' in Sonora Union Democrat on 1 July 1871.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-041",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hoodlum' in The Overland Monthly (August 1871), predating OED1's 1872 baseline (CERT-1000-040).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-040",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents OED1's 1899 entry quoting 24 February 1872 Sacramento Weekly Union.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "adde0b1d5f53a89e42e3a0f64da44821e4e431664d2832109c260ff0e85e553e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "adde0b1d5f53a89e42e3a0f64da44821e4e431664d2832109c260ff0e85e553e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-003",
+      "slug": "clm-1000-003",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n. (attributive)",
+      "case_section": "Section 2: Attributive & Compound Antedating",
+      "short_label": "1 May 1871 'Hoodlum neck-tie' attributive compound antedating",
+      "statement": "Gold Hill Daily News attests attributive 'Hoodlum neck-tie' on 1 May 1871, eleven calendar years before OED3's earliest recorded hoodlum compound ('hoodlum wagon', 1882).",
+      "rationale": "The 1 May 1871 Gold Hill Daily News scan prints 'a fancy \"Hoodlum\" neck-tie' as an established style modifier.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Attributive compound usage of 'Hoodlum' in Nevada print on 1 May 1871.",
+        "does_not_establish": "Antedating of the specific lexicalized compound 'hoodlum wagon' itself.",
+        "remaining_uncertainty": "OED3 groups attributive compounds selectively rather than exhaustively."
+      },
+      "limitations": [
+        "Comparison is at the attributive/compound category level ('Hoodlum neck-tie' vs. 'hoodlum wagon') against a year-precision baseline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-009",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests 'Hoodlum neck-tie' in Gold Hill Daily News on 1 May 1871.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "hoodlum, n. — Compounds (earliest recorded attributive compound: hoodlum wagon)",
+        "edition_or_revision": "OED3 revised entry (September 2026)",
+        "baseline_date": "1882",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/hoodlum_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-1000-009",
+        "attested_date": "1871-05-01",
+        "attested_date_precision": "day",
+        "computed_advance_display": "11 calendar years (1 May 1871 vs. 1882)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a72832a100ab709c3bd2ef6e11e65c18ee1f2cf3bce5541b9e805c94d003b432",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "a72832a100ab709c3bd2ef6e11e65c18ee1f2cf3bce5541b9e805c94d003b432"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1000-003-01",
+          "claim_id": "CLM-1000-003",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1000-009"
+          ],
+          "findings": "Directly inspected CERT-1000-009.webp (May 1, 1871 Gold Hill Daily News, Vol. XVI, No. 2334, p. 2, col. 2: 'This should be the \"Hoodlum neck-tie.\"'), verifying masthead date, physical ink, category-scoped 11-calendar-year advance over OED3's 1882 compound baseline, and clean sanitization of ledger metadata.",
+          "objections": [],
+          "material_fingerprint_at_review": "a72832a100ab709c3bd2ef6e11e65c18ee1f2cf3bce5541b9e805c94d003b432",
+          "evidence_fingerprints_at_review": {
+            "CERT-1000-009": "c234979b60e5fbbb11ba766f67db6e59e62f5d3357787d738a4ca61a2a6ec156"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-004",
+      "slug": "clm-1000-004",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 3: Prosopography & Contemporary Opacity",
+      "short_label": "Lazarus Moses gang context and 1870s Californian etymological opacity",
+      "statement": "December 1866 Police Court dockets center on juvenile gang figure Lazarus Moses alongside German-Jewish and immigrant San Francisco neighborhoods, while 1874-1876 observers already treated the word's origin as opaque.",
+      "rationale": "Police Court reports identify Lazarus Moses within the original 'Hoodlum Band', and mid-1870s commentaries (Washingtoner Journal 1874, Fisher 1876, Lloyd 1876) confirm no consensus origin story survived from 1866.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Social setting of the December 1866 arrests and rapid loss of transparent etymological memory in San Francisco by 1874-1876.",
+        "does_not_establish": "That Lazarus Moses personally coined 'hoodlum' or spoke Upper German.",
+        "remaining_uncertainty": "Municipal juvenile court testimony transcripts from December 1866 do not survive."
+      },
+      "limitations": [
+        "Newspaper court summaries compress spoken courtroom testimony."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Names the juvenile defendants and neighborhood setting of the December 1866 'Hoodlum' arrests.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-033",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows German-American press treating 'Hoodlums' as an opaque English loanword by 1 June 1874.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-042",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Walter M. Fisher (1876) noting the origin of 'hoodlum' was already uncertain in California.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-012",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents B. E. Lloyd's 1876 San Francisco account of the hoodlum phenomenon.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d4c24b94adc0d2086596950aeb3c93b8f114dccf2929cc6d030067cfc969a9f5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "d4c24b94adc0d2086596950aeb3c93b8f114dccf2929cc6d030067cfc969a9f5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-005",
+      "slug": "clm-1000-005",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "Hudel / Hudelump / Haderlump",
+      "case_section": "Section 4: German Donor Lexicon",
+      "short_label": "Pre-1866 Upper German and U.S. German print currency of Hudel and Hudelump",
+      "statement": "Early New High German, Upper German dialect dictionaries, and U.S. German-language newspapers between 1691 and 1870 attest 'Hudel', 'Hudelump', and 'Haderlump' denoting a ragged vagabond, disorderly rogue, or rag-picker.",
+      "rationale": "Primary scans of Stieler (1691), Stalder (1812), Schmeller (1828), Fischart (1847 ed.), Der liberale Beobachter (1850), Kehrein (1862), Avé-Lallemant (1862), Westliche Blätter (1867), Vilmar (1868), and Wander (1870) verify pre-1866 German and German-American currency.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Documented German and U.S. German print existence of 'Hudel', 'Hudelump', and 'Haderlump' in pejorative vagabond senses prior to 1866.",
+        "does_not_establish": "Direct oral borrowing of those German forms by San Francisco English speakers in 1866.",
+        "remaining_uncertainty": "No pre-1867 San Francisco German-language newspaper token directly glossing 'Hudelump' as local gang 'Hoodlum' has been found."
+      },
+      "limitations": [
+        "U.S. German newspaper attestations (1850 Pennsylvania, 1867 Cincinnati) are outside California."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-020",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hudellumpen' and 'Hudelvolk' in Stieler (1691).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-024",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Swiss Alemannic 'Hudel' ('ragged rogue') in Stalder (1812).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-022",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Bavarian 'Hudel, Haderlump' with labial assimilation in Schmeller (1828).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-021",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hudelump / Hudelumpe' in Fischart (1590/1847).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-031",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests personal noun 'Hudel' ('beggar/ragamuffin') in U.S. German print on 7 May 1850.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-026",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Rhenish-Franconian 'Hurlump' in Kehrein (1862).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-029",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests underworld 'Haderlumpsammler' in Avé-Lallemant (1862).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-032",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests U.S. German 'Haderlump' in Cincinnati Westliche Blätter (10 Nov 1867).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-025",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Hessian 'Hudel' in Vilmar (1868).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-027",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Hudel' proverbs in Wander (1870).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3de0ceb4075a7aa3f000519c67dfb90306e9acc19882df544a10eee43cf4105c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "3de0ceb4075a7aa3f000519c67dfb90306e9acc19882df544a10eee43cf4105c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-006",
+      "slug": "clm-1000-006",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 4: Etymological Derivation",
+      "short_label": "Upper German Hudel/Hudelump contact hypothesis for hoodlum",
+      "statement": "American English 'hoodlum' plausibly derives from Upper German or German-American 'Hudelump' / 'Haderlump' / 'hudelum' ('ragged rogue, disorderly vagabond'), as first proposed in print by C. G. (1888) and developed by Tamony (1969), though the local San Francisco transmission step remains undocumented.",
+      "rationale": "Phonological and semantic correspondence between 'Hudelump'/'hudelum' and 'hoodlum' is close, but no contemporary 1866 bilingual witness records the transfer into the San Francisco gang's name.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Phonological, semantic, and chronological plausibility of an Upper German 'Hudelump'/'Hudel' donor alongside prior scholarly priority (C. G. 1888; Tamony 1969).",
+        "does_not_establish": "Conclusive proof of borrowing over spontaneous local coinage or gang-nickname invention.",
+        "remaining_uncertainty": "The oral bridge between German-speaking San Franciscans and the 1866 'Hoodlum Band' lacks direct documentary testimony."
+      },
+      "limitations": [
+        "Exact Swabian form 'hudelum' is attested in Fischer (1911) after 1866, requiring reliance on earlier 'Hudelump'/'Hudel' forms for pre-1866 chronology."
+      ],
+      "resolution_criteria": [
+        "Locate an 1860s San Francisco German-English newspaper, diary, or police court witness explicitly linking local 'Hudelump'/'Haderlump' insults to the 'Hoodlum Band'.",
+        "Recover surviving 1865-1866 issues of the California Demokrat or San Francisco Abend-Post."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-1000-001",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes the December 1866 San Francisco target chronology and setting.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1000-005",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes pre-1866 German and German-American print currency of 'Hudel' and 'Hudelump'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-043",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents C. G.'s 16 June 1888 American Notes and Queries proposal deriving 'hoodlum' from German 'hudeln / hudler / hudel'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-050",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents Peter Tamony's January 1969 Western Folklore synthesis championing Bavarian 'hodalum / huddellump'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1000-004",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "1870s San Francisco commentators already treated 'hoodlum' as etymologically opaque local gang slang rather than a transparent Germanism.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1000-007",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Swabian 'hudelum' (Fischer 1911) is lexicographically attested decades after December 1866 and cannot be treated as a pre-1866 print proof.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1066067d0481bc96d77f20b44393516b69ae89ae4f0655b569e8282939167ff0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "36125bf8f6f7d6a93d4021531dd6ddb13f5fe7dddcef2173f642cc5196fc18e4"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Added explicit qualifies edges to CLM-1000-004 and CLM-1000-007 bounding the Upper German derivation hypothesis.",
+          "content_fingerprint": "1066067d0481bc96d77f20b44393516b69ae89ae4f0655b569e8282939167ff0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-007",
+      "slug": "clm-1000-007",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hudelum / Hudellump",
+      "case_section": "Section 4: Edition & Chronology Guardrails",
+      "short_label": "Post-1866 publication dates on Schmid/Fischer Swabian hudelum, Grimm 1877, and Bartlett 1877",
+      "statement": "Lexicographical citations of exact Swabian 'hudelum' (1911, absent in Schmid 1831), Grimm's 'HUDELLUMP' fascicle (16 April 1877), and Bartlett's 'Hoodlum' entry (1877 4th ed., absent in 1859 2nd ed.) postdate December 1866 and cannot serve as pre-1866 chronological proofs.",
+      "rationale": "Direct title-page and fascicle collation prevents projecting post-1866 dictionary printings backward onto pre-1866 baselines.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact publication-date boundaries separating pre-1866 German glossaries from post-1866 dictionary editions.",
+        "does_not_establish": "That Swabian 'hudelum' did not exist orally before 1911.",
+        "remaining_uncertainty": "Unindexed regional German ephemera before 1866 could still preserve '-um' spellings."
+      },
+      "limitations": [
+        "Dictionary print dates bound earliest verified attestation, not earliest spoken existence."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-023",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Schmid (1831) prints 'hudel' and 'hudelmannswaare', whereas exact 'hudelum' appears in Fischer (1911).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-028",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Establishes 16 April 1877 fascicle publication date for Grimm DWB 'HUDELLUMP'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-044",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 'Hoodlum' is absent in Bartlett's 1859 2nd edition and added only in the 1877 4th edition.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7caf0df98af7879baeb905313d35f20b434dd4779f17d708fb0c013f8563581f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "7caf0df98af7879baeb905313d35f20b434dd4779f17d708fb0c013f8563581f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-008",
+      "slug": "clm-1000-008",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 5: Rebuttal of Folk Etymologies",
+      "short_label": "Rebuttal of 1877 'Muldoon/Noodlum' reversal hoax and 1889 'hood lahnt' conjecture",
+      "statement": "The 1877 newspaper story deriving 'hoodlum' from a compositor's reversal of 'Muldoon' (via 'Noodlum') and Barrère & Leland's 1889 Spanish/Chinese Pidgin 'hood lahnt' conjecture are contradicted by the December 1866 San Francisco Police Court record.",
+      "rationale": "The 'Muldoon'/'Noodlum' tale first surfaces eleven years after 1866 with fabricated journalist details, and 'hood lahnt' lacks any pre-1889 Spanish or Pidgin lexical attestation.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological and documentary falsification of the 1877 'Muldoon' reversal story and unattested 1889 'hood lahnt' proposal.",
+        "does_not_establish": "The true positive etymology of 'hoodlum'.",
+        "remaining_uncertainty": "None regarding the post-hoc character of the 1877 press hoax."
+      },
+      "limitations": [
+        "Negative Pidgin/Spanish checks depend on surviving 19th-century glossaries."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CLM-1000-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes December 1866 'Hoodlum' eleven years before the 1877 'Muldoon'/'Noodlum' tales.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-013",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents the 8 September 1877 New York Sun / New Dominion 'noodlums' <- 'Muldoon' newspaper fable.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-014",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents the variant 30 September 1877 Daily Astorian 'Noodlum' fable.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-049",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Barrère & Leland's uncorroborated 1889 'hood lahnt' conjecture.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9dc483e834d7b835fc1c4b28b38f0ff2a08f4c5a665aa8fc23a9bd129cfd6ce5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "9dc483e834d7b835fc1c4b28b38f0ff2a08f4c5a665aa8fc23a9bd129cfd6ce5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-009",
+      "slug": "clm-1000-009",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 5: Bounded Negative Lexicon Controls",
+      "short_label": "Zero hoodlum donor matches in pre-1875 Kochemer-Loschen, Irish, British slang, and British dialect lexicons",
+      "statement": "Systematic lexical audits across Thiele's Kochemer-Loschen glossary (1842), O'Reilly & O'Donovan's 30,246 Irish headwords (1864), Hotten's Slang Dictionary (1859-1874), and Wright's English Dialect Dictionary (1902) yield zero British dialect, London cant, or Irish ruffian nouns matching 'hoodlum'.",
+      "rationale": "Headword-by-headword checks across major candidate donor dictionaries confirm absence outside German 'Hudel-' compounds.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'hoodlum' or close non-German ruffian cognates across the four audited dictionary corpora.",
+        "does_not_establish": "Absolute non-existence in unrecorded 19th-century oral Irish or British vernacular.",
+        "remaining_uncertainty": "Oral immigrant sociolects not captured by O'Reilly or Wright remain outside dictionary bounds."
+      },
+      "limitations": [
+        "Dictionary headword audits cannot capture unrecorded spoken slang."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-030",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero matching stems in Thiele's 1842 Kochemer-Loschen glossary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-048",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero matching ruffian nouns across 30,246 headwords in O'Reilly & O'Donovan (1864).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-047",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of 'hoodlum' across Hotten's 1859-1874 editions.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-046",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of 'hoodlum' across British dialects in Wright's EDD Vol. III (1902).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Thiele (1842), O'Reilly & O'Donovan Irish-English Dictionary (1864, 30,246 headwords), Hotten Slang Dictionary (1859-1874 eds.), and Wright English Dialect Dictionary Vol. III (1902)",
+        "search_date": "2026-11-25",
+        "search_period": "1842-1902",
+        "query_terms": [
+          "hoodlum",
+          "hoodle",
+          "hudel",
+          "udalan",
+          "uallachan"
+        ],
+        "search_method": "Programmatic POS/headword sweep on O'Reilly (1864) combined with alphabetical page-scan inspection of Thiele, Hotten, and Wright.",
+        "corpus_coverage": "30,246 Romanized Irish headwords plus complete H-section alphabetical spans in Hotten (1859-1874) and Wright EDD Vol. III (pp. 221-223).",
+        "known_limitations": [
+          "Lexicographical compilations under-represent ephemeral mid-19th-century spoken immigrant slang.",
+          "OCR pre-filtering on Thiele (1842) required manual Fraktur verification."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "fcab3078c02fd44f9dc2f09afdb2da888c1a2255af46da36348068a871595909",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "fcab3078c02fd44f9dc2f09afdb2da888c1a2255af46da36348068a871595909"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1000-010",
+      "slug": "clm-1000-010",
+      "case_slug": "hoodlum",
+      "headword": "hoodlum",
+      "target_lexeme": "hoodlum, n.",
+      "case_section": "Section 6: Quarantined OCR Ghosts & Misdated Leads",
+      "short_label": "Quarantine of 1860-1879 OCR ghosts and uncorroborated retrospective newspaper claims",
+      "statement": "Apparent pre-1872 database hits in Placerville (1860 'Hudlem'), Baltimore (1866 'Hudels-'), Walla Walla (1866), and Belfast, ME (1870) are ink-verified OCR misreads for 'audience', 'Handels-', 'soothing', and 'Goodhue', while 1873-1879 retrospective claims lack contemporaneous support.",
+      "rationale": "Direct inspection of the underlying newspaper page images refutes each apparent pre-December 1866 hit.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of seven false-positive OCR and retrospective leads from the 'hoodlum' chronology.",
+        "does_not_establish": "Anything about genuine post-1866 attestations.",
+        "remaining_uncertainty": "None; ink readings on hosted scans are unambiguous."
+      },
+      "limitations": [
+        "Applies strictly to the seven audited false-positive citations."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1000-045",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 12 Dec 1860 Placerville OCR 'Hudlem' reads 'audience' in ink.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-034",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 21 Feb 1866 Baltimore Wecker 'Hudels-' is foul-case 'Handels-'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-017",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 9 Nov 1866 Walla Walla hit reads 'soothing' in ink.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-018",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 21 Jul 1870 Belfast, ME hit reads surname 'Goodhue'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-019",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Evaluates and rejects retrospective 11 Aug 1873 New-York Tribune origin tale.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-015",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Evaluates and rejects uncorroborated 22 Mar 1878 Memphis Daily Appeal retrospective claim.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1000-016",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Evaluates and rejects uncorroborated 30 Oct 1879 New Orleans Daily Democrat retrospective claim.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "707d46eb1ca3a278e2a9c9e4525a1bb8644c9165e06e7a9c710fe86b03505226",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hoodlum.",
+          "content_fingerprint": "707d46eb1ca3a278e2a9c9e4525a1bb8644c9165e06e7a9c710fe86b03505226"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

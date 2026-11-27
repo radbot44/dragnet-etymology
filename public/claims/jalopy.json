@@ -1,0 +1,1539 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "jalopy",
+  "case_slug": "jalopy",
+  "case_number": "Case 1900",
+  "target_id": "TGT-011",
+  "headword": "jalopy",
+  "updated_at": "2026-11-26",
+  "summary_note": "Pilot claim ledger (16 claims covering 62/62 citation records): separates 1921–1929 New England student mock-school/mock-toponym precursors ('East Jolopy/Jalopy/Gillopie Prep.' and 1929 'Gilloppy Isles') and 1921 Vachon Ford trade-in context from HDAS 1924 baseline calibration, unambiguous automotive usage beginning April 3, 1927 ('THE FAMOUS JALOPPI SEDAN'), the 1927 Hammond Tech yearbook (vs. Sept. 8, 1926 heading), Dec. 1928 UP wire syndication, Aug. 9, 1930 automotive 'Old Gillopy', the implausibility of the literal New Orleans-to-Jalapa scrap-barge story, and the distinct open question of indirect 'Jalapa'/'jalap' influence.",
+  "claims": [
+    {
+      "id": "CLM-1900-001",
+      "slug": "clm-1900-001",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "Jolopy ('East Jolopy Prep.' mock school-name precursor)",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "June 1921 Brookline High School Sagamore attests 'D. East Jolopy Prep.' as a mock school-name precursor",
+      "statement": "The June 1921 graduation issue of The Sagamore (Brookline High School, Massachusetts, Vol. XXVII, No. 6, pp. 273–274) prints 'D. East Jolopy Prep.' as the humorous future destination of graduating senior Arthur A. Leonardi, furnishing the earliest primary-scan-verified English print occurrence of a jalopy-shaped form strictly inside a fictional preparatory-school title without an explicit automotive gloss.",
+      "rationale": "Separating Leonardi's June 1921 'East Jolopy Prep.' (CERT-1900-103) from unambiguous post-1924/1927 automobile nouns prevents overclaiming a same-sense car antedating while preserving the earliest verified trisyllabic /dʒəˈlɑpi/-pattern print witness three years before HDAS's un-scanned 1924 newspaper car citations.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print attestation of capitalized 'Jolopy' inside the burlesque school name 'D. East Jolopy Prep.' at Brookline High School in June 1921.",
+        "does_not_establish": "Common-noun 'dilapidated automobile' meaning in June 1921, or a same-sense antedating of jalopy, n.",
+        "remaining_uncertainty": "Whether Brookline students in 1921 already used 'jolopy' orally for a battered car or coined 'East Jolopy Prep.' as a mock-rustic toponymic parody that later converged with or spawned used-car slang."
+      },
+      "limitations": [
+        "Appears solely inside a proper-name student joke ('D. East Jolopy Prep.') with zero syntactic or contextual glossing as a vehicle on the page."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1921 The Sagamore (Brookline High School, Vol. XXVII, No. 6, pp. 273–274) masthead-verified scan printing 'D. East Jolopy Prep.' under Arthur A. Leonardi.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c952587b76a445115b8ad299c123ebb580e049ee98b16a8230e27285ad2289c3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "aca454ca348cdde524c364bddadb21dd2d47bfc37c6416c33ad837fb275bc1e4"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected June 1921 Brookline Sagamore page coordinates from p. 199 to pp. 273–274 per CERT-1900-103.webp.",
+          "content_fingerprint": "c952587b76a445115b8ad299c123ebb580e049ee98b16a8230e27285ad2289c3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-002",
+      "slug": "clm-1900-002",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "Jalopy / Gillopie / Gilloppy (1925–1929 New England mock-institution & mock-toponym forms)",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "June 1925 Brookline Murivian ('East Jalopy/Gillopie Prep.') and 1929 New Bedford Fabricator ('Gilloppy Isles') attest <J-> ~ <G-> mock-place variation",
+      "statement": "Volume III of Brookline High School's yearbook The Murivian (imprinted 'June, 1925', with a Brookline Public Library gift bookplate dated June 8, 1925) prints both 'East Jalopy Prep.' (p. 54, col. 2) and 'East Gillopie Prep.' (p. 71, col. 1), and the 1929 New Bedford Textile School yearbook The Fabricator prints 'He rules the Gilloppy Isles'—documenting <J-> ~ <G-> initial variation across southeastern Massachusetts student mock-school and mock-toponym humor rather than explicit automobile attestations.",
+      "rationale": "Grouping the June 1925 Brookline pair (CERT-1900-104, CERT-1900-201) with the 1929 New Bedford 'Gilloppy Isles' couplet (CERT-1900-115) accurately classifies all three as southeastern New England burlesque place/school names. In particular, 'He rules the Gilloppy Isles' in CERT-1900-115 is a mock-toponymic yearbook verse—not a common-noun <g-> car attestation (which instead begins in open scans on August 9, 1930 in CERT-1900-119, CLM-1900-009)—and Carl von Ladau's 'traveling in a Ford' line on p. 71 of the 1925 Murivian belongs to a separate classmate's entry.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Coexisting <Jalopy> and <Gillopie>/<Gilloppy> spellings in southeastern Massachusetts student mock-school and mock-island names in June 1925 and 1929.",
+        "does_not_establish": "Unambiguous common-noun automotive denotation in either the 1925 Brookline Murivian or the 1929 New Bedford Fabricator.",
+        "remaining_uncertainty": "Whether 'Gillopie'/'Gilloppy' in 1925 Brookline and 1929 New Bedford carried an implicit automotive double entendre alongside mock-exotic place naming."
+      },
+      "limitations": [
+        "The June 8, 1925 Brookline Public Library gift bookplate on The Murivian establishes a physical accession terminus ante quem rather than the exact printing day.",
+        "Although frozen ledger notes on CERT-1900-115 compared its initial 'G-' spelling with Steinbeck's 1936 'gillopy', the verbatim text ('He rules the Gilloppy Isles') is a mock-toponym rather than an automobile noun and is therefore excluded from automotive antedatings."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1925 The Murivian (Brookline High School, Vol. III, p. 54, col. 2) printing 'East Jalopy Prep.' under senior Edward L. Lincoln.",
+          "witness_note": "Co-entry within the same June 1925 Brookline High School yearbook volume (The Murivian, Vol. III, pp. 54 & 71; gift bookplate dated June 8, 1925)."
+        },
+        {
+          "ref": "CERT-1900-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1925 The Murivian (p. 71, col. 1) printing 'East Gillopie Prep.' under senior Louis A. Vachon Jr. (distinct from classmate Carl von Ladau's separate Ford line on the same page).",
+          "witness_note": "Co-entry within the same June 1925 Brookline High School yearbook volume (The Murivian, Vol. III, pp. 54 & 71; gift bookplate dated June 8, 1925)."
+        },
+        {
+          "ref": "CERT-1900-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1929 The Fabricator (New Bedford Textile School yearbook) printing 'Frank Pakula is a kindly man. He rules the Gilloppy Isles.'",
+          "witness_note": "Classified strictly as a southeastern New England burlesque mock-toponym ('Gilloppy Isles'), NOT an automotive <g-> car attestation."
+        },
+        {
+          "ref": "CLM-1900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Continues the exact 'East Jolopy Prep.' Brookline High School running gag inaugurated in June 1921.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "173054ee2cd8e7ebd8384d2e8537f4611682c291853d18dc37b6c68301c184a3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "af1c559d21fd7d0c8bfaedb26ec749b40bdf54b47143065b8eea51e5a99594ef"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected June 1925 Murivian page coordinates to p. 54, col. 2 and p. 71, col. 1 and added same-volume co-witness notes.",
+          "content_fingerprint": "173054ee2cd8e7ebd8384d2e8537f4611682c291853d18dc37b6c68301c184a3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-003",
+      "slug": "clm-1900-003",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy / gillopie (Brookline Ford trade-in social milieu)",
+      "case_section": "3. Prosopography and Social Milieu",
+      "short_label": "1921 Brookline Vachon Ford trade-in dealership context makes an automotive pun behind 'East Gillopie Prep.' plausible though unproven",
+      "statement": "A June 2, 1921 Brookline Chronicle display advertisement documents that 'East Gillopie Prep.' senior Louis A. Vachon Jr. was the son of local Ford dealer Louis A. Vachon Sr. (649–653 Washington St., Brookline, advertising 'OLD CARS TAKEN IN TRADE'), establishing an immediate used-Ford family and peer milieu that renders an automotive pun behind Brookline's 1921–1925 'Jolopy / Jalopy / Gillopie' school names plausible without proving car denotation.",
+      "rationale": "Prosopographical linkage between Vachon Jr.'s 1925 'East Gillopie Prep.' entry (CERT-1900-201) and his father's Washington Street used-Ford trade-in lot (CERT-1900-223), alongside Arthur Leonardi's car-obsessed 1921 class profile, shows that the Brookline tokens circulated inside a used-car-saturated teenage social network while stopping short of direct semantic proof.",
+      "type": "historical_context",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Direct family tie between the 1925 'East Gillopie Prep.' student (Louis A. Vachon Jr.) and Brookline's Vachon Ford 'OLD CARS TAKEN IN TRADE' dealership.",
+        "does_not_establish": "That 'Jolopy'/'Jalopy'/'Gillopie' denoted a used car in 1921–1925 Brookline or that the Vachon lot coined the word.",
+        "remaining_uncertainty": "Whether the Vachon family or Brookline garage hands used 'jalopy'/'gillopie' for trade-in Model Ts before 1925."
+      },
+      "limitations": [
+        "Circumstantial prosopographical association cannot substitute for a common-noun automotive sentence."
+      ],
+      "resolution_criteria": [
+        "Locate a 1920–1926 Massachusetts student publication, letter, or garage advertisement using 'jolopy', 'jalopy', or 'gillopie' syntactically as a common noun for a motor car."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1900-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 2, 1921 Brookline Chronicle p. 5 advertisement for Louis A. Vachon's Brookline Ford dealership featuring 'OLD CARS TAKEN IN TRADE'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1925 Murivian p. 72 assigning 'East Gillopie Prep.' to Ford dealer's son Louis A. Vachon Jr.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-103",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "June 1921 Sagamore p. 199 profile of classmate Arthur A. Leonardi ('East Jolopy Prep.').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-104",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "June 1925 Murivian p. 64 ('East Jalopy Prep.').",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Contextualizes the 1921 Brookline school-name token.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Contextualizes the 1925 Brookline 'East Jalopy / Gillopie Prep.' pair.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "169d5fbac114e754b3211758125022d4ac9fb6d91cce62a58069af15dbcda2d4",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d3c9fa50b5911370bcd7a617f0f6bf79b7f16850bed506de4d6c3f9b617ca7be"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "169d5fbac114e754b3211758125022d4ac9fb6d91cce62a58069af15dbcda2d4"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-004",
+      "slug": "clm-1900-004",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (pre-1924 slang & shop-manual negative control)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Pre-1924 automotive manuals and slang surveys (7.91M summary chars / 19.85M multi-edition chars) yield 0 'jalopy' tokens",
+      "statement": "Full-text regex sweeps across eleven pre-1924 editions of standard American slang monographs and automotive shop encyclopedias—H. L. Mencken's The American Language (1919, 1921, 1923), A. L. Dyke's Automobile and Gasoline Engine Encyclopedia (1917, 1920), Victor W. Pagé's Ford/automobile manuals (1916–1920), and Smith (1919), Vizetelly (1920), and McKnight (1923)—yield zero tokens of any 'jalopy'/'gillopy' variant across 7,914,620 deduplicated summary characters (19,845,527 multi-edition OCR characters), alongside abundant 'flivver', 'jitney', 'tin lizzie', 'crate', 'bus', and 'old boat'.",
+      "rationale": "Auditing the exact pre-1924 reference works devoted to American vernacular neologisms and Model T repair terminology confirms that 'jalopy' had not entered national automotive or slang print before the mid-1920s.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete absence of 'jalopy'/'gillopy' variants across major 1916–1923 American slang surveys and automobile repair encyclopedias.",
+        "does_not_establish": "Absence of localized oral teenage or garage slang prior to 1924.",
+        "remaining_uncertainty": "Local comic strips, high-school papers, and garage trade newsletters from 1921–1924 remain partially unindexed."
+      },
+      "limitations": [
+        "jalopy.json corpus_search_summary reports 7,914,620 deduplicated baseline characters, whereas summing all eleven multi-edition OCR volumes logged in CERT-1900-309..312 totals 19,845,527 characters (2,781,775 words); both bounds yield 0 qualifying tokens."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Mencken's The American Language 1st–3rd eds. (1919–1923; 3,828,772 multi-edition chars): 0 'jalopy' tokens vs. 'jitney'/'flivver' controls.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dyke's Automobile and Gasoline Engine Encyclopedia (6th ed. 1917, 12th ed. 1920; 9,890,779 chars): 0 'jalopy' tokens vs. 'crate' controls.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Victor W. Pagé's Model T and automobile manuals (1916–1920; 4,520,579 chars): 0 'jalopy' tokens vs. 'bus' controls.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Smith (1919), Vizetelly (1920), and McKnight (1923) lexical surveys: 0 'jalopy' tokens vs. 'flivver' controls.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "11 pre-1924 volumes of Mencken (1919, 1921, 1923), Dyke (1917, 1920), Pagé (1916–1920), C. Alphonso Smith (1919), Vizetelly (1920), and McKnight (1923)",
+        "search_date": "2026-11-26",
+        "search_period": "1916–1923",
+        "query_terms": [
+          "jalop*",
+          "jallop*",
+          "jolop*",
+          "jollop*",
+          "jaloop*",
+          "gillop*",
+          "gilop*",
+          "jillop*",
+          "flivver",
+          "jitney",
+          "crate",
+          "bus"
+        ],
+        "search_method": "Case-insensitive regex sweep across Internet Archive and HathiTrust full-text OCR with positive automotive-slang control counts",
+        "corpus_coverage": "7,914,620 deduplicated summary characters (jalopy.json corpus_search_summary) / 19,845,527 total characters across all 11 multi-edition volumes itemized in CERT-1900-309..312",
+        "known_limitations": [
+          "National philological compendia and formal shop manuals lag spoken teenage and neighborhood garage slang; both deduplicated (7.91M) and multi-edition (19.85M) ledger character totals are disclosed."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "a881476d961ec2458d21f52a06726792f3f60d6667a899337917ed6c44d79024",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "a881476d961ec2458d21f52a06726792f3f60d6667a899337917ed6c44d79024"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-005",
+      "slug": "clm-1900-005",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy, n. (1924–1929 dictionary baseline calibration)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Calibration of un-scanned HDAS 1924, Wentworth c. 1925, and Merriam-Webster 1928 dates against OED3/Green May 1929",
+      "statement": "Published historical dictionaries diverge between HDAS Vol. 2 (1997, reporting 1924 US newspaper cartoon/column tokens 'jaloupy', 'jaloppi', 'gillopy'), Wentworth's American Dialect Dictionary (1944, reporting retrospective c. 1925 oral 'jaloopy'), Merriam-Webster (reporting unattributed 1928 'giloppy'), and OED3 / Green's Dictionary of Slang (citing May 1929 Hostetter & Beesley It's a Racket!, p. 229 'Jaloppi')—requiring DRAgNEt's 1927–1929 open-scan automotive witnesses to be framed strictly as advances over OED3/Green (May 1929) rather than over HDAS (1924).",
+      "rationale": "Making the split between un-scanned secondary dictionary reports (1924–1928) and open-scan dictionary baselines (May 1929) explicit prevents inflated antedating claims while isolating the specific microfilm reels needed to verify the 1924–1928 citations.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact baseline hierarchy across HDAS (1924), Wentworth (1944 reporting c. 1925 oral), Merriam-Webster (1928 'giloppy'), and OED3/Green (May 1929 'Jaloppi').",
+        "does_not_establish": "Primary-scan verification of the un-scanned 1924 HDAS or 1928 Merriam-Webster citations.",
+        "remaining_uncertainty": "Physical microfilm of the 1924 Boonville (IN) Standard (Indiana State Library reel 295243) and HDAS's 1924 newspaper citations awaits direct visual inspection."
+      },
+      "limitations": [
+        "CERT-1900-101 (HDAS 1924), CERT-1900-212 (Wentworth 1944), and CERT-1900-213 (Merriam-Webster 1928) record secondary dictionary metadata without hosted primary-source scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "HDAS Vol. 2 (1997) / Etymonline baseline reporting 1924 US newspaper cartoon and column occurrences ('jaloupy', 'jaloppi', 'gillopy').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Harold Wentworth's American Dialect Dictionary (1944, p. 326) reporting retrospective c. 1925 oral 'jaloopy, jalupie'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Merriam-Webster dictionary baseline reporting 1928 'giloppy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1929 Gordon L. Hostetter & Thomas Quinn Beesley, It's a Racket! (Chicago, p. 229, 'Jaloppi') — scanned OED3 and Green's Dictionary of Slang baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d469b1c880403faa0c3a34a981ad5077d7fff36528f2b49a826fc09512028be5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d469b1c880403faa0c3a34a981ad5077d7fff36528f2b49a826fc09512028be5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Historical Dictionary of American Slang (HDAS Vol. 2) & Oxford English Dictionary Online (OED3)",
+          "publication": "HDAS Vol. 2 (1997) s.v. jalopy (1924); OED3 s.v. jalopy, n. (May 1929 Hostetter & Beesley)",
+          "date": "1997",
+          "url_or_ref": "https://www.oed.com/dictionary/jalopy_n",
+          "exact_scope": "Establishes the published 1924 (HDAS) and May 1929 (OED3/Green) reference baselines calibrated in this claim."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1900-006",
+      "slug": "clm-1900-006",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy, n. (jaloppi: dilapidated automobile)",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "Apr. 3, 1927 Chicago Sunday Tribune 'THE FAMOUS JALOPPI SEDAN' antedates OED3/Green (May 1929) by 2 years and 1 month",
+      "statement": "Walter M. Schwimmer's verse 'THE FAMOUS JALOPPI SEDAN' in the Chicago Sunday Tribune (April 3, 1927, Part 8, p. 7, col. 1, 'Little Tales of Big Heads', depicting a battered car bought 'second hand' for 'twenty bucks'), followed by Schwimmer's December 25, 1927 sequel, provides DRAgNEt's earliest primary-scan-verified unambiguous automotive attestation of 'jalopy', advancing the OED3 and Green's Dictionary of Slang baseline (May 1929, Hostetter & Beesley It's a Racket!) by 2 years and 1 month while postdating the un-scanned 1924 date reported in HDAS.",
+      "rationale": "Unlike the 1921–1925 Brookline school-name tokens (CLM-1900-001, CLM-1900-002), Schwimmer's April 3, 1927 Chicago Sunday Tribune poem explicitly describes a twenty-dollar rattletrap secondhand sedan, giving historical dictionaries an open-access, masthead-verified automotive scan two years and one month ahead of OED3's May 1929 Chicago racketeering glossary.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan, masthead-verified automotive common-noun/attributive usage ('JALOPPI SEDAN' = '$20 secondhand car') in Chicago on April 3, 1927.",
+        "does_not_establish": "An absolute lexical antedating over the un-scanned 1924 US newspaper citations reported in HDAS Vol. 2.",
+        "remaining_uncertainty": "Inspection of HDAS's 1924 newspaper reels will establish exact 1924 day-level scans ahead of April 3, 1927."
+      },
+      "limitations": [
+        "Advances OED3 and Green's Dictionary of Slang (May 1929) by 2 years and 1 month, but explicitly postdates HDAS Vol. 2's un-scanned 1924 newspaper baseline by 3 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 3, 1927 Chicago Sunday Tribune Part 8, p. 7, col. 1 ('Little Tales of Big Heads': 'THE FAMOUS JALOPPI SEDAN' by W. M. Schwimmer) — earliest open-scan automotive witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 25, 1927 Chicago Sunday Tribune follow-up 'jaloppi' automotive witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-214",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "May 1929 Hostetter & Beesley It's a Racket! p. 229 ('Jaloppi') — OED3 and Green's baseline superseded here.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-101",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "HDAS Vol. 2 (1997) 1924 newspaper baseline, bounding the scope of this antedating to OED3 and Green's.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-005",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Supplies the multi-dictionary baseline calibration distinguishing OED3 (May 1929) from HDAS (1924).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3) & Green's Dictionary of Slang",
+        "entry_and_sense": "jalopy, n. ('old, decrepit, or unserviceable motor car', citing May 1929 Hostetter & Beesley, It's a Racket!, p. 229 'Jaloppi')",
+        "edition_or_revision": "OED3 & Green's Dictionary of Slang online editions (consulted November 2026); qualified by HDAS Vol. 2 (1997: 1924)",
+        "baseline_date": "1929-05",
+        "baseline_date_precision": "month",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jalopy_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1900-105",
+        "attested_date": "1927-04-03",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 years and 1 month (3 April 1927 vs. May 1929)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "afc0caf6fb1107ffaf5e445c7e33dc1a6c3a7fa18ad7e3bacddb8f5035ca488b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "8494b00de535087f9787c28a1f3af94a0cf6bb3b080ddab1b1a7083a7a5a0509"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected April 3, 1927 Chicago Sunday Tribune section and page coordinates to Part 8, p. 7, col. 1 ('Little Tales of Big Heads') per CERT-1900-105.webp.",
+          "content_fingerprint": "afc0caf6fb1107ffaf5e445c7e33dc1a6c3a7fa18ad7e3bacddb8f5035ca488b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-007",
+      "slug": "clm-1900-007",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jolopy, n. (1927 Hammond Tech auto-shop yearbook)",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "1927 Hammond Tech yearbook ('Grabbing that jolopy') is anchored to its 1927 print year rather than its internal Sept. 8, 1926 heading",
+      "statement": "The Chart of 1927 (student annual of Hammond Technical Vocational High School, Hammond, Indiana, printed in 1927, p. 144) attests lowercase automotive 'jolopy' in a chronological school-year log headed 'Sept. 8, 1926 ... Grabbing that jolopy they nearly threw it into the shop.', documenting Calumet-region garage-shop usage anchored conservatively to its 1927 publication year rather than its retrospective September 8, 1926 episode heading.",
+      "rationale": "School annuals compile humorously dated 'school-year calendar' entries in spring before graduation presswork. Separating the internal narrative episode date (September 8, 1926) from the 1927 imprint date upholds historical-lexicography dating standards while confirming unglossed teenage auto-shop usage immediately adjacent to Chicago.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Vocational auto-shop student usage of lowercase 'jolopy' ('shop car') in Hammond, Indiana printed in 1927.",
+        "does_not_establish": "Contemporaneous physical printing on September 8, 1926.",
+        "remaining_uncertainty": "Exact spring 1927 press/distribution date of The Chart of 1927 relative to April 3, 1927."
+      },
+      "limitations": [
+        "CERT-1900-106 carries sort_date '1927-05-15' as a spring-yearbook sorting convention; citation dating is strictly year-level (1927) with an internal retrospective September 8, 1926 narrative heading."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1927 Hammond Technical Vocational High School yearbook The Chart of 1927, p. 144 scan ('Grabbing that jolopy they nearly threw it into the shop.').",
+          "witness_note": "Anchored to 1927 yearbook imprint year; 'Sept. 8, 1926' is an internal retrospective school-calendar heading."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9ea243a427bb1ce455db16e324b04b3edb964bb25360ae8114f592b84fdb83ce",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "2de6023b2efadf8e809cc83be986cbed6e9a82a5daceec6f57d1fa926bc4a778"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected 1927 Hammond Chart page coordinate (p. 144) and verbatim quotation per jalopy.json.",
+          "content_fingerprint": "9ea243a427bb1ce455db16e324b04b3edb964bb25360ae8114f592b84fdb83ce"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-008",
+      "slug": "clm-1900-008",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jaloppy / jalopy / jaloppie / jallopies, n.",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "1927–1929 Chicago and UP wire witnesses fix /dʒəˈlɑpi/ rhyme, exact 'Jalopy' (Oct. 1928), and antedate '-ppy' (July 7, 1927) by 4 yrs, 4 mos, 1 day",
+      "statement": "Chicago newsprint, railroad-employee magazines, and coast-to-coast United Press ('UP') dispatches between July 7, 1927 and April 1929 advance Green's Dictionary of Slang '-ppy' spelling baseline (November 8, 1931) by 4 years, 4 months, and 1 day ('Jaloppy', July 7, 1927), fix stressed medial LOT/PALM /ɑ/ and final /-i/ via rhymes ('copy : jaloppy', Dec. 1, 1927; 'Jaloppie : talkie', Dec. 7, 1928 UP wire), and attest exact automotive 'Jalopy' (Oct. 1928 Michigan City Pantagraph), duplicated UP wire 'Jail House Jaloppie' (Dec. 6–7, 1928), 'jillopy' (Mar. 20, 1929), and Grant Park 'jallopies' (Mar. 31, 1929).",
+      "rationale": "Ten pre-May 1929 witnesses map both the phonological realization (/dʒəˈlɑpi/) and the sociological mechanism by which Chicago/Calumet automotive slang went national—notably the December 6–7, 1928 United Press wire story on Newburyport mayor 'Bossy' Gillis's 'Jail House Jaloppie', where Santa Ana (CERT-1900-111) and Amarillo (CERT-1900-112, adding the 'Jaloppie : talkie' paragraph) represent syndicated witnesses of a single UP wire dispatch.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Automotive '-ppy' spelling 'Jaloppy' on July 7, 1927, rhymed /dʒəˈlɑpi/ prosody in 1927–1928, exact automotive 'Jalopy' in October 1928, and coast-to-coast United Press wire syndication ('Jaloppie') on December 6–7, 1928.",
+        "does_not_establish": "Pre-1927 national syndication outside Greater Chicago and New England.",
+        "remaining_uncertainty": "A reported July 10, 1928 Chicago Daily News p. 12 Riverview Park ad ('Bring the family \"jalopy\"') awaits microfilm scan inspection."
+      },
+      "limitations": [
+        "CERT-1900-111 (Dec. 6, 1928 Santa Ana Register) and CERT-1900-112 (Dec. 7, 1928 Amarillo Daily News) are co-syndicated United Press ('UP') wire printings of the same Newburyport 'Bossy' Gillis dispatch rather than independent regional coinages."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 7, 1927 Chicago Daily Tribune ('Jaloppy') — advancing witness for '-ppy' orthography.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1, 1927 Chicago Daily Tribune verse rhyming 'copy' with 'jaloppy', fixing stressed medial /ɑ/.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1928 automotive 'jolopy' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 1928 The Pantagraph (Chicago South Shore & South Bend Railroad, Michigan City, IN, Vol. 2, No. 10, p. 7) attesting exact automotive 'Backward Jalopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 6, 1928 Santa Ana (CA) Register front-page United Press ('UP') dispatch from Newburyport, MA ('\"Jail House Jaloppie\"').",
+          "witness_note": "Syndicated UP wire co-witness with CERT-1900-112."
+        },
+        {
+          "ref": "CERT-1900-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 7, 1928 Amarillo (TX) Daily News longer printing of the same UP Newburyport dispatch, preserving the second paragraph rhyming 'Jail House Jaloppie' with 'talkie'.",
+          "witness_note": "Syndicated UP wire co-witness with CERT-1900-111."
+        },
+        {
+          "ref": "CERT-1900-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 20, 1929 automotive 'jillopy' witness showing pretonic vowel reduction.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 31, 1929 Chicago Sunday Tribune plural 'jallopies' at the Grant Park used-car bonfire.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 1929 automotive 'jolopy' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 3, 1930 plural 'jallopies' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Builds directly on the April 3, 1927 Chicago Tribune automotive debut.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "jalopy, n. (earliest recorded -ppy spelling 'JALOPPY', 8 November 1931 Los Angeles Times)",
+        "edition_or_revision": "Green's Dictionary of Slang online edition (consulted November 2026)",
+        "baseline_date": "1931-11-08",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/iwi3eri",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-1900-107",
+        "attested_date": "1927-07-07",
+        "attested_date_precision": "day",
+        "computed_advance_display": "4 years, 4 months, and 1 day (7 July 1927 vs. 8 November 1931)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "2f53576db13d410b6371f46174d650bf16d4a23f67d1337975b40b4483b4a4ac",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "c6e559ae3160e2841f58eacf49556a0ca9144151b9ac57ec8a9f4071338a049a"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "2f53576db13d410b6371f46174d650bf16d4a23f67d1337975b40b4483b4a4ac"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-009",
+      "slug": "clm-1900-009",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "gillopy / gilloppie / jalope / jalopee, n.",
+      "case_section": "2. Brookline School-Name Context (1921–1925) vs. Verified Automotive Attestations (1927–1930)",
+      "short_label": "Aug. 9, 1930 'Old Gillopy' antedates OED3's 1936 automotive <g-> 'gillopy' by 6 calendar years, alongside Nov. 26, 1930 'Jalope'",
+      "statement": "Setting aside non-automotive mock-place precursors ('East Gillopie Prep.' 1925 and 'Gilloppy Isles' 1929), unambiguous open-scan automotive <G-> usage begins on August 9, 1930 in the Chicago Daily Tribune ('After Old Gillopy wheezes and snorts its way to the top of a steep grade') and October 30, 1930 in Fort Wayne ('Gilloppie which is a mild expression for a Ford'), advancing OED3's earliest <g-> car citation (1936, John Steinbeck, In Dubious Battle) by 6 calendar years, alongside August 1930 midget-radio 'jalopee' and November 26, 1930 'Jalope' (7 calendar years before Green's 1937 'jalope' baseline).",
+      "rationale": "Carefully separating mock-toponymic CERT-1900-115 (1929 'Gilloppy Isles', placed in CLM-1900-002) from true vehicle attestations ensures that the <g-> automotive advance against OED3's 1936 Steinbeck baseline rests squarely on unmistakable car witnesses (CERT-1900-119 'Old Gillopy' climbing a Wisconsin highway hill on August 9, 1930, and CERT-1900-210 explicitly defining 'Gilloppie' as 'a Ford' on October 30, 1930), while also noting Merriam-Webster's un-scanned 1928 'giloppy' report.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan unambiguous automotive <G-> usage ('Old Gillopy', Aug. 9, 1930; 'Gilloppie... a Ford', Oct. 30, 1930), metaphorical midget-radio 'jalopee' (Aug. 1930), and silent-e 'Jalope' (Nov. 26, 1930).",
+        "does_not_establish": "An advance over Merriam-Webster's un-scanned 1928 'giloppy' report or HDAS's un-scanned 1924 'gillopy' report.",
+        "remaining_uncertainty": "Inspection of the unattributed 1928 Merriam-Webster 'giloppy' source and HDAS's 1924 reels is needed to verify pre-1930 automotive <g-> scans."
+      },
+      "limitations": [
+        "Advances OED3's 1936 John Steinbeck 'gillopy' baseline by 6 calendar years (August 9, 1930 vs. 1936), while postdating un-scanned 1924 (HDAS) and 1928 (Merriam-Webster) secondary reports.",
+        "Excludes 1929 New Bedford 'Gilloppy Isles' (CERT-1900-115) as a mock-toponym rather than an automotive witness."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 9, 1930 Chicago Daily Tribune ('In the Wake of the News': 'After Old Gillopy wheezes and snorts its way to the top of a steep grade') — earliest open-scan unambiguous automotive <G-> witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 30, 1930 Fort Wayne South Side Times ('Charlotte had her Gilloppie which is a mild expression for a Ford'), explicitly defining automotive <G-> usage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 9, 1930 automotive 'Jaloppy' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 1930 Radio News metaphorical transfer of 'jalopee' to cheap midget radio receivers.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 26, 1930 automotive plural 'JOLLOPIES'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 26, 1930 Chicago Daily Tribune ('her old \"Jalope\"' / 'sell my old Jalope!'), advancing Green's 1937 Thieves Like Us 'jalope' baseline by 7 calendar years.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 7, 1930 automotive 'Jallopy' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-002",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Contrasts earlier 1925/1929 New England mock-place <G-> tokens ('East Gillopie Prep.', 'Gilloppy Isles') with true 1930 automotive <G-> usage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-005",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Records un-scanned 1924 (HDAS) and 1928 (Merriam-Webster 'giloppy') secondary baselines.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jalopy, n. (earliest recorded <g-> automotive variant 'gillopy', 1936 John Steinbeck, In Dubious Battle)",
+        "edition_or_revision": "OED3 entry (consulted November 2026); qualified by Merriam-Webster (1928 'giloppy') and HDAS (1924)",
+        "baseline_date": "1936",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jalopy_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-1900-119",
+        "attested_date": "1930-08-09",
+        "attested_date_precision": "day",
+        "computed_advance_display": "6 calendar years (9 August 1930 vs. 1936)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d66411c65b4bd77e3dbcdf16e9289b2198122e9dc91f9407067994139a5049ea",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "8a58f7de75f2ddc756a880f59ce000b8b61d43a6b42eeecf358ae948d531d973"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "d66411c65b4bd77e3dbcdf16e9289b2198122e9dc91f9407067994139a5049ea"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-010",
+      "slug": "clm-1900-010",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (vs. Tad Dorgan coinage and 1943 'julappi/jelote' rumor)",
+      "case_section": "3. Prosopography and Social Milieu",
+      "short_label": "1929 Tad Dorgan coinage obituaries and 1920 'Julappi' typo check weigh against Dorgan authorship and the 1943 'julappi' rumor",
+      "statement": "May 1929 obituaries cataloguing cartoonist Thomas Aloysius ('Tad') Dorgan's celebrated slang coinages ('hot dog, dumb Dora, cake-eater, drugstore cowboy') omit 'jalopy', and the uncorroborated April 1943 American Speech note reporting a Winston Dictionary rumor of Mexican-Spanish 'julappi' / 'jelote' lacks any Spanish dictionary support (with 1920 US newsprint 'Julappi Hospital' proved to be a typesetting corruption of 'Jullundur', Punjab).",
+      "rationale": "Testing popular attribution stories against contemporaneous 1929 obituary lists (CERT-1900-215) and primary Spanish/newsprint controls (CERT-1900-216, CERT-1900-217) removes unsubstantiated cartoonist-coinage and ghost-Spanish distractions.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'jalopy' from contemporaneous May 3, 1929 Tad Dorgan coinage obituaries and absence of lexical evidence for Mexican-Spanish '*julappi'.",
+        "does_not_establish": "That Tad Dorgan never used 'jalopy' in an unindexed 1924 Hearst sports panel after the word entered circulation.",
+        "remaining_uncertainty": "Unindexed 1923–1924 Hearst newspaper cartoon panels have not been exhaustively page-scanned."
+      },
+      "limitations": [
+        "CERT-1900-216 (April 1943 American Speech) is post-1930 and verified without a hosted WebP scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 3, 1929 Tad Dorgan obituary enumerating his famous slang coinages while omitting 'jalopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 1943 American Speech note recording the uncorroborated Winston Dictionary 'julappi -> jelote' conjecture.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1920 US newspaper 'Julappi Hospital' item exposed as a typographical corruption of Jullundur, India rather than Spanish slang.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Shows 1921 suburban Boston student usage outside New York Hearst cartooning.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f6cd3a1476da0d839737361eb2975606dbadd4ca0d72c40161a40763dd4d3522",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "8f5088df5b96cb5a5381eced015aad5bf6934287cddc8b26b1625c0ccc2392a9"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "f6cd3a1476da0d839737361eb2975606dbadd4ca0d72c40161a40763dd4d3522"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-011",
+      "slug": "clm-1900-011",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (< Italian dialect scialuppa ~ cialuppa / French chaloupe)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "Inconclusive maritime-to-garage hypothesis deriving 'jalopy' from Italian 'scialuppa ~ cialuppa' / French 'chaloupe' mapped onto 'old boat'",
+      "statement": "Italian/Venetian dialectal 'scialuppa ~ cialuppa' (/ʃaˈluppa ~ tʃaˈluppa/, Boerio 1868) and North American French 'chaloupe' ('harbor skiff / launch', Cotgrave 1611; Dionne 1909 Quebec), mapped onto pre-existing 1923 American garage slang 'old boat' / 'old tub' for a battered car, provide a phonotactically plausible trisyllabic donor candidate for 'jalopy'/'gillopy', but the hypothesis remains inconclusive absent a direct bilingual automotive transfer witness.",
+      "rationale": "While Romance skiff terms match the trisyllabic stress contour, final labial stop, and established American 'old boat' vehicular metaphor (CERT-1900-315), initial voicing/velar variation (<J-> ~ <G->), stressed LOT/PALM /ɑ/ (vs. /u/), and the lack of any Italian-American or Franco-American transitional car quotation prevent elevating the proposal above 'inconclusive'.",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Existence of trisyllabic Italian/French skiff nouns ('scialuppa ~ cialuppa', 'chaloupe') alongside pre-1924 American automotive 'old boat' slang.",
+        "does_not_establish": "That bilingual speakers in New England or Chicago actually applied 'cialuppa' or 'chaloupe' to automobiles or coined 'jalopy'.",
+        "remaining_uncertainty": "No primary 1915–1928 text yet bridges Romance 'cialuppa'/'chaloupe' to motor cars, and the stressed /ɑ/ vowel requires secondary remodeling."
+      },
+      "limitations": [
+        "Relies on structural and metaphorical parallelism ('old boat') without an attested bilingual intermediate."
+      ],
+      "resolution_criteria": [
+        "Locate a 1915–1928 Italian-American, Quebec/New England Franco-American, or urban garage text applying 'cialuppa', 'scialuppa', or 'chaloupe' humorously to an old automobile or wagon."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1900-319",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Giuseppe Boerio's 1868 Dizionario del dialetto veneziano documenting 'scialuppa ~ cialuppa' ('ship\\'s boat, skiff').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-313",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Randle Cotgrave's 1611 Dictionarie of the French and English Tongues s.v. chaloupe ('shallop, skiff').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-314",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "N.-E. Dionne's 1909 Le parler populaire des Canadiens français confirming North American French currency of 'chaloupe'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-315",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "February 3, 1923 automotive slang control documenting 'old boat' for a battered car prior to 'jalopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-204",
+          "relationship": "weakens",
+          "directness": "indirect",
+          "reason": "December 1, 1927 Chicago Daily Tribune rhyme ('copy : jaloppy') establishes stressed LOT/PALM /ɑ/ rather than Romance /u/.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-008",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Establishes the stressed LOT/PALM vowel constraint requiring secondary vowel remodeling under any 'scialuppa'/'chaloupe' transfer.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "08cc325439503fd914f03baeca3417312d0145750a9ba5eb96d625bae9a752e8",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "9b1b1008ab1f11e4bddbb42590b1530be9435e095b253eedda3823948d9bb171"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Added explicit weakens/qualifies counter-evidence edges to CERT-1900-204 and CLM-1900-008.",
+          "content_fingerprint": "08cc325439503fd914f03baeca3417312d0145750a9ba5eb96d625bae9a752e8"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-012",
+      "slug": "clm-1900-012",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (vs. Yiddish shlape / shkape conflation & dialect gilpy)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "Primary Yiddish and Polish dictionaries resolve Quinion's 'shlape' ('slipper') vs. 'shkape' ('jade/nag' < Polish 'szkapa') conflation",
+      "statement": "Primary Yiddish, German, and Polish dictionaries show that Michael Quinion's hesitant Yiddish proposal conflated two distinct words—Yiddish 'shlape' ('old slipper, slattern', Harkavy 1910; cf. German 'Schlappe', Polish 'szłapać') and Yiddish 'shkape' ('old mare, broken-down horse' < Polish 'szkapa', Chodźko 1890)—leaving 'shlape' and Scots/Northern English 'gilpy' ('frolicsome youth/jade', EDD 1902) at most as secondary phonesthetic attractors.",
+      "rationale": "Checking Alexander Harkavy's 1910 Yiddish-English-Hebrew Dictionary (CERT-1900-316) directly exposes the secondary-literature ghost gloss 'shlape = old horse': the 'old horse/nag' word has medial velar /k/ ('shkape'), whereas labial /p/ 'shlape' means 'slipper/slattern' and lacks an initial vowel between /ʃ/ and /l/.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Lexicographical separation between Yiddish 'shlape' ('slipper, slattern') and 'shkape' ('old horse' < Polish 'szkapa'), refuting the hybrid gloss 'shlape = old horse/nag'.",
+        "does_not_establish": "Zero secondary phonetic attraction from Scots 'gilpy' or English 'jallop/loppy' on <G-> 'gillopy' variants.",
+        "remaining_uncertainty": "Possible secondary blending with 'gilpy' in '<G->' spellings remains open but unproven."
+      },
+      "limitations": [
+        "Corrects the confounded 'shlape = old horse' etymological argument without excluding multilingual urban slang play."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Alexander Harkavy's 1910 Complete English-Jewish / Yiddish-English Dictionary distinguishing 'shlape' ('slipper, slattern') from 'shkape' ('jade, old mare').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Friedrich Kluge's 1883 Etymologisches Wörterbuch s.v. Schlappe ('slipper, defeat').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Chodźko's 1890 Polish-English dictionary distinguishing 'szłapać' ('to trudge') from 'szkapa' ('jade, nag').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-320",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Joseph Wright's English Dialect Dictionary Vol. II (1902) s.v. gilpy ('lively youth, young girl'), noting potential secondary <g-> phonetic attraction.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "05be2fae335c7307b10c5b10c6c78ae3caeec5d0a66436f5bda96b42271dce62",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "05be2fae335c7307b10c5b10c6c78ae3caeec5d0a66436f5bda96b42271dce62"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-013",
+      "slug": "clm-1900-013",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (literal New Orleans-to-Jalapa scrap-barge origin story)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "1920–1923 customs, elevation, and census data render the literal New Orleans-to-Jalapa scrap-barge origin story implausible",
+      "statement": "Contemporaneous federal trade, geographical, and census records render the popular story that 'jalopy' arose in the 1920s from barges of scrap cars shipped from New Orleans to Jalapa (Xalapa), Mexico geographically, economically, and demographically implausible: Xalapa lies landlocked at 4,680 feet (1,427 m) elevation roughly 65–82 miles inland from Veracruz, 1922 U.S. Department of Commerce statistics record passenger cars exported to Mexico averaging $637.56 ($630,549 across 989 cars, matching new car prices rather than $20 scrap), and the 1920 U.S. Census counted only 1,242 Mexican-born residents (0.32%) in New Orleans, while early 'jalopy' print clusters in Massachusetts and Chicago.",
+      "rationale": "Separating the concrete maritime scrap-barge narrative from broader place-name influence allows decisive empirical testing: ocean barges cannot dock at a 4,680-foot mountain capital, 1922 Mexican auto imports were high-value operable vehicles rather than scrap metal, and zero early 'jalopy' attestations come from New Orleans or Gulf stevedores.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Geographical, economic, demographic, and chronological implausibility of the literal 1920s New Orleans-to-Jalapa scrap-automobile barge anecdote.",
+        "does_not_establish": "That the Mexican place-name 'Jalapa' or medicinal 'jalap'/'jallopy' could not have exerted indirect humorous or phonetic influence (preserved as an open question in CLM-1900-014).",
+        "remaining_uncertainty": "Exact post-1930 date and columnist who first invented the New Orleans-to-Jalapa scrap-barge anecdote."
+      },
+      "limitations": [
+        "Strictly rebuts the literal maritime scrap-export story; indirect toponymic or medicinal wordplay involving 'Jalapa'/'jalap' is evaluated separately in CLM-1900-014."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Geographical and rail-elevation survey confirming Xalapa (Jalapa) sits inland at ~4,680 feet elevation, inaccessible to ocean/river barges.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "U.S. Department of Commerce Foreign Commerce and Navigation of the United States (1922/1923) showing 989 passenger cars exported to Mexico valued at $630,549 ($637.56 average), refuting bulk scrap-car trade.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-323",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1920 Fourteenth Census of the United States recording 1,242 Mexican-born residents (0.32%) in New Orleans.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Places the earliest 1921 print precursor in suburban Boston rather than Gulf ports.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Places the earliest 1927 scan-verified automotive cluster in Chicago rather than New Orleans.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6606dda27e44db997b6c0e6e49016cc972ba4640c0b825b136cd39cf6da57091",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "8ec0c7afef7c09fc96ce6188b301adebd51dd513b78be6336f642381593d65e7"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "6606dda27e44db997b6c0e6e49016cc972ba4640c0b825b136cd39cf6da57091"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1900-013-01",
+          "claim_id": "CLM-1900-013",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1900-322",
+            "CERT-1900-321",
+            "CERT-1900-323",
+            "CLM-1900-001",
+            "CLM-1900-006"
+          ],
+          "findings": "Substantively upheld: 1922 U.S. Commerce automotive export unit value ($637.56 across 989 cars), Xalapa's landlocked 4,680-ft elevation, and 1920 New Orleans census data decisively refute the literal scrap-barge myth while preserving indirect 'Jalapa'/'jalap' prosodic influence as open in CLM-1900-014.",
+          "objections": [],
+          "material_fingerprint_at_review": "6606dda27e44db997b6c0e6e49016cc972ba4640c0b825b136cd39cf6da57091",
+          "evidence_fingerprints_at_review": {
+            "CERT-1900-321": "702c22db49bb6b375ec0604e5bbdaf9f4aca21a709ab7a46d7ab42f98bb8a6ac",
+            "CERT-1900-322": "7074001d34053e281d4d7575c210a91e9b5c29b052f6a272c6287045734ad313",
+            "CERT-1900-323": "278033e5f7c34b8beff798f6e46da476cfc87c2c603985068dcf7d5eb36e1b1f",
+            "CLM-1900-001": "c952587b76a445115b8ad299c123ebb580e049ee98b16a8230e27285ad2289c3",
+            "CLM-1900-006": "afc0caf6fb1107ffaf5e445c7e33dc1a6c3a7fa18ad7e3bacddb8f5035ca488b"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-014",
+      "slug": "clm-1900-014",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (possible indirect Jalapa place-name or medicinal jalap / jallopy influence)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "Open question whether Mexican place-name 'Jalapa' or medicinal 'jalap'/'jallopy' exerted indirect mock-toponymic or phonetic influence",
+      "statement": "Independently of the implausible New Orleans scrap-barge shipping story, it remains inconclusive (open) whether the Mexican place-name 'Jalapa'—familiar in American school geography and via the purgative drug 'jalap' (attested as 'jalop' in 1815 and in the 1903 nursery compound 'callomy-jallopy' for calomel + jalap)—exerted indirect mock-toponymic or prosodic influence on Brookline's 'East Jolopy / Jalopy Prep.' (1921–1925) or on the LOT/PALM /ɑ/ vowel of automotive 'jalopy'.",
+      "rationale": "Maintaining strict proposition separation prevents throwing out plausible lexical/toponymic echoes with the falsified barge myth: American English already possessed the exact prosodic template '-jallopy' in 'callomy-jallopy' (1903, CERT-1900-218) derived from Jalapa's medicinal root 'jalap', and 'East Jolopy / Jalopy Prep.' sits directly in the American comic-toponym genre ('Podunk', 'Kalamazoo', 'Oshkosh').",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-1921 American English familiarity with 'Jalapa' and the medicinal rhyme form 'jallopy' ('callomy-jallopy', 1903) sharing the exact /dʒəˈlɑpi/ prosodic frame.",
+        "does_not_establish": "Any documented semantic bridge from Mexican 'Jalapa' or purgative 'jalap' to a decrepit automobile.",
+        "remaining_uncertainty": "Whether 'East Jolopy / Jalopy Prep.' (1921–1925) began as a schoolroom pun on 'Jalapa' or medicinal 'jallopy', or whether 'jalap'/'Jalapa' merely reinforced an independent slang coinage."
+      },
+      "limitations": [
+        "No primary witness between 1920 and 1930 explicitly connects an automobile 'jalopy' with 'Jalapa' or medicinal 'jalap'."
+      ],
+      "resolution_criteria": [
+        "Locate a 1915–1930 student humor item, comic strip, or automotive column explicitly punning between 'Jalapa' (or purgative 'jalap'/'callomy-jallopy') and 'East Jolopy/Jalopy' or a rattling motor car."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1900-218",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "1903 'callomy-jallopy' (calomel + jalap) attesting the exact '-jallopy' prosodic and orthographic shape in American English eighteen years before 1921.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-305",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "1815 attestation of medicinal 'jalop' (< Jalapa) showing <o> spelling of the second syllable.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-221",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "March 1924 newsprint 'Jalap' (OCR'd as 'Jalopy'), illustrating ongoing 1920s print familiarity with 'jalap'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-321",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1922 US-Mexico trade statistics bounding literal trade claims while leaving indirect cultural familiarity open.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-322",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Geographical profile of Xalapa (Jalapa), renowned historically as the namesake of medicinal jalap.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-323",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1920 census baseline separating literal port demographics from schoolbook place-name familiarity.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Addresses the mock-toponymic framing of June 1921 'D. East Jolopy Prep.'",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1900-013",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Explicitly distinguishes open indirect place-name/medicinal influence from the refuted literal scrap-barge shipping story.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9cb82475afda0151c3276f6367c2a0443ab9e9c6e3d3106ea0b6fefa56e7e38c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "2993ff76728cfd6d4971b4d6a110160b031101b740e70b9285d99b293a68fc84"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "9cb82475afda0151c3276f6367c2a0443ab9e9c6e3d3106ea0b6fefa56e7e38c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-015",
+      "slug": "clm-1900-015",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (quarantined serial misdates and 1959 Hardy Boys rewrite)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "Masthead and edition audits quarantine 5 false 1903–1927 'jalopy' serial misdates and the 1959 Hardy Boys rewrite",
+      "statement": "Direct volume-header, masthead, and first-edition collation quarantines five false early 'jalopy' citations widespread in search engines: '1903' Motor -> November 1961; '1905' Collier's -> September 1942; '1912' Westwood Bruin -> June 1, 1934; '1921' U and I Cultivator -> June 1937; and '1927' The Tower Treasure (Hardy Boys #1, whose original 1927 Grosset & Dunlap edition prints 'roadster'/'old car', with 'jalopy' introduced in the 1959 textual revision).",
+      "rationale": "Exposing serial-start-year indexing bugs and juvenile-series textual modernizations prevents spurious 1903–1927 ghosts from distorting early automotive chronology.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Post-1933 true publication or revision dates for all five quarantined '1903–1927' serial and juvenile-fiction false leads.",
+        "does_not_establish": "Any pre-1927 automotive attestation in those five works.",
+        "remaining_uncertainty": "None for the five collated editions and serial runs."
+      },
+      "limitations": [
+        "Post-1930 serial issues and revised editions (1934, 1937, 1942, 1959, 1961) are verified without hosted WebP scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1903' Google Books serial-start-year misdate on a November 1961 issue of Motor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1905' serial metadata misdate on a September 1942 issue of Collier's ('jaloppy').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1912' bound-volume misdate on the June 1, 1934 UCLA/Westwood Bruin ('jaloppi').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1921' serial metadata misdate on the June 7, 1937 U and I Cultivator ('jallopy').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Collates original 1927 vs. revised 1959 editions of Hardy Boys #1 (The Tower Treasure), proving 'jalopy' was inserted in 1959.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "de85df2a5b77dbe93ce007e1f90ec8470019709b70b5cdf1ac35f371f2f9e18b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "de85df2a5b77dbe93ce007e1f90ec8470019709b70b5cdf1ac35f371f2f9e18b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1900-016",
+      "slug": "clm-1900-016",
+      "case_slug": "jalopy",
+      "headword": "jalopy",
+      "target_lexeme": "jalopy (quarantined pre-1925 OCR ghosts and lexical/surname homographs)",
+      "case_section": "4. Evaluating Origin Hypotheses and Archival False Positives",
+      "short_label": "Page-scan paleography quarantines 11 pre-1925 OCR ghosts and non-automotive medicinal, dance, and surname homographs",
+      "statement": "Primary-scan paleography quarantines eleven pre-1925 candidate hits as five OCR corruptions ('1868' 'lallopy'; '1910' 'Jallopy' ghost; '1921' 'jalapy' ghost; '1923' 'Jalopy' ghost; '1924' printed 'Jalap' misread as 'Jalopy') and six non-automotive homographs ('1815' medicinal 'jalop'; '1892' surname 'Gilopy'; '1903' medicinal 'callomy-jallopy'; '1920' 'Julappi Hospital' typo; '1921' surname/French 'E Jalope'; and '1923' dance adjective 'galopy' < galop).",
+      "rationale": "Documenting every false positive surfaced across nineteenth- and early-twentieth-century newspaper databases ensures complete citation-ledger transparency and backlink coverage.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-automotive or OCR-artifact status of all eleven pre-1925 homograph and OCR-ghost records in jalopy.json.",
+        "does_not_establish": "Impossibility of indirect prosodic reinforcement from medicinal 'jalop' / 'callomy-jallopy' (kept open in CLM-1900-014).",
+        "remaining_uncertainty": "None regarding the non-automotive reading of the eleven inspected page scans."
+      },
+      "limitations": [
+        "Medicinal 'jalop' (CERT-1900-305) and 'callomy-jallopy' (CERT-1900-218) are excluded here as vehicle attestations while cross-referenced in CLM-1900-014 for potential indirect phonetic influence."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1900-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes 1868 OCR ghost ('lallopy').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes August 23, 1910 newsprint OCR ghost read as 'Jallopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes July 27, 1921 newsprint OCR ghost read as 'jalapy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes June 15, 1923 newsprint OCR ghost read as 'Jalopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes March 1924 OCR misreading of printed medicinal 'Jalap' as 'Jalopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1815 medicinal 'jalop' ('purgative root') as a non-automotive homograph.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1892 proper surname 'Gilopy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1903 nursery medicinal compound 'callomy-jallopy' (calomel + jalap) as non-automotive.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1920 'Julappi Hospital' typographical corruption of Jullundur.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-126",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1921 proper-noun homograph 'E Jalope'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1900-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines October 28, 1923 musical/dance adjective 'galopy' (< galop dance).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3e0aa7fdc1e3f36ac1e3457e05bba6cbb355b881fbd3290ec8b4e518eaf87f29",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "3e0aa7fdc1e3f36ac1e3457e05bba6cbb355b881fbd3290ec8b4e518eaf87f29"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

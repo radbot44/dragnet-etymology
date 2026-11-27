@@ -1,8 +1,8 @@
 {
   "name": "dragnet-etymology",
-  "version": "3.3.0",
+  "version": "4.0.0",
   "private": true,
-  "description": "DRAgNEt — Deep Research Agent Network for Etymology: Open-access archival case files, primary-scan proof plates, and machine-validated lexicons deployed on Cloudflare Static Assets.",
+  "description": "DRAgNEt — Deep Research Agent Network for Etymology: Open-access archival case files, primary-scan proof plates, claim-level evidence graphs, and machine-validated lexicons deployed on Cloudflare Static Assets.",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -11,8 +11,12 @@
     "deploy": "astro build && wrangler deploy",
     "add-case": "python3 scripts/add_case.py",
     "ingest": "python3 scripts/ingest_monograph_ledger.py",
+    "review-claim": "python3 scripts/record_claim_review.py",
     "validate": "node scripts/validate-site.mjs",
+    "validate:claims": "node scripts/validate-claims.mjs --require-all-cases",
     "validate:py": "python3 scripts/validate_submission.py",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:py": "python3 -m unittest discover -s tests -p \"test_*.py\"",
     "package-release": "python3 scripts/package_release_assets.py"
   },
   "dependencies": {

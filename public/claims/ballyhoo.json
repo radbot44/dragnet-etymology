@@ -1,0 +1,1705 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "ballyhoo",
+  "case_slug": "ballyhoo",
+  "case_number": "Case 1800",
+  "target_id": "TGT-033",
+  "headword": "ballyhoo / ballahoo",
+  "updated_at": "2026-11-26",
+  "summary_note": "Pilot claim ledger (16 claims covering 69/69 citation records): separates 1777–1834 Caribbean ship names, the June 16, 1810 generic nautical 'ballahou' antedating (May 15 Kingston dispatch), the 1846 Trinidad countable common noun, 1847–1889 naval pejoration, 1877–1884 terrestrial US 'ballahoo'/'ballyhoo', the July 1, 1893 midway platform antedating, 1898 personal barker, Dec. 8, 1900 transitive verb, 1905–1906 'bally' clipping, 1899 midway 'ballahoo stage' spelling, shared cross-register orthography, Carib-to-French maritime donor, partially supported nautical-to-colloquial transmission, 'Ballyhooly' evaluation, and the 5.91M-character 1893–1894 Midway negative-corpus rebuttal of the Arabic origin myth.",
+  "claims": [
+    {
+      "id": "CLM-1800-001",
+      "slug": "clm-1800-001",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "Ballahoo / Balahou / Balaou (proper vessel names)",
+      "case_section": "2. Caribbean Ichthyonym to Anglo-American Schooner (1665–1846)",
+      "short_label": "Named Caribbean schooners and Royal Navy tenders 'Ballahoo' / 'Balahou' attested 1777–1834",
+      "statement": "Royal Navy ship logs, British prize notices, and American port-clearance columns document individual West Indian tenders, schooners, and gun-brigs bearing the proper names Ballahoo, Balahou, and Balaou from June 1, 1777 and October 30, 1795 through December 1834.",
+      "rationale": "Separating capitalized vessel names (1777 HMS Antigua's tender Ballahoo; 1795 Kingston 'Schooner Ballahoo, Capt. PERCIVAL'; 1796–1834 Royal Navy gun-brigs and merchant schooners) from lowercase common-noun rig designations prevents conflating onomastic ship naming with generic lexicalization while proving late-eighteenth-century Caribbean maritime currency of the word form.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Caribbean and Anglo-American proper-noun vessel naming ('Ballahoo', 'Balahou', 'Balaou') from 1777 and 1795 through 1834.",
+        "does_not_establish": "Generic lowercase common-noun English usage ('a ballahoo / ballahou schooner'), which is first scan-attested on June 16, 1810 (CLM-1800-002).",
+        "remaining_uncertainty": "Original manuscript log of HMS Antigua (UK National Archives ADM 51/4311) has not been directly inspected to check the literal 'May 23' vs. editorial '[June] 1, 1777' log heading in NDAR Vol. 9."
+      },
+      "limitations": [
+        "CERT-1800-024 is verified from the 1986 U.S. Naval Historical Center edition (Naval Documents of the American Revolution, Vol. 9, p. 11) without a hosted scan or TNA manuscript check; CERT-1800-025 (1795 Columbian Centinel) is text-verified without a hosted scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-024",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1, 1777 HMS Antigua log entry recording 'our Tender the Ballahoo' in West Indian waters (1986 NDAR Vol. 9, p. 11).",
+          "witness_note": "Bracketed '[June] 1' editorial date in NDAR Vol. 9 correcting literal 'May 23' log heading; manuscript TNA ADM 51/4311 uninspected."
+        },
+        {
+          "ref": "CERT-1800-025",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 30, 1795 Columbian Centinel shipping report naming 'Schooner Ballahoo, Capt. PERCIVAL' at Kingston, Jamaica.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-007",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 21, 1796 London Gazette / British prize notice for named Caribbean vessel 'Ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-008",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 25, 1797 maritime report of named vessel 'Ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-009",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1809 Royal Navy list entry for gun-brig 'Balahou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-011",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 12, 1812 maritime notice for named vessel 'Balaou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-012",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 30, 1814 shipping notice printing typesetting variant 'Balaboo' for HMS Ballahoo.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-014",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1834 nautical register listing named vessel 'BALLAHOO'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "55a322e30d7de7e773da85c02f85e9d87bf8959c4bb7f9fa214e2355342856e7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "55a322e30d7de7e773da85c02f85e9d87bf8959c4bb7f9fa214e2355342856e7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-002",
+      "slug": "clm-1800-002",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo, n. (ballahou)",
+      "case_section": "2. Caribbean Ichthyonym to Anglo-American Schooner (1665–1846)",
+      "short_label": "June 16, 1810 Savannah Republican 'ballahou built schooner' antedates OED3 ballahoo, n. (1815) by 5 calendar years",
+      "statement": "The Republican; and Savannah Evening Ledger (June 16, 1810, p. 3, col. 3, printing a May 15, 1810 Kingston, Jamaica shipping-intelligence dispatch) attests lowercase generic nautical 'a ballahou built schooner, no top-sails', advancing the OED3 baseline for ballahoo, n. (1815, The Times) by 5 calendar years and predating OED3 ballyhoo, n.1 (1836, Michael Scott) by 26 calendar years.",
+      "rationale": "Masthead-verified inspection of CERT-1800-010 captures uncapitalized 'ballahou' classifying a West Indian schooner rig in routine Anglo-Caribbean marine intelligence five calendar years ahead of OED3's 1815 London Times baseline (and corroborated on January 7, 1815 in Baltimore's Niles' Weekly Register, 'balahoo schooners', CERT-1800-013, and in 1826 Royal Navy sketches, CERT-1800-015).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Generic lowercase English nautical print usage of 'ballahou' ('West Indian fore-and-aft schooner rig') on June 16, 1810 (from a May 15, 1810 Kingston dispatch).",
+        "does_not_establish": "Standalone countable-noun syntax without 'schooner' (attested separately in 1846 Trinidad, CLM-1800-003) or any non-nautical colloquial/midway extension.",
+        "remaining_uncertainty": "Surviving May 1810 issues of Kingston port gazettes could advance the print date by up to one month if the underlying Jamaican dispatch newspaper is located."
+      },
+      "limitations": [
+        "Anchored conservatively to the scanned June 16, 1810 Savannah Republican publication date rather than the uninspected May 15, 1810 Kingston dispatch date.",
+        "OED3's baseline ('1815', The Times) is recorded at year precision in the consulted summary, bounding computed_advance_display strictly to calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-010",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 16, 1810 The Republican; and Savannah Evening Ledger p. 3, col. 3 witness ('a ballahou built schooner, no top-sails') — advancing witness.",
+          "witness_note": "Printed June 16, 1810 under a 'KINGSTON, (Jam.) May 15' shipping-intelligence dateline."
+        },
+        {
+          "ref": "CERT-1800-013",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 7, 1815 Niles' Weekly Register (Baltimore) generic plural 'balahoo schooners'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-015",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1826 William Nugent Glascock Naval Sketch-Book Vol. 1 attesting Royal Navy 'ballahou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-018",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Admiral W. H. Smyth's 1867 Sailor's Word-Book defining West Indian 'BALLAHOU' schooners.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-020",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "W. Clark Russell's 1883 Sailors' Language lexical baseline for 'Ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-001",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Shows 1777–1809 Caribbean ship-name currency preceding the 1810 generic rig attestation.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "ballahoo, n. ('fast-sailing West Indian two-masted schooner')",
+        "edition_or_revision": "OED3 entry (consulted November 2026)",
+        "baseline_date": "1815",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/ballahoo_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1800-010",
+        "attested_date": "1810-06-16",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 calendar years (16 June 1810 vs. 1815)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "02f5755b91620bdff64eea35c67ec42b63c707c5c981c70dae11f347788e0b22",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "32b693f385c6db1b05fee4389e8135f4cbe0f8cc0e6bef5732bd07fb37dd93a9"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected masthead title ('The Republican; and Savannah Evening Ledger') and page/column coordinates (p. 3, col. 3) per CERT-1800-010.webp.",
+          "content_fingerprint": "02f5755b91620bdff64eea35c67ec42b63c707c5c981c70dae11f347788e0b22"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-003",
+      "slug": "clm-1800-003",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo, n. (standalone countable vessel noun)",
+      "case_section": "2. Caribbean Ichthyonym to Anglo-American Schooner (1665–1846)",
+      "short_label": "Jan. 20, 1846 Port of Spain Gazette attests standalone countable common noun 'one ballahoo'",
+      "statement": "The Port of Spain Gazette (Trinidad, January 20, 1846, satirical poem 'Elegy on the Demise of Fort George') is cataloged as attesting standalone countable common-noun 'Two brigs—one ballahoo.', though primary-scan verification remains pending collation of the University of Florida Digital Collections issue image.",
+      "rationale": "While the 1810 Savannah Republican and 1815 Niles' Register tokens modify 'schooner(s)' attributively, CERT-1800-026 records syntactic autonomy of 'ballahoo' as a countable Caribbean vessel noun ('Two brigs—one ballahoo.'); because CERT-1800-026 currently lacks a locally hosted pre-1931 WebP scan, the claim is graded 'partially_supported' pending full-page masthead scan collation.",
+      "type": "attestation",
+      "assessment": "partially_supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Ledger-transcribed standalone countable common-noun syntax ('Two brigs—one ballahoo.') in the January 20, 1846 Port of Spain Gazette satirical verse.",
+        "does_not_establish": "Locally hosted primary-scan verification within public/scans/ballyhoo/ or pejorative slang extension outside maritime vessel classification.",
+        "remaining_uncertainty": "Collating the full-page January 20, 1846 Port of Spain Gazette scan from UFDC will close physical-ink verification."
+      },
+      "limitations": [
+        "CERT-1800-026 is verified from the Digital Library of the Caribbean (UFDC) text/archive record without a hosted WebP scan."
+      ],
+      "resolution_criteria": [
+        "Collate and host the full-page public-domain newspaper scan of the January 20, 1846 Port of Spain Gazette ('Elegy on the Demise of Fort George') in public/scans/ballyhoo/."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1800-026",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "January 20, 1846 Port of Spain Gazette satirical verse ('Elegy on the Demise of Fort George'): 'Two brigs—one ballahoo.' (hosted WebP scan pending).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-010",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Preceding 1810 attributive 'ballahou built schooner' stage.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "8179d421d9109bbfcf184d2798dce5789a2665ce54f2decd5fc20ced4272f52f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "381c4bd0ecf2b24ee5f2dc464e5215d9232ee29fb3cfde96ba027fcb5bf54f3b"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Jan. 20, 1846 Port of Spain Gazette genre/quotation ('Two brigs—one ballahoo.' in 'Elegy on the Demise of Fort George') and downgraded to partially_supported pending hosted scan.",
+          "content_fingerprint": "8179d421d9109bbfcf184d2798dce5789a2665ce54f2decd5fc20ced4272f52f"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1800-003-01",
+          "claim_id": "CLM-1800-003",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1800-026",
+            "CERT-1800-010"
+          ],
+          "findings": "Upheld at revision 2 after correcting Jan. 20, 1846 Port of Spain Gazette verse context ('Two brigs—one ballahoo.') and recalibrating to partially_supported pending local WebP scan collation.",
+          "objections": [],
+          "material_fingerprint_at_review": "8179d421d9109bbfcf184d2798dce5789a2665ce54f2decd5fc20ced4272f52f",
+          "evidence_fingerprints_at_review": {
+            "CERT-1800-010": "2d77574823d73cd2aff398e220dc85c23689dcd3ab271add86c6d8f29f3405a6",
+            "CERT-1800-026": "5ab6331b22129c81d6778cdd6cf64024a3e1aa0e481476c680623fe683bf0014"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-004",
+      "slug": "clm-1800-004",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo, n.1 / ballyhoo of blazes",
+      "case_section": "3. Naval Pejoration and the 1877–1889 Ballahoo Slang Bridge",
+      "short_label": "1847–1889 naval pejoration ('ballyhoo of blazes') and metaphorical 'catching ballyhoo' / 'knocked to Ballyhoo'",
+      "statement": "Between 1847 and 1889, Anglo-American nautical and colloquial print reduced unstressed medial /ə/ to <y> ('ballyhoo') and extended disdain for lubberly schooners into Herman Melville's 'ballyhoo of blazes' (1847 Omoo) and American colloquial idioms of severe reprimand ('catching ballyhoo', May 7, 1889, 29 calendar years before OED's 1918 note) and violent ruin ('knocked to Ballyhoo', May 13, 1889, 16 calendar years before OED's 1905 note).",
+      "rationale": "Royal Navy writers already ridiculed unhandy 'ballahou' craft in 1826 (CERT-1800-015); Melville's 1847 Omoo (CERT-1800-016) fixed the medial-<y> 'ballyhoo of blazes' contempt epithet for an unseaworthy ship, and 1889 Georgia and Chicago newspaper witnesses show 'ballyhoo' functioning alone in 'blazes/hell' euphemism frames decades ahead of OED's twentieth-century notes.",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Medial-<y> spelling 'ballyhoo' and pejorative/euphemistic semantic extension ('dilapidated ship' -> 'blazes, reprimand, ruin') between 1847 and 1889.",
+        "does_not_establish": "Direct semantic equivalence with a carnival sideshow platform without further terrestrial bridge evidence.",
+        "remaining_uncertainty": "How widely inland speakers using 'knocked to Ballyhoo' in 1889 retained any conscious maritime association with 'ballyhoo of blazes'."
+      },
+      "limitations": [
+        "Idioms like 'knocked to Ballyhoo' may also reflect secondary attraction to Anglo-Irish 'Bally-' place-name euphemisms (cf. CLM-1800-014)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-016",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Herman Melville's 1847 Omoo attesting medial-<y> 'ballyhoo of blazes' for a slovenly, dilapidated vessel.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-022",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 7, 1889 Columbus (GA) Daily Enquirer-Sun ('catching ballyhoo'), 29 calendar years ahead of OED's 1918 note.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-023",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 13, 1889 Chicago Daily Inter Ocean ('knocked to Ballyhoo'), 16 calendar years ahead of OED's 1905 note.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-015",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1826 Naval Sketch-Book documenting pre-Melville Royal Navy contempt toward 'ballahou' rigging.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ef360b0f32a26c75039f7e3f99b5e2eea9510351a7fa5624c93438d8acca6ed9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "ef360b0f32a26c75039f7e3f99b5e2eea9510351a7fa5624c93438d8acca6ed9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-005",
+      "slug": "clm-1800-005",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo / ballyhoo, n.2 (non-nautical US slang 1877–1884)",
+      "case_section": "3. Naval Pejoration and the 1877–1889 Ballahoo Slang Bridge",
+      "short_label": "Non-nautical American 'ballyhoo' and 'ballahoo' attested in 1877–1884 newspapers for noisy commotion and bombast",
+      "statement": "Five masthead-verified American newspaper items from March 2, 1877 to July 18, 1884 attest non-nautical terrestrial 'ballyhoo' and 'ballahoo' for mock-Irish political invective (March 2, 1877), disorderly uproar ('general ballahoo', April 24, 1879), political bombast ('grand Mogul of the Ballyhoo', July 1, 1880), noisy convention carousing ('whooping-up \"ballahoo\"', June 4, 1884), and municipal ruin ('knocked... into a general ballahoo', July 18, 1884).",
+      "rationale": "These five 1877–1884 scans fall directly inside OED3's 1873–1911 Sense 2 quotation gap and prove that terrestrial American English actively used both <ballyhoo> and nautical-spelled <ballahoo> for noisy political demonstration, rowdy revelry, and chaotic commotion nine to sixteen years before the 1893 Chicago World's Fair.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-nautical American newspaper currency of both 'ballyhoo' and 'ballahoo' for noisy commotion, bombastic display, and ruin between 1877 and 1884.",
+        "does_not_establish": "Specific dime-museum or midway sideshow-platform specialization prior to July 1, 1893 (CLM-1800-006).",
+        "remaining_uncertainty": "Whether all five 1877–1884 tokens represent a single semantic development or overlapping colloquial idioms."
+      },
+      "limitations": [
+        "Does not by itself close the institutional transition into organized sideshow platform pitching (evaluated in CLM-1800-013)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 2, 1877 Anderson (SC) Intelligencer mock-Irish political satire printing 'BALLYHOO'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-019",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 24, 1879 Stark County News (Toulon, IL) attesting terrestrial 'general ballahoo' ('noisy disorder/commotion').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1, 1880 Salt Lake Daily Herald political burlesque ('grand Mogul of the Ballyhoo').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-021",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 4, 1884 St. Paul Daily Globe describing Chicago convention revelry as 'a regular whooping-up \"ballahoo\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 18, 1884 Brookville (PA) Jeffersonian Democrat ('knocked... into a general ballahoo').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b86cacf53268744bec1bd16c907fe2453c74a1a1ae2c90e19f8cc2ca17c48fad",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "b86cacf53268744bec1bd16c907fe2453c74a1a1ae2c90e19f8cc2ca17c48fad"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-006",
+      "slug": "clm-1800-006",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo, n.2 (Sense 3: midway free show / sideshow attraction)",
+      "case_section": "4. Emergence and Diffusion on the American Midway (1893–1911)",
+      "short_label": "July 1, 1893 New York Clipper 'Ballyhoo Freaks' antedates OED3 midway Sense 3 (Nov. 19, 1895) by 2 yrs, 4 mos, 18 days",
+      "statement": "The New York Clipper (July 1, 1893, p. 274, col. 2) prints 'GOOD SIDESHOW TALKERS AND Ballyhoo Freaks Wanted. State lowest wages with board; twenty weeks' engagement at the World's Fair. Address International Amusement Company, Chicago, Ill.', advancing OED3 ballyhoo, n.2 Sense 3 (November 19, 1895, Atlanta Journal) by 2 years, 4 months, and 18 days (and predating HDAS and Green's August 1901 baseline by 8 years and 1 month).",
+      "rationale": "Direct scan inspection of CERT-1800-103.webp (p. 274, col. 2) places unglossed show-trade 'Ballyhoo' in International Amusement Company's Chicago World's Fair sideshow recruiting on July 1, 1893, followed by 'Big Ballyhoo Show' (Sept. 28, 1895), plural 'ballyhoos' at the Atlanta Exposition (Nov. 25, 1895), 'Bally Hoo platform' (Sept. 26, 1896), and 'outside ballyhoo' / 'grand Ballyhoo' (March–April 1898).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Amusement-trade print currency of midway/sideshow 'Ballyhoo' ('GOOD SIDESHOW TALKERS AND Ballyhoo Freaks Wanted') in Chicago on July 1, 1893.",
+        "does_not_establish": "That the word was coined on the 1893 Exposition Midway from Arabic cries (contradicted in CLM-1800-015) or that it yet denoted the individual human barker (attested in late 1898, CLM-1800-007).",
+        "remaining_uncertainty": "International Amusement Company's unquoted trade classified ad implies pre-July 1893 oral sideshow/dime-museum currency whose exact starting year remains undocumented."
+      },
+      "limitations": [
+        "Pre-July 1893 New York Clipper tokens (>150 hits in 1889–1892) refer to the racehorse Ballyhoo or the song 'Ballyhooly' rather than sideshow platforms (see CLM-1800-016)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1, 1893 New York Clipper p. 274, col. 2 International Amusement Company Chicago World's Fair ad ('GOOD SIDESHOW TALKERS AND Ballyhoo Freaks Wanted') — advancing witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 28, 1895 New York Clipper ('Big Ballyhoo Show'), also predating OED3's Nov. 19, 1895 baseline by 52 days.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 25, 1895 Hustler of Rome (GA) plural noun witness ('the \"ballyhoos\"') describing Cotton States Exposition sideshows.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 26, 1896 New York Clipper architectural compound 'Bally Hoo platform'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 19, 1898 New York Clipper ('outside ballyhoo').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 23, 1898 New York Clipper ('grand Ballyhoo').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-113",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "August 1901 World's Work ('ballyhooer' / 'ballyhoo'), the former HDAS and Green's Dictionary of Slang baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "ballyhoo, n.2, Sense 3 ('free sample show outside a sideshow tent / noisy sideshow pitch')",
+        "edition_or_revision": "OED3 revised entry (September 2024; consulted November 2026)",
+        "baseline_date": "1895-11-19",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/ballyhoo_n2",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1800-103",
+        "attested_date": "1893-07-01",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 years, 4 months, and 18 days (1 July 1893 vs. 19 November 1895)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6f2ec4128eb92b601dc15a4dc0cf6c321084cdbce01b555ad2ec2e82cf4926c8",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "6fcf225c0f7001cc0104d53edd8512f09282b0a877300b2325084acce3d9579d"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Replaced misquoted advertiser/page/text with scan-verified CERT-1800-103.webp reading (p. 274, col. 2, International Amusement Company, Chicago).",
+          "content_fingerprint": "6f2ec4128eb92b601dc15a4dc0cf6c321084cdbce01b555ad2ec2e82cf4926c8"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-007",
+      "slug": "clm-1800-007",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo, n.2 (personal barker) / ballyhoo man",
+      "case_section": "4. Emergence and Diffusion on the American Midway (1893–1911)",
+      "short_label": "Oct. 6 & Dec. 10, 1898 street-fair items antedate personal barker 'Ballyhoo' and 'BALLYHOO MAN'",
+      "statement": "Midwestern street-fair reports in late 1898 attest metonymic transfer from the outside platform show to the human pitchman—recording personal 'a \"Ballyhoo\"' on October 6, 1898 (2 months and 9 days ahead of OED3's December 15, 1898 personal-barker witness) and agent compound 'THE BALLYHOO MAN' on December 10, 1898 (15 calendar years ahead of Etymonline's 1913 date for ballyhoo man).",
+      "rationale": "Five years of event/platform usage (1893–1898) preceded the late-1898 street-fair shift where the outside lecturer himself was dubbed 'a Ballyhoo' or 'the ballyhoo man', establishing the personal-agent bridge that directly enabled transitive verbal conversion in 1900 (CLM-1800-008).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Personal agent-noun 'Ballyhoo' ('sideshow barker') by October 6, 1898 and compound 'BALLYHOO MAN' by December 10, 1898.",
+        "does_not_establish": "Transitive verb 'to ballyhoo', which first appears in print on December 8, 1900 (CLM-1800-008).",
+        "remaining_uncertainty": "None beyond standard regional newspaper survival in summer–autumn 1898 street-fair coverage."
+      },
+      "limitations": [
+        "Etymonline's secondary reference date for 'ballyhoo man' ('1913') is year-only (15 calendar years after December 10, 1898)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 6, 1898 Weekly Argus News (Crawfordsville, IN) attesting personal barker 'a \"Ballyhoo\"' — advancing witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 10, 1898 Fort Scott (KS) Daily Monitor headline and profile 'THE BALLYHOO MAN'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 2, 1901 The Billboard equating carnival 'talker or \"ballyhoo\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 28, 1901 Omaha Daily Bee plural agent noun 'noisy ballyhoos'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-113",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "August 1901 World's Work suffixed agent noun 'ballyhooer'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Derives metonymically from the 1893–1898 outside platform/free-show sense.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "ballyhoo, n.2, Sense 3 (personal agent sense: 'sideshow barker')",
+        "edition_or_revision": "OED3 revised entry (September 2024; consulted November 2026)",
+        "baseline_date": "1898-12-15",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/ballyhoo_n2",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1800-110",
+        "attested_date": "1898-10-06",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 months and 9 days (6 October 1898 vs. 15 December 1898)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "5cd013dd2ed6dc086c84c180f2fa507c690d781a17ad19728c8254efd73db66c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "f5f9c53fe6a69984d22c295cef8f29fd326ca04a861cee8587876feff242997d"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "5cd013dd2ed6dc086c84c180f2fa507c690d781a17ad19728c8254efd73db66c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-008",
+      "slug": "clm-1800-008",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo, v. / ballyhooing, n. / ballyhooed, adj.",
+      "case_section": "4. Emergence and Diffusion on the American Midway (1893–1911)",
+      "short_label": "Dec. 8, 1900 Billboard transitive 'to \"bally-hoo\"' antedates Green's (Nov. 4, 1903) by 2 yrs, 10 mos, 27 days and OED3 (1911) by 11 calendar years",
+      "statement": "The Billboard (December 8, 1900, p. 10, col. 2) attests transitive infinitive 'to \"bally-hoo\" the crowd', advancing Green's Dictionary of Slang baseline for ballyhoo, v. (November 4, 1903) by 2 years, 10 months, and 27 days and OED3 ballyhoo, v. (1911) by 11 calendar years, followed by 'ballyhoo-ing' (April 20, 1901, 1 calendar year before OED3 1902), passive 'ballyhooed' (September 28, 1901), reduced 'ballyho' (May 3, 1902), political 'ballyhoo' (October 17, 1908), and participial adjective 'ballyhooed' (February 18, 1911, 8 calendar years before OED3 1919).",
+      "rationale": "Primary show-trade scans in The Billboard, The New York Clipper, and Variety document complete verbal inflection ('to bally-hoo', 'ballyhoo-ing', 'ballyhooed') across 1900–1901 and attributive participial 'much ballyhooed play' by February 1911, demonstrating that verbal 'ballyhoo' derived by conversion from the 1893/1898 midway noun rather than preceding it.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Transitive verbal conversion ('to \"bally-hoo\" the crowd') on December 8, 1900, gerund/participial 'ballyhoo-ing' and 'ballyhooed' in 1901, and attributive 'ballyhooed' on February 18, 1911.",
+        "does_not_establish": "Pre-1893 verbal usage (disproving any verb-first origin story).",
+        "remaining_uncertainty": "None regarding post-1898 denominal conversion order."
+      },
+      "limitations": [
+        "Against OED3's year-only 1911 baseline for ballyhoo, v., the chronological advance is strictly 11 calendar years (December 8, 1900 vs. 1911); exact year-month-day comparison is anchored against Green's day-precise November 4, 1903 baseline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 8, 1900 The Billboard p. 10, col. 2 ('to \"bally-hoo\" the crowd') — earliest verbal advancing witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 20, 1901 The Billboard ('ballyhoo-ing'), predating OED3 ballyhooing, n. (1902) by 1 calendar year.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 28, 1901 New York Clipper passive participle 'ballyhooed'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 3, 1902 The Billboard orthographic variant 'ballyho'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 17, 1908 The Billboard extension to William Jennings Bryan political campaigning.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 18, 1911 Variety attributive participial adjective ('much ballyhooed play'), 8 calendar years ahead of OED3 ballyhooed, adj. (1919).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Follows chronologically and syntactically from the late-1898 personal-barker sense.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "ballyhoo, v. ('to pitch or tout noisily as a sideshow barker')",
+        "edition_or_revision": "Green's Dictionary of Slang online edition (consulted November 2026); cf. OED3 ballyhoo, v. (1911)",
+        "baseline_date": "1903-11-04",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/tzswf3a",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1800-114",
+        "attested_date": "1900-12-08",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 years, 10 months, and 27 days (8 December 1900 vs. 4 November 1903)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0541785c7c7b9b3edf33f9102c14b85be2537b28d600c0f5500c738ca873bcf2",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "7e4ab3dfcde4aa6a8aa7e96ee394a0f14dddbb9193478934d0fd93ab37f0357c"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Dec. 8, 1900 Billboard page/column coordinates from p. 5, col. 1 to p. 10, col. 2 per CERT-1800-114.",
+          "content_fingerprint": "0541785c7c7b9b3edf33f9102c14b85be2537b28d600c0f5500c738ca873bcf2"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-009",
+      "slug": "clm-1800-009",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "bally, n.1 & v. (American carnival back-clipping)",
+      "case_section": "4. Emergence and Diffusion on the American Midway (1893–1911)",
+      "short_label": "Apr. 15, 1905 carnival noun 'bally' and Aug. 18, 1906 verb 'to bally' antedate Green's (1929/1942) and exclude British minced-oath 'bally'",
+      "statement": "The Billboard attests clipped American carnival noun 'the \"bally\"' on April 15, 1905 (advancing Green's Dictionary of Slang February 24, 1929 baseline by 23 years, 10 months, and 9 days, and HDAS 1909 by 4 calendar years) and infinitive 'to bally' on August 18, 1906 (35 years and 8 months ahead of Green's April 1942 baseline), proving that carnival 'bally' arose as a post-1900 back-clipping of 'ballyhoo' rather than from the 1884–1889 British minced oath 'bally' ('bloody').",
+      "rationale": "Chronology and syntactic category decisively separate British intensifier/adjective 'bally' (coined in London's Sporting Times in 1884 as a euphemism for 'bloody', CERT-1800-211) from American midway noun/verb 'bally', which emerges twelve years after 1893 'ballyhoo' inside identical Billboard carnival contexts ('the \"bally\"' 1905, 'to bally' 1906, 'bally stage' 1907, 'outside \"bally\"' 1910).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Clipped American carnival noun 'bally' on April 15, 1905 and verb 'to bally' on August 18, 1906 as trade back-clippings of 'ballyhoo' (currently unrecorded as separate entries in OED3).",
+        "does_not_establish": "Any derivation of 'ballyhoo' from British slang 'bally'.",
+        "remaining_uncertainty": "Spoken midway back-clipping may have begun between 1901 and early 1905."
+      },
+      "limitations": [
+        "Green's verbal baseline ('April 1942') is month-precision (yielding a 35-year, 8-month verbal advance from August 18, 1906), while HDAS's nominal baseline ('1909') is year-precision (4 calendar years)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 15, 1905 The Billboard ('the \"bally\"') — earliest clipped nominal witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 18, 1906 The Billboard ('to bally') — earliest clipped verbal witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 25, 1907 The Billboard compound 'bally stage' (parallel to 1899 'ballahoo stage').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 30, 1910 Variety ('outside \"bally\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-211",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Barrère & Leland's 1889 Dictionary of Slang, Jargon & Cant documenting British adjectival minced-oath 'Bally' (1884 Sporting Times), syntactically and semantically distinct from US carnival 'bally'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Demonstrates twelve prior years of unclipped midway 'ballyhoo' (1893–1905) from which 'bally' was clipped.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "bally, n.1 ('sideshow barker's pitch or free outside attraction')",
+        "edition_or_revision": "Green's Dictionary of Slang online edition (consulted November 2026); cf. HDAS Vol. 1 (1994: 1909)",
+        "baseline_date": "1929-02-24",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/faz6cwy",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1800-212",
+        "attested_date": "1905-04-15",
+        "attested_date_precision": "day",
+        "computed_advance_display": "23 years, 10 months, and 9 days (15 April 1905 vs. 24 February 1929)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7f54b82897a58b5529e325744ceb575add19a642e9b925fccffb8fa90c9f376e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "7d8a60acb1d4a081fb209001cf975bb0c1f8746fe3e5a19544c298e84821a236"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "7f54b82897a58b5529e325744ceb575add19a642e9b925fccffb8fa90c9f376e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-010",
+      "slug": "clm-1800-010",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo (1899 midway platform spelling)",
+      "case_section": "4. Emergence and Diffusion on the American Midway (1893–1911)",
+      "short_label": "Dec. 30, 1899 New York Clipper attests 'ballahoo' spelling in a midway 'ballahoo stage' context",
+      "statement": "The New York Clipper (December 30, 1899, p. 925, col. 1, 'NOTES FROM BILLIE HAMMOND'S MIDWAY CARNIVAL SHOW' closing at San Antonio, Texas) prints 'He took his stand in front of the ballahoo stage and remained there until his keeper came', attesting the medial-<a> spelling 'ballahoo' directly inside the American midway platform compound.",
+      "rationale": "Isolating CERT-1800-109 as its own documentary witness preserves the distinction between empirical orthographic attestation ('in front of the ballahoo stage' in December 1899 carnival reporting) and the separate interpretive question of whether that spelling reflects inherited nautical orthography or unstressed schwa respelling.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Use of the spelling 'ballahoo' for a carnival free-show platform ('ballahoo stage') in The New York Clipper on December 30, 1899 (p. 925, col. 1).",
+        "does_not_establish": "By itself, conscious showman awareness of West Indian 'ballahoo' schooners (evaluated in CLM-1800-013).",
+        "remaining_uncertainty": "Whether the 1899 Billie Hammond show correspondent inherited traditional <ballahoo> spelling or spelled unstressed medial /ə/ phonetically with <a>."
+      },
+      "limitations": [
+        "Single-token orthographic witness in 1899 midway reporting alongside predominant <ballyhoo> / <Bally Hoo> spellings."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 30, 1899 New York Clipper p. 925, col. 1 ('NOTES FROM BILLIE HAMMOND'S MIDWAY CARNIVAL SHOW': 'took his stand in front of the ballahoo stage').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-106",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "September 26, 1896 New York Clipper ('Bally Hoo platform'), showing the equivalent two-word midway stage compound.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e2bdfd82bc9b66b4129c44bb99d6674e8e89eb4faf40be93ecdf340396393537",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "c3e5cdb25fd4874ea3696b3ecd8be0ac912d8bfcf45ed5bfcd92d74f4b9238b0"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Replaced misquoted Akron text with scan-verified CERT-1800-109.webp reading (p. 925, col. 1, Billie Hammond's Midway Carnival Show at San Antonio).",
+          "content_fingerprint": "e2bdfd82bc9b66b4129c44bb99d6674e8e89eb4faf40be93ecdf340396393537"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-011",
+      "slug": "clm-1800-011",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo ~ ballyhoo (cross-register orthographic overlap)",
+      "case_section": "3. Naval Pejoration and the 1877–1889 Ballahoo Slang Bridge",
+      "short_label": "Nautical and American colloquial/midway traditions share both '<ballahoo>' and '<ballyhoo>' spellings (1810–1899)",
+      "statement": "Primary print witnesses from 1810 to 1899 document bidirectional orthographic sharing between the nautical vessel noun ('ballahou' 1810, 'balahoo' 1815, 'ballahoo' 1846, 'ballyhoo' 1847) and terrestrial American colloquial and midway usages ('ballyhoo' 1877/1880/1893, 'ballahoo' 1879/1884/1899).",
+      "rationale": "Before DRAgNEt's 1879, 1884, and 1899 newsprint discoveries, lexicographers split OED's 'ballahoo, n.' / 'ballyhoo, n.1' (maritime) from 'ballyhoo, n.2' (slang/midway) partly on orthographic grounds. Documenting that maritime English adopted <ballyhoo> by 1847 while terrestrial and midway American English retained <ballahoo> in 1879, 1884, and 1899 establishes formal orthographic overlap independent of any etymological hypothesis.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Bidirectional co-occurrence of <ballahoo> and <ballyhoo> across both maritime and non-nautical/midway print traditions.",
+        "does_not_establish": "Unbroken monogenetic semantic transmission from schooners to sideshows (evaluated separately in CLM-1800-013).",
+        "remaining_uncertainty": "The relative weight of inherited orthographic memory versus independent schwa-spelling variation (/ˈbæləhuː/)."
+      },
+      "limitations": [
+        "Orthographic identity is a necessary compatibility condition rather than sufficient proof of semantic continuity."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-010",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1810 nautical 'ballahou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-013",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1815 nautical 'balahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-026",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1846 nautical 'ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-016",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1847 nautical 'ballyhoo' (Melville).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-019",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1879 terrestrial US 'ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-021",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1884 terrestrial US 'ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1884 terrestrial US 'ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1899 midway 'ballahoo stage'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the early nautical <ballahou>/<balahoo> forms.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1879–1884 terrestrial <ballahoo> forms.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-010",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1899 midway <ballahoo> form.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "69cae018789689385920b3ba693f83b70b3c5cc10e235391ea320f9f9b764dc6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "5ac2f7064cdb8faabf437ac11a067cc66ed97ae26a9c288d2585ea8be1b03627"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "69cae018789689385920b3ba693f83b70b3c5cc10e235391ea320f9f9b764dc6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-012",
+      "slug": "clm-1800-012",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballahoo, n. (< French Antillean balaou < Island Carib Bálaoû)",
+      "case_section": "2. Caribbean Ichthyonym to Anglo-American Schooner (1665–1846)",
+      "short_label": "Nautical 'ballahoo' derives from Island Carib 'Bálaoû' (1665) via French Antillean 'balaou' and Eastern Caribbean Spanish 'balahú'",
+      "statement": "Nautical English 'ballahou' / 'ballahoo' derives from French Antillean 'balaou' ('halfbeak pelagic fish', Labat 1722; extended metaphorically to sleek Martinique/Guadeloupe schooners, Académie 1798 / Jal 1848) and ultimately Island Carib 'Bálaoû' (Breton 1665), with intervocalic '-h-' resolving vocalic hiatus alongside Eastern Caribbean Spanish 'balahú' (Puerto Rico 1831; absent in Pichardo's 1836 Cuban lexicon).",
+      "rationale": "Primary seventeenth- to nineteenth-century Caribbean dictionaries trace the exact semantic transfer ('slender darting halfbeak fish' -> 'fast-sailing Lesser Antillean schooner') and geographic distribution (Windward/Leeward Islands and Puerto Rico, contrasting with western Cuban 'bajonao'), explaining how British and American mariners borrowed 'ballahou' in West Indian ports by 1777–1810.",
+      "type": "derivation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Lesser Antillean Carib ('Bálaoû') -> French Creole/colonial French ('balaou') maritime etymology of English nautical 'ballahoo, n.'",
+        "does_not_establish": "That American carnival 'ballyhoo' borrowed directly from Carib or French without passing through nineteenth-century English slang.",
+        "remaining_uncertainty": "Whether English sailors inserted orthographic '-h-' independently at the /a.u/ hiatus or reinforced it via bilingual contact with Puerto Rican/Trinidadian Spanish 'balahú'."
+      },
+      "limitations": [
+        "Applies strictly to the maritime vessel noun (ballahoo, n. / ballyhoo, n.1); downstream extension to midway ballyhoo, n.2 is graded separately in CLM-1800-013."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Raymond Breton's 1665 Dictionnaire caraïbe-françois recording Island Carib 'Bálaoû' ('small pelagic fish').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jean-Baptiste Labat's 1722 Nouveau voyage aux isles de l'Amérique documenting French Antillean 'Balaou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-003",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1798 Dictionnaire de l'Académie française (5th ed.) recording French 'balaou'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-004",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Pedro Tomás de Córdova's 1831 Memorias... de Puerto-Rico attesting Eastern Caribbean Spanish schooner 'BALAHÚ' with hiatus '-h-'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-006",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Augustin Jal's 1848 Glossaire nautique (p. 219) explicitly connecting the Antillean fish 'BALAOU' to the Martinique/Guadeloupe schooner.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-005",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Esteban Pichardo's 1836 Cuban dictionary negative control ('BAJONAO', lacking 'balahú'), localizing the maritime term to the Eastern Caribbean / Lesser Antilles.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Accounts for the 1810 Anglo-Caribbean 'ballahou built schooner' borrowing.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "687ec538916003d716152202a5e221bc3e5c95942fb20bf456039e9bcf80c746",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "82768deece6bdb5506fa896e592073cbed1a04ebb580676ce48d329f2216f9f7"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "687ec538916003d716152202a5e221bc3e5c95942fb20bf456039e9bcf80c746"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-013",
+      "slug": "clm-1800-013",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo, n.2 (proposed nautical-to-colloquial/midway transmission)",
+      "case_section": "3. Naval Pejoration and the 1877–1889 Ballahoo Slang Bridge",
+      "short_label": "Partially supported hypothesis that maritime 'ballahoo'/'ballyhoo' contributed to colloquial and midway 'ballyhoo'",
+      "statement": "Shared <ballahoo> orthography in 1879–1884 terrestrial American slang and 1899 midway 'ballahoo stage', combined with naval pejoration ('ballyhoo of blazes' -> 'disorderly commotion / noisy political display'), partially supports Atcheson L. Hench's hypothesis that nautical 'ballahoo'/'ballyhoo' contributed to colloquial and midway 'ballyhoo', while the specific institutional transfer into 1893 dime-museum/sideshow platform jargon remains unclosed by any explicit transitional gloss.",
+      "rationale": "Separating documented orthographic and chronological facts (CLM-1800-004, CLM-1800-005, CLM-1800-011) from the transmission inference keeps the epistemic boundary clear: the 1879–1884 'general ballahoo' / 'whooping-up ballahoo' citations supply the terrestrial phonetic and orthographic bridge Hench (1945, 1965) hypothesized, yet no pre-1893 showman text explicitly explains why a freak-show outside platform pitch was called a 'ballyhoo', leaving room for secondary blending on the variety stage.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological continuity, <ballahoo> orthographic persistence, and pejorative semantic narrowing ('slovenly ship' -> 'blazes/ruin' -> 'noisy political/convention commotion') preceding 1893 midway usage.",
+        "does_not_establish": "A direct, metalinguistically attested link between maritime or political 'ballahoo/ballyhoo' and International Amusement Company's 1893 Chicago World's Fair 'Ballyhoo Freaks' advertisement.",
+        "remaining_uncertainty": "How 1880s–1890s dime-museum managers narrowed 'noisy commotion / bombastic display' specifically to the free outside crowd-gathering show."
+      },
+      "limitations": [
+        "Lacks an explicit 1880–1893 dime-museum, circus, or waterfront bridge quotation equating an outside sideshow lecture or platform with naval or political 'ballahoo'/'ballyhoo'."
+      ],
+      "resolution_criteria": [
+        "Locate an 1880–1893 dime-museum, street-fair, or circus text explicitly explaining 'ballyhoo'/'ballahoo' or bridging 'whooping-up ballahoo' ('noisy public display') to an outside freak-show platform.",
+        "Uncover showman correspondence or trade glossaries from Chicago or New York (1885–1895) documenting pre-Exposition dime-museum adoption."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1800-016",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Melville's 1847 'ballyhoo of blazes' pejorative maritime pivot.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-019",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1879 Illinois 'general ballahoo' terrestrial uproar bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-101",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1880 Utah 'grand Mogul of the Ballyhoo' bombastic public-spectacle bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-021",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1884 Chicago convention 'whooping-up \"ballahoo\"' noisy-demonstration bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-210",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1884 Pennsylvania 'general ballahoo' colloquial bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-103",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "July 1, 1893 International Amusement Company Chicago sideshow 'Ballyhoo Freaks' target sense.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-109",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "December 30, 1899 'ballahoo stage' preserving nautical-style medial <a> in midway usage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1847–1889 naval pejoration and idiom foundation.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1877–1884 non-nautical American newsprint bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1893 midway destination sense.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-011",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the bidirectional <ballahoo>/<ballyhoo> orthographic overlap.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-014",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Notes possible secondary variety-stage reinforcement from Anglo-Irish 'Ballyhooly' in the 1880s.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1ce1f685a851f2d8483169ec61c48f45cf1b0602a6f07ca8cdc094171dbf2723",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "cd8f2423462497e411360a7daa8d29b0923f40e834dbf6dccd25f469dc40ac1d"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated CERT-1800-103 advertiser reference from Kohl & Middleton to International Amusement Company per scan verification.",
+          "content_fingerprint": "1ce1f685a851f2d8483169ec61c48f45cf1b0602a6f07ca8cdc094171dbf2723"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-014",
+      "slug": "clm-1800-014",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "Ballyhooly (Anglo-Irish toponym and 1886 Gaiety song)",
+      "case_section": "5. Evaluating Competing Origins and Rejected Archival Leads",
+      "short_label": "Anglo-Irish 'Ballyhooly' and Martin's 1886 Gaiety song are chronologically excluded as primary origin, though plausible secondary convergers",
+      "statement": "Chronological comparison excludes County Cork 'Ballyhooly' and Robert J. Martin's December 1886 London Gaiety song 'Ballyhooly' as the primary etymon of either 1810 nautical 'ballahou' (76 years earlier) or 1877–1884 American colloquial 'ballyhoo'/'ballahoo' (2 to 9 years before Martin's song), while supporting plausible secondary convergence in idioms ('give \\'em Ballyhooly', May 26, 1880) and late-1880s variety-stage familiarity.",
+      "rationale": "Stephen Goranson and Farmer & Henley (1901) highlighted Irish 'Ballyhooly' ('faction-fighting village; noisy temperance band; tongue-lashing'). Primary scans confirm 'give \\'em Ballyhooly' in New York's Puck in May 1880 and American Clipper reprints of Martin's 'Ballyhooley' song in 1887–1888, but neither explains final /-li/ apocope nor accounts for pre-existing 1810–1884 <ballahoo>/<ballyhoo> forms.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological impossibility of Robert J. Martin's 1886 song 'Ballyhooly' originating 1810 nautical 'ballahou' or 1877–1884 American 'ballyhoo'/'ballahoo'.",
+        "does_not_establish": "Absence of secondary folk-etymological reinforcement between 'Ballyhooly' and 'ballyhoo' among 1880s–1890s Irish-American variety performers.",
+        "remaining_uncertainty": "Extent of spoken blending between 'give \\'em Ballyhooly' (1880) and 'catching ballyhoo' / 'knocked to Ballyhoo' (1889)."
+      },
+      "limitations": [
+        "Treats 'Ballyhooly' respectfully as a plausible secondary stage/idiom converger rather than a falsified folk myth."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 1837 Fraser's Magazine literal County Cork faction-fight reference to 'Ballyhooly'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-207",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "May 26, 1880 Puck (New York) idiom 'give \\'em Ballyhooly', showing parallel US slang currency with intact '-ly'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 12, 1887 New York Clipper printing lyrics of R. J. Martin's Dec. 1886 London Gaiety hit 'Ballyhooley'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 13, 1887 Oliver Ditson US sheet-music notice for 'BALLYHOOLY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 14, 1888 New York Clipper London Gaiety burlesque tour report featuring 'Ballyhooly'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-204",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Farmer & Henley's Slang and Its Analogues Vol. 1 (rev. 1901, p. 114) entry for 'Ballyhooley'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 2, 1877 South Carolina mock-Irish 'BALLYHOO' predating Martin's 1886 song by nearly ten years.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-010",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 16, 1810 nautical 'ballahou' predating 1886 'Ballyhooly' by 76 years.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1810 maritime chronology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes 1877–1884 terrestrial American 'ballyhoo'/'ballahoo' before the 1886 Gaiety song.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "112d0387062952956f340c54ce381b4fde44b63db708650b7f85cb9ed92308b5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "89939d2ce37ea68724f760ad704fb6ea5168c7d3c1c64390a8a19198ec5dc201"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "112d0387062952956f340c54ce381b4fde44b63db708650b7f85cb9ed92308b5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-015",
+      "slug": "clm-1800-015",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo (< alleged 1893 Midway Arabic bi-llāhi / 'B'Allah hoo')",
+      "case_section": "5. Evaluating Competing Origins and Rejected Archival Leads",
+      "short_label": "15-volume (5.91M-character) 1893–1894 Midway Plaisance negative sweep refutes the Arabic 'B\\'Allah hoo' origin legend",
+      "statement": "A full-text sweep across 15 contemporaneous 1893–1894 World's Columbian Exposition Midway Plaisance guidebooks, photofolios, dialect novels, and souvenir histories (5,914,177 OCR characters; 5,879,738 characters in the 14-volume Street in Cairo core plus Holley 1894) returns zero occurrences of 'ballyhoo', 'ballahoo', 'billahi', or 'Allah hoo', recording instead pidgin English cries ('Alla gooda bum-bum!', 'Hot-hot-hot!', 'baksheesh') while English 'Ballyhoo Freaks' was already in print on July 1, 1893—contradicting the 1912 Oriental-origin assertion and the 1935–1936 Wolverton/Mencken 'B\\'Allah hoo' anecdote.",
+      "rationale": "H. L. Mencken (1936) popularized Charles Wolverton and W. O. Taylor's December 1935 recollection (reprinted Jan. 25, 1936 in Editor & Publisher, CERT-1800-215) claiming 1893 Chicago Oriental theater barkers shouted 'B\\'Allah hoo'. Auditing nearly six million characters of actual 1893–1894 Midway eyewitness descriptions finds zero such cries, whereas 'ballyhoo'/'ballahoo' existed in American English in 1877–1889 and in Chicago dime-museum trade ads on July 1, 1893.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero tokens of 'ballyhoo', 'ballahoo', 'billahi', or 'Allah hoo' across 5,914,177 characters of contemporaneous 1893–1894 Midway Plaisance publications, refuting documentary support for the 1935–1936 Arabic origin story.",
+        "does_not_establish": "Verbatim phonetic transcripts of every unrecorded Arabic utterance on the 1893 Midway, though pre-1893 English 'ballyhoo' independently falsifies 1893 Arabic coinage.",
+        "remaining_uncertainty": "None regarding the retrospective post-hoc status of the 1912 and 1935–1936 Oriental/Arabic anecdotes."
+      },
+      "limitations": [
+        "CERT-1800-215 (January 25, 1936 Editor & Publisher) is post-1930 and verified without a hosted scan.",
+        "ballyhoo.json corpus_search_summary reports the 15-volume total (5,914,177 characters), while CERT-1800-213 logs the initial 14-volume subset (5,879,738 characters) before adding Holley 1894 (CERT-1800-214)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "John J. Flinn's 1893 Official Guide to the World's Columbian Exposition and 14-volume (5,879,738-char) Street in Cairo negative control.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Marietta Holley's 1894 Samantha at the World's Fair recording actual Cairo Street vendor pidgin ('Alla gooda, bum-bum!') with zero 'ballyhoo'/'Allah hoo' tokens (completing the 15-volume, 5,914,177-char sweep).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1, 1893 New York Clipper showing downtown Chicago's Clark Street Dime Museum already advertising English 'Ballyhoo Freaks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-124",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "October 19, 1912 Variety column containing the earliest vague retrospective assertion of an 'Oriental' World's Fair origin (19 years after 1893).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-215",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "January 25, 1936 Editor & Publisher item repeating Charles Wolverton and W. O. Taylor's Dec. 1935 'B\\'Allah hoo' tale (42 years after 1893).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "15 digitized contemporaneous World's Columbian Exposition and Midway Plaisance guidebooks, photofolios, dialect novels, and histories (1893–1894) on Internet Archive and HathiTrust",
+        "search_date": "2026-11-26",
+        "search_period": "1893–1894",
+        "query_terms": [
+          "ballyhoo",
+          "ballahoo",
+          "bally hoo",
+          "billahi",
+          "b'allah",
+          "allah hoo"
+        ],
+        "search_method": "Case-insensitive full-text regex sweep across 15 contemporary Exposition volumes (5,914,177 OCR characters) paired with positive extraction of transcribed Cairo Street and Turkish Theater vendor cries",
+        "corpus_coverage": "5,914,177 OCR characters across 15 volumes (corpus_search_summary total; 5,879,738 characters across the initial 14 volumes logged in CERT-1800-213 plus Holley 1894 in CERT-1800-214)",
+        "known_limitations": [
+          "Audits surviving Anglophone eyewitness guidebooks and dialect accounts of the 1893 Midway rather than Arabic-language manuscripts; character totals in frozen ledger reflect 14-volume (5,879,738) vs. 15-volume (5,914,177) aggregation."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "9425c1c4ee57be697bdb04ba3e092d054465c5722f5fb401f48788a2c659d49e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "9425c1c4ee57be697bdb04ba3e092d054465c5722f5fb401f48788a2c659d49e"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1800-015-01",
+          "claim_id": "CLM-1800-015",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "structural",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1800-213",
+            "CERT-1800-214",
+            "CERT-1800-103",
+            "CERT-1800-124",
+            "CERT-1800-215"
+          ],
+          "findings": "Independently verified the 1893–1894 Midway Plaisance negative-corpus control (including direct visual inspection of CERT-1800-213.webp and CERT-1800-103.webp plus ballyhoo.json corpus_search_summary), confirming 0 tokens of 'ballyhoo'/'Allah hoo' across 5,914,177 OCR characters alongside transparent disclosure of the 14-volume vs. 15-volume character totals.",
+          "objections": [],
+          "material_fingerprint_at_review": "9425c1c4ee57be697bdb04ba3e092d054465c5722f5fb401f48788a2c659d49e",
+          "evidence_fingerprints_at_review": {
+            "CERT-1800-103": "3f56a8af268c5065f27c912f638e6f9255b669b0c7c1c466727a74eb32f45168",
+            "CERT-1800-124": "54fe1144555220ee1e6f0d9b9c895692c04ee51af83e7718043b5e8e2a3a8d63",
+            "CERT-1800-213": "040dff2924504f29959e1869359671301b138b14c01d04a1f3434bfdad2115ac",
+            "CERT-1800-214": "bd40283d14822e77ada02419df8cb0cc4a2b7f9767d00b40f009fae5cfc037d4",
+            "CERT-1800-215": "9df31ed107eda70381011a3b0489b1e514cea21c2e54eaee49a210b38c48b95b"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1800-016",
+      "slug": "clm-1800-016",
+      "case_slug": "ballyhoo",
+      "headword": "ballyhoo / ballahoo",
+      "target_lexeme": "ballyhoo / ballahoo (quarantined misdates, OCR ghosts, and proper-noun homographs)",
+      "case_section": "5. Evaluating Competing Origins and Rejected Archival Leads",
+      "short_label": "Masthead and trade-press audits (65.74M chars) quarantine 8 misdates, OCR ghosts, racehorse 'Ballyhoo', and 'Mt. Ballyhoo'",
+      "statement": "Primary-scan verification across pre-1915 newsprint and 65.74 million characters of amusement-trade periodicals (1880–1915) quarantines eight non-qualifying leads: three serial metadata misdates ('1880' Dramatic Mirror -> Jan. 8, 1916; '1890' Review of Reviews -> 1932; '1890' Architectural Record -> Mar. 1936), two OCR ghosts ('1856' 'hullabaloo' misread as 'ballahoo'; '1861' 'ballyhov' corruption), two thoroughbred racehorse Ballyhoo turf items (1889–1891, accounting for >150 pre-1893 Clipper hits), and the Unalaska toponym Mt. Ballyhoo (1927, named by Jack London in 1897 after naval 'ballyhoo').",
+      "rationale": "Auditing every pre-1893 amusement-trade token in The New York Clipper and Google Books serial runs ensures that thoroughbred turf reports, serial-start-year catalog bugs, and OCR corruptions of 'hullabaloo' are cleanly excluded from lexical timelines.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-qualifying status of all eight quarantined misdates, OCR corruptions, racehorse names, and toponyms in ballyhoo.json.",
+        "does_not_establish": "Exhaustive absence of pre-1893 show-trade tokens in unindexed local handbills.",
+        "remaining_uncertainty": "None for the eight audited records."
+      },
+      "limitations": [
+        "Post-1930 misdated serial volumes (1932 Review of Reviews CERT-1800-216; March 1936 Architectural Record CERT-1800-217) are verified without hosted WebP scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1800-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1880' serial metadata misdate on January 8, 1916 New York Dramatic Mirror ('Ballyhooing').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1890' bound-serial metadata misdate on 1932 Review of Reviews ('ballyhoo').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1890' serial metadata misdate on March 1936 Architectural Record ('Ballyhoo').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes March 7, 1856 newsprint OCR ghost reading printed 'hullabaloo' as 'ballahoo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-017",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes March 23, 1861 Vanity Fair OCR/typesetting corruption 'ballyhov'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 18, 1889 turf report on thoroughbred racehorse 'Ballyhoo' (Trap C proper-noun homograph).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 14, 1891 New York Clipper turf report on racehorse 'Ballyhoo', representative of >150 pre-1893 Clipper horse-racing tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1800-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 1927 Coast and Geodetic Survey record for Unalaska's 'Mt. Ballyhoo' (named by Jack London in 1897 after Melville's nautical 'ballyhoo').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b1a1b2f2732bf55719e4e2d495569a0abb371f5c3e3a5133f17f0b412959227f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1800 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "b1a1b2f2732bf55719e4e2d495569a0abb371f5c3e3a5133f17f0b412959227f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

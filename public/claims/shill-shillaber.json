@@ -1,0 +1,2015 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "shill-shillaber",
+  "case_slug": "shill-shillaber",
+  "case_number": "Case 1400",
+  "target_id": "TGT-120",
+  "headword": "shill / shillaber",
+  "updated_at": "2026-11-26",
+  "summary_note": "Foundational claim ledger (18 claims covering 94/94 citation records): separates the Jan. 24, 1883 Janesville 'shillaber' attestation, the 49-day advance over Green's March 14, 1883 baseline, the '—Chicago Times.' attribution, 1882–1885 State & Clark St. mock-auction prosopography, 1847 Berlin Rotwelsch 'Schlepper', 1891 Muret 'capper = Schlepper', the Stage-German 127:0 #ʃl- negative control, poor support for regular vowel epenthesis, the partially supported 'Shillaber' mock-surname remodeling and Chicago contact-network hypotheses, 513 Milner circus route-book register bounds, and 1910–1911 clipped 'shill' antedatings and syndicate attributions.",
+  "claims": [
+    {
+      "id": "CLM-1400-001",
+      "slug": "clm-1400-001",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber, n.",
+      "case_section": "1. Prior Scholarship and the 1883 Chicago Mock-Auction Origin",
+      "short_label": "Jan. 24, 1883 Janesville Daily Gazette attests 14 tokens of mock-auction 'shillaber' and 'shillabers'",
+      "statement": "The Janesville Daily Gazette (Janesville, Wisconsin, January 24, 1883, p. 3, cols. 2–3, 'MOCK AUCTIONS.') prints six tokens across 'shillaber', plural 'shillabers', and variant 'shallabers' (including 'what the \"shillabers\" call an \"s. g. watch,\" meaning a silver-gilt watch'), supplying the earliest scan-verified English print attestation of 'shillaber' for a mock-auction decoy bidder.",
+      "rationale": "Masthead-verified full-page inspection of CERT-1200-101.webp ('MOCK AUCTIONS.', p. 3, cols. 2–3) establishes six printed tokens of 'shillaber'/'shillabers'/'shallabers' describing confederate decoy bidders who feign watch purchases inside organized mock-auction swindles.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Primary-scan-verified English print attestation of 'shillaber', 'shillabers', and 'shallabers' ('mock-auction decoy bidder') across six tokens on January 24, 1883.",
+        "does_not_establish": "Use of fore-clipped monosyllabic 'shill' in 1883 (first attested in May/November 1910, CLM-1400-013 and CLM-1400-014) or circus/carnival lot usage in 1883.",
+        "remaining_uncertainty": "Exact date in January 1883 when the underlying Chicago Times original was published prior to Janesville's reprint (see CLM-1400-003)."
+      },
+      "limitations": [
+        "Janesville's January 24, 1883 printing is an exchange reprint rather than the parent Chicago newspaper printing."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 24, 1883 Janesville Daily Gazette p. 3, cols. 2–3 masthead-verified scan ('MOCK AUCTIONS.') printing six tokens of 'shillaber'/'shillabers'/'shallabers'.",
+          "witness_note": "Syndicated newspaper exchange reprint of the same exposé printed unattributed on March 14, 1883 in the Indiana (PA) Weekly Messenger."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "24e80bfab0a7914f6778d100fe252affcb7011e574e96999d9156e0910df4649",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "4594c373944bcd8b546f27cb61104d1b42b7bf7d1ec5bf5535d33e1299d0ec25"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Jan. 24, 1883 Janesville Daily Gazette headline ('MOCK AUCTIONS.'), token count (6 tokens incl. 'shallabers'), and verbatim watch quotation per CERT-1200-101.webp.",
+          "content_fingerprint": "24e80bfab0a7914f6778d100fe252affcb7011e574e96999d9156e0910df4649"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-002",
+      "slug": "clm-1400-002",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber, n.",
+      "case_section": "1. Prior Scholarship and the 1883 Chicago Mock-Auction Origin",
+      "short_label": "Jan. 24, 1883 'shillaber' advances Green's March 14, 1883 baseline by 1 month and 18 days (49 days) and OED3 (Dec. 6, 1913) by 30 yrs, 10 mos, 12 days",
+      "statement": "Tracing the mock-auction exposé from Green's Dictionary of Slang's unattributed March 14, 1883 Indiana (PA) Weekly Messenger witness back to the January 24, 1883 Janesville Daily Gazette advances the earliest recorded historical-dictionary baseline for shillaber, n. by 1 month and 18 days (49 days), while predating OED3's unrevised 1986 Supplement baseline (December 6, 1913, Collier's) by 30 years, 10 months, and 12 days.",
+      "rationale": "Separating the pure attestation fact (CLM-1400-001) from the lexicographical baseline delta clarifies both reference benchmarks: Green's Dictionary of Slang already pushed OED3's 1913 baseline back to March 14, 1883 using a rural Pennsylvania reprint of the exact same mock-auction article, and CERT-1200-101 recovers an earlier January 24, 1883 Midwestern printing 49 days ahead of Green.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "A 1-month, 18-day (49-day) chronological advance over Green's Dictionary of Slang (March 14, 1883) and a 30-year, 10-month, 12-day (11,273-day) advance over OED3 (December 6, 1913).",
+        "does_not_establish": "That January 24, 1883 was the earliest printing of this text, since the Janesville witness credits the Chicago Times.",
+        "remaining_uncertainty": "Direct microfilm inspection of January 1–23, 1883 issues of the Chicago Times is expected to advance this text by an additional several days."
+      },
+      "limitations": [
+        "Advances the exact same syndicated text cited by Green's Dictionary of Slang rather than introducing an earlier independent pre-1883 composition."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 24, 1883 Janesville Daily Gazette p. 3 witness — advancing citation.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-113",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "December 6, 1913 Collier's witness ('shillabers') — OED3's unrevised 1986 Supplement baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Depends on the masthead-verified January 24, 1883 Janesville Daily Gazette attestation.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "shill, n.2 / shillaber ('mock-auction decoy bidder')",
+        "edition_or_revision": "Green's Dictionary of Slang online edition (consulted November 2026); cf. OED3 shillaber, n. (6 December 1913 Collier's)",
+        "baseline_date": "1883-03-14",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/jm5glaq",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1200-101",
+        "attested_date": "1883-01-24",
+        "attested_date_precision": "day",
+        "computed_advance_display": "1 month and 18 days (49 days: 24 January 1883 vs. 14 March 1883)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b4efe162c542febf1f08c2f278fc2e43b8faaebfe02ea801baecb31f8b6eece5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "3d54e9c936e984bf36128eb6dd7a114e5d69c172cc6fbd5f41ae74f19f60b49b"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "b4efe162c542febf1f08c2f278fc2e43b8faaebfe02ea801baecb31f8b6eece5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-003",
+      "slug": "clm-1400-003",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber, n. (Chicago Times provenance attribution)",
+      "case_section": "1. Prior Scholarship and the 1883 Chicago Mock-Auction Origin",
+      "short_label": "Jan. 24, 1883 Janesville witness supplies explicit '—Chicago Times.' provenance credit missing from Green's PA reprint",
+      "statement": "Unlike the unattributed March 14, 1883 Pennsylvania reprint cited in Green's Dictionary of Slang, the January 24, 1883 Janesville Daily Gazette printing concludes with the explicit exchange credit '—Chicago Times.', tracing the earliest known 'shillaber' exposé to Chicago journalism.",
+      "rationale": "Recovering the terminal '—Chicago Times.' credit line on p. 3, col. 3 of CERT-1200-101 relocates the geographic provenance of the landmark 1883 mock-auction text from rural Indiana County, Pennsylvania to downtown Chicago—matching independent local Chicago Daily Tribune street reporting five months later (CERT-1200-102).",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Printed nineteenth-century newspaper exchange attribution of the January 24, 1883 'MOCK AUCTIONS.' exposé to the Chicago Times.",
+        "does_not_establish": "The exact issue date, page, or column of the parent January 1883 Chicago Times printing prior to microfilm verification.",
+        "remaining_uncertainty": "Microfilm reels of the Chicago Times for January 1883 have not yet been directly inspected to verify the parent printing."
+      },
+      "limitations": [
+        "Parent Chicago Times issue remains uninspected; provenance rests on the printed '—Chicago Times.' exchange credit corroborated by June 1883 Chicago Daily Tribune local usage."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Prints explicit terminal exchange attribution '—Chicago Times.' at the end of the January 24, 1883 exposé.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-102",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "June 7, 1883 Chicago Daily Tribune independent local street report using 'shillabers', corroborating Chicago currency.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Analyzes the provenance credit of the January 24, 1883 Janesville witness.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9846904e9d230c7964b0322c2ac3367f7053ac7b92a78ad060af02ecb094cd2a",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "cf69366dc333607844b0ecfba30b0e979392abf0fb68b20604bf88049b036c60"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Aligned January 24, 1883 headline ('MOCK AUCTIONS.') with scan-verified CERT-1200-101.webp.",
+          "content_fingerprint": "9846904e9d230c7964b0322c2ac3367f7053ac7b92a78ad060af02ecb094cd2a"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-004",
+      "slug": "clm-1400-004",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillabers / capper / puller / Peter Funk (Chicago Loop mock-auction storefronts)",
+      "case_section": "2. Storefront Prosopography: No. 300 State Street, No. 110 Clark Street, and Threshold-Crossing Cappers",
+      "short_label": "1882–1885 Chicago Loop dockets and June 7, 1883 Tribune anchor 'shillabers' to 300 S. State St. and 110 S. Clark St.",
+      "statement": "The Chicago Daily Tribune of June 7, 1883 independently attests 'a squad of four or five \"cappers\" or \"shillabers\"' at Chicago's two notorious mock-auction storefronts—No. 300 South State Street and No. 110 South Clark Street (the Exchange Building)—which 1882–1885 police raids, court dockets, and municipal ordinances connect to named operators and threshold-crossing confederates (Max and Nathan Levi, Sam Abrahams, Ed Leavitt, and Ed Roth, 'known as the Pretty Capper').",
+      "rationale": "Cross-referencing CERT-1200-102 with contemporaneous Chicago Daily Tribune and Daily Inter Ocean police-court reporting (CERT-1400-109..113, 117) reconstructs the physical threshold-crossing workflow: sidewalk 'pullers'/'cappers' dragged rural travelers inside 300 S. State St. and 110 S. Clark St. and immediately stood at the counter as 'shillabers' bidding up fake gold watches.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Independent local Chicago newspaper attestation of 'shillabers' on June 7, 1883 and detailed 1882–1885 storefront prosopography at 300 S. State St. and 110 S. Clark St.",
+        "does_not_establish": "A verbatim German 'Schlepper' gloss inside those English police-court dockets themselves.",
+        "remaining_uncertainty": "Surviving manuscript Chicago Police Court arrest ledgers from 1878–1882 could document the exact storefront syndicate earlier than 1882."
+      },
+      "limitations": [
+        "Documents English street/court terminology ('shillabers', 'cappers', 'puller') and operator names; bilingual German linkage is inferred in CLM-1400-010."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 7, 1883 Chicago Daily Tribune p. 8, col. 3 naming 110 S. Clark St. and 300 S. State St. and equating '\"cappers\" or \"shillabers\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 21, 1882 Daily Inter Ocean Exchange Building (110 S. Clark St.) mock-auction docket naming Ed Roth ('known as the Pretty Capper').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 30, 1882 Chicago Daily Tribune raid on Max & Nathan Levi's mock-auction room at 300 S. State St. ('cappers').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 1883 Chicago municipal mock-auction bell-ringer and street-solicitation ordinance report.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 19, 1883 Daily Inter Ocean robbery/swindle docket at 300 S. State St. ('capper').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 31, 1884 Daily Inter Ocean raid on Sam Abrahams and confederates at 300 S. State St.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 20, 1885 Chicago Daily Tribune storefront 'puller' sidewalk-dragging account.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-211",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1834 New York 'Peter Funk' mock-auction decoy precursor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-212",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1859 George W. Matsell Vocabulum 'CAPPER' criminal lexicon baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-213",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1890 John Philip Quinn Fools of Fortune 'ropers' confidence-game parallel.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "800f8604104ae3a1c19ec8ee93d88a1394fe68fc3a163042973a40b47c475cfc",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "800f8604104ae3a1c19ec8ee93d88a1394fe68fc3a163042973a40b47c475cfc"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-005",
+      "slug": "clm-1400-005",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "Schlepper (German Rotwelsch confederate noun, 1847–1905)",
+      "case_section": "4. German Rotwelsch Schlepper (1847–1905) and Bilingual Lexicon Equations",
+      "short_label": "1847 Berlin Rotwelsch 'Schlepper' ('gambling/swindle decoy runner') is attested continuously through 1895–1905 Chicago Abendpost",
+      "statement": "Berlin police official Carl Wilhelm Zimmermann's Die Diebe in Berlin (1847, Vol. 1, p. 162) defines German Rotwelsch 'Schlepper' (< schleppen, 'to drag/haul in') as the street confederate who lures victims into crooked gambling rooms, a criminal sense attested continuously through Stieber (1860), Avé-Lallemant (1862), Pennsylvania German newsprint (1874), and the Chicago Abendpost ('als Schlepper („Runner“) thätig', March 23, 1895; October 9, 1905).",
+      "rationale": "Verifying original 1847 Zimmermann (CERT-1400-302) alongside Kluge's 1901 Rotwelsch sourcebook (CERT-1400-101), Avé-Lallemant's 1862 stitched entry (CERT-1400-301 / CERT-1200-301), and German-American newspapers in Allentown and Chicago proves that 'Schlepper' was an entrenched German criminal-argot noun 36 years before 1883 'shillaber' and actively printed in Chicago's own German daily press.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1847 Berlin Rotwelsch attestation of criminal confederate 'Schlepper' and active German-American print currency in Pennsylvania (1874) and Chicago (1895, 1905).",
+        "does_not_establish": "By itself, that Anglophone mock-auction operators borrowed 'shillaber' from 'Schlepper' (evaluated via bilingual glosses and phonotactics in CLM-1400-006 through CLM-1400-010).",
+        "remaining_uncertainty": "Pre-1883 issues of the Illinois Staats-Zeitung (Chicago) have not been exhaustively scanned for 1870s local 'Schlepper' mock-auction reports."
+      },
+      "limitations": [
+        "CERT-1400-302 (original 1847 Zimmermann p. 162) and CERT-1400-101 (Kluge 1901 reprint of Zimmermann) represent primary and secondary witnesses of the same 1847 Berlin definition; similarly, CERT-1400-301 supplies the full stitched scan upgrading CERT-1200-301 for Avé-Lallemant (1862).",
+        "Moritz Busch's 1854 German travelogue (CERT-1400-108) borrowed English 'Peter Funk' when describing New York mock auctions rather than translating it as 'Schlepper'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1400-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Carl Wilhelm Zimmermann's Die Diebe in Berlin (1847, Vol. 1, p. 162) primary scan defining Berlin Rotwelsch 'Schlepper'.",
+          "witness_note": "Original 1847 witness reprinted in Kluge 1901 (CERT-1400-101)."
+        },
+        {
+          "ref": "CERT-1400-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Friedrich Kluge's Rotwelsch: Quellen und Wortschatz der Gaunersprache (1901, Vol. 1, p. 388) reprinting Zimmermann 1847.",
+          "witness_note": "Secondary sourcebook witness co-linked with original 1847 scan CERT-1400-302."
+        },
+        {
+          "ref": "CERT-1400-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Wilhelm Stieber's 1860 Praktisches Lehrbuch der Criminal-Polizei documenting Berlin criminal 'Schleppers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Friedrich Christian Benedict Avé-Lallemant's Das deutsche Gaunerthum (1862, Vol. 4, pp. 517, 599) stitched full-entry Rotwelsch scan.",
+          "witness_note": "Upgrades single-page scan CERT-1200-301 on the same 1862 edition."
+        },
+        {
+          "ref": "CERT-1200-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Avé-Lallemant (1862, Vol. 4, p. 599) Rotwelsch glossary entry for 'Schlepper'.",
+          "witness_note": "Co-witness superseded in scan completeness by CERT-1400-301."
+        },
+        {
+          "ref": "CERT-1400-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 10, 1874 Unabhängiger Republikaner (Allentown, PA) attesting German-American confidence-game 'Schlepper' nine years before 1883.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 23, 1895 Chicago Abendpost equating German 'Schlepper' directly with English '(\"Runner\")' in Chicago crime reporting.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 9, 1905 Chicago Abendpost local swindle report using 'Schlepper'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-108",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Moritz Busch's 1854 Wanderungen zwischen Hudson und Mississippi retaining English 'Peter Funk' for New York mock-auction decoys.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "59e6bcc540464f81205d3fb0fda1c06e37afbe897ae534c25da85b602f056432",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "59e6bcc540464f81205d3fb0fda1c06e37afbe897ae534c25da85b602f056432"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1400-005-01",
+          "claim_id": "CLM-1400-005",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1400-302",
+            "CERT-1400-101",
+            "CERT-1400-114",
+            "CERT-1400-301",
+            "CERT-1200-301",
+            "CERT-1400-102",
+            "CERT-1400-106",
+            "CERT-1400-107",
+            "CERT-1400-108"
+          ],
+          "findings": "Directly inspected CERT-1400-101.webp (Kluge 1901 p. 387 reprinting Zimmermann 1847 Rotwelsch 'Schleppen ... Schlepper') and verified shill-shillaber.json entries, confirming explicit reprint deduplication of Zimmermann/Kluge (1400-302/1400-101) and Avé-Lallemant (1400-301/1200-301), counter-evidence qualification via Busch 1854 (CERT-1400-108), and strict epistemic separation from borrowing claims.",
+          "objections": [],
+          "material_fingerprint_at_review": "59e6bcc540464f81205d3fb0fda1c06e37afbe897ae534c25da85b602f056432",
+          "evidence_fingerprints_at_review": {
+            "CERT-1200-301": "4f2d9ef3e11d1399acf0c83571272c1a8ba2dd0aa4b60f8883597c14422357eb",
+            "CERT-1400-101": "8f3e0aed444666f946ac3827cfbd798dee01c273da5b7fdaa81cebe8feeaeb84",
+            "CERT-1400-102": "3396f83ac45838b624010bb93c17c03ef1e2cc2bf93595ff5d9294a62b365211",
+            "CERT-1400-106": "b66d0a914f88acf7d8c0a7c7257c3a5a58fdb499d0610a52e827be647a30ba29",
+            "CERT-1400-107": "76a3d66e98b00af7fada02381c848d07765cc3a304d5807ac7cf9b8d13ec4322",
+            "CERT-1400-108": "b55ad339b421b057a5465d97a32f57f96ac9a6d9e844a19a8f28639030e003bd",
+            "CERT-1400-114": "93ee487409c2c7f3134eba1dfee0124db6e2c86d0827e4539bb1dfed9a020b03",
+            "CERT-1400-301": "320a8e1903697fa20221660cee6af2a13995cd464adf52d66cbf9dcfd4ac117d",
+            "CERT-1400-302": "a91424a92abbd54d2e67484a5f119a0adddd7958f87128ff726b687b615a532c"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-006",
+      "slug": "clm-1400-006",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "capper / runner / roper-in = Schlepper (bilingual lexicography)",
+      "case_section": "4. German Rotwelsch Schlepper (1847–1905) and Bilingual Lexicon Equations",
+      "short_label": "1891 Muret bilingual dictionary explicitly glosses English 'capper' as 'Schlepper (Spielhölle); Treiber, gedungener Bieter (Versteigerung)'",
+      "statement": "Eduard Muret's Encyklopädisches englisch-deutsches und deutsch-englisches Wörterbuch (Part I, 1891, p. 392) glosses American slang 'capper' ('= shillaber' in the June 7, 1883 Chicago Daily Tribune) directly as 'Schlepper (Spielhölle); Treiber, gedungener Bieter (Versteigerung)' ('Schlepper [gambling den]; driver, hired bidder [auction]'), flanked by Tenner's 1884 'Runner = Schlepper' and Muret-Sanders's 1897 'roper-in = Schlepper'.",
+      "rationale": "A major question for any Schlepper -> shillaber derivation is whether nineteenth-century bilingual speakers connected outdoor gambling 'Schlepper' with indoor mock-auction 'cappers'/'hired bidders'. Muret (1891, CERT-1400-104) places 'Schlepper' and 'gedungener Bieter (Versteigerung)' side-by-side under the exact English headword 'capper' that the 1883 Chicago Tribune paired synonymously with 'shillabers'.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Explicit 1884–1897 bilingual dictionary equations linking American English 'runner', 'capper', and 'roper-in' to German 'Schlepper' alongside 'hired auction bidder'.",
+        "does_not_establish": "A bilingual dictionary entry naming the slang word 'shillaber' itself (which entered general dictionaries decades later).",
+        "remaining_uncertainty": "Whether Muret's 1891 American slang consultants drew directly on 1880s Chicago/New York mock-auction usage."
+      },
+      "limitations": [
+        "Muret (1891) postdates the 1883 'shillaber' print debut by eight years and glosses 'capper' rather than 'shillaber' directly."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1400-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Eduard Muret's 1891 Encyklopädisches Wörterbuch (Part I, p. 392) glossing English 'capper' as 'Schlepper (Spielhölle); Treiber, gedungener Bieter (Versteigerung)'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Armin Tenner's 1884 Deutsch-Amerikanisches Konversations-Lexikon equating American 'Runner' with German 'Schlepper'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1897 Muret-Sanders dictionary (p. 1720) glossing American slang 'roper-in' as 'Schlepper'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Builds on the 1847–1874 Rotwelsch criminal sense of 'Schlepper'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-004",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Supplies the June 7, 1883 Chicago Tribune equation '\"cappers\" or \"shillabers\"' connecting Muret's 'capper' headword to 'shillaber'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "fccc7bbc706bfe8b1e5aedd365facff3f8d1cc0f63f6bd7e239a32473528db2b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "93c25a3c7460b0ed0d0b672a87fef729776e4746ce71b12fb755b0b38785c897"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Muret (1891, Part I) page coordinate from p. 380 to p. 392 per CERT-1400-104.",
+          "content_fingerprint": "fccc7bbc706bfe8b1e5aedd365facff3f8d1cc0f63f6bd7e239a32473528db2b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-007",
+      "slug": "clm-1400-007",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "#ʃl- -> *shVl- / *shillapper (Stage-German and newsprint negative controls)",
+      "case_section": "5. Phonotactic Adaptation (#ʃl-) and Abrupt Mock-Surname Remodeling",
+      "short_label": "Stage-German corpus audit (10 collections, 127 intact #shl-/#schl- vs. 0 epenthetic) and 1850–1910 newsprint sweep find 0 '*shillapper' tokens",
+      "statement": "A systematic audit across 10 nineteenth-century American Stage-German ('Dutch' dialect) humor collections (1869–1904) yields 127 intact word-initial #shl-/#schl- tokens ('shleep, shlippery, shlow, schleebing') against 0 epenthetic #shVl- spellings, corroborated by intact cluster retention in 1894 and 1901 English borrowings of 'schleppers'/'schlepper' and 0 genuine tokens of transitional '*shillapper, *shillaper, *shilapper, *schillapper, *schillaper' across 1850–1910 newsprint.",
+      "rationale": "Testing whether nineteenth-century American English routinely broke up German/Yiddish initial #ʃl- via anaptyctic vowel insertion produces an unambiguous 127-to-0 negative result in Stage-German eye-dialect print and zero transitional labial-stop spellings in newsprint (the lone June 23, 1899 'B. P. Shillaper' in Deseronto being a compositor typo for humorist B. P. Shillaber).",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "127 intact #shl-/#schl- tokens vs. 0 epenthetic #shVl- tokens across 10 Stage-German collections (1869–1904), intact English 'schlepper(s)' in 1894/1901, and 0 genuine 1850–1910 '*shillapper'-type spellings.",
+        "does_not_establish": "That individual speakers never produced sporadic oral schwa intrusion, though it rules out a regular orthographic/phonotactic pathway in print.",
+        "remaining_uncertainty": "Unindexed nineteenth-century manuscript police blotters or theatrical promptbooks lie outside digitized OCR corpora."
+      },
+      "limitations": [
+        "Stage-German dialect literature follows conventionalized theatrical orthography; bounded to 10 published collections (1869–1904) and digitized 1850–1910 North American newspapers."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1400-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Gus Williams (1879) and 10-collection Stage-German #ʃl- phonotactic audit (127 intact #shl-/#schl- tokens vs. 0 epenthetic #shVl-).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 6, 1894 New York Sun ('schleppers' — OED baseline), proving English borrowed #ʃl- intact without vowel epenthesis.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 7, 1901 Jewish Voice (St. Louis) attesting intact 'schlepper' ('sidewalk puller-in') in American English.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-216",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "June 23, 1899 Deseronto Tribune 'B. P. Shillaper' exposed as a compositor typo for humorist B. P. Shillaber rather than a transitional slang token.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "10 American Stage-German dialect humor collections (Leland 1869–1872, Adams 1876–1878, Gus Williams 1879, Gem Series c. 1880, Wehman 1890s, Zimmerman 1904) + 1850–1910 digitized North American newsprint archives",
+        "search_date": "2026-11-25",
+        "search_period": "1850–1910 (Stage-German collections: 1869–1904)",
+        "query_terms": [
+          "shl*",
+          "schl*",
+          "shil*",
+          "shal*",
+          "shillapper",
+          "shillaper",
+          "shilapper",
+          "schillapper",
+          "schillaper"
+        ],
+        "search_method": "Complete initial-cluster token census across 10 Stage-German collections (127 intact #shl-/#schl- vs. 0 epenthetic #shVl-) combined with archive-wide regex sweeps for labial-stop intermediate spellings",
+        "corpus_coverage": "10 Stage-German collections (127 target cluster tokens, 1869–1904) + multi-archive 1850–1910 newsprint sweep",
+        "known_limitations": [
+          "Printed Stage-German eye-dialect conventions may under-record transient spoken vowel intrusion, and non-digitized 1870s urban police gazettes remain outside OCR coverage."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "d314d7d8300747a93941b441398051b665bf13d165998794cd96fdc84169e194",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d314d7d8300747a93941b441398051b665bf13d165998794cd96fdc84169e194"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-008",
+      "slug": "clm-1400-008",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "Schlepper -> shillaber (assessment of regular vowel epenthesis)",
+      "case_section": "5. Phonotactic Adaptation (#ʃl-) and Abrupt Mock-Surname Remodeling",
+      "short_label": "Regular mechanical vowel epenthesis (#ʃl- -> shil-) is poorly supported as a standalone explanation for 'shillaber'",
+      "statement": "Because nineteenth-century American English borrowed initial #ʃl- intact in 'schlepper' (1894, 1901) and preserved #shl-/#schl- 127-to-0 in Stage-German print, and because blind phonotactic repair explains neither medial labial voicing/spirantization (/p/ -> /b/ ~ /v/ in 'shillaber ~ shilliver') nor the immediate 1883 appearance of trisyllabic '-aber', regular mechanical vowel insertion is poorly supported as a standalone phonological pathway.",
+      "rationale": "Separating this negative phonological evaluation from the folk-etymological remodeling proposal (CLM-1400-009) makes clear why a naive regular-sound-change derivation ('Schlepper > *shillapper > shillaber') fails empirical testing even though 'Schlepper' remains the strongest semantic donor.",
+      "type": "phonological",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Inadequacy of regular mechanical #ʃl- vowel epenthesis and unmotivated intervocalic /p/ -> /b/ voicing to account for 1883 'shillaber'.",
+        "does_not_establish": "Rejection of German Rotwelsch 'Schlepper' under abrupt lexical/folk-etymological remodeling (evaluated in CLM-1400-009).",
+        "remaining_uncertainty": "None within the audited 1850–1910 American English borrowing and Stage-German corpora."
+      },
+      "limitations": [
+        "Evaluates mechanical sound-change regularity only; lexical blending and folk etymology operate saltationally without regular intermediate sound laws."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1400-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Demonstrates 127-to-0 preservation of #shl-/#schl- clusters without epenthetic vowels in 1869–1904 Stage-German print.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms un-epenthesized English plural 'schleppers' with voiceless /p/ in 1894.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms un-epenthesized English 'schlepper' ('sidewalk puller-in') with voiceless /p/ in 1901.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of genuine '*shillaper/*shillapper' phonetic intermediates in 1850–1910 newsprint.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-301",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Supplies the disyllabic voiceless-labial German input form 'Schlepper' (/ˈʃlɛpɐ/).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Rests directly on the Stage-German and transitional-spelling negative corpus findings.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c3b2bd1cf6fbc9c6bc6292ce511b0ece4b5404ef205f7d7d88ea8ee3cbd89495",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "c3b2bd1cf6fbc9c6bc6292ce511b0ece4b5404ef205f7d7d88ea8ee3cbd89495"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-009",
+      "slug": "clm-1400-009",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber, n. (< Rotwelsch Schlepper remodeled on surname Shillaber)",
+      "case_section": "5. Phonotactic Adaptation (#ʃl-) and Abrupt Mock-Surname Remodeling",
+      "short_label": "Partially supported hypothesis that Rotwelsch 'Schlepper' was abruptly remodeled onto the household American surname 'Shillaber'",
+      "statement": "Semantic equivalence ('Schlepper = capper / hired auction bidder'), absence of phonetic '*shillapper' intermediates, and mocked-surname slang conventions ('Peter Funk', 'Jemmy-John', 'Shilaber / Shillagalee') partially support the hypothesis that Anglophone confidence operators adapted German Rotwelsch 'Schlepper' via abrupt folk-etymological remodeling onto the household nineteenth-century American surname 'Shillaber' (famous nationwide through humorist B. P. Shillaber).",
+      "rationale": "Abrupt lexical remodeling simultaneously accounts for all three otherwise anomalous features of January 1883 'shillaber': (1) instant resolution of non-native initial #ʃl- to 'shil-', (2) immediate replacement of '-epper' with voiced labial '-aber' (never '*shillapper'), and (3) alignment with mock-auction cant's signature habit of christening decoy roles with comic surnames ('Peter Funk' since 1834).",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Convergent semantic, phonotactic, and morphological support for folk-etymological remodeling of Rotwelsch 'Schlepper' onto the American surname 'Shillaber'.",
+        "does_not_establish": "Direct documentary proof, as no nineteenth-century witness explicitly states that 'shillaber' was modeled on 'Schlepper' + 'Shillaber'.",
+        "remaining_uncertainty": "Whether 'Shillaber' alone or combined familiarity with 'shillibeer' / 'Shillagalee' supplied the trisyllabic phonetic target."
+      },
+      "limitations": [
+        "Remains an inferential linguistic reconstruction ('partially_supported') pending discovery of a pre-1883 bilingual cant gloss or humorous 'Mr. Shillaber' personification."
+      ],
+      "resolution_criteria": [
+        "Locate a pre-1883 police report, mock-auction exposé, or bilingual underworld glossary explicitly connecting 'shillaber' to German 'Schlepper' or personifying a decoy bidder as 'Mr. Shillaber' alongside 'Peter Funk'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1400-304",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "A. Smythe Palmer's 1882 Folk-Etymology documenting abrupt English surname remodeling of foreign loans (e.g., 'demijohn -> Jemmy-John').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-204",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1875 American slang attestation of 'Shilaber' / 'Shillagalee' illustrating playful slang deployment of the Shillaber name shape.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-209",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents massive 1850s–1880s household familiarity of humorist Benjamin Penhallow Shillaber ('Mrs. Partington') across American newsprint.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-210",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1854 omnibus/Partington cultural familiarity control.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-303",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1890 Century Dictionary entry for 'Shillibeer', confirming concurrent English trisyllabic /ˈʃɪləb-/ lexical familiarity.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-211",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1834 New York 'Peter Funk' mock-auction decoy witness establishing the exact comic-surname template inside the same trade.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-303",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Shows why abrupt lexical remodeling rather than gradual #ʃl- epenthesis is required.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1847–1874 German Rotwelsch 'Schlepper' donor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1884–1897 bilingual 'capper / runner = Schlepper' semantic bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-008",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes why mechanical phonotactic drift without lexical remodeling is insufficient.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-108",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Moritz Busch's 1854 Wanderungen zwischen Hudson und Mississippi borrows English 'Peter Funk' rather than translating via German 'Schlepper' when describing New York mock auctions.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-016",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Confirms humorist B. P. Shillaber ('Mrs. Partington') had zero confidence-man or auction-decoy associations on his own without an external semantic donor.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "4c1b96522681d2b877c3a0cd6afe1b94ac5e7c0113e0f04f37891e0466297a20",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d1b2d003137bf850122fefd3e316455136e18e996ada210d4ba3e3435a3f1c07"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Added explicit qualifies counter-evidence edges to Busch 1854 (CERT-1400-108) and CLM-1400-016.",
+          "content_fingerprint": "4c1b96522681d2b877c3a0cd6afe1b94ac5e7c0113e0f04f37891e0466297a20"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-010",
+      "slug": "clm-1400-010",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber, n. (proposed Chicago Loop mock-auction borrowing locus)",
+      "case_section": "2. Storefront Prosopography: No. 300 State Street, No. 110 Clark Street, and Threshold-Crossing Cappers",
+      "short_label": "Partially supported hypothesis placing the bilingual 'Schlepper -> shillaber' contact zone in 1870s–1880s Chicago mock-auction shops",
+      "statement": "Converging 1883 Chicago print witnesses ('—Chicago Times.' and the June 7, 1883 Chicago Daily Tribune), active Chicago German-language crime reporting of 'Schlepper („Runner“)', and mixed German-Jewish and Anglo-American mock-auction syndicates at 300 S. State St. and 110 S. Clark St. (Max and Nathan Levi, Sam Abrahams, Ed Roth, Ed Leavitt) partially support late-1870s/early-1880s downtown Chicago mock-auction shops as the primary contact network where 'Schlepper' was remodeled into 'shillaber'.",
+      "rationale": "Separating the sociological contact-locus hypothesis from both the 1883 Chicago print attestations (CLM-1400-003, CLM-1400-004) and the morphological mechanism (CLM-1400-009) keeps the argument disciplined: every known 1883 witness points to downtown Chicago Loop mock-auction rooms staffed by bilingual proprietors and Anglophone cappers, though inter-urban syndicate mobility leaves New York or Cincinnati possible earlier stops.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Co-location of the earliest 1883 'shillaber' print witnesses, mixed German-Jewish/Anglo-American mock-auction operators, and German 'Schlepper' crime reporting in downtown Chicago.",
+        "does_not_establish": "Exclusive proof that the coinage occurred in Chicago rather than arriving via inter-city mock-auction operators from New York, Philadelphia, or Cincinnati before 1883.",
+        "remaining_uncertainty": "Pre-1883 police blotters and German-American newspapers in New York and Chicago have not yet yielded an 1870s transitional record."
+      },
+      "limitations": [
+        "Chicago Abendpost 'Schlepper („Runner“)' scans date to 1895 and 1905 (twelve to twenty-two years after 1883), though Allentown German-American 'Schlepper' precedes 1883 in 1874."
+      ],
+      "resolution_criteria": [
+        "Inspect January 1883 Chicago Times microfilm and 1875–1882 Chicago, Cincinnati, and New York police-court dockets or German-language dailies (Illinois Staats-Zeitung, New Yorker Staats-Zeitung) for earlier storefront links between 'Schlepper' and 'shillaber'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1200-101",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "January 24, 1883 '—Chicago Times.' mock-auction exposé.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 7, 1883 Chicago Daily Tribune placing 'shillabers' at 110 S. Clark St. and 300 S. State St.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-109",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "August 30, 1882 raid on Max and Nathan Levi's mock auction at 300 S. State St.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-110",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "January 31, 1884 raid on Sam Abrahams at 300 S. State St.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-111",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "September 19, 1883 300 S. State St. mock-auction docket.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-106",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "March 23, 1895 Chicago Abendpost bilingual gloss 'Schlepper („Runner“)'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-107",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "October 9, 1905 Chicago Abendpost 'Schlepper' crime report.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-108",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "1854 New York 'Peter Funk' travelogue showing earlier German visitors lacked a localized 'shillaber' loan.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-114",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1914 Jackson & Hellyer Vocabulary of Criminal Chicago recording entrenched Chicago underworld 'SHILL'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Anchors the January 1883 exposé to the Chicago Times.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1882–1885 State & Clark Street storefront prosopography.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-009",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 'Schlepper -> Shillaber' remodeling hypothesis.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "91ca7d0c0c4b6f4d8eff272028e1ae7f58d69f2cd11546d96492a8cfb979e466",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d9c4684b27f38625a1f5fb159f5eb85fcf1419eeef499b7ef43290ddf6b313bd"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "91ca7d0c0c4b6f4d8eff272028e1ae7f58d69f2cd11546d96492a8cfb979e466"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-011",
+      "slug": "clm-1400-011",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber / shill (513 Milner circus route books register control)",
+      "case_section": "3. Bridging the 1884–1907 Print Gap and Unmasking Both 1910–1911 Syndicates",
+      "short_label": "513 Milner circus route books (1872–1912) yield 0 'shillaber'/'shill' tokens—framed strictly as register context alongside 1884–1907 'capper' controls",
+      "statement": "A full-text sweep across all 513 digitized circus route books in the Illinois State University Milner Library Collection (1872–1912) returns zero occurrences of 'shillaber' or 'shill' (alongside positive circus-register controls 'Outside Ticket Box', 8 tokens of 'ballyhoo', and 9 of 'booster'), while mainstream 1884–1907 newspapers printed 'cappers' and 'steerers'—supplying bounded register context consistent with an urban mock-auction origin rather than negative proof against unspoken circus lot slang.",
+      "rationale": "Prior discussions often assumed 'shillaber' began as nineteenth-century circus slang. Auditing 513 circus route books while explicitly recognizing their genre bias (official souvenir rosters print respectable job titles like 'Outside Ticket Box' and omit grift cant even in 1908–1912) treats the zero count honestly as supporting register context rather than overclaiming proof of absence.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero tokens of 'shillaber'/'shill' across 513 Milner Library circus route books (1872–1912) and predominance of 'cappers'/'steerers' in 1884–1907 urban press.",
+        "does_not_establish": "Proof that nineteenth-century circus grifters never used 'shillaber' orally on the lot before 1908.",
+        "remaining_uncertainty": "Private nineteenth-century circus grifter correspondence or unprinted privilege-car ledgers could contain pre-1908 midway occurrences."
+      },
+      "limitations": [
+        "Explicitly bounded as register-distribution context, NOT negative proof of origin: official route books continued to omit 'shillaber' in 1908–1912 even while Variety and The Billboard printed it regularly."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1903 Ringling/circus route-book 'ballyhoo' positive control and 513-volume (1872–1912) Milner Library zero-token sweep record.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 circus route-book staff roster control ('Outside Ticket Box') illustrating formal roster euphemism.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 route-book/show-register positive control ('booster').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-214",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "September 23, 1893 urban newspaper 'cappers' control during the 1884–1907 'shillaber' print hiatus.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-215",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "October 8, 1894 urban newspaper 'steerers' control during the 1884–1907 print hiatus.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Illinois State University Milner Library Circus Route Books Digital Collection (513 volumes, 1872–1912)",
+        "search_date": "2026-11-25",
+        "search_period": "1872–1912",
+        "query_terms": [
+          "shillaber",
+          "shillabers",
+          "shilliver",
+          "shilliber",
+          "shill",
+          "shills",
+          "ballyhoo",
+          "booster"
+        ],
+        "search_method": "Full-text digital collection sweep across all 513 circus route books paired with positive show-vocabulary controls ('Outside Ticket Box', 'ballyhoo' = 8, 'booster' = 9)",
+        "corpus_coverage": "513 digitized American circus route books spanning 1872–1912",
+        "known_limitations": [
+          "Printed route books were souvenir staff directories that systematically excluded disreputable grift terminology; treated strictly as supporting register context rather than proof against pre-1908 lot usage."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "459be8682494c93ee1a0898fa95e9199e3bbadd15ca86363e337b54f338d5ed8",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "459be8682494c93ee1a0898fa95e9199e3bbadd15ca86363e337b54f338d5ed8"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-012",
+      "slug": "clm-1400-012",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber / shilliver / shilliber, n. (1908–1911 resurgence)",
+      "case_section": "3. Bridging the 1884–1907 Print Gap and Unmasking Both 1910–1911 Syndicates",
+      "short_label": "1908–1911 show-trade resurgence of 'shillaber(s)' (Mar. 7, 1908 Variety scan) and labial variants 'shilliver' (Feb. 2, 1911) / 'shilliber' (Dec. 1911)",
+      "statement": "After a twenty-five-year mainstream print gap (1884–1907), 'shillaber(s)' re-emerged across amusement-trade and crime reporting in early 1908—reported on February 15, 1908 in the Los Angeles Herald ('discovered', masthead scan pending) and primary-scan verified on March 7, 1908 in Variety (5 years, 8 months, and 29 days ahead of OED3's December 6, 1913 baseline)—generating labial-spirantized 'shilliver' (February 2, 1911) and reduced 'shilliber' (December 1911).",
+      "rationale": "Tracking every 1908–1911 witness bridges the urban mock-auction era to traveling carnival/circus trade journalism while respecting verification-level ceilings: CERT-1200-120 (Feb. 15, 1908 LA Herald, surfaced in prior scholarship by Sven Yargs) is cited strictly as 'discovered' context because its masthead scan is unverified, whereas March 7, 1908 Variety (CERT-1200-103) is full-page scan-verified.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous scan-verified show-trade and urban crime usage of 'shillaber(s)' from March 7, 1908 through 1911, plus orthographic/phonetic variants 'shilliver' (Feb. 2, 1911) and 'shilliber' (Dec. 1911).",
+        "does_not_establish": "Masthead-scan verification of the February 15, 1908 Los Angeles Herald witness (CERT-1200-120).",
+        "remaining_uncertainty": "Acquiring a full-page masthead scan of the February 15, 1908 Los Angeles Herald will upgrade CERT-1200-120 from 'discovered' to 'agent_verified'."
+      },
+      "limitations": [
+        "CERT-1200-120 (February 15, 1908 Los Angeles Herald) carries verification_level 'discovered' (masthead_date_verified: false, no hosted scan) and is therefore treated as contextual rather than primary advancing proof."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 7, 1908 Variety masthead-verified scan attesting show-trade 'Shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-120",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "February 15, 1908 Los Angeles Herald witness ('shillabers') noted in prior ADS-L/Stack Exchange scholarship.",
+          "witness_note": "verification_level: 'discovered' (masthead scan pending)."
+        },
+        {
+          "ref": "CERT-1400-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 14, 1908 Variety ('Shillabers').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 3, 1909 The Billboard carnival/circus 'Shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-214",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "September 25, 1909 The Billboard parallel confederate term 'booster'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 1910 The Green Book Album (Vol. 3, No. 1, p. 66) theatrical attestation of 'shillaber'.",
+          "witness_note": "Duplicate shard entry for the same January 1910 Green Book Album (Vol. 3, No. 1, p. 66) passage; counted as 1 witness."
+        },
+        {
+          "ref": "CERT-1200-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Companion shard citation to the same January 1910 Green Book Album (p. 66) 'shillaber' witness.",
+          "witness_note": "Duplicate shard entry for the same January 1910 Green Book Album (Vol. 3, No. 1, p. 66) passage; counted as 1 witness."
+        },
+        {
+          "ref": "CERT-1200-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 14, 1910 Saturday Evening Post ('the shillaber brigade'), immediately preceding clipped verbal 'shill'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 12, 1910 newspaper attestation of 'Shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 13, 1910 attestation of 'shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 20, 1910 attestation of 'shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 2, 1911 Mexia (TX) Weekly Herald W.N.U. reprint attesting labial-spirantized variant 'shilliver'.",
+          "witness_note": "Co-syndicated February 1911 W.N.U. mock-auction feature printed in Mexia Weekly Herald (Feb. 2, CERT-1400-203) and Seymour Daily Republican (Feb. 17, CERT-1200-109)."
+        },
+        {
+          "ref": "CERT-1200-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 17, 1911 Seymour Daily Republican W.N.U. reprint of the same syndicated mock-auction feature.",
+          "witness_note": "Co-syndicated February 1911 W.N.U. mock-auction feature printed in Mexia Weekly Herald (Feb. 2, CERT-1400-203) and Seymour Daily Republican (Feb. 17, CERT-1200-109)."
+        },
+        {
+          "ref": "CERT-1400-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 3, 1911 show-press attestation of 'shillabers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1911 attestation of medial-<i> variant 'shilliber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-113",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "December 6, 1913 Collier's ('shillabers') — OED3 baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-114",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1914 Jackson & Hellyer Chicago criminal lexicon baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1d479e69155b7485855bbf67446227c5f375f9fac20e56ec9d6c9df102923423",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "69e2f4b75bd0b9d7c16f95c6284d442e4127535c4c28515c251165f4f1bf0d0f"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected January 1910 Green Book Album source title and added co-witness deduplication notes on CERT-1200-105/205 and CERT-1400-203/CERT-1200-109.",
+          "content_fingerprint": "1d479e69155b7485855bbf67446227c5f375f9fac20e56ec9d6c9df102923423"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-013",
+      "slug": "clm-1400-013",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shill, v.3 / shiller, n.",
+      "case_section": "3. Bridging the 1884–1907 Print Gap and Unmasking Both 1910–1911 Syndicates",
+      "short_label": "May 14, 1910 Saturday Evening Post 'shill through' / 'shilled' antedates OED3 shill, v.3 (1914) by 4 calendar years",
+      "statement": "Referring back to 'the shillaber brigade' in the same story, George Randolph Chester's short story 'Ballyhoo Bill' in The Saturday Evening Post (May 14, 1910, pp. 12, 14) attests clipped verb 'tried to shill through your gate ... to go in free anywhere is to shill through' and preterite 'The mayor shilled in the first openin'', advancing OED3 shill, v.3 (1914, Jackson & Hellyer) by 4 calendar years, followed on July 9, 1910 by agent noun 'Shillers' in Variety—proving that monosyllabic 'shill' arose by back-clipping of 'shillaber'.",
+      "rationale": "Co-occurrence of 'shillaber brigade' (CERT-1200-215), 'shill through' (CERT-1200-106, p. 12), and 'shilled' (CERT-1200-119, p. 14) inside George Randolph Chester's single May 14, 1910 Saturday Evening Post story 'Ballyhoo Bill'—twenty-seven years after 1883 'shillaber'—supplies internal textual proof of the clipping direction (shillaber -> shill).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Clipped verbal 'shill through' and 'shilled' on May 14, 1910 (4 calendar years before OED3's 1914 baseline), agent plural 'Shillers' on July 9, 1910, and derivation of 'shill' by clipping of 'shillaber'.",
+        "does_not_establish": "Standalone clipped noun 'a shill', which first appears in scanned print on November 19, 1910 (CLM-1400-014).",
+        "remaining_uncertainty": "Spoken carnival back-clipping from 'shillaber' to 'shill' likely began shortly before May 1910."
+      },
+      "limitations": [
+        "Because OED3's 1914 baseline (Jackson & Hellyer book imprint) has year-only precision, computed_advance_display reports strictly '4 calendar years (14 May 1910 vs. 1914)' without synthetic month/day subtraction."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 14, 1910 Saturday Evening Post ('Ballyhoo Bill', p. 12: 'tried to shill through your gate') — earliest clipped verbal advancing witness.",
+          "witness_note": "Co-occurrence within the same May 14, 1910 Saturday Evening Post short story ('Ballyhoo Bill' by George Randolph Chester, pp. 12 & 14; counted as 1 literary witness)."
+        },
+        {
+          "ref": "CERT-1200-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 14, 1910 Saturday Evening Post ('Ballyhoo Bill', p. 14: 'The mayor shilled in the first openin'') in the same George Randolph Chester story.",
+          "witness_note": "Co-occurrence within the same May 14, 1910 Saturday Evening Post short story ('Ballyhoo Bill' by George Randolph Chester, pp. 12 & 14; counted as 1 literary witness)."
+        },
+        {
+          "ref": "CERT-1200-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 9, 1910 Variety attesting suffixed agent plural 'Shillers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1911 (April 1911 issue) Metropolitan Magazine 'The Watch' by Robert Brown attesting 'shill'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-114",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1914 Jackson & Hellyer Vocabulary of Criminal Chicago — OED3 baseline for shill, v.3.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-307",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "1844 attestation of dialectal 'shill out' ('shell out money'), plausible only as secondary phrasal reinforcement once 'shill' clipped from 'shillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-302",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "1881 Evans Leicestershire glossary recording English dialect 'SHILL' ('to shell peas/oats'), semantically distinct from decoy bidding.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-012",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Demonstrates the immediate 'shillaber brigade' precursor in 1908–1910 show-trade usage.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "shill, v.3 ('to act as a shill or decoy')",
+        "edition_or_revision": "OED3 unrevised 1986 Supplement entry (consulted November 2026)",
+        "baseline_date": "1914",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/shill_v3",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1200-106",
+        "attested_date": "1910-05-14",
+        "attested_date_precision": "day",
+        "computed_advance_display": "4 calendar years (14 May 1910 vs. 1914)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c460849fae7027038ed14781931334146877e82cef583077ab0b5588d350c8d7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "7abb15c5e7984f4d02ea81137074c1aaf7cd545f9dd91e636e0ae2d284a18df9"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected May 14, 1910 Saturday Evening Post title ('Ballyhoo Bill' by George Randolph Chester), verbatim quotes, and single-story witness notes.",
+          "content_fingerprint": "c460849fae7027038ed14781931334146877e82cef583077ab0b5588d350c8d7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-014",
+      "slug": "clm-1400-014",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shill, n.",
+      "case_section": "3. Bridging the 1884–1907 Print Gap and Unmasking Both 1910–1911 Syndicates",
+      "short_label": "Nov. 19, 1910 Garnet Warren syndicate printings of noun 'shill'/'shills' advance Etymonline (Apr. 1911) by 5 months and OED3 (1916) by 6 calendar years",
+      "statement": "Syndicated printing of 'Boosting the Game' on November 19, 1910 in The Fort Wayne Sentinel (p. 24, cols. 1, 3, 5)—traced via New York Herald Syndicate records to writer-cartoonist Garnet Warren—attests singular 'shill' and plural 'shills', advancing Etymonline's April 1911 Metropolitan Magazine baseline by 5 months and OED3 shill, n. (1916, The Editor) by 6 calendar years.",
+      "rationale": "Collapsing CERT-1200-108 (col. 3, singular 'shill') and CERT-1400-206 (cols. 1 & 5, plural 'shills') to their single shared newspaper page in the November 19, 1910 Fort Wayne Sentinel (p. 24) and pairing it with Editor & Publisher's syndicate biography of Garnet Warren (CERT-1400-207) establishes syndicated newspaper distribution of clipped nominal 'shill' five months ahead of Robert Carlton Brown's April 1911 magazine story and six calendar years ahead of OED3.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Scan-verified nominal 'shill' and 'shills' on November 19, 1910 on p. 24 of The Fort Wayne Sentinel (New York Herald Syndicate printing of 'Boosting the Game').",
+        "does_not_establish": "The exact Sunday date of Garnet Warren's parent New York Herald feature, or direct page verification of October 1910 Pearson's Magazine (see CLM-1400-015).",
+        "remaining_uncertainty": "Inspecting October–November 1910 New York Herald Sunday magazine reels and October 1910 Pearson's Magazine (on sale September 23, 1910) may push nominal 'shill' back by 3 to 8 weeks."
+      },
+      "limitations": [
+        "CERT-1200-108 (Salt Lake Telegram) and CERT-1400-206 (Washington Evening Star) are co-syndicated November 19, 1910 printings of Garnet Warren's New York Herald Syndicate feature.",
+        "Against OED3's year-only 1916 baseline, the advance is strictly 6 calendar years; month-precision comparison (5 months) is anchored against Etymonline's April 1911 baseline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 19, 1910 The Fort Wayne Sentinel (p. 24, col. 3) syndicate printing of 'Boosting the Game' attesting singular 'shill' — advancing witness.",
+          "witness_note": "Same newspaper issue and page (The Fort Wayne Sentinel, Nov. 19, 1910, p. 24, 'Boosting the Game'); CERT-1200-108 (col. 3 'shill') and CERT-1400-206 (cols. 1 & 5 'shills') constitute 1 single-issue witness."
+        },
+        {
+          "ref": "CERT-1400-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 19, 1910 The Fort Wayne Sentinel (p. 24, cols. 1 & 5) companion excerpt from the same page attesting plural 'shills'.",
+          "witness_note": "Same newspaper issue and page (The Fort Wayne Sentinel, Nov. 19, 1910, p. 24, 'Boosting the Game'); CERT-1200-108 (col. 3 'shill') and CERT-1400-206 (cols. 1 & 5 'shills') constitute 1 single-issue witness."
+        },
+        {
+          "ref": "CERT-1400-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 9, 1914 Editor & Publisher profile identifying Garnet Warren's New York Herald Syndicate authorship.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 24, 1911 The Billboard trade adoption of plural 'shills'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 23, 1911 Variety trade adoption of 'shills'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 2, 1922 Variety ('shills'), confirming full displacement of 'shillaber' in show-trade vernacular.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-013",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Follows the May 14, 1910 verbal clipping of 'shillaber'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Online Etymology Dictionary (Etymonline) & Prior ADS-L Scholarship",
+        "entry_and_sense": "shill, n. ('decoy bidder or confederate', citing April 1911 Metropolitan Magazine 'The Watch'); cf. OED3 shill, n. (1916 The Editor)",
+        "edition_or_revision": "Etymonline s.v. shill (consulted November 2026)",
+        "baseline_date": "1911-04",
+        "baseline_date_precision": "month",
+        "source_url_or_ref": "https://www.etymonline.com/word/shill",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1200-108",
+        "attested_date": "1910-11-19",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 months (19 November 1910 vs. April 1911)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c0749c228d492127cb7d3ef6e45992c3ff009dfe73c7438036e04743f6f78aae",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "3c48d505c30461b76bd2c4d4347fea7c3f0852c5a3004ce8f2746a9646666b82"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected newspaper identity to The Fort Wayne Sentinel (Nov. 19, 1910, p. 24) and collapsed CERT-1200-108 and CERT-1400-206 to 1 single-page witness.",
+          "content_fingerprint": "c0749c228d492127cb7d3ef6e45992c3ff009dfe73c7438036e04743f6f78aae"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-015",
+      "slug": "clm-1400-015",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shilliver / shill (Oct. 1910 Pearson's -> Feb. 1911 W.N.U. ready-print provenance)",
+      "case_section": "3. Bridging the 1884–1907 Print Gap and Unmasking Both 1910–1911 Syndicates",
+      "short_label": "Feb. 1911 W.N.U. 'Fake Auction' ready-prints ('shilliver', 'shill') trace to Oct. 1910 Pearson's and Chicago-born Robert Carlton Brown ('H. E. Twinells')",
+      "statement": "Copyright and periodical records establish that the February 2–17, 1911 Western Newspaper Union ready-print stories attesting 'shilliver', 'shill', and 'shills' reprinted 'The Fake Auction' by 'H. E. Twinells' from the October 1910 issue of Pearson's Magazine (on newsstands September 23, 1910), and unmask 'H. E. Twinells' in the 1911 Catalog of Copyright Entries as Chicago-born author Robert Carlton ('Bob') Brown—who also wrote the April 1911 Metropolitan Magazine story 'The Watch'.",
+      "rationale": "Uniting four rural February 1911 newspaper reprints (CERT-1400-203..205, CERT-1200-109) with Pearson's September 23, 1910 newsstand notice (CERT-1400-201) and Library of Congress copyright records (CERT-1400-202) collapses two seemingly separate early 'shill' clusters into one Chicago-raised fiction writer while maintaining strict scan discipline by not claiming an un-scanned September 1910 antedating.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "W.N.U. syndicate derivation of the February 1911 rural 'Fake Auction' reprints from October 1910 Pearson's Magazine and identity of 'H. E. Twinells' with Robert Carlton Brown (1886–1959).",
+        "does_not_establish": "Direct visual verification of the exact spelling ('shill' vs. 'shilliver') on pp. 485–492 of the physical October 1910 Pearson's Magazine issue.",
+        "remaining_uncertainty": "Direct scan inspection of Pearson's Magazine Vol. 24, No. 4 (Oct. 1910, pp. 485–492) is required before advancing clipped 'shill' or 'shilliver' to September 23, 1910."
+      },
+      "limitations": [
+        "CERT-1400-203, CERT-1400-204, CERT-1400-205, and CERT-1200-109 are co-syndicated W.N.U. ready-print witnesses of a single text; parent October 1910 Pearson's Magazine interior pages have not yet been directly scanned."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1400-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 23, 1910 newsstand advertisement for the October 1910 issue of Pearson's Magazine listing 'The Fake Auction' by H. E. Twinells.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1911 Library of Congress Catalog of Copyright Entries identifying 'H. E. Twinells' on 'The Fake Auction' with Robert Carlton Brown.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 2, 1911 Mexia (TX) Weekly Herald W.N.U. ready-print of 'The Fake Auction' attesting 'shilliver'.",
+          "witness_note": "W.N.U. syndicate co-witness with CERT-1400-204, CERT-1400-205, and CERT-1200-109."
+        },
+        {
+          "ref": "CERT-1400-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 9, 1911 W.N.U. ready-print of 'The Fake Auction' attesting singular 'shill'.",
+          "witness_note": "W.N.U. syndicate co-witness."
+        },
+        {
+          "ref": "CERT-1400-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 9, 1911 W.N.U. ready-print of 'The Fake Auction' attesting plural 'shills'.",
+          "witness_note": "W.N.U. syndicate co-witness."
+        },
+        {
+          "ref": "CERT-1200-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 17, 1911 W.N.U. ready-print witness of 'The Fake Auction' ('shill').",
+          "witness_note": "W.N.U. syndicate co-witness."
+        },
+        {
+          "ref": "CERT-1200-110",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "May 1911 (April 1911 cover) Metropolitan Magazine 'The Watch' signed under Robert Brown's own name.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "31192352af807e1af42223acab64255803a1ac61c5c107df6862234a506dbebf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "31192352af807e1af42223acab64255803a1ac61c5c107df6862234a506dbebf"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-016",
+      "slug": "clm-1400-016",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shillaber (vs. standalone B. P. Shillaber, shillibeer hearse, and Dixon/Chicago Shillaber eponym theories)",
+      "case_section": "6. Evaluating Rival Etymologies and Rejected Archival Traps",
+      "short_label": "Semantic and biographical controls weigh against standalone B. P. Shillaber, 'shillibeer' hearse, or Illinois businessman John Shillaber eponyms",
+      "statement": "Lexicographical and biographical controls weigh strongly against deriving 'shillaber' purely as a standalone eponym from humorist Benjamin Penhallow Shillaber (associated with benign malapropisms, never confidence games), George Shillibeer's London omnibus/hearse ('shillibeer', restricted in 1834–1874 slang dictionaries to 'funeral hearse'), or Dixon/Chicago landowner John Shillaber (stone quarrying and real estate, zero mock-auction ties)—confining 'Shillaber' to the phonetic target form onto which 'Schlepper' was remodeled.",
+      "rationale": "Testing every historical bearer of the surname Shillaber/Shillibeer explains why eponym-only proposals fail semantically on their own while supplying the exact cultural familiarity needed for folk-etymological attraction of Rotwelsch 'Schlepper' (CLM-1400-009).",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of confidence-game or auction-decoy semantics in B. P. Shillaber's corpus, 1834–1874 'shillibeer' ('hearse/omnibus') entries, and Illinois Shillaber family biographies.",
+        "does_not_establish": "Irrelevance of the surname 'Shillaber' as a secondary folk-etymological remodeling target (supported in CLM-1400-009).",
+        "remaining_uncertainty": "None across audited nineteenth-century slang dictionaries and Illinois biographical directories."
+      },
+      "limitations": [
+        "Excludes standalone unblended eponym derivation while preserving surname attraction in CLM-1400-009."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1856 B. P. Shillaber ('Mrs. Partington') control confirming benign domestic humor register without auction swindling.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1854 omnibus / Partington print control.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1834 baseline for George Shillibeer's passenger omnibus.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1863 usage of plural 'Shillibeers' strictly for funeral hearses.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "John Camden Hotten's 1874 Slang Dictionary defining 'shillibeer' solely as a funeral hearse.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1864 surname variant 'Shillibar' control lacking slang semantics.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 12, 1891 biographical notice of Dixon/Chicago businessman John Shillaber showing respectable real-estate/quarry career.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1893 Chicago city directory audit of local Shillaber residents showing zero auction-house occupations.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ebc76d3ac7266e926af9982f50c82c3a1935a08360ca91c9ea2c03d87b5ec1a3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "ebc76d3ac7266e926af9982f50c82c3a1935a08360ca91c9ea2c03d87b5ec1a3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-017",
+      "slug": "clm-1400-017",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shill / shillaber (rival Continental, Celtic, Romani, and cant etymologies)",
+      "case_section": "6. Evaluating Rival Etymologies and Rejected Archival Traps",
+      "short_label": "Lexicographical checks weaken or refute 10 rival Continental, Celtic, Romani, cant, and ghost Yiddish/Irish proposals",
+      "statement": "Primary dictionary audits weaken or refute ten rival etymologies: German 'Schieber' (lacks /l/, meant 'watch-chain thief' in 1862 Rotwelsch, and gained 'profiteer' prominence decades after 1883), 'shilling' and 'shillelagh' ('cudgel'), Scots 'shill' ('shrill/chill', Jamieson 1808), British cant 'shaler' ('girl/fellow', Hotten 1874), Dutch 'sleper' (alveolar /sl-/, lacks 'capper' sense), French 'allumeur' ('auction decoy', phonologically unrelated), Romani 'shil' ('cold/ague') and Shelta 'shelkin', and unattested ghost citations of Yiddish '*shillaber' and Irish '*sileabhar'.",
+      "rationale": "Evaluating both monosyllabic-'shill'-first conjectures (already contradicted by the 27-year priority of 1883 'shillaber' over 1910 'shill') and online ghost words ('*sileabhar' misread or invented where Foley 1864 has 'sileastar' = 'flag iris'; Harkavy 1898 has only 'Shilling') clears the comparative field transparently.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 170,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological, phonological, or ghost-word exclusion of ten competing donor proposals across German, Dutch, French, Scots, Irish, Romani, Shelta, Yiddish, and British cant lexicons.",
+        "does_not_establish": "Impossibility of minor secondary phrasal reinforcement from English dialect 'shill out' = 'shell out' on post-1910 verbal 'shill' (noted in CLM-1400-013).",
+        "remaining_uncertainty": "None across the audited nineteenth-century reference dictionaries."
+      },
+      "limitations": [
+        "Distinguishes tentative scholarly comparisons (such as Anatoly Liberman's 'Schieber' query) from fabricated online ghost lemmas ('*sileabhar')."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Avé-Lallemant (1862) s.v. Schieber, lacking /l/ and restricted to pocket/watch-chain theft.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1844 'shill out' ('shell out'), unable to generate trisyllabic 1883 'shillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1881 Leicestershire 'SHILL' ('to shell'), lacking decoy-bidder semantics and '-aber' morphology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jamieson's 1808 Etymological Dictionary of the Scottish Language s.v. SCHILL ('shrill, chill'), never 'barker/decoy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer & Henley Vol. 6 (1903) s.v. SHILLING, recording coin idioms without decoy-bidder 'shill/shillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Hotten's 1874 Slang Dictionary s.v. Shaler ('girl; fellow'), phonologically and semantically mismatched.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Matsell's 1859 Vocabulum s.v. SHILLEY ('shillelagh, club'), unrelated to auction bidding.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Smart & Crofton's 1875 Dialect of the English Gypsies s.v. Shil ('cold, ague').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1882 Shelta glossary recording 'Shelkin', lacking phonological or semantic fit.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Calisch's 1890 Dutch-English dictionary s.v. Sleper ('dragger, carman'), lacking /ʃ/ and underworld 'capper' specialization.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Alfred Delvau's 1866 Dictionnaire de la langue verte s.v. Allumeur ('mock-auction decoy bidder'), functionally parallel but phonologically unrelated.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Harkavy's 1898 Yiddish-English dictionary negative audit recording 'Shilling' and zero '*shillaber' entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Daniel Foley's 1864 English-Irish dictionary recording 'sileastar' ('yellow flag iris') and zero '*sileabhar' entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes 1883 trisyllabic 'shillaber' priority, ruling out monosyllabic-'shill'-first etymologies.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1400-013",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Demonstrates that monosyllabic 'shill' arose in 1910 by clipping 'shillaber'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6fad03b4e8c7d3fce9ae061685a2fe604997350cb55a754a449ca2525320ab13",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "fada70c8aa120d075f60105838b4adc0065e8ee838a294952ca617cdb681126f"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "6fad03b4e8c7d3fce9ae061685a2fe604997350cb55a754a449ca2525320ab13"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1400-018",
+      "slug": "clm-1400-018",
+      "case_slug": "shill-shillaber",
+      "headword": "shill / shillaber",
+      "target_lexeme": "shill / shillaber (quarantined misdates, OCR ghosts, hyphenations, and surname homographs)",
+      "case_section": "6. Evaluating Rival Etymologies and Rejected Archival Traps",
+      "short_label": "Masthead and page-scan verification quarantines 10 false pre-1910 'shill'/'shillaber' repository leads",
+      "statement": "Primary-scan verification quarantines ten false early hits across newspaper and serial databases: one serial metadata misdate ('1902' Billboard -> Nov. 8, 1947), three OCR corruptions ('1886' 'Fhillaber'; '1886' 'skill' misread as 'shill'; '1898' 'ships' misread as 'shills'), one compositor surname typo ('1899' 'B. P. Shillaper'), one end-of-line hyphenation ('Feb. 8, 1908' 'shill- / ings'), and four proper-surname homographs ('1888' Schlepper, '1891' & '1893' Shillaber, '1905' 'Mr. Shill').",
+      "rationale": "Auditing every candidate pre-1910 'shill' hit explains why casual database searches appear to show nineteenth-century monosyllabic 'shill' when every single pre-1910 instance is actually 'skill', 'ships', 'shill-ings', a misdated 1947 issue, or a surname.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 180,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-qualifying status of all ten quarantined misdates, OCR ghosts, line-break hyphenations, and proper surnames in shill-shillaber.json.",
+        "does_not_establish": "Absence of earlier mid-January 1883 Chicago Times printings of trisyllabic 'shillaber'.",
+        "remaining_uncertainty": "None for the ten audited records."
+      },
+      "limitations": [
+        "CERT-1200-115 (November 8, 1947 The Billboard, misindexed as '1902') is post-1930 and verified without a hosted WebP scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1200-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1902' serial metadata misdate on the November 8, 1947 issue of The Billboard ('shill').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes August 28, 1886 OCR misreading of printed 'skill' as 'shill'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes April 20, 1886 OCR/typesetting surname ghost 'Fhillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes March 18, 1898 OCR misreading of printed 'ships' as 'shills'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes June 23, 1899 compositor typo 'B. P. Shillaper' for humorist B. P. Shillaber.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes February 8, 1908 line-break hyphenation 'shill- / ings' indexed as 'shill'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines August 4, 1888 proper-surname homograph 'Schlepper'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines October 12, 1891 Illinois proper-surname record 'Shillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1400-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines 1893 Chicago city directory proper-surname entries 'Shillaber'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1200-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines November 18, 1905 proper-surname homograph 'Shill'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3611f542154b6970e423f748506c168c8ff2fd6037886c43a3f02cabacdeb56b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1400 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "3611f542154b6970e423f748506c168c8ff2fd6037886c43a3f02cabacdeb56b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

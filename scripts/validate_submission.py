@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-validate_submission.py (DRAgNEt v3 — Zero-Dependency Stdlib Ready)
-------------------------------------------------------------------
-Automated structural, cross-reference, rights-boundary, and sanitization validator.
+validate_submission.py (DRAgNEt v3 + Claim Architecture v1.0 — Zero-Dependency Stdlib Ready)
+--------------------------------------------------------------------------------------------
+Automated structural, cross-reference, rights-boundary, claim-graph, and sanitization validator.
 Uses PyYAML when installed and falls back cleanly to pure Python 3 stdlib on machines
 without PyYAML (such as fresh Windows Python installations).
 
@@ -14,9 +14,11 @@ What this script ACTUALLY verifies:
   3. Evidence & Image-Rights Gate: Every attestation/hypothesis has an https:// source_url; every hosted_path exists on disk
      (<= 5 MB); works with publication_year > 1930 may NOT bundle scans in public/scans/ unless rights_cleared is true.
   4. Bidirectional Cross-Referencing: Every citation ID referenced in a Case File's YAML frontmatter OR Markdown prose
-     exists in that Case File's JSON ledger.
+     exists in that Case File's JSON ledger, and published cases stay synced in public/data/open-questions.json.
   5. Editorial Lint: Author citations use 'Last, First' format; prose and frontmatter contain no raw 4-decimal harness
      scores or artificial decimal-year antedating strings (e.g., '-30.9 yrs').
+  6. Claim-Level Evidence Architecture (v1.0): Validates public/claims/*.json schemas, acyclic inferential DAG,
+     chronological precision bounds, SHA-256 content/evidence fingerprints, and dynamic review staleness.
 
 What this script DOES NOT verify (requires human philological review):
   - Historical accuracy of diplomatic transcriptions against page ink, semantic interpretation, or completeness of prior art.
@@ -28,14 +30,21 @@ import sys
 from pathlib import Path
 from typing import Any
 
+SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+
+import validate_claims  # noqa: E402
+
 try:
     import yaml  # type: ignore
 except ImportError:
     yaml = None
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = SCRIPTS_DIR.parent
 CASES_DIR = ROOT / "src" / "content" / "cases"
 LEDGERS_DIR = ROOT / "public" / "ledgers"
+CLAIMS_DIR = ROOT / "public" / "claims"
 PUBLIC_DIR = ROOT / "public"
 
 VALID_RECORD_TYPES = {"attestation", "contextual_evidence", "hypothesis", "rejected_lead"}
@@ -63,9 +72,9 @@ def extract_frontmatter_fallback(fm_text: str) -> dict[str, Any]:
     return out
 
 
-def check_workspace_leaks() -> list[str]:
+def check_workspace_leaks(root_dir: Path = ROOT) -> list[str]:
     errors: list[str] = []
-    for folder in (ROOT / "src", ROOT / "public", ROOT / "research-system"):
+    for folder in (root_dir / "src", root_dir / "public", root_dir / "research-system"):
         if not folder.exists():
             continue
         for p in folder.rglob("*"):
@@ -75,11 +84,11 @@ def check_workspace_leaks() -> list[str]:
                 txt = p.read_text(encoding="utf-8", errors="ignore")
                 m = WORKSPACE_LEAK_RE.search(txt)
                 if m:
-                    errors.append(f"Workspace identifier/URL leak '{m.group(0)}' found in {p.relative_to(ROOT)}")
+                    errors.append(f"Workspace identifier/URL leak '{m.group(0)}' found in {p.relative_to(root_dir)}")
     return errors
 
 
-def validate_ledger(ledger_path: Path) -> tuple[set[str], int, list[str]]:
+def validate_ledger(ledger_path: Path, public_dir: Path = PUBLIC_DIR) -> tuple[set[str], int, list[str]]:
     errors: list[str] = []
     hosted_count = 0
     try:
@@ -126,7 +135,7 @@ def validate_ledger(ledger_path: Path) -> tuple[set[str], int, list[str]]:
         hosted = scan.get("hosted_path")
         pub_yr = c.get("publication_year")
         if hosted:
-            disk_path = PUBLIC_DIR / str(hosted).lstrip("/")
+            disk_path = public_dir / str(hosted).lstrip("/")
             if not disk_path.exists():
                 errors.append(f"{ledger_path.name} [{cid}]: Missing hosted scan file {hosted}")
             else:
@@ -142,7 +151,11 @@ def validate_ledger(ledger_path: Path) -> tuple[set[str], int, list[str]]:
     return seen_ids, hosted_count, errors
 
 
-def validate_case_file(md_path: Path, ledger_map: dict[str, set[str]]) -> list[str]:
+def validate_case_file(
+    md_path: Path,
+    ledger_map: dict[str, set[str]],
+    open_targets_by_id: dict[str, dict[str, Any]] | None = None,
+) -> list[str]:
     errors: list[str] = []
     raw = md_path.read_text(encoding="utf-8")
     if not raw.startswith("---"):
@@ -164,6 +177,15 @@ def validate_case_file(md_path: Path, ledger_map: dict[str, set[str]]) -> list[s
     if ledger_slug not in ledger_map:
         errors.append(f"{md_path.name}: ledgerSlug {ledger_slug!r} has no matching public/ledgers/{ledger_slug}.json")
         return errors
+
+    target_id = str(fm.get("targetId") or "")
+    if open_targets_by_id is not None and target_id in open_targets_by_id:
+        tgt = open_targets_by_id[target_id]
+        if tgt.get("status") != "published_case" or tgt.get("case_slug") != md_path.stem:
+            errors.append(
+                f"{md_path.name}: open-questions.json target '{target_id}' must have status='published_case' and case_slug={md_path.stem!r} "
+                f"(got status={tgt.get('status')!r}, case_slug={tgt.get('case_slug')!r})"
+            )
 
     valid_ids = ledger_map[ledger_slug]
     author_cit = str(fm.get("authorCitation") or "")
@@ -187,7 +209,7 @@ def validate_case_file(md_path: Path, ledger_map: dict[str, set[str]]) -> list[s
 
 def main() -> int:
     all_errors: list[str] = []
-    all_errors.extend(check_workspace_leaks())
+    all_errors.extend(check_workspace_leaks(ROOT))
 
     ledger_map: dict[str, set[str]] = {}
     ledger_files = sorted(LEDGERS_DIR.glob("*.json"))
@@ -196,16 +218,37 @@ def main() -> int:
 
     total_hosted = 0
     for lf in ledger_files:
-        ids, h_cnt, errs = validate_ledger(lf)
+        ids, h_cnt, errs = validate_ledger(lf, PUBLIC_DIR)
         ledger_map[lf.stem] = ids
         total_hosted += h_cnt
         all_errors.extend(errs)
+
+    open_targets_by_id: dict[str, dict[str, Any]] | None = None
+    open_q_path = PUBLIC_DIR / "data" / "open-questions.json"
+    if open_q_path.exists():
+        try:
+            oq_data = json.loads(open_q_path.read_text(encoding="utf-8"))
+            if isinstance(oq_data.get("targets"), list):
+                open_targets_by_id = {str(t.get("id") or ""): t for t in oq_data["targets"] if isinstance(t, dict)}
+        except Exception as exc:
+            all_errors.append(f"open-questions.json: Invalid JSON: {exc}")
 
     case_files = sorted(CASES_DIR.glob("*.md"))
     if not case_files:
         all_errors.append("No Case File Markdown files found in src/content/cases/")
     for cf in case_files:
-        all_errors.extend(validate_case_file(cf, ledger_map))
+        all_errors.extend(validate_case_file(cf, ledger_map, open_targets_by_id))
+
+    claim_files = sorted(CLAIMS_DIR.glob("*.json")) if CLAIMS_DIR.exists() else []
+    allow_empty_claims = len(case_files) < 18 and len(claim_files) == 0
+    claim_res = validate_claims.validate_claims(
+        root_dir=ROOT,
+        allow_empty=allow_empty_claims,
+        require_all_cases=(len(case_files) >= 18),
+    )
+    if not claim_res["ok"]:
+        for ce in claim_res["errors"]:
+            all_errors.append(f"[claims] {ce}")
 
     if all_errors:
         print(f"VALIDATION FAILED with {len(all_errors)} error(s):", file=sys.stderr)
@@ -214,8 +257,10 @@ def main() -> int:
         return 1
 
     total_cits = sum(len(v) for v in ledger_map.values())
+    claim_stats = claim_res.get("stats", {})
     print(
         f"STRUCTURAL_AND_SCHEMA_CHECKS_PASSED ({len(case_files)} case files, {total_cits} ledger citations, "
+        f"{claim_stats.get('totalClaims', 0)} claims across {claim_stats.get('claimLedgers', 0)} claim ledgers, "
         f"{total_hosted} pre-1931 scans verified; diplomatic transcription accuracy still requires human philological inspection)."
     )
     return 0

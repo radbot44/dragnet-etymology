@@ -1,0 +1,967 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "jinx",
+  "case_slug": "jinx",
+  "case_number": "Case 2800",
+  "target_id": "TGT-107",
+  "headword": "jinx",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise 9-claim decomposition of Case 2800 (jinx, 56 citations) enforcing Commit 072a280: refuting the pre-1901 classical 'jynx' dictionary bridge, bounding 1898 Thoroughbred filly 'Jinks, by Albert—Hoodoo' (CERT-2800-101) as a proper name, and tracing 1895 '\"Jinks Hoodoo\"' -> 1903 'jinks' -> 1906 'jinksed' -> 1907 'jinx' -> 1911 'jinxed'.",
+  "claims": [
+    {
+      "id": "CLM-2800-001",
+      "slug": "clm-2800-001",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx, n. (< classical jynx / iynx 'wryneck, spell')",
+      "case_section": "4. The <x> Breakthrough (jinx, Jan. 1, 1907), Orthographic Motivation, and National Diffusion (1907–1919)",
+      "short_label": "Refutation of the pre-1901 dictionary bridge from classical 'jynx' ('wryneck / charm or spell')",
+      "statement": "Facsimile inspection of seven major English and American dictionaries from 1693 to 1901 refutes any pre-1900 dictionary bridge from classical 'jynx', proving The Century Dictionary (1889–1890) omitted 'jynx' completely and Murray's OED1 Vol. V (1901) first entered singular 'Jynx = A charm or spell'.",
+      "rationale": "Enforcing Commit 072a280, Urquhart (1693) had only plural 'Jynges', Phillips (1706) only the wryneck bird, Bailey (1726), Webster (1828), Worcester (1860), Webster-Mahn (1864/1865), and Century (1889–1890) lacked 'jynx', and OED1 (1901) appeared thirteen years after 1888 'Jinks Hoodoo'.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'jynx = charm or spell' from English/American dictionaries before 1901.",
+        "does_not_establish": "Exclusion of secondary post-1901 scholarly association after OED1 Vol. V appeared.",
+        "remaining_uncertainty": "None across the inspected 1693–1901 dictionary editions."
+      },
+      "limitations": [
+        "Supersedes outdated claims attributing 'jynx = charm or spell' to the 1889/1895 Century Dictionary."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1693 Urquhart Rabelais hapax plural 'Jynges' ('enticements of love').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1706 Phillips & Kersey 'Jynx' = wryneck bird only.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jynx' entry in Bailey (1726).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jynx' entry in Webster (1828).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jynx' entry in Worcester (1860).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jynx' entry in Webster-Mahn (1864/1865).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1889–1890 Century Dictionary omits 'jynx' completely and defines 'Iynx' solely as a woodpecker.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 Murray OED1 Vol. V p. 646 is the first dictionary entry for singular 'Jynx = A charm or spell'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "81304c58c52d5ebd30b391a533cea708287dcdb0f46de3e1b6b8e271de49c3ef",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "81304c58c52d5ebd30b391a533cea708287dcdb0f46de3e1b6b8e271de49c3ef"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-002",
+      "slug": "clm-2800-002",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jink / high jinks vs. jinx",
+      "case_section": "2. Stage-to-Shipboard Genesis: Captain Jinks (1868) to Predicate \"Jinks Hoodoo\" (1895–1903)",
+      "short_label": "Playful bounds on Scots 'hy-jinks'/'High Jinks' and 1848–1905 negative slang/cant sweep",
+      "statement": "Scots 'jink' and 'hy-jinks'/'High Jinks' (1718–1815) carried strictly playful/evasive senses, and Bartlett (1848), Matsell (1859), and Farmer & Henley (1905) contain zero 'bad-luck / curse' entries for 'jink(s)' or 'jinx'.",
+      "rationale": "Ramsay (1718), Jamieson (1808), and Scott (1815) establish jovial tavern-frolic semantics while negative sweeps of three major 1848–1905 cant/slang lexicons rule out pre-1895 British or underworld curse usage.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of any 'bad-luck' sense across surveyed 1718–1905 Scots, cant, and slang works.",
+        "does_not_establish": "Absence of proper American stage/turf names (1868–1898).",
+        "remaining_uncertainty": "None within the inspected editions."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jinks'/'jinx' in Bartlett (1848).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'jinks'/'jinx' in Matsell's Vocabulum (1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer & Henley (1905) records only playful Scots 'Jink'/'High-Jinks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1718 Ramsay playful 'Hy-jinks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-310",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1808 Jamieson 'HY-JINKS'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-311",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1815 Scott Guy Mannering 'High Jinks'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Bartlett (1848), Matsell (1859), Farmer & Henley (1905), plus Ramsay (1718), Jamieson (1808), and Scott (1815)",
+        "search_date": "2026-11-26",
+        "search_period": "1718-1905",
+        "query_terms": [
+          "jinx",
+          "jinks",
+          "jink",
+          "hy-jinks",
+          "high jinks"
+        ],
+        "search_method": "Direct alphabetical facsimile inspection of H- and J- ranges and Scots literary baselines.",
+        "corpus_coverage": "3 complete slang/Americanism dictionaries and 3 Scots baseline works",
+        "known_limitations": [
+          "1905 London dictionaries lagged 1903–1904 California sporting newsprint."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "ff96f33bb46fd36681d67e05e29ca1334791dc337f9e297bdcd42dd59956b3ae",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "ff96f33bb46fd36681d67e05e29ca1334791dc337f9e297bdcd42dd59956b3ae"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-003",
+      "slug": "clm-2800-003",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "Captain Jinks (1869 character) & Jinks (1898 Thoroughbred filly out of Hoodoo)",
+      "case_section": "2. Stage-to-Shipboard Genesis: Captain Jinks (1868) to Predicate \"Jinks Hoodoo\" (1895–1903)",
+      "short_label": "Onomastic precursors: 1869 'Captain Jinks' song persona and 1898 racehorse 'Jinks, by Albert—Hoodoo'",
+      "statement": "Comic song 'Captain Jinks' ('the curse of the army', 1868–1869) and the 1 February 1898 Daily Racing Form Thoroughbred filly 'Jinks, b. f, 2, by Albert—Hoodoo' document proper character and equine naming links rather than generic common-noun attestations.",
+      "rationale": "Sheet music/Clipper/songster scans (CERT-2800-201, 202, 315) and the 1898 racing entry (CERT-2800-101, bearing a 'PHONOLOGICAL-HYPOTHESIS' scan banner) confirm proper-name status—preventing Belmont's filly 'Jinks' (named from dam 'Hoodoo') from being miscounted as a common noun.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1868–1869 stage celebrity of 'Captain Jinks' and 1898 racetrack circulation of proper filly name 'Jinks' ex 'Hoodoo'.",
+        "does_not_establish": "Generic common-noun usage of 'jinks' or 'jinx' in 1868–1869 or 1898.",
+        "remaining_uncertainty": "Extent of racetrack punning on the filly 'Jinks' prior to October 1903."
+      },
+      "limitations": [
+        "CERT-2800-101 ('Jinks, b. f, 2, by Albert—Hoodoo') is strictly a proper Thoroughbred racehorse name, never a common-noun attestation."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "c. 1869 Captain Jinks sheet music ('Oh that's the curse of the army').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 February 1869 New York Clipper 'Captain Jinks' persona.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 February 1898 Daily Racing Form proper filly name 'Jinks, b. f, 2, by Albert—Hoodoo'.",
+          "witness_note": "Proper racehorse name (scan banner 'PHONOLOGICAL-HYPOTHESIS'); not a common noun."
+        },
+        {
+          "ref": "CERT-2800-315",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1868 De Witt Songster showing Captain Jinks alone was a dandy persona rather than an occult curse, paired with 1855 surname 'Aristides Jinx'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b3c2c64ed20ee26c925fc0adfb1d33780ee3ed937b8be26aedccd854203b2b73",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "b3c2c64ed20ee26c925fc0adfb1d33780ee3ed937b8be26aedccd854203b2b73"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-004",
+      "slug": "clm-2800-004",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "Jinks Hoodoo (appellative predicate noun phrase)",
+      "case_section": "2. Stage-to-Shipboard Genesis: Captain Jinks (1868) to Predicate \"Jinks Hoodoo\" (1895–1903)",
+      "short_label": "19 March 1895 Hawaiian Gazette and 29 August 1903 Sporting Life appellative 'Jinks Hoodoo' bridge",
+      "statement": "Generalizing Frank Daniels's 1887–1888 Little Puck stage character 'Jinks Hoodoo, Esq., a curse to everybody', The Hawaiian Gazette (19 March 1895) attests predicate 'a genuine \"Jinks Hoodoo\"' for a bad-luck Jonah, continuing into 29 August 1903 baseball prose.",
+      "rationale": "Scan-verified witnesses in Honolulu (CERT-2800-203) and Philadelphia's Sporting Life ('\"Mr. Jinks Hoodoo\" stunts', CERT-2800-102), alongside Douglas G. Wilson's 1888 Little Puck discovery (CERT-2800-313), capture the two-word stage-to-sporting bridge.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Appellative two-word predicate usage of '\"Jinks Hoodoo\"' from 19 March 1895 to 29 August 1903.",
+        "does_not_establish": "Elliptical single-word 'jinks' (1903) or '<x>' 'jinx' (1907).",
+        "remaining_uncertainty": "Whether mainland theatrical/sporting columns printed 'a Jinks Hoodoo' between 1888 and March 1895."
+      },
+      "limitations": [
+        "Attests two-word capitalized '\"Jinks Hoodoo\"' rather than simplex 'jinks'/'jinx'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "19 March 1895 Hawaiian Gazette p. 2 ('Mr. Ficke was a genuine \"Jinks Hoodoo\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 August 1903 Sporting Life ('working the \"Mr. Jinks Hoodoo\" stunts').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-313",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Credits Wilson's 1888 Little Puck discovery and HDAS/Green baselines.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-003",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Fuses stage 'Jinks' with American 'hoodoo'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a06afec1becd02f0bd51f03058c4fbd3807770bfa4ea039494847623653be0eb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "a06afec1becd02f0bd51f03058c4fbd3807770bfa4ea039494847623653be0eb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-005",
+      "slug": "clm-2800-005",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx, n. (spelled jinks)",
+      "case_section": "3. California Turf & Pacific Coast League Ellipsis: Detached jinks (1903–1904) and Verbal jinksed (1906)",
+      "short_label": "26 October 1903 Los Angeles Times turf 'put the jinks on' antedating vs. OED (29 July 1907)",
+      "statement": "The Los Angeles Times attests detached lowercase 'jinks' on the racetrack on 26 October 1903 ('put the jinks on this layout') and in Pacific Coast League baseball in July–August 1904, advancing OED's 29 July 1907 baseline by 3 years, 9 months, and 3 days.",
+      "rationale": "Three masthead-verified Los Angeles Times scans (CERT-2800-103..105) prove elliptical simplex 'jinks' emerged in Southern California turf and diamond slang nearly four years before OED's 1907 '<x>' baseline.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Simplex lowercase common-noun 'jinks' on 26 October 1903 (turf) and 12 July 1904 (baseball).",
+        "does_not_establish": "Word-final '<x>' spelling ('jinx') or a spring 1904 print date for CERT-2800-104's retrospective 'last spring' clause.",
+        "remaining_uncertainty": "Possible earlier 1903 California racing-sheet occurrences."
+      },
+      "limitations": [
+        "Enforces 12 July 1904 print date on CERT-2800-104 over internal 'last spring' reference, and ignores broken 'Mar 1912' jinx.md frontmatter."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "26 October 1903 Los Angeles Times turf 'put the jinks on this layout'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 July 1904 Los Angeles Times PCL baseball 'put a \"jinks\" on'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "11 August 1904 Los Angeles Times 'put the jinks on Donlin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Ellipsis of 1895–1903 'Jinks [Hoodoo]'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jinx, n. ('person or thing that brings bad luck')",
+        "edition_or_revision": "OED Online entry (29 July 1907 baseline; consulted November 2026)",
+        "baseline_date": "1907-07-29",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jinx_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2800-103",
+        "attested_date": "1903-10-26",
+        "attested_date_precision": "day",
+        "computed_advance_display": "3 years, 9 months, and 3 days (26 October 1903 vs. 29 July 1907)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f6ac280205c55c7783546e390a40dc04b9d3a1dda26e7d95ace632064a9e35ed",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "f6ac280205c55c7783546e390a40dc04b9d3a1dda26e7d95ace632064a9e35ed"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2800-005-01",
+          "claim_id": "CLM-2800-005",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2800-103",
+            "CERT-2800-104",
+            "CERT-2800-105",
+            "CLM-2800-004"
+          ],
+          "findings": "Directly inspected CERT-2800-103.webp (Oct. 26, 1903 Los Angeles Times: 'almost put the jinks on the second running race at Agricultural Park yesterday'), confirming detached lowercase common-noun turf usage 3 years, 9 months, and 3 days ahead of OED's July 29, 1907 baseline, proper 'earlier_spelling' classification (<jinks> vs. <jinx>), and rejection of the broken 'Mar 1912' frontmatter date.",
+          "objections": [],
+          "material_fingerprint_at_review": "f6ac280205c55c7783546e390a40dc04b9d3a1dda26e7d95ace632064a9e35ed",
+          "evidence_fingerprints_at_review": {
+            "CERT-2800-103": "2be84d7645cffbe2a3bff009b79b7d71e305177a741bd5c67b9bfcec7a85a62b",
+            "CERT-2800-104": "f0e20d14e19d5852a19606e1d865e123d5c327a7c390962bbd0c76390c9c6a13",
+            "CERT-2800-105": "2b7f067ffb2cd4ad71084e8416c9888adb8212a1d06cf06d3b4fcf52d6fbaa2f",
+            "CLM-2800-004": "a06afec1becd02f0bd51f03058c4fbd3807770bfa4ea039494847623653be0eb"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-006",
+      "slug": "clm-2800-006",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx, v. (jinksed, jinxed, jinxing)",
+      "case_section": "3. California Turf & Pacific Coast League Ellipsis: Detached jinks (1903–1904) and Verbal jinksed (1906)",
+      "short_label": "29 October 1906 Los Angeles Times 'jinksed' verbal antedating vs. OED (1911) and 1911–1912 '<x>' inflections",
+      "statement": "The Los Angeles Times (29 October 1906) attests participial '\"jinksed\"', advancing OED's 1911 verbal baseline by 5 calendar years ahead of May 1911 '<x>' 'jinxed!' (The Cavalier) and 15 August 1912 'jinxing'.",
+      "rationale": "Scan verification traces verbal conversion from 1906 PCL baseball (CERT-2800-204) and Sangree's May 1910 SEP story 'The Jinks' (207) to May 1911 Cavalier 'jinxed!' (208), Sangree's Sept. 1911 book respelling 'jinxed' (211, same story as 207), and August 1912 'jinxing' (213).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Verbal conversion in '<ks>' spelling on 29 October 1906 and '<x>' verbal inflections in 1911–1912.",
+        "does_not_establish": "Two independent stories for Sangree's 1910 magazine and 1911 book printings (counted as 1 text).",
+        "remaining_uncertainty": "Exact newsstand day of the May 1911 Cavalier issue."
+      },
+      "limitations": [
+        "OED's 1911 verbal baseline is year-precise (5 calendar years); CERT-2800-207 and 211 represent 1 authorial story across two editions."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 October 1906 Los Angeles Times 'Manager Berry was \"jinksed\" yesterday'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 May 1910 Saturday Evening Post 'The Jinks' ('jinksed').",
+          "witness_note": "Magazine serialization of CERT-2800-211."
+        },
+        {
+          "ref": "CERT-2800-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1911 Cavalier '<x>' 'jinxed!'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sept. 1911 hardcover The Jinx regularizing Sangree's 1910 'jinksed' to 'jinxed'.",
+          "witness_note": "Same story as CERT-2800-207."
+        },
+        {
+          "ref": "CERT-2800-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 August 1912 St. Louis Post-Dispatch 'jinxing'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Zero-derived from 1903–1904 California noun 'jinks'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jinx, v. ('to bring bad luck to')",
+        "edition_or_revision": "OED Online entry (1911 baseline; consulted November 2026)",
+        "baseline_date": "1911",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jinx_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2800-204",
+        "attested_date": "1906-10-29",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 calendar years (29 October 1906 vs. 1911)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "64773ccc24d4e8ca9c191d701b16df72aabcc4734ba5157befb0fcfd9cf30c5b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "64773ccc24d4e8ca9c191d701b16df72aabcc4734ba5157befb0fcfd9cf30c5b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-007",
+      "slug": "clm-2800-007",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx, n. (canonical <x> spelling)",
+      "case_section": "4. The <x> Breakthrough (jinx, Jan. 1, 1907), Orthographic Motivation, and National Diffusion (1907–1919)",
+      "short_label": "1 January 1907 San Francisco Call '<x>' 'jinx' antedating vs. OED (29 July 1907) and 'High Jinks' disambiguation",
+      "statement": "The San Francisco Call (1 January 1907) attests '<x>'-spelled 'put the jinx on me', advancing OED's 29 July 1907 baseline by 6 months and 28 days, motivated by expressive '-x' slang orthography and visual contrast with San Francisco Bohemian Club 'High/Low Jinks'.",
+      "rationale": "Scan verification of 1 January 1907 SF Call (CERT-2800-106) and 18 August 1907 LA Herald (107), paired with San Francisco Bohemian Club 'Low Jinks' (1908, CERT-2800-205) and Boston American's 13 August 1909 'high jinks / Double Jinx' contrast (206), documents the California graphic shift.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Canonical '<x>' orthography 'jinx' on 1 January 1907 and 1908–1909 graphic contrast with festive '<Jinks>'.",
+        "does_not_establish": "A 1906 print date for the unnamed San Francisco waterfront patronage appointee's retrospective remark ('I stood with Pardee. That put the jinx on me.') in CERT-2800-106.",
+        "remaining_uncertainty": "Relative weight of spontaneous slang '-x' vs. conscious disambiguation on the SF Call copy desk."
+      },
+      "limitations": [
+        "Enforces 1 January 1907 print date over 'said recently' oral framing."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 January 1907 San Francisco Call p. 16 ('trying to put the jinx on me').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "18 August 1907 Los Angeles Herald '\"Lemonade\" a Jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 August 1909 Boston American contrasting '<x>' 'Double Jinx' with '<ks>' 'high jinks / low-down jinks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-205",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Feb. 1908 San Francisco Bohemian Club treatise confirming local festive 'High/Low Jinks' homograph.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Graphic '-ks -> -x' respelling of 1903–1904 'put the jinks on'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "jinx, n. ('person or thing that brings bad luck')",
+        "edition_or_revision": "OED Online entry (29 July 1907 San Jose Evening News baseline; consulted November 2026)",
+        "baseline_date": "1907-07-29",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/jinx_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2800-106",
+        "attested_date": "1907-01-01",
+        "attested_date_precision": "day",
+        "computed_advance_display": "6 months and 28 days (1 January 1907 vs. 29 July 1907)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e0145d5b04f72b2ca27af719f69cfb71c4ff67514f8f4dd9a971d4ad1213d21d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "46f4b3fa6a85a8f609241709a60ab2f8c17f1c1b0636681e5e42492cb2580bf7"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected speaker attribution in evidence_boundary to the unnamed San Francisco waterfront patronage appointee ('I stood with Pardee') per CERT-2800-106.webp.",
+          "content_fingerprint": "e0145d5b04f72b2ca27af719f69cfb71c4ff67514f8f4dd9a971d4ad1213d21d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-008",
+      "slug": "clm-2800-008",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx, n. & v. (stage-to-sporting synthesis & 1910–1919 national/vaudeville diffusion)",
+      "case_section": "5. Summary Chronology of Verified Word-Family Milestones (1869–1919)",
+      "short_label": "Stage-to-turf-to-baseball derivation synthesis and 1910–1919 MLB, Variety vaudeville, and WWI diffusion",
+      "statement": "American 'jinx' arose via stage-to-sporting ellipsis ('Captain Jinks' -> 'Jinks Hoodoo' -> 'jinks' -> 'jinx') and spread nationwide via 1910 MLB spring-training coverage into 1911–1915 Variety vaudeville/ragtime and 1918–1919 WWI military/aviation prose.",
+      "rationale": "Every stage from 1869 to 1919 is attested in sequence—including nine 1910 MLB dispatches (CERT-2800-109..117), 1911–1913 baseball compounds and Mathewson's 1912 book (118, 209, 212, 215), 1911–1915 Variety/ragtime re-entry (210, 214, 216, with zero pre-1911 B. F. Keith print witnesses), and 1918–1919 'jinxes'/'\"jinx\" plane' (217, 218)—while oral 1898–1903 turf clipping remains inferred.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Sequential American stage-to-turf-to-baseball pathway and 1910–1919 national, vaudeville, and aviation diffusion.",
+        "does_not_establish": "Pre-1911 vaudeville print currency for anecdotal B. F. Keith lore or pre-publication dates for retrospective oral-season clauses.",
+        "remaining_uncertainty": "Unrecorded 1898–1903 oral transition from 'Jinks Hoodoo' to 'put the jinks on' among California bettors."
+      },
+      "limitations": [
+        "Enforces 1910–1912 print dates over retrospective seasonal clauses ('since last February' in 112; 'past summer' in 117; 'last fall' in 212), and notes CERT-2800-118 is a Grosset & Dunlap issue from May 1912 Putnam plates."
+      ],
+      "resolution_criteria": [
+        "Locate an 1898–1906 turf or baseball column explicitly linking 'put the jinks on' to 'Jinks Hoodoo'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2800-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 March 1910 NY Times PCL-to-MLB 'jinks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 March 1910 Detroit Times 'jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 April 1910 SF Call 'OLD JINX'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 June 1910 Chicago Tribune 'jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 July 1910 St. Louis Post-Dispatch pitcher 'jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "23 July 1910 Ring Lardner 'jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 October 1910 Sporting Life 'drinks : jinx : links' rhyme.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "19 October 1910 Chicago Tribune '<jinks>' -> '<JINX>' shift.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 November 1910 Billy Evans 'jinx' feature.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 August 1911 'hoodoo jinx'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "2 September 1911 Variety burlesque song '\"Jinx\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1912 Mathewson Pitching in a Pinch Ch. X (Grosset & Dunlap issue of 1912 Putnam plates).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "5 March 1912 LA Times 'jinx killer'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "5 July 1913 Variety unquoted 'jinxed the company'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "9 September 1913 Oakland Tribune 'jinx breakers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1915 sheet music Jinx Rag.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "9 August 1918 Stars and Stripes plural 'jinxes'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "16 June 1919 LA Times '\"jinx\" plane'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Excludes pre-1901 classical 'jynx' dictionary bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies 1895–1903 'Jinks Hoodoo' bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-005",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies 1903–1904 California 'jinks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2800-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies 1907 California '<x>' breakthrough.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "eb968a4d9b04f7a877172448570e4cb2df37a237539898c65f9ad93c8caa79b2",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "77d2492fa2a5dead0ca94659534f5050eca9933310009af60f0017d2e06aad17"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "eb968a4d9b04f7a877172448570e4cb2df37a237539898c65f9ad93c8caa79b2"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2800-009",
+      "slug": "clm-2800-009",
+      "case_slug": "jinx",
+      "headword": "jinx",
+      "target_lexeme": "jinx (taxonomic/surname homographs, OCR ghosts, and Trap A serial misdates)",
+      "case_section": "4. The <x> Breakthrough (jinx, Jan. 1, 1907), Orthographic Motivation, and National Diffusion (1907–1919)",
+      "short_label": "Falsification of taxonomic 'JYNX', surname homographs, 1898–1908 OCR ghosts, and 1883/1898 serial misdates",
+      "statement": "Facsimile audits isolate Linnaeus's wryneck genus 'JYNX' (1758) and 1889–1890 personal names ('Mr. Jinx', 'JINX TAYLOR') as non-curse homographs, refute 1898–1908 OCR ghosts ('incumbrance', 'Box Calf', 'June'), and resolve '1883'/'1898' Reach/Rod and Gun misdates to 1920–1921.",
+      "rationale": "Direct scan inspection eliminates taxonomic and personal-name false friends (CERT-2800-314, 316), dirty-OCR hallucinations (317, 108), and serial founding-year metadata ghosts (318).",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of all five homograph, OCR, and serial-misdate false positives.",
+        "does_not_establish": "Any pre-1907 '<x>' bad-luck attestation.",
+        "remaining_uncertainty": "None; all scans and imprints are verified in ink."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2800-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1758 Linnaeus / 1843 Yarrell taxonomic wryneck 'JYNX'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1889 'Mr. Jinx' and 1890 'JINX TAYLOR' personal names.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 1898 'incumbrance' and 1899 'Box Calf' OCR ghosts.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 25 August 1908 Daily Racing Form 'June' OCR ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2800-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1883' Reach Guide to 1920 and '1898' Rod and Gun to March 1921.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9baa01a3da56c351749bdf8a40305e5e4b2156962f7fe30fd4d5d98aa9320d83",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2800.",
+          "content_fingerprint": "9baa01a3da56c351749bdf8a40305e5e4b2156962f7fe30fd4d5d98aa9320d83"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

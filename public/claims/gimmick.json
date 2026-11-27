@@ -1,0 +1,1542 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "gimmick",
+  "case_slug": "gimmick",
+  "case_number": "Case 1100",
+  "target_id": "TGT-073",
+  "headword": "gimmick",
+  "updated_at": "2026-11-26",
+  "summary_note": "Pilot claim ledger (15 claims covering 71/71 citation records): separates the 1893 Bangor/Electrical Review reprint relationship, 1897 Boston street-railway tool inventory and eccentric come-along identification, 1914 carnival-wheel rigging antedating, 20.53M-character conjuring negative control, 1923 stage-magic antedating, 1931 CIGAM -> 1933 GIMAC anagram rebuttal, 1828–1901 dictionary hard-/g/ prescriptions, and partially supported domestic mechanical and occupational transmission hypotheses.",
+  "claims": [
+    {
+      "id": "CLM-1100-001",
+      "slug": "clm-1100-001",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (Sense 1.a)",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "1893 Electrical Review witness reprints OED3's Feb. 24, 1893 Bangor Daily News Bucksport item",
+      "statement": "Primary-scan inspection of the March 11, 1893 Electrical Review ('Dark Times in Bucksport.', p. 56, col. 2) shows the terminal credit '—Bangor, Me., News.' and verbatim Bucksport electric-plant text matching OED3's February 24, 1893 Bangor Daily News baseline ('mizzen reciprocal eccentricity gimmick'), uniting both dictionary baselines as a single Down East Maine item separated by a 15-day trade reprint interval.",
+      "rationale": "Historical dictionaries previously cited the February 24, 1893 Bangor Daily News (OED3) and the March 11, 1893 Electrical Review (HDAS and Green's Dictionary of Slang) as if they might reflect distinct early witnesses. Direct visual verification of CERT-900-101 confirms verbatim textual identity and explicit newspaper attribution to the Bangor Daily News, demonstrating zero days of independent lexical antedating over OED3.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Textual and provenance identity between OED3's February 24, 1893 Bangor Daily News baseline and HDAS/Green's March 11, 1893 Electrical Review reprint of the Bucksport electric-plant squib.",
+        "does_not_establish": "Any chronological advance ahead of February 24, 1893, or the literal mechanical referent of 'gimmick' prior to humorous mock-technical deployment.",
+        "remaining_uncertainty": "Physical microfilm of the February 24, 1893 Bangor Daily News (p. 5, col. 2) was not directly inspected in this workflow; its date and wording are inherited from OED3."
+      },
+      "limitations": [
+        "Original February 24, 1893 Bangor Daily News newsprint page was not directly scanned; reprint comparison relies on the scanned March 11, 1893 Electrical Review witness (CERT-900-101) paired with OED3's published quotation metadata."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Scanned March 11, 1893 Electrical Review p. 56, col. 2 witness ('Dark Times in Bucksport.') printing 'mizzen reciprocal eccentricity gimmick' with explicit credit '—Bangor, Me., News.'",
+          "witness_note": "Duplicate reprint witness of OED3's February 24, 1893 Bangor Daily News Bucksport electric-light item."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d4be0b447bfb3a29ea5ff0fdc1654ae23076e8c59b2bea5a08307a5a14722484",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "aa0cd0d5db98f931c7f6c80fa5bb0bc78458e97577ffa2f74a64a009ce9a3da5"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected March 11, 1893 Electrical Review headline ('Dark Times in Bucksport.') and page/column coordinates (p. 56, col. 2) per scan verification.",
+          "content_fingerprint": "d4be0b447bfb3a29ea5ff0fdc1654ae23076e8c59b2bea5a08307a5a14722484"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Historical Dictionary of American Slang (HDAS) & Green's Dictionary of Slang",
+          "publication": "s.v. gimmick, n. (citing 11 March 1893 Electrical Review); cf. OED3 s.v. gimmick, n. (citing 24 February 1893 Bangor Daily News)",
+          "date": "2024",
+          "url_or_ref": "https://www.oed.com/dictionary/gimmick_n",
+          "exact_scope": "Recognizes the underlying 1893 Bucksport 'mizzen reciprocal eccentricity gimmick' quotation as the earliest known print witness of gimmick, n., though prior dictionaries had not linked the March 11 reprint credit directly to the February 24 Bangor original."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1100-002",
+      "slug": "clm-1100-002",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "dewflicker (mock-machinery rhetorical template)",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "Bill Nye's 1884 'Saw-Mill Mechanics' supplies the mock-technical template without 'gimmick'",
+      "statement": "Edgar Wilson ('Bill') Nye's 1884 Baled Hay sketch 'Saw-Mill Mechanics' ('eccentric... dewflicker') supplies the American mock-engineering tall-tale template echoed by the 1893 Bucksport engine squib while containing zero tokens of 'gimmick'.",
+      "rationale": "Comparing Nye's 1884 burlesque machinery breakdown (CERT-1100-109) with the 1893 Bucksport electric-plant squib (CERT-900-101) shows the same pseudo-nautical and mechanical cadences ('eccentric', 'dewflicker' vs. 'mizzen reciprocal eccentricity gimmick'), confirming that the 1893 Maine writer inserted an emerging vernacular shop noun into an established comic placeholder genre.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-existing 1884 American comic-journalism framing for pseudo-technical machine-breakdown cascades without 'gimmick'.",
+        "does_not_establish": "When or where 'gimmick' first entered spoken New England workshop usage.",
+        "remaining_uncertainty": "Intermediate 1884–1892 Maine or New England newspaper humor exchanges imitating Nye may preserve still-unlocated transitional placeholders."
+      },
+      "limitations": [
+        "Illustrates literary genre continuity rather than direct lexical attestation of 'gimmick'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1100-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies Nye's 1884 'Saw-Mill Mechanics' mock-machinery cascade using 'dewflicker' with zero occurrences of 'gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-101",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Exhibits the downstream 1893 Bucksport mock-technical cadence ('mizzen reciprocal eccentricity gimmick').",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-001",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Contextualizes the 1893 Bucksport baseline item within nineteenth-century American tall-tale engineering humor.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7a493bd4e342a609d436188d8be99f3a4345a4516b8a1bec5ddf9dc8599dd9b6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "76c46f6c9d6052266d610fdc79d13714f271a72a3eb1d86c65b808bbc1e5b168"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "7a493bd4e342a609d436188d8be99f3a4345a4516b8a1bec5ddf9dc8599dd9b6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-003",
+      "slug": "clm-1100-003",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. / gimmicks, pl.",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "Sept. 30, 1897 Boston West End Street Railway tool inventory attests 'Gimmick' and plural 'Gimmicks'",
+      "statement": "Volume 4 of the Inventory of Machinery, Tools, Furniture, Fixtures, Horses, Harness and Miscellaneous Equipment of the West End St. Ry. Co. Sept. 30, 1897 (pp. 53, 61, 62, 64) records four unquoted overhead-line tool entries across Central Power Station Line Construction Department and Emergency Districts #4, #5, and #6 ('1 Special Gimmick ( Comealong)', '2 Gimmicks', '2 Gimmicks', '1 Wire Gimmick'), supplying the earliest non-humorous industrial hardware attestations of 'gimmick' as one corporate appraisal witness and advancing Green's Dictionary of Slang baseline for plural 'gimmicks' (May 1917) by 19 years and 8 months.",
+      "rationale": "Whereas OED3 exhibited a 13-year gap between the humorous 1893 Bucksport item and a July 26, 1906 rural Connecticut newspaper joke (CERT-900-106), the four September 30, 1897 Boston transit-audit entries across Central Power Station (p. 53) and Emergency Districts #4, #5, and #6 (pp. 61, 62, 64) prove routine, unquoted shop-floor tool usage within a single corporate property appraisal and provide the earliest known English plural 'Gimmicks' and compound 'Wire Gimmick'.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Routine, unquoted Boston street-railway hardware inventory usage of singular 'Gimmick', compound 'Wire Gimmick', and plural 'Gimmicks' on September 30, 1897.",
+        "does_not_establish": "An absolute lexical antedating ahead of the February 24, 1893 Bucksport singular baseline.",
+        "remaining_uncertainty": "Earlier unprinted New England street-railway or telegraph line-crew ledgers from 1888–1896 may record pre-1897 shop usage."
+      },
+      "limitations": [
+        "Advances the earliest recorded plural 'gimmicks' (vs. Green's May 1917 Popular Science Monthly citation) and earliest non-humorous hardware usage, while postdating OED3's February 24, 1893 singular baseline by 4 years, 7 months, and 6 days."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vol. 4, p. 53 (Central Power Station — Line Construction Department): '1 Special Gimmick ( Comealong)'.",
+          "witness_note": "Co-entry within the same Sept. 30, 1897 West End St. Ry. Co. Vol. 4 corporate property inventory (counted as 1 organizational appraisal witness across 4 line stations)."
+        },
+        {
+          "ref": "CERT-900-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vol. 4, p. 61 (Emergency Station, District #4): '2 Gimmicks' — advancing plural witness.",
+          "witness_note": "Co-entry within the same Sept. 30, 1897 West End St. Ry. Co. Vol. 4 corporate property inventory (counted as 1 organizational appraisal witness across 4 line stations)."
+        },
+        {
+          "ref": "CERT-1100-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vol. 4, p. 62 (Emergency Station, District #5): '2 Gimmicks' plus 5-volume distribution audit.",
+          "witness_note": "Co-entry within the same Sept. 30, 1897 West End St. Ry. Co. Vol. 4 corporate property inventory (counted as 1 organizational appraisal witness across 4 line stations)."
+        },
+        {
+          "ref": "CERT-900-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vol. 4, p. 64 (Emergency Station, District #6): '1 Wire Gimmick'.",
+          "witness_note": "Co-entry within the same Sept. 30, 1897 West End St. Ry. Co. Vol. 4 corporate property inventory (counted as 1 organizational appraisal witness across 4 line stations)."
+        },
+        {
+          "ref": "CERT-900-106",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "July 26, 1906 Connecticut Western News ('invent a gimick') — OED3's prior second witness in Sense 1.a.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "gimmick, n. (earliest recorded plural form 'gimmicks', May 1917 Popular Science Monthly)",
+        "edition_or_revision": "Green's Dictionary of Slang online edition (consulted November 2026)",
+        "baseline_date": "1917-05",
+        "baseline_date_precision": "month",
+        "source_url_or_ref": "https://www.oed.com/dictionary/gimmick_n",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-900-103",
+        "attested_date": "1897-09-30",
+        "attested_date_precision": "day",
+        "computed_advance_display": "19 years and 8 months (30 September 1897 vs. May 1917)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "440d3df1bdd07371ae7b9d9086e9fd9cabdce46df8384fff5392499327252179",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "941ed52fd7efa39da2fec6b276305fd629eedf308f71eac3ef9556b980d676a2"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Sept. 30, 1897 West End St. Ry. Co. Vol. 4 title, page numbers (pp. 53, 61, 62, 64), and station names, and added corporate-inventory co-witness notes.",
+          "content_fingerprint": "440d3df1bdd07371ae7b9d9086e9fd9cabdce46df8384fff5392499327252179"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-004",
+      "slug": "clm-1100-004",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. ('eccentric wire-pulling come-along clamp')",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "1897 Boston street-railway 'Gimmick' specifically denotes an eccentric 'Come-Along' wire clamp",
+      "statement": "Parenthetical glossing ('1 Special Gimmick ( Comealong)' at Central Power Station Line Construction Department, p. 53), complementary nomenclature across the 1897 Boston line-construction and emergency stations ('Gimmick(s)' at Central Power Station and Emergency Districts #4, #5, #6 vs. official 'Comealong(s)' at the remaining districts), central storeroom cataloguing ('13 Come Alongs Spec. ... $2.50' on the excerpted Vol. 5 storeroom line with zero 'Gimmick' entries in Vol. 5), and 1881–1915 electrical line-material catalogs identify the 1897 Boston 'Gimmick' specifically as a hinged eccentric-jaw wire-pulling clamp.",
+      "rationale": "Auditing all five volumes of the 1897 West End Street Railway appraisal alongside contemporaneous Western Electric and Boston Albert & J. M. Anderson overhead-trolley catalogs demonstrates that official procurement clerks wrote 'Come Alongs Spec.' in central stores while Central Power Station and Emergency Districts #4, #5, and #6 called the exact same cam/hinge-action wire grip a 'Gimmick' or 'Wire Gimmick'.",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact technical referent of 'Gimmick' in the 1897 Boston street-railway emergency kits as an eccentric-jaw 'come-along' trolley-wire tensioning clamp.",
+        "does_not_establish": "That 'come-along clamp' was the exclusive original referent of 'gimmick' across all New England workshops, given the broader placeholder usage already present in 1893 Bucksport.",
+        "remaining_uncertainty": "Whether Boston linemen coined 'gimmick' specifically for the hinged come-along clamp or narrowed a pre-existing regional shop-floor word for any small mechanical catch."
+      },
+      "limitations": [
+        "Semantic identification is proven for the 1897 Boston transit emergency kits; broader pre-1897 workshop polysemy cannot be excluded."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the explicit parenthetical equation '1 Special Gimmick ( Comealong)' at Central Power Station Line Construction Department (Vol. 4, p. 53).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Establishes complementary substation commutation between 'Gimmick(s)' (Central Power Station and Districts #4, #5, #6) and 'Comealong(s)' across the remaining stations.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vol. 5 General Storeroom control excerpting '13 Come Alongs Spec. \" 2.50 = 32.50' and zero 'Gimmick' tokens across Vol. 5, confirming 'Gimmick' was vernacular crew terminology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-103",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1881/1888 Western Electric line-tool documentation for the standard 'Come-Along' wire grip.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-104",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1892 Boston Albert & J. M. Anderson overhead trolley hardware catalog supplying West End Street Railway line tools.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-105",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "February 15, 1895 Electrical World illustration and mechanical description of an eccentric-jaw 'COME-ALONG'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-106",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "April 1, 1897 American Electrician specification of hinged-jaw 'Come-Along' wire clamps.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-107",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1915 Western Electric catalog confirming persistent official 'Come Along Clamp' nomenclature.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Depends on the four 1897 West End Street Railway Vol. 4 tool-inventory entries.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "931e1b1a69b5475f123308fee25f51f785298e367d43c5bf4c27318864e56548",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "2641279556b32dc20d69c5e7f2b3c2b801eb1c2cbf6dc1abb0f802a35a32ae8c"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Aligned Central Power Station and Emergency District #4/#5/#6 distribution and Vol. 5 storeroom excerpt count with gimmick.json and primary scans.",
+          "content_fingerprint": "931e1b1a69b5475f123308fee25f51f785298e367d43c5bf4c27318864e56548"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-005",
+      "slug": "clm-1100-005",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (trade tool and 1934 twisted-wire radio capacitor)",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "1901–1925 electrical, plumbing, and lineman shop diffusion precedes 1934 radio-capacitor usage",
+      "statement": "Trade journals and newsprint document continuous mechanical and lineman usage of 'gimmick' across electrical work (November 1901), rural hardware humor (July 1906), plumbing humor via Strickland Gillilan's poem 'A Radiator Tragedy' (February 1908, reprinted January 1910), and telephone-line construction (May 1921, February 1925), whereas the radio-serviceman sense ('twisted-wire coupling capacitor') first appears in March 1934 Belmont Radio Model 525 schematics as a late workshop descendant.",
+      "rationale": "Tracing trade-press attestations from 1901 through 1934 shows 'gimmick' generalizing from lineman clamps to any small unnamed workshop tool or fitting ('anything, such as a tool, for which the user has forgotten the right name', Telephony, Feb. 7, 1925), chronologically excluding the popular electronics legend that 1920s/1930s radio technicians coined 'gimmick' for a twisted-wire trimmer capacitor.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous 1901–1925 electrical, plumbing, and telephone-lineman currency of 'gimmick' and the 1934 schematic debut of the radio-capacitor specialization.",
+        "does_not_establish": "Direct continuity between telephone-lineman usage and carnival gambling equipment without independent midway documentation.",
+        "remaining_uncertainty": "Radio-amateur or repair-shop bulletins between 1926 and 1933 could slightly precede the March 1934 Belmont schematic for the twisted-wire capacitor sense without affecting the 1893/1897 baseline."
+      },
+      "limitations": [
+        "CERT-900-110 (March 1934 Rider's Perpetual Trouble Shooter's Manual Vol. IV) is post-1930 and verified without a hosted page scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 1901 Electrical Worker union trade-journal attestation of 'Gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 26, 1906 Connecticut Western News ('invent a gimick that will grind potato bugs up').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 16, 1908 printing of Strickland Gillilan's poem 'A Radiator Tragedy' attesting plumber's 'gimmick'.",
+          "witness_note": "Same Strickland Gillilan poem ('A Radiator Tragedy') printed Feb. 16, 1908 (CERT-900-107) and reprinted Jan. 8, 1910 in Domestic Engineering (CERT-900-108)."
+        },
+        {
+          "ref": "CERT-900-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 8, 1910 Domestic Engineering trade-journal reprint of Gillilan's 'A Radiator Tragedy' attesting 'gimmick'.",
+          "witness_note": "Same Strickland Gillilan poem ('A Radiator Tragedy') printed Feb. 16, 1908 (CERT-900-107) and reprinted Jan. 8, 1910 in Domestic Engineering (CERT-900-108)."
+        },
+        {
+          "ref": "CERT-1100-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 28, 1921 Telephony lineman attestation of 'gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 7, 1925 Telephony explicit metalinguistic definition of 'gimmick' as an unnamed workshop tool.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 1934 Rider's Perpetual Trouble Shooter's Manual Vol. IV (Belmont Model 525 schematic) labeling a twisted-wire capacitor 'GIMMICK'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Continues the industrial electrical-hardware trajectory first documented in the 1897 Boston transit inventory.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1f6221e16983c2a48ad90af9595874bd63f43081b329b81a08cc8bc7f06d6c8c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "16971d969d9f7dc320e0378f23171ea18ca3e4cad1f425d753ebc2fa5731cab8"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Added co-witness reprint disclosure uniting Feb. 1908 and Jan. 1910 printings of Strickland Gillilan's poem 'A Radiator Tragedy'.",
+          "content_fingerprint": "1f6221e16983c2a48ad90af9595874bd63f43081b329b81a08cc8bc7f06d6c8c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-006",
+      "slug": "clm-1100-006",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (Sense 1.b: concealed carnival-wheel control device)",
+      "case_section": "Carnival Rigging (1914), Stage Magic (1923), and the 1931–1933 CIGAM / GIMAC Sequel",
+      "short_label": "Jan. 10 & Mar. 21, 1914 Billboard carnival-wheel 'gimicks' / 'Gimmick' antedate OED3 Sense 1.b by 9 yrs, 7 mos, 11 days",
+      "statement": "Chicago manufacturer H. C. Evans & Co.'s display advertisement in The Billboard (March 21, 1914: 'Big Six Wheel, with \"Gimmick\" ... $40.00', co-advertised April 4, 1914 in The New York Clipper), followed by 'gimmick' and 'gimmed up' on July 4, 1914, 'a squeeze, a pinch or a gimmick' in 1922, and 'gimmix' in July 1923, advances OED3 Sense 1.b ('concealed carnival-wheel control device', August 21, 1923, Columbus Daily Telegram) by 9 years and 5 months.",
+      "rationale": "Separating the January 10, 1914 New York Clipper dinner-party practical-joke token ('the \"gimicks\" went wrong', CERT-900-203) from unambiguous carnival-wheel rigging anchors Sense 1.b cleanly to H. C. Evans & Co.'s March 21, 1914 Billboard advertisement (CERT-900-204), pushing the fairground wheel-brake sense back 9 years and 5 months ahead of OED3's August 21, 1923 Nebraska newspaper witness.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Commercial carnival-supply and outdoor-showman print currency of 'Gimmick' ('secret wheel brake or control') by March 21, 1914 in The Billboard.",
+        "does_not_establish": "Carnival-wheel sense in the January 10, 1914 New York Clipper dinner-party prank item (CERT-900-203) or use of 'gimmick' by stage magicians in 1914 (see CLM-1100-007 and CLM-1100-008).",
+        "remaining_uncertainty": "Private H. C. Evans & Co. confidential ('secret blue book') dealer catalogs printed prior to March 1914 may hold slightly earlier trade-catalog occurrences."
+      },
+      "limitations": [
+        "Bounded upstream by zero hits across approximately 1,550 issues of The Billboard, The New York Clipper, and Variety from 1905 through 1913, though undigitized confidential grift-supply price lists before 1914 were not available for inspection."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-203",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "January 10, 1914 New York Clipper (p. 5, col. 2: 'the \"gimicks\" went wrong') — theatrical dinner-party practical-joke gadget usage preceding March 1914 carnival-wheel ads.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 21, 1914 The Billboard display advertisement by H. C. Evans & Co. (Chicago) offering 'Big Six Wheel, with \"Gimmick\" ... $40.00' — earliest advancing witness for Sense 1.b.",
+          "witness_note": "Same H. C. Evans & Co. 'Big Six Wheel, with \"Gimmick\"' commercial ad copy placed in The Billboard (March 21, 1914) and The New York Clipper (April 4, 1914)."
+        },
+        {
+          "ref": "CERT-1100-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 4, 1914 The New York Clipper parallel H. C. Evans & Co. wheel-'Gimmick' advertisement.",
+          "witness_note": "Same H. C. Evans & Co. 'Big Six Wheel, with \"Gimmick\"' commercial ad copy placed in The Billboard (March 21, 1914) and The New York Clipper (April 4, 1914)."
+        },
+        {
+          "ref": "CERT-900-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 16, 1914 The Billboard midway 'gimmick' attestation.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 4, 1914 The Billboard attestation of 'gimmick' and verbal participial 'gimmed up'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 14, 1915 The Billboard carnival-concession 'gimmick' witness.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 2, 1922 Variety gloss equating carnival wheel brakes: 'a squeeze, a pinch or a gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 14, 1923 The Billboard phonetic plural spelling 'gimmix'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "gimmick, n., Sense 1.b ('device used to control a fairground prize wheel or gambling apparatus')",
+        "edition_or_revision": "OED3 entry (consulted November 2026)",
+        "baseline_date": "1923-08-21",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/gimmick_n",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-900-204",
+        "attested_date": "1914-03-21",
+        "attested_date_precision": "day",
+        "computed_advance_display": "9 years and 5 months (21 March 1914 vs. 21 August 1923)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "89442859a5dac1b6016e5d9679f1ebbcc6ce7271c9d2fbdf6501eeffcc92f490",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "7821a6ba5f5d61e7b39f7c89e20faab5baa06d2599ea52c8df70d6ba9b655630"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Re-anchored Sense 1.b carnival-wheel antedating from CERT-900-203 (Jan. 10, 1914 NY Clipper practical-joke item) to CERT-900-204 (March 21, 1914 Billboard H. C. Evans ad, 9 years and 5 months) and added co-ad witness notes.",
+          "content_fingerprint": "89442859a5dac1b6016e5d9679f1ebbcc6ce7271c9d2fbdf6501eeffcc92f490"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-007",
+      "slug": "clm-1100-007",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick / gimac (pre-December 1923 conjuring corpus absence)",
+      "case_section": "Carnival Rigging (1914), Stage Magic (1923), and the 1931–1933 CIGAM / GIMAC Sequel",
+      "short_label": "20.53M-character UK/US conjuring corpus sweep (1876–Nov. 1923) yields 0 'gimmick' or 'gimac' tokens",
+      "statement": "Full-text regex sweeping across 20.53 million OCR characters of pre-December 1923 British and American conjuring periodicals, dealer catalogs, and treatises—including the 43-work, 10,727,150-character open-access US manifest (45 tokens of 'feke', 396 of 'fake'), classic UK/US treatises (~5.0 million characters), The Magic Wand Vols. 1–12 (3.07 million characters), and seven NYPL HathiTrust runs—yields zero occurrences of 'gimmick', 'gimick', 'gimac', or 'gimmix'.",
+      "rationale": "Measuring target absences against dense positive controls for secret conjuring apparatus ('fake' and 'feke') across dealer catalogs (Martinka, Read & Covert, Leroy, Yost, Hornmann) and magic journals (Mahatma, Sphinx, Conjurers' Monthly, Magic Wand, M-U-M, Magical Bulletin) demonstrates empirically that stage magicians did not coin 'gimmick' prior to borrowing it from outdoor showmen in late 1923.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete absence of 'gimmick' and 'gimac' across 20.53 million characters of digitized pre-December 1923 British and American conjuring literature where 'fake' and 'feke' were standard.",
+        "does_not_establish": "Absolute non-existence in private unprinted magicians' letters or unlocated ephemeral trick-sheet inserts before December 1923.",
+        "remaining_uncertainty": "Surviving uncatalogued magic-shop instruction slips or private correspondence from 1920–1923 could reflect oral carnival-to-magic contact slightly ahead of December 1, 1923."
+      },
+      "limitations": [
+        "Bounded to digitized open-access magic periodicals, monographs, and HathiTrust-searchable NYPL conjuring holdings (1876–1923); private manuscript notebooks and unarchived single-sheet trick instructions lie outside corpus scope."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents exclusive 'feke'/'fake' terminology across The Sphinx and The Magic Circular alongside ~5.0M characters of standard conjuring treatises.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3.07-million-character negative sweep of London's The Magic Wand Vols. 1–12 (1910–1923) confirming 'feke' without 'gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1899 Martinka & Co. New York conjuring catalog control (388,947 chars; 0 'gimmick' tokens).",
+          "witness_note": "Part of 43-item, 10,727,150-character US conjuring manifest in gimmick.json corpus_search_summary."
+        },
+        {
+          "ref": "CERT-1100-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1900–1901 Mahatma Vol. IV monthly magic periodical control (604,294 chars; 35 'fake', 0 'gimmick').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1906–1908 Houdini's Conjurers' Monthly Magazine negative control ('fake' exclusive, 0 'gimmick').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1915 Read & Covert Chicago magic dealer catalog control ('FEKE' exclusive, 0 'gimmick').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "43 open-access US magic periodicals, dealer catalogs, and monographs (1895–1924; 10,727,150 OCR chars in gimmick.json corpus_search_summary) + Hoffmann/Maskelyne/Erdnase/Hatton & Plate (~5.0M chars) + The Magic Wand Vols. 1–12 (1910–1923; 3.07M chars) + 7 NYPL HathiTrust magic catalog/journal runs",
+        "search_date": "2026-11-25",
+        "search_period": "1876–1923-11",
+        "query_terms": [
+          "gimmick",
+          "gimmicks",
+          "gimick",
+          "gimicks",
+          "gimac",
+          "gimacs",
+          "gimmix",
+          "gimix",
+          "feke",
+          "fake"
+        ],
+        "search_method": "Case-insensitive full-text regex sweep over Internet Archive and IAPSOP OCR texts paired with positive apparatus-control counts (396 'fake', 45 'feke' in US manifest) and HathiTrust full-text search verification",
+        "corpus_coverage": "20,530,000 combined UK/US OCR characters (including the itemized 43-work, 10,727,150-character US manifest in gimmick.json)",
+        "known_limitations": [
+          "Private unprinted magicians' correspondence, single-sheet trick instructions sold in sealed envelopes, and unarchived local club bulletins prior to December 1923 are not represented in digitized corpora."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "7e508470a1e65a604b7243feeb296487eb94f3d385094f08b3fa65d32bcb7091",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "7e508470a1e65a604b7243feeb296487eb94f3d385094f08b3fa65d32bcb7091"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-008",
+      "slug": "clm-1100-008",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (conjuring sense: secret magician's apparatus)",
+      "case_section": "Carnival Rigging (1914), Stage Magic (1923), and the 1931–1933 CIGAM / GIMAC Sequel",
+      "short_label": "Dec. 1, 1923 Billboard 'Magic and Magicians' column antedates OED3's earliest conjuring quote by 8 yrs, 7 mos, 24 days",
+      "statement": "The Billboard ('Magicians I Have Seen', December 1, 1923, p. 53, col. 1) attests 'the tricks were a fine collection of \"gimmicks\" on exhibition', advancing OED3's earliest stage-conjuring quotation (July 25, 1932, Indianapolis Times) by 8 years, 7 months, and 24 days and tracing the carnival-to-conjuring crossover directly through The Billboard's shared outdoor-showmanship milieu.",
+      "rationale": "Two years before the December 1, 1923 Billboard conjuring review ('Magicians I Have Seen', p. 53, col. 1), magician and Sphinx co-founder William J. ('Bill') Hilliar—serving as The Billboard's carnival-midway editor—already used 'gimmick' in its midway sense on June 25, 1921 (CERT-1100-209), followed by rapid 1924–1925 uptake in mentalism and The Linking Ring (CERT-900-210, CERT-900-211).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Stage-conjuring print adoption of 'gimmicks' ('concealed sleight-of-hand apparatus') on December 1, 1923 in The Billboard.",
+        "does_not_establish": "Origination of the word 'gimmick' inside conjuring (contradicted by 30 prior years of mechanical and carnival print).",
+        "remaining_uncertainty": "Spoken crossover between sideshow magicians and carnival concessionaires likely occurred between 1919 and November 1923."
+      },
+      "limitations": [
+        "Baseline comparison is scoped specifically to OED3's earliest stage-magic quotation (July 25, 1932 Indianapolis Times) within Sense 1."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1, 1923 The Billboard ('Magicians I Have Seen', p. 53, col. 1) witness ('the tricks were a fine collection of \"gimmicks\" on exhibition').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-209",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "June 25, 1921 The Billboard carnival-midway attestation by magician-editor William J. ('Bill') Hilliar documenting the social bridge between midway and magic.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 29, 1924 The Billboard magic/mentalism column ('a new \"gimmick\" for crystal gazing').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 1925 The Linking Ring ('Houdini exposes \"gimmicks\"'), confirming fraternal magic journal uptake.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the pre-existing 1914–1923 Billboard carnival-rigging sense from which conjuring borrowed the term.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Bounds the conjuring debut via zero occurrences across 20.53 million characters of pre-December 1923 magic literature.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "gimmick, n. (earliest stage-conjuring quotation, 25 July 1932 Indianapolis Times)",
+        "edition_or_revision": "OED3 entry (consulted November 2026)",
+        "baseline_date": "1932-07-25",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/gimmick_n",
+        "checked_date": "2026-11-25",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-900-209",
+        "attested_date": "1923-12-01",
+        "attested_date_precision": "day",
+        "computed_advance_display": "8 years, 7 months, and 24 days (1 December 1923 vs. 25 July 1932)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "840b544f8da4e15eace6caf78b1ecec583e16232ec0b75f95b18a6899a1c3df4",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "dcba2edb4c19a8fd1cbdba4222fd3527af3a28b3c64ea8e8d1e97892a64f5f62"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Dec. 1, 1923 Billboard conjuring column title ('Magicians I Have Seen'), page/column (p. 53, col. 1), and verbatim quotation per CERT-900-209.",
+          "content_fingerprint": "840b544f8da4e15eace6caf78b1ecec583e16232ec0b75f95b18a6899a1c3df4"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-009",
+      "slug": "clm-1100-009",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimac (secondary anagram of magic)",
+      "case_section": "Carnival Rigging (1914), Stage Magic (1923), and the 1931–1933 CIGAM / GIMAC Sequel",
+      "short_label": "Walter A. Schwartz's 1931 CIGAM -> 1933 GIMAC booklets refute the 'gimac < magic' anagram origin story",
+      "statement": "Primary bibliographic evidence refutes the folk etymology deriving 'gimmick' as an anagram of 'magic' ('gimac'): Connecticut magician Walter A. Schwartz first published CIGAM ('MAGIC' backward) in 1931 while spelling 'GIMMICKS' inside, then titled his 1933 sequel GIMAC while heading Trick #1 'A NEW GIMMICK', three years before Maurice H. Weseen's November 1936 Words article inverted the sequence into an origin story—forty years after 1893 'gimmick'.",
+      "rationale": "Chronology alone excludes a conjuring origin (1893 mechanical -> 1914 carnival -> Dec. 1923 conjuring), and Schwartz's 1931–1933 booklet pair pinpoints the exact literary artifact that inspired the secondary 'gimac' spelling in late-1930s conjuring prose (such as Theo Annemann's May 1939 The Jinx).",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "That 'GIMAC' (1933) was a deliberate secondary magic-booklet title anagram modeled on pre-existing 'gimmick' (1893), rather than its etymon.",
+        "does_not_establish": "The ultimate nineteenth-century workshop derivation of 'gimmick' (evaluated separately in CLM-1100-011).",
+        "remaining_uncertainty": "None regarding the chronological priority of 'gimmick' (1893) over 'GIMAC' (1933)."
+      },
+      "limitations": [
+        "Post-1930 conjuring booklets and journals (1931–1939) are verified via bibliographic/text records without hosted page scans under the pre-1931 rights policy.",
+        "CERT-900-212 and CERT-1100-306 document the same 1933 Walter A. Schwartz GIMAC sequel (initial text record plus upgraded Phase-2 CIGAM/GIMAC bibliographic comparison) and are treated as a single underlying witness."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1100-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Walter A. Schwartz's 1931 booklet CIGAM ('MAGIC' reversed) using standard plural 'GIMMICKS' internally.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Schwartz's 1933 sequel GIMAC opening Trick #1 'A NEW GIMMICK'.",
+          "witness_note": "Co-witness with upgraded Phase-2 bibliographic record CERT-1100-306."
+        },
+        {
+          "ref": "CERT-1100-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Phase-2 comparative verification of Schwartz's 1931 CIGAM and 1933 GIMAC booklets.",
+          "witness_note": "Upgrades CERT-900-212 on the same 1933 publication."
+        },
+        {
+          "ref": "CERT-1100-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1936 American Speech abstract of Maurice H. Weseen's November 1936 Words claim first publicizing the 'gimac < magic' folk etymology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-213",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "May 1939 The Jinx p. 412 ('gimac'), illustrating late-1930s magicians' adoption of Schwartz's playful spelling.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-212",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "November 19, 1932 The Billboard Broadway review control ('gimmick' in mainstream showbiz prior to 1933 GIMAC).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-213",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "December 17, 1932 The Billboard magic column by Robert C. Anderson spelling 'gimick' prior to 1933 GIMAC.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes 1893 mechanical print usage forty years before 1933 GIMAC.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-007",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Confirms zero 'gimac' or 'gimmick' tokens across 20.53M characters of pre-1923 magic literature.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-008",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Documents that magicians borrowed 'gimmicks' in standard '-ick' spelling in December 1923, ten years before 1933 GIMAC.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1778fa46ed18f670ae40d694177dfa0ec6134a979f12f0941ca2720e0f8b7982",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "9e7aa052ff4495969b4a4ce29022e10a516a604df73ea7b4588ebb9f6ac48fea"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "1778fa46ed18f670ae40d694177dfa0ec6134a979f12f0941ca2720e0f8b7982"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1100-009-01",
+          "claim_id": "CLM-1100-009",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1100-211",
+            "CERT-900-212",
+            "CERT-1100-306",
+            "CERT-1100-214",
+            "CERT-900-213",
+            "CERT-1100-212",
+            "CERT-1100-213",
+            "CLM-1100-001",
+            "CLM-1100-007",
+            "CLM-1100-008"
+          ],
+          "findings": "Substantively upheld: bibliographic sequence of Walter A. Schwartz's 1931 CIGAM ('GIMMICKS' inside) -> 1933 GIMAC ('A NEW GIMMICK') decisively refutes Weseen's 1936 anagram folk etymology, and CERT-900-212 / CERT-1100-306 are explicitly collapsed to 1 witness.",
+          "objections": [],
+          "material_fingerprint_at_review": "1778fa46ed18f670ae40d694177dfa0ec6134a979f12f0941ca2720e0f8b7982",
+          "evidence_fingerprints_at_review": {
+            "CERT-1100-211": "a01e1994cc3b630caeb51a2e0c7f4bf76ed360619b83a572364a235e86267416",
+            "CERT-1100-212": "ca87feccbf586e841adaf7162268568c1bd4d34b4d9ec36214f1a6dfe6a93c49",
+            "CERT-1100-213": "cd2772a26064b55f06c4351e8b9106fdcbb97271442d4673df7fd39848926b6e",
+            "CERT-1100-214": "4b53ec4259bf2786a9f7b60ef2426b0e8700bb589e422e7af0e1938b1e2f8d6e",
+            "CERT-1100-306": "983aa2d9651cbb71615e21f95865306d4cc48076d74ed525df54a119c641eafd",
+            "CERT-900-212": "c9914d5d4009e7a4a4400cc35ecc533eff3f8fe22c0d1a8a0cc47fcb23facb38",
+            "CERT-900-213": "67e1a785cbd150cf48584c24380efcd2618062322d87e419cb2c837bfb62f685",
+            "CLM-1100-001": "d4be0b447bfb3a29ea5ff0fdc1654ae23076e8c59b2bea5a08307a5a14722484",
+            "CLM-1100-007": "7e508470a1e65a604b7243feeb296487eb94f3d385094f08b3fa65d32bcb7091",
+            "CLM-1100-008": "840b544f8da4e15eace6caf78b1ecec583e16232ec0b75f95b18a6899a1c3df4"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-010",
+      "slug": "clm-1100-010",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmal / gimmer (nineteenth-century hard-/g/ orthoepy)",
+      "case_section": "Evaluating the Workshop Pronunciation & Origin Hypothesis",
+      "short_label": "1828–1901 survey of 14 dictionary editions documents Merriam-Webster hard /g/ on 'gimmal' and 'gimmer'",
+      "statement": "A systematic survey of 14 major British and American dictionary editions from 1828 to 1901 (orthoepic_dictionary_survey_1828_1901) demonstrates that Noah Webster (1828) and the entire nineteenth-century Springfield Merriam-Webster lineage through Webster's International Dictionary (1890), along with the Imperial Dictionary (1882) and Funk & Wagnalls's Standard Dictionary (1893), explicitly prescribed hard velar /g/ ('Ḡĭm\\'mal', 'Ḡĭm\\'mer') on the mechanical 'hinge/interlocking ring' word family—contrasting with /dʒ/ in Worcester (1846, 1860), the Century Dictionary (1889), and OED1 (1901).",
+      "rationale": "Modern dismissals of Eric Partridge's gimbal/gimcrack connection often assume that 'gimmal'/'gimbal' and 'gimmer' always had soft /dʒ/ in nineteenth-century American English. Primary-scan diacritical inspection proves that New England's dominant school and shop authority (Merriam-Webster, 1828–1890) consistently marked initial hard /g/ with a macron ('Ḡ') on 'gimmal' and 'gimmer', matching hard-/g/ 'gimcrack'.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Explicit nineteenth-century lexicographical prescription of hard velar /g/ for mechanical 'gimmal' and 'gimmer' across all surveyed Merriam-Webster editions (1828–1890), Ogilvie/Annandale (1882), and Funk & Wagnalls (1893).",
+        "does_not_establish": "Unmediated vernacular pronunciation among unlettered New England mechanics or the morphological derivation of 'gimmick' itself (evaluated separately in CLM-1100-011).",
+        "remaining_uncertainty": "How widely spoken New England shop usage followed Merriam-Webster's hard-/g/ prescription versus Worcester/Century's soft-/dʒ/ norm."
+      },
+      "limitations": [
+        "Dictionary pronunciation keys document prescriptive orthoepic norms rather than direct phonetic transcriptions of working-class shop speech."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1100-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Noah Webster's 1828 American Dictionary Vol. I prescribing unmarked hard G on 'GIM\\'MAL' and 'GIM\\'MER'.",
+          "witness_note": "Anchors the 14-edition orthoepic_dictionary_survey_1828_1901 block in gimmick.json (WEBSTER-1828-1ED through OED1-BRADLEY-1901)."
+        },
+        {
+          "ref": "CERT-1100-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Webster's International Dictionary (1890, p. 624) printing explicit macron-G ('Ḡĭm\\'mal', 'Ḡĭm\\'mer' = /g/).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Ogilvie & Annandale's Imperial Dictionary (1882, Vol. II, p. 406) respelling '(gim\\'al)' and '(gim\\'ėr)' with hard /g/.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1865 Webster-Mahn dictionary plate confirming matching initial hard /g/ on mechanical 'Gim\\'crack'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-302",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "OED1 (1901, Henry Bradley) s.v. gimmer ('hinge, mechanical catch'), representing the competing British /dʒ/ orthoepic tradition.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "4cc4694d771424b012c1cec968d3537941597c1dd82cc37070dcdf2a9328d58b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "4cc4694d771424b012c1cec968d3537941597c1dd82cc37070dcdf2a9328d58b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-011",
+      "slug": "clm-1100-011",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (< mechanical gimmer / gimmal / gimlick / gimcrack)",
+      "case_section": "Evaluating the Workshop Pronunciation & Origin Hypothesis",
+      "short_label": "Partially supported domestic workshop derivation from hard-/g/ 'gimmer'/'gimmal'/'gimlick' + '-ick' (± 'gimcrack')",
+      "statement": "Phonological alignment (hard /g/ prescribed in Merriam-Webster on 'gimmal'/'gimmer' and 'gimcrack'), morphological parallels (New England dialect 'gimlick' for 'gimlet' in 1825 and unstressed '-ock -> -ick' reduction in 'bastick, maddick, mammick'), and referent alignment (hinged/pivoted eccentric 'come-along' jaws in 1897 Boston) partially support deriving 'gimmick' domestically within the English 'gim-' mechanical-hinge/contrivance family, while pre-1893 transitional workshop forms remain unattested.",
+      "rationale": "Unlike foreign-loan proposals that conflict in stress, vowel quality, and semantics, the domestic English 'gim-' mechanical cluster shares initial stress, hard /g/ in New England's standard dictionary tradition, diminutive/tool '-ick' remodeling, and the exact 'hinged mechanical catch / trivial mechanism' semantics seen in 1893 Maine and 1897 Boston—while rigorous checking excludes Shropshire 'ferrick' (< 'ferry', not 'ferrule') and unattested '*gimmock' from serving as direct intermediate proofs.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Phonological, morphological, and semantic plausibility of a nineteenth-century New England workshop formation or blend within the hard-/g/ 'gimmer/gimmal/gimlick/gimcrack' family.",
+        "does_not_establish": "A closed etymological proof, since no pre-1893 text yet attests '*gimmock' or explicitly glosses 'gimmick' as a variant of 'gimmer' or 'gimcrack'.",
+        "remaining_uncertainty": "Whether 'gimmick' arose via suffixal remodeling of 'gimmer'/'gimmal' on tool nouns in '-ick' ('gimlick'), expressive blending of 'gimcrack' with 'nick'/'trick'/'flick', or independent workshop sound symbolism."
+      },
+      "limitations": [
+        "Wright's English Dialect Dictionary (1900, CERT-900-305) records zero tokens of '*gimmock', and Jackson's Shropshire Word-Book (1881, CERT-1100-305) shows 'ferrick' derives from 'ferry' rather than 'ferrule'."
+      ],
+      "resolution_criteria": [
+        "Locate a pre-1893 New England machine-shop, textile-mill, telegraph, or hardware text attesting a transitional form or explicitly linking 'gimmick' with 'gimmer', 'gimmal', 'gimlick', or 'gimcrack'.",
+        "Locate nineteenth-century New England dialect fieldwork documenting spoken hard-/g/ 'gimmer' ('hinged catch or clamp') among mechanics or linemen."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-900-301",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "John Neal's 1825 Maine novel Brother Jonathan attesting Down East dialectal '-ick' remodeling in 'gimlick' ('gimlet').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-302",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents mechanical 'gimmer' ('hinge, jointed catch') back to 1520.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-303",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Knight's 1876 American Mechanical Dictionary documenting US shop compounds 'Gim-peg' and 'Gimbal'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-304",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1865 Webster-Mahn entry for 'Gim\\'crack' ('trivial mechanism, device, or toy') sharing initial 'gim-' /gɪm/.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-304",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "D'Orsey (1842) documenting colloquial '-ock -> -ick' unstressed vowel reduction ('bastick, maddick, mammick').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-305",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Wright's English Dialect Dictionary Vol. II (1900) attesting 'GIMMAGH' while confirming zero British dialect tokens of '*gimmock'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-305",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Jackson's 1881 Shropshire Word-Book proving 'ferrick' is a derivative of 'ferry' rather than '-ule -> -ick' remodeling of 'ferrule'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Grounds the mechanical referent in a hinged eccentric wire-pulling clamp ('Comealong') in 1897 Boston.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-010",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1828–1893 Merriam-Webster hard-/g/ pronunciation prescription on 'gimmal' and 'gimmer'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "68f4d47bcf3f4acd8ba5a7d87b72d40294a36b70ce1cc5c472385343ff38a19d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "6788f618faddf74af99398f221ba6585a2b4c106b6e4fb13c1fccc86e5e3c91e"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "68f4d47bcf3f4acd8ba5a7d87b72d40294a36b70ce1cc5c472385343ff38a19d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-012",
+      "slug": "clm-1100-012",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick, n. (industrial Sense 1.a -> carnival Sense 1.b transmission)",
+      "case_section": "Carnival Rigging (1914), Stage Magic (1923), and the 1931–1933 CIGAM / GIMAC Sequel",
+      "short_label": "Partially supported occupational transmission from electrical/industrial mechanics to carnival-wheel machinists",
+      "statement": "Chronological priority (1897–1910 electrical, plumbing, and lineman usage preceding 1914 carnival-wheel catalogs) and mechanical homology (eccentric friction clamp on trolley wire vs. concealed friction/squeeze brake on a fairground prize wheel) partially support occupational transmission of 'gimmick' from industrial mechanics and traveling show electricians to carnival-equipment machinists.",
+      "rationale": "Turn-of-the-century traveling carnivals and Chicago amusement-device shops (such as H. C. Evans & Co.) employed electrical linemen and machinists to wire midways and build concealed foot/lever wheel brakes ('a squeeze, a pinch or a gimmick', 1922), making shop-to-midway transfer far better supported than reverse borrowing, though an explicit 1900–1913 transitional shop-to-midway text remains unlocated.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological order and mechanical friction-brake homology linking 1897–1910 industrial 'gimmick' to 1914 carnival-wheel 'Gimmick'.",
+        "does_not_establish": "A named machinist or explicit 1900–1913 text documenting the moment carnival builders adopted the workshop noun.",
+        "remaining_uncertainty": "Whether carnival machinists transferred the specific 'friction clamp/brake' sense or specialized the broader 1901–1910 workshop 'unnamed gadget' sense."
+      },
+      "limitations": [
+        "No 1900–1913 patent or trade-catalog text yet glosses a carnival prize-wheel brake directly as an electrician's 'gimmick'."
+      ],
+      "resolution_criteria": [
+        "Locate a 1900–1913 amusement-machine patent, H. C. Evans & Co. workshop record, or show-electrician memoir linking lineman/shop 'gimmicks' to fairground wheel brakes."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-900-102",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents the 1897 eccentric-friction 'Special Gimmick (Comealong)' clamp in electrical line work.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-204",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents H. C. Evans & Co.'s March 21, 1914 'Big Six Wheel, with \"Gimmick\"' mechanical brake offering.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-207",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Corroborates H. C. Evans & Co.'s April 4, 1914 commercial standardization of wheel 'Gimmick' hardware.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-210",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "June 2, 1922 Variety glosses the carnival wheel 'gimmick' specifically alongside friction-brake terms 'squeeze' and 'pinch'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-003",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes pre-1900 industrial hardware currency.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the eccentric friction-clamp mechanism in 1897 Boston.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1100-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1914 emergence of the carnival-wheel control sense.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a90e1b6e1cccc3a4e69bc2acac2cf42f998f791bad9ebcbb5b890056f4367302",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "86e817e2ee452c01ee8fa5adb6351f2dd9618553547427a843f0c0b03868883c"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Updated transitive dependency fingerprint after upstream Phase D premise revision.",
+          "content_fingerprint": "a90e1b6e1cccc3a4e69bc2acac2cf42f998f791bad9ebcbb5b890056f4367302"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-013",
+      "slug": "clm-1100-013",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick (vs. German Gemach and Dutch gemak)",
+      "case_section": "Evaluating the Workshop Pronunciation & Origin Hypothesis",
+      "short_label": "Phonological stress and 'comfort/apartment/privy' semantics weigh against German Gemach and Dutch gemak",
+      "statement": "Primary German and Dutch lexicographical records weigh strongly against deriving 'gimmick' from German Gemach (/ɡəˈmax/) or Dutch gemak (/ɣəˈmɑk/), both of which bear final-syllable stress with open /a/ and denote 'ease, comfort, room, privy' rather than a small mechanical tool or catch.",
+      "rationale": "Inspection of Grimm's Deutsches Wörterbuch (1884, CERT-900-306) and Sewel's Dutch-English dictionary (1766, CERT-900-308) confirms acute prosodic mismatch (iambic /ɡəˈmax/ vs. trochaic /ˈɡɪmɪk/), vocalic mismatch (/a/ vs. /ɪ/), semantic mismatch ('convenience, apartment, house of office'), and absence of German/Dutch demographic framing in 1893 Bucksport, Maine or 1897 Boston transit inventories.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Severe prosodic, vocalic, semantic, and geographic mismatches weighing against German Gemach and Dutch gemak as primary donors of 'gimmick'.",
+        "does_not_establish": "Absolute impossibility of secondary bilingual punning once 'gimmick' later spread to the Midwest.",
+        "remaining_uncertainty": "None within nineteenth-century German and Dutch standard lexicography."
+      },
+      "limitations": [
+        "Evaluates published scholarly donor suggestions on phonological and semantic grounds rather than labeling them folk myths."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Grimm's Deutsches Wörterbuch (1884) s.v. Gemach, documenting final stress and 'rest, comfort, room, privy' senses without 'small tool/clamp'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sewel's 1766 Groot Woordenboek s.v. gemak ('ease, conveniency, house of office'), lacking mechanical-tool semantics.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ae60b1d8023be9d8026f5a9ae63438d2362ed3da4d0c86a5f66090dbf04f4a00",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "ae60b1d8023be9d8026f5a9ae63438d2362ed3da4d0c86a5f66090dbf04f4a00"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-014",
+      "slug": "clm-1100-014",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick (vs. Rotwelsch, Scottish Gaelic camag, and burglar's jimmy)",
+      "case_section": "Evaluating the Workshop Pronunciation & Origin Hypothesis",
+      "short_label": "Lexicographical checks exclude unattested Rotwelsch '*Gimmick', Gaelic 'camag', and soft-/dʒ/ 'jimmy'",
+      "statement": "Primary dictionary audits find zero pre-twentieth-century German, Yiddish, or Rotwelsch '*Gimmick' nouns (Avé-Lallemant 1862 records only 'Gimmel' = Hebrew numeral 3), show Scottish Gaelic 'camag' (/'kʰamak/, 'crook/club') mismatched in initial voicing and vowel quality, and separate burglar's 'jimmy' (< 'Jemmy', /dʒ/, 1793/1811) in initial consonant and morphology.",
+      "rationale": "Testing remaining speculative donor candidates against nineteenth-century cant, Celtic, and slang lexicons rules out ghost Continental cant forms and confirms strong phonological barriers against Gaelic /kʰa-/ and English palato-alveolar /dʒɪmi/.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of pre-1900 Rotwelsch '*Gimmick' in Avé-Lallemant (1862) and major phonological/morphological barriers against Scottish Gaelic 'camag' and cant 'jimmy'.",
+        "does_not_establish": "Exhaustive coverage of unrecorded nineteenth-century oral cant varieties.",
+        "remaining_uncertainty": "None across standard nineteenth-century Rotwelsch, Gaelic, and British/American cant reference dictionaries."
+      },
+      "limitations": [
+        "CERT-900-113 ('Jimmick' in 1910 OCR) is verified on newsprint as a scanning misread of 'Jimmie's', not a palatalized variant of 'gimmick'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Avé-Lallemant (1862, Vol. 4, p. 545) Rotwelsch glossary recording 'Gimmel' ('three') and zero '*Gimmick/*Gimick' tool/trick nouns.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Highland Society of Scotland Dictionarium Scoto-Celticum (1828) s.v. Camag (voiceless /kʰ/ + open /a/, 'crook, curl, shinty club').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Tufts (1793) / Grose (1811) cant baseline for 'jemmy'/'jimmy' ('crowbar', < proper name Jemmy with /dʒ/).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-113",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "September 1, 1910 OCR ghost 'Jimmick' exposed on page scan as 'Jimmie\\'s', eliminating alleged /dʒ/ ~ /g/ alternation.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d0a36d08a958193b995127c522f87bff3302d0add92efe2cffb88f2800ca6ef6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "d0a36d08a958193b995127c522f87bff3302d0add92efe2cffb88f2800ca6ef6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1100-015",
+      "slug": "clm-1100-015",
+      "case_slug": "gimmick",
+      "headword": "gimmick",
+      "target_lexeme": "gimmick (quarantined misdates, OCR ghosts, and surname homographs)",
+      "case_section": "Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory",
+      "short_label": "Masthead and page-scan audits quarantine 12 false pre-1893 and pre-1914 'gimmick' repository leads",
+      "statement": "Direct masthead, bound-volume, and paleographic verification quarantines twelve false early leads across digital archives: four serial/reprint metadata misdates ('1880' Popular Mechanics -> Oct. 27, 1970; '1895' Street Railway Journal index -> post-1900 volume; '1898' Electrical World 'Dewflicker' -> misdated bound volume; '1919' Genii -> May 1985), seven OCR corruptions ('1866' 'GREENBACKS ARE GOOD'; '1876' OCR ghost; '1889' Magic Mirror ghost; '1892' Engineering Magazine ghost; '1896' 'Mrs. Dimmick'; '1908' 'trimmed'; '1910' 'Jimmie\\'s'), and one proper surname (Feb. 7, 1914 Billboard performer 'J. G. Gimmick').",
+      "rationale": "Systematic red-team inspection of every apparent pre-1893 mechanical hit and pre-1914 carnival/magic hit prevents Google Books serial-start-year errors, dirty newsprint OCR, and surname homographs from contaminating historical dictionary timelines.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-qualifying status (serial misdate, OCR hallucination, or proper surname) of all twelve audited pre-baseline false positives in gimmick.json.",
+        "does_not_establish": "Absence of genuine pre-1893 attestations in unindexed regional newspapers or manuscript shop records.",
+        "remaining_uncertainty": "None for the twelve inspected archival items."
+      },
+      "limitations": [
+        "Post-1930 misdated serial issues (1970 Popular Mechanics CERT-900-111; May 1985 Genii CERT-900-215) are verified without hosted scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-900-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1880' metadata misdate on October 27, 1970 advertisement ('GiMMick').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes June 29, 1876 newsprint OCR corruption read as 'GIMMICK'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes September 1, 1910 OCR corruption 'Jimmick' for printed 'Jimmie\\'s'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes 1892 Engineering Magazine OCR corruption read as 'Gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes October 26, 1889 Magic Mirror OCR corruption read as 'gimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-900-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes '1919' serial metadata misdate on a May 1985 issue of Genii.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines misdated '1895' Street Railway Journal bound-index hit ('COME-ALONG ECCENTRICS').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines misdated 'March 1898' bound-serial hit ('Dewflicker').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes April 7, 1896 newsprint OCR ghost of proper name 'Mrs. Dimmick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes January 18, 1866 headline OCR corruption ('GREENBACKS ARE GOOD').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes April 28, 1908 OCR corruption of printed 'trimmed'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1100-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Quarantines February 7, 1914 The Billboard proper surname homograph ('J. G. Gimmick').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "86c4129a4fe284660f4e598cd76eeef54d796f3f6b1aa9ac98de75fffd79c489",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2)",
+          "summary": "Initial v1.0 claim extraction from Case 1100 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "86c4129a4fe284660f4e598cd76eeef54d796f3f6b1aa9ac98de75fffd79c489"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

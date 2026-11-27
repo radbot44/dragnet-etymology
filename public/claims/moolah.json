@@ -1,0 +1,1236 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "moolah",
+  "case_slug": "moolah",
+  "case_number": "Case 1300",
+  "target_id": "TGT-038",
+  "headword": "moolah",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence ledger for Case 1300 (moolah): separates 1936-1941 monetary diffusion, 1943 'Moo' and 12 October 1943 'mazoola' antedating, and Fiddler & Shelton stage-Pidgin prosopography from oral stage-patter transmission and competing mazoola/donor hypotheses.",
+  "claims": [
+    {
+      "id": "CLM-1300-001",
+      "slug": "clm-1300-001",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 1: Chronological Emergence (1936-1941)",
+      "short_label": "1936 New York Daily News baseline and 1939-1941 journalistic breakout of moolah",
+      "statement": "Following the 21 February 1936 New York Daily News report of 'Mulah — Money', newspaper and entertainment trade print documents 'moo-lah', 'moolah', and 'moola' continuously from 19 February 1939 through December 1941.",
+      "rationale": "Scan-verified columns in the St. Louis Post-Dispatch (1939, 1940), Motion Picture Daily (May 1940), Variety (Apr-May 1941), Down Beat (May-Dec 1941), Screenland, Newsweek, and Atlanta Constitution trace rapid national diffusion.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Documented print progression from 1936 'Mulah' through 1939-1940 'moo-lah'/'moolah' to 1941 mainstream trade currency.",
+        "does_not_establish": "Pre-1936 print currency of monetary 'moolah' (Etymonline's uncited 'c. 1920' date derives from Chapman 1995 without primary evidence).",
+        "remaining_uncertainty": "CERT-1300-025 (21 Feb 1936 New York Daily News) is cited via OED3/Green's without a hosted public-domain scan (post-1930 copyright boundary)."
+      },
+      "limitations": [
+        "Post-1930 copyright rules preclude hosting page scans for 1936-1946 witnesses, which link externally."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-025",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Records the 21 February 1936 New York Daily News 'Mulah — Money' baseline item.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-033",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moo-lah' in the St. Louis Post-Dispatch Everyday Magazine on 19 February 1939.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-034",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moo-lah' in the St. Louis Post-Dispatch on 22 February 1940.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-017",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'box-office moolah' in Motion Picture Daily on 23 May 1940.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-018",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moola' in The Cumberland News on 25 January 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-036",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moola' in Screenland (April 1941).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-019",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'heavy moolah' in Variety on 23 April 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-020",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moola' in Down Beat on 1 May 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-021",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moolah' in Variety on 7 May 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-022",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moola' in Newsweek on 26 May 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-023",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moola' in Newsweek on 30 June 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-040",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Moola' in Down Beat on 15 December 1941.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-024",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'moo-lah' in The Atlanta Constitution on 28 December 1941.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e8d5e878fd8e67bdb80e848a6e7235992494c54665218f37e7597e8ee1a1049b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "e8d5e878fd8e67bdb80e848a6e7235992494c54665218f37e7597e8ee1a1049b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Oxford English Dictionary (OED3) & Green's Dictionary of Slang",
+          "publication": "OED Online, moolah, n.; Green's Dictionary of Slang, moolah, n.",
+          "date": "2023-07-01",
+          "url_or_ref": "https://www.oed.com/dictionary/moolah_n",
+          "exact_scope": "Recognizes the 21 February 1936 New York Daily News quotation (CERT-1300-025) as earliest known English attestation of moolah."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1300-002",
+      "slug": "clm-1300-002",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 1: Witness Deduplication & Leaf Collation",
+      "short_label": "Deduplication of eight paired ledger citations and 23 December 1911 Variety leaf collation",
+      "statement": "Seven cross-shard citation pairs in the moolah ledger document identical historical print occurrences, CERT-1300-069 and CERT-1300-076 analyze and attest the same 12 October 1943 column, and bound-volume leaf collation places Variety leaf n193 (CERT-1300-027) in Vol. 25, No. 3 (23 December 1911).",
+      "rationale": "Explicit source-relationship mapping prevents double-counting merged subagent shards as independent witnesses.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact witness count after collapsing 8 duplicate/analytical pairs and verifying the 23 December 1911 Variety issue boundary.",
+        "does_not_establish": "Any new lexical attestation beyond the primary member of each pair.",
+        "remaining_uncertainty": "None; issue covers and page coordinates are verified in the bound scans."
+      },
+      "limitations": [
+        "Applies to internal ledger witness counting across merged shards."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for Mencken (1936) negative control, duplicated by CERT-1300-067.",
+          "witness_note": "Same 1936 Mencken 4th ed. witness as CERT-1300-067."
+        },
+        {
+          "ref": "CERT-1300-067",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for Mencken (1936), collapsed with CERT-1300-001.",
+          "witness_note": "Duplicate of CERT-1300-001."
+        },
+        {
+          "ref": "CERT-1300-008",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for Thomas (1935) Chinook glossary, duplicated by CERT-1300-047.",
+          "witness_note": "Same 1935 Thomas witness as CERT-1300-047."
+        },
+        {
+          "ref": "CERT-1300-047",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for Thomas (1935), collapsed with CERT-1300-008.",
+          "witness_note": "Duplicate of CERT-1300-008."
+        },
+        {
+          "ref": "CERT-1300-015",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for 7 Feb 1935 Boston Evening American item, duplicated by CERT-1300-045.",
+          "witness_note": "Same 7 Feb 1935 item as CERT-1300-045."
+        },
+        {
+          "ref": "CERT-1300-045",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for 7 Feb 1935 Boston Evening American, collapsed with CERT-1300-015.",
+          "witness_note": "Duplicate of CERT-1300-015."
+        },
+        {
+          "ref": "CERT-1300-017",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for 23 May 1940 Motion Picture Daily, duplicated by CERT-1300-035.",
+          "witness_note": "Same 23 May 1940 item as CERT-1300-035."
+        },
+        {
+          "ref": "CERT-1300-035",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for 23 May 1940 Motion Picture Daily, collapsed with CERT-1300-017.",
+          "witness_note": "Duplicate of CERT-1300-017."
+        },
+        {
+          "ref": "CERT-1300-019",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for 23 Apr 1941 Variety p. 44, duplicated by CERT-1300-037.",
+          "witness_note": "Same 23 Apr 1941 Variety witness as CERT-1300-037."
+        },
+        {
+          "ref": "CERT-1300-037",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for 23 Apr 1941 Variety, collapsed with CERT-1300-019.",
+          "witness_note": "Duplicate of CERT-1300-019."
+        },
+        {
+          "ref": "CERT-1300-020",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for 1 May 1941 Down Beat p. 9, duplicated by CERT-1300-038.",
+          "witness_note": "Same 1 May 1941 Down Beat witness as CERT-1300-038."
+        },
+        {
+          "ref": "CERT-1300-038",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for 1 May 1941 Down Beat, collapsed with CERT-1300-020.",
+          "witness_note": "Duplicate of CERT-1300-020."
+        },
+        {
+          "ref": "CERT-1300-021",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for 7 May 1941 Variety, duplicated by CERT-1300-039.",
+          "witness_note": "Same 7 May 1941 Variety witness as CERT-1300-039."
+        },
+        {
+          "ref": "CERT-1300-039",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard entry for 7 May 1941 Variety, collapsed with CERT-1300-021.",
+          "witness_note": "Duplicate of CERT-1300-021."
+        },
+        {
+          "ref": "CERT-1300-027",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies Fiddler & Shelton Variety advertisement on p. 88 (leaf n193) belongs to Vol. 25, No. 3 (23 Dec 1911).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a1ab0d2db241ce66e0a806526d271c784504202310ccc31080207af3aa6d5471",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "a1ab0d2db241ce66e0a806526d271c784504202310ccc31080207af3aa6d5471"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-003",
+      "slug": "clm-1300-003",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moo, n.2",
+      "case_section": "Section 2: Clipped Moo & Mazoola",
+      "short_label": "1943 Down Beat attestations of clipped monetary 'Moo' (postdating OED3 1941, predating OED2 1945)",
+      "statement": "Down Beat attests clipped monetary 'Moo' / 'moo' on 15 March and 15 September 1943, predating OED2's 1945 baseline by two calendar years while postdating OED3's revised 1941 Pittsburgh Courier baseline.",
+      "rationale": "Calibrating against OED3's July 2023 update prevents claiming an OED3 antedating on 'moo, n.2' while preserving the verified jazz-press witnesses.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Jazz-press currency of clipped 'Moo'/'moo' ('money') in Chicago Down Beat in March and September 1943.",
+        "does_not_establish": "An antedating of OED3's 1941 Pittsburgh Courier baseline for moo, n.2.",
+        "remaining_uncertainty": "Earlier 1939-1940 African American newspaper runs may contain pre-1941 clipped tokens."
+      },
+      "limitations": [
+        "Post-1930 Down Beat issues link externally without hosted scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-041",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests capitalized 'Moo' ('money') in Down Beat on 15 March 1943.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-042",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests lowercase 'moo' ('money') in Down Beat on 15 September 1943.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "713f4c1f57663c3127416ec205f578e154a73b5688cf2fa4b4cc5a13b61260db",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "713f4c1f57663c3127416ec205f578e154a73b5688cf2fa4b4cc5a13b61260db"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-004",
+      "slug": "clm-1300-004",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "mazoola, n.",
+      "case_section": "Section 2: Mazoola Antedating",
+      "short_label": "12 October 1943 Evening Star antedating of OED3 mazoola, n. (1944)",
+      "statement": "Ned Nordness's Associated Press World Series column in the Washington Evening Star attests 'mazoola' on 12 October 1943, one calendar year before OED3's 1944 Winnipeg Free Press baseline.",
+      "rationale": "Library of Congress IIIF inspection verifies 'mazoola' in print on 12 October 1943 (CERT-1300-076), followed by 14 May 1946 Lethbridge Herald usage (CERT-1300-077).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of 'mazoola' ('money') in an Associated Press sports column on 12 October 1943.",
+        "does_not_establish": "Whether 'mazoola' arose by blending with 'moolah' or by suffixal play on 'mazuma' alone.",
+        "remaining_uncertainty": "Exact month and day of OED3's 1944 Winnipeg Free Press quotation were recorded at year precision in the case baseline summary."
+      },
+      "limitations": [
+        "Baseline date ('1944') is recorded at year precision, bounding computed advance to 1 calendar year."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-076",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests 'mazoola' in The Evening Star (Washington, D.C.) on 12 October 1943, p. A-13, col. 1.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-069",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Companion analytical record on the same 12 October 1943 Evening Star occurrence.",
+          "witness_note": "Same 12 Oct 1943 Evening Star occurrence as CERT-1300-076."
+        },
+        {
+          "ref": "CERT-1300-077",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents subsequent Canadian newspaper currency of 'mazoola' in The Lethbridge Herald on 14 May 1946.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "mazoola, n. ('money')",
+        "edition_or_revision": "OED3 entry (first published March 2001; modified July 2023)",
+        "baseline_date": "1944",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/mazoola_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1300-076",
+        "attested_date": "1943-10-12",
+        "attested_date_precision": "day",
+        "computed_advance_display": "1 calendar year (12 October 1943 vs. 1944)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d32e63d2529415f3131f25f8bee26071f1c4c28a9af8c426f7565257db69c945",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "d32e63d2529415f3131f25f8bee26071f1c4c28a9af8c426f7565257db69c945"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1300-004-01",
+          "claim_id": "CLM-1300-004",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1300-076",
+            "CERT-1300-069",
+            "CERT-1300-077"
+          ],
+          "findings": "Verified CERT-1300-076 and role-split twin CERT-1300-069 in moolah.json (Oct. 12, 1943 Washington Evening Star, p. A-13, Ned Nordness AP World Series column on Chronicling America), confirming 1-calendar-year advance over OED3's year-precise 1944 mazoola baseline and explicit deduplication of the 069/076 pair.",
+          "objections": [],
+          "material_fingerprint_at_review": "d32e63d2529415f3131f25f8bee26071f1c4c28a9af8c426f7565257db69c945",
+          "evidence_fingerprints_at_review": {
+            "CERT-1300-069": "a2ae0d1bbad2152707258ed546ddd0bae56fbc299bc5dbbcd683e8c514fa01d1",
+            "CERT-1300-076": "52a1d778bf23e62e24805bf5a7e60eae9ac2a1bfd9d6362ec21309f059544d1a",
+            "CERT-1300-077": "0a1685b7aaa0e7311369769ba90292ddc2e94548632df0a22bfc331686451191"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-005",
+      "slug": "clm-1300-005",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 3: Vaudeville Stage-Pidgin Prosopography",
+      "short_label": "Fiddler & Shelton (1908-1936) prosopographical match to the 1936 vaudeville origin report",
+      "statement": "Theatrical trade-paper billing from 1908 to October 1936 documents African American vaudeville duo Harry Fiddler and Ruby Byron Shelton performing a comic 'Chinese' Pidgin-English act that circumstantially matches the unnamed team described in the February 21, 1936 New York Daily News origin rumor.",
+      "rationale": "Variety and Billboard notices (1908–1936) verify the active career of 'Chinese Harry Fiddler' (Fiddler & Shelton), matching the demographic and act profile ('a colored vaudeville team, one of whom played \"Chinese\"') in CERT-1300-025; however, because CERT-1300-025 names no performers and Variety's 1905–1940 corpus records zero 'mulah'/'moolah' tokens in their act reviews (CLM-1300-008), the prosopographical identification remains 'partially_supported'.",
+      "type": "historical_context",
+      "assessment": "partially_supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Historical existence and active 1908-1936 touring career of 'Chinese Harry Fiddler' (Fiddler & Shelton) matching the 1936 press testimony.",
+        "does_not_establish": "Explicit naming of Fiddler & Shelton in the February 21, 1936 New York Daily News item or script proof that Fiddler & Shelton uttered 'mulah' onstage.",
+        "remaining_uncertainty": "Vaudeville gag scripts for Fiddler & Shelton were not deposited for copyright or printed verbatim in Variety reviews."
+      },
+      "limitations": [
+        "Trade reviews describe the Chinese-Pidgin persona without transcribing individual money gags."
+      ],
+      "resolution_criteria": [
+        "Locate a 1920s–1936 theatrical column, performer memoir, or TOBA/Keith-Albee review explicitly naming Fiddler & Shelton in connection with 'mulah'/'moolah'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1300-026",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Fiddler & Shelton's 'Chinaman' vaudeville act in Variety on 5 September 1908.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-027",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Fiddler & Shelton's full-page Variety notice on 23 December 1911.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-028",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents stage 'pigeon English' performance in Variety on 6 July 1917.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-029",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents 'Chinese impersonator' billing in The Billboard on 27 May 1922.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-030",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents continuing 'Chinese impersonator' billing in The Billboard on 16 August 1924.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-031",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Chicago Variety billing on 5 May 1926.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-032",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms 'CHINESE HARRY FIDDLER' was still performing in nightclubs in The Billboard on 3 October 1936.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-025",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "February 21, 1936 New York Daily News item describing an unnamed Black vaudeville 'Chinese' team.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1300-008",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Variety's 1905–1940 negative control finds zero 'mulah'/'moolah' tokens across vaudeville act reviews prior to July 1937.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "253b283b3d10dd7bbdef399f9bb07335dc5446dd7da8ba2a19be01171d4cfd2d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "6f161ab28eabd4964fa96ce4f8ee258e66112b561c1792e5bc4415df15d3e676"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Downgraded circumstantial prosopographical match to partially_supported and linked CLM-1300-008 negative control via qualifies.",
+          "content_fingerprint": "253b283b3d10dd7bbdef399f9bb07335dc5446dd7da8ba2a19be01171d4cfd2d"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1300-005-01",
+          "claim_id": "CLM-1300-005",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1300-026",
+            "CERT-1300-032",
+            "CERT-1300-025",
+            "CLM-1300-008"
+          ],
+          "findings": "Upheld at revision 2 after recalibrating Fiddler & Shelton's circumstantial match to the unnamed Feb. 1936 Daily News rumor to partially_supported and linking Variety's 1905–1940 negative control (CLM-1300-008) via qualifies.",
+          "objections": [],
+          "material_fingerprint_at_review": "253b283b3d10dd7bbdef399f9bb07335dc5446dd7da8ba2a19be01171d4cfd2d",
+          "evidence_fingerprints_at_review": {
+            "CERT-1300-025": "1ca4c511fa4360dc89e4772faa9069c436f95d24a47e7445748bfc1f5b918a84",
+            "CERT-1300-026": "34ef8162aff442dd83193dab44e8db90023c7afe544e151e1952ecdf73626f7c",
+            "CERT-1300-027": "e6f6f9b4584218bfc186ed7e6a0e538c7f875a5c4aadfb8ef1fe0e0201445f3b",
+            "CERT-1300-028": "612d636a65162e502207c420b8f2b347f5801a757e37c8f2792428d3e140afe2",
+            "CERT-1300-029": "47661fd44b62b61a99b4f079918b5207949b1aa26895ee7aeec7df3c6b2955d2",
+            "CERT-1300-030": "b10e3c2570d0014a10c4529b4d945a7809a239b20b588d8132527ceb044b8c46",
+            "CERT-1300-031": "8228e857da50a12177b51a6d704cfde6440ab88d28a0538a6c0b64b0a17add60",
+            "CERT-1300-032": "8004cec1e37eef4005a4180ffdeb1ad24e7b8c816b4044c5dd115a8df29ca3ab",
+            "CLM-1300-008": "c5722a3c626bb6ea6ddfeee3316526c3fb501eeca8a60d433042a84ccc86cca1"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-006",
+      "slug": "clm-1300-006",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 3: Stage-Patter Transmission Hypothesis",
+      "short_label": "1920s-1930s vaudeville stage-Pidgin patter origin hypothesis for moolah",
+      "statement": "Monetary 'moolah' ('mulah') plausibly originated in 1920s-1930s American vaudeville stage-Pidgin comedy patter before entering New York nightclub and turf journalism in 1936, though verbatim pre-1936 performance scripts remain unrecovered.",
+      "rationale": "The contemporary February 1936 attribution is prosopographically corroborated by Fiddler & Shelton's touring career and fits the word's Broadway/Winchell/Variety diffusion trajectory.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Convergence between contemporary 1936 testimony, verified vaudeville billing, and Broadway-to-trade-press diffusion.",
+        "does_not_establish": "Certainty that stage-Pidgin patter was the sole source rather than a popularizer of an existing oral slang term.",
+        "remaining_uncertainty": "No pre-1936 manuscript script, sound short, or sheet-music lyric preserving 'mulah' in the act has yet surfaced."
+      },
+      "limitations": [
+        "Relies on a 1936 secondhand press report paired with circumstantial billing prosopography."
+      ],
+      "resolution_criteria": [
+        "Locate a Keith-Albee/TOBA manager's report book, copyright script, or 1920s-1935 African American newspaper review quoting 'mulah'/'moolah' from Fiddler & Shelton or Catlin & Kelly."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-1300-001",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes the 21 February 1936 New York Daily News witness and subsequent Broadway/trade diffusion.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1300-005",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes the historical touring career of Fiddler & Shelton matching the 1936 testimony.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-025",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Preserves the contemporary 21 February 1936 attribution to a Black vaudeville Chinese-Pidgin team.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1300-008",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Bounds the vaudeville transmission hypothesis with zero pre-July 1937 'mulah'/'moolah' hits across Variety (1905–1940).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c0a8a09f8cdfa2d2ccc3553b4fead9a5cf783e5866749164d6a5fb9e4f015ca7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "549582cc55f2af4dbdb52fef19e197af833b155b487a97399062112a0ecdc206"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Linked CLM-1300-008 (Variety 1905–1940 negative control) via qualifies on the vaudeville transmission hypothesis.",
+          "content_fingerprint": "c0a8a09f8cdfa2d2ccc3553b4fead9a5cf783e5866749164d6a5fb9e4f015ca7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-007",
+      "slug": "clm-1300-007",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "mazoola, n.",
+      "case_section": "Section 4: Mazoola Blending vs. Suffixation",
+      "short_label": "Competing mazuma × moola blend (Feinsilver 1970) vs. mazuma suffixal variant (Quinion 2007)",
+      "statement": "While 'moolah' (1936) precedes 'mazoola' (1943) chronologically—consistent with Feinsilver's (1970/1980) and OED3's 'mazuma' × 'moola' blend analysis—Quinion's (2007) derivation of 'mazoola' as a direct playful suffixation on 'mazuma' remains equally plausible.",
+      "rationale": "Chronological order removes any barrier to 'mazuma' × 'moolah' blending (and rules out deriving 1936 'moolah' from 1943 'mazoola'), but expressive '-oola' suffixation on 1900s 'mazuma' requires no second donor.",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological impossibility of 'moolah' deriving from 'mazoola', while leaving 'mazoola' undecided between blending and suffixal play on 'mazuma'.",
+        "does_not_establish": "That 'mazoola' definitively contains 'moolah' as a blend component.",
+        "remaining_uncertainty": "Expressive slang blends and rhyming/suffixal remodeling on 'mazuma' ('mazoo', 'mazoola') yield identical surface forms."
+      },
+      "limitations": [
+        "Formal ambiguity between lexical blending and expressive '-oola' suffixation."
+      ],
+      "resolution_criteria": [
+        "Identify transitional 1936-1943 metalinguistic commentary or paired wordplay explicitly coupling 'mazuma' and 'moolah' into 'mazoola'."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-1300-001",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes 1936 precedence of 'Mulah'/'moolah'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1300-004",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes 12 October 1943 emergence of 'mazoola'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-068",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents pre-existing American slang 'mazuma' in O. Henry (1910).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "5b97f8920f015d125286d2fd07ee60c2086a0877aa0ceb2543dd32297a4e0972",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "5b97f8920f015d125286d2fd07ee60c2086a0877aa0ceb2543dd32297a4e0972"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-008",
+      "slug": "clm-1300-008",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 5: Bounded Negative Corpus Controls",
+      "short_label": "Zero pre-1936 monetary tokens across Daily Racing Form, Variety (1905-1940), and 1931-1942 slang lexicons",
+      "statement": "Systematic searches across 10,956 Daily Racing Form issues (1920s-1930s), 3,114+ Variety issues prior to 23 April 1941, and eight 1931-1942 underworld/slang dictionaries find zero pre-1936 monetary occurrences of 'moolah', 'moola', or 'mulah'.",
+      "rationale": "Absence across turf papers, Broadway trade weeklies, and underworld glossaries (Matsell, Hotten, Farmer & Henley, Irwin, Ersine, Rose, Weseen, Mencken 1936, Maurer 1940) bounds 'moolah' as a mid-1930s innovation.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of monetary 'moolah' across major digitized American turf, show-business, and underworld corpora prior to February 1936.",
+        "does_not_establish": "Absolute absence from unindexed African American newspapers or ephemeral nightclub programs before 1936.",
+        "remaining_uncertainty": "Digitized OCR on 1920s-1930s tabloid and Black press runs remains incomplete."
+      },
+      "limitations": [
+        "OCR degradation in small-type turf and tabloid columns can mask isolated spellings."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-060",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Matsell's Vocabulum (1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-061",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Hotten's Slang Dictionary (1874).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-062",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Farmer & Henley (1896).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-075",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Spanish 'mula' lacks a 'money' sense in RAE (1930).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-063",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Godfrey Irwin's American Tramp and Underworld Slang (1931).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-064",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Noel Ersine's Underworld and Prison Slang (1933).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-065",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Howard N. Rose's Thesaurus of Slang (1934).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-066",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in Maurice H. Weseen's Dictionary of American Slang (1934).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in H. L. Mencken's American Language 4th ed. (1936).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-003",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides early Down Beat (Jan 1937) baseline control prior to 1941 adoption.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence in David W. Maurer's The Big Con (1940).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Daily Racing Form (10,956 issues, 1920s-1930s), Variety (3,114+ issues, 1905-Apr 1941), and 1859-1940 underworld/slang dictionaries (Matsell, Hotten, Farmer & Henley, Irwin, Ersine, Rose, Weseen, Mencken, Maurer)",
+        "search_date": "2026-11-25",
+        "search_period": "1859-1941",
+        "query_terms": [
+          "moolah",
+          "moola",
+          "mulah",
+          "moo-lah"
+        ],
+        "search_method": "Full-text regex search across digitized periodical runs combined with alphabetical headword inspection of slang lexicons.",
+        "corpus_coverage": "10,956 Daily Racing Form issues, 3,114+ Variety issues, and 9 reference lexicons.",
+        "known_limitations": [
+          "Pre-1936 New York tabloid dailies and regional African American weeklies have partial digitization gaps.",
+          "Broken-type newsprint OCR produces false positives (such as '4 mULAH' for 'MISS BEULAH') and can miss faint ink."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "0ef6f11c99a1b27707abe59a7cb6ca006ca47a1cb87082169938e86cb83ce240",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "0ef6f11c99a1b27707abe59a7cb6ca006ca47a1cb87082169938e86cb83ce240"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-009",
+      "slug": "clm-1300-009",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 5: Evaluation of Competing Donor Proposals",
+      "short_label": "Weakness or refutation of Irish, Chinook Jargon, Fijian, Romani, Shelta, Sanskrit, and Islamic mullah etymologies",
+      "statement": "Primary dictionary inspections contradict or severely weaken proposals deriving monetary 'moolah' from Irish 'moll'/'moll-achd' (Cassidy), Chinook Jargon 'moola' ('sawmill'), Fijian 'lavo', Romani, Shelta, Sanskrit 'mūlya', British dialect 'mool', or Islamic 'moolah' ('religious scholar').",
+      "rationale": "Audited donor lexicons either lack the alleged form entirely (Cassidy's pseudo-Irish '*moll-achd') or carry unrelated meanings ('sawmill', 'soil', 'scholar') with zero semantic or social bridge to 1930s New York slang.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of lexical or semantic support in primary dictionaries for eight proposed foreign/dialect etymologies of 'moolah'.",
+        "does_not_establish": "Absolute impossibility of secondary punning once 'moolah' entered general slang.",
+        "remaining_uncertainty": "None regarding the non-existence of Cassidy's unattested Irish compound in O'Reilly and Dinneen."
+      },
+      "limitations": [
+        "Dictionary checks evaluate documented donor meanings rather than hypothetical unrecorded bilingual puns."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-050",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows O'Reilly & O'Donovan (1864) 'moll' means 'heap/pile' with no monetary compound.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-051",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Dinneen (1904) 'moll' lacks any monetary sense or '*moll-achd' form.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-052",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Dinneen's 1927 revised edition likewise lacks any monetary 'moolah' donor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-054",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Hiberno-English 'moneen' in Joyce (1910) is unrelated.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-073",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Chinook Jargon 'moola' (< French moulin) in Gibbs (1863) means 'mill/sawmill', not money.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-008",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Chinook Jargon 'moola' still meant solely 'mill' in Thomas (1935).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-072",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Fijian coin term in Hazlewood (1872) is 'lavo', with no 'moolah' money word.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-055",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Documents Anglo-Romani 'moll' ('worth') in Smart & Crofton (1875) without '-ah' disyllabic form.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-056",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Borrow (1874) 'mollauvis' denotes 'pewter/lead', not money.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-057",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Welsh Romani lexicons (Sampson 1908) lack a 'moolah' money noun.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-058",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Leland (1882) Romani vocabularies lack 'moolah'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-059",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Shelta vocabularies in MacRitchie (1889) lack 'moolah'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-071",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Leland's 1876 Pidgin-English Sing-Song uses 'dollar'/'cash', not historic Pidgin 'moolah'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-074",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Sanskrit 'mūlya' in Monier-Williams (1899) had no American slang bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-053",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows British dialect 'mool' in Wright EDD (1903) means 'mould/earth'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-004",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1901 'moolah' in Gray denotes an Afghan Islamic mullah.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-070",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows OED1 (1908) 'moolah/moola' recorded solely the Islamic title.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-046",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1935 Bombay crossword glossary 'Moola' denotes 'Moslem priest'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "038d761f60314d417ed59ab1ac394da57d8ff80d8c8a241ea4a7a439dc38819f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "038d761f60314d417ed59ab1ac394da57d8ff80d8c8a241ea4a7a439dc38819f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1300-010",
+      "slug": "clm-1300-010",
+      "case_slug": "moolah",
+      "headword": "moolah",
+      "target_lexeme": "moolah, n.",
+      "case_section": "Section 6: Quarantined Homographs, OCR Ghosts & Misdated Volumes",
+      "short_label": "Quarantine of Shriner Moolah Temple proper names, OCR ghosts, and misdated bound serials",
+      "statement": "Apparent pre-1936 and misdated hits in Oakland (1915, 1920), Billboard/Variety (1921, 1922, 1926, 1940), Daily Racing Form (1922), Boston/Chicago (1935), Cumberland (1940), and IA bound serials (Collier's, Rotunda, Post-Gazette) represent St. Louis Moolah Temple proper names, OCR misreads, or mis-cataloged post-1941 issues.",
+      "rationale": "Page-scan verification isolates proper nouns ('Moolah Temple'), racehorse/surname typos ('MISS BEULAH', 'Mulah'), and bound-volume catalog date errors.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of fourteen proper-name homographs, OCR errors, and catalog-misdated serials from monetary 'moolah' chronology.",
+        "does_not_establish": "Any positive monetary attestation.",
+        "remaining_uncertainty": "None; each excluded token is verified on its primary page or issue masthead."
+      },
+      "limitations": [
+        "Applies strictly to the fourteen audited false-positive records."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1300-043",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 27 Dec 1915 Oakland Tribune 'MUlah' as an OCR/typographical non-monetary token.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-014",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 13 Jan 1920 Oakland Tribune 'moola' as non-monetary proper/foreign usage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-005",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 17 Sep 1921 Billboard 'Moolah' as St. Louis Shriner Moolah Temple.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-007",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 6 Jul 1922 Daily Racing Form '4 mULAH' as broken-type OCR for filly 'MISS BEULAH'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-006",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 8 Dec 1922 Variety 'Moolah' as Shriner Moolah Temple.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-044",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 22 May 1926 Billboard 'Moola' as proper stage/temple name.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-015",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 7 Feb 1935 Boston Evening American 'Mulah' as non-monetary proper/foreign title.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-016",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 25 May 1935 Chicago Daily Tribune 'Moola' as non-monetary proper name.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-048",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 15 Apr 1939 'mulah' in Kaufman & Ferber as Islamic 'mullah'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-009",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 12 Jan 1940 Cumberland News 'Moola' as non-monetary proper name.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-049",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 22 Feb 1940 St. Louis Post-Dispatch capitalized 'Moolah' as Shriner Moolah Temple.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-010",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 12 Jun 1940 Variety 'moo-moo' as reduplicated non-monetary slang.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-011",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents catalog-year misdating check on Collier's Vol. 109 (24 Jan 1942).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-012",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes IA mis-cataloged post-war Longwood College Rotunda (8 Dec 1948).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1300-013",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes IA mis-cataloged 16 Jul 1959 Pittsburgh Post-Gazette.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f1dbaaaa9d9f54d0e2501f23e27997d39ce23599eef4a8004c49108ce2d18bfe",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for moolah.",
+          "content_fingerprint": "f1dbaaaa9d9f54d0e2501f23e27997d39ce23599eef4a8004c49108ce2d18bfe"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClaimBadges from '../../components/ClaimBadges.astro';
+import ClaimBaselineCard from '../../components/ClaimBaselineCard.astro';
+import ClaimBoundaryBox from '../../components/ClaimBoundaryBox.astro';
+import ClaimEvidenceTable from '../../components/ClaimEvidenceTable.astro';
+import ReuseClaimDrawer from '../../components/ReuseClaimDrawer.astro';
+import {
+  SITE_ACRONYM,
+  SITE_AUTHOR,
+  SITE_AUTHOR_CITATION,
+  SITE_GITHUB_URL,
+} from '../../consts';
+import {
+  CLAIM_ASSESSMENT_LABELS,
+  CLAIM_TYPE_LABELS,
+  CLAIM_TYPE_METADATA,
+  LIFECYCLE_STATUS_LABELS,
+  getAllClaims,
+  getClaimLedgerBySlug,
+  getCrossReferencedClaims,
+  getDownstreamDependents,
+  getUpstreamDependencies,
+  isDocumentaryClaimType,
+  loadClaimGraph,
+  type HydratedClaimRecord,
+} from '../../lib/claims';
+
+export async function getStaticPaths() {
+  const claims = getAllClaims({ includeNonActive: true });
+  return claims.map((claim) => ({
+    params: { id: claim.slug },
+    props: { claimId: claim.id },
+  }));
+}
+
+const { claimId } = Astro.props as { claimId: string };
+const graph = loadClaimGraph();
+const claim = graph.claimById.get(claimId)!;
+const claimLedger = getClaimLedgerBySlug(claim.case_slug)!;
+
+const cases = await getCollection('cases');
+const caseEntry = cases.find((entry) => entry.data.ledgerSlug === claim.case_slug) ?? null;
+const caseData = caseEntry?.data;
+
+const isDocumentary = isDocumentaryClaimType(claim.type);
+const typeMeta = CLAIM_TYPE_METADATA[claim.type];
+
+const supportingEdges = claim.evidence.filter((e) => e.relationship === 'supports');
+const qualifyingAndDependencyEdges = claim.evidence.filter((e) => e.relationship !== 'supports');
+
+const upstreamClaims = getUpstreamDependencies(claim.id);
+const downstreamClaims = getDownstreamDependents(claim.id);
+const crossRefClaims = getCrossReferencedClaims(claim.id);
+const supersededByClaim = claim.superseded_by ? graph.claimById.get(claim.superseded_by) ?? null : null;
+const supersedesClaims = claim.supersedes
+  .map((sid) => graph.claimById.get(sid) ?? null)
+  .filter((c): c is HydratedClaimRecord => Boolean(c));
+
+const hasBaselineOrBounds = Boolean(claim.antedating_baseline || claim.negative_evidence_bounds);
+const hasRelatedClaims =
+  upstreamClaims.length > 0 || downstreamClaims.length > 0 || crossRefClaims.length > 0;
+
+// Identify primary citation witness for Wikipedia/OG preview
+const primaryCitEdge =
+  supportingEdges.find((e) => e.ref === claim.antedating_baseline?.advancing_citation_ref) ??
+  supportingEdges.find((e) => e.ref.startsWith('CERT-')) ??
+  claim.evidence.find((e) => e.ref.startsWith('CERT-'));
+const primaryWitness = primaryCitEdge ? graph.citationById.get(primaryCitEdge.ref) ?? null : null;
+const hostedScanWitness = claim.referenced_citation_ids
+  .map((cid) => graph.citationById.get(cid))
+  .find((c) => Boolean(c?.scan?.hosted_path));
+
+const pubDate = caseData?.pubDate ?? new Date(`${claimLedger.updated_at}T00:00:00Z`);
+const latestRevDate = claim.revision_history.length > 0
+  ? claim.revision_history[claim.revision_history.length - 1].date
+  : claimLedger.updated_at;
+const updatedDate = new Date(`${latestRevDate}T00:00:00Z`);
+const pubYear = pubDate.getUTCFullYear();
+const pubMonth = pubDate.getUTCMonth() + 1;
+const canonicalUrl = new URL(`/claims/${claim.slug}/`, Astro.site).toString();
+
+const nonStaleHumanReviews = claim.reviews.filter(
+  (r) => !r.is_stale && r.reviewer_kind === 'human' && r.recommendation === 'uphold'
+);
+const nonStaleAgentReviews = claim.reviews.filter(
+  (r) => !r.is_stale && r.reviewer_kind !== 'human'
+);
+const staleReviews = claim.reviews.filter((r) => r.is_stale);
+
+const reviewIssueTitle = `[Claim Review] ${claim.id} (${claim.headword}): ${claim.short_label.slice(0, 64)}`;
+const reviewIssueBody = [
+  `Independent philological review or counter-evidence for **${claim.id}** (${canonicalUrl}):`,
+  '',
+  `- **Headword / Case:** ${claim.headword} (${claimLedger.case_number})`,
+  `- **Current Assessment:** \`${claim.assessment}\``,
+  `- **Current Content Fingerprint:** \`${claim.content_fingerprint}\``,
+  '',
+  '- [ ] Inspected linked primary-source scans / transcriptions directly',
+  '- [ ] Checked `evidence_boundary` (`establishes` / `does_not_establish` / `remaining_uncertainty`)',
+  '- [ ] Recommendation (`uphold` / `revise` / `downgrade` / `contradict`): ',
+  '- [ ] Reviewer Name & ORCID: ',
+].join('\n');
+const reviewIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent(reviewIssueTitle)}&body=${encodeURIComponent(reviewIssueBody)}`;
+
+const shortReviewPlain: Record<string, string> = {
+  unreviewed: 'unreviewed (no human review yet)',
+  agent_reviewed: 'AI-agent reviewed only (not human-reviewed)',
+  independently_agent_reviewed: 'independent AI audit only (not human-reviewed)',
+  human_reviewed: 'human-reviewed',
+};
+
+const pageKeywords = Array.from(
+  new Set([
+    claim.headword,
+    claim.id,
+    CLAIM_TYPE_LABELS[claim.type],
+    isDocumentary ? 'documentary finding' : 'interpretive hypothesis',
+    ...(caseData?.keywords ?? []),
+  ])
+);
+---
+
+<BaseLayout
+  title={`${claim.id}: ${claim.short_label} (${claim.headword}) | ${SITE_ACRONYM}`}
+  description={`${CLAIM_TYPE_LABELS[claim.type]} (${CLAIM_ASSESSMENT_LABELS[claim.assessment]}; ${shortReviewPlain[claim.review_status]}): ${claim.statement}`}
+  isArticle={claim.lifecycle_status === 'active'}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  author={caseData?.author ?? SITE_AUTHOR}
+  authorCitation={caseData?.authorCitation ?? SITE_AUTHOR_CITATION}
+  authorOrcid={caseData?.authorOrcid}
+  coAuthors={caseData?.coAuthors ?? []}
+  keywords={pageKeywords}
+  ogImage={hostedScanWitness?.scan.hosted_path || undefined}
+  noindex={claim.lifecycle_status !== 'active'}
+>
+  <article style="padding: 2.2rem 0 3rem;">
+    <header class="page-intro">
+      <nav aria-label="Claim record navigation" style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1rem;">
+        <a href={`/claims/?case=${encodeURIComponent(claim.case_slug)}`}>
+          ← All claims for {claim.headword}
+        </a>
+        <span> · </span>
+        <a href={`/cases/${claim.case_slug}/`}>
+          Case File ({claimLedger.case_number})
+        </a>
+        <span> · </span>
+        <a href={`/citations/?headword=${encodeURIComponent(claim.headword)}`}>
+          Citations ({claim.headword})
+        </a>
+        <span> · </span>
+        <a href={`/claims/${claim.case_slug}.json`} target="_blank" rel="noopener noreferrer">
+          Raw Claim JSON
+        </a>
+      </nav>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.65rem;">
+        <span style="font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; color: var(--accent);">
+          {claim.id} · {claimLedger.case_number} ({claimLedger.target_id})
+        </span>
+        {claim.is_principal && (
+          <span class="badge" style="border-color: var(--accent); color: var(--accent);">
+            Principal case claim
+          </span>
+        )}
+      </div>
+
+      <div style="margin-bottom: 0.8rem;">
+        <ClaimBadges
+          type={claim.type}
+          assessment={claim.assessment}
+          reviewStatus={claim.review_status}
+          hasStaleReviews={claim.has_stale_reviews}
+          externallyRecognized={claim.external_recognition.length > 0}
+          lifecycleStatus={claim.lifecycle_status}
+          verbose={true}
+        />
+      </div>
+
+      {claim.lifecycle_status !== 'active' && (
+        <div class="claim-stale-banner" role="note">
+          <strong>Lifecycle Status — {LIFECYCLE_STATUS_LABELS[claim.lifecycle_status]}:</strong>{' '}
+          This claim record is retained at its permanent identifier for scholarly provenance, but is no longer an active
+          proposition in {claimLedger.case_number}.
+          {supersededByClaim && (
+            <>
+              {' '}Superseded by{' '}
+              <a href={`/claims/${supersededByClaim.slug}/`}>
+                <strong>{supersededByClaim.id}: {supersededByClaim.short_label}</strong>
+              </a>.
+            </>
+          )}
+        </div>
+      )}
+
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-muted); margin-bottom: 0.25rem;">
+        {claim.short_label}
+        {claim.target_lexeme && <span> · Target lexeme: <code>{claim.target_lexeme}</code></span>}
+      </div>
+
+      <h1 class="citation_title" style="font-family: var(--font-serif); font-size: clamp(1.5rem, 2.7vw, 2.05rem); line-height: 1.28; margin: 0.2rem 0 0.9rem;">
+        {claim.statement}
+      </h1>
+
+      <div
+        class:list={[
+          'claim-review-disclosure',
+          {
+            'is-unreviewed': claim.review_status === 'unreviewed',
+            'is-human': claim.review_status === 'human_reviewed',
+          },
+        ]}
+      >
+        {claim.review_status === 'unreviewed' && (
+          <>
+            <strong>AI Extraction &amp; Human Review Status — Unreviewed:</strong> This proposition and its{' '}
+            <code>{CLAIM_ASSESSMENT_LABELS[claim.assessment].toLowerCase()}</code> assessment were structured from the{' '}
+            <a href={`/cases/${claim.case_slug}/`}>{claim.headword} Case File</a> and JSON citation ledger, and have{' '}
+            <strong>not yet been audited by an independent review pass or verified by a named human scholar</strong>.
+            Inspect the linked primary-source scans and scope boundary directly below.
+          </>
+        )}
+        {claim.review_status === 'agent_reviewed' && (
+          <>
+            <strong>AI-Agent Assessment Notice (Not Human-Reviewed):</strong> An automated research agent (
+            {nonStaleAgentReviews.map((r) => r.reviewer_id).join(', ') || 'AI review pass'}) checked this proposition
+            against its linked ledger records, but <strong>no named human scholar has verified this claim</strong>.
+            Automated agent checks can still miss paleographic nuances, subtle sense shifts, or unindexed print.
+          </>
+        )}
+        {claim.review_status === 'independently_agent_reviewed' && (
+          <>
+            <strong>Independent AI Audit Notice (Not Human-Reviewed):</strong> A separate adversarial AI audit pass (
+            {nonStaleAgentReviews.map((r) => r.reviewer_id).join(', ') || 'independent AI auditor'}) cross-checked this
+            claim’s citations, baseline math, and scope boundaries.{' '}
+            <strong>AI cross-auditing is not human peer review</strong>; no named human scholar has signed off on this
+            claim yet.
+          </>
+        )}
+        {claim.review_status === 'human_reviewed' && (
+          <>
+            <strong>Human Scholarly Review Recorded:</strong> Independently reviewed and upheld by{' '}
+            <strong>{nonStaleHumanReviews.map((r) => `${r.reviewer_id} (${r.review_date})`).join('; ')}</strong> against
+            current claim revision <code>v{claim.revision}</code>.
+          </>
+        )}
+      </div>
+
+      {claim.has_stale_reviews && (
+        <div class="claim-stale-banner" role="note">
+          <strong>Stale Review Warning:</strong> {staleReviews.length}{' '}
+          {staleReviews.length === 1 ? 'recorded review' : 'recorded reviews'} predated a change to this claim’s
+          proposition or underlying citation fingerprints and {staleReviews.length === 1 ? 'is' : 'are'} flagged stale in{' '}
+          <a href="#review-history">Review &amp; Revision History</a> until re-inspected.
+        </div>
+      )}
+
+      <nav class="jump-links" aria-label="On this claim">
+        <a href="#boundary">Evidence boundary</a>
+        {hasBaselineOrBounds && <a href="#baseline-bounds">Baseline / corpus bounds</a>}
+        <a href="#supporting-evidence">Supporting evidence ({supportingEdges.length})</a>
+        <a href="#qualifying-evidence">Qualifying &amp; dependencies ({qualifyingAndDependencyEdges.length})</a>
+        <a href="#limitations">Limitations &amp; resolution</a>
+        <a href="#review-history">Review &amp; history</a>
+        <a href="#reuse-claim-heading">Cite or reuse</a>
+      </nav>
+    </header>
+
+    <div class="reading-spread">
+      <nav class="reading-rail" aria-label="Claim record sections">
+        <h2>In this claim record</h2>
+        <ul>
+          <li><a href="#rationale">Analytical rationale</a></li>
+          <li><a href="#boundary">Evidence boundary</a></li>
+          {hasBaselineOrBounds && <li><a href="#baseline-bounds">Baseline / corpus bounds</a></li>}
+          <li><a href="#supporting-evidence">Supporting evidence ({supportingEdges.length})</a></li>
+          <li>
+            <a href="#qualifying-evidence">
+              Qualifying &amp; dependencies ({qualifyingAndDependencyEdges.length})
+            </a>
+          </li>
+          <li><a href="#limitations">Limitations &amp; resolution</a></li>
+          {hasRelatedClaims && <li><a href="#related-claims">Related claims in graph</a></li>}
+          <li><a href="#review-history">Review &amp; revision history</a></li>
+          <li><a href="#reuse-claim-heading">Cite or reuse</a></li>
+        </ul>
+
+        <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 0.82rem; color: var(--ink-muted);">
+          <div><strong>Headword:</strong> <a href={`/cases/${claim.case_slug}/`}>{claim.headword}</a></div>
+          {claim.case_section && (
+            <div style="margin-top: 0.25rem;"><strong>Case section:</strong> {claim.case_section}</div>
+          )}
+          <div style="margin-top: 0.25rem;">
+            <strong>Claim type:</strong> {CLAIM_TYPE_LABELS[claim.type]} ({isDocumentary ? 'Documentary' : 'Interpretive'})
+          </div>
+          <div style="margin-top: 0.25rem;"><strong>Revision:</strong> v{claim.revision} ({latestRevDate})</div>
+          <div style="margin-top: 0.55rem;">
+            <a href={reviewIssueUrl} target="_blank" rel="noopener noreferrer">
+              <strong>Submit human review or counter-evidence ↗</strong>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="reading-column">
+        <section id="rationale" style="border: 1px solid var(--border); border-radius: 8px; padding: 1.15rem 1.25rem; background: var(--surface);">
+          <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-muted); margin-bottom: 0.35rem;">
+            Analytical Rationale · {CLAIM_TYPE_LABELS[claim.type]}
+          </div>
+          <p style="margin: 0 0 0.55rem; font-size: 0.95rem;">{claim.rationale}</p>
+          <p style="margin: 0; font-size: 0.82rem; color: var(--ink-muted); border-top: 1px solid var(--border); padding-top: 0.5rem;">
+            <strong>Type definition ({isDocumentary ? 'Documentary finding' : 'Interpretive hypothesis'}):</strong>{' '}
+            {typeMeta.description} Parent claims never inherit <code>supported</code> status automatically from premise claims.
+          </p>
+        </section>
+
+        <ClaimBoundaryBox boundary={claim.evidence_boundary} />
+
+        {hasBaselineOrBounds && (
+          <ClaimBaselineCard
+            antedatingBaseline={claim.antedating_baseline}
+            negativeEvidenceBounds={claim.negative_evidence_bounds}
+            citationById={graph.citationById}
+          />
+        )}
+
+        <ClaimEvidenceTable
+          sectionId="supporting-evidence"
+          title="Supporting Evidence"
+          subtitle="Primary-source citations and premise claims directly or indirectly supporting this proposition."
+          edges={supportingEdges}
+          currentCaseSlug={claim.case_slug}
+          advancingCitationRef={claim.antedating_baseline?.advancing_citation_ref}
+          citationById={graph.citationById}
+          claimById={graph.claimById}
+          emptyMessage="No direct supporting edges are attached (see Negative-Evidence Search Manifest or Qualifying/Dependency links)."
+        />
+
+        <ClaimEvidenceTable
+          sectionId="qualifying-evidence"
+          title="Contradictory, Qualifying, Contextual & Dependency Evidence"
+          subtitle="Counter-evidence, scope qualifications, contextual witnesses, and upstream propositions required by this claim."
+          edges={qualifyingAndDependencyEdges}
+          currentCaseSlug={claim.case_slug}
+          advancingCitationRef={claim.antedating_baseline?.advancing_citation_ref}
+          citationById={graph.citationById}
+          claimById={graph.claimById}
+          emptyMessage="No contradictory, qualifying, contextual, or upstream claim-dependency edges are recorded for this proposition."
+        />
+
+        <section id="limitations" style="margin: 2rem 0;">
+          <h2 style="font-family: var(--font-serif); font-size: 1.42rem; margin: 0 0 0.75rem;">
+            Limitations &amp; Resolution Criteria
+          </h2>
+
+          <div class="epistemic-grid" style="margin: 0.75rem 0 1.25rem;">
+            <div class="epistemic-box" style="background: var(--surface);">
+              <div class="epistemic-tag" style="color: var(--ink-muted);">Methodological &amp; Archival Limitations</div>
+              {claim.limitations.length > 0 ? (
+                <ul>
+                  {claim.limitations.map((lim) => (
+                    <li>{lim}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p style="margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--ink-muted);">
+                  Bounded by the scope statement in the Evidence Boundary box above.
+                </p>
+              )}
+            </div>
+
+            <div class="epistemic-box epistemic-hypothesis">
+              <div class="epistemic-tag">Resolution &amp; Falsification Criteria</div>
+              {claim.resolution_criteria.length > 0 ? (
+                <ul>
+                  {claim.resolution_criteria.map((rc) => (
+                    <li>{rc}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p style="margin: 0.35rem 0 0; font-size: 0.9rem; color: var(--ink-muted);">
+                  Documentary proposition is already bounded to extant primary records; locate an earlier dated witness or
+                  edition discrepancy to revise.
+                </p>
+              )}
+            </div>
+          </div>
+
+          {claim.external_recognition.length > 0 && (
+            <div style="border: 1px solid #d2c1ee; border-left: 4px solid #4b2c7a; border-radius: 0 8px 8px 0; background: #faf7fe; padding: 1rem 1.15rem; margin-top: 1rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; color: #4b2c7a; margin-bottom: 0.45rem;">
+                Documented External Recognition
+              </div>
+              <ul style="margin: 0; padding-left: 1.15rem; font-size: 0.9rem;">
+                {claim.external_recognition.map((xr) => (
+                  <li style="margin-bottom: 0.45rem;">
+                    <strong>{xr.recognizer}</strong> ({xr.date}), <em>{xr.publication}</em>:{' '}
+                    {xr.exact_scope}{' '}
+                    {xr.url_or_ref.startsWith('https://') ? (
+                      <a href={xr.url_or_ref} target="_blank" rel="noopener noreferrer">Reference ↗</a>
+                    ) : (
+                      <span>({xr.url_or_ref})</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </section>
+
+        {hasRelatedClaims && (
+          <section id="related-claims" style="margin: 2rem 0;">
+            <h2 style="font-family: var(--font-serif); font-size: 1.42rem; margin: 0 0 0.35rem;">
+              Connected Claims in the Argument Graph
+            </h2>
+            <p style="margin: 0 0 0.85rem; font-size: 0.9rem; color: var(--ink-muted);">
+              Inferential premises (<code>depends_on</code> / <code>supports</code>), downstream propositions that build on{' '}
+              {claim.id}, and non-inferential cross-references.
+            </p>
+
+            <div class="related-claims-grid">
+              {upstreamClaims.map((up) => (
+                <div class="related-claim-card">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #283b66; font-weight: 700; text-transform: uppercase; margin-bottom: 0.25rem;">
+                    Upstream Premise · <a href={`/claims/${up.slug}/`}>{up.id}</a>
+                  </div>
+                  <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 0.35rem;">
+                    <a href={`/claims/${up.slug}/`}>{up.short_label}</a>
+                  </div>
+                  <ClaimBadges
+                    type={up.type}
+                    assessment={up.assessment}
+                    reviewStatus={up.review_status}
+                    hasStaleReviews={up.has_stale_reviews}
+                    showType={false}
+                  />
+                </div>
+              ))}
+
+              {downstreamClaims.map((down) => (
+                <div class="related-claim-card">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #194d47; font-weight: 700; text-transform: uppercase; margin-bottom: 0.25rem;">
+                    Downstream Dependent · <a href={`/claims/${down.slug}/`}>{down.id}</a>
+                  </div>
+                  <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 0.35rem;">
+                    <a href={`/claims/${down.slug}/`}>{down.short_label}</a>
+                  </div>
+                  <ClaimBadges
+                    type={down.type}
+                    assessment={down.assessment}
+                    reviewStatus={down.review_status}
+                    hasStaleReviews={down.has_stale_reviews}
+                    showType={false}
+                  />
+                </div>
+              ))}
+
+              {crossRefClaims.map((cr) => (
+                <div class="related-claim-card">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.25rem;">
+                    Cross-Reference · <a href={`/claims/${cr.slug}/`}>{cr.id}</a>
+                  </div>
+                  <div style="font-weight: 700; font-size: 0.92rem; margin-bottom: 0.35rem;">
+                    <a href={`/claims/${cr.slug}/`}>{cr.short_label}</a>
+                  </div>
+                  <ClaimBadges
+                    type={cr.type}
+                    assessment={cr.assessment}
+                    reviewStatus={cr.review_status}
+                    hasStaleReviews={cr.has_stale_reviews}
+                    showType={false}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section id="review-history" style="margin: 2rem 0;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.65rem;">
+            <h2 style="font-family: var(--font-serif); font-size: 1.42rem; margin: 0;">
+              Review &amp; Revision History
+            </h2>
+            <a href={reviewIssueUrl} target="_blank" rel="noopener noreferrer" style="font-size: 0.86rem; font-weight: 600;">
+              Submit human review / counter-evidence ↗
+            </a>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--ink-muted); margin: 0 0 0.9rem;">
+            Deterministic content fingerprint (<code>v{claim.revision}</code>):{' '}
+            <code style="font-size: 0.78rem;">{claim.content_fingerprint.slice(0, 16)}…</code> (invalidates prior reviews
+            automatically whenever claim wording or referenced primary-source fingerprints change).
+            {supersedesClaims.length > 0 && (
+              <>
+                {' '}Supersedes:{' '}
+                {supersedesClaims.map((sc, idx) => (
+                  <>
+                    {idx > 0 && ', '}
+                    <a href={`/claims/${sc.slug}/`}>{sc.id}</a>
+                  </>
+                ))}.
+              </>
+            )}
+          </p>
+
+          <h3 style="font-family: var(--font-serif); font-size: 1.12rem; margin: 1rem 0 0.45rem;">
+            Recorded Reviews ({claim.reviews.length})
+          </h3>
+          {claim.reviews.length === 0 ? (
+            <p class="citation-empty" style="font-size: 0.89rem; color: var(--ink-muted);">
+              No formal agent audit or human verification sign-off has been recorded for {claim.id} yet (status:{' '}
+              <code>unreviewed</code>). Qualified readers may{' '}
+              <a href={reviewIssueUrl} target="_blank" rel="noopener noreferrer">submit a named review via GitHub</a>.
+            </p>
+          ) : (
+            <div class="citation-table-wrap" role="region" aria-label="Recorded claim reviews" tabindex="0">
+              <table class="citation-table responsive-evidence-table" role="table">
+                <thead role="rowgroup">
+                  <tr role="row">
+                    <th scope="col" role="columnheader">Review ID &amp; Date</th>
+                    <th scope="col" role="columnheader">Reviewer &amp; Kind</th>
+                    <th scope="col" role="columnheader">Outcome &amp; Currency</th>
+                    <th scope="col" role="columnheader">Findings &amp; Objections</th>
+                  </tr>
+                </thead>
+                <tbody role="rowgroup">
+                  {claim.reviews.map((rev) => (
+                    <tr role="row">
+                      <td role="cell" style="font-family: var(--font-mono); font-size: 0.8rem;">
+                        <span class="mobile-label" aria-hidden="true">Review ID &amp; date</span>
+                        <div><strong>{rev.review_id}</strong></div>
+                        <div style="color: var(--ink-muted);">{rev.review_date} (rev v{rev.claim_revision})</div>
+                      </td>
+                      <td role="cell">
+                        <span class="mobile-label" aria-hidden="true">Reviewer &amp; kind</span>
+                        <div><strong>{rev.reviewer_id}</strong></div>
+                        <div style="margin-top: 0.2rem;">
+                          <span class={`badge badge-review-${rev.reviewer_kind === 'human' ? 'human_reviewed' : rev.reviewer_kind === 'independent_agent' ? 'independently_agent_reviewed' : 'agent_reviewed'}`}>
+                            {rev.reviewer_kind === 'human'
+                              ? 'Human scholar'
+                              : rev.reviewer_kind === 'independent_agent'
+                              ? 'Independent AI agent'
+                              : 'AI agent'}
+                          </span>
+                          {rev.model_version && (
+                            <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--ink-muted); margin-left: 0.3rem;">
+                              ({rev.model_version})
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td role="cell">
+                        <span class="mobile-label" aria-hidden="true">Outcome &amp; currency</span>
+                        <div class="claim-badge-row">
+                          <span class="badge">{rev.recommendation.replace(/_/g, ' ')}</span>
+                          {rev.is_stale ? (
+                            <span class="badge badge-review-stale">Stale</span>
+                          ) : (
+                            <span class="badge">Matches current fingerprint</span>
+                          )}
+                        </div>
+                        <div style="font-size: 0.76rem; color: var(--ink-muted); margin-top: 0.25rem;">
+                          Scopes: {rev.review_scopes.join(', ')}
+                        </div>
+                      </td>
+                      <td role="cell" style="font-size: 0.86rem;">
+                        <span class="mobile-label" aria-hidden="true">Findings &amp; objections</span>
+                        <div>{rev.findings}</div>
+                        {rev.objections.length > 0 && (
+                          <ul style="margin: 0.35rem 0 0; padding-left: 1.1rem; color: #7f231c;">
+                            {rev.objections.map((obj) => (
+                              <li>{obj}</li>
+                            ))}
+                          </ul>
+                        )}
+                        {rev.is_stale && rev.stale_reasons.length > 0 && (
+                          <ul style="margin: 0.35rem 0 0; padding-left: 1.1rem; color: #842029; font-size: 0.8rem;">
+                            {rev.stale_reasons.map((sr) => (
+                              <li>{sr}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          <h3 style="font-family: var(--font-serif); font-size: 1.12rem; margin: 1.25rem 0 0.45rem;">
+            Revision Log ({claim.revision_history.length})
+          </h3>
+          <ol class="timeline-list" style="margin-bottom: 1.5rem;">
+            {claim.revision_history.map((entry) => (
+              <li class="timeline-item">
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700;">
+                  Revision v{entry.revision} · {entry.date} · {entry.author}
+                </div>
+                <div style="font-size: 0.9rem; margin-top: 0.15rem;">{entry.summary}</div>
+                <div style="font-family: var(--font-mono); font-size: 0.73rem; color: var(--ink-muted); margin-top: 0.15rem;">
+                  SHA-256: {entry.content_fingerprint.slice(0, 16)}…
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <ReuseClaimDrawer
+          claim={claim}
+          caseNumber={claimLedger.case_number}
+          targetId={claimLedger.target_id}
+          caseTitle={caseData?.title ?? `${claim.headword} (${claimLedger.case_number})`}
+          author={caseData?.author ?? SITE_AUTHOR}
+          authorCitation={caseData?.authorCitation ?? SITE_AUTHOR_CITATION}
+          coAuthors={caseData?.coAuthors ?? []}
+          pubYear={pubYear}
+          pubMonth={pubMonth}
+          canonicalUrl={canonicalUrl}
+          claimLedgerPath={`/claims/${claim.case_slug}.json`}
+          primaryWitness={primaryWitness}
+        />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

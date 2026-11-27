@@ -1,14 +1,30 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE_ACRONYM, SITE_EXPANDED, SITE_HEADLINE, SITE_TAGLINE } from '../consts';
-import { getAllCitations, getLedgerBySlug, computeLedgerStats, getOpenQuestionsData, VERIFICATION_LABELS } from '../lib/ledgers';
+import { SITE_ACRONYM, SITE_HEADLINE, SITE_TAGLINE } from '../consts';
+import {
+  computeCaseClaimStats,
+  computeGlobalClaimStats,
+  getClaimsForCase,
+  hasClaimLedger,
+} from '../lib/claims';
+import {
+  getAllCitations,
+  getLedgerBySlug,
+  computeLedgerStats,
+  getOpenQuestionsData,
+  VERIFICATION_LABELS,
+} from '../lib/ledgers';
 
 const cases = (await getCollection('cases')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 const allCitations = getAllCitations();
 const globalStats = computeLedgerStats(allCitations);
+const globalClaimStats = computeGlobalClaimStats();
+const aiReviewedClaims =
+  globalClaimStats.byReviewStatus.agent_reviewed +
+  globalClaimStats.byReviewStatus.independently_agent_reviewed;
 const openData = getOpenQuestionsData();
 const sampleCitations = allCitations.filter((c) => c.record_type === 'attestation').slice(0, 6);
 ---
@@ -23,10 +39,14 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
       {SITE_HEADLINE}
     </h1>
     <p style="font-size: 1.08rem; color: var(--ink-muted); max-width: 62ch; margin: 0 0 1.4rem;">
-      {SITE_TAGLINE} Follow the evidence from a word’s case file to its transcription, verification status, or archival scan.
+      {SITE_TAGLINE} Trace every investigation across three inspectable layers: narrative Case Files, falsifiable
+      Documentary Findings vs. Interpretive Hypotheses, and primary-source archival scans.
     </p>
 
     <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.75rem;">
+      <a href="/claims/" style="background: var(--accent); color: #fff; padding: 0.6rem 1.05rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.92rem;">
+        Explore Claim Index ({globalClaimStats.activeClaims} claims) →
+      </a>
       <a href="/citations/" style="background: var(--ink); color: var(--bg); padding: 0.6rem 1.05rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.92rem;">
         Search Citation Index ({globalStats.totalEvaluated} records) →
       </a>
@@ -41,9 +61,18 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
     </div>
     <div class="stat-strip overview-stats">
       <div class="stat-card">
+        <div class="stat-label">Structured Claims</div>
+        <div class="stat-value">{globalClaimStats.activeClaims}</div>
+        <div class="stat-sub">
+          {globalClaimStats.documentaryClaims} documentary · {globalClaimStats.interpretiveClaims} interpretive ({globalClaimStats.claimLedgersCount}/{cases.length} cases)
+        </div>
+      </div>
+      <div class="stat-card">
         <div class="stat-label">Evaluated Citations</div>
         <div class="stat-value">{globalStats.totalEvaluated}</div>
-        <div class="stat-sub">{globalStats.attestations} attestations · {globalStats.hypotheses} hypotheses</div>
+        <div class="stat-sub">
+          {globalStats.attestations} attestations · {globalStats.rejectedLeads} rejected leads
+        </div>
       </div>
       <div class="stat-card">
         <div class="stat-label">Primary-Source Scans</div>
@@ -51,21 +80,54 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
         <div class="stat-sub">Pre-1931 public-domain scans hosted in repo</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Rejected Leads Logged</div>
-        <div class="stat-value">{globalStats.rejectedLeads}</div>
-        <div class="stat-sub">OCR errors, misdated volumes &amp; unattested claims</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Verification Transparency</div>
-        <div class="stat-value">{globalStats.agentVerified} Agent / {globalStats.humanVerified} Human</div>
-        <div class="stat-sub">{globalStats.externallyRecognized} baseline quotes in OED / Green's</div>
+        <div class="stat-label">Verification &amp; Review</div>
+        <div class="stat-value">{globalStats.agentVerified} AI / {globalStats.humanVerified} Human</div>
+        <div class="stat-sub">
+          Claims: {globalClaimStats.byReviewStatus.human_reviewed} human · {aiReviewedClaims} AI · {globalClaimStats.byReviewStatus.unreviewed} unreviewed
+        </div>
       </div>
     </div>
   </section>
 
-  <section style="padding: 2.2rem 0 1rem;">
+  <section style="padding: 1.6rem 0 0.5rem;">
+    <div class="architecture-grid" aria-label="Three-layer evidence architecture">
+      <div class="architecture-card">
+        <div class="architecture-step">Layer 1 · Synthesis</div>
+        <h3>{cases.length} Published Case Files</h3>
+        <p>
+          Full historical-lexicographical monographs synthesizing prior scholarship, chronological timelines, proof
+          plates, and open archival gaps for each target headword.
+        </p>
+        <a href="#case-directory-heading" style="font-size: 0.88rem; font-weight: 600;">Browse case files ↓</a>
+      </div>
+
+      <div class="architecture-card">
+        <div class="architecture-step">Layer 2 · Propositions</div>
+        <h3>{globalClaimStats.activeClaims} Structured Claims</h3>
+        <p>
+          Discrete Documentary Findings and Interpretive Hypotheses with mandatory 3-part Evidence Boundaries,
+          non-inherited assessments, and explicit AI-vs-human review status.
+        </p>
+        <a href="/claims/" style="font-size: 0.88rem; font-weight: 600;">Search Claim Index →</a>
+      </div>
+
+      <div class="architecture-card">
+        <div class="architecture-step">Layer 3 · Primary Ink</div>
+        <h3>{globalStats.totalEvaluated} Citation Records</h3>
+        <p>
+          Atomic primary-source attestations, contextual controls, and exposed OCR/reprint ghosts backed by diplomatic
+          transcriptions, masthead checks, and {globalStats.hostedScans} hosted scans.
+        </p>
+        <a href="/citations/" style="font-size: 0.88rem; font-weight: 600;">Search Citation Index →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 1.8rem 0 1rem;">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-      <h2 style="font-family: var(--font-serif); font-size: 1.6rem; margin: 0;">Published Case Files</h2>
+      <h2 id="case-directory-heading" style="font-family: var(--font-serif); font-size: 1.6rem; margin: 0;">
+        Published Case Files ({cases.length})
+      </h2>
       <span style="font-size: 0.88rem; color: var(--ink-muted);">Counts generated at build time from JSON ledgers</span>
     </div>
 
@@ -79,10 +141,15 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
         const d = entry.data;
         const ledger = getLedgerBySlug(d.ledgerSlug);
         const st = computeLedgerStats(ledger.citations);
+        const hasClm = hasClaimLedger(d.ledgerSlug);
+        const clmStats = hasClm
+          ? computeCaseClaimStats(getClaimsForCase(d.ledgerSlug, { includeNonActive: false }))
+          : null;
         return (
           <article class="case-card" data-case-search={`${d.headword} ${d.relatedForms.join(" ")} ${d.title}`.toLowerCase()}>
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">
               <span>{d.caseNumber}</span>
+              <span>{d.targetId}</span>
             </div>
             <h3 class="case-card-title">
               <a href={`/cases/${entry.id}/`}>{d.headword}</a>
@@ -90,6 +157,15 @@ const sampleCitations = allCitations.filter((c) => c.record_type === 'attestatio
             <p style="color: var(--ink-muted); margin: 0 0 0.9rem; font-size: 0.96rem;">{d.title}</p>
             <p class="case-result">{d.earliestNewDiscovery.antedatingSummary}</p>
             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font-size: 0.83rem; color: var(--ink-muted);">
+              {clmStats && (
+                <a
+                  href={`/claims/?case=${encodeURIComponent(d.ledgerSlug)}`}
+                  class="badge badge-class-documentary"
+                  style="text-decoration: none;"
+                >
+                  {clmStats.activeClaims} claims ({clmStats.documentaryClaims} doc · {clmStats.interpretiveClaims} hyp)
+                </a>
+              )}
               <span class="badge badge-type-attestation">{st.attestations} attestations</span>
               <span class="badge">{st.hostedScans} hosted scans</span>
               <span class="badge badge-type-hypothesis">{st.hypotheses} evaluated hypotheses</span>

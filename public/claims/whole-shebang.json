@@ -1,0 +1,1092 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "whole-shebang",
+  "case_slug": "whole-shebang",
+  "case_number": "Case 2000",
+  "target_id": "TGT-044",
+  "headword": "whole shebang",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise 9-claim decomposition of Case 2000 (whole shebang, 67 citations) enforcing Commit 5db37e1: qualifying 17 Dec 1852 'the Chebang and Restaurant' as a venue designation, separating 15 Jul 1854 'chebangs', 1859–1861 '<sh->' saloons, 28 Sep 1861 camp quarters, and 1863–1867 'the whole chebang/shebang', and calibrating Anglo-Irish 'shebeen' + 'che-bang!' vs. 'char-à-bancs'.",
+  "claims": [
+    {
+      "id": "CLM-2000-001",
+      "slug": "clm-2000-001",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang / chebang, n.",
+      "case_section": "1. Prior Scholarship and the \"Hut-Before-Tavern\" Chronological Paradox",
+      "short_label": "1856–1859 Hall, Bartlett, and Matsell negative lexicon bound",
+      "statement": "Direct alphabetical inspection of Hall's College Words (1856), Bartlett's Dictionary of Americanisms (1859), and Matsell's Vocabulum (1859 plates) yields zero entries for 'shebang' or 'chebang' prior to 1877–1912 dictionaries.",
+      "rationale": "Complete absence from Hall (1856, CERT-2000-118), Bartlett (1859, CERT-2000-119 vs. 1877 CERT-2000-309), and Matsell (1859 plates, CERT-2000-120) undermines pre-war college-coinage lore repeated in later dictionaries (CERT-2000-310, 311).",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'shebang'/'chebang' from standard 1856–1859 American college, dialect, and cant dictionaries.",
+        "does_not_establish": "Absence from 1852–1859 regional newspapers.",
+        "remaining_uncertainty": "None within the inspected editions."
+      },
+      "limitations": [
+        "CERT-2000-120 is verified from a c. 1877 R. Worthington stereotype impression of Matsell's 1859 plates."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Zero entry in Hall's Collection of College Words and Customs (1856).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Zero entry in Bartlett's Dictionary of Americanisms (2nd ed., 1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Zero entry in Matsell's Vocabulum (1859 plates, c. 1877 impression).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-309",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Postwar dictionary entry in Bartlett (1877) and Farmer & Henley (1903).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-310",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1890–1902 Century, Maitland, and Clapin entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-311",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1912 Thornton American Glossary baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Hall, College Words (1856); Bartlett, Dictionary of Americanisms (2nd ed., 1859); Matsell, Vocabulum (1859 plates)",
+        "search_date": "2026-11-26",
+        "search_period": "1856-1859",
+        "query_terms": [
+          "shebang",
+          "chebang",
+          "whole shebang"
+        ],
+        "search_method": "Direct page-by-page facsimile inspection of C- and Sh- alphabetical sections.",
+        "corpus_coverage": "3 complete antebellum American college, dialect, and rogue lexicons",
+        "known_limitations": [
+          "Published dictionaries lag ephemeral regional newspaper slang."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "d415c75e734c8f715eb3ae815cf024c13e105c3c6b2cea92efd21361110914cd",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "d415c75e734c8f715eb3ae815cf024c13e105c3c6b2cea92efd21361110914cd"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-002",
+      "slug": "clm-2000-002",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "Chebang (capitalized establishment designation)",
+      "case_section": "2. Antebellum Saloons, Lodges, and Concert Halls (1849–1861)",
+      "short_label": "17 December 1852 Kentucky Whig 'the Chebang and Restaurant' establishment designation",
+      "statement": "The Kentucky Whig (Mount Sterling, KY, 17 December 1852) documents 'the Chebang and Restaurant, kept by... Mr. W. F. Blackburn' as an apparent capitalized venue designation rather than an unambiguous generic common noun.",
+      "rationale": "Per Commit 5db37e1, capitalization of 'Chebang' alongside 'Restaurant' on Blackburn's commercial sign provides antebellum hospitality context without proving lowercase generic count-noun usage or antedating 'the whole shebang'.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Capitalized venue-sign occurrence of 'Chebang' in Kentucky on 17 December 1852.",
+        "does_not_establish": "Productive lowercase common-noun usage ('tavern/shanty') or idiomatic 'the whole shebang'.",
+        "remaining_uncertainty": "Whether Mount Sterling patrons already used lowercase 'chebang' generically before Blackburn named his house."
+      },
+      "limitations": [
+        "Capitalized establishment title (contextual_evidence:venue_designation); excluded from common-noun antedatings."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 December 1852 Kentucky Whig p. 3 scan ('the Chebang and Restaurant, kept by... Mr. W. F. Blackburn').",
+          "witness_note": "Apparent proper venue designation."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "8257ac791c3d48e1b13f8a140eeb358e444ca1b5093a45fdbc35de8cceeef6f2",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "8257ac791c3d48e1b13f8a140eeb358e444ca1b5093a45fdbc35de8cceeef6f2"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-003",
+      "slug": "clm-2000-003",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang, n. (spelled Chebang / chebangs; also 1859–1861 shebang)",
+      "case_section": "2. Antebellum Saloons, Lodges, and Concert Halls (1849–1861)",
+      "short_label": "15 July 1854 Raftsman's Journal plural 'chebangs' common-noun antedating and 1859–1861 '<sh->' saloon spread",
+      "statement": "The Raftsman's Journal (Clearfield, PA, 15 July 1854) attests lowercase plural 'I've seen your chebangs', advancing Green's 3 September 1859 saloon baseline by 5 years, 1 month, and 19 days (and OED's 1878 tavern baseline by 24 calendar years) ahead of 1859–1861 '<sh->' saloon/theater diffusion.",
+      "rationale": "Open-scan verification of Reitan's 1854 Clearfield witness (CERT-2000-103) proves generic count-noun usage before '<sh->' stabilized in Boston/CA/OH (CERT-2000-105..107, 110) and New York Clipper Baltimore saloon reports (CERT-2000-108, 109, 111, 112).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Generic plural count-noun 'chebangs' on 15 July 1854 and '<sh->' 'shebang' urban saloon/theater currency in 1859–1861.",
+        "does_not_establish": "Direct causal transmission from Baltimore concert saloons into specific volunteer regiments (Commit 5db37e1) or hosted scans for Reitan's four un-scanned items.",
+        "remaining_uncertainty": "Open-access scans remain pending for CERT-2000-105, 106, 107, and 110."
+      },
+      "limitations": [
+        "1854 witness uses '<ch->' ('chebangs'); earliest '<sh->' is Green's un-scanned 3 September 1859 Weekly Varieties (CERT-2000-106), followed by hosted 29 September 1860 Clipper scan (CERT-2000-108)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 July 1854 Clearfield Raftsman's Journal p. 1 scan with 8 tokens including lowercase plural 'chebangs'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 September 1860 New York Clipper Baltimore saloon scan ('\"Boss\" of a \"Shebang\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 December 1860 New York Clipper scan ('Shebang').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 June 1861 New York Clipper scan ('new \"Shebang\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 December 1861 New York Clipper scan ('his shebang').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-105",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "6 August 1859 NY Clipper 'strong \"chebang\"' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-106",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "3 September 1859 Boston Weekly Varieties 'keeper of a shebang' (Green baseline, discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-107",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "19 March 1860 Marysville Daily Appeal 'old shebang of a theatre' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-110",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "28 March 1861 Cincinnati Daily Press 'boss of this \"chebang\"' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-002",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Distinguishes 1852 venue title from 1854 generic count noun.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "shebang, n., sense 2 ('saloon, bar, establishment')",
+        "edition_or_revision": "Green's Dictionary of Slang online (consulted November 2026; cf. OED 1878 tavern baseline)",
+        "baseline_date": "1859-09-03",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/sbjmfsa",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2000-103",
+        "attested_date": "1854-07-15",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 years, 1 month, and 19 days (15 July 1854 vs. 3 September 1859)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e7345b1a8d2213663148a9e9c7ec7515d3c6ba579304d8a880f3256ff902afda",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "e7345b1a8d2213663148a9e9c7ec7515d3c6ba579304d8a880f3256ff902afda"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2000-003-01",
+          "claim_id": "CLM-2000-003",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2000-103",
+            "CERT-2000-108",
+            "CERT-2000-109",
+            "CERT-2000-111",
+            "CERT-2000-112",
+            "CERT-2000-105",
+            "CERT-2000-106",
+            "CERT-2000-107",
+            "CERT-2000-110",
+            "CLM-2000-002"
+          ],
+          "findings": "Directly inspected CERT-2000-103.webp (July 15, 1854 Raftsman's Journal, Clearfield, PA, p. 1, col. 5: lowercase plural 'I've seen your chebangs, and I'm off!') alongside CERT-2000-102.webp (1852 'Chebang and Restaurant' venue title kept contextual via CLM-2000-002), confirming 'earlier_spelling' classification (<ch-> vs. <sh->) and 5-year, 1-month, 19-day advance over Green's Sept. 3, 1859 baseline.",
+          "objections": [],
+          "material_fingerprint_at_review": "e7345b1a8d2213663148a9e9c7ec7515d3c6ba579304d8a880f3256ff902afda",
+          "evidence_fingerprints_at_review": {
+            "CERT-2000-103": "d3e80c67965fe8c41c7bcafc25d30e37fe5964a135b2f77206778cdb9da825dd",
+            "CERT-2000-105": "857d1a4cde60b437021626e95e6d9c1fb178ac7a5e9bd16a2037361bd97c4db8",
+            "CERT-2000-106": "e1d7c56b97b7ad9234a9f843f34b1dadc2713a3fb13733914b9e04a9d29d8b53",
+            "CERT-2000-107": "12211c922229c6677852ed8570dc896b5b1e629ff8f08cb10330fd22ae9d0e29",
+            "CERT-2000-108": "562b173e189f2b1f91bbfda23d304ff5457294212779e173b8fd53f76501d840",
+            "CERT-2000-109": "ba93356beb9051e1c03ee725d8ee11a817e99a9e65dd5769930ea98fcf82241b",
+            "CERT-2000-110": "92b5048a4fc8555daf14393d271b8a773c6ee499dfa0fa4b07336bafbc95ef13",
+            "CERT-2000-111": "43d153c6053d2e11d15d5cb673cce25f3e17ac126277c3fc96300de4a71438ab",
+            "CERT-2000-112": "1a64439b33006c1012cfb2e693e62cd74023797fb03b81e7ef942ee08e80a00d",
+            "CLM-2000-002": "5ff7559ccca62e24dc9442c6e2916873d92d8a4601b4c0ca6b4548c1be216e7a"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-004",
+      "slug": "clm-2000-004",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang, n. ('soldier's tent, hut, or quarters')",
+      "case_section": "3. Prosopography of the 1861 Columbia Spy Letters and Camp Diffusion",
+      "short_label": "28 September 1861 Columbia Spy camp-shelter antedating vs. OED (1867) and wartime/Whitman calibration",
+      "statement": "A Company K, 5th Pennsylvania Reserves letter series in The Columbia Spy—opening on 28 September 1861 (written 23 September) with 'Quartermaster's \"shebang\"'—advances OED's 1867 shelter baseline by 6 calendar years and precedes both 1862–1866 wartime diffusion and Walt Whitman's December 1862 Falmouth note (printed 1867/1871).",
+      "rationale": "Bates's roster (CERT-2000-202) links Columbia Spy letters CERT-2000-113, 201, and 204 as one Company K correspondent's series, followed across federal, Sanitary/Christian Commission, POW, and Utah sources (CERT-2000-205, 206, 208, 210, 212, 213, 217) and Burroughs's 1867/1871 printing of Whitman (CERT-2000-221).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Union military quarters/hut usage by 28 September 1861 and 1867/1871 print debut of Whitman's December 1862 note.",
+        "does_not_establish": "Three independent 1861 regimental witnesses—CERT-2000-113, 201, and 204 come from one single correspondent.",
+        "remaining_uncertainty": "Exact print month of the 1863 GPO report printing Anderson's 30 June 1862 Lapwai dispatch."
+      },
+      "limitations": [
+        "Enforces 28 September 1861 print date over 23 September camp dateline, 1863 GPO print date over 30 June 1862 report date (CERT-2000-205), and treats CERT-2000-113/201/204 as 1 correspondent's series."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 September 1861 Columbia Spy ('Quartermaster's \"shebang\"', written 23 September).",
+          "witness_note": "1 correspondent's camp-letter series with 201 and 204."
+        },
+        {
+          "ref": "CERT-2000-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 December 1861 Columbia Spy unquoted Camp Pierpont 'shebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 January 1862 [written 25 December 1861] Columbia Spy 24x8x8-ft log cabin.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-202",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1869 Bates 5th PA Reserves roster identifying Kershner and Q.M. Samuel Evans.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 June 1862 Lapwai WT liquor 'shebang' (printed 1863 GPO).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 March 1863 Harper's Weekly 2nd Iowa shelter and '\"shebang\" of a Confederacy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nov. 1863 Brandy Station Sanitary Commission 'The Shebang' photo (published 1866).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dec. 1864 Christian Commission sutler 'shebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 June 1865 Col. Nott POW huts.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "22 July 1865 Utah 'crockery and china-ware chebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-217",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1867 Goss Andersonville OED Sense 1a baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-221",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Proves Whitman's Dec. 1862 Falmouth note first reached print in Burroughs (1867/1871) and Specimen Days (1882).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-003",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Adapts antebellum establishment 'shebang' to Union camp huts.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "shebang, n., sense 1a ('hut, shed; dwelling, quarters')",
+        "edition_or_revision": "OED Online entry (modified March 2025; consulted November 2026)",
+        "baseline_date": "1867",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/shebang_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2000-113",
+        "attested_date": "1861-09-28",
+        "attested_date_precision": "day",
+        "computed_advance_display": "6 calendar years (28 September 1861 vs. 1867)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3ffb7af8fb71857093fe88e4ae19985afece38bd931bffac0a87d18abbf4bb25",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "3ffb7af8fb71857093fe88e4ae19985afece38bd931bffac0a87d18abbf4bb25"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-005",
+      "slug": "clm-2000-005",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang, n. (Yale student slang & 1872 vehicle sense)",
+      "case_section": "3. Prosopography of the 1861 Columbia Spy Letters and Camp Diffusion",
+      "short_label": "February 1865 Union veteran-to-Yale transmission and late 1872 Twain vehicular extension",
+      "statement": "Returning Union student-veterans introduced awareness of 'shebang' into the Yale Literary Magazine by February 1865 (initially mocking regional Indianapolis usage six years before naturalized campus slang in Bagg 1871), while wheeled-vehicle usage ('THE CHARTERED SHEBANG' in Twain's 1872 Roughing It) arose nearly two decades after the tavern/hut sense.",
+      "rationale": "In the February 1865 Yale Literary Magazine (CERT-2000-211), returning 100-day student-soldiers quote 'what owns this shebang' explicitly as mocked Indianapolis ('Injunoppolis') regional speech prior to full Yale campus naturalization in Bagg (1871, CERT-2000-222), partially supporting soldier-mediated campus transmission while refuting antebellum Yale origin lore and proving Twain's 1872 vehicle usage (CERT-2000-223) was secondary.",
+      "type": "transmission",
+      "assessment": "partially_supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "February 1865 student-veteran awareness of 'shebang' in the Yale Literary Magazine (quoted as Midwestern speech), naturalized Yale campus slang by 1871, and post-bellum emergence of the 1872 vehicle sense.",
+        "does_not_establish": "Full campus naturalization of 'shebang' at Yale as early as February 1865 or any antebellum college/carriage currency.",
+        "remaining_uncertainty": "Exact campus transition at Yale between mocking Midwestern 'shebang' in February 1865 and routine student room-slang in Bagg (1871)."
+      },
+      "limitations": [
+        "CERT-2000-211 and misdate audit record CERT-2000-121 cite the exact same February 1865 passage (1 witness)."
+      ],
+      "resolution_criteria": [
+        "Locate an 1865–1870 Yale student diary, letter, or campus periodical using 'shebang' directly for a Yale dorm room or college affair without regional quotation framing."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2000-211",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "February 1865 Yale Literary Magazine veteran piece quoting 'what owns this shebang' as mocked Indianapolis speech.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1871 Bagg Four Years at Yale student-slang entry.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1872 Twain Roughing It 'THE CHARTERED SHEBANG'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Uses Hall's 1856 negative control to exclude pre-war Yale slang.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Links 1865 Yale usage to 1861–1864 Union camp currency.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "cf1b27eff367338b7d01df90abb41921720a8f6a7cb70d2e0dcaa01d155a534c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "e4e9091abd782eef5cffb8772b01c366f85304bfb6e94050fd363d81e4c504d5"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Downgraded transmission claim from supported to partially_supported because Feb. 1865 Yale Lit. frames 'shebang' as mocked Indianapolis speech prior to 1871 campus adoption.",
+          "content_fingerprint": "cf1b27eff367338b7d01df90abb41921720a8f6a7cb70d2e0dcaa01d155a534c"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2000-005-01",
+          "claim_id": "CLM-2000-005",
+          "claim_revision": 2,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2000-211",
+            "CERT-2000-222",
+            "CERT-2000-223",
+            "CLM-2000-001",
+            "CLM-2000-004"
+          ],
+          "findings": "Upheld at revision 2 after recalibrating assessment from supported to partially_supported: Feb. 1865 Yale Literary Magazine quotes 'shebang' as mocked Indianapolis dialect six years before naturalized Yale campus slang in Bagg (1871).",
+          "objections": [],
+          "material_fingerprint_at_review": "cf1b27eff367338b7d01df90abb41921720a8f6a7cb70d2e0dcaa01d155a534c",
+          "evidence_fingerprints_at_review": {
+            "CERT-2000-211": "d878f2d5be75e3c724775b1c5adfc1cca89093d22af3d3e070472f51616fbb3e",
+            "CERT-2000-222": "8b6653a59955c06da955465bf8c569327add41fb1c2a1ae19d91f3c99455f6d9",
+            "CERT-2000-223": "e66d40340c1bd82a1463ae94d1a4c09c5d58c279517a6f992d17e52ed1cbdac1",
+            "CLM-2000-001": "d415c75e734c8f715eb3ae815cf024c13e105c3c6b2cea92efd21361110914cd",
+            "CLM-2000-004": "3ffb7af8fb71857093fe88e4ae19985afece38bd931bffac0a87d18abbf4bb25"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-006",
+      "slug": "clm-2000-006",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "the whole shebang, phr. (spelled the whole \"chebang\")",
+      "case_section": "4. Five-Stage Emergence of Idiomatic The Whole Shebang (1863–1868)",
+      "short_label": "4 July 1863 and 5 March 1864 \"the whole 'chebang'\" phrasal antedating vs. OED (1869)",
+      "statement": "Surgeon James Bryan's 4 July 1863 hospital-transfer report (\"removal of the whole 'chebang'\") and the 5 March 1864 Quincy Union non-shelter political package (\"give them the whole 'chebang'\") advance OED's 1869 phrasal baseline by 6 calendar years.",
+      "rationale": "CERT-2000-207 documents the exact field-hospital outfit hinge and CERT-2000-209 (plus 'chebangers') sheds all physical shelter architecture five years before 1869.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print emergence of totalizing 'the whole \"chebang\"' in 1863–1864.",
+        "does_not_establish": "Canonical '<sh->' spelling ('the whole shebang') or unquoted orthography.",
+        "remaining_uncertainty": "None beyond year-only precision on the 1869 dictionary baseline."
+      },
+      "limitations": [
+        "OED's Sense 2 baseline ('1869') is year-precise, bounding formal advance display to calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 July 1863 American Medical Times hospital-outfit hinge ('the whole \"chebang\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "5 March 1864 Quincy Union non-shelter 'the whole \"chebang\"' and 'chebangers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-004",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Derives collective 'whole chebang' from wartime camp-outfit usage.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "shebang, n., sense 2 ('the whole shebang')",
+        "edition_or_revision": "OED Online entry (consulted November 2026)",
+        "baseline_date": "1869",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/shebang_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2000-207",
+        "attested_date": "1863-07-04",
+        "attested_date_precision": "day",
+        "computed_advance_display": "6 calendar years (4 July 1863 vs. 1869)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6fb9ad06985c665ef970f7b7c9387c00ec12333ac50fe2a9b802ca9bfbc6493b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "6fb9ad06985c665ef970f7b7c9387c00ec12333ac50fe2a9b802ca9bfbc6493b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-007",
+      "slug": "clm-2000-007",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "the whole shebang, phr.",
+      "case_section": "4. Five-Stage Emergence of Idiomatic The Whole Shebang (1863–1868)",
+      "short_label": "5 December 1865 '<sh->' 'the whole \"shebang\"' and 21 July 1867 unquoted naturalization",
+      "statement": "The Louisville Daily Journal (5 December 1865, 'the whole \"shebang\" are expected here') advances the 1869 '<sh->' phrasal baseline by 4 calendar years, followed by July 1866 congressional testimony and unquoted 'The whole shebang' on 21 July 1867.",
+      "rationale": "Six Reconstruction-era witnesses (CERT-2000-214..216, 218..220) trace human-collective agreement, sworn House testimony, and unquoted newsprint/novel naturalization prior to Mark Twain.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Canonical '<sh->' phrasal spelling by 5 December 1865 and unquoted naturalization by 21 July 1867.",
+        "does_not_establish": "Antebellum attestation of the fixed phrase.",
+        "remaining_uncertainty": "Unhosted scan status on Reitan's 4 July 1866 Cleveland Daily Leader item (CERT-2000-215)."
+      },
+      "limitations": [
+        "Anchored to the 5 December 1865 Louisville print date rather than the undated Mobile Times item it quotes."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "5 December 1865 Louisville Daily Journal '<sh->' 'the whole \"shebang\" are'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "25 July 1866 House Report 101 Memphis riot testimony ('burn up the whole \"shebang.\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 July 1867 Augusta Daily Press unquoted 'The whole shebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1868 Grimball Randolph Honor unquoted 'the whole shebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 March 1869 Memphis Daily Appeal 'clean out the whole shebang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-215",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "4 July 1866 Cleveland Daily Leader 'the whole \"chebang,\"' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Continues 1863–1864 'the whole \"chebang\"' under '<sh->' spelling.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang / OED Online",
+        "entry_and_sense": "whole shebang, n. ('everything, the entire outfit or group')",
+        "edition_or_revision": "Consulted November 2026",
+        "baseline_date": "1869",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/oyrrtnq",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2000-214",
+        "attested_date": "1865-12-05",
+        "attested_date_precision": "day",
+        "computed_advance_display": "4 calendar years (5 December 1865 vs. 1869)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "adb705cdbb7fb112d15c3ad3d10f680a9658ff3f6cadcac2fde85563d26c14b1",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "adb705cdbb7fb112d15c3ad3d10f680a9658ff3f6cadcac2fde85563d26c14b1"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-008",
+      "slug": "clm-2000-008",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang / chebang, n.",
+      "case_section": "5. Origin Pathways and Rejected Archival Leads",
+      "short_label": "Anglo-Irish 'shebeen' + expressive 'che-bang!' remodeling vs. weakened 'char-à-bancs' and refuted contact myths",
+      "statement": "Remodeling of immigrant Anglo-Irish 'shebeen' (< Irish 'séibín'/'síbín', oxytonic illicit alehouse) onto American expressive 'che-bang!' / '-bang' (1849–1858) is consistent with 1854 tavern semantics and oxytonic stress, whereas French 'char-à-bancs' lacks tavern/hut semantics before 1872 and 'cabane', 'Scheveningen', 'Schuppen', and 'chabola' are refuted.",
+      "rationale": "Per Commit 5db37e1, co-temporal Northeastern 'shebeen' and 'che-bang!' witnesses (CERT-2000-301..305, 101, 104, 114..117) align with early saloon usage without proving the unwritten oral blend, while 'char-à-bancs' (306, 307) was a genteel European carriage and Confederate 'cabane' (308), Dutch (312), German (313), and post-1852 Basque-Spanish 'chabola' (314) fail chronologically and phonologically.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Co-temporal pre-1860 American currency of 'shebeen' and 'che-bang!', carriage restriction of 1830s 'char-à-bancs', and exclusion of four folk contact etymons.",
+        "does_not_establish": "Direct documentary proof of the oral 'shebeen' x 'che-bang!' blending event.",
+        "remaining_uncertainty": "Whether 'char-à-bancs' secondarily reinforced '<ch->' spelling or Twain's 1872 cart joke."
+      },
+      "limitations": [
+        "Qualified per Commit 5db37e1: consistent with tavern/stress evidence without claiming proof of ultimate coinage."
+      ],
+      "resolution_criteria": [
+        "Locate an 1845–1855 American text explicitly treating 'shebeen' and 'chebang'/'shebang' as variants."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2000-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Irish 'séibín'/'síbín' in O'Reilly (1864) and Dinneen (1904).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Hiberno-English oxytonic '-een' stress in Joyce (1910).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Simmonds (1858) and Hotten (1860/1864) 'shebeen'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Carleton (1834) Irish 'shebeen'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1857 Harper's expressive 'slam-bang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-101",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "10 March 1849 Spirit of the Times 'che-bang!'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-104",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1858 Paxton 'che-bang!'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-114",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1852 Boston temperance 'shebeen'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-115",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1853 NY 'shanty (or shebeen)'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-116",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1856 Brougham 'shebeen'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-117",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "5 May 1860 NY Clipper 'shebeen'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-306",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1835 Académie 'Char à bancs' = excursion carriage only.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-307",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1837 Starke 'char-à-banc' = Continental sightseeing carriage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes Schele De Vere's 1872 Confederate 'cabane' claim.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes Dutch 'Scheveningen' tavern myth via Bomhoff (1851).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes German 'Schuppen' via Adler (1859).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 'chabola' was absent from the 1852 RAE Spanish dictionary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2000-003",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Anchors analysis in 1854 tavern semantics.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "4d374cd805aadd6c4b479759dc30e95009c25a82df751b05b38bfc606f61d57e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "4d374cd805aadd6c4b479759dc30e95009c25a82df751b05b38bfc606f61d57e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2000-009",
+      "slug": "clm-2000-009",
+      "case_slug": "whole-shebang",
+      "headword": "whole shebang",
+      "target_lexeme": "shebang / whole shebang (Trap A–C archival false positives)",
+      "case_section": "5. Origin Pathways and Rejected Archival Leads",
+      "short_label": "Elimination of Trap A misdates (1824–1857) and Trap B/C OCR ghosts and Hebraist/Tibarskad homographs",
+      "statement": "Title-page and facsimile audits resolve apparent 1824–1857 serial/thesaurus hits to 1862–1962 imprints and falsify pre-1861 OCR ghosts ('Exchange', 'she hang', '2 Kitchens', 'Shenango') and Hebraist/Tibarskad homographs.",
+      "rationale": "Direct scan checks correct Yale Lit '1836' to Feb. 1865 (CERT-2000-121, same passage as 211), Interior/Atlantic '1824'/'1857' to 1862/1900 (320), and Roget's '1834' to 1962 (321), while refuting eight OCR/homograph ghosts (122, 224, 315..319, 322).",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "True post-1861 dates or non-target readings for all eleven Trap A–C records.",
+        "does_not_establish": "Any pre-1852 American attestation.",
+        "remaining_uncertainty": "None; all scans are verified in ink."
+      },
+      "limitations": [
+        "CERT-2000-121 audits the 1836 catalog misdate of the exact Feb. 1865 Yale Lit page attested in CERT-2000-211."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2000-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1836' Yale Lit catalog misdate to February 1865.",
+          "witness_note": "Same passage as CERT-2000-211."
+        },
+        {
+          "ref": "CERT-2000-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1824' Interior Report to 1862/1863 and '1857' Atlantic Monthly to Sept. 1900.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1834' Roget's Thesaurus hit to the 1962 3rd edition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1845 'shebang' OCR hit is broken-type 'she hang'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 9 March 1855 Pittsburgh OCR hit is ink 'Exchange'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 20 April 1855 Pittsburgh OCR hit is ink 'Exchange'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 27 November 1860 Lancaster OCR hit is ink '2 Kitchens'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 27 February 1856 Carlisle OCR hit is toponym 'Shenango'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1859–1888 OCR hits are toponym 'Shenango'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1854 Tibarskad 'chebang' ('to write') and 1830 ship-log cursive ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2000-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1820/1853 Hebraist transliteration 'Shebang' ('seven').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c84ee34a5fffdca67b2c99e0bcfef33aadf084bd2a95af614ee31c29968afe0c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2000.",
+          "content_fingerprint": "c84ee34a5fffdca67b2c99e0bcfef33aadf084bd2a95af614ee31c29968afe0c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

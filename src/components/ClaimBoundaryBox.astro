@@ -1,0 +1,36 @@
+---
+import type { EvidenceBoundary } from '../lib/claims';
+
+interface Props {
+  boundary: EvidenceBoundary;
+}
+
+const { boundary } = Astro.props;
+---
+
+<section id="boundary" class="claim-boundary-box" aria-labelledby="boundary-heading">
+  <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent);">
+    Scope &amp; Epistemic Guardrails
+  </div>
+  <h2 id="boundary-heading" style="font-family: var(--font-serif); font-size: 1.38rem; margin: 0.15rem 0 0.25rem;">
+    Evidence Boundary
+  </h2>
+  <p style="margin: 0; font-size: 0.88rem; color: var(--ink-muted);">
+    Separating what the cited primary records directly establish from unclosed historical or linguistic inference.
+  </p>
+
+  <div class="claim-boundary-grid">
+    <div class="boundary-pane boundary-establishes">
+      <h3>What the evidence establishes</h3>
+      <p>{boundary.establishes}</p>
+    </div>
+    <div class="boundary-pane boundary-does-not">
+      <h3>What it does not establish</h3>
+      <p>{boundary.does_not_establish}</p>
+    </div>
+    <div class="boundary-pane boundary-uncertainty">
+      <h3>Remaining uncertainty</h3>
+      <p>{boundary.remaining_uncertainty}</p>
+    </div>
+  </div>
+</section>

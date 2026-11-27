@@ -15,7 +15,7 @@ function dragnetBuildGate() {
           throw new Error(`DRAgNEt pre-build validation failed (${result.errors.length} error(s)):\n${msg}`);
         }
         console.log(
-          `[DRAgNEt Gate] Verified ${result.stats.cases} case files, ${result.stats.citations} citations, and ${result.stats.hostedScans} pre-1931 scans.`
+          `[DRAgNEt Gate] Verified ${result.stats.cases} case files, ${result.stats.citations} citations, ${result.stats.claims ?? 0} claims, and ${result.stats.hostedScans} pre-1931 scans.`
         );
       },
     },

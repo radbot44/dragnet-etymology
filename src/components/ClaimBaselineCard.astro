@@ -1,0 +1,196 @@
+---
+import {
+  COMPARISON_KIND_LABELS,
+  type AntedatingBaseline,
+  type NegativeEvidenceBounds,
+} from '../lib/claims';
+import type { CitationRecord } from '../lib/ledgers';
+
+interface Props {
+  antedatingBaseline?: AntedatingBaseline | null;
+  negativeEvidenceBounds?: NegativeEvidenceBounds | null;
+  citationById: Map<string, CitationRecord>;
+}
+
+const { antedatingBaseline, negativeEvidenceBounds, citationById } = Astro.props;
+
+const advancingCitation = antedatingBaseline
+  ? citationById.get(antedatingBaseline.advancing_citation_ref) ?? null
+  : null;
+const advancingHref = antedatingBaseline
+  ? `/citations/${advancingCitation ? advancingCitation.slug : antedatingBaseline.advancing_citation_ref.toLowerCase()}/`
+  : '';
+const baselineIsUrl = Boolean(antedatingBaseline?.source_url_or_ref?.startsWith('https://'));
+---
+
+{antedatingBaseline && (
+  <section id="baseline-bounds" class="claim-baseline-card" aria-labelledby="antedating-card-heading">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem;">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent);">
+          Chronological Baseline Calibration
+        </div>
+        <h2 id="antedating-card-heading" style="font-family: var(--font-serif); font-size: 1.35rem; margin: 0.15rem 0 0;">
+          Antedating &amp; Reference Comparison
+        </h2>
+      </div>
+      <div class="claim-badge-row">
+        <span class="badge badge-class-documentary">
+          {COMPARISON_KIND_LABELS[antedatingBaseline.comparison_kind]}
+        </span>
+        <span class="badge">
+          {antedatingBaseline.inspection_mode === 'directly_inspected'
+            ? 'Baseline source directly inspected'
+            : 'Baseline metadata from prior research'}
+        </span>
+      </div>
+    </div>
+
+    <div class="baseline-advance-banner">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #194d47; font-weight: 700;">
+          Computed Chronological Advance
+        </div>
+        <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--ink);">
+          {antedatingBaseline.computed_advance_display}
+        </div>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-muted);">
+        Precision: {antedatingBaseline.attested_date_precision} ({antedatingBaseline.attested_date}) vs.{' '}
+        {antedatingBaseline.baseline_date_precision} ({antedatingBaseline.baseline_date})
+      </div>
+    </div>
+
+    <div class="baseline-compare-grid">
+      <div class="baseline-col">
+        <h3>Prior Lexicographical Baseline</h3>
+        <dl class="citation-bibliography" style="font-size: 0.88rem;">
+          <dt style="color: var(--ink-muted);">Authority</dt>
+          <dd><strong>{antedatingBaseline.authority}</strong></dd>
+
+          <dt style="color: var(--ink-muted);">Entry &amp; Sense</dt>
+          <dd>{antedatingBaseline.entry_and_sense}</dd>
+
+          <dt style="color: var(--ink-muted);">Edition / Revision</dt>
+          <dd>{antedatingBaseline.edition_or_revision}</dd>
+
+          <dt style="color: var(--ink-muted);">Baseline Date</dt>
+          <dd style="font-family: var(--font-mono);">{antedatingBaseline.baseline_date} ({antedatingBaseline.baseline_date_precision})</dd>
+
+          <dt style="color: var(--ink-muted);">Checked Date</dt>
+          <dd style="font-family: var(--font-mono);">{antedatingBaseline.checked_date}</dd>
+
+          <dt style="color: var(--ink-muted);">Reference</dt>
+          <dd>
+            {baselineIsUrl ? (
+              <a href={antedatingBaseline.source_url_or_ref} target="_blank" rel="noopener noreferrer">
+                Open reference entry ↗
+              </a>
+            ) : (
+              antedatingBaseline.source_url_or_ref
+            )}
+          </dd>
+        </dl>
+      </div>
+
+      <div class="baseline-col">
+        <h3>Advancing Primary Witness</h3>
+        <dl class="citation-bibliography" style="font-size: 0.88rem;">
+          <dt style="color: var(--ink-muted);">Citation ID</dt>
+          <dd>
+            <a href={advancingHref} style="font-family: var(--font-mono); font-weight: 700;">
+              {antedatingBaseline.advancing_citation_ref}
+            </a>
+          </dd>
+
+          <dt style="color: var(--ink-muted);">Attested Date</dt>
+          <dd style="font-family: var(--font-mono);">
+            {advancingCitation ? `${advancingCitation.date_display} (${antedatingBaseline.attested_date})` : antedatingBaseline.attested_date}
+          </dd>
+
+          {advancingCitation && (
+            <>
+              <dt style="color: var(--ink-muted);">Attested Form</dt>
+              <dd><strong>“{advancingCitation.attested_form}”</strong></dd>
+
+              <dt style="color: var(--ink-muted);">Publication</dt>
+              <dd>{advancingCitation.source_publication}</dd>
+
+              <dt style="color: var(--ink-muted);">Primary Scan</dt>
+              <dd>
+                {advancingCitation.scan.hosted_path ? (
+                  <a href={`/citations/${advancingCitation.slug}/#scan`}>Inspect hosted public-domain scan →</a>
+                ) : (
+                  <a href={advancingCitation.source_url} target="_blank" rel="noopener noreferrer">
+                    Inspect at {advancingCitation.source_archive} ↗
+                  </a>
+                )}
+              </dd>
+            </>
+          )}
+        </dl>
+      </div>
+    </div>
+  </section>
+)}
+
+{negativeEvidenceBounds && (
+  <section
+    id={antedatingBaseline ? 'negative-bounds' : 'baseline-bounds'}
+    class="claim-baseline-card"
+    aria-labelledby="negative-bounds-heading"
+  >
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent);">
+          Bounded Corpus Control
+        </div>
+        <h2 id="negative-bounds-heading" style="font-family: var(--font-serif); font-size: 1.35rem; margin: 0.15rem 0 0;">
+          Negative-Evidence Search Manifest
+        </h2>
+      </div>
+      <div class="claim-badge-row">
+        <span class="badge badge-class-documentary">
+          Qualifying hits in scope: {negativeEvidenceBounds.qualifying_results_count ?? 'N/A'}
+        </span>
+        <span class="badge">Period: {negativeEvidenceBounds.search_period}</span>
+      </div>
+    </div>
+
+    <dl class="citation-bibliography" style="margin-bottom: 0.95rem;">
+      <dt style="color: var(--ink-muted);">Corpus Identity</dt>
+      <dd>{negativeEvidenceBounds.corpus_identity}</dd>
+
+      {negativeEvidenceBounds.corpus_coverage && (
+        <>
+          <dt style="color: var(--ink-muted);">Corpus Coverage</dt>
+          <dd>{negativeEvidenceBounds.corpus_coverage}</dd>
+        </>
+      )}
+
+      <dt style="color: var(--ink-muted);">Search Period</dt>
+      <dd style="font-family: var(--font-mono);">{negativeEvidenceBounds.search_period} (executed {negativeEvidenceBounds.search_date})</dd>
+
+      <dt style="color: var(--ink-muted);">Search Method</dt>
+      <dd>{negativeEvidenceBounds.search_method}</dd>
+
+      <dt style="color: var(--ink-muted);">Query Terms</dt>
+      <dd>
+        <ul class="query-term-list" aria-label="Searched orthographic and control terms">
+          {negativeEvidenceBounds.query_terms.map((term) => (
+            <li><code class="query-term-chip">{term}</code></li>
+          ))}
+        </ul>
+      </dd>
+    </dl>
+
+    <div class="boundary-pane boundary-uncertainty">
+      <h3>Known Digitization &amp; Corpus Limitations</h3>
+      <ul style="margin: 0; padding-left: 1.15rem; font-size: 0.89rem;">
+        {negativeEvidenceBounds.known_limitations.map((lim) => (
+          <li style="margin-bottom: 0.3rem;">{lim}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}

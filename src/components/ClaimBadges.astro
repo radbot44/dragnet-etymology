@@ -1,0 +1,89 @@
+---
+import {
+  CLAIM_ASSESSMENT_LABELS,
+  CLAIM_TYPE_LABELS,
+  LIFECYCLE_STATUS_LABELS,
+  isDocumentaryClaimType,
+  type ClaimAssessment,
+  type ClaimReviewStatus,
+  type ClaimType,
+  type LifecycleStatus,
+} from '../lib/claims';
+
+interface Props {
+  type: ClaimType;
+  assessment: ClaimAssessment;
+  reviewStatus: ClaimReviewStatus;
+  hasStaleReviews?: boolean;
+  externallyRecognized?: boolean;
+  lifecycleStatus?: LifecycleStatus;
+  showKind?: boolean;
+  showType?: boolean;
+  verbose?: boolean;
+}
+
+const {
+  type,
+  assessment,
+  reviewStatus,
+  hasStaleReviews = false,
+  externallyRecognized = false,
+  lifecycleStatus = 'active',
+  showKind = true,
+  showType = true,
+  verbose = false,
+} = Astro.props;
+
+const isDocumentary = isDocumentaryClaimType(type);
+const kindLabel = isDocumentary ? 'Documentary finding' : 'Interpretive hypothesis';
+
+const REVIEW_BADGE_LABELS: Record<ClaimReviewStatus, { compact: string; verbose: string }> = {
+  unreviewed: {
+    compact: 'Unreviewed',
+    verbose: 'Review: Unreviewed',
+  },
+  agent_reviewed: {
+    compact: 'AI-agent reviewed',
+    verbose: 'Review: AI-agent only (not human-reviewed)',
+  },
+  independently_agent_reviewed: {
+    compact: 'Independent AI audit',
+    verbose: 'Review: Independent AI audit (not human-reviewed)',
+  },
+  human_reviewed: {
+    compact: 'Human-reviewed',
+    verbose: 'Review: Human-reviewed',
+  },
+};
+
+const reviewText = verbose
+  ? REVIEW_BADGE_LABELS[reviewStatus].verbose
+  : REVIEW_BADGE_LABELS[reviewStatus].compact;
+const assessText = verbose
+  ? `Assessment: ${CLAIM_ASSESSMENT_LABELS[assessment]}`
+  : CLAIM_ASSESSMENT_LABELS[assessment];
+---
+
+<span class="claim-badge-row">
+  {lifecycleStatus !== 'active' && (
+    <span class={`badge badge-lifecycle-${lifecycleStatus}`}>
+      {LIFECYCLE_STATUS_LABELS[lifecycleStatus]}
+    </span>
+  )}
+  {showKind && (
+    <span class={`badge badge-class-${isDocumentary ? 'documentary' : 'interpretive'}`}>
+      {kindLabel}
+    </span>
+  )}
+  {showType && (
+    <span class="badge badge-claim-type">{CLAIM_TYPE_LABELS[type]}</span>
+  )}
+  <span class={`badge badge-assess-${assessment}`}>{assessText}</span>
+  <span class={`badge badge-review-${reviewStatus}`}>{reviewText}</span>
+  {hasStaleReviews && (
+    <span class="badge badge-review-stale">Review stale</span>
+  )}
+  {externallyRecognized && (
+    <span class="badge badge-ext-recognized">Externally recognized</span>
+  )}
+</span>

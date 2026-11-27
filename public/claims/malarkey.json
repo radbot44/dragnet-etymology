@@ -1,0 +1,1322 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "malarkey",
+  "case_slug": "malarkey",
+  "case_number": "Case 2700",
+  "target_id": "TGT-014",
+  "headword": "malarkey",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence decomposition for Case 2700 (malarkey, dictionary_submitted): separates Tad Dorgan's 1922–1924 mock-onomastic comic gags ('YES MILARKEY 609 J.', 'MALACHY') from Davis J. Walsh's September 8–10, 1923 INS wire corroboration of OED's semantic baseline, establishes March 11, 1924 unquoted lowercase prose, April 20–21, 1924 -y spelling ('Malarky'/'malarky'), May–October 1924 non-Walsh adoption, June 25, 1925 unquoted 'a lot of malarkey', and March–December 1930 Variety/Broadway breakout, and evaluates surname Mullarkey/Malarkey × blarney remodeling against scholarly Irish, Northern English marlock/malack, Modern Greek μαλακία, and Cassidy's refuted pseudo-Irish claim across all 53 top-level ledger citations.",
+  "claims": [
+    {
+      "id": "CLM-2700-001",
+      "slug": "clm-2700-001",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "MILARKEY / MALACHY (T. A. 'Tad' Dorgan mock-onomastic comic-panel gags)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Tad Dorgan's 1922 'YES MILARKEY 609 J.' telephone-exchange gag vs. generic mass-noun coinage",
+      "statement": "In the March 9, 1922 San Francisco Call and Post 'Indoor Sports' panel (reported via Dave Wilton's facsimile crop because East Coast Hearst papers preempted the strip that day), San Francisco-born cartoonist T. A. 'Tad' Dorgan lettered 'YES MILARKEY 609 J.'—a playful stage-Irish telephone-exchange substitution ('MI-larkey 609 J.') rather than an unambiguous common mass noun for 'nonsense'—followed on April 2, 1924 (Madison Capital Times) by exclamatory 'MALACHY — YOU SAID IT', showing that Dorgan popularized mock-Irish onomastic humor rather than single-handedly coining generic malarkey.",
+      "rationale": "Separating Dorgan's proper-name/telephone-exchange wordplay (March 1922 'MILARKEY 609 J.' and April 1924 'MALACHY') from Davis J. Walsh's September 1923 mass-noun syntax ('a lot of \"malarkey\"') and independent May 1924 Oakland sports-page prose clarifies the popularization-versus-coinage distinction and corrects older secondary notes misreporting the 1922 token as 'Malachy'.",
+      "type": "semantic",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact syntactic frame ('YES MILARKEY 609 J.') of Dorgan's March 9, 1922 panel and scan-verified April 2, 1924 'MALACHY — YOU SAID IT' strip, distinguishing mock-onomastic telephone/exclamatory humor from uncountable common-noun malarkey.",
+        "does_not_establish": "Direct full-page microfilm inspection of the March 9, 1922 San Francisco Call and Post in this repository, or unambiguous generic 'nonsense/bunk' semantics in 1922.",
+        "remaining_uncertainty": "Full-page masthead verification of the March 9, 1922 San Francisco Call and Post (p. 23) on California State Library or San Francisco Public Library microfilm, and whether Dorgan used lowercase 'malarkey' in un-digitized 1922–1923 Hearst panels."
+      },
+      "limitations": [
+        "CERT-2700-105 (March 9, 1922 San Francisco Call and Post) rests on Dave Wilton's published panel crop (verification_level: discovered, scan.hosted_path: null) and is not claimed as a scan-verified common-noun antedating."
+      ],
+      "resolution_criteria": [
+        "Inspect the original March 9, 1922 San Francisco Call and Post microfilm reel (p. 23) to verify masthead, folio, and full comic-panel dialogue directly."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2700-105",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents Dorgan's March 9, 1922 'Indoor Sports' panel reading 'YES MILARKEY 609 J.' in a mock telephone-number frame and notes East Coast Hearst preemption.",
+          "witness_note": "Secondary facsimile lead via Wordorigins.org (verification_level: discovered, no hosted full-page scan)."
+        },
+        {
+          "ref": "CERT-2700-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the full-page scan of Dorgan's April 2, 1924 'Indoor Sports' panel in the Madison Capital Times printing exclamatory 'MALACHY — YOU SAID IT'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-309",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Summarizes Michael Quinion's (World Wide Words) evaluation of Dorgan's role as popularizer rather than proven sole coiner.",
+          "witness_note": "Secondary lexicographical commentary (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2700-310",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Documents Peter Tamony's San Francisco archive materials (SHSMO Collection C3939) contextualizing Bay Area Irish-American and Dorgan slang.",
+          "witness_note": "Archival finding-aid reference (verification_level: discovered)."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "876cec8fbb9b90b206415d378aa55caa67fdf6e85f4a1ee8ac701e7464317b82",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 semantic claim distinguishing Tad Dorgan's 1922–1924 onomastic gags from generic mass-noun coinage.",
+          "content_fingerprint": "876cec8fbb9b90b206415d378aa55caa67fdf6e85f4a1ee8ac701e7464317b82"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-002",
+      "slug": "clm-2700-002",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. ('empty talk, boastful nonsense, bunk')",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "September 8–10, 1923 Davis J. Walsh INS open-scan corroboration of OED's semantic baseline and subhead display",
+      "statement": "Open-access newsprint scans of The Kingston Daily Freeman (September 8, 1923, p. 12: 'They seek [seem] to think he is a lot of \"malarkey,\" as it were') provide same-day open-scan corroboration of OED Online's September 8, 1923 Defiance Crescent-News baseline on the identical International News Service Luis Angel Firpo boxing dispatch by Davis J. Walsh, while The South Bend News-Times printing two days later (September 10, 1923, p. 11) promoted the hedged neologism into a bold centered display subhead ('Lot of \"Malarkey.\"').",
+      "rationale": "Collating the Kingston and South Bend printings with OED's Defiance citation proves all three derive from a single Walsh INS wire dispatch (0-day chronological delta against OED's baseline, correcting malarkey.md's 'earliestNewDiscovery' frontmatter label), while capturing immediate Midwestern copy-desk promotion into display typography on September 10, 1923.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Same-day (September 8, 1923) open-scan verification of OED Online's earliest unambiguous semantic witness of generic malarkey, n. and September 10, 1923 bold display-subhead extraction ('Lot of \"Malarkey.\"').",
+        "does_not_establish": "A calendar date earlier than OED Online's June 2008 baseline (September 8, 1923), or two independent regional authors across New York, Ohio, and Indiana.",
+        "remaining_uncertainty": "Whether Davis J. Walsh or fellow New York/Philadelphia sportswriters used 'malarkey' in un-syndicated columns prior to September 8, 1923."
+      },
+      "limitations": [
+        "OED's Defiance Crescent-News (Sept. 8, 1923), CERT-2700-107 (Kingston Daily Freeman, Sept. 8, 1923), and CERT-2700-108 (South Bend News-Times, Sept. 10, 1923) all print 1 single Davis J. Walsh INS wire dispatch and must be counted as 1 authorial witness."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the open-access September 8, 1923 Kingston Daily Freeman scan of Walsh's INS Firpo dispatch ('a lot of \"malarkey,\" as it were') on the exact date of OED's baseline.",
+          "witness_note": "INS wire printing #1 in ledger; same underlying Davis J. Walsh dispatch as CERT-2700-108 and OED's Sept. 8, 1923 Defiance Crescent-News witness."
+        },
+        {
+          "ref": "CERT-2700-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the September 10, 1923 South Bend News-Times printing adding the earliest verified bold centered copy-desk subhead 'Lot of \"Malarkey.\"'",
+          "witness_note": "INS wire printing #2 of the same Walsh dispatch as CERT-2700-107 (with local Indiana subhead addition)."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0996e1380f88e328665b36b801526f1c91f37720b7bd138732eee96b0662bacf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 attestation claim calibrating same-day Sept. 8–10, 1923 Walsh INS wire corroboration.",
+          "content_fingerprint": "0996e1380f88e328665b36b801526f1c91f37720b7bd138732eee96b0662bacf"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2700-002-01",
+          "claim_id": "CLM-2700-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2700-107",
+            "CERT-2700-108"
+          ],
+          "findings": "Directly inspected CERT-2700-107.webp (Sept. 8, 1923 Kingston Daily Freeman: 'They seek [seem] to think he is a lot of \"malarkey,\" as it were'), confirming same-day open-scan corroboration of OED's Sept. 8, 1923 Defiance Crescent-News baseline and explicit single-dispatch deduplication across Kingston, Defiance, and Sept. 10 South Bend printings of Davis J. Walsh's INS column.",
+          "objections": [],
+          "material_fingerprint_at_review": "0996e1380f88e328665b36b801526f1c91f37720b7bd138732eee96b0662bacf",
+          "evidence_fingerprints_at_review": {
+            "CERT-2700-107": "b049bacef9b527e9267c3701d11318b2bd1f447175ed1f12653b12db61049bd0",
+            "CERT-2700-108": "a4197f0dfe466564d46dd41d724259df7ca54d7796ee1c16ee5982cd95df7da1"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-003",
+      "slug": "clm-2700-003",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (unquoted lowercase mass-noun stabilization)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "March 11, 1924 Xenia Evening Gazette 1-day antedating of unquoted lowercase 'so much malarkey'",
+      "statement": "Davis J. Walsh's New York heavyweight-boxing INS dispatch printed on March 11, 1924 in The Evening Gazette (Xenia, OH, p. 6: 'The rest of the chatter is so much malarkey')—and reprinted March 12, 1924 in California's Glendale Evening News—drops the September 1923 quotation marks and 'as it were' hedge, antedating Dave Wilton's March 12, 1924 Indiana (PA) Evening Gazette baseline for unquoted lowercase prose malarkey by one day.",
+      "rationale": "Direct scan inspection of the March 11, 1924 Xenia afternoon printing establishes exact orthographic naturalization into unquoted lowercase mass-noun prose ('so much malarkey') while uniting the Xenia, Glendale, and Indiana (PA) items as a single INS wire transmission.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "One-day print antedating (March 11, 1924 vs. March 12, 1924) for unquoted lowercase mass-noun malarkey in American newspaper prose and simultaneous Southern California wire reception.",
+        "does_not_establish": "Non-Walsh authorship, as both the March 11 Ohio and March 12 California/Pennsylvania printings carry Davis J. Walsh's INS byline.",
+        "remaining_uncertainty": "None on the March 11, 1924 Xenia Evening Gazette masthead and column text."
+      },
+      "limitations": [
+        "CERT-2700-201 (March 11, 1924 Xenia Evening Gazette) and CERT-2700-109 (March 12, 1924 Glendale Evening News) print 1 single Davis J. Walsh INS dispatch (alongside Wilton's March 12 Indiana Evening Gazette witness)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the March 11, 1924 Xenia Evening Gazette scan printing unquoted lowercase 'The rest of the chatter is so much malarkey'.",
+          "witness_note": "Earliest verified unquoted lowercase prose printing; same Walsh INS dispatch as CERT-2700-109."
+        },
+        {
+          "ref": "CERT-2700-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents next-day Southern California evening reception of the same unquoted Walsh dispatch in the March 12, 1924 Glendale Evening News.",
+          "witness_note": "INS wire reprint of the same Walsh dispatch as CERT-2700-201; count as 1 authorial text."
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Wordorigins.org (Dave Wilton)",
+        "entry_and_sense": "malarkey, n. (earliest unquoted lowercase prose attestation: 'so much malarkey')",
+        "edition_or_revision": "Wordorigins.org entry dated 24 December 2020 (consulted November 2026)",
+        "baseline_date": "1924-03-12",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.wordorigins.org/big-list-entries/malarkey",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2700-201",
+        "attested_date": "1924-03-11",
+        "attested_date_precision": "day",
+        "computed_advance_display": "1 day (1924-03-11 vs. 1924-03-12)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "30ec59b3671394dc64a45f5c1af5c0420cfa4d395e12759162fa90922f1bfaa5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for March 11, 1924 unquoted lowercase malarkey antedating.",
+          "content_fingerprint": "30ec59b3671394dc64a45f5c1af5c0420cfa4d395e12759162fa90922f1bfaa5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-004",
+      "slug": "clm-2700-004",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "Malarky / malarky, n. (-y orthographic variant)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "April 20–21, 1924 earliest verified -y spelling ('Malarky' / 'malarky') in Walsh's INS tennis dispatch",
+      "statement": "Davis J. Walsh's New York collegiate lawn-tennis INS dispatch supplies the earliest scan-verified -y spelling of the slang noun, printed with surname-style capital M- in The South Bend News-Times on April 20, 1924 ('not so much Malarky') and regularized to lowercase 'not so much malarky' the following evening in California's Glendale Evening News (April 21, 1924)—five calendar years ahead of OED2's 1929 entry horizon.",
+      "rationale": "Side-by-side wire printings of the same April 1924 dispatch capture live copy-desk oscillation between capitalized eponymous 'Malarky' and lowercase 'malarky' while anchoring the -y orthographic variant in spring 1924.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Earliest scan-verified -y slang spellings ('Malarky' on April 20, 1924 and 'malarky' on April 21, 1924) and graphic evidence of surname-style capitalization in transit.",
+        "does_not_establish": "Two independent authors—both printings transmit one Davis J. Walsh INS wire story.",
+        "remaining_uncertainty": "Whether Walsh's original New York INS wire typescript transmitted uppercase 'MALARKY' on all-caps teletype, prompting divergent local copy-desk casing."
+      },
+      "limitations": [
+        "CERT-2700-202 (April 20, 1924 South Bend News-Times) and CERT-2700-111 (April 21, 1924 Glendale Evening News) are two regional printings of 1 Davis J. Walsh INS dispatch.",
+        "Compared at year precision against OED2's 1929 baseline for the malarkey/malarky entry."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the April 20, 1924 South Bend News-Times scan printing surname-capitalized 'not so much Malarky'.",
+          "witness_note": "Earliest verified -y slang variant; same Walsh INS tennis dispatch as CERT-2700-111."
+        },
+        {
+          "ref": "CERT-2700-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the April 21, 1924 Glendale Evening News scan printing lowercase 'not so much malarky' on the identical dispatch.",
+          "witness_note": "INS wire printing #2 of CERT-2700-202."
+        },
+        {
+          "ref": "CERT-2700-309",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Documents the pre-HDAS 1929 OED2 baseline for malarkey/malarky.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary, Second Edition (OED2)",
+        "entry_and_sense": "malarkey | malarky, n. (-y orthographic variant)",
+        "edition_or_revision": "OED2 (1989; recorded in World Wide Words prior-art summary)",
+        "baseline_date": "1929",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.worldwidewords.org/ww-mal3.html",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2700-202",
+        "attested_date": "1924-04-20",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 calendar years (1924-04-20 vs. 1929)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "89af79303937bcd36b162a0182a738ae0609ae1aec891e2e3700b1f971b8e278",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for April 20–21, 1924 -y orthographic variant ('Malarky' / 'malarky').",
+          "content_fingerprint": "89af79303937bcd36b162a0182a738ae0609ae1aec891e2e3700b1f971b8e278"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-005",
+      "slug": "clm-2700-005",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (independent non-Walsh / non-Dorgan 1924 sports-press adoption)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "May 20, 1924 Oakland Tribune and October 30, 1924 Ohio sports prose independent of Walsh and Dorgan",
+      "statement": "An unsigned local boxing editorial in the Oakland Tribune Sporting Green on May 20, 1924 ('this kind of malarkey is to be expected from certain quarters') proves naturalized San Francisco Bay Area sports-page currency independent of both Tad Dorgan's cartoons and Davis J. Walsh's New York INS wire, followed on October 30, 1924 in Ohio's East Liverpool Review-Tribune by an independent Big Ten football dispatch attesting definite-article 'not the old malarkey'.",
+      "rationale": "Because Walsh's 1923–1924 wire items represent a single author's idiolect syndicated nationwide, these May and October 1924 witnesses are crucial proof of genuine multi-author lexical diffusion on both the Pacific Coast and the Midwest in 1924.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Verified 1924 multi-author adoption of unquoted lowercase malarkey in local Oakland sports editorials (May 20, 1924) and Midwestern college-football reporting (October 30, 1924).",
+        "does_not_establish": "Whether local San Francisco Bay Area sports columns used common-noun malarkey prior to September 8, 1923.",
+        "remaining_uncertainty": "Extent of un-digitized 1921–1923 San Francisco Chronicle, Examiner, Bulletin, and Call and Post sports-page usage."
+      },
+      "limitations": [
+        "Represents the earliest verified non-Walsh / non-Dorgan prose witnesses in the current digitized newspaper sample."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the May 20, 1924 Oakland Tribune Sporting Green local boxing editorial ('this kind of malarkey is to be expected').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the October 30, 1924 East Liverpool Review-Tribune Urbana football dispatch ('This is a regular tip and not the old malarkey').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "927a7f6fef6ce8aea29e0f565147cab682b66190816a2d8a02f7a4b0d1f5c888",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 attestation claim for independent May and October 1924 Bay Area and Midwestern adoption.",
+          "content_fingerprint": "927a7f6fef6ce8aea29e0f565147cab682b66190816a2d8a02f7a4b0d1f5c888"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-006",
+      "slug": "clm-2700-006",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (copy-desk commutation with 'bunk' and Jan. 23, 1925 date calibration)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "1924 Lincoln Star 'bunk' commutation proof and January 23, 1925 Paavo Nurmi date correction",
+      "statement": "Copy-desk comparison in The Lincoln Star (Lincoln, NE)—which edited Walsh's INS phrase 'so much malarkey' to 'so much bunk' on February 12, 1924 before printing 'is so much malarkey' unedited on December 6, 1924—provides direct contemporary editorial proof of exact synonymy with bunk, while the Glendale Evening News scan of Walsh's Paavo Nurmi dispatch on January 23, 1925 ('as so much malarkey') corrects the 'January 3, 1925' date typo in secondary literature.",
+      "rationale": "Intra-newspaper editorial substitution ('malarkey' <-> 'bunk') supplies rare non-introspective semantic equivalence evidence, and masthead verification of the January 23, 1925 Nurmi wire eliminates a twenty-day secondary citation error.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Contemporary copy-desk synonymy between malarkey and bunk (1924 Lincoln Star) and exact January 23, 1925 publication date (not January 3, 1925) of Walsh's Paavo Nurmi INS dispatch.",
+        "does_not_establish": "Independent non-Walsh authorship for the December 6, 1924 or January 23, 1925 INS dispatches.",
+        "remaining_uncertainty": "Surviving East Coast INS copy of Walsh's February 12, 1924 wire text prior to the Lincoln Star's 'bunk' substitution."
+      },
+      "limitations": [
+        "Both CERT-2700-114 and CERT-2700-115 transmit syndicated INS sports dispatches by Davis J. Walsh."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents The Lincoln Star printing Walsh's 'is so much malarkey' unedited on December 6, 1924 after substituting 'so much bunk' in February 1924.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies the January 23, 1925 masthead date on Walsh's Paavo Nurmi dispatch ('dismissed as so much malarkey') in the Glendale Evening News, correcting 'Jan. 3, 1925' secondary typos.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "08201c3413dc0ac6a9ce3acf91ec720af0bcd29a02089bed66ea1201a377fabb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim documenting 1924 'bunk' commutation and Jan. 23, 1925 date calibration.",
+          "content_fingerprint": "08201c3413dc0ac6a9ce3acf91ec720af0bcd29a02089bed66ea1201a377fabb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-007",
+      "slug": "clm-2700-007",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "a lot of malarkey / ain't no malarky (1925–1929 phrasal collocations)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "June 25, 1925 Kingston Daily Freeman 14-calendar-year antedating of unquoted 'a lot of malarkey'",
+      "statement": "The Kingston Daily Freeman (June 25, 1925, p. 15: 'It was just a lot of malarkey' in a syndicated New York Giants baseball item) antedates Wiktionary's 1939 baseline for unquoted 'a lot of malarkey' by fourteen calendar years, followed on October 24, 1925 by the earliest unquoted bold display subhead 'So Much Malarkey.' (South Bend News-Times) and on March 26, 1929 by syndicated comic-strip dialogue 'AND THAT AIN'T NO MALARKY' (St. Louis Post-Dispatch).",
+      "rationale": "Primary scans across 1925–1929 newsprint and comic syndication demonstrate that modern core quantifier and negative-concord collocations crystallized in sports and family-comic registers well before 1930.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Fourteen-calendar-year antedating (June 25, 1925 vs. 1939) of unquoted 'a lot of malarkey', October 24, 1925 unquoted subhead display, and March 26, 1929 mass-syndicated comic-strip 'ain't no malarky'.",
+        "does_not_establish": "Predicative personal construction 'full of malarkey', which remains unattested before 1931.",
+        "remaining_uncertainty": "Identity of the wire service distributing the June 25–26, 1925 John McGraw baseball item."
+      },
+      "limitations": [
+        "Wiktionary's 1939 baseline (The Commentator) is recorded at year precision, bounding computed advance display to 14 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the June 25, 1925 Kingston Daily Freeman scan printing unquoted 'It was just a lot of malarkey'.",
+          "witness_note": "Syndicated June 26, 1925 in Washington Times and South Bend News-Times; count as 1 wire item."
+        },
+        {
+          "ref": "CERT-2700-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the October 24, 1925 South Bend News-Times scan featuring the unquoted bold centered subhead 'So Much Malarkey.'",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the March 26, 1929 St. Louis Post-Dispatch syndicated comic-strip speech balloon 'AND THAT AIN'T NO MALARKY'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Wiktionary (phrasal prior-art baseline)",
+        "entry_and_sense": "a lot of malarkey (unquoted quantifier collocation)",
+        "edition_or_revision": "Wiktionary entry citing The Commentator (1939; consulted November 2026)",
+        "baseline_date": "1939",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://archive.org/details/kingston-daily-freeman-1925-06-25/page/n15/mode/1up",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2700-204",
+        "attested_date": "1925-06-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "14 calendar years (1925-06-25 vs. 1939)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9166a66ca63abc0d1f359f96db42e8526283f766ebfc9066699d89605c88c1b9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for 1925–1929 phrasal collocations ('a lot of malarkey', 'ain't no malarky').",
+          "content_fingerprint": "9166a66ca63abc0d1f359f96db42e8526283f766ebfc9066699d89605c88c1b9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-008",
+      "slug": "clm-2700-008",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "Malarkey / malarkey, n. (1930 Broadway/Variety and Hollywood talkie breakout)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "March–December 1930 Joe Laurie, Jr. Variety columns and Broadway/Hollywood national breakout",
+      "statement": "After zero slang occurrences across Variety from 1905 through February 1930, vaudevillian Joe Laurie, Jr. introduced capitalized 'it's all Malarkey' on March 26 and April 2, 1930 and launched his standing Variety column 'A Bunch of Malarkey' on August 13, 1930 (foregrounding insincere theatrical flattery = 'blarney'), igniting the summer-1930 Broadway catchphrase 'Strictly the Malarky!' documented by O. O. McIntyre (August 31 and September 27, 1930), lowercase Variety editorial adoption (November 26, 1930), and San Francisco/Benicia native Wilson Mizner's Hollywood Boulevard quip in The New Movie Magazine (December 1930: 'is the malarkey!').",
+      "rationale": "Full chronological coverage of all eight 1930 Broadway and Hollywood witnesses (including six ledger records omitted from malarkey.md prose) pinpoints the exact spring-to-autumn 1930 entertainment-press explosion that turned 1920s sports slang into a national household word.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact March 26, 1930 entry of malarkey into Variety via Joe Laurie, Jr., August 13, 1930 launch of 'A Bunch of Malarkey', and August–December 1930 Broadway/Hollywood national catchphrase diffusion.",
+        "does_not_establish": "Show-business coinage of the word, since 1923–1929 sports and comic-strip attestations precede Variety by nearly seven years.",
+        "remaining_uncertainty": "Exact Warner Bros. pre-Code screenplay dialogue dates in late 1929 or 1930 accompanying Wilson Mizner's Brown Derby oral usage."
+      },
+      "limitations": [
+        "CERT-2700-212 (Aug. 31, 1930 Cosmopolitan submission note) and CERT-2700-213 (Sept. 27, 1930 syndicated 'New York Day by Day') are both authored by columnist O. O. McIntyre."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the first verified Variety slang occurrence ('it's all Malarkey') in Joe Laurie, Jr.'s March 26, 1930 autograph column after 0 hits across 1905–Feb. 1930.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Joe Laurie, Jr.'s follow-up April 2, 1930 Variety column repeating capitalized 'it's all Malarkey'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the August 13, 1930 Variety debut of Joe Laurie, Jr.'s standing feature 'A Bunch of Malarkey'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies O. O. McIntyre's October 1930 Cosmopolitan column (closed August 31, 1930) naming 'Strictly the Malarky!' as Broadway's summer-1930 successor to 'boloney'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies O. O. McIntyre's September 27, 1930 syndicated 'New York Day by Day' column ('\"Strictly the malarky!\" has lasted longer along Broadway than most slang expressions').",
+          "witness_note": "Syndicated nationwide Sept. 27–29, 1930; count as 1 McIntyre column."
+        },
+        {
+          "ref": "CERT-2700-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents institutionalization of Laurie's 'A Bunch of Malarkey' header in the October 8, 1930 Variety.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unquoted lowercase Variety staff-review prose ('just theatrical malarkey') on November 26, 1930.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests San Francisco/Benicia raconteur Wilson Mizner's Hollywood Boulevard quip ('is the malarkey!') in the December 1930 New Movie Magazine.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0029e031e6da38ad1f7aa404f02acaefec5746c06f26ac9b24c52e08d8ccd82e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 attestation claim covering all eight 1930 Variety, Broadway, and Hollywood breakout witnesses.",
+          "content_fingerprint": "0029e031e6da38ad1f7aa404f02acaefec5746c06f26ac9b24c52e08d8ccd82e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-009",
+      "slug": "clm-2700-009",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "full of malarkey (post-1930 predicative collocation benchmark)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "October 6, 1931 Variety benchmark ('Shoestringers Full of Malarkey') after 0 pre-1931 hits",
+      "statement": "Following zero genuine pre-1931 occurrences of predicative 'full of malarkey' across 1922–1930 Internet Archive and Chronicling America sweeps, the earliest located print witness of the collocation appears in Variety on October 6, 1931 (p. 55: headline 'Shoestringers Full of Malarkey' alongside body text 'pile of malarky').",
+      "rationale": "Documents the post-1930 emergence of personal predicative 'full of malarkey' (modeled on 'full of blarney' / 'full of prunes') while respecting DRAgNEt's pre-1931 hosted-scan copyright boundary.",
+      "type": "attestation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "October 6, 1931 Variety print benchmark for predicative 'Full of Malarkey' and 'pile of malarky' linked to external archive metadata.",
+        "does_not_establish": "Hosted repository image verification (omitted per pre-1931 public-domain cutoff) or absence in un-digitized January–September 1931 tabloids.",
+        "remaining_uncertainty": "Whether early-1931 metropolitan tabloids (e.g., New York Daily News or Daily Mirror) printed 'full of malarkey' between January and October 5, 1931."
+      },
+      "limitations": [
+        "CERT-2700-218 is a post-1930 record (October 6, 1931) carrying verification_level: discovered and scan.hosted_path: null under the pre-1931 copyright policy."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents the October 6, 1931 Variety ('Legitimate', p. 55) headline 'Shoestringers Full of Malarkey' after 0 pre-1931 hits.",
+          "witness_note": "Post-1930 external-link citation (verification_level: discovered, no hosted scan)."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "59cfe9cae3f32496abc5c3366529dc8a2671f4280b14d837bbc76398f798994c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 attestation claim recording the October 6, 1931 Variety benchmark for 'Full of Malarkey'.",
+          "content_fingerprint": "59cfe9cae3f32496abc5c3366529dc8a2671f4280b14d837bbc76398f798994c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-010",
+      "slug": "clm-2700-010",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n.",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Zero-hit absence of malarkey from 1905–1930 underworld cant, carnival, and horse-racing corpora",
+      "statement": "Systematic negative-control sweeps confirm zero slang entries or occurrences of malarkey in Jack Lait's Gangster Girl: With a Revised Glossary of Underworld Slang (1930, which defines 'Boloney' and 'McCoy' while jumping directly from 'Make' to 'McCoy'), The Billboard (1920–1930: 0 slang hits among 132 surname tokens), Daily Racing Form (10,987 issues through 1930: 0 slang hits), Chicago Daily Tribune (1923–1930: 0 slang hits among 31 surname tokens), and American Speech Vol. 1 (1925–1926: 0 hits).",
+      "rationale": "Complete absence across criminal-cant, carnival-midway, and thoroughbred-turf corpora through 1930 rules out underworld argot, circus/carnival cant, or racetrack jargon as the source milieu of malarkey, pinpointing Irish-American comic/sporting journalism instead.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero slang attestations of malarkey across Lait's 1930 underworld glossary, 1920–1930 Billboard, pre-1931 Daily Racing Form, 1923–1930 Chicago Daily Tribune, and 1925–1926 American Speech.",
+        "does_not_establish": "Absence of casual spoken familiarity among urban readers who read syndicated INS sports wires or Dorgan strips.",
+        "remaining_uncertainty": "Extent of un-digitized West Coast boxing and vaudeville house organs between 1920 and 1929."
+      },
+      "limitations": [
+        "Surname occurrences of real individuals named Malarkey/Mullarkey (132 in Billboard, 31 in Chicago Daily Tribune) are excluded after syntactic inspection."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies p. 103 of Jack Lait's 1930 Revised Glossary of Underworld Slang jumping from 'Make' to 'McCoy' with 0 entries for malarkey, alongside multi-corpus zero-hit counts.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Jack Lait's Revised Glossary of Underworld Slang (1930), The Billboard (1920–1930), Daily Racing Form (pre-1931), Chicago Daily Tribune (1923–1930), and American Speech Vol. 1 (1925–1926)",
+        "search_date": "2026-11-26",
+        "search_period": "1905-1930",
+        "query_terms": [
+          "malarkey",
+          "malarky",
+          "milarkey",
+          "mullarkey",
+          "melarkey"
+        ],
+        "search_method": "Direct page-scan inspection of Lait (1930, p. 103) combined with full-text OCR sweeps and manual proper-surname disambiguation across digitized trade and turf runs.",
+        "corpus_coverage": "Lait 1930 underworld glossary (full M-lemma sequence), Daily Racing Form (10,987 issues), The Billboard (1920–1930, 132 surname hits audited), Chicago Daily Tribune (1923–1930, 31 surname hits audited), American Speech Vol. 1 (1925–1926).",
+        "known_limitations": [
+          "Printed underworld glossaries selectively sample Prohibition gangster vocabulary.",
+          "OCR degradation in small-type turf tables can obscure isolated tokens, though narrative turf columns were swept across multiple variant spellings."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "68d486e71c683cc8e51b997e92711c9badab668d40f41dc0c7b3d994cc286bbe",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 negative-evidence claim ruling out 1905–1930 underworld, carnival, and turf cant.",
+          "content_fingerprint": "68d486e71c683cc8e51b997e92711c9badab668d40f41dc0c7b3d994cc286bbe"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-011",
+      "slug": "clm-2700-011",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (< Anglicized surname Mullarkey / Malarkey × Hiberno-English blarney)",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Anglicized surname Mullarkey/Malarkey × blarney eponymous-prosodic remodeling hypothesis",
+      "statement": "Matheson (1901) and Woulfe (1922) prove that only the Anglicized Irish surname forms Mullarkey, Malarkey, Malarky, and Melarkey (< Ó Maoil Earca) possess the exact /məˈlɑːrki/ amphibrachic stress and /-rki/ ending of American malarkey; saturated across 1890–1927 American stage-Irish comic press (Puck 1890, Wiggin 1901, Chicago Tribune 1907, Smyth 1911 pairing 'Mullarky' with 'blarney an' banter', Sparks of Laughter 1924, Judge 1925, and 1927 'Bim Malarkey... balloon peddler') and retaining capital M- from Dorgan (1922) and Walsh (April 1924) through Laurie's 1930 Variety columns, the surname offers the strongest eponymous-prosodic source on the model of blarney and hooligan.",
+      "rationale": "Every phonological segment, stress placement, spelling alternation (-ey/-y, Mi-/Ma-/Mu-), and early capitalization pattern of American malarkey is accounted for directly by Anglicized Mullarkey/Malarkey remodeled on synonymous Hiberno-English blarney, without requiring unattested monolingual Gaelic or foreign borrowings.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact phonological identity (/məˈlɑːrki/) with the Anglicized Connacht surname Mullarkey/Malarkey, continuous 1890–1927 stage-Irish comic stereotyping linking the surname to blarney and hot-air boasting, and persistent capital M- in 1922–1930 slang witnesses.",
+        "does_not_establish": "Identification of a single historical individual named Malarkey/Mullarkey as the proven eponym, or an explicit pre-1923 bridging sentence such as 'full of Mullarkey'.",
+        "remaining_uncertainty": "Whether a specific San Francisco or New York sporting figure (such as boxer Pat Malarkey or pitcher Bill Malarkey) catalyzed Dorgan's and Walsh's transition from comic surname to mass noun."
+      },
+      "limitations": [
+        "Like hooligan (< Hooligan), stage-Irish eponymous genericization rests on convergent onomastic, prosodic, and orthographic evidence rather than a signed coinage certificate."
+      ],
+      "resolution_criteria": [
+        "Locate pre-September 1923 California or New York sporting/vaudeville print explicitly linking a named or archetypal 'Mullarkey'/'Malarkey' to generic 'talk/blarney' (e.g., 'giving him the Mullarkey')."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2700-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies in Woulfe (1922) and Matheson (1901) that Anglicized Ó Maoil Earca yields exact variants Mullarkey, Malarkey, Malarky, and Melarkey (/məˈlɑːrki/).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies the eponymous-prosodic template of Hiberno-English BLARNEY ('wheedling, flattering talk', Grose 1796) and HOOLIGAN ('comic Irish family name', Weekley 1921).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests stage-Irish comic matriarch 'Mrs. Mullarkey' delivering an Irish bull in Puck (February 19, 1890).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests comic verbose character 'Mrs. Mullarkey' paired with 'young Malachy' in Kate Douglas Wiggin's Penelope's Irish Experiences (1901).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Irish dialect humor dialogue featuring 'Mrs. Mullarkey' in the March 31, 1907 Chicago Sunday Tribune.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Widow Mullarky' paired explicitly with 'blarney an' banter' in Patrick G. Smyth's 1911 Chicago comic poem.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests standard joke-book archetype 'Mrs. Malarkey' in Sparks of Laughter (1924, p. 262).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests tall-tale archetype 'Grandfather Mullarkey' in Judge (August 22, 1925, p. 12).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests charactonym 'Bim Malarkey, formerly a balloon peddler' ('hot-air vendor') in the November 20, 1927 St. Louis Post-Dispatch.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-310",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Documents Peter Tamony's San Francisco archival dossier examining Bay Area Irish-American and Dorgan onomastic context.",
+          "witness_note": "Archival collection guide (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2700-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Joe Laurie, Jr. consistently capitalizing 'Malarkey' ('A Bunch of Malarkey') in August 1930 Variety as an eponymous counterpart to blarney.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2700-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Demonstrates Dorgan's March 1922 'MILARKEY 609 J.' and April 1924 'MALACHY' operating directly in mock-Irish proper-name play.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2700-004",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Demonstrates surname-style capital M- ('not so much Malarky') persisting in April 1924 INS sports copy.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7bcaddc1b4c4d9cd68228edb3b0f39f7531808abbbbdf855086cca98c380747c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 derivation claim for Anglicized surname Mullarkey/Malarkey × blarney remodeling.",
+          "content_fingerprint": "7bcaddc1b4c4d9cd68228edb3b0f39f7531808abbbbdf855086cca98c380747c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-012",
+      "slug": "clm-2700-012",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (scholarly Irish Gaelic *meallaireacht and mullachán proposals)",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Evaluation weakening Sayers's (2002) Irish *meallaireacht and Green's mullachán donor proposals",
+      "statement": "Primary-lexicon inspection of Patrick S. Dinneen's Foclóir Gaedhilge agus Béarla (1904, pp. 473, 502) leaves two serious scholarly Irish common-noun proposals—William Sayers's (Western Folklore 61, 2002) hypothetical abstract noun *meallaireacht (< meallaire 'deceiver', mealladh 'beguiling') and Jonathon Green's tentative comparison with mullachán ('peak; big-headed boy')—unsubstantiated as primary donors: Dinneen records only mealltóireacht (with medial -t-) rather than *meallaireacht, neither Irish word contains medial /-rk-/ with velar stop /k/, and 1920s American sportswriters lacked monolingual Irish lexical contact outside the Anglicized surname.",
+      "rationale": "Auditing Dinneen (1904) directly tests Sayers's peer-reviewed conjecture and Green's tentative comparison with appropriate scholarly respect, grading them inconclusive on phonological and attestation gaps while separating them strictly from fabricated pseudo-Gaelic claims.",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of unstarred *meallaireacht in Dinneen (1904, p. 473, which attests meallaire and mealltóireacht) and phonological mismatch between Irish /-lˠəɾʲəxt̪ˠ/ or [ˈmˠʊlˠəxɑːnˠ] and English /-ˈlɑːrki/.",
+        "does_not_establish": "Impossibility of secondary semantic resonance among bilingual Irish-American speakers already familiar with the surname Mullarkey.",
+        "remaining_uncertainty": "Whether 19th-century Connacht or Munster oral Irish ever formed *meallaireacht without -t- and adapted -acht to English -key in immigrant speech."
+      },
+      "limitations": [
+        "Per DRAgNEt scholarly register discipline, Sayers (2002) and Green are serious philological proposals evaluated as weakened/inconclusive rather than 'falsified myths'."
+      ],
+      "resolution_criteria": [
+        "Attest unstarred Irish meallaireacht in pre-1922 Irish texts AND document a pre-1923 Hiberno-English phonetic bridge exhibiting rhotic /-rk-/ and final /-i/."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2700-312",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Verifies on Dinneen (1904) pp. 473 and 502 that meallaire ('deceiver') and mealltóireacht are attested while *meallaireacht is absent, and mullachán means 'peak, hillock; large-headed boy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-310",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "References William Sayers's 2002 Western Folklore article engaging Peter Tamony's San Francisco malarkey files.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-301",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Contrasts hypothetical Gaelic common-noun adaptation with the already existing, segmentally exact Anglicized surname Mullarkey/Malarkey.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "492ca4ec09f60967e33530db4cecd907dc5dbc0871dde3bea4eec6cdfb49571d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 derivation claim evaluating Sayers (2002) *meallaireacht and Green mullachán.",
+          "content_fingerprint": "492ca4ec09f60967e33530db4cecd907dc5dbc0871dde3bea4eec6cdfb49571d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-013",
+      "slug": "clm-2700-013",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (Daniel Cassidy's 2007 pseudo-Irish compound claim)",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Rebuttal of Daniel Cassidy's (2007) fabricated pseudo-Irish derivation of malarkey",
+      "statement": "Daniel Cassidy's (How the Irish Invented Slang, 2007) claim that American malarkey derives from a monolingual Irish phrase/compound glossed as 'beguiling baloney / sweet deceit' is contradicted by Patrick S. Dinneen's Foclóir Gaedhilge agus Béarla (1904): no such Irish compound or idiom exists in historical Irish lexicography, and Cassidy's gloss conflates unrelated Irish roots without grammatical or phonological validity.",
+      "rationale": "Direct verification in Dinneen (1904) confirms that Cassidy's alleged Irish etymon is an ungrammatical modern fabrication rather than an attested Irish word.",
+      "type": "rebuttal",
+      "assessment": "contradicted",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Lexicographical non-existence of Daniel Cassidy's alleged monolingual Irish compound in Dinneen (1904).",
+        "does_not_establish": "Disqualification of genuine Hiberno-English surname or scholarly Irish proposals (evaluated separately in CLM-2700-011 and CLM-2700-012).",
+        "remaining_uncertainty": "None; closed by primary Irish dictionary inspection."
+      },
+      "limitations": [
+        "Strictly scoped to Cassidy's (2007) fabricated pseudo-Irish compound, never generalized to Sayers (2002) or surname Mullarkey."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-312",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Demonstrates in Dinneen's 1904 Irish-English dictionary that Cassidy's alleged Irish compound for 'malarkey' does not exist.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2700-012",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Separates serious scholarly Irish lexical conjectures (Sayers 2002, Green) from Cassidy's unattested fabrication.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7d4471b84badab4cd40251304fe79b9c4628214937a72bd996605cea1c91a767",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 rebuttal claim falsifying Daniel Cassidy's (2007) pseudo-Irish etymology.",
+          "content_fingerprint": "7d4471b84badab4cd40251304fe79b9c4628214937a72bd996605cea1c91a767"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-014",
+      "slug": "clm-2700-014",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "marlock / malack / marlocky (Northern English dialect) and Priestley's 1929 'malachin' abart'",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Northern English marlock/malack evaluation and reclassification of Priestley's 1929 'malachin' abart'",
+      "statement": "Primary scans of John Collier (1757, Marlocks 'awkward gestures, tricks'), Nodal & Milner's Lancashire Glossary (1875, MARLOCK 'playful trick, prank, frolic'), and Joseph Wright's English Dialect Dictionary (Vol. IV, 1903/1905, Yorkshire/Lincolnshire non-rhotic malack 'fraudulent contrivance or trick' and Marlocky 'frolicsome', correcting Wiltshire misattributions) establish Northern English marlock/malack as a plausible secondary reinforcement only if remodeled onto amphibrachic Malarkey/blarney, while proving that J. B. Priestley's 1929 Good Companions 'malachin' abart' (listed under malarkey, v. in Green's Dictionary of Slang) is actually West Yorkshire dialectal malackin' (< marlock).",
+      "rationale": "Inspecting Wright's EDD (1903/1905) accomplishes two things simultaneously: it bounds marlock/marlocky's initial stress ['mɑː(r)ləki] against American [məˈlɑːrki], and it resolves the anomalous 1929 Yorkshire verb citation in Green's Dictionary of Slang as regional malackin' ('playing the fool').",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1757–1905 Northern English dialect attestation of marlock / malack ('prank, fraudulent trick') and Marlocky ('frolicsome'), absence from Dartnell & Goddard's 1893 Wiltshire Glossary, and dialectal identity of Priestley's 1929 'malachin' abart'.",
+        "does_not_establish": "Standalone derivation of American malarkey from Lancashire/Yorkshire marlock without stress-shift remodeling onto the surname Malarkey.",
+        "remaining_uncertainty": "Whether 19th-century Lancashire/Yorkshire immigrants in American sporting circles blended 'marlocky' into 'Malarkey' speech play."
+      },
+      "limitations": [
+        "CERT-2700-305 inspects the 1905 set reissue of Wright's EDD Vol. IV (originally issued 1903; cataloged '1898' on Internet Archive)."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1923 American dialect or sporting-press attestations of 'marlock' / 'marlocky' transitioning to second-syllable stress or 'nonsense talk' semantics."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2700-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies John Collier's ('Tim Bobbin') 1757 Lancashire glossary entry 'Marlocks, awkward Gestures; also foolish Tricks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Nodal & Milner's 1875 Lancashire Glossary entry 'MARLOCK, a playful trick, a prank, a game, a frolic'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Wright's EDD Vol. IV (1903/1905) entries for non-rhotic Yorkshire/Lincolnshire 'malack' ('fraudulent contrivance') and 'Marlocky', plus Dartnell & Goddard's 1893 Wiltshire Glossary check.",
+          "witness_note": "Edition state noted: 1905 set reissue of 1903 Vol. IV."
+        },
+        {
+          "ref": "CERT-2700-308",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Records Green's Dictionary of Slang's citation of J. B. Priestley's 1929 Good Companions ('malachin' abart') under malarkey, v., here reclassified as West Yorkshire malackin'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9722b59539c698b4a7367d6beffdbebf9a1d640c6fe6a7cba67ef1a2bbef7866",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 derivation and reclassification claim for Northern English marlock/malack and Priestley (1929).",
+          "content_fingerprint": "9722b59539c698b4a7367d6beffdbebf9a1d640c6fe6a7cba67ef1a2bbef7866"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-015",
+      "slug": "clm-2700-015",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "malarkey, n. (proposed Modern Greek μαλακία donor and Beale's 'Madame Misharty')",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Phonological and semantic evaluation weakening Partridge's Modern Greek μαλακία proposal",
+      "statement": "Primary-lexicon audit of Liddell & Scott (1883, μαλακία 'softness, effeminacy, sickness') and Achilleus Kyriakides's Modern Greek-English Dictionary (2nd ed., Athens, 1909, p. 442: μαλακία strictly anatomical 'masturbation; onanism; self-abuse', μαλάκα 'softening of the brain'), synthesized with Quinion (2006) and Liberman (2007), leaves Eric Partridge's Modern Greek conjecture and Paul Beale's London fortune-teller phrase 'Madame Misharty' unsubstantiated: Greek μαλακία [malaˈcia] is non-rhotic, carries penult /-ˈki-/ stress, lacked a documented pre-1922 'empty talk/bunk' sense, and was register-incompatible with 1922 family newspaper comics.",
+      "rationale": "Checking Kyriakides (1909) directly establishes the exact pre-World War I Modern Greek lexical meaning and prosody, explaining why mainstream etymologists view Partridge's Greek conjecture as unlikely while retaining an inconclusive open gate should pre-1922 Greek-American diner/port slang evidence ever emerge.",
+      "type": "phonological",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact 1883 Classical and 1909 Modern Greek dictionary definitions and non-rhotic [malaˈcia] prosody of μαλακία, demonstrating severe semantic, register, and phonological distance from 1922–1923 American sports/comic malarkey.",
+        "does_not_establish": "Absolute impossibility of undocumented oral Greek-American urban slang bleaching prior to 1922.",
+        "remaining_uncertainty": "When colloquial Modern Greek bleached μαλακίες ('masturbations') to conversational 'nonsense, rubbish' in 20th-century Greek immigrant speech."
+      },
+      "limitations": [
+        "CERT-2700-306 pairs Liddell & Scott (7th ed., 1883) and Kyriakides (2nd ed., 1909) on a composite lexical audit plate; per scholarly register rules, Partridge's proposal is graded inconclusive rather than a falsified myth."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1922 Greek-American or Mediterranean port print attesting μαλακία / malakia in the bleached sense 'boastful talk, nonsense' with rhotic English adaptation."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2700-306",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Verifies in Liddell & Scott (1883, p. 916) and Kyriakides (1909, p. 442) that pre-1922 Modern Greek μαλακία meant strictly 'masturbation; self-abuse' with non-rhotic penult stress.",
+          "witness_note": "Composite lexical scan pairing 1883 Liddell-Scott and 1909 Kyriakides."
+        },
+        {
+          "ref": "CERT-2700-309",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Summarizes Quinion's (World Wide Words) phonological and sociolinguistic critique of Partridge's Greek μαλακία and Beale's London 'Madame Misharty' conjectures.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f8770421614b68d21c4930989cae948df082a718230e5871652557354a5c4b09",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 phonological claim evaluating Partridge's Modern Greek μαλακία and Beale's 'Madame Misharty'.",
+          "content_fingerprint": "f8770421614b68d21c4930989cae948df082a718230e5871652557354a5c4b09"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-016",
+      "slug": "clm-2700-016",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "Captain Mullurky (November 25, 1894 Sydney Truth satirical charactonym)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Calibration of Green's bracketed 1894 Sydney Truth 'Captain Mullurky' citation as satirical surname play",
+      "statement": "Cross-checking The Centennial Supplement to the Sydney Morning Herald (January 26, 1888, p. 125: Ashfield militia officer 'Captain Mullarky') against Green's Dictionary of Slang's bracketed November 25, 1894 Sydney Truth citation ('Captain Mullurky (melodious name for military muddle, apparently perpetrated for a malicious \"lark\") [...] Captain Stack') proves the 1894 Australian item was a localized satirical pun on real New South Wales officer Capt. Stephen Mullarky rather than continuous generic slang, while independently illustrating the surname's comic transparency to muddle/lark wordplay.",
+      "rationale": "Identifying real NSW officer Capt. Stephen Mullarky (paired with real officer Capt. Stack) explains why Green placed the 1894 citation in square brackets and prevents miscounting 1894 Sydney Truth as a 29-year antedating of American common-noun malarkey.",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Historical prosopographical identity of NSW militia officer 'Captain Mullarky' (1888) behind the bracketed 1894 Sydney Truth satirical pun 'Captain Mullurky', separating it from continuous 1923 American mass-noun emergence.",
+        "does_not_establish": "Any historical transmission link between 1894 Sydney journalism and 1922–1923 American sports slang.",
+        "remaining_uncertainty": "None regarding the non-generic proper-name status of the 1888/1894 New South Wales militia references."
+      },
+      "limitations": [
+        "CERT-2700-101 (1888 Sydney Morning Herald) is strictly prosopographical background on Capt. Mullarky and is never counted as a slang attestation."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies historical NSW officer 'Captain Mullarky' in the January 26, 1888 Centennial Supplement to the Sydney Morning Herald (p. 125).",
+          "witness_note": "Literal surname prosopography only; not a slang attestation."
+        },
+        {
+          "ref": "CERT-2700-308",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Records Green's Dictionary of Slang's bracketed [25 Nov. 1894] Sydney Truth quotation punning on 'Captain Mullurky' and 'Captain Stack'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "73acaae5194b11019d278fc0dd8d0bbf3edeb9ea764c6031ec080638355aebc8",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 semantic calibration of the bracketed 1894 Sydney Truth 'Captain Mullurky' pun.",
+          "content_fingerprint": "73acaae5194b11019d278fc0dd8d0bbf3edeb9ea764c6031ec080638355aebc8"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2700-017",
+      "slug": "clm-2700-017",
+      "case_slug": "malarkey",
+      "headword": "malarkey",
+      "target_lexeme": "Malarkey / Malarky (Traps A–D surname homographs, dirty-OCR ghosts, and serial misdates)",
+      "case_section": "4. Phonological Donor Matrix, Folk-Myth Refutations, and Trap A–D Audit",
+      "short_label": "Disqualification of pre-1922 athlete/firm surnames, 1838 OCR bleed, and '1800'/'1912'/'1922' serial misdates",
+      "statement": "Primary-scan and masthead inspection disqualifies all ten apparent pre-March 1922 / pre-September 1923 database false positives: literal surname occurrences of athletes, firms, and fictional characters (1907 pitchers Liz and Bill Malarkey; August 4, 1913 Oakland Tribune 'Bill Malarkey' mis-OCRed as 'BH! Milarkey'; February 15, 1922 boxer Pat Malarkey; 1909 Everett T. Tomlinson 'A Conversation With Malarkey' & Astoria Malarkey family; January 6, 1909 'of Malarkey & Son'; July 15, 1922 Billboard 'W. S. MALARKEY'), Trap B column-bleed OCR (January 27, 1838 Newport Mercury 'Marlborough-street. / On Saturday' -> 'Malarky'), and Trap A/D serial founding-year misdates ('1800' Wright & Ditson = 1911 surname; '1912' California Daily Bruin = October 29, 1931; '1922' South Side Times = 1943–1944).",
+      "rationale": "Auditing every pre-1923 hit in Chronicling America, Google Books, Internet Archive, and California Digital Newspaper Collection confirms zero genuine common-noun slang occurrences prior to 1922–1923 while illustrating heavy sports-page prominence of the surname Malarkey.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 170,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Onomastic, paleographic, and masthead disqualification of ten pre-1923 false-positive search hits across newspaper, book, and student-press repositories.",
+        "does_not_establish": "Irrelevance of sports-page surnames—pitchers Bill/John Malarkey and boxer Pat Malarkey reinforce sportswriters' familiarity with the name (CLM-2700-011) while remaining non-slang proper nouns.",
+        "remaining_uncertainty": "None on the ten audited records."
+      },
+      "limitations": [
+        "CERT-2700-318 (Oct. 29, 1931 California Daily Bruin) and CERT-2700-118 (1943–1944 Fort Wayne South Side Times) are post-1930 serials carrying verification_level: discovered without hosted scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2700-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1907 baseball tokens refer literally to pitchers John S. ('Liz') Malarkey and William John ('Bill') Malarkey.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves the August 4, 1913 Oakland Tribune OCR string 'BH! Milarkey' actually prints Pacific Coast League pitcher 'Bill Malarkey'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves the February 15, 1922 Madison Capital Times token refers literally to lightweight boxer Pat Malarkey.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 1909 'A Conversation With Malarkey' (Tomlinson, Ward Hill—the Teacher) and Oregon timber hits are proper character and family surnames.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves the January 6, 1909 Oil Investors' Journal frame 'of Malarkey' actually reads 'of Malarkey & Son, drilling contractors'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves the July 15, 1922 Billboard token is a letter route-list entry for 'W. S. MALARKEY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Chronicling America's January 27, 1838 Newport Mercury OCR hit 'Malarky' is column-bleed noise over 'Marlborough-street. / On Saturday'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1800' Wright & Ditson Base Ball Guide hit actually prints pitcher Malarkey's surname in the 1911 volume.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2700-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves HathiTrust '1912' UCLA California Daily Bruin hit ('all the malarkey') actually prints in Vol. IX, October 29, 1931.",
+          "witness_note": "Post-1930 serial metadata audit (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2700-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Internet Archive '1922' Fort Wayne South Side Times hit ('full of malarkey') actually prints in the bound 1943–1944 volume.",
+          "witness_note": "Post-1930 serial metadata audit (verification_level: discovered)."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9e23e11b52246bb2711958364b3d59b56413a3544a7adf85fff5d5641e3426eb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim eliminating pre-1923 surname homographs, OCR ghosts, and serial misdates.",
+          "content_fingerprint": "9e23e11b52246bb2711958364b3d59b56413a3544a7adf85fff5d5641e3426eb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

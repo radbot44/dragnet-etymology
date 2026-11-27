@@ -1,0 +1,1048 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "hobo",
+  "case_slug": "hobo",
+  "case_number": "Case 2300",
+  "target_id": "TGT-066",
+  "headword": "hobo",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise 9-claim decomposition of Case 2300 (hobo, 78 citations) enforcing Commit 5db37e1: separating Feb.–Apr. 1888 Sacramento club/team names and the 1 March 1888 Horton, KS pen name '\"HOBO\"' from the 30 November 1885 common noun, bounding rail milieu vs. origin, and calibrating 'Ho, boy!' vs. 'hoe-boy' and 'hawbuck'.",
+  "claims": [
+    {
+      "id": "CLM-2300-001",
+      "slug": "clm-2300-001",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, n. (and isolated 1848 'ho-boying' outlier)",
+      "case_section": "1. Lexicographical Baseline and the Pre-1889 Negative-Corpus Control",
+      "short_label": "Pre-1889 tramp/slang negative-corpus bound (0 hobo vs. 552 tramp) and 1848 outlier calibration",
+      "statement": "Sweeps across six 1874–1889 tramp ethnographies and slang dictionaries (552 'tramp(s)' tokens) and Maitland (1891) yield zero itinerant 'hobo' tokens before Funk & Wagnalls (1893, '[Western U. S.]'), leaving an un-scanned 1848 New Orleans 'ho-boying' report isolated across a 37-year gap.",
+      "rationale": "Zero itinerant 'hobo' hits appear in Hotten (1874), Pinkerton (1878), Meriwether (1887, April 1889), Farmer (1889), Barrère & Leland (1889), or Maitland (1891) (CERT-2300-301..306, 310), confirming regional confinement and lack of continuity from 1848 'ho-boying' (CERT-2300-101).",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of itinerant 'hobo' from 1874–1891 national tramp/slang books and 37-year isolation of 1848 'ho-boying'.",
+        "does_not_establish": "Absence from 1885–1888 Upper Midwest and Pacific Northwest local papers.",
+        "remaining_uncertainty": "Un-scanned status of the 19 August 1848 New Orleans Daily Picayune 'ho-boying' sketch."
+      },
+      "limitations": [
+        "CERT-2300-101 is an unhosted 'discovered' citation with unproven continuity to 1885 'hobo'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'hobo' vs. 319 'tramp(s)' in Pinkerton (1878).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'hobo' in Meriwether's A Tramp Trip (1887).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'hobo' in Meriwether's The Tramp at Home (April 1889).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'hobo' in Hotten (1874).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer (1889) enters only NYC nightman 'HO-BOY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 'hobo' in Barrère & Leland Vol. I (1889).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-310",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Omitted in Maitland (1891); enters Funk & Wagnalls (1893, '[Western U. S.]').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-101",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Isolated 19 August 1848 New Orleans 'ho-boying' lead lacking any 1849–1884 bridge.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Hotten (1874), Pinkerton (1878), Meriwether (1887 & April 1889), Farmer (1889), Barrère & Leland Vol. I (1889), and Maitland (1891)",
+        "search_date": "2026-11-26",
+        "search_period": "1874-1891",
+        "query_terms": [
+          "hobo",
+          "hobos",
+          "hoboes",
+          "ho-bo",
+          "obo"
+        ],
+        "search_method": "Full-text OCR count (benchmarked against 552 'tramp/tramps' tokens) and alphabetical page inspection.",
+        "corpus_coverage": "7 complete Anglo-American tramp studies and slang dictionaries (approx. 7.0M characters)",
+        "known_limitations": [
+          "Eastern/London books lag Upper Midwest local police-court reporting."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "6b1ca6c0e7bdf6c39ebbc065b189d63473a5335d04e4fc1487294900cba0aef5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "6b1ca6c0e7bdf6c39ebbc065b189d63473a5335d04e4fc1487294900cba0aef5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-002",
+      "slug": "clm-2300-002",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, int. & n. (also 'Obo')",
+      "case_section": "2. Primary-Source Chronology and Western Rail-Corridor Diffusion (1885–1895)",
+      "short_label": "30 November 1885 St. Paul Daily Globe earliest verified greeting salute ('Obo'/'Hobo') and common noun",
+      "statement": "The St. Paul Daily Globe (30 November 1885, p. 8, 'Rhue Saga') provides the earliest scan-verified print witness of both the itinerant salute ('\"Obo,\" or \"Hobo\"') and common noun ('\"hobos\"'; 'an honest \"hobo\"'), matching OED3's revised baseline and beating DAA/OED2 (28 November 1889) by 3 years, 11 months, and 28 days.",
+      "rationale": "Page-scan verification on LoC leaf sp=9 confirms simultaneous greeting-call and count-noun usage in Minneapolis–St. Paul while separating the 30 November 1885 print date from the article's narrative setting in spring 1885.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Greeting-call ('Obo'/'Hobo') and common-noun ('hobo'/'hobos') print usage on 30 November 1885.",
+        "does_not_establish": "A spring 1885 print witness (the Hennepin County Jail speech 'last spring' is reported oral prehistory).",
+        "remaining_uncertainty": "Exact pre-1885 oral history in Upper Midwest camps and rail yards."
+      },
+      "limitations": [
+        "Anchored strictly to the 30 November 1885 print masthead date over internal spring 1885 oral framing."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 November 1885 St. Paul Daily Globe p. 8 (sp=9) scan attesting salute 'Obo'/'Hobo' and noun 'hobo(s)'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2300-001",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Highlights 4–8 year priority over national lexicons.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "hobo, n. ('a migratory worker; a vagrant, a tramp')",
+        "edition_or_revision": "OED3 revised entry (March 2023, updated September 2026; cf. DAA/OED2 28 November 1889)",
+        "baseline_date": "1885-11-30",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/hobo_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earliest_reported_by_authority",
+        "advancing_citation_ref": "CERT-2300-001",
+        "attested_date": "1885-11-30",
+        "attested_date_precision": "day",
+        "computed_advance_display": "0 days vs. OED3 revised baseline (3 years, 11 months, and 28 days ahead of 28 November 1889 DAA/OED2 baseline)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ca24cd9ca49b449b3a4105411d59f11a78bdbd6c773ec3f3f7bc597e3b839c96",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "ca24cd9ca49b449b3a4105411d59f11a78bdbd6c773ec3f3f7bc597e3b839c96"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2300-002-01",
+          "claim_id": "CLM-2300-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2300-001",
+            "CLM-2300-001"
+          ],
+          "findings": "Directly inspected CERT-2300-001.webp (Nov. 30, 1885 St. Paul Daily Globe, p. 8, 'Rhue Saga'), confirming physical-ink attestation of both the attention-call ('Hobo' / 'Obo') and common noun ('That man is a Hobo'), proper parity framing with OED3's revised baseline, and strict print-date discipline over internal oral references.",
+          "objections": [],
+          "material_fingerprint_at_review": "ca24cd9ca49b449b3a4105411d59f11a78bdbd6c773ec3f3f7bc597e3b839c96",
+          "evidence_fingerprints_at_review": {
+            "CERT-2300-001": "04fadbd005d9b6fb8dc8744313b2f2a2b81cb5fe3b4c4d6286a6fb3b3d68faa4",
+            "CLM-2300-001": "a49dfe86bf10387568a89750f0efbedc07bc70faa6697b57b78130e032da15fd"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": [
+        {
+          "recognizer": "Oxford English Dictionary Online (OED3)",
+          "publication": "hobo, n.",
+          "date": "2023-03",
+          "url_or_ref": "https://www.oed.com/dictionary/hobo_n",
+          "exact_scope": "Cites 30 November 1885 St. Paul Daily Globe (discovered by Stephen Goranson, May 2009) as opening quotation."
+        }
+      ]
+    },
+    {
+      "id": "CLM-2300-003",
+      "slug": "clm-2300-003",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "Hobo / Hobos (Sacramento club/team names & March 1, 1888 \"HOBO\" pen name)",
+      "case_section": "2. Primary-Source Chronology and Western Rail-Corridor Diffusion (1885–1895)",
+      "short_label": "February–April 1888 Sacramento club/baseball names and 1 March 1888 Horton, KS pen name (\"HOBO\")",
+      "statement": "Early 1888 witnesses in the Sacramento Daily Record-Union (13 & 20 February baseball team; 23 April excursion club) and the 1 March 1888 Railway Conductors' Monthly (Horton, KS letter dated 4 February signed \"\"HOBO\"\") attest named-group and fraternal pen-name usage rather than common-noun antedatings.",
+      "rationale": "Enforcing Commit 5db37e1, Sacramento club items (CERT-2300-204, 107, 108) and railway pen names (CERT-2300-203 on 1 March 1888—not February, and distinct from the next letter's 12 February McCook header—plus September 1890 UP pen name CERT-2300-213) provide subcultural context without antedating the 1885 common noun.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "California club/team naming (Feb.–Apr. 1888) and Rock Island / Union Pacific fraternal pen-name adoption (1 March 1888 & Sept. 1890).",
+        "does_not_establish": "Common-noun antedating of 30 November 1885 'hobo, n.' or proof of railroad coinage.",
+        "remaining_uncertainty": "How Sacramento's amateur baseball players first learned the moniker prior to February 1888."
+      },
+      "limitations": [
+        "Ranked strictly by 1 March 1888 magazine masthead on CERT-2300-203 over its 4 February Horton dateline; never counted as common-noun attestations."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 February 1888 Sacramento Daily Record-Union '\"Hobo\" baseball tossers' (team name).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "20 February 1888 Sacramento 'HOBOS VS. BARLOWS' (team name).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "23 April 1888 Sacramento 'THE HOBOS' excursion club (compared by critics to 'hoodlums').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 March 1888 Railway Conductors' Monthly p. 126 pen name '\"HOBO\"' (Horton, KS, 4 Feb. dateline).",
+          "witness_note": "Adjacent 12 Feb. McCook header belongs to next letter."
+        },
+        {
+          "ref": "CERT-2300-213",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1 September 1890 Union Pacific Employes' Magazine pen name 'Hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2300-002",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Postdates the 30 November 1885 common-noun witness.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "04c5d91aff7d5dac1f55a81a00216d6a69b42bd6c131dd1b2b7f89ae373830df",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "04c5d91aff7d5dac1f55a81a00216d6a69b42bd6c131dd1b2b7f89ae373830df"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-004",
+      "slug": "clm-2300-004",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, n. (including 1892 occupational \"hobo railroad men\")",
+      "case_section": "2. Primary-Source Chronology and Western Rail-Corridor Diffusion (1885–1895)",
+      "short_label": "1888–1898 Pacific Northwest/western rail diffusion and 1892 transient \"hobo railroad men\" (\"boomer\") sense",
+      "statement": "Continuous ordinary-noun usage spreads from 14 September 1888 in Oregon across western rail corridors, including a specialized 31 January 1892 occupational sense (\"\"hobo\" railroad men\" = transient \"boomer\" trainmen), placing \"hobo\" in a railway milieu without proving rail coinage.",
+      "rationale": "Fourteen newspaper/periodical witnesses (CERT-2300-109..111, 113..117, 207, 208, 212, 214, 215, 222, 223) plus baselines (103..105) and a retrospective 1904 Utah memoir (225) trace freight-yard and boomer diffusion while respecting Commit 5db37e1's milieu-versus-origin boundary.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous post-September 1888 ordinary-noun currency and 1892 transient trainman usage.",
+        "does_not_establish": "Proof of railroad coinage or an 1885 print date for the 15 January 1904 Juvenile Instructor memoir.",
+        "remaining_uncertainty": "Surviving unmicrofilmed 1886–summer 1888 Northern Pacific local weeklies."
+      },
+      "limitations": [
+        "CERT-2300-225 (1904 memoir recalling post-Sept. 1885 brakemen) is retrospective; CERT-2300-103 and 104 are unhosted baselines."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 September 1888 Morning Oregonian boxcar countersign/noun 'hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "18 September 1888 Daily Astorian '\"Hoboes\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "25 September 1888 Morning Oregonian lowercase 'hobos'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 November 1888 Morning Oregonian 'VAGS, TRAMPS AND HOBOS'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 November 1888 Fort Wayne Sentinel 'Nebraska \"Hobos\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 January 1889 St. Paul Daily Globe 'HOMICIDAL HOBOES'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "26 February 1889 Oregonian / Pasco Headlight 'camp fires of the hoboes'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "23 August 1889 Johnstown Weekly Democrat ('contraction of Hello ! boy').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "31 August 1889 Reno Nevada State Journal 'hobos'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "10 March 1890 Portland jail 'hobo side'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1891 [dated 8 June] Railway Conductor 'Arizona hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "31 January 1892 LA Times '\"hobo\" railroad men' (transient SP 'boomers').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 1892 Idaho railway grading-crew 'hobos'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "5 January 1895 LA Times OSL Pocatello conductors.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1898 Shaw Northern Pacific 'hoboes'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-225",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "15 January 1904 Salt Lake memoir recalling post-Sept. 1885 brakeman speech.",
+          "witness_note": "1904 print date."
+        },
+        {
+          "ref": "CERT-2300-103",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "29 September 1888 Winona 'hobo camp' (OED3 baseline, discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-104",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "28 November 1889 Ellensburgh Capital (DAA/OED2 baseline, discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-105",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "August 1891 Josiah Flynt (OED1 baseline).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3329774a301810c19b2b53ee16cb460460df0d3eb501e23791eb4881a4dfd266",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "3329774a301810c19b2b53ee16cb460460df0d3eb501e23791eb4881a4dfd266"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-005",
+      "slug": "clm-2300-005",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, v., 'bo / 'ho, hoboism, hobodom, jungle, & Hobohemia",
+      "case_section": "3. Word-Family Expansion, the 1894 \"Hobo Armies,\" and the Sociological Triad (1891–1923)",
+      "short_label": "1891–1922 verbal/clipped expansion, 1894 Industrial Army broadcast, 'Jungle' (1897), and 'Hobohemia'",
+      "statement": "Scan-verified newspapers document verbal 'hoboing' (1891), 'hobo it' / clipped ''ho' (1893), 'lady hobo' (1893), 'hoboed' (1897), the 1894 Coxey/Kelly Industrial Army national broadcast ('hoboism', 'hobodom'), trackside '\"Jungle,\" a hobo resort' (1897), 'HOBOHEMIA' (1915–1917), and 'hobo jungle' (1922).",
+      "rationale": "Sixteen witnesses (CERT-2300-002, 003, 118..125, 216..221) trace full word-family productivity and nationwide household diffusion during the Panic-of-1893 industrial marches.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1891–1897 verbal/clipped forms, 1894 nationalization, 1897 appositional 'Jungle', and 1915–1922 'Hobohemia'/'hobo jungle' milestones.",
+        "does_not_establish": "Antedating of OED3's 1890 verb, 1892 'hoboism', 1905 'hobo jungle', or 1908 'hobohemia' baselines.",
+        "remaining_uncertainty": "None within the stated appositional vs. compound distinctions."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 August 1891 Pittsburg Dispatch '\"hoboing\" my way'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 May 1893 NY Sun '\"hobo\" it', 'Ho'/'Bo', and clipped ''ho'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "19 November 1893 Fresno '\"LADY HOBO\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 April 1894 Victoria '\"hobo\" army'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 May 1894 Chicago Tribune 'army of hobos'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 May 1894 Chicago Tribune 'hoboism'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 May 1894 Newport/Worcester boxcar countersign.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 May 1894 St. Louis Post-Dispatch Gen. Kelly speech.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1894 'hobo brakebeam riders'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 July 1894 LA Herald 'hobodom' (OED3 baseline).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 August 1894 Bangor 'Hobo camp'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "18 February 1897 Portsmouth 'hoboed it'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-003",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 June 1897 Anaconda Standard Minot '\"Jungle,\" a hobo resort'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1915 Current Opinion / Stuart Davis 'HOBOHEMIA'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 April 1917 Sinclair Lewis 'Hobohemia'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 July 1922 Oakland Tribune 'hobo jungle'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "560d997723ce88c84ef0eb442abf1aa70af262a243c77f00685a4b5ec22ae4a5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "560d997723ce88c84ef0eb442abf1aa70af262a243c77f00685a4b5ec22ae4a5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-006",
+      "slug": "clm-2300-006",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, n. ('migratory worker' vs. 'tramp' and 'bum')",
+      "case_section": "3. Word-Family Expansion, the 1894 \"Hobo Armies,\" and the Sociological Triad (1891–1923)",
+      "short_label": "1908–1923 Reitman, I.W.W., and Tucker codification of the 'hobo / tramp / bum' sociological triad",
+      "statement": "Whereas 1898 commentary still treated 'hobo' as a destitute/Western 'tramp', Dr. Ben L. Reitman (February 1908), Spokane I.W.W. print (1908–1909), and St. John Tucker (1917) codified the 'hobo = migratory worker' triad fifteen years before Nels Anderson's The Hobo (1923).",
+      "rationale": "Contrasting Bailey (Oct. 1898, CERT-2300-224) with Reitman in Kelly (Feb. 1908, CERT-2300-226), Spokane I.W.W. songs/press (227, 228), and Tucker (1917, 229) proves the strict 'migratory worker only' boundary was a post-1908 labor/sociological specialization.",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "1908–1917 origin of the 'works/dreams/drinks and wanders' sociological triad ahead of Anderson (1923).",
+        "does_not_establish": "Retroactive restriction of 1885–1890 police-court usage solely to employed workers.",
+        "remaining_uncertainty": "Whether Reitman recorded earlier oral Hobo College / I.W.W. phrasing prior to February 1908."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-226",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Feb. 1908 Kelly printing Reitman's 'works/dreams/drinks and wanders' triad.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-227",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sept. 1908 Spokane I.W.W. Songs reclaiming 'hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-228",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 November 1909 Spokane Industrial Worker.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-229",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "25 February 1917 St. John Tucker 2x2 migratory-worker matrix.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-230",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1923 Nels Anderson The Hobo.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-224",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Oct. 1898 Bailey Forum article equating 'hobo' and 'tramp'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3da383a93f906550cd45a6fc91d77cebf9365c29d6b3c5cddc38d3a1df9a1556",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "3da383a93f906550cd45a6fc91d77cebf9365c29d6b3c5cddc38d3a1df9a1556"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-007",
+      "slug": "clm-2300-007",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, int. & n. (< 'Ho, boy!' / 'Ho! Bo!')",
+      "case_section": "4. Evaluating Origin Hypotheses (H1–H3)",
+      "short_label": "Proposed delocutive derivation from Northwestern / rail greeting call 'Ho, boy!' / 'Ho! Bo!'",
+      "statement": "Delocutive nominalization of an itinerant/rail greeting call ('Ho, boy!' / 'Ho! Bo!' / 'Obo' -> 'hoboys' / 'hobo') best fits the 1885–1894 salute/countersign witnesses, nautical vocative 'bo', and H. R. Jeffrey's 1920 Oregon Short Line report, though pre-1885 phonetic reduction remains unrecorded in real time.",
+      "rationale": "Earliest attestations treat 'Obo'/'Hobo' as a hail/countersign (CLM-2300-002, 004, 005), Smyth (1867, CERT-2300-308) supplies vocative 'BO', Flynt/Mencken (309) confirm ''bo < hobo', and Jeffrey (1920, 307) recalls 1880s OSL mail clerks calling 'Ho, boy!' -> 'hoboys'.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Convergence of earliest 1885–1894 greeting/countersign attestations with delocutive 'Ho, boy!' / 'Ho! Bo!' formation.",
+        "does_not_establish": "Contemporary pre-November 1885 documentary proof of oral 'Ho, boy!' -> 'hobo' reduction.",
+        "remaining_uncertainty": "Relative roles of Twin Cities camp workers versus Pacific Northwest rail clerks before November 1885."
+      },
+      "limitations": [
+        "Jeffrey's 1920 Dialect Notes report is 30-year-retrospective testimony."
+      ],
+      "resolution_criteria": [
+        "Locate pre-November 1885 Northwestern print or manuscript witnesses spelling the itinerant hail 'Ho, bo!' or 'hoboys'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2300-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1920 Jeffrey Dialect Notes OSL 'Ho, boy!' -> 'hoboys' testimony plus 1877 hail.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-308",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1867 Smyth nautical vocative 'BO'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1899 Flynt and 1919 Mencken confirming aphetic ''bo' derives from 'hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2300-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Grounded in the 30 November 1885 salute 'Obo, or Hobo'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "00520e10b177adaad42eba432e84c7597bfdbb7101eebadebfdada3e3d3e24a6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "00520e10b177adaad42eba432e84c7597bfdbb7101eebadebfdada3e3d3e24a6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-008",
+      "slug": "clm-2300-008",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo, n. (< agricultural 'hoe-boy' or dialect 'hawbuck')",
+      "case_section": "4. Evaluating Origin Hypotheses (H1–H3)",
+      "short_label": "Weakened scholarly/activist derivations from agricultural 'hoe-boy' and Northern English 'hawbuck'",
+      "statement": "Deriving 'hobo' from agricultural 'hoe-boy' (Klein 1922 / Anderson 1923) or Northern English 'hawbuck'/'hawbaw' (Liberman) remains inconclusive due to zero migratory-farmhand tokens across 24 nineteenth-century farm manuals and phonological/semantic divergence on 'hawbuck'.",
+      "rationale": "Pre-1890 agricultural checks find only 1818 mission schoolboys and an 1885 Georgia joke before 1920s Hobo College advocacy (CERT-2300-311, 312), while Cumberland/British 'hawbuck' ('bumpkin'; NJ 1865 'tomboy', CERT-2300-313, 314) leaves '-k' loss and /oʊ-oʊ/ unexplained.",
+      "type": "derivation",
+      "assessment": "inconclusive",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Empirical lexical and phonological gaps weakening both 'hoe-boy' and 'hawbuck' without treating either as a folk backronym.",
+        "does_not_establish": "Absolute impossibility of secondary harvest-worker reinterpretation.",
+        "remaining_uncertainty": "Whether unindexed 1870s–1880s wheat-belt broadsides ever applied 'hoe-boy' to adult migrants."
+      },
+      "limitations": [
+        "Evaluated respectfully as weakened hypotheses ('inconclusive') per DRAgNEt register standards."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1885 Western print attesting adult migratory 'hoe-boy' or transitional '*hawbo'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2300-311",
+          "relationship": "weakens",
+          "directness": "direct",
+          "reason": "0 migratory-worker 'hoe-boy' hits across 24 farm manuals (only 1818 schoolboys & 1885 pun).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-312",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1923 Anderson summary of Klein's 1922 Hobo College 'hoe-boy' theory.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-313",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1808 Stagg / 1852 Halliwell Northern English 'hawbuck' ('country clown').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-314",
+          "relationship": "weakens",
+          "directness": "direct",
+          "reason": "1902 Wright EDD 'hawbuck' and 1896 Dialect Notes NJ sense 'tomboy'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "dc9a55ac13ff44393d551fc9506f26b922354cfef5936478a1395701cace6d8a",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "dc9a55ac13ff44393d551fc9506f26b922354cfef5936478a1395701cace6d8a"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2300-009",
+      "slug": "clm-2300-009",
+      "case_slug": "hobo",
+      "headword": "hobo",
+      "target_lexeme": "hobo (folk myths and Trap A–C false positives)",
+      "case_section": "5. Folk-Etymology Refutations and Archival Trap Hygiene",
+      "short_label": "Refutation of 'Hoboken'/'homo bonus'/'Homeward Bound' folk myths and Trap A–C misdates, OCR ghosts, and homographs",
+      "statement": "Primary-source and masthead audits refute the 'Hoboken', 'homo bonus', and Civil War 'Homeward Bound' folk myths, correct five 1881–1889 catalog misdates to 1890–1916, and falsify eight pre-November 1885 OCR ghosts and 'hoboy'/'Ho-Boy'/Japanese 'hobo' homographs.",
+      "rationale": "Northwestern 1885 geography and 1865–1884 silence refute CERT-2300-315..317; mastheads resolve Trap A misdates (112, 126, 232, 318, 319); and ink checks eliminate Trap B OCR noise (127, 128, 130, 231, 320) and Trap C oboe/nightman/Meiji/Spanish homographs (129, 321, 322).",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of all three folk etymologies and thirteen Trap A–C false-positive records.",
+        "does_not_establish": "Origins of the genuine 1885 Northwestern word.",
+        "remaining_uncertainty": "None; all scans and mastheads are verified directly."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2300-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes 'Hoboken' conjecture (Clapin 1902 / Krapp 1925).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes Jeff Davis's 1915 Latin 'homo bonus' myth.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes Civil War 'Homeward Bound' myth against Pinkerton (1878).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves NDNP '1889-01-02' Butte Miner to 2 January 1890.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1887' Scribner's to 1898.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-232",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves bound Railway Conductor misdate to October 1900.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-126",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1889' Railway Conductor to May 1912.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1881' Century Magazine to October 1916.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 1858–1873 PA OCR ghosts.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-128",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 2 January 1885 'Robes' OCR ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-127",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 3 January 1885 St. Paul Globe header OCR '(Hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-231",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 22 May 1885 Brainerd Dispatch 'Globe' OCR ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-130",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 1 April 1885 Somerset surname 'Robo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates oboe 'hoboy' and NYC nightman 'Ho-Boy'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-129",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1880 Meiji Japanese 'hobo'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2300-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1888 Hepburn Japanese 'HOBO' and Spanish 'bobo'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6bff56652c247d36c2412267c3cd6b87397cd9d057840c8e01e6b8f7d8ae8cf7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2300.",
+          "content_fingerprint": "6bff56652c247d36c2412267c3cd6b87397cd9d057840c8e01e6b8f7d8ae8cf7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

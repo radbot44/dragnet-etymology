@@ -1,0 +1,1078 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "hokum",
+  "case_slug": "hokum",
+  "case_number": "Case 1600",
+  "target_id": "TGT-104",
+  "headword": "hokum",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence ledger for Case 1600 (hokum): separates 28 October 1899 New York Clipper hokum, n. (deduplicating CERT-1600-106 and CERT-1600-206 as one witness), 1913 hoke, n., 1918 hoke, v., and 1919 hokey, adj. antedatings from hocus × bunkum blending and 1856 Punch Cockney oakum rebuttals.",
+  "claims": [
+    {
+      "id": "CLM-1600-001",
+      "slug": "clm-1600-001",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum, n.",
+      "case_section": "Section 1: Theatrical Noun Antedating",
+      "short_label": "28 October 1899 New York Clipper antedating of theatrical hokum, n. (vs. OED 1917)",
+      "statement": "Ed. Bryan and Madge Norman's professional card in The New York Clipper attests theatrical 'hokum' on 28 October 1899, eighteen calendar years before OED's unrevised 1917 baseline for 'hokum, n.' (and more than six years before Roy L. McCardell's 20 January 1906 Evening World feature).",
+      "rationale": "Direct scan inspection of the 28 October 1899 New York Clipper (p. 732, col. 4) verifies lowercase theatrical 'hokum' in a vaudeville performers' advertisement.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of theatrical 'hokum' in American vaudeville trade advertising on 28 October 1899.",
+        "does_not_establish": "Exact oral coinage date in 1890s variety/vaudeville dressing rooms or connection to the 1889/1899 stage surname 'Hokum'.",
+        "remaining_uncertainty": "OED's 1917 New York Sun baseline is recorded at year precision."
+      },
+      "limitations": [
+        "CERT-1600-106 and CERT-1600-206 document this single 28 October 1899 advertisement and count as one historical witness."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests theatrical 'hokum' in Ed. Bryan & Madge Norman's 28 October 1899 New York Clipper notice (p. 732, col. 4).",
+          "witness_note": "Single historical witness paired with duplicate shard entry CERT-1600-206."
+        },
+        {
+          "ref": "CERT-1600-101",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Roy L. McCardell's 20 January 1906 New York Evening World 'Sure Fire Hokum' sub-headline (Shapiro Jul 2026 ADS-L baseline).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-102",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents McCardell's 3 March 1906 Evening World 'hokum' usage (Green's baseline).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "hokum, n. ('stock stage material calculated to win easy applause; claptrap, bunkum')",
+        "edition_or_revision": "OED 1933 Supplement entry (unrevised in OED Online)",
+        "baseline_date": "1917",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/hokum_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1600-106",
+        "attested_date": "1899-10-28",
+        "attested_date_precision": "day",
+        "computed_advance_display": "18 calendar years (28 October 1899 vs. 1917)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0d24c32206c4629e24bf2f6d79fdc148a08de4a26d8f539dfbc95181ff4dc3a3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "0d24c32206c4629e24bf2f6d79fdc148a08de4a26d8f539dfbc95181ff4dc3a3"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1600-001-01",
+          "claim_id": "CLM-1600-001",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1600-106",
+            "CERT-1600-101",
+            "CERT-1600-102"
+          ],
+          "findings": "Directly inspected both CERT-1600-106.webp and duplicate shard plate CERT-1600-206.webp (Oct. 28, 1899 New York Clipper, p. 732, col. 4, Ed. Bryan & Madge Norman card: 'hokum or gravey acts'), confirming an 18-calendar-year advance over OED's year-precise 1917 baseline, explicit single-witness deduplication, and anchoring to the Oct. 28 print masthead rather than the internal Oct. 21 testimonial.",
+          "objections": [],
+          "material_fingerprint_at_review": "0d24c32206c4629e24bf2f6d79fdc148a08de4a26d8f539dfbc95181ff4dc3a3",
+          "evidence_fingerprints_at_review": {
+            "CERT-1600-101": "b3b1229e710fdf36efac24f880b9a3d51dc908293fce1eacc8e326b8827220fb",
+            "CERT-1600-102": "0668f6e6628a0edfec10f13461ae02b464941ce81444b0c39264ea615c92ad39",
+            "CERT-1600-106": "bf5347b27c6382c6dc827280bc5dbd0f323e56c7e2d1872fbaeacdf21ca15d67"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-002",
+      "slug": "clm-1600-002",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum, n.",
+      "case_section": "Section 1: Witness Deduplication & Edition Gate",
+      "short_label": "Single-witness identity of CERT-1600-106/206 (28 Oct 1899) and seven additional duplicate/edition pairs",
+      "statement": "CERT-1600-106 and CERT-1600-206 document the exact same 28 October 1899 New York Clipper advertisement (one historical witness, not two), seven additional cross-shard pairs duplicate identical print occurrences (111=207, 112=210, 114=212, 115=216, 116=217, 121=221, 119=222 plus 118=318 and 304=316), and CERT-1600-119/222 expose a 1929 T. S. Denison rear catalog bound behind a 1906 copyright page.",
+      "rationale": "Explicit deduplication enforces DRAgNEt's witness-counting rule that multiple citation records for the same print occurrence never inflate independent witness counts.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact one-to-one witness deduplication across ten paired record groups and proof that the '1906' Bitney/Denison 'hokum' catalog ad dates to c. 1929.",
+        "does_not_establish": "Any independent historical attestation beyond the primary member of each duplicate pair.",
+        "remaining_uncertainty": "None; page coordinates, column positions, and bound-catalog advertisements match verbatim."
+      },
+      "limitations": [
+        "Applies to internal multi-shard ledger deduplication."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Primary record for the 28 October 1899 Bryan & Norman New York Clipper notice.",
+          "witness_note": "Identical advertisement to CERT-1600-206."
+        },
+        {
+          "ref": "CERT-1600-206",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Second shard record of the identical 28 October 1899 Bryan & Norman Clipper notice; must not be counted as a second witness.",
+          "witness_note": "Duplicate witness of CERT-1600-106."
+        },
+        {
+          "ref": "CERT-1600-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 May 1910 Billboard witness duplicated by CERT-1600-207.",
+          "witness_note": "Same 7 May 1910 item as CERT-1600-207."
+        },
+        {
+          "ref": "CERT-1600-207",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 7 May 1910 Billboard.",
+          "witness_note": "Duplicate of CERT-1600-111."
+        },
+        {
+          "ref": "CERT-1600-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 Sep 1910 New York Clipper witness duplicated by CERT-1600-210.",
+          "witness_note": "Same 17 Sep 1910 item as CERT-1600-210."
+        },
+        {
+          "ref": "CERT-1600-210",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 17 Sep 1910 Clipper.",
+          "witness_note": "Duplicate of CERT-1600-112."
+        },
+        {
+          "ref": "CERT-1600-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "11 Apr 1913 Variety 'hoke' witness duplicated by CERT-1600-212.",
+          "witness_note": "Same 11 Apr 1913 item as CERT-1600-212."
+        },
+        {
+          "ref": "CERT-1600-212",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 11 Apr 1913 Variety.",
+          "witness_note": "Duplicate of CERT-1600-114."
+        },
+        {
+          "ref": "CERT-1600-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "9 May 1919 Variety 'hoked' witness duplicated by CERT-1600-216.",
+          "witness_note": "Same 9 May 1919 item as CERT-1600-216."
+        },
+        {
+          "ref": "CERT-1600-216",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 9 May 1919 Variety.",
+          "witness_note": "Duplicate of CERT-1600-115."
+        },
+        {
+          "ref": "CERT-1600-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "25 Jul 1919 Variety 'hokey' witness duplicated by CERT-1600-217.",
+          "witness_note": "Same 25 Jul 1919 item as CERT-1600-217."
+        },
+        {
+          "ref": "CERT-1600-217",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 25 Jul 1919 Variety.",
+          "witness_note": "Duplicate of CERT-1600-116."
+        },
+        {
+          "ref": "CERT-1600-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 Jun 1905 Billboard 'HOCUM' rejected lead duplicated by CERT-1600-221.",
+          "witness_note": "Same 24 Jun 1905 item as CERT-1600-221."
+        },
+        {
+          "ref": "CERT-1600-221",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Duplicate shard record for 24 Jun 1905 Billboard.",
+          "witness_note": "Duplicate of CERT-1600-121."
+        },
+        {
+          "ref": "CERT-1600-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 'hokum' appears on a 1929 T. S. Denison rear catalog advertisement bound behind Bitney's Copyright 1906 verso.",
+          "witness_note": "Paired with CERT-1600-222."
+        },
+        {
+          "ref": "CERT-1600-222",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Companion record for the 1929 Denison catalog bound in Bitney (1906).",
+          "witness_note": "Duplicate of CERT-1600-119."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0f759e84416f0e5162f2de55e491819ef8da8e7bb66ae505586af40248bd6a73",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "0f759e84416f0e5162f2de55e491819ef8da8e7bb66ae505586af40248bd6a73"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-003",
+      "slug": "clm-1600-003",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "Hokum (stage name) / hokum, n.",
+      "case_section": "Section 2: Onomastic Precursors & Vaudeville Diffusion",
+      "short_label": "1889/1899 Clipper 'Hokum' character-name precursors and 1907-1915 vaudeville 'hokum'/'oakum' diffusion",
+      "statement": "The New York Clipper attests capitalized 'Hokum' as a comic character/performer name on 28 September 1889 and 14 October 1899 prior to lowercase common-noun 'hokum' (28 October 1899), followed by sustained 1907-1915 Variety, Billboard, Smart Set, and Green Book diffusion alongside backstage 'oakum' / 'hocum' variants.",
+      "rationale": "Keeping the 1889 and 14 October 1899 capitalized character names distinct from the 28 October 1899 common noun avoids conflating proper stage names with lexicalized slang.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-existing stage character name 'Hokum' (1889, Oct 1899) and continuous 1907-1915 theatrical print currency of 'hokum', 'hocum', and backstage 'oakum'.",
+        "does_not_establish": "That the 1889 comic character name 'Hokum' caused the common noun rather than reflecting the same theatrical milieu.",
+        "remaining_uncertainty": " Oral backstage usage between November 1899 and December 1905 left few surviving print traces."
+      },
+      "limitations": [
+        "Proper character names in 1889 and 14 October 1899 lack common-noun syntax."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests comic character name 'Hokum' in The New York Clipper on 28 September 1889.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests capitalized 'Hokum' in The New York Clipper on 14 October 1899, two weeks before CERT-1600-106.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests theatrical 'oakum' (= hokum) in Variety on 26 October 1907.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokum' in Kenneth McGaffey's The Sorrows of a Show Girl (September 1908).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokum' in Channing Pollock's Smart Set essay (1 November 1908).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests theatrical 'oakum' in Variety on 12 December 1908.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents Bert Somers and Sime Silverman discussing 'hocum' vs. 'oakum' in Variety on 8 May 1909.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests '\"hokum\" stuff' in Variety on 28 January 1911.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokum' in The Green Book Album on 1 March 1911.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests pitchman 'hokum' in The Billboard on 23 August 1913.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests attributive '\"Hokum\" Stuff' in Philadelphia Evening Public Ledger on 13 February 1915.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-209",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Documents continuing Billboard pitchman 'Hokum' usage on 10 January 1925.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e4f0c115b07f3928cbf8049897bb23f53379f6651836161c3f5573e3ea934404",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "e4f0c115b07f3928cbf8049897bb23f53379f6651836161c3f5573e3ea934404"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-004",
+      "slug": "clm-1600-004",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hoke, n.",
+      "case_section": "Section 3: Back-Formations (hoke, n., hoke, v., hokey, adj.)",
+      "short_label": "11 April 1913 Variety emergence of back-formed nominal hoke, n.",
+      "statement": "Variety attests clipped nominal 'hoke' ('theatrical hokum, stock comic business') on 11 April 1913, followed by 15 October 1915 and 12 May 1916 occurrences, five years before the earliest verified verbal 'hoked' (1918).",
+      "rationale": "Nominal back-formation 'hoke' (< 'hokum') precedes verbal 'hoke (up)' and adjectival 'hokey' in Variety's trade columns.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of nominal 'hoke' in Variety from 11 April 1913 (for which OED lacks a separate noun entry).",
+        "does_not_establish": "Independent origin of 'hoke' prior to 'hokum' (1899).",
+        "remaining_uncertainty": "None regarding chronological priority of 'hokum' (1899) -> 'hoke, n.' (1913)."
+      },
+      "limitations": [
+        "OED Online treats verbal 'hoke, v.' without a separate nominal 'hoke, n.' lemma."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests nominal 'hoke' in Variety on 11 April 1913.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests nominal 'hoke' in Variety on 15 October 1915.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests capitalized 'Hoke' in Variety on 12 May 1916.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a6820af687dcfec13d349c0cadd3bceeb8f836aef2d8063ecb11404a5580235c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "a6820af687dcfec13d349c0cadd3bceeb8f836aef2d8063ecb11404a5580235c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-005",
+      "slug": "clm-1600-005",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hoke, v.",
+      "case_section": "Section 3: Back-Formations (hoke, n., hoke, v., hokey, adj.)",
+      "short_label": "25 January 1918 Variety antedating of hoke, v. (vs. OED 14 February 1935)",
+      "statement": "Variety attests past-participle/verbal 'hoked' on 25 January 1918 (and 'hoked it up' on 9 May 1919), antedating OED's 14 February 1935 baseline for 'hoke, v.' by 17 years, 0 months, and 20 days.",
+      "rationale": "Both 1918 and 1919 Variety scans verify productive transitive verbal usage in Broadway and vaudeville reviews.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Verbal 'hoked' / 'hoked it up' in Variety by 25 January 1918 and 9 May 1919.",
+        "does_not_establish": "Exact date of spoken conversion from nominal 'hoke' (1913) to verbal 'hoke' (1918).",
+        "remaining_uncertainty": "1914-1917 Variety columns may hold unindexed finite forms."
+      },
+      "limitations": [
+        "Advancing witness uses inflected 'hoked' matching OED's transitive stage sense."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests verbal 'hoked' in Variety on 25 January 1918.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests phrasal 'hoked' / 'hoked it up' in Variety on 9 May 1919.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "hoke, v. ('to introduce hokum into; to falsify or over-act')",
+        "edition_or_revision": "OED 1976 Supplement entry (unrevised in OED Online)",
+        "baseline_date": "1935-02-14",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/hoke_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1600-215",
+        "attested_date": "1918-01-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "17 years, 0 months, and 20 days (25 January 1918 vs. 14 February 1935)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c913c1b1cb11454169aef8d1dba9d5566e90c51cde27e0b61a9305f533819298",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "c913c1b1cb11454169aef8d1dba9d5566e90c51cde27e0b61a9305f533819298"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-006",
+      "slug": "clm-1600-006",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokey, adj.",
+      "case_section": "Section 3: Back-Formations (hoke, n., hoke, v., hokey, adj.)",
+      "short_label": "25 July 1919 Variety antedating of hokey, adj. (vs. OED 1945)",
+      "statement": "Variety attests adjectival 'hokey' ('contrived, full of theatrical hokum') on 25 July 1919—followed by 1920, 1921, 1922, and 1927 Variety reviews—twenty-six calendar years before OED's 1945 baseline for 'hokey, adj.'.",
+      "rationale": "Scan-verified Variety notices establish continuous Broadway trade usage of 'hokey' from July 1919 onward, also predating Shapiro's 19 May 1922 ADS-L report (CERT-1600-105) by nearly three years.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Adjectival 'hokey' in Variety from 25 July 1919 through 29 June 1927.",
+        "does_not_establish": "Any connection to older 19th-century 'hokey-pokey' ice-cream street cries.",
+        "remaining_uncertainty": "OED's 1945 New York Times baseline is recorded at year precision."
+      },
+      "limitations": [
+        "Year-precision 1945 OED baseline bounds computed advance to 26 calendar years (exact advance over 19 May 1922 ADS-L baseline is 2 years, 9 months, and 24 days)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Directly attests adjectival 'hokey' in Variety on 25 July 1919.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokey' in Variety on 22 October 1920.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokey' in Variety on 21 January 1921.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'hokey frolic' in Variety on 19 May 1922 (Shapiro Oct 2026 ADS-L benchmark).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies printed date 29 June 1927 (correcting '28 June 1929') on Variety 'hokey' review.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED)",
+        "entry_and_sense": "hokey, adj. ('characterized by hokum; contrived, sentimental, artificial')",
+        "edition_or_revision": "OED 1976 Supplement entry (unrevised in OED Online)",
+        "baseline_date": "1945",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/hokey_adj",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-1600-116",
+        "attested_date": "1919-07-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "26 calendar years (25 July 1919 vs. 1945)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b894c4b9a6107f53c3a9b2d63fd09011c8d07ab1fafd4f93ce8e6c4b190ed10c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "b894c4b9a6107f53c3a9b2d63fd09011c8d07ab1fafd4f93ce8e6c4b190ed10c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-007",
+      "slug": "clm-1600-007",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum, n.",
+      "case_section": "Section 4: Bounded Negative Show-World Corpus",
+      "short_label": "Zero pre-1906 hokum/hoke/hokey tokens across 20.97M chars of circus, minstrel, medicine-show, and 1904 McCardell texts",
+      "statement": "Full-text regex sweeps across 20,969,536 characters in 18 circus memoirs, blackface minstrel manuals, and patent-medicine exposés (1863-1911) plus Roy L. McCardell's 1904 Show Girl and Her Friends find zero pre-1906 occurrences of 'hokum', 'hocum', 'hoakum', 'hoke', or 'hokey'.",
+      "rationale": "Even McCardell—who popularized 'hokum' in January-March 1906—used 'gazizz' rather than 'hokum' in his 1904 chorus-girl volume, pointing to concentrated late-1890s New York vaudeville trade incubation.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'hokum' family forms across 19 audited circus, minstrel, medicine-show, and 1904 chorus-girl volumes.",
+        "does_not_establish": "Non-existence in unprinted 1890s minstrel or medicine-show oral jargon.",
+        "remaining_uncertainty": "Regional theatrical weeklies outside The New York Clipper (such as The Dramatic Mirror) remain partially searched."
+      },
+      "limitations": [
+        "Published minstrel gagbooks sanitize or lag behind backstage slang."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms absence of 'hokum' in Frank Dumont's Witmark Amateur Minstrel Guide (1 May 1899).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms W. C. Coup's Sawdust & Spangles (1901) uses 'buncombe', with zero 'hokum' tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Roy L. McCardell's The Show Girl and Her Friends (1904) contains zero 'hokum' tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Samuel Hopkins Adams's Great American Fraud (1904-1905) contains zero 'hokum' tokens.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "18 digitized circus memoirs, minstrel end-man manuals, and patent-medicine exposés (1863-1911, 20,860,294 chars) plus Roy L. McCardell, The Show Girl and Her Friends (1904, 109,242 chars)",
+        "search_date": "2026-11-25",
+        "search_period": "1863-1911",
+        "query_terms": [
+          "hokum",
+          "hocum",
+          "hoakum",
+          "hoke",
+          "hokey"
+        ],
+        "search_method": "Case-insensitive full-text regex sweep across OCR text layers with manual inspection of candidate near-matches.",
+        "corpus_coverage": "20,969,536 total characters across 19 show-business and patent-medicine volumes.",
+        "known_limitations": [
+          "Printed minstrel guides and memoirs under-record ephemeral green-room slang.",
+          "Does not cover unindexed 1890s issues of the New York Dramatic Mirror."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "ea1ac3bf4058d89b6899b7d4e496ed1f75eb552483f81f29fe6396e35b739420",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "ea1ac3bf4058d89b6899b7d4e496ed1f75eb552483f81f29fe6396e35b739420"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-008",
+      "slug": "clm-1600-008",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum, n.",
+      "case_section": "Section 5: Blending vs. Showfolk Contact Hypotheses",
+      "short_label": "hocus(-pocus) × bunkum blending hypothesis vs. British mummers' patter, Anglo-Romani hokkano, and 'oakum' folk etymology",
+      "statement": "American theatrical 'hokum' is most plausibly analyzed as a blend of 'hocus(-pocus)' and 'bunkum' in late-19th-century variety slang—potentially reinforced by British mummers' formulaic 'hokum' patter (1857-1864) or Anglo-Romani 'hokkano'/'hokkeny' ('deception, trick')—whereas 1907-1936 backstage 'oakum'/'hoakum' explanations reflect secondary folk-etymological rationalization.",
+      "rationale": "Both 'hocus' and 'bunkum' were active in 19th-century American theatrical vocabulary, whereas performers' own 1909 Variety letters ('hocum' vs. 'oakum') show guesswork after the word was already established.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-1899 currency of 'hocus'/'hoky-poky' and 'bunkum' alongside documented British mummers' 'hokum' formulas and Anglo-Romani 'hokkano-' stems.",
+        "does_not_establish": "Conclusive proof choosing 'hocus × bunkum' blending over Anglo-Romani showfolk borrowing or remodeling of stage name 'Hokum'.",
+        "remaining_uncertainty": "No 1890s witness explicitly coins 'hokum' from 'hocus' + 'bunkum'."
+      },
+      "limitations": [
+        "Blending, Romani showfolk contact, and comic-name lexicalization could have converged rather than acting mutually exclusively."
+      ],
+      "resolution_criteria": [
+        "Locate an 1889-1899 New York Clipper or Dramatic Mirror passage bridging the comic character name 'Hokum' (1889) or 'hocus/bunkum' phrasing directly into common-noun 'hokum'."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-1600-001",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Establishes the 28 October 1899 New York Clipper target chronology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-314",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests 'Hocus' in Grose's Vulgar Tongue (1785).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-307",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests 'HOKY-POKY' ('hocus-pocus') in Halliwell (1846).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-305",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests 'Hocus' in Farmer & Henley (1893).",
+          "witness_note": "Farmer & Henley Slang and Its Analogues Vol. III ('Hocus'); paired shard citation with Vol. I 'Bunkum' (CERT-1600-315)."
+        },
+        {
+          "ref": "CERT-1600-315",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests 'Bunkum' from 27 September 1828 in Farmer & Henley.",
+          "witness_note": "Farmer & Henley Slang and Its Analogues Vol. I ('Bunkum'); paired shard citation with Vol. III 'Hocus' (CERT-1600-305)."
+        },
+        {
+          "ref": "CERT-1600-306",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Attests theatrical/political 'Bunkum' in Bartlett (1848).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-304",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests Welsh/British mummers' nonsense formula 'hokum' in Barnaschone (1857; paired with CERT-1600-316).",
+          "witness_note": "Duplicate shard twin for the same 1857 Cambrian Journal Gower mummers' formula ('hokum, skokum, alicompane'); counted as 1 primary witness, reprinted in Chambers 1864 (CERT-1600-117)."
+        },
+        {
+          "ref": "CERT-1600-316",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Companion Cambrian Journal (1857) scan for mummers' 'hokum'.",
+          "witness_note": "Duplicate shard twin for the same 1857 Cambrian Journal Gower mummers' formula ('hokum, skokum, alicompane'); counted as 1 primary witness, reprinted in Chambers 1864 (CERT-1600-117)."
+        },
+        {
+          "ref": "CERT-1600-117",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests mummers' 'hokum' formula in Chambers's Book of Days (1864).",
+          "witness_note": "1864 Chambers's Book of Days derivative antiquarian reprint of the 1857 Gower mummers' formula."
+        },
+        {
+          "ref": "CERT-1600-301",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests Anglo-Romani 'hokkeny' ('trick, lie') in Leland (1873; paired with CERT-1600-313).",
+          "witness_note": "Co-citation from Charles G. Leland's same 1873 English Gipsies and Their Language volume; counted as 1 lexicographical work."
+        },
+        {
+          "ref": "CERT-1600-313",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests Anglo-Romani 'hokkerben' in Leland (1873).",
+          "witness_note": "Co-citation from Charles G. Leland's same 1873 English Gipsies and Their Language volume; counted as 1 lexicographical work."
+        },
+        {
+          "ref": "CERT-1600-302",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests Anglo-Romani 'Hokkano' ('great trick') in Borrow (1874).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-303",
+          "relationship": "qualifies",
+          "directness": "indirect",
+          "reason": "Attests 'hokkani' in Leland's The Gypsies (1882).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-225",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Documents Mencken (1936) repeating folk-etymological 'hoakum'/'oakum' lore.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9e3d7f0f0c85af8428754c3bb75434fced2dfd251e462f521abb44bfb377416b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "5ae93dbec2eac05664616e6198506649f7663000b2a079dca125b8d3abf4ff81"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Added explicit witness_notes deduplicating Cambrian Journal 1857/Chambers 1864 mummers' twins and Leland 1873 / Farmer & Henley shard pairs.",
+          "content_fingerprint": "9e3d7f0f0c85af8428754c3bb75434fced2dfd251e462f521abb44bfb377416b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-009",
+      "slug": "clm-1600-009",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum (1856 Punch)",
+      "case_section": "Section 5: Rebuttal of 1856 Punch Penal 'hokum'",
+      "short_label": "Rebuttal of December 1856 Punch 'hokum' as Cockney h-prothesis for penal 'oakum' rather than theatrical hokum",
+      "statement": "The 6 and 20 December 1856 Punch occurrences of 'that blessed hokum' and 'tese hokum' represent fictional convict James Hardy's hypercorrect Cockney h-insertion on prison 'oakum' (rope-picking), with no semantic or historical link to American vaudeville 'hokum'.",
+      "rationale": "Full context of the 1856 Punch ticket-of-leave satire ('picking that blessed hokum' in prison alongside systematic h-dropping/h-insertion) resolves the apparent homograph noted on ADS-L.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Contextual proof that December 1856 Punch 'hokum' denotes prison oakum-picking via Mock-Cockney h-prothesis, plus absence of theatrical 'hokum'/'hoke' in Hotten (1874) and Wright EDD (1902).",
+        "does_not_establish": "Anything against later 1907 Variety speakers secondarily punning theatrical 'hokum' onto 'oakum'.",
+        "remaining_uncertainty": "None regarding the literal prison-oakum referent of the 1856 Punch satire."
+      },
+      "limitations": [
+        "CERT-1600-118 and CERT-1600-318 document the same 6 December 1856 Punch issue."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 6 December 1856 Punch 'picking that blessed hokum' occurs in a prison oakum-picking letter with Cockney h-prothesis.",
+          "witness_note": "Same 6 Dec 1856 Punch page as CERT-1600-318."
+        },
+        {
+          "ref": "CERT-1600-318",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Companion full-page scan for 6 December 1856 Punch.",
+          "witness_note": "Duplicate of CERT-1600-118."
+        },
+        {
+          "ref": "CERT-1600-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows follow-up 20 December 1856 Punch 'tese hokum' continues the prison oakum joke.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-312",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Confirms Hotten (1874) records only 'Hook um snivey', not 'hokum'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-308",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Confirms Wright EDD (1902) 'HOKEY' has no theatrical sense.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-317",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Confirms Wright EDD (1902) dialectal 'hoke' ('dig/scoop') is unrelated.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "2c6731403216cf4a9a316fa6aaafb6b6abc2461cd8c7ab028aca1a39990d29f3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "2c6731403216cf4a9a316fa6aaafb6b6abc2461cd8c7ab028aca1a39990d29f3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1600-010",
+      "slug": "clm-1600-010",
+      "case_slug": "hokum",
+      "headword": "hokum",
+      "target_lexeme": "hokum, n.",
+      "case_section": "Section 6: Quarantined OCR Ghosts & Homographs",
+      "short_label": "Quarantine of 1882-1996 OCR ghosts, surnames, foreign homographs, and misdated serials in hokum",
+      "statement": "Nine rejected leads in the hokum ledger—including 1882 'LOCUM', 1889 'Horsman', 1893 Urdu/Arabic 'Hokum', Dec 1899 surname 'Yokum', 1905 acronym/name 'HOCUM', 1907 'Roster', 1914 'looked', and misdated 1922/1996 items—are verified false positives unrelated to theatrical 'hokum'.",
+      "rationale": "Direct scan inspection isolates broken-type OCR misreads and non-English homographs.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exclusion of nine false-positive citations from the hokum lexical timeline.",
+        "does_not_establish": "Any positive lexical evidence.",
+        "remaining_uncertainty": "None; scan readings are unambiguous."
+      },
+      "limitations": [
+        "Applies strictly to the nine audited rejected_lead records."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1600-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1882 Supreme Court transcript 'HOCUM' is broken-type 'LOCUM'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 16 Nov 1889 Harper's Weekly hit is surname 'Horsman'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 1893 'Khususol Hokum' as a non-English Indian treatise title.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 8 Dec 1899 New York Times hit is proper name 'Yokum'/'Hokum'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 24 Jun 1905 Billboard 'HOCUM' is a proper name/acronym.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 23 Feb 1907 Clipper hit is OCR ghost on 'Roster'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 25 Apr 1914 Billboard hit reads 'looked' in ink.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes misdated Theatre Magazine volume (Dec 1922).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1600-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Exposes misdated 23 Feb 1996 UCLA Daily Bruin item.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f7cc937f70e9a7427340adbbed695099f2087d1a96873048ea13f5d464e499ff",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for hokum.",
+          "content_fingerprint": "f7cc937f70e9a7427340adbbed695099f2087d1a96873048ea13f5d464e499ff"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

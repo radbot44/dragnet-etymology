@@ -1,6 +1,6 @@
 # DRAgNEt Archival Research & Verification Protocol
 
-This document describes the end-to-end research and verification workflow used to produce **DRAgNEt** Case Files and JSON citation ledgers, separating automated search/triage steps from human philological verification.
+This document describes the end-to-end research, citation verification, and claim-level evidence workflow used to produce **DRAgNEt** Case Files, schema `3.0` JSON citation ledgers, and schema `1.0` JSON claim ledgers, separating automated search and extraction steps from independent philological review.
 
 ## 1. Candidate Discovery & OCR-Variant Generation
 
@@ -18,9 +18,9 @@ Every candidate citation must be inspected on the original page image (never acc
 3. **Proper-Name & Homograph Check:** Surnames (`Mrs. Dimmick`, `Dimmick Pipe Co.`, `Chas. Shill`, `J. G. Gimmick`) and unrelated homographs (such as Scots `ferrick` 'mock sun') are separated from lexical attestations.
 4. **Prior-Scholarship & Scope Check:** Before describing any attestation or argument as new, current entries in *OED*, *Green's Dictionary of Slang*, *HDAS*, *Etymonline*, *American Speech*, *Comments on Etymology*, *Notes and Queries*, and ADS-L archives are checked and credited. Corpus absence is treated only as supporting context, never proof of geographic origin.
 
-## 3. Orthogonal Record Types and Four Verification Levels
+## 3. Orthogonal Citation Record Types and Four Verification Levels (`public/ledgers/*.json`)
 
-Every JSON record in `public/ledgers/*.json` separates **Record Type** (`attestation`, `contextual_evidence`, `hypothesis`, `rejected_lead`) from **Verification Level**:
+Every JSON record in `public/ledgers/*.json` (`schema_version: "3.0"`) separates **Record Type** (`attestation`, `contextual_evidence`, `hypothesis`, `rejected_lead`) from **Verification Level**:
 
 | Level | Value | Meaning |
 | :--- | :--- | :--- |
@@ -29,7 +29,31 @@ Every JSON record in `public/ledgers/*.json` separates **Record Type** (`attesta
 | 3 | `human_verified` | Named human reviewer (`human_verified_by`, `human_verified_date`) independently inspected the scan and transcription. |
 | 4 | `externally_recognized` | Citation or finding already published in or accepted by an edited dictionary, peer-reviewed journal, or independent specialist. |
 
-To promote an `agent_verified` record after independent human inspection, run:
+To promote an `agent_verified` citation record after independent human inspection, run:
 ```bash
 python3 scripts/record_human_verification.py --ledger public/ledgers/shill-shillaber.json --id CERT-1200-101 --verifier "Your Name"
+```
+
+## 4. Claim-Level Evidence Architecture & Review Provenance (`public/claims/*.json`)
+
+Verifying that an archival page prints a specific string on a given date (`CERT-*`) is distinct from evaluating the philological propositions argued from those witnesses (`CLM-*`). Each Case File therefore pairs its citation ledger with a structured claim ledger in `public/claims/<slug>.json` (`schema_version: "1.0"`, specified in [`docs/claim-architecture.md`](../docs/claim-architecture.md) and validated by `schemas/claim-ledger.schema.json`):
+
+1. **Documentary vs. Interpretive Propositions:**
+   - **Documentary claims** (`attestation`, `antedating`, `negative_evidence`, `source_relationship`) establish primary print occurrences, precision-bounded chronological comparisons (`antedating_baseline`), bounded corpus sweeps (`negative_evidence_bounds`), and reprint/edition relationships.
+   - **Interpretive claims** (`semantic`, `historical_context`, `transmission`, `derivation`, `phonological`, `rebuttal`) evaluate sense bridges, social pathways, morphological or contact derivations, and competing hypotheses.
+   - Every claim declares an explicit `evidence_boundary` (`establishes`, `does_not_establish`, `remaining_uncertainty`), qualitative `assessment` (`unassessed`, `supported`, `partially_supported`, `inconclusive`, `contradicted`—never synthetic numerical confidence scores), and concrete `resolution_criteria` whenever an interpretive claim remains unresolved.
+2. **Directed Acyclic Evidence Graph & Non-Inheritance:**
+   - Claims link to `CERT-*` witnesses and upstream `CLM-*` premises via typed `evidence` edges (`supports`, `depends_on`, `contradicts`, `weakens`, `qualifies`, `contextualizes`). Inferential `CLM-*` edges (`depends_on`, `supports`) form a strict DAG, and parent interpretive hypotheses never auto-inherit `supported` from documentary premises.
+3. **Strict Non-Auto-Promotion & SHA-256 Fingerprint Staleness:**
+   - Newly ingested claims (`scripts/add_case.py --claims ...`) **always** enter at `review_status: "unreviewed"`.
+   - Independent reviews are recorded exclusively via `scripts/record_claim_review.py` across four review tiers (`unreviewed`, `agent_reviewed`, `independently_agent_reviewed`, `human_reviewed`), snapshotting the exact SHA-256 `material_fingerprint_at_review` (`content_fingerprint`) and `evidence_fingerprints_at_review` map (which transitively cover cited `CERT-*` diplomatic quotes, dates, and hosted WebP scan hashes).
+   - `is_stale` is never stored statically on disk; validators and UI loaders recompute staleness dynamically and `--merge-existing` automatically downgrades `review_status` to `"unreviewed"` while preserving historical `reviews[]` whenever material content or upstream evidence changes.
+
+```bash
+python3 scripts/record_claim_review.py \
+  --slug shill-shillaber \
+  --id CLM-1400-001 \
+  --status human_reviewed \
+  --reviewer "Your Name" \
+  --findings "Inspected 24 January 1883 Chicago Inter Ocean scan and verified 49-day advance against Green's 14 March 1883 baseline."
 ```

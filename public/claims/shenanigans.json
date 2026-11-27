@@ -1,0 +1,969 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "shenanigans",
+  "case_slug": "shenanigans",
+  "case_number": "Case 1700",
+  "target_id": "TGT-001",
+  "headword": "shenanigans",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise 9-claim decomposition of Case 1700 (shenanigans, 61 citations) separating 14 April 1854 'chenanigan', 1854–1855 prior-art baselines, 27 August 1864 'shenaniganed', 3 February 1869 plural 'shenanigans', competing donor pathways, and archival traps.",
+  "claims": [
+    {
+      "id": "CLM-1700-001",
+      "slug": "clm-1700-001",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan / chenanigan, n.",
+      "case_section": "1. Prior Scholarship and the 1854–1855 Baseline",
+      "short_label": "Pre-April 1854 Gold Rush, sporting-press, and Bartlett (1859) negative-corpus bound",
+      "statement": "Multi-archive sweeps of pre-April 1854 California Gold Rush periodicals, Spirit of the Times, and Bartlett's 1859 Dictionary of Americanisms yield zero verified English tokens of 'chenanigan' or 'shenanigan(s)'.",
+      "rationale": "Nineteen spelling variants were swept across 33.8M OCR characters of the SF Picayune, 285 California Revealed manuscripts, 736 Spirit of the Times issues, and Bartlett's 2nd edition (1859, contrasted with its 1877 entry).",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of verified English tokens across surveyed pre-April 1854 corpora and Bartlett (1859).",
+        "does_not_establish": "Absolute absence from lost ephemeral mining-camp sheets or oral gambling slang.",
+        "remaining_uncertainty": "Dirty newsprint OCR in broken 1849–1853 frontier runs could obscure garbled tokens."
+      },
+      "limitations": [
+        "CERT-1700-124 summarizes aggregate corpus sweeps (verification_level 'discovered') without a single-page scan."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Records zero verified pre-April 1854 hits across Gold Rush and sporting corpora.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-318",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "Shows omission in Bartlett's 2nd ed. (1859) prior to entry in the 4th ed. (1877).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "SF Daily Evening Picayune (1851–1852), California Revealed (1848–1853), Spirit of the Times (1845–1854), California Farmer (Jan.–Apr. 1854), and Bartlett (2nd ed., 1859)",
+        "search_date": "2026-11-26",
+        "search_period": "1845-1859 (primary cutoff 1854-04-13)",
+        "query_terms": [
+          "shenanigan",
+          "shenanigans",
+          "chenanigan",
+          "chinanigan",
+          "shenanagin",
+          "shinanigan"
+        ],
+        "search_method": "19-variant OCR regex sweep plus manual facsimile verification of candidates and alphabetical inspection of Bartlett (1859).",
+        "corpus_coverage": "33.8M OCR chars (SF Picayune), 285 CA Revealed items, 736 Spirit of the Times issues, and 1859 Bartlett lexicon",
+        "known_limitations": [
+          "Frontier newsprint OCR noise and incomplete 1849–1853 camp-weekly survival."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "2ae50a27bc69434e334316921bfb3bb7e5d1304152ddf51c1d6d7748fabd5030",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "2ae50a27bc69434e334316921bfb3bb7e5d1304152ddf51c1d6d7748fabd5030"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-002",
+      "slug": "clm-1700-002",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, n. (spelled chenanigan)",
+      "case_section": "2. The April 1854 Mariposa Chronicle Discovery and Early Gold Rush Chronology",
+      "short_label": "14 April 1854 Mariposa Chronicle 'chenanigan' antedating of shenanigan, n.",
+      "statement": "The Mariposa Chronicle (14 April 1854, printing San Francisco correspondence datelined 10 April 1854) attests singular mass-noun 'chenanigan' alongside thimblerig slang, advancing OED's 25 April 1855 baseline by 1 year and 11 days.",
+      "rationale": "Masthead-verified scan inspection of Vol. 1, No. 13, p. 2, col. 2 confirms italicized 'after some chenanigan' ahead of both OED (25 April 1855) and Green's 18 August 1854 Nevada Journal baseline (4 months and 4 days).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Singular mass-noun '<ch->' 'chenanigan' ('trickery, collusion') in California newsprint on 14 April 1854.",
+        "does_not_establish": "Canonical '<sh->' spelling ('shenanigan') or countable plural 'shenanigans'.",
+        "remaining_uncertainty": "Whether initial '<ch->' represented /tʃ/ or /ʃ/ for the San Francisco correspondent."
+      },
+      "limitations": [
+        "Anchored strictly to the 14 April 1854 print issue date rather than the internal 10 April 1854 San Francisco letter dateline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Masthead-verified 14 April 1854 Mariposa Chronicle witness ('after some chenanigan').",
+          "witness_note": "Internal dispatch dateline is 10 April 1854."
+        },
+        {
+          "ref": "CLM-1700-001",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Bounds pre-April 1854 print silence.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "shenanigan, n. ('trickery, skulduggery, subterfuge')",
+        "edition_or_revision": "OED Online entry (consulted November 2026)",
+        "baseline_date": "1855-04-25",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/shenanigan_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-1700-102",
+        "attested_date": "1854-04-14",
+        "attested_date_precision": "day",
+        "computed_advance_display": "1 year and 11 days (14 April 1854 vs. 25 April 1855)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d1292b623e42fc6a52c62ba98ae55b1d38a0c035096f4ecb810a6c7be7a76711",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "d1292b623e42fc6a52c62ba98ae55b1d38a0c035096f4ecb810a6c7be7a76711"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-1700-002-01",
+          "claim_id": "CLM-1700-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-1700-102",
+            "CLM-1700-001"
+          ],
+          "findings": "Directly inspected CERT-1700-102.webp (April 14, 1854 Mariposa Chronicle, Vol. 1, No. 13, p. 2, col. 2: italicized 'after some chenanigan'), confirming strict anchoring to the April 14 masthead print date over the internal April 10 San Francisco dispatch dateline, proper 'earlier_spelling' scoping (<ch-> vs. <sh->), and exact 1-year, 11-day advance over OED's April 25, 1855 baseline.",
+          "objections": [],
+          "material_fingerprint_at_review": "d1292b623e42fc6a52c62ba98ae55b1d38a0c035096f4ecb810a6c7be7a76711",
+          "evidence_fingerprints_at_review": {
+            "CERT-1700-102": "23228ed568c63999b9849e89465b08440f84ef418dc0f2eb8d587dbb4409738d",
+            "CLM-1700-001": "d05f1deb551ad4cb76ae4b56a54305004d751e9a8e1803c464196a33f0d25330"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-003",
+      "slug": "clm-1700-003",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, n. & v.",
+      "case_section": "1. Prior Scholarship and the 1854–1855 Baseline",
+      "short_label": "1854–1855 '<sh->' stabilization, 'humbug'/'Pike' glosses, and unhosted 1855 court verb",
+      "statement": "Six externally recognized 1854–1855 California/Ohio citations and two scan-verified San Francisco periodicals document '<sh->' 'shenanigan' from 10 July 1854, gloss it as 'humbug' / 'Pike County' slang, and record transitive verbal 'shenanigan' in 19 June 1855 court testimony.",
+      "rationale": "Separating unhosted prior-art newspaper baselines (CERT-1700-103..105, 107, 108, 110) from hosted 1854–1855 Wide West and Pioneer scans (CERT-1700-106, 109) credits prior scholars while verifying early metalinguistic commentary.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "California '<sh->' stabilization in summer 1854, 'humbug' glossing by 31 December 1854, and prior-art transitive infinitive testimony on 19 June 1855.",
+        "does_not_establish": "Open-access scan verification for the six paywalled/CDNC prior-art citations.",
+        "remaining_uncertainty": "Page 2 of the 24 December 1854 Wide West issue is missing on microfilm."
+      },
+      "limitations": [
+        "CERT-1700-103, 104, 105, 107, 108, and 110 carry verification_level 'externally_recognized' without hosted scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "31 December 1854 Wide West scan glossing 'shenanigan' as 'humbug' and spoofing 'Shenann-Ogham'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1855 Pioneer scan labeling 'shenanigan' a 'Pike County' phrase.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-103",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "10 July 1854 Sacramento Daily Union '<sh->' prior-art citation.",
+          "witness_note": "Unhosted external baseline."
+        },
+        {
+          "ref": "CERT-1700-104",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "18 August 1854 Nevada Journal ('come the shenanigan') Green/ADS-L baseline.",
+          "witness_note": "Unhosted external baseline."
+        },
+        {
+          "ref": "CERT-1700-105",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "16 November 1854 Sacramento Daily Union prior-art citation.",
+          "witness_note": "Unhosted external baseline."
+        },
+        {
+          "ref": "CERT-1700-107",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "10 January 1855 Ravenna Portage County Democrat prior-art citation.",
+          "witness_note": "Unhosted external baseline."
+        },
+        {
+          "ref": "CERT-1700-108",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "25 April 1855 SF Daily Town Talk OED baseline.",
+          "witness_note": "Unhosted external baseline."
+        },
+        {
+          "ref": "CERT-1700-110",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "19 June 1855 Daily Alta California court-testimony verb ('trying to \"shenanigan\" him').",
+          "witness_note": "Unhosted external baseline."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ec40af9f77d65555cd217ccc318f18e07d4f51ff10f020459b3cf001e3684b43",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "ec40af9f77d65555cd217ccc318f18e07d4f51ff10f020459b3cf001e3684b43"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Oxford English Dictionary",
+          "publication": "shenanigan, n.",
+          "date": "1986",
+          "url_or_ref": "https://www.oed.com/dictionary/shenanigan_n",
+          "exact_scope": "Cites 25 April 1855 San Francisco Daily Town Talk (CERT-1700-108) as opening quotation."
+        }
+      ]
+    },
+    {
+      "id": "CLM-1700-004",
+      "slug": "clm-1700-004",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, n.",
+      "case_section": "3. Prosopography of the 1854–1855 Press Network and Register Diffusion",
+      "short_label": "1856–1877 singular diffusion, antepenultimate stress, and Yankee–Midwestern press prosopography",
+      "statement": "Scan-verified texts from 1856 to 1877 trace singular mass-noun 'shenanigan' across transcontinental print, verify /ʃəˈnænɪɡən/ stress in an 1865 rhyme, and connect the earliest Gold Rush print shops to New England and St. Louis/Ohio editors.",
+      "rationale": "Fifteen literary/newspaper witnesses (CERT-1700-111..118, 214..218, 220, 317) and five county/city press directories (CERT-1700-204..208) confirm exclusively singular usage before 1869 and document the Yankee–Midwestern editorial exchange network.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "National singular mass-noun spread (1856–1872), antepenultimate stress, and Gold Rush newsroom demographics.",
+        "does_not_establish": "Personal coinage by any named Gold Rush editor or contemporary 1856 publication of De Long's diary (printed March 1930).",
+        "remaining_uncertainty": "None beyond manuscript-to-print lag on De Long's 1856 journal."
+      },
+      "limitations": [
+        "CERT-1700-112 (14 June 1856 De Long diary 'chinanigan') was first published in March 1930."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 May 1856 Shelbyville, KY 'shenanagin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 June 1856 De Long diary 'chinanigan' (printed March 1930).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "2 August 1856 SF Fireman's Journal 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 September 1856 SF Fireman's Journal 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 December 1856 Lebanon, KY Post 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jan. 1858 [datelined 21 Dec. 1857] Hutchings' 'shenanegin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 1858 Hutchings' 'shinanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 July 1858 New-York Times unquoted 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "11 January 1859 Utah Valley Tan 'Shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 May 1862 Altoona Tribune singular 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 August 1865 Mining and Scientific Press 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "16 September 1865 New York Clipper rhyme proving /ʃəˈnænɪɡən/ stress.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "23 December 1865 Dutch Flat Enquirer 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1868 Randolph Honor 'shenanigan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-317",
+          "relationship": "supports",
+          "directness": "contextual",
+          "reason": "1871 Bagg Yale slang and 1872 Schele de Vere entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-204",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1867 Nevada County press directory on Yankee editors.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-205",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1867 Coyoteville mining-camp directory record.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-206",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1891 biography of Newburyport printer Nathaniel P. Brown.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-207",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1885 Portage County, OH press history.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-208",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1856 SF directory identifying St. Louis editor W. H. Mantz at Town Talk.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f67d37746b3a81064bf1d86d8085846580bf907deb91eac3d550b91707e40c1b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "f67d37746b3a81064bf1d86d8085846580bf907deb91eac3d550b91707e40c1b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-005",
+      "slug": "clm-1700-005",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, v. (past participle shenaniganed)",
+      "case_section": "4. Verbal Conversion (1864) and the Count Plural Shenanigans (1869)",
+      "short_label": "27 August 1864 New York Clipper 'shenaniganed' verbal antedating vs. OED (1872 / 1932)",
+      "statement": "The New York Clipper (27 August 1864) attests passive participial 'patronised and shenaniganed', advancing OED's 19 October 1872 verbal entry by 8 years, 1 month, and 22 days (and OED's 1932 '-ed' participle by 68 calendar years).",
+      "rationale": "Page-158 scan verification confirms unquoted 'shenaniganed' thirty years before OED's 1894 transitive quotation (CERT-1700-223), while acknowledging Peter Shor's unhosted 19 June 1855 Alta transitive infinitive (CERT-1700-110).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Earliest scan-verified verbal inflection and earliest '-ed' past participle on 27 August 1864.",
+        "does_not_establish": "Priority over the un-scanned 19 June 1855 Daily Alta California infinitive ('trying to \"shenanigan\" him').",
+        "remaining_uncertainty": "Hosted facsimile verification of the 1855 Alta court item remains pending."
+      },
+      "limitations": [
+        "Qualified by the unhosted 19 June 1855 Alta infinitive reported in prior scholarship."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 August 1864 New York Clipper p. 158 scan ('patronised and shenaniganed').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-223",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1894 Mary J. Jaques transitive baseline ('\"shenan-neganning\" me').",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1700-003",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Notes the earlier unhosted 19 June 1855 Alta infinitive.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "shenanigan, v. (opening quotation 19 October 1872; -ed participle 1932)",
+        "edition_or_revision": "OED Online entry (consulted November 2026)",
+        "baseline_date": "1872-10-19",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/shenanigan_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-1700-219",
+        "attested_date": "1864-08-27",
+        "attested_date_precision": "day",
+        "computed_advance_display": "8 years, 1 month, and 22 days (27 August 1864 vs. 19 October 1872)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "45cc1b8acb0ea14c46e1ca947f8fd72de595e7d2ab34c9eeb40b5bb826d19961",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "45cc1b8acb0ea14c46e1ca947f8fd72de595e7d2ab34c9eeb40b5bb826d19961"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-006",
+      "slug": "clm-1700-006",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigans, n. pl.",
+      "case_section": "4. Verbal Conversion (1864) and the Count Plural Shenanigans (1869)",
+      "short_label": "3 February 1869 Reading Daily Eagle antedating of count-plural 'shenanigans'",
+      "statement": "The Reading Daily Eagle (3 February 1869) attests unquoted count-plural 'none of your shenanigans', advancing Green's 1929 plural baseline by 60 calendar years and OED's 1938 plural baseline by 69 calendar years.",
+      "rationale": "Masthead-verified eastern Pennsylvania scans in Reading (3 February 1869, CERT-1700-221) and Lehighton (8 September 1877, CERT-1700-222) prove '-s' pluralization emerged sixty years before standard dictionary citations.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Countable '-s' plural 'shenanigans' in colloquial Pennsylvania newsprint on 3 February 1869.",
+        "does_not_establish": "Immediate nationwide displacement of singular 'shenanigan' before 1900.",
+        "remaining_uncertainty": "None beyond year-only precision on the 1929 and 1938 dictionary baselines."
+      },
+      "limitations": [
+        "Green's (1929) and OED's (1938) plural baselines are year-precise, bounding formal advance display to calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 February 1869 Reading Daily Eagle p. 3 scan ('Now, Lewy, none of your shenanigans').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 September 1877 Carbon Advocate scan ('all sorts of \"shenanigans\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1700-004",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Contrasts 1869 pluralization against 1854–1868 singular-only usage.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "shenanigan, n. (plural form shenanigans)",
+        "edition_or_revision": "Green's Dictionary of Slang online (consulted November 2026; cf. OED 1938)",
+        "baseline_date": "1929",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/uuhphhq",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-1700-221",
+        "attested_date": "1869-02-03",
+        "attested_date_precision": "day",
+        "computed_advance_display": "60 calendar years (3 February 1869 vs. 1929)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c1f8d83e38b3b82e83703c7c9fe44661f93d642fe9bb8629ea95b33d2dc0efe0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "c1f8d83e38b3b82e83703c7c9fe44661f93d642fe9bb8629ea95b33d2dc0efe0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-007",
+      "slug": "clm-1700-007",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, n.",
+      "case_section": "5. Evaluating Competing Donor Hypotheses Against Primary Lexicons",
+      "short_label": "East Anglian nannicking / nonnaks + expressive ch-/sh- and Gold Rush -igan donor hypothesis",
+      "statement": "East Anglian dialect 'nannicking' ('full of tricks', 1815) and 'nannaken' / 'nonnaks' ('none 'a yar nonnaks', 1823–1866), augmented by expressive 'ch-'/'sh-' prefixation and mock-Irish '-igan' remodeling (cf. 1903 'shenannikin'), provides the closest attested phonological and semantic donor base, though bare American '*nannick' remains unattested.",
+      "rationale": "Essex/Suffolk/Norfolk glossaries (CERT-1700-301..304) match both stem phonology and idiomatic syntax, while Farmer & Henley's 'SHENANNIKIN' (CERT-1700-305) preserves /-kɪn/, but Dialect Notes (1893, CERT-1700-305) confirms zero pre-1854 American print tokens of unprefixed '*nannick'.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-1854 British dialectal /ˈnænɪkɪn/ ('playing tricks') and idiomatic parallel 'none 'a yar nonnaks'.",
+        "does_not_establish": "Attested pre-1854 American print survival of bare '*nannick' prior to 'ch-'/'sh-' prefixation.",
+        "remaining_uncertainty": "Whether Yankee sailors or Gold Rush miners preserved oral 'nannicking' before prefixing 'ch-'/'sh-'."
+      },
+      "limitations": [
+        "Zero pre-1854 American print tokens of bare '*nannick' are currently known."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1854 American print/manuscript 'nannick(ing)' or transitional '*sh-nannikin'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-1700-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 March 1815 Monthly Magazine Essex dialect 'Nannicking' ('full of tricks and antics').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1823 Moor Suffolk 'nannaken' and 'none 'a yar nonnaks'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1830 Forby 'NONNOCK' and 1895 Rye '*Nonnecking'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1866 Nall 'Nonnaken' and 1903 Wright EDD 'NANNICK'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-305",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Records 1903 'SHENANNIKIN' and 1893 New England 'shenanigan' while noting zero bare American '*nannick' tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-1700-002",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Aligns with initial '<ch->' and trickery sense of 1854 'chenanigan'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "146d485649626760eaf1b0fb8ee02c9c9cc87cffa0bd94dee1b64700055982f5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "146d485649626760eaf1b0fb8ee02c9c9cc87cffa0bd94dee1b64700055982f5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-008",
+      "slug": "clm-1700-008",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan, n. (competing foreign donor hypotheses)",
+      "case_section": "5. Evaluating Competing Donor Hypotheses Against Primary Lexicons",
+      "short_label": "Critique of Irish 'sionnachuighim', German 'schinageln', Spanish 'chanada', French 'manigance', and Algonquian lore",
+      "statement": "Primary foreign lexicons expose Webster's Second's 'sionnachuighim' as a 1904 Dinneen 1sg headword absent in Hiberno-English, show German Rotwelsch 'Schinagel-'/'Schenigelei' meant 'hard labor/work' rather than 'trick', find zero Mexican Spanish currency for Peninsular 'chanada', confirm no French '*chicanigance' bridge, and refute Algonquian 'fox' lore.",
+      "rationale": "Inspection of O'Brien/O'Reilly/Dinneen/Joyce (CERT-1700-306..309), Pfister/Avé-Lallemant/Kluge (310..312), Salvá/RAE/Ramos i Duarte (313, 314), Académie française (315), and Trumbull's Natick Dictionary (316) isolates specific lexical, semantic, or geographic defects in each competing proposal while leaving mock-Irish '-igan' cadence open as secondary reinforcement.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Refutation of literal 1sg 'sionnachuighim' borrowing and Algonquian 'fox' myths, and demonstration of semantic/geographic gaps in German, Spanish, and French donor proposals.",
+        "does_not_establish": "Exclusion of secondary mock-Irish '-igan' suffixal reinforcement or minor bilingual convergence.",
+        "remaining_uncertainty": "Whether oral Pacific port Spanish ever contributed secondary '<ch->' reinforcement to 1854 'chenanigan'."
+      },
+      "limitations": [
+        "Distinguishes refuted Algonquian/1sg-headword claims from weakened German, Spanish, and French scholarly hypotheses."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1sg 'Sionnachuighim' is Dinneen's 1904 lemma convention and absent in Foley (1855).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero Hiberno-English tokens in Joyce (1910).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-306",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Verifies 1768 O'Brien 'SEANNACHAIGHIM' ('play the fox').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-307",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Verifies 1817 O'Reilly 'Seannachaighim' / 'Sionnach'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1812 Pfister / 1836 Schmeller 'Schienägel' meant convict/farm toil.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1862 Avé-Lallemant 'schinageln' meant post-1854 wheelbarrow labor.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves post-1873 Linke 'Schenigelei' meant 'Arbeit, Kunst' ('work, trade'), not 'trick'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-313",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Verifies Peninsular Spanish 'CHANADA' ('trick', 1847/1852) lacking '-igan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms zero entry for 'chanada' in Velázquez (1852) and Mexican Spanish Ramos i Duarte (1895).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows 1835 French 'CHICANE'/'MANIGANCE' lack any blended bridge to '-igan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Refutes Algonquian 'fox' conjecture via Trumbull's 1903 'wonkqussis'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a3676a1c5729be9fca9714ff1312a286ea5e7538063d228fa4ff694dcb5c4fcf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "a3676a1c5729be9fca9714ff1312a286ea5e7538063d228fa4ff694dcb5c4fcf"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-1700-009",
+      "slug": "clm-1700-009",
+      "case_slug": "shenanigans",
+      "headword": "shenanigans",
+      "target_lexeme": "shenanigan / shenanigans (archival false positives)",
+      "case_section": "1. Prior Scholarship and the 1854–1855 Baseline",
+      "short_label": "Elimination of Trap A misdated serials/1956 intro, Trap B OCR ghosts, and Trap C surname homographs",
+      "statement": "Title-page and ink verification resolves apparent 1839–1855 catalog hits to 1866–1956 imprints and falsifies pre-1869 OCR ghosts and surname homographs ('Shanahan', 'Flanagan', 'Nimick').",
+      "rationale": "Direct scan checks correct Westminster Review to 1866 (CERT-1700-119), CA Senate Journal to 1883 (120), Punch/SEP to 1890–1916 (319), and Chamberlain to Butterfield's 1956 introduction (322), while eliminating 1776–1860 OCR noise (320, 121, 122, 224) and personal surnames (321, 123).",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Post-1865 dates or non-lexical ink readings for all ten pre-1854/pre-1869 false-positive candidates.",
+        "does_not_establish": "Any genuine pre-April 1854 lexical attestation.",
+        "remaining_uncertainty": "None; all ten proof plates are verified in ink."
+      },
+      "limitations": [
+        "CERT-1700-320 and CERT-1700-121 share the 1 August 1829 Saturday Evening Post OCR check."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-1700-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1852' Westminster Review catalog date to October 1866.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1855' CA Legislature Appendix to 1883.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Resolves '1841' Punch to 1890/1892 and '1839' SEP to 22 January 1916.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows '1848' Chamberlain token is Roger Butterfield's 1956 introduction.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 1776 Macpherson and 1 August 1829 SEP OCR ghosts.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 1 August 1829 SEP column ink.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-122",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 1834 House of Commons sideways table-border OCR ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Falsifies 17 August 1860 Pittsburgh truss-ad plural OCR ghost.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Isolates 1852 directory surnames 'Shanahan' and 'Flanagan'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-1700-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 15 February 1856 'Nanick' OCR hit is juror surname 'Wm K Nimick'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "af89d64bbea3c578e6f56f9787740a8a9b797007778b2856e7a754d23665c6ce",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 1700.",
+          "content_fingerprint": "af89d64bbea3c578e6f56f9787740a8a9b797007778b2856e7a754d23665c6ce"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

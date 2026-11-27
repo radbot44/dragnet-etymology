@@ -1,0 +1,1111 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "grifter",
+  "case_slug": "grifter",
+  "case_number": "Case 2100",
+  "target_id": "TGT-100",
+  "headword": "grifter",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise v1.0 claim ledger for Case 2100 (grifter, TGT-100) covering all 71 citations across 9 atomic documentary and interpretive claims.",
+  "claims": [
+    {
+      "id": "CLM-2100-001",
+      "slug": "clm-2100-001",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "grift / grifter",
+      "case_section": "2. Hard Negative-Corpus Boundary (1859–1902) and the 1902–1904 Missouri Valley Emergence",
+      "short_label": "1859–1902 cant and circus negative-corpus boundary (0 grift* tokens across 2.32M words)",
+      "statement": "Full-text sweeps across 2,323,278 words in sixteen cant dictionaries and circus memoirs (1859–1902), plus Josiah Flynt's six books (1899–1908) and O. Henry's Gentle Grafter (1908), yield 0 lexical grift* tokens before Flynt's 1907 Cosmopolitan shift.",
+      "rationale": "Complete absence across Matsell, Hotten, Barnum, Farmer & Henley, Coup (1901), Clapin (1902), and Flynt's pre-1907 books brackets the graft -> grift split to c. 1900–1902.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero lexical grift* tokens across swept 1859–1902 cant/circus books and pre-1907 Flynt/O. Henry prose.",
+        "does_not_establish": "Exact spoken onset date in unrecorded oral pitchman or thief argot.",
+        "remaining_uncertainty": "Whether ephemeral pre-1902 circus route books or municipal blotters preserve sub-literary tokens."
+      },
+      "limitations": [
+        "Bounds published books rather than unrecorded oral speech."
+      ],
+      "resolution_criteria": [
+        "Recover a masthead- and ink-verified pre-1902 lexical grift* token in print or manuscript."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2100-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Matsell (1859) and Hotten (1859–1874) record graft but 0 grift* tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Frost, Barnum, and Glenroy circus memoirs (1869–1888) contain 0 grift* hits.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Barrère & Leland (1889–1890) and Maitland (1891) contain 0 grift* hits.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer & Henley Vol. III (1893) steps from GRIFF-METOLL to GRIG with 0 grift* entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "W. C. Coup's Sawdust & Spangles (1901) uses 'fakirs' exclusively with 0 grift* hits.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Clapin (1902) enters Graft and Griffe ('mulatto') with 0 grift* entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Flynt's six books (1899–1908) contain 302 graft* and 0 grift* tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "O. Henry's Gentle Grafter (1908) contains 153 graft* and 0 grift* tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-120",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Flynt's February 1907 Cosmopolitan essay reports criminals now say 'Grift' instead of 'Graft'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-209",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Flynt's April 1907 Cosmopolitan installment attests 'the pool-room Grift'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "16 cant/circus editions (1859–1902) plus Josiah Flynt (1899–1908) and O. Henry (1908) book corpora",
+        "search_date": "2026-11-26",
+        "search_period": "1859-1908",
+        "query_terms": [
+          "grift",
+          "grifter",
+          "grifters",
+          "grifted",
+          "grifting"
+        ],
+        "search_method": "Programmatic full-text regex sweep paired with alphabetical headword-slot scan verification.",
+        "corpus_coverage": "2,323,278 words across 16 reference/memoir volumes plus 7 literary volumes (503 graft* control hits vs. 0 grift* book hits)",
+        "known_limitations": [
+          "Published dictionaries and memoirs lag spoken underworld coinage."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "e9e597d34d052000ec51f6ebd1acb5a3cbef57898e535329f4e490409d2e816b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "e9e597d34d052000ec51f6ebd1acb5a3cbef57898e535329f4e490409d2e816b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-002",
+      "slug": "clm-2100-002",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "grift, v.",
+      "case_section": "2. Hard Negative-Corpus Boundary (1859–1902) and the 1902–1904 Missouri Valley Emergence",
+      "short_label": "3 June & 6 July 1902 open-scan antedating of transitive verb grifted (-24 calendar years vs. OED 1926)",
+      "statement": "Open scans of The Saint Paul Globe (3 June 1902) and an independent resetting in the Savannah Morning News (6 July 1902, credited 'From the Kansas City Journal') attest transitive 'grifted a benny' 24 calendar years before OED's 1926 grift, v. baseline.",
+      "rationale": "Dual-city linotype scans rule out a compositor error, confirm Green's 3 June 1902 transitive benchmark on physical ink, and trace the text to Kansas City Detective Charles Sanderson.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan primary newsprint verification of transitive past-tense 'grifted' by 3 June 1902 and Kansas City Journal origin.",
+        "does_not_establish": "Exact publication date of the uninspected parent May/June 1902 Kansas City Journal issue.",
+        "remaining_uncertainty": "Locating the original Kansas City Journal printing on Missouri microfilm."
+      },
+      "limitations": [
+        "OED's 1926 grift, v. baseline carries year precision; CERT-2100-104 and 105 share one parent Kansas City text (CLM-2100-009)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2100-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 June 1902 Saint Paul Globe scan ('\"grifted\" a \"benny\"').",
+          "witness_note": "Reprint paired with CERT-2100-105."
+        },
+        {
+          "ref": "CERT-2100-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 July 1902 Savannah Morning News independent resetting credited 'From the Kansas City Journal'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2100-009",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Deduplicates CERT-2100-104 and 105 as two resettings of one Kansas City feature.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "grift, v. (transitive and general verbal entry)",
+        "edition_or_revision": "Unrevised 1972 Supplement entry, modified December 2025",
+        "baseline_date": "1926",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/grift_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2100-104",
+        "attested_date": "1902-06-03",
+        "attested_date_precision": "day",
+        "computed_advance_display": "24 calendar years (3 June 1902 vs. 1926)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d03fc65962204a905e77b0fbdc537a8ed2e7c2c9ba0d7ab4e479a831ce67a5dd",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "d03fc65962204a905e77b0fbdc537a8ed2e7c2c9ba0d7ab4e479a831ce67a5dd"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2100-002-01",
+          "claim_id": "CLM-2100-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2100-104",
+            "CERT-2100-105",
+            "CLM-2100-009"
+          ],
+          "findings": "Directly inspected CERT-2100-104.webp (June 3, 1902 Saint Paul Globe, p. 5, col. 6: 'grifted a benny') and cross-checked CERT-2100-105 (July 6, 1902 Savannah Morning News crediting Kansas City Journal), confirming accurate transcription, year-precision 24-year advance over OED 1926, and explicit single-parent deduplication via CLM-2100-009.",
+          "objections": [],
+          "material_fingerprint_at_review": "d03fc65962204a905e77b0fbdc537a8ed2e7c2c9ba0d7ab4e479a831ce67a5dd",
+          "evidence_fingerprints_at_review": {
+            "CERT-2100-104": "2f503c32b36430a80d40ca2ceaf582f14834ce8b8e9e45fa7ea79d103407890a",
+            "CERT-2100-105": "b27061a6d6793a22d11edaae022c66bd6e4ae2d0c0b01dad67c502154adc514f",
+            "CLM-2100-009": "ecd88b09b5ccb491c65e8e17446c87c09e324c8817eccdd374fea5ead036512f"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": [
+        {
+          "recognizer": "Green's Dictionary of Slang",
+          "publication": "grift, v. (sense 1)",
+          "date": "2025",
+          "url_or_ref": "https://greensdictofslang.com/entry/pghazba",
+          "exact_scope": "Cites the 3 June 1902 Saint Paul Globe 'grifted a benny' witness (CERT-2100-104)."
+        }
+      ]
+    },
+    {
+      "id": "CLM-2100-003",
+      "slug": "clm-2100-003",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "grifter, n. (discovered prior art)",
+      "case_section": "2. Hard Negative-Corpus Boundary (1859–1902) and the 1902–1904 Missouri Valley Emergence",
+      "short_label": "Secondary-reported 14 April 1902 Waterloo Daily Courier and 28 October 1904 Pemiscott Press citations (discovered)",
+      "statement": "Merriam-Webster reports a 14 April 1902 Waterloo Daily Courier occurrence ('The special \"write-up\" grifter') and a 28 October 1904 Pemiscott Press occurrence, both held at discovered status pending open-scan verification.",
+      "rationale": "Isolating un-scanned commercial-paywall citations preserves strict verification-ceiling separation from open-scan 1904 St. Louis witnesses.",
+      "type": "attestation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Authoritative secondary lexicographical reporting of 14 April 1902 Iowa and 28 October 1904 Missouri printings.",
+        "does_not_establish": "Open-scan masthead and letterpress 'i' vs. 'a' verification.",
+        "remaining_uncertainty": "Microfilm inspection of the 14 April 1902 Waterloo Daily Courier and 28 October 1904 Pemiscott Press."
+      },
+      "limitations": [
+        "Both citations lack hosted public-domain scans (verification_level: discovered)."
+      ],
+      "resolution_criteria": [
+        "Inspect Iowa and Missouri historical-society microfilm scans to verify mastheads and physical ink."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2100-103",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Secondary report of 14 April 1902 Waterloo Daily Courier 'write-up grifter'.",
+          "witness_note": "verification_level: discovered; no hosted scan."
+        },
+        {
+          "ref": "CERT-2100-117",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Secondary report of 28 October 1904 Pemiscott Press 'grifter'.",
+          "witness_note": "verification_level: discovered; no hosted scan."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c299fe6d094859a49d6b10806ba2454ae7736ff13530b9b6113c949b91c8d9f0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "c299fe6d094859a49d6b10806ba2454ae7736ff13530b9b6113c949b91c8d9f0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-004",
+      "slug": "clm-2100-004",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "grifter, n.",
+      "case_section": "3. Prosopography of the October 1904 St. Louis World's Fair Flashpoint",
+      "short_label": "12–15 October 1904 St. Louis Post-Dispatch open-scan antedating of grifter, n. (-11 calendar years vs. OED 1915)",
+      "statement": "Four St. Louis Post-Dispatch issues (12–15 October 1904) covering World's Fair steerer Wallace ('Booster') O'Reilly's Grand Jury subpoena verify 'grifters' and 'Grifter' on open scans 11 calendar years before OED's 1915 baseline and 7 calendar years before Green's 1911 baseline.",
+      "rationale": "Open newsprint scans establish both plural and singular agent-noun forms alongside the earliest explicit definition contrasting 'grifter' ('sure-thing' gambler) with 'grafter'.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Earliest open-scan newsprint attestations of 'grifters' (12 October 1904) and 'Grifter' (14–15 October 1904) in the St. Louis World's Fair Grand Jury inquiry.",
+        "does_not_establish": "Literal coinage by Wallace O'Reilly (already preceded by 1902 witnesses).",
+        "remaining_uncertainty": "Whether surviving St. Louis County Grand Jury clerk minutes record verbatim testimony."
+      },
+      "limitations": [
+        "OED ('1915') and Green's ('1911') baselines carry year precision; CERT-2100-111..114 form one courtroom news cycle."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2100-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 October 1904 St. Louis Post-Dispatch p. 1 open scan of plural 'grifters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 October 1904 St. Louis Post-Dispatch p. 1 '\"sure thing\" grifters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 October 1904 St. Louis Post-Dispatch p. 2 singular 'Grifter' profile of O'Reilly.",
+          "witness_note": "Shares newspaper page with CERT-2100-303."
+        },
+        {
+          "ref": "CERT-2100-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 October 1904 St. Louis Post-Dispatch explicit definition contrasting 'grifter' with 'grafter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-212",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Verifies Green's 1911 baseline in John L. Mathews's Log of the Easy Way.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "grifter, n. ('confidence trickster, swindler')",
+        "edition_or_revision": "1972 Supplement entry, modified July 2023",
+        "baseline_date": "1915",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/grifter_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2100-111",
+        "attested_date": "1904-10-12",
+        "attested_date_precision": "day",
+        "computed_advance_display": "11 calendar years (12 October 1904 vs. 1915)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0f296669c0ddcfdec93dc09b8e372cd9073f5997ced05c0c3eba2c3711b66f2f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "0f296669c0ddcfdec93dc09b8e372cd9073f5997ced05c0c3eba2c3711b66f2f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-005",
+      "slug": "clm-2100-005",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "grift, n.2 and derivatives",
+      "case_section": "3. Prosopography of the October 1904 St. Louis World's Fair Flashpoint",
+      "short_label": "17 October 1904 St. Louis Republic antedating of bare noun grift (-10 calendar years vs. OED 1914) and 1904–1920 derivatives",
+      "statement": "The 17 October 1904 St. Louis Republic editorial 'GRIFTERS.' attests bare noun grift ('All other grift and graft', 10 calendar years before OED 1914) and verbal noun Grifting, followed on open scans by 1906 Billboard carnival Grift, 1909 'the grift' and 'grifting outfits', 1911/1914 'grift camp/shows', 1915 finite grift, and 1920 'depended only on the grift'.",
+      "rationale": "Hosted newspaper, Billboard, and book scans verify every major morphological and phrasal member of the grift family years to decades ahead of OED and Green's baselines.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan attestation of bare noun grift and gerund Grifting (17 October 1904), carnival trade Grift (1906), 'the grift' (1909), 'grift camp/shows' (1911/1914), and finite intransitive grift (1915).",
+        "does_not_establish": "Bare copular 'be on the grift' (CERT-2100-123 and 132 attest verb-governed 'swept down on' / 'depended only on the grift').",
+        "remaining_uncertainty": "Earliest post-1920 copular 'was/were on the grift' ahead of Green's 1953 benchmark."
+      },
+      "limitations": [
+        "OED's 1914 grift, n.2 baseline carries year precision; CERT-2100-115 and 116 come from one editorial (CLM-2100-009)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2100-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 October 1904 St. Louis Republic bare singular noun 'grift' ('All other grift and graft').",
+          "witness_note": "Same editorial as CERT-2100-115."
+        },
+        {
+          "ref": "CERT-2100-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 October 1904 St. Louis Republic verbal noun 'Grifting' / 'grifting'.",
+          "witness_note": "Same editorial as CERT-2100-116."
+        },
+        {
+          "ref": "CERT-2100-119",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "16 June 1906 Billboard classified 'Concessions and Grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "20 April 1907 Billboard circus 'in for the \"grift\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 June 1909 Rushville Daily Republican 'Working with the grift' and 'swept down on the grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 June 1909 Show World participial 'grifting outfits'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-211",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1911 Convict 1776 penitentiary 'grifting'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-128",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "22 April 1911 Billboard attributive '\"grift camp\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-213",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1914 Jackson & Hellyer OED/Green's baseline for grift, n.2.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-129",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "16 May 1914 Billboard exact compound 'grift shows'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-130",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1915 Bronson-Howard God's Man finite intransitive 'when you grift' (11 calendar years before OED 1926).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-132",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 August 1920 Billboard 'depended only on the grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2100-009",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Documents shared 17 October 1904 editorial provenance of CERT-2100-115 and 116.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "grift, n.2 ('dishonest or fraudulent activity; swindling')",
+        "edition_or_revision": "1972 Supplement entry, modified December 2025",
+        "baseline_date": "1914",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/grift_n2",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2100-116",
+        "attested_date": "1904-10-17",
+        "attested_date_precision": "day",
+        "computed_advance_display": "10 calendar years (17 October 1904 vs. 1914)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a0a0cf69b7391d692e56bc9afd27b419e4c7b084db438f00366338869a687736",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "a0a0cf69b7391d692e56bc9afd27b419e4c7b084db438f00366338869a687736"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-006",
+      "slug": "clm-2100-006",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "circus and big-con institutional grift",
+      "case_section": "4. Circus \"Privilege Cars,\" Josiah Flynt's Shift, and the Penitentiary Lag (1906–1923)",
+      "short_label": "1910–1923 railroad-circus 'privilege car' sociology and Mabray/Blonger Western big-con prosopography",
+      "statement": "Ten 1910–1923 trade, magazine, and trial witnesses document grift and grifter distinguishing gambling-free 'Sunday-school shows' from 'grift'-carrying railroad circuses alongside Western big-con syndicates led by Jack Mabray and Lou Blonger.",
+      "rationale": "Billboard, Variety, Saturday Evening Post, Cosmopolitan, and Chicago Tribune scans map specialized circus 'fixers', 'cake-cutters', and 'pitch grifters' as well as stationary wire-store syndicates.",
+      "type": "historical_context",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Institutional organization of American railroad-circus grift and Western bunko syndicates across 1910–1923 print.",
+        "does_not_establish": "Pre-1902 origin of the lexeme.",
+        "remaining_uncertainty": "Whether pre-1910 winter-quarters circus contracts survive in archive holdings."
+      },
+      "limitations": [
+        "CERT-2100-131 and 220 appear on different pages of the same 21 March 1914 Billboard issue (CLM-2100-009)."
+      ],
+      "resolution_criteria": [
+        "Inspect pre-1910 circus privilege contracts at the Circus World Museum archive."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2100-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1910 Green Book Album backstage 'common grifters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-127",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1910 Variety act 'Grifter and Gitney'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1911 Variety 'pitch grifter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1913 Saturday Evening Post circus 'fixer'/'mender' story.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-131",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 March 1914 Billboard p. 42 circus-grift taxonomy.",
+          "witness_note": "Same Billboard issue as CERT-2100-220."
+        },
+        {
+          "ref": "CERT-2100-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 March 1914 Billboard p. 170 commentary on replacing 'grafters' with 'grifters'.",
+          "witness_note": "Same Billboard issue as CERT-2100-131."
+        },
+        {
+          "ref": "CERT-2100-221",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 August 1914 Billboard Col. Vernon C. Seaver 'the \"grift\"' memoir.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1916 Cosmopolitan carnival grifter glossary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1920 Saturday Evening Post exposé of Jack Mabray's Council Bluffs syndicate.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 April 1923 Chicago Sunday Tribune coverage of Lou Blonger's Denver 'grifter' syndicate.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "aa95ace265595673f76947fefdb2626cd03f329b95f8732190339a7666250a2d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "aa95ace265595673f76947fefdb2626cd03f329b95f8732190339a7666250a2d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-007",
+      "slug": "clm-2100-007",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "graft / grafter x drifter -> grift / grifter",
+      "case_section": "5. Evaluating Origin Pathways and Quarantining Archival Traps",
+      "short_label": "Subcultural /æ/ -> /ɪ/ differentiation of graft / grafter catalyzed by 1902 midway drifter and cant shifter",
+      "statement": "Underworld and tented-show speakers plausibly derived grift and grifter from criminal graft / grafter by raising /æ/ to /ɪ/ after c. 1901 civic-corruption bleaching, catalyzed by blending with 1902 carnival-midway drifter ('slum/spindle pitchman') and cant shifter.",
+      "rationale": "Contemporary 1907 and 1914 witnesses explicitly report replacing overexposed 'graft', while September–November 1902 Billboard 'DRIFTERS, ATTENTION!' ads prove midway pitchmen already shared the exact /-ɪftər/ occupational rime.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Convergent chronological, metalinguistic, and 1902 midway rhyme-template support for graft/grafter x drifter -> grift/grifter.",
+        "does_not_establish": "Direct phonetic observation of the unrecorded oral coinage event.",
+        "remaining_uncertainty": "Relative weight of deliberate anti-language vowel ablaut versus lexical blending with midway drifter."
+      },
+      "limitations": [
+        "Evaluated historical-linguistic reconstruction rather than a directly recorded speech event."
+      ],
+      "resolution_criteria": [
+        "Locate 1900–1903 showman letters or route books pairing 'drifters' and 'grifters' or commenting on the newly coined vowel shift."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2100-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1859 Hotten/Matsell criminal specialization of graft.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 Flynt The World of Graft (249 graft* tokens) popularizing civic-corruption graft.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Phonological /æ/ -> /ɪ/ analysis across 1904–1914 criminal witnesses.",
+          "witness_note": "Shares 14 October 1904 scan page with CERT-2100-113."
+        },
+        {
+          "ref": "CERT-2100-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September–November 1902 Billboard ads addressing slum/spindle pitchmen as 'DRIFTERS'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-305",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1785–1902 cant 'shifter' ('trickster, sharper') secondary rhyme model.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-122",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "10 June 1907 New Haven Union linking circus 'grifting' to 'graft'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2100-001",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Pre-1902 negative-corpus boundary dates the split to c. 1900–1902.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b4271d3e335dc12dd532ef57c7f0f1f0c9b05a3a2109a5becfecf9eb550eb9fb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "b4271d3e335dc12dd532ef57c7f0f1f0c9b05a3a2109a5becfecf9eb550eb9fb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-008",
+      "slug": "clm-2100-008",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": "rival donors and Traps A–D",
+      "case_section": "5. Evaluating Origin Pathways and Quarantining Archival Traps",
+      "short_label": "Weakened British/Dutch/turf/Shelta donor pathways (noting *grip/*griffe scope boundary) and Traps A–D quarantines",
+      "statement": "British regional grift ('fen drain; slate-pencil' < OFr. grefe), Dutch grift, British turf griff, and Shelta/Romani lack swindler semantics or American continuity (while *grip and French argot *griffe remain unrepresented in grifter.json), and physical scans refute twenty Trap A–D OCR, serial-misdate, proper-noun, and modern-paratext false positives.",
+      "rationale": "Lexicon audits rule out criminal senses or *-t/-er morphology in foreign/dialectal homographs, and zoomed page/masthead checks eliminate damaged-a 'grafters', 'Vandergrift', 1899 Dutch canal 'on the Grift', 1839/1895/1901 serial misdates, and a 1991 artist's book.",
+      "type": "rebuttal",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of swindler continuity in audited regional/foreign homographs and physical-scan refutation of all twenty Trap A–D false leads.",
+        "does_not_establish": "Evaluation of English *grip or French criminal *griffe (absent from public/ledgers/grifter.json).",
+        "remaining_uncertainty": "Targeted testing of Louisiana/St. Louis French argot 'griffe' and American 'grip' in any future ledger expansion."
+      },
+      "limitations": [
+        "Foreign/dialectal pathways are graded respectfully as weakened scholarly proposals; CERT-2100-325 (1991) omits a hosted scan under the pre-1931 rule."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1902 American cant attesting turf 'griff' -> 'grift' or expand ledger testing to French criminal 'griffe' and English 'grip'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2100-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Audits Lincolnshire 'fen drain' and East Anglian 'slate-pencil' grift in EDD/OED.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Audits Dutch grift ('canal; slate-pencil').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Audits Anglo-Indian/British turf griff/griffin.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sweeps 384,797 Shelta/Anglo-Romani words with 0 grift* hits.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1900 Savannah OCR 'grifters' = 'grafters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1899 St. Louis OCR 'grifter' = 'grafter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1902 Pittsburg line-wrapped town 'Vander-grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1902 NY Sun OCR 'grifted' = 'greeted'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1903 Seattle OCR 'grifters' = 'grafters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1903 Perkins OK OCR 'grifters' = 'grafters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1903 Oregonian OCR 'grifters' = 'grafters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1905 Rhinelander OCR 'grifters' = 'grafters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-126",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1909–1910 NY Clipper 'La Griffe' and 'drifted'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-225",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1922 Iowa Agriculture yearbook mis-indexed as 1901.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-226",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901/1905 OCR hits = 'grafting' / 'grafter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "December 1918 Bookman mis-indexed as 1895.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 March 1920 Saturday Evening Post mis-indexed as 1839.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 Atlanta OCR 'grifters' = 'drift-ers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1885–1900 OCR 'Griffith'/'Griffin'/'Erster'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1888–1896 OCR 'Gifted Hopkins'/'of fitters'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Line-wrapped surname 'Vandegrift'/'Van de Grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-323",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1899 NYT Dutch canal 'on the Grift' and 'Von Grift'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-324",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Lincolnshire drainage noun 'grifts'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2100-325",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1991 Ruppersberg artwork mis-indexed to 1899.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "3391cc90d9524b1fb84c1bea85481a21f007d59a2c474d88793162860a563a5e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "3391cc90d9524b1fb84c1bea85481a21f007d59a2c474d88793162860a563a5e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2100-009",
+      "slug": "clm-2100-009",
+      "case_slug": "grifter",
+      "headword": "grifter",
+      "target_lexeme": null,
+      "case_section": "2. Hard Negative-Corpus Boundary (1859–1902) and the 1902–1904 Missouri Valley Emergence",
+      "short_label": "Witness-cluster deduplication across 1902 reprints, October 1904 St. Louis editorials, and shared issues",
+      "statement": "Bibliographic collation links the 1902 Kansas City Journal reprint pair (104/105), 14 October 1904 same-page role split (113/303), 17 October 1904 St. Louis Republic single-editorial split (115/116), Flynt's 1907 Cosmopolitan series (120/209), and the 21 March 1914 Billboard issue (131/220) so shared texts are never double-counted.",
+      "rationale": "Tracking reprint and same-issue relationships separates independent linotype testimony from underlying speech or editorial events.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact textual-reprint, same-editorial, and role-split relationships across multi-record clusters in grifter.json.",
+        "does_not_establish": "Survival of the parent May/June 1902 Kansas City Journal issue.",
+        "remaining_uncertainty": "Exact spring 1902 Kansas City Journal publication date."
+      },
+      "limitations": [
+        "Deduplicates shared source events while preserving distinct morphological lemmas."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2100-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 June 1902 St. Paul reprint of Kansas City Detective Sanderson piece.",
+          "witness_note": "Cluster WCL-2100-01."
+        },
+        {
+          "ref": "CERT-2100-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 July 1902 Savannah resetting crediting Kansas City Journal.",
+          "witness_note": "Cluster WCL-2100-01."
+        },
+        {
+          "ref": "CERT-2100-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "14 October 1904 St. Louis Post-Dispatch p. 2 attestation.",
+          "witness_note": "Cluster WCL-2100-02."
+        },
+        {
+          "ref": "CERT-2100-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Hypothesis record sharing the 14 October 1904 p. 2 scan.",
+          "witness_note": "Cluster WCL-2100-02."
+        },
+        {
+          "ref": "CERT-2100-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 October 1904 St. Louis Republic 'GRIFTERS.' paragraphs 1–3.",
+          "witness_note": "Cluster WCL-2100-03."
+        },
+        {
+          "ref": "CERT-2100-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 October 1904 St. Louis Republic 'GRIFTERS.' closing line.",
+          "witness_note": "Cluster WCL-2100-03."
+        },
+        {
+          "ref": "CERT-2100-120",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 1907 Cosmopolitan 'Pool-Room Vampire' part 1.",
+          "witness_note": "Cluster WCL-2100-06."
+        },
+        {
+          "ref": "CERT-2100-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 1907 Cosmopolitan 'Pool-Room Vampire' installment.",
+          "witness_note": "Cluster WCL-2100-06."
+        },
+        {
+          "ref": "CERT-2100-131",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 March 1914 Billboard Vol. 26 No. 12 p. 42.",
+          "witness_note": "Cluster WCL-2100-04."
+        },
+        {
+          "ref": "CERT-2100-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 March 1914 Billboard Vol. 26 No. 12 p. 170.",
+          "witness_note": "Cluster WCL-2100-04."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "37779f9ee28ccb0cd45aaacd454f34c23e7ee729f6b7623e8f9687c91af00070",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2100.",
+          "content_fingerprint": "37779f9ee28ccb0cd45aaacd454f34c23e7ee729f6b7623e8f9687c91af00070"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

@@ -1,0 +1,1158 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "phoney",
+  "case_slug": "phoney",
+  "case_number": "Case 2200",
+  "target_id": "TGT-015",
+  "headword": "phoney",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise v1.0 claim ledger for Case 2200 (phoney, TGT-015) covering all 72 citations across 9 atomic documentary and interpretive claims.",
+  "claims": [
+    {
+      "id": "CLM-2200-001",
+      "slug": "clm-2200-001",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "fawney / fauny",
+      "case_section": "Phase I: Irish *fáinne* and the Anglo-Irish *Fawney* Chain (1768–1867)",
+      "short_label": "1781–1889 British thieves'-cant chronology and transatlantic American transmission of fawney ('gilt-brass confidence ring')",
+      "statement": "Primary scans track British cant fawney ('gilt-brass ring used in confidence drops and street wager-bouncing') from Parker (1781), Grose (1788/1796), Potter ([1795]), Vaux (1812), 1827 Old Bailey testimony, and Mayhew/Ducange/Hotten (1851–1859) into American print across 1843–1889 (Spirit of the Times 1843, Matsell 1859, Clipper 1860, Philadelphia Telegraph 1867, Barrère & Leland 1889).",
+      "rationale": "Crossbarred-F verification in 1781, live 1827 Old Bailey speech, and Matsell's active 1859 New York emendation of Ducange's 'sawney' typo establish continuous Anglo-American underworld usage.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous 1781–1889 British and Eastern Seaboard American print attestation of cant fawney / fauny for gilt-brass rings.",
+        "does_not_establish": "North American vowel closing to /foʊni/ or <ph-> respelling (evaluated in CLM-2200-006).",
+        "remaining_uncertainty": "Extent of spoken street circulation between 1868 and 1888 (bounded in CLM-2200-007)."
+      },
+      "limitations": [
+        "Matsell 1859 (313) vs. Worthington c. 1877 (314) and Hotten 1859 (201/312) are deduplicated via CLM-2200-009."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2200-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Parker 1781 'The FAWNEY RIG' with verified crossbarred F.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Grose 1785/1788/1796 edition audit adding FAWNEY RIG and FAWNEY.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Potter [1795] standalone 'FAWNEY, a ring'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Vaux 1812/1819 'FAWNEY' and 'FAWNIED'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 July 1827 Old Bailey live thief testimony ('fawneys').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Mayhew 1851 Birmingham 7d.-a-dozen brass 'fawneys'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Ducange Anglicus 1857/1859 'FAWNEY BOUNCING'.",
+          "witness_note": "Overlaps Hotten 1859 with CERT-2200-201."
+        },
+        {
+          "ref": "CERT-2200-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Hotten 30 June 1859 'FAWNEY BOUNCING'.",
+          "witness_note": "Deduplicated with CERT-2200-312."
+        },
+        {
+          "ref": "CERT-2200-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "22 July 1843 NY Spirit of the Times 'Fawney your famms'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Matsell 23 May 1859 1st ed. Vocabulum ('spark-fawney', correcting Ducange's typo).",
+          "witness_note": "Parent plates of CERT-2200-314."
+        },
+        {
+          "ref": "CERT-2200-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "22 September 1860 NY Clipper 'Fawnies—Rings'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "26 November 1867 Philadelphia Daily Evening Telegraph 'a ring a \"fawney\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1889 Barrère & Leland 'fashino fauny' ('imitation jewellery').",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-009",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Tracks Matsell/Worthington and Hotten edition relationships.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "51a6ab8f842186b8d3b009ed77c467a1b0334def7b9ec8f86e8cd49dc4c45e8a",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "51a6ab8f842186b8d3b009ed77c467a1b0334def7b9ec8f86e8cd49dc4c45e8a"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-002",
+      "slug": "clm-2200-002",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "Irish fáinne -> cant fawney",
+      "case_section": "Phase I: Irish *fáinne* and the Anglo-Irish *Fawney* Chain (1768–1867)",
+      "short_label": "Hiberno-Irish donor derivation: vernacular Southern Irish fáinne ('ring') -> London St Giles cant fawney",
+      "statement": "London thieves' cant plausibly borrowed fawney [ˈfɔːni] directly from vernacular Southern Irish fáinne ('finger-ring; wedding ring', rounding long á before nasals to [ɔː]), rather than through encrypted Shelta (which disguised fáinne as gránya).",
+      "rationale": "O'Brien (1768) and O'Reilly/Dinneen ('vulg. fáinne', 'fáinne an phósta = wedding-ring') match Parker's 1781 wedding-ring swindle and Hiberno-English <aw> phonology, while Sampson & Meyer prove Shelta used gránya.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact phonological and semantic match between vernacular Irish fáinne and 1781 cant fawney, excluding Shelta gránya.",
+        "does_not_establish": "Direct pre-1781 bilingual London magistrate depositions.",
+        "remaining_uncertainty": "Recovering 1740–1780 St Giles court examinations preserving code-switching between Irish fáinne and cant fawney."
+      },
+      "limitations": [
+        "Pre-1781 oral borrowing rests on comparative phonological and semantic alignment."
+      ],
+      "resolution_criteria": [
+        "Inspect 1740–1780 Middlesex/Bow Street examinations of St Giles Irish defendants for transitional spellings."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2200-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "O'Brien 1768 Irish áinne / fáinne ('ring').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "O'Reilly 1817 ('vulg. fáinne') and Dinneen 1904 ('fáinne an phósta').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Meyer & Sampson 1890–1891 proving Shelta encrypted fáinne as gránya.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-304",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Joyce 1910 documenting Southern Irish á -> Hiberno-English <aw> [ɔː] before nasals.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1781 London cant fawney target.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "65ec797b964a18465772480bd04bbb65e7960ed21c083c3ef7b5ab56b0ce3f5e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "65ec797b964a18465772480bd04bbb65e7960ed21c083c3ef7b5ab56b0ce3f5e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-003",
+      "slug": "clm-2200-003",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "phoney / phony, adj.",
+      "case_section": "Phase II: Phonological Closing, `<ph->` Remodeling, and the 1894 Pitchman Hinge",
+      "short_label": "7 May 1892 Washington Evening Star antedating of adjectival phony (-1y 1m 22d vs. OED3 29 June 1893) and 1893–1900 broadening",
+      "statement": "After a 4 April 1890 Detroit Plaindealer wire-marriage pun, Washington's Evening Star attests unambiguous non-telephone adjectival phony ('on the phony order') on 7 May 1892—1 year, 1 month, and 22 days before OED3's 29 June 1893 baseline—broadening across 1893–1900 to political slates and George Ade's 'Phoney Acting'.",
+      "rationale": "Open scans confirm Dave Wilton's 1890/1892 discoveries and track rapid diffusion through Chicago, St. Louis (explicitly glossed 'implies an element of fraud' on 6 July 1893), New York, Blossom's Checkers (1896), and Ade (1900).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan attestation of non-telephone adjectival phony on 7 May 1892 and semantic generalization through 1900.",
+        "does_not_establish": "Derivation from telephone vs. fawney (evaluated separately in CLM-2200-006 and CLM-2200-008).",
+        "remaining_uncertainty": "Locating the late-March 1890 Northern Indiana exchange paper behind the 4 April 1890 Detroit Plaindealer item."
+      },
+      "limitations": [
+        "Blossom's 1896 Checkers (CERT-2200-002) is verified on the 1901 impression of the 1896 plates (CLM-2200-009)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2200-108",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "4 April 1890 Detroit Plaindealer bivalent wire-marriage pun ('QUITE \"PHONEY.\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 May 1892 Washington Evening Star ('a little on the phony order').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-110",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "29 June 1893 Chicago Daily Tribune OED3 baseline ('\"phony\" bookmakers').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 July 1893 St. Louis Post-Dispatch explicit gloss ('implies an element of fraud').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "2 August 1893 New York Times ('a \"phony\" race').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "13 May 1894 St. Louis Post-Dispatch political '\"phony\" delegation'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "26 July 1896 St. Louis Post-Dispatch '\"phoney\" Napoleon from Ohio'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-002",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1896 [1901 impression] Blossom Checkers ('Why, he's phoney!').",
+          "witness_note": "1901 impression of 1896 plates."
+        },
+        {
+          "ref": "CERT-2200-003",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1900 George Ade More Fables ('Phoney Acting').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "phoney, adj. and n., sense A. adj. ('not genuine; fake, sham')",
+        "edition_or_revision": "Revised March 2006, modified March 2026",
+        "baseline_date": "1893-06-29",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/phoney_adj",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2200-109",
+        "attested_date": "1892-05-07",
+        "attested_date_precision": "day",
+        "computed_advance_display": "1 year, 1 month, and 22 days (7 May 1892 vs. 29 June 1893)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "2c3acf55e3243e7108429b5d430551477ac15798c7784c743bc73819e4411a2c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "2c3acf55e3243e7108429b5d430551477ac15798c7784c743bc73819e4411a2c"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2200-003-01",
+          "claim_id": "CLM-2200-003",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2200-108",
+            "CERT-2200-109",
+            "CERT-2200-110",
+            "CERT-2200-111",
+            "CERT-2200-112",
+            "CERT-2200-113",
+            "CERT-2200-117",
+            "CERT-2200-002",
+            "CERT-2200-003"
+          ],
+          "findings": "Directly inspected CERT-2200-109.webp (May 7, 1892 Washington Evening Star, p. 12, col. 3: 'was a little on the phony order'), confirming unambiguous non-telephone adjectival usage 1 year, 1 month, and 22 days ahead of OED3's June 29, 1893 baseline and explicit disclosure of the 1901 impression scan on Blossom's 1896 Checkers (CERT-2200-002).",
+          "objections": [],
+          "material_fingerprint_at_review": "2c3acf55e3243e7108429b5d430551477ac15798c7784c743bc73819e4411a2c",
+          "evidence_fingerprints_at_review": {
+            "CERT-2200-002": "eca92c47a9f7b164fa7aa2298ac73cc86f60d5a4a6e0d222638d6e65d40d5bc4",
+            "CERT-2200-003": "77cd95300f99e39e1ec70c89e7a0ac25db250087b6f7f3e2ffcca88615a74b69",
+            "CERT-2200-108": "bb1940e6603c720bcda322f04dcc7d7c91e89b3c04984bb6989c225a0816a41c",
+            "CERT-2200-109": "c8a4a469b98707e84e681e5f9e74ea5dc8990a00d1b2d0de5e271419a92dc4b5",
+            "CERT-2200-110": "98abaf21488b9c0199e2bb8241c35812fa9f51a579f39a7e054bf23831830e0c",
+            "CERT-2200-111": "92057fccec66ae25837710dfe9f6f5fd36cb8e70089ddac74eb0ed16e717182d",
+            "CERT-2200-112": "33058028e11fe83808bf302f183de1c77af3cb2a6eddd8135ba7c31e3395b796",
+            "CERT-2200-113": "502ce8bc8a311318291c49a2be9b5551f387c1ca6500f2cb8be6afb77b4ebd52",
+            "CERT-2200-117": "76166c72b39447c1d79307b787197e9a26dc249334519f2c357d99272a64c733"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": [
+        {
+          "recognizer": "Dave Wilton (Wordorigins.org)",
+          "publication": "Wordorigins.org: 'phoney'",
+          "date": "2022-02-10",
+          "url_or_ref": "https://www.wordorigins.org/big-list-entries/phoney",
+          "exact_scope": "Identified the 4 April 1890 Detroit Plaindealer and 7 May 1892 Washington Evening Star citations."
+        }
+      ]
+    },
+    {
+      "id": "CLM-2200-004",
+      "slug": "clm-2200-004",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "fawny men / Phoney jewelry man",
+      "case_section": "Phase II: Phonological Closing, `<ph->` Remodeling, and the 1894 Pitchman Hinge",
+      "short_label": "1894 occupational bridge ('fawny men' Feb 1894 -> '\"Phoney\" jewelry man' 15 Aug 1894; -5y 10m 15d vs. Green's 1900)",
+      "statement": "Josiah Flynt's February 1894 'fawny men—fellows who sell bogus jewelry' and the 15 August 1894 Maysville Evening Bulletin arrest of 'Harry Murphy, a \"Phoney\" jewelry man' antedate Green's 30 June 1900 'phony men' baseline by 5 years, 10 months, and 15 days alongside continuous 1895–1907 brass-'phony'-ring and pennyweight-stone reports.",
+      "rationale": "Twelve trade and police scans prove the exact street-peddler cohort selling $2-a-dozen brass rings and paste stones shifted directly from 'fawny men' to 'Phoney jewelry man' in 1894.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan 1894 occupational equivalence of 'fawny men' and '\"Phoney\" jewelry man' plus 1895–1907 fake-jewelry/brass-ring continuity.",
+        "does_not_establish": "Pre-1890 wholesale novelty-catalog attestation.",
+        "remaining_uncertainty": "Whether local August 1894 Hamilton, Ohio court blotters survive."
+      },
+      "limitations": [
+        "CERT-2200-107 (6 March 1894) is a syndicated newspaper reprint of Flynt's February 1894 Century essay CERT-2200-206 (CLM-2200-009)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2200-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 1894 Century Magazine Flynt 'fawny men—fellows who sell bogus jewelry'.",
+          "witness_note": "Reprinted in CERT-2200-107."
+        },
+        {
+          "ref": "CERT-2200-107",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "6 March 1894 St. Louis Post-Dispatch reprint of Flynt's 'fawny men'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 August 1894 Maysville Evening Bulletin ('Harry Murphy, a \"Phoney\" jewelry man').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-216",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "30 June 1900 National Police Gazette Green's baseline ('phony men, who peddle bogus jewelry').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-204",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "October 1888 Keystone paste-jewelry peddler background.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "2 January 1895 Jewelers' Circular '\"phony\" stones'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-119",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "21 February 1897 San Francisco Call glossing 'fawney man. A peddler of bogus jewelry'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1 September 1897 Jewelers' Circular 'two dozen brass rings, known as \"phony\" rings'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "18 November 1898 St. Louis Post-Dispatch '\"PHONY MEN\"' and 'phony coin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 November 1898 Lima News peddler 'selling phony jewelry' and counterfeit nickels.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-219",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1903 NY police bunko fake-jewelry 'phony' goods.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-221",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "28 May 1904 Billboard circus 'phoney stiffs'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-222",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "8 November 1907 Wenatchee Daily World uncount 'PASSING PHONY' (glass-stone ring).",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-009",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Deduplicates Flynt's February/March 1894 printings (206/107).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "fawney, n. / fawney-man ('phony men' occupational compound)",
+        "edition_or_revision": "Online edition, consulted November 2026",
+        "baseline_date": "1900-06-30",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/4stjsfa",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2200-114",
+        "attested_date": "1894-08-15",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 years, 10 months, and 15 days (15 August 1894 vs. 30 June 1900)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "4389426e42f1fb5cf054ddae189e39d869fc008cbfb15105a7d3d3f3844270fc",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "4389426e42f1fb5cf054ddae189e39d869fc008cbfb15105a7d3d3f3844270fc"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-005",
+      "slug": "clm-2200-005",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "phoney, n.",
+      "case_section": "Phase III: Pre-1902 Nominal Conversion and Generalization (1894–1907)",
+      "short_label": "20 July 1895 St. Louis Post-Dispatch antedating of count noun phoney, n. (-7 calendar years vs. OED3 1902)",
+      "statement": "Count noun phoney, n. is verified on open scan from 20 July 1895 in the St. Louis Post-Dispatch ('his pasteboards were all \"phonies\"')—7 calendar years before OED3's 1902 noun baseline and 21 years, 4 months, and 8 days before OED3's 1916 plural quotation—followed by four singular 'a phony' witnesses across 1896–1901.",
+      "rationale": "Five pre-1902 newspaper and Jewelers' Circular scans establish both plural and singular nominal conversion across fake passes, coins, racehorses, and paste diamonds while calibrating Cullen's 1902 sequel title to More Ex-Tank Tales.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan pre-1902 attestation of plural 'phonies' (1895) and singular 'a phony' (1896–1901).",
+        "does_not_establish": "Hosted scan of J. S. Ogilvie's April 1902 More Ex-Tank Tales sequel.",
+        "remaining_uncertainty": "Acquiring a public-domain scan of Cullen's April 1902 sequel p. 99."
+      },
+      "limitations": [
+        "OED3's 1902 noun baseline is recorded at year precision, bounding formal advance display to 7 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2200-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "20 July 1895 St. Louis Post-Dispatch plural noun 'all \"phonies\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "9 April 1896 Daily Racing Form singular 'a \"phony\"' (bogus $5 coin).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 December 1896 Daily Racing Form 'She was a phony'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 May 1897 St. Louis Post-Dispatch fake diamond stud 'was a \"phony\"'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17 April 1901 Jewelers' Circular-Weekly 'a \"phony\" substituted'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-121",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1900 Cullen Tales of the Ex-Tanks ('phony keys') and 1902 More Ex-Tank Tales title calibration.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "phoney, adj. and n., sense B. n.",
+        "edition_or_revision": "Revised March 2006, modified March 2026",
+        "baseline_date": "1902",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/phoney_adj",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2200-116",
+        "attested_date": "1895-07-20",
+        "attested_date_precision": "day",
+        "computed_advance_display": "7 calendar years (20 July 1895 vs. 1902)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "ef7db4af36ac9ac7b2e0475cc66f2facd2a2b3442d4ebfd50a1ae02f040586f5",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "ef7db4af36ac9ac7b2e0475cc66f2facd2a2b3442d4ebfd50a1ae02f040586f5"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-006",
+      "slug": "clm-2200-006",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "fawney -> foney / phoney",
+      "case_section": "Phase II: Phonological Closing, `<ph->` Remodeling, and the 1894 Pitchman Hinge",
+      "short_label": "Pre-nasal vowel closing (/fɔːni/ -> /foʊni/) and Neo-Greek <ph-> remodeling supported by 1889–1914 <fauny>/<foney> survivals",
+      "statement": "North American phoney plausibly evolved from cant fawney via pre-nasal vowel closing (/ˈfɔːni/ -> /ˈfoʊni/), attributive compound reanalysis, and Neo-Greek <ph-> respelling influenced graphically by telephone/phonograph, corroborated by initial-<f> survivals (<fauny>, <foney>, <fony>) across 1889–1914.",
+      "rationale": "Co-occurrence of 'foney coin' and 'phony' inside the same 7 March 1897 St. Louis Post-Dispatch issue, plus 1899–1914 jewelry, police, and Billboard <foney> witnesses, links <phoney> directly to initial-<f> pitchman cant.",
+      "type": "phonological",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Convergent phonological, syntactic, and orthographic support (<fauny>/<foney> survivals) for fawney -> foney/phoney.",
+        "does_not_establish": "Pre-1890 print attestation of <o>-spelled <foney> ahead of 1890/1892 <phoney>.",
+        "remaining_uncertainty": "Closing the 1867–1889 sub-literary gap and pre-1897 <foney> print lag (CLM-2200-007)."
+      },
+      "limitations": [
+        "In surviving print, <phoney>/<phony> (1890/1892) precedes <o>-spelled <foney> (7 March 1897) by five to seven years."
+      ],
+      "resolution_criteria": [
+        "Recover pre-1890 municipal police-blotter or wholesale slum-catalog printings of <foney> or fake-jewelry <phoney>."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2200-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 March 1897 St. Louis Post-Dispatch printing 'foney coin' (p. 26) and '\"phony\" delegations' (p. 6) in one issue.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "28 June 1899 Jewelers Review 'a foney watch deal'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-220",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 1903 Hapgood NYC thief cant 'fauny shop (imitation jewelry)'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "January 1905 Joplin police circular 'selling foney jewelry'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "29 November 1913 Billboard 'foney wheel' printed below 'Phoney'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1914 Dialect Notes recording 'phony, adj. ... Also foney, fony, phoney'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-304",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Phonological analysis of Hiberno-English /fɔːni/ -> American /foʊni/ closing.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1843–1889 U.S. fawney/fauny base.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1894 fawny men -> Phoney jewelry man occupational bridge.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2200-007",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Bounds the mechanism with the 1867–1890 and pre-1897 <foney> print gaps.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "fe2ad505254fed598da0e623d76e4940ebce2e3c242128441c718ccb4ffe72a4",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "fe2ad505254fed598da0e623d76e4940ebce2e3c242128441c718ccb4ffe72a4"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Peter Tamony",
+          "publication": "American Speech 12.2 ('Origin of \"Phoney\"')",
+          "date": "1937-04",
+          "url_or_ref": "https://muse.jhu.edu/article/456460/summary",
+          "exact_scope": "Proposed deriving American phoney from Anglo-Irish ring-dropper cant fawney."
+        }
+      ]
+    },
+    {
+      "id": "CLM-2200-007",
+      "slug": "clm-2200-007",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "1869–1895 NY crime and 1902 British negative controls",
+      "case_section": "Phase II: Phonological Closing, `<ph->` Remodeling, and the 1894 Pitchman Hinge",
+      "short_label": "1869–1895 NY crime-corpus negative control (5.2M chars, 0 hits; 1867–1890 gap) and 1902 British exclusivity control",
+      "statement": "Sweeps of 5,200,000 characters across five 1869–1895 New York formal crime corpora (including Byrnes 1886) and Farmer & Henley's 1902 London Vol. V (PHOENIX-NEST to PHYSIC) yield 0 hits, defining both the 1867–1889 U.S. sub-literary gap and North American exclusivity.",
+      "rationale": "Formal police mug-books substituted 'pennyweight-worker' for street argot, while Farmer & Henley's 1902 omission of phoney (despite entering British FAWNEY and FORNEY) proves the shift happened in North America.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Zero occurrences across 5.2M characters of 1869–1895 formal NY crime volumes and Farmer & Henley's 1902 British P-volume.",
+        "does_not_establish": "Absence of unrecorded oral street-pitchman usage during 1868–1889.",
+        "remaining_uncertainty": "Whether unindexed 1870–1890 municipal court blotters preserve sub-literary tokens."
+      },
+      "limitations": [
+        "Formal police and legislative prose filtered out low street-hawker slang."
+      ],
+      "resolution_criteria": [
+        "Search 1868–1891 municipal police-court blotters and dime-museum/slum ephemera."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2200-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 fawney/foney/phoney hits across Byrnes (1886) and 5.2M chars of 1869–1895 NY crime corpora.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-004",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer & Henley Vol. V (1902, p. 183) steps from PHOENIX-NEST to PHYSIC with 0 phoney/phony entries.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "5 formal New York crime/legislative corpora (1869–1895, including Byrnes 1886) and Farmer & Henley Vol. V (London, 1902)",
+        "search_date": "2026-11-26",
+        "search_period": "1869-1902",
+        "query_terms": [
+          "fawney",
+          "fauny",
+          "foney",
+          "fony",
+          "phoney",
+          "phony"
+        ],
+        "search_method": "Programmatic full-text regex sweep across 5 NY crime volumes plus alphabetical headword inspection of Farmer & Henley Vol. V.",
+        "corpus_coverage": "5,200,000 characters of formal NY crime prose plus complete 1902 British slang P-range",
+        "known_limitations": [
+          "High-register police prose preferred 'pennyweight-worker' over street-peddler cant."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "84e94fcff56255e3fd7cb924d345ec7ff1efa4393caa7788193532c8882a84ba",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "84e94fcff56255e3fd7cb924d345ec7ff1efa4393caa7788193532c8882a84ba"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-008",
+      "slug": "clm-2200-008",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": "1862 Moody letter, telephone, Forney myth, and Traps A–D",
+      "case_section": "Phase IV: Falsified Etymologies and Archival Traps (Traps A–D)",
+      "short_label": "Rebuttal of 1862 Moody eye-dialect letter, de novo telephone origin, 'Forney' jeweler myth (0/9.44M chars), and Traps A–D",
+      "statement": "Primary audits show Pvt. Moody's 1862 'phoney scrape' contrasts with 'serious' as <ph-> eye-dialect for funny, wire-tappers used Morse telegraphs after leaving 'phony money' gangs, 1875–1892 jewelry directories (9.44M chars) contain 0 'Forney' manufacturers (a folk-etymology of non-rhotic cant forney = fawney), and ten Trap A–D hits are OCR, persona, or serial-misdate ghosts.",
+      "rationale": "Combining 225 Attleboro* vs. 0 Forney directory hits with Egan/Farmer & Henley's cant 'forney' ('ring'), telegraph crime records, and zoomed ink/masthead checks resolves every rival etymology and pre-1890 false positive.",
+      "type": "rebuttal",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Directory falsification of any Forney brass-jewelry firm, cant 'forney = fawney' explanation, wire-tapper telegraph proof, 1862 eye-dialect context, and Trap A–D scan kills.",
+        "does_not_establish": "Direct manuscript inspection of Moody's 1862 holograph leaf or Virtue's 1830 1st ed. of Egan's Finish.",
+        "remaining_uncertainty": "Collating Moody's original 1862 letter and G. Virtue's 1830 Egan first edition."
+      },
+      "limitations": [
+        "Moody's 1862 letter (1977 transcription) and Egan's 1830 text (1887 scan) await first-state original collation; CERT-2200-126 (1962) omits a scan under the pre-1931 rule."
+      ],
+      "resolution_criteria": [
+        "Inspect Moody's surviving 1862 autograph letter in archival custody and G. Virtue's 1830 first edition of Egan's Finish."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2200-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "25 April 1862 Moody letter ('a phoney scrape and also a serious one, too', pub. 1977).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-319",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1859–1876 Civil War comic eye-dialect 'PHUNNY PHELLOW' / 'PHUNNY MAN'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-224",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1904 Evening Telegram / 1909 Century Supplement 'telephone + -y' conjecture.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1905 Police Gazette and 1908 Arthur Train proving wire-tappers used Morse telegraphs and came from 'phony money' gangs.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1878 Massachusetts Register and 9.44M chars of Jewelers' Circular (1875–1892): 225 Attleboro* hits, 0 Forney jewelers.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-318",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Biographies of John W. and Matthias N. Forney vs. Mencken/Winchell 'Forney' myth.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Egan 1830 [1887 ed. scan] non-rhotic cant 'diamond forney' ('ring').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Farmer & Henley 1893 'FORNEY... A ring; a variant of FAWNEY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1838/1875 broken-type OCR ghosts ('money', 'David Roby').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-226",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1883 St. Louis broken-type OCR 'phoney' = 'money'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1883/1890 line-wrap hyphenations 'tele-phone,' and 'Sym-phony'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1857/1879 broken-type OCR 'Fancy' and 'forty men'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1850 'John W. Foney' (= Forney) typo and c. 1853 pet name 'Phonny'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-225",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "24 January 1885 Pittsburg Chronicle humorist persona 'the Phony man'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-323",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "April 1910 Coast Review mis-indexed as 1871.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-227",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 1927 Writer's Monthly mis-indexed as 1912.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1930 Philip Hale 'Sym-phony' clipping mis-indexed as 1889.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2200-126",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1962 Roget's 3rd ed. mis-indexed as 1852.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a2f910f58a5180433e8e4e9a61d19480ab8632630e4252825da448e3177e63ca",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "a2f910f58a5180433e8e4e9a61d19480ab8632630e4252825da448e3177e63ca"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2200-009",
+      "slug": "clm-2200-009",
+      "case_slug": "phoney",
+      "headword": "phoney",
+      "target_lexeme": null,
+      "case_section": "Executive Summary and Lexicographical Calibration",
+      "short_label": "Plate-state and reprint forensics (Matsell 1859 vs. c. 1877 Worthington reissue, Flynt 1894, Hotten, Egan, Blossom, Cullen)",
+      "statement": "Bibliographic collation establishes that Worthington's undated c. 1877 Vocabulum (314) reprints Matsell's 1859 plates (313, adapted from Ducange 312), Hotten 1859 overlaps across 201/312, SLPD 6 March 1894 (107) reprints Flynt's February 1894 Century essay (206), Egan's 'forney' links 309/001, Blossom's Checkers scan is a 1901 impression of 1896 plates (002), and Cullen's 1902 sequel is More Ex-Tank Tales (121).",
+      "rationale": "Explicit source-relationship controls prevent counting stereotype reissues, newspaper syndications, and later impressions as independent coinages.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact plate-state, syndication, and edition relationships across all six witness clusters in phoney.json.",
+        "does_not_establish": "Scans of the 1830 Egan, 1896 Blossom, or 1902 Cullen first impressions.",
+        "remaining_uncertainty": "First-impression scan collation for Egan (1830) and Blossom (1896)."
+      },
+      "limitations": [
+        "Prevents duplicate counting across stereotype reissues and syndicated reprints."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2200-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Ducange Anglicus 1857/1859 source text and Hotten 1859.",
+          "witness_note": "Cluster WCL-2200-02/03."
+        },
+        {
+          "ref": "CERT-2200-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Standalone Hotten 1859 record.",
+          "witness_note": "Cluster WCL-2200-02."
+        },
+        {
+          "ref": "CERT-2200-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Matsell 23 May 1859 1st ed. Vocabulum.",
+          "witness_note": "Cluster WCL-2200-03."
+        },
+        {
+          "ref": "CERT-2200-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Undated c. 1877 R. Worthington stereotype reissue with '1859.' chiseled off.",
+          "witness_note": "Cluster WCL-2200-03."
+        },
+        {
+          "ref": "CERT-2200-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 1894 Century Magazine Flynt essay.",
+          "witness_note": "Cluster WCL-2200-01."
+        },
+        {
+          "ref": "CERT-2200-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 March 1894 St. Louis Post-Dispatch syndicated reprint.",
+          "witness_note": "Cluster WCL-2200-01."
+        },
+        {
+          "ref": "CERT-2200-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1887 Reeves & Turner impression of Egan's 1830 Finish.",
+          "witness_note": "Cluster WCL-2200-04."
+        },
+        {
+          "ref": "CERT-2200-001",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1893 Farmer & Henley FORNEY quoting 1871 Hotten ed. of Egan.",
+          "witness_note": "Cluster WCL-2200-04."
+        },
+        {
+          "ref": "CERT-2200-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1901 impression of Blossom's 1896 Checkers plates.",
+          "witness_note": "Impression-state note."
+        },
+        {
+          "ref": "CERT-2200-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Calibrates OED3's 1902 noun source title to Cullen's More Ex-Tank Tales.",
+          "witness_note": "Baseline title calibration."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "eff873ccdcce1a7da2304801b3da1e458acca1d706a2dc128a908e1ff2ed7c6e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2200.",
+          "content_fingerprint": "eff873ccdcce1a7da2304801b3da1e458acca1d706a2dc128a908e1ff2ed7c6e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

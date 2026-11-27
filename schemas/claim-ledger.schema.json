@@ -1,0 +1,860 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dragnet.tch.one/schemas/claim-ledger.schema.json",
+  "title": "DRAgNEt Claim Ledger Schema (v1.0)",
+  "description": "Structured claim-level evidence, inferential DAG, chronological baseline, negative-evidence boundary, deterministic fingerprinting, and review provenance schema for DRAgNEt Case Files.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "claim_ledger_id",
+    "case_slug",
+    "case_number",
+    "target_id",
+    "headword",
+    "updated_at",
+    "claims"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "description": "Claim ledger schema version."
+    },
+    "claim_ledger_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Canonical ledger identifier matching the filename stem and case_slug (e.g., 'ballyhoo')."
+    },
+    "case_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Case slug matching public/ledgers/<case_slug>.json and src/content/cases/<case_slug>.md."
+    },
+    "case_number": {
+      "type": "string",
+      "pattern": "^Case \\d{3,4}$",
+      "description": "Canonical case number label matching the citation ledger (e.g., 'Case 1800')."
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^TGT-\\d{3,4}$",
+      "description": "Target board identifier matching the citation ledger (e.g., 'TGT-033')."
+    },
+    "headword": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical headword label matching the citation ledger (e.g., 'ballyhoo / ballahoo')."
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "ISO 8601 calendar date (YYYY-MM-DD) when the claim ledger was last updated."
+    },
+    "summary_note": {
+      "type": ["string", "null"],
+      "description": "Optional concise editorial note summarizing the scope of claims extracted for this case."
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/ClaimRecord"
+      },
+      "description": "Claim records belonging to this case namespace."
+    }
+  },
+  "$defs": {
+    "Sha256Hex": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Lowercase 64-character SHA-256 hex digest."
+    },
+    "IsoCalendarDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "ISO 8601 calendar date (YYYY-MM-DD)."
+    },
+    "ClaimId": {
+      "type": "string",
+      "pattern": "^CLM-\\d{3,4}-\\d{3}$",
+      "description": "Permanent monotonic claim ID scoped to case_number digits (e.g., 'CLM-1800-004')."
+    },
+    "ClaimSlug": {
+      "type": "string",
+      "pattern": "^clm-\\d{3,4}-\\d{3}$",
+      "description": "Lowercase URL slug matching ClaimId (e.g., 'clm-1800-004')."
+    },
+    "EvidenceRef": {
+      "type": "string",
+      "pattern": "^(?:CERT-\\d{3,4}-\\d{3}[A-Za-z]?|CLM-\\d{3,4}-\\d{3})$",
+      "description": "Citation record ID (CERT-...) or claim record ID (CLM-...); supports both intra-case and cross-case references."
+    },
+    "ClaimType": {
+      "type": "string",
+      "enum": [
+        "attestation",
+        "antedating",
+        "semantic",
+        "historical_context",
+        "transmission",
+        "derivation",
+        "phonological",
+        "negative_evidence",
+        "rebuttal",
+        "source_relationship"
+      ],
+      "description": "Epistemic claim category. Documentary types: attestation, antedating, negative_evidence, source_relationship. Interpretive types: semantic, historical_context, transmission, derivation, phonological, rebuttal."
+    },
+    "ClaimAssessment": {
+      "type": "string",
+      "enum": [
+        "unassessed",
+        "supported",
+        "partially_supported",
+        "inconclusive",
+        "contradicted"
+      ],
+      "description": "Qualitative evidentiary assessment (zero numerical confidence scores permitted)."
+    },
+    "ClaimReviewStatus": {
+      "type": "string",
+      "enum": [
+        "unreviewed",
+        "agent_reviewed",
+        "independently_agent_reviewed",
+        "human_reviewed"
+      ],
+      "description": "Current verification review status. Newly authored claims default to 'unreviewed'. 'human_reviewed' requires a non-stale human review record."
+    },
+    "LifecycleStatus": {
+      "type": "string",
+      "enum": [
+        "active",
+        "superseded",
+        "withdrawn"
+      ],
+      "description": "Claim lifecycle state. Permanent IDs are retained across supersession and withdrawal."
+    },
+    "DatePrecision": {
+      "type": "string",
+      "enum": [
+        "day",
+        "month",
+        "year",
+        "circa"
+      ],
+      "description": "Granularity of a historical or baseline date."
+    },
+    "EvidenceBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "establishes",
+        "does_not_establish",
+        "remaining_uncertainty"
+      ],
+      "properties": {
+        "establishes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact proposition established by the linked evidence."
+        },
+        "does_not_establish": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Related inferences or broader claims that the linked evidence explicitly does NOT prove."
+        },
+        "remaining_uncertainty": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Open evidentiary, paleographic, bibliographic, or linguistic uncertainties (state 'None beyond standard archival edition bounds.' only when genuinely closed)."
+        }
+      }
+    },
+    "EvidenceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "relationship",
+        "directness",
+        "reason"
+      ],
+      "properties": {
+        "ref": {
+          "$ref": "#/$defs/EvidenceRef"
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "supports",
+            "contradicts",
+            "weakens",
+            "qualifies",
+            "contextualizes",
+            "depends_on"
+          ],
+          "description": "Role of ref with respect to this claim. For CLM-* targets, 'depends_on' and 'supports' form inferential edges (which must be acyclic across all ledgers); 'contradicts', 'weakens', 'qualifies', and 'contextualizes' are non-inferential cross-references."
+        },
+        "directness": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "indirect",
+            "contextual"
+          ],
+          "description": "Evidentiary directness with respect to this claim."
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific explanation of how and why ref bears this relationship to the claim."
+        },
+        "witness_note": {
+          "type": ["string", "null"],
+          "description": "Optional witness-specific diplomatic, reprint, or paleographic note."
+        }
+      }
+    },
+    "AntedatingBaseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority",
+        "entry_and_sense",
+        "edition_or_revision",
+        "baseline_date",
+        "baseline_date_precision",
+        "source_url_or_ref",
+        "checked_date",
+        "comparison_kind",
+        "advancing_citation_ref",
+        "attested_date",
+        "attested_date_precision",
+        "computed_advance_display",
+        "inspection_mode"
+      ],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Lexicographical authority (e.g., 'Oxford English Dictionary Online (OED3)', 'Green\\'s Dictionary of Slang')."
+        },
+        "entry_and_sense": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact dictionary headword, homograph number, part of speech, and sense identifier."
+        },
+        "edition_or_revision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Edition, revision date, or publication year of the consulted authority."
+        },
+        "baseline_date": {
+          "type": "string",
+          "minLength": 4,
+          "description": "Baseline date formatted strictly per baseline_date_precision ('YYYY-MM-DD' for day, 'YYYY-MM' for month, 'YYYY' for year, 'c. YYYY' or 'c. YYYY-YYYY' for circa)."
+        },
+        "baseline_date_precision": {
+          "$ref": "#/$defs/DatePrecision"
+        },
+        "source_url_or_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Canonical https:// URL or bibliographic citation for the baseline entry."
+        },
+        "checked_date": {
+          "$ref": "#/$defs/IsoCalendarDate"
+        },
+        "comparison_kind": {
+          "type": "string",
+          "enum": [
+            "earlier_same_sense",
+            "earlier_spelling",
+            "earlier_derivative_or_inflected",
+            "proper_name_precursor",
+            "earliest_in_search_scope",
+            "earliest_reported_by_authority"
+          ]
+        },
+        "advancing_citation_ref": {
+          "type": "string",
+          "pattern": "^CERT-\\d{3,4}-\\d{3}[A-Za-z]?$",
+          "description": "Primary witness CERT-* ID establishing attested_date (must also appear in claim.evidence)."
+        },
+        "attested_date": {
+          "type": "string",
+          "minLength": 4,
+          "description": "Attested witness date formatted strictly per attested_date_precision ('YYYY-MM-DD' for day, 'YYYY-MM' for month, 'YYYY' for year, 'c. YYYY' or 'c. YYYY-YYYY' for circa)."
+        },
+        "attested_date_precision": {
+          "$ref": "#/$defs/DatePrecision"
+        },
+        "computed_advance_display": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Precision-bounded advance expressed in historical-lexicography register (never decimal years; never month/day claims when effective precision is year or circa; never day claims when effective precision is month)."
+        },
+        "inspection_mode": {
+          "type": "string",
+          "enum": [
+            "directly_inspected",
+            "inherited_from_existing_research"
+          ]
+        }
+      }
+    },
+    "NegativeEvidenceBounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "corpus_identity",
+        "search_date",
+        "search_period",
+        "query_terms",
+        "search_method",
+        "corpus_coverage",
+        "known_limitations",
+        "qualifying_results_count"
+      ],
+      "properties": {
+        "corpus_identity": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Named archive, digital collection, or set of volumes swept."
+        },
+        "search_date": {
+          "$ref": "#/$defs/IsoCalendarDate"
+        },
+        "search_period": {
+          "type": "string",
+          "minLength": 4,
+          "description": "Chronological window covered by the corpus search (e.g., '1893-1894', '1872-1912')."
+        },
+        "query_terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Exact lexical strings, orthographic variants, or regex patterns queried."
+        },
+        "search_method": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Methodological description of how the search was executed."
+        },
+        "corpus_coverage": {
+          "type": ["string", "null"],
+          "description": "Quantified corpus denominator (volumes, issues, pages, or characters) when known, or null."
+        },
+        "known_limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Explicit OCR, sampling, register, or archival survival limitations bounding the negative finding."
+        },
+        "qualifying_results_count": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Exact count of qualifying tokens/witnesses found in scope (e.g., 0), or null if unquantified."
+        }
+      }
+    },
+    "ClaimRevisionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "revision",
+        "date",
+        "author",
+        "summary",
+        "content_fingerprint"
+      ],
+      "properties": {
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "date": {
+          "$ref": "#/$defs/IsoCalendarDate"
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content_fingerprint": {
+          "$ref": "#/$defs/Sha256Hex"
+        }
+      }
+    },
+    "ClaimReviewRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_id",
+        "claim_id",
+        "claim_revision",
+        "reviewer_id",
+        "reviewer_kind",
+        "model_version",
+        "review_date",
+        "review_scopes",
+        "inspected_evidence_refs",
+        "findings",
+        "objections",
+        "material_fingerprint_at_review",
+        "evidence_fingerprints_at_review",
+        "recommendation"
+      ],
+      "properties": {
+        "review_id": {
+          "type": "string",
+          "pattern": "^REV-\\d{3,4}-\\d{3}-\\d{2,3}$",
+          "description": "Globally unique review identifier (e.g., 'REV-1800-004-01'). Note: is_stale is NEVER serialized on disk; it is computed dynamically at load/validation time."
+        },
+        "claim_id": {
+          "$ref": "#/$defs/ClaimId"
+        },
+        "claim_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "reviewer_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Named human reviewer (plus optional ORCID) when reviewer_kind === 'human', or agent/auditor identifier otherwise."
+        },
+        "reviewer_kind": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "independent_agent",
+            "human"
+          ]
+        },
+        "model_version": {
+          "type": ["string", "null"],
+          "description": "Model identifier for agent/independent_agent reviews; must be null for human reviews."
+        },
+        "review_date": {
+          "$ref": "#/$defs/IsoCalendarDate"
+        },
+        "review_scopes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "structural",
+              "transcription",
+              "archival",
+              "baseline",
+              "linguistic_argument"
+            ]
+          }
+        },
+        "inspected_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/EvidenceRef"
+          }
+        },
+        "findings": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objections": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "material_fingerprint_at_review": {
+          "$ref": "#/$defs/Sha256Hex",
+          "description": "Snapshot of claim.content_fingerprint at the time of review."
+        },
+        "evidence_fingerprints_at_review": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/Sha256Hex"
+          },
+          "description": "Map of referenced CERT-*/CLM-* IDs to their SHA-256 material fingerprints at review time."
+        },
+        "recommendation": {
+          "type": "string",
+          "enum": [
+            "uphold",
+            "revise",
+            "downgrade",
+            "contradict",
+            "withdraw",
+            "needs_human_review"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "reviewer_kind": { "const": "human" }
+            }
+          },
+          "then": {
+            "properties": {
+              "model_version": { "type": "null" }
+            }
+          },
+          "else": {
+            "properties": {
+              "model_version": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
+    },
+    "ExternalRecognitionRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recognizer",
+        "publication",
+        "date",
+        "url_or_ref",
+        "exact_scope"
+      ],
+      "properties": {
+        "recognizer": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Recognizing dictionary, journal, or scholarly society."
+        },
+        "publication": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific entry, issue, or publication venue."
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$",
+          "description": "Publication/revision date (YYYY, YYYY-MM, or YYYY-MM-DD)."
+        },
+        "url_or_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Canonical URL or formal bibliographic reference."
+        },
+        "exact_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact boundary of what the external authority recognized (e.g., citing a specific quotation date vs. adopting an etymological derivation)."
+        }
+      }
+    },
+    "ClaimRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "slug",
+        "case_slug",
+        "headword",
+        "short_label",
+        "statement",
+        "rationale",
+        "type",
+        "assessment",
+        "review_status",
+        "is_principal",
+        "lifecycle_status",
+        "revision",
+        "supersedes",
+        "superseded_by",
+        "evidence_boundary",
+        "limitations",
+        "resolution_criteria",
+        "evidence",
+        "content_fingerprint",
+        "revision_history",
+        "reviews",
+        "external_recognition"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/ClaimId"
+        },
+        "slug": {
+          "$ref": "#/$defs/ClaimSlug"
+        },
+        "case_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "headword": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_lexeme": {
+          "type": ["string", "null"],
+          "description": "Optional specific form, lemma, or sense targeted within a multi-form case (e.g., 'ballahoo, n.' or 'ballyhoo, n.2')."
+        },
+        "case_section": {
+          "type": ["string", "null"],
+          "description": "Optional Case File Markdown section anchor/heading where this claim is discussed."
+        },
+        "short_label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "description": "Concise human-readable label for tables, badges, and graph nodes."
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Single, falsifiable proposition written in historical-lexicography register."
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Analytical synthesis explaining how the linked evidence justifies the assessment within the stated evidence_boundary."
+        },
+        "type": {
+          "$ref": "#/$defs/ClaimType"
+        },
+        "assessment": {
+          "$ref": "#/$defs/ClaimAssessment"
+        },
+        "review_status": {
+          "$ref": "#/$defs/ClaimReviewStatus"
+        },
+        "is_principal": {
+          "type": "boolean",
+          "description": "True when this claim is one of the principal summary claims highlighted at the top of the Case File."
+        },
+        "sort_order": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Optional presentation sort index (excluded from content_fingerprint; never alters claim ID)."
+        },
+        "lifecycle_status": {
+          "$ref": "#/$defs/LifecycleStatus"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supersedes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/ClaimId"
+          }
+        },
+        "superseded_by": {
+          "oneOf": [
+            { "$ref": "#/$defs/ClaimId" },
+            { "type": "null" }
+          ]
+        },
+        "evidence_boundary": {
+          "$ref": "#/$defs/EvidenceBoundary"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "resolution_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Concrete archival or linguistic evidence required to resolve or overturn the claim (mandatory non-empty on unresolved interpretive claims)."
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EvidenceLink"
+          }
+        },
+        "antedating_baseline": {
+          "oneOf": [
+            { "$ref": "#/$defs/AntedatingBaseline" },
+            { "type": "null" }
+          ]
+        },
+        "negative_evidence_bounds": {
+          "oneOf": [
+            { "$ref": "#/$defs/NegativeEvidenceBounds" },
+            { "type": "null" }
+          ]
+        },
+        "content_fingerprint": {
+          "$ref": "#/$defs/Sha256Hex"
+        },
+        "revision_history": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ClaimRevisionEntry"
+          }
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClaimReviewRecord"
+          }
+        },
+        "external_recognition": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExternalRecognitionRecord"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": { "const": "antedating" }
+            }
+          },
+          "then": {
+            "required": ["antedating_baseline"],
+            "properties": {
+              "antedating_baseline": { "$ref": "#/$defs/AntedatingBaseline" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": { "const": "negative_evidence" }
+            }
+          },
+          "then": {
+            "required": ["negative_evidence_bounds"],
+            "properties": {
+              "negative_evidence_bounds": { "$ref": "#/$defs/NegativeEvidenceBounds" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "semantic",
+                  "historical_context",
+                  "transmission",
+                  "derivation",
+                  "phonological",
+                  "rebuttal"
+                ]
+              },
+              "assessment": {
+                "enum": [
+                  "unassessed",
+                  "partially_supported",
+                  "inconclusive"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "resolution_criteria": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": { "not": { "const": "negative_evidence" } },
+              "assessment": { "not": { "const": "unassessed" } }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "lifecycle_status": { "const": "superseded" }
+            }
+          },
+          "then": {
+            "properties": {
+              "superseded_by": { "$ref": "#/$defs/ClaimId" },
+              "is_principal": { "const": false }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "lifecycle_status": { "const": "active" }
+            }
+          },
+          "then": {
+            "properties": {
+              "superseded_by": { "type": "null" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "lifecycle_status": { "const": "withdrawn" }
+            }
+          },
+          "then": {
+            "properties": {
+              "superseded_by": { "type": "null" },
+              "is_principal": { "const": false }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "review_status": { "const": "human_reviewed" }
+            }
+          },
+          "then": {
+            "properties": {
+              "reviews": {
+                "minItems": 1,
+                "contains": {
+                  "type": "object",
+                  "required": ["reviewer_kind", "recommendation"],
+                  "properties": {
+                    "reviewer_kind": { "const": "human" },
+                    "recommendation": { "const": "uphold" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

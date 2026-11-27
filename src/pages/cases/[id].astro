@@ -1,13 +1,20 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClaimBadges from '../../components/ClaimBadges.astro';
 import ProofPlateGallery from '../../components/ProofPlateGallery.astro';
 import ReuseCitationDrawer from '../../components/ReuseCitationDrawer.astro';
 import { SITE_ACRONYM, SITE_EXPANDED } from '../../consts';
 import {
+  computeCaseClaimStats,
+  getClaimsForCase,
+  getPrincipalClaimsForCase,
+  hasClaimLedger,
+  isDocumentaryClaimType,
+} from '../../lib/claims';
+import {
   getLedgerBySlug,
   computeLedgerStats,
-  VERIFICATION_LABELS,
 } from '../../lib/ledgers';
 
 export async function getStaticPaths() {
@@ -26,6 +33,16 @@ const ledger = getLedgerBySlug(d.ledgerSlug);
 const stats = computeLedgerStats(ledger.citations);
 const byId = new Map(ledger.citations.map((c) => [c.id, c]));
 
+const caseHasClaims = hasClaimLedger(d.ledgerSlug);
+const caseClaims = getClaimsForCase(d.ledgerSlug, { includeNonActive: false });
+const principalClaims = getPrincipalClaimsForCase(d.ledgerSlug);
+const displayedClaims = principalClaims.length > 0 ? principalClaims : caseClaims;
+const documentaryPrincipal = displayedClaims.filter((c) => isDocumentaryClaimType(c.type));
+const interpretivePrincipal = displayedClaims.filter((c) => !isDocumentaryClaimType(c.type));
+const claimStats = computeCaseClaimStats(caseClaims);
+const aiReviewedCaseClaims =
+  claimStats.byReviewStatus.agent_reviewed + claimStats.byReviewStatus.independently_agent_reviewed;
+
 const featuredScans = d.featuredScanIds
   .map((id) => byId.get(id))
   .filter((c): c is NonNullable<typeof c> => Boolean(c && c.scan.hosted_path));
@@ -33,7 +50,7 @@ const featuredSet = new Set(featuredScans.map((c) => c.id));
 const additionalScans = ledger.citations.filter(
   (c) => Boolean(c.scan.hosted_path) && !featuredSet.has(c.id)
 );
-const externalAttestations = ledger.citations.filter(
+const externalPost1930 = ledger.citations.filter(
   (c) => c.record_type === 'attestation' && !c.scan.hosted_path
 );
 const rejectedLeads = d.rejectedLeadIds
@@ -103,18 +120,35 @@ const statusLabels: Record<string, string> = {
         </span>
         <span>·</span>
         <time datetime={d.pubDate.toISOString()}>Published {d.pubDate.toISOString().slice(0, 10)}</time>
+        {caseHasClaims && (
+          <>
+            <span>·</span>
+            <a href={`/claims/?case=${encodeURIComponent(d.ledgerSlug)}`}>
+              Browse {claimStats.activeClaims} structured claims →
+            </a>
+          </>
+        )}
         <span>·</span>
         <a href={`/citations/?headword=${encodeURIComponent(ledger.headword)}`}>
           Browse all {stats.totalEvaluated} evaluated citations →
         </a>
         <span>·</span>
-        <a href={`/ledgers/${d.ledgerSlug}.json`} target="_blank" rel="noopener noreferrer">JSON Ledger</a>
+        <a href={`/ledgers/${d.ledgerSlug}.json`} target="_blank" rel="noopener noreferrer">Citation JSON</a>
+        {caseHasClaims && (
+          <>
+            <span>·</span>
+            <a href={`/claims/${d.ledgerSlug}.json`} target="_blank" rel="noopener noreferrer">Claim JSON</a>
+          </>
+        )}
         <span>·</span>
         <a href={`/cases/${entry.id}.bib`} download={`${entry.id}.bib`}>Cite (.bib)</a>
       </div>
 
       <nav class="jump-links" aria-label="On this page">
         <a href="#evidence-summary">Evidence summary</a>
+        <a href="#principal-claims">
+          Claims{caseHasClaims ? ` (${claimStats.activeClaims})` : ''}
+        </a>
         <a href="#timeline">Timeline</a>
         <a href="#primary-scans">Scans</a>
         <a href="#research">Full case study</a>
@@ -122,15 +156,23 @@ const statusLabels: Record<string, string> = {
       </nav>
       <div class="pub-notice">
         <strong>Publication &amp; Verification Status:</strong> {d.publicationStatusNote} Currently{' '}
-        <strong>{stats.agentVerified}</strong> records are <code>agent-verified</code>,{' '}
+        <strong>{stats.agentVerified}</strong> citation records are <code>agent-verified</code>,{' '}
         <strong>{stats.humanVerified}</strong> are independently <code>human-verified</code>, and{' '}
         <strong>{stats.externallyRecognized}</strong> are baseline quotations already recognized in reference dictionaries.
+        {caseHasClaims && (
+          <>
+            {' '}In the structured claim ledger, <strong>{claimStats.activeClaims}</strong> propositions are decomposed (
+            <strong>{claimStats.byReviewStatus.human_reviewed}</strong> human-reviewed,{' '}
+            <strong>{aiReviewedCaseClaims}</strong> AI-reviewed,{' '}
+            <strong>{claimStats.byReviewStatus.unreviewed}</strong> unreviewed).
+          </>
+        )}
       </div>
     </header>
 
     <div class="stat-strip overview-stats">
       <div class="stat-card">
-        <div class="stat-label">{d.earliestKnownAttestation.label ?? 'Earliest Known Attestation'}</div>
+        <div class="stat-label">Earliest Known Attestation</div>
         <div class="stat-value">{d.earliestKnownAttestation.dateDisplay}</div>
         <div class="stat-sub">
           <a href={d.earliestKnownAttestation.url} target="_blank" rel="noopener noreferrer">
@@ -140,20 +182,22 @@ const statusLabels: Record<string, string> = {
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">{d.earliestNewDiscovery.label ?? 'Earliest Newly Uncovered Evidence'}</div>
+        <div class="stat-label">Earliest Newly Uncovered Evidence</div>
         <div class="stat-value">{d.earliestNewDiscovery.dateDisplay}</div>
         <div class="stat-sub">
           <a href={`/citations/${d.earliestNewDiscovery.certId.toLowerCase()}/`}>{d.earliestNewDiscovery.source}</a>
         </div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">{d.earliestNewDiscovery.summaryLabel ?? 'Antedating / Chronological Advance'}</div>
+        <div class="stat-label">Antedating / Chronological Advance</div>
         <div class="stat-value" style="font-size: 1.15rem;">{d.earliestNewDiscovery.antedatingSummary}</div>
-        <div class="stat-sub">{d.earliestNewDiscovery.summaryNote ?? d.earliestNewDiscovery.location}</div>
+        <div class="stat-sub">{d.earliestNewDiscovery.location}</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Evaluated Citations (Live from Ledger)</div>
-        <div class="stat-value">{stats.totalEvaluated}</div>
+        <div class="stat-label">Evaluated Citations &amp; Claims</div>
+        <div class="stat-value">
+          {stats.totalEvaluated} Citations{caseHasClaims ? ` · ${claimStats.activeClaims} Claims` : ''}
+        </div>
         <div class="stat-sub">
           {stats.attestations} attestations · {stats.hypotheses} hypotheses · {stats.rejectedLeads} rejected leads
         </div>
@@ -209,10 +253,137 @@ const statusLabels: Record<string, string> = {
       </ol>
     </section>
 
+    <section id="principal-claims" class="split-section" style="margin: 2rem 0;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.55rem;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0;">
+          Principal Claims &amp; Etymological Argument
+        </h2>
+        {caseHasClaims && (
+          <a href={`/claims/?case=${encodeURIComponent(d.ledgerSlug)}`} style="font-size: 0.9rem; font-weight: 600;">
+            Explore all {claimStats.activeClaims} case claims ({claimStats.documentaryClaims} documentary ·{' '}
+            {claimStats.interpretiveClaims} interpretive) →
+          </a>
+        )}
+      </div>
+
+      {caseHasClaims && displayedClaims.length > 0 ? (
+        <>
+          <p style="font-size: 0.92rem; color: var(--ink-muted); margin: 0 0 0.85rem;">
+            Key propositions decomposed from this investigation into individually addressable records with explicit scope
+            boundaries and separate AI-vs-human review status ({displayedClaims.length} principal of{' '}
+            {claimStats.activeClaims} total claims shown below).
+          </p>
+
+          <div class="principal-claims-grid">
+            {documentaryPrincipal.length > 0 && (
+              <div class="principal-claim-group is-documentary">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                  <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #1d3b4c;">
+                    Documentary Findings ({documentaryPrincipal.length} principal / {claimStats.documentaryClaims} total)
+                  </div>
+                  <a
+                    href={`/claims/?case=${encodeURIComponent(d.ledgerSlug)}&type=kind%3Adocumentary`}
+                    style="font-size: 0.8rem;"
+                  >
+                    Filter documentary →
+                  </a>
+                </div>
+                <ul class="principal-claim-list">
+                  {documentaryPrincipal.map((clm) => (
+                    <li class="principal-claim-item">
+                      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.4rem; margin-bottom: 0.35rem;">
+                        <a href={`/claims/${clm.slug}/`} style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700;">
+                          {clm.id}
+                        </a>
+                        <ClaimBadges
+                          type={clm.type}
+                          assessment={clm.assessment}
+                          reviewStatus={clm.review_status}
+                          hasStaleReviews={clm.has_stale_reviews}
+                          externallyRecognized={clm.external_recognition.length > 0}
+                          showKind={false}
+                        />
+                      </div>
+                      <div style="font-weight: 700; font-size: 0.94rem; margin-bottom: 0.25rem;">
+                        <a href={`/claims/${clm.slug}/`} style="color: var(--ink); text-decoration: none;">
+                          {clm.short_label}
+                        </a>
+                      </div>
+                      <p style="margin: 0 0 0.35rem; font-size: 0.85rem; color: var(--ink-muted);">
+                        {clm.statement}
+                      </p>
+                      <div style="font-size: 0.79rem; color: var(--ink-muted); border-top: 1px solid var(--border); padding-top: 0.35rem;">
+                        <strong>Does not establish:</strong> {clm.evidence_boundary.does_not_establish}{' '}
+                        <a href={`/claims/${clm.slug}/`}>Inspect {clm.referenced_citation_ids.length} linked citations →</a>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {interpretivePrincipal.length > 0 && (
+              <div class="principal-claim-group is-interpretive">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                  <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #6e4206;">
+                    Interpretive Hypotheses ({interpretivePrincipal.length} principal / {claimStats.interpretiveClaims} total)
+                  </div>
+                  <a
+                    href={`/claims/?case=${encodeURIComponent(d.ledgerSlug)}&type=kind%3Ainterpretive`}
+                    style="font-size: 0.8rem;"
+                  >
+                    Filter interpretive →
+                  </a>
+                </div>
+                <ul class="principal-claim-list">
+                  {interpretivePrincipal.map((clm) => (
+                    <li class="principal-claim-item">
+                      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.4rem; margin-bottom: 0.35rem;">
+                        <a href={`/claims/${clm.slug}/`} style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700;">
+                          {clm.id}
+                        </a>
+                        <ClaimBadges
+                          type={clm.type}
+                          assessment={clm.assessment}
+                          reviewStatus={clm.review_status}
+                          hasStaleReviews={clm.has_stale_reviews}
+                          externallyRecognized={clm.external_recognition.length > 0}
+                          showKind={false}
+                        />
+                      </div>
+                      <div style="font-weight: 700; font-size: 0.94rem; margin-bottom: 0.25rem;">
+                        <a href={`/claims/${clm.slug}/`} style="color: var(--ink); text-decoration: none;">
+                          {clm.short_label}
+                        </a>
+                      </div>
+                      <p style="margin: 0 0 0.35rem; font-size: 0.85rem; color: var(--ink-muted);">
+                        {clm.statement}
+                      </p>
+                      <div style="font-size: 0.79rem; color: var(--ink-muted); border-top: 1px solid var(--border); padding-top: 0.35rem;">
+                        <strong>Boundary:</strong> {clm.evidence_boundary.does_not_establish}{' '}
+                        <a href={`/claims/${clm.slug}/`}>Full claim &amp; resolution criteria →</a>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </>
+      ) : (
+        <div class="citation-empty" style="font-size: 0.9rem; color: var(--ink-muted);">
+          Structured claim-level decomposition for <strong>{d.headword}</strong> is pending integration into{' '}
+          <a href="/claims/">the Claim Index</a>. All {stats.totalEvaluated} evaluated primary-source records for this
+          investigation remain searchable in{' '}
+          <a href={`/citations/?headword=${encodeURIComponent(ledger.headword)}`}>the Citation Index</a>.
+        </div>
+      )}
+    </section>
+
     <ProofPlateGallery
       featuredScans={featuredScans}
       additionalScans={additionalScans}
-      externalAttestations={externalAttestations}
+      externalPost1930={externalPost1930}
     />
 
     <section id="research" class="reading-spread" aria-label="Full case study">
@@ -221,6 +392,11 @@ const statusLabels: Record<string, string> = {
           <h2>In this case file</h2>
           <ul>
             <li><a href="#evidence-summary">Evidence summary</a></li>
+            <li>
+              <a href="#principal-claims">
+                Principal claims{caseHasClaims ? ` (${claimStats.activeClaims})` : ''}
+              </a>
+            </li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#primary-scans">Primary-source scans</a></li>
             {articleHeadings.map(({ slug, text }) => <li><a href={`#${slug}`}>{text}</a></li>)}

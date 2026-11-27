@@ -1,0 +1,1204 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "skulduggery",
+  "case_slug": "skulduggery",
+  "case_number": "Case 2400",
+  "target_id": "TGT-054",
+  "headword": "skulduggery",
+  "updated_at": "2026-11-26",
+  "summary_note": "Concise v1.0 claim ledger for Case 2400 (skulduggery, TGT-054) covering all 66 citations across 10 atomic documentary and interpretive claims.",
+  "claims": [
+    {
+      "id": "CLM-2400-001",
+      "slug": "clm-2400-001",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "sculdudry / Sculdudrie",
+      "case_section": "2. The Kirk-Session to Caucus Semantic Hinge (1663–1847)",
+      "short_label": "1663–1721 Older Scots sculdudry baseline and negative kirk-minute register control (0 official clerk hits)",
+      "statement": "Older Scots sculdudry / Sculdudrie ('fornication prosecuted before church courts') appears in lay letters and satire from 1663 (Argyll, pub. 1829), 1714 (Centlivre), and 1721 (Ramsay), while sweeps of published sixteenth- and seventeenth-century Scottish kirk-session minutes yield 0 official clerk occurrences.",
+      "rationale": "Zero clerk hits across Elgin, Strathbogie, and Aberdeen ecclesiastical records prove sculdudry originated as colloquial satire on kirk-treasurer surveillance rather than formal church-court terminology.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Colloquial satiric register of 1663–1721 sculdudry contrasted with 0 hits in swept official kirk-session minutes.",
+        "does_not_establish": "Inspection of Argyll's unprinted 1663 original manuscript leaf.",
+        "remaining_uncertainty": "Whether unprinted seventeenth-century Scottish presbytery loose papers preserve pre-1663 informal occurrences."
+      },
+      "limitations": [
+        "Argyll's 1663 letter (CERT-2400-101) is verified from the 1829 Bannatyne Club edition."
+      ],
+      "resolution_criteria": [
+        "Collate Argyll's 1 September 1663 autograph letter in Edinburgh archival custody."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2400-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 sculdudry hits across published 16th–17th c. Elgin, Strathbogie, and Aberdeen kirk minutes (notes 1576 Orkney 'Sculding').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-101",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "DOST 1 September 1663 Argyll baseline in 1829 Bannatyne Club ed.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-102",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "OED/SND 1714 Centlivre 1st ed. 'Sculdudrie'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-203",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1721 [composed 1714] Allan Ramsay 'Sculdudry' kirk-treasurer elegy.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Published 16th–17th c. Scottish ecclesiastical court records (Elgin, Strathbogie, Aberdeen, plus Maitland Club Orkney/Zetland grievances)",
+        "search_date": "2026-11-26",
+        "search_period": "1560-1700",
+        "query_terms": [
+          "sculdudry",
+          "sculdudrie",
+          "sculduddery",
+          "skulduddery"
+        ],
+        "search_method": "Full-text OCR and index sweeps across digitized Scottish historical-club editions.",
+        "corpus_coverage": "Multi-volume published Scottish kirk-session minute editions (1560–1700)",
+        "known_limitations": [
+          "Excludes unprinted manuscript kirk-session registers in the National Records of Scotland."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "e151856a6a1421f23a71713bd833e7c62aab3bfea8606a04509fcd9d375c00cf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "e151856a6a1421f23a71713bd833e7c62aab3bfea8606a04509fcd9d375c00cf"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-002",
+      "slug": "clm-2400-002",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "Sculduddery",
+      "case_section": "2. The Kirk-Session to Caucus Semantic Hinge (1663–1847)",
+      "short_label": "1720 Anti-Priapeia antedating of quadrisyllabic Sculduddery (-101 calendar years vs. Etymonline 1821)",
+      "statement": "The 1720 Edinburgh satire Anti-Priapeia (p. 15, rhyming 'Sculduddery' : 'Bahuddery') attests quadrisyllabic -duddery 101 calendar years before Etymonline's 1821 date, corroborated in prose by Edward Burt (1754).",
+      "rationale": "ECCO scans establish that the four-syllable geminate template (/skʌlˈdʌd.ər.i/) was active in Scottish verse by 1720 and prose by 1754.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Primary-scan attestation of quadrisyllabic 'Sculduddery' in 1720 verse and 1754 prose.",
+        "does_not_establish": "Non-sexual semantic bleaching (first attested in 1791; CLM-2400-003).",
+        "remaining_uncertainty": "Identity of the anonymous 1720 Edinburgh pamphleteer."
+      },
+      "limitations": [
+        "Burt 1754 is deduplicated across CERT-2400-204 and the comparison band of CERT-2400-304 (CLM-2400-010)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1720 Anti-Priapeia p. 15 rhyme 'Sculduddery' : 'Bahuddery'.",
+          "witness_note": "Includes Burt 1754 comparison band."
+        },
+        {
+          "ref": "CERT-2400-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1754 Edward Burt Letters Vol. I p. 231 prose 'Sculduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-010",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Deduplicates Burt 1754 across 304 and 204.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Online Etymology Dictionary (Etymonline)",
+        "entry_and_sense": "skulduggery (cited date for Scots sculduddery spelling)",
+        "edition_or_revision": "Online entry, consulted November 2026",
+        "baseline_date": "1821",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.etymonline.com/word/skulduggery",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2400-304",
+        "attested_date": "1720",
+        "attested_date_precision": "year",
+        "computed_advance_display": "101 calendar years (1720 vs. 1821)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e26b5c5772e84ae8e295c03371d99eb5b25a7017791b13f635fa873f6b96639f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "e26b5c5772e84ae8e295c03371d99eb5b25a7017791b13f635fa873f6b96639f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-003",
+      "slug": "clm-2400-003",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "SKULL-DUDDERY",
+      "case_section": "2. The Kirk-Session to Caucus Semantic Hinge (1663–1847)",
+      "short_label": "1791 William Thomson 'SKULL-DUDDERY' antedating of initial sk-/skull- spelling (-27 calendar years vs. OED 1818)",
+      "statement": "William Thomson's 1791 Prospects and Observations (p. 220) defines parish-elder oversight of 'petty offences... below the cognizance of the law, and which pass under the general name of SKULL-DUDDERY', antedating OED's 1818 sk- baseline by 27 calendar years.",
+      "rationale": "Unrecorded in OED, DOST, and SND, Thomson's 1791 quarto scan proves both 'SKULL-' folk-segmentation and non-sexual sub-legal broadening preceded American migration.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Primary-scan 1791 attestation of 'SKULL-DUDDERY' and non-sexual petty-offence semantics.",
+        "does_not_establish": "Velar consonant shift (-dd- -> -gg-).",
+        "remaining_uncertainty": "Whether Thomson's shorter 1788 Tour edition already contained the passage."
+      },
+      "limitations": [
+        "Both attested_date ('1791') and OED sk- baseline ('1818') carry year precision."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1791 William Thomson ('Thomas Newte') p. 220 'SKULL-DUDDERY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-206",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1818 Walter Scott Heart of Mid-Lothian ('skulduddery'), OED's prior sk- baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "sculduddery, n. (initial sk- spelling and non-sexual petty-offence sense)",
+        "edition_or_revision": "Entry modified December 2025",
+        "baseline_date": "1818",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/sculduddery_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_spelling",
+        "advancing_citation_ref": "CERT-2400-306",
+        "attested_date": "1791",
+        "attested_date_precision": "year",
+        "computed_advance_display": "27 calendar years (1791 vs. 1818)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "244dce41d7f9012ef2c7d572d24f6c480b56aca6bdc50a26f9309dd8764eceee",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "244dce41d7f9012ef2c7d572d24f6c480b56aca6bdc50a26f9309dd8764eceee"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-004",
+      "slug": "clm-2400-004",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "sculduddery / SCULLDUDDERY (parliamentary and U.S. -dd- bridge)",
+      "case_section": "2. The Kirk-Session to Caucus Semantic Hinge (1663–1847)",
+      "short_label": "1821/1823 John Galt parliamentary de-eroticization hinge and 1808–1847 Scots/U.S. -dd- circulation",
+      "statement": "John Galt's The Ayrshire Legatees (Edinburgh 1821; New York 1823) explicitly sets aside adultery ('putting... out of consideration the fact libelled') to condemn House of Lords intrigue as 'all the sculduddery of the business', alongside 1808–1847 Scots bleaching, Galloway 'SCULLDUDDERY' (1824), and Philadelphia/New York -dd- imprints.",
+      "rationale": "Ten scans prove British and American readers encountered de-eroticized political and colloquial sculduddery / SCULLDUDDERY more than twenty years before the 1845 Tennessee legislature.",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Transatlantic 1821/1823 parliamentary-intrigue transfer and active 1808–1847 U.S. print circulation of unvelarized -dd- forms.",
+        "does_not_establish": "British attestation of velarized -gg-.",
+        "remaining_uncertainty": "Direct scan verification of Jamieson's 1825 Supplement leaf (cited via EDD in CERT-2400-205)."
+      },
+      "limitations": [
+        "UK/US novel edition pairs (206/210, 207/211, 209/212) are deduplicated via CLM-2400-010."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1821 Edinburgh Galt Ayrshire Legatees p. 271 parliamentary 'sculduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1823 New York Galt edition p. 162 proving U.S. circulation.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1808 Jamieson Vol. II ('now used in a ludicrous manner').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1821 Philadelphia Heart of Mid-Lothian U.S. edition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1824 Mactaggart Galloway geminate 'SCULLDUDDERY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1824 Edinburgh Redgauntlet Vol. I 'skulduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1824 New York Redgauntlet Vol. II 'sculduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 1835 Philadelphia Lady's Book 'scandal and sculduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1847 New York Scots-American verse 'sculduddery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-003",
+          "relationship": "depends_on",
+          "directness": "indirect",
+          "reason": "Builds on late-18th-century Scottish non-sexual broadening.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-010",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Deduplicates UK/US novel edition pairs.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c4b029e8e9406705b6360f6914d485be517722b51ac6c56eb707434ba9e9c042",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "c4b029e8e9406705b6360f6914d485be517722b51ac6c56eb707434ba9e9c042"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-005",
+      "slug": "clm-2400-005",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "1845–1858 discovered prior art (scullduggery / skulduggery / skulldug)",
+      "case_section": "3. From Tipton County, Tennessee, up the Mississippi Corridor to Lincoln's Desk (1845–1867)",
+      "short_label": "Secondary-reported 1845–1858 Nashville, Muscatine, St. Paul, Brookville, and Kansas -gg- / skulldug prior art (discovered)",
+      "statement": "Merriam-Webster (2020), Quinion, and Bonnie Taylor-Blake (2021) report paywalled newspaper printings from 9–15 December 1845 ('scullduggery') and 30 January 1846 ('skulduggery', Nashville), 18 August 1852 (Muscatine), 25 May 1854 (St. Paul), 13 June 1856 (Brookville), and 16 September 1858 transitive verb 'skulldug' (Wyandotte, 78 calendar years before OED's 1936 skuldug, v.), all held at discovered status.",
+      "rationale": "Grouping all six un-scanned commercial-archive citations into a dedicated partially_supported claim credits prior scholars while keeping open-scan claims strictly scan-verified.",
+      "type": "attestation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Published scholarly transcriptions of 1845–1858 -gg- nouns and the 1858 'skulldug' verbal back-formation.",
+        "does_not_establish": "Open-repository masthead and letterpress scan verification.",
+        "remaining_uncertainty": "Public-domain microfilm inspection at Tennessee, Iowa, Minnesota, Indiana, and Kansas historical societies."
+      },
+      "limitations": [
+        "All six citations carry verification_level 'discovered' without hosted scans in skulduggery.json."
+      ],
+      "resolution_criteria": [
+        "Inspect state-historical-society microfilm reels to verify masthead dates and physical -gg- ink."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2400-104",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "9 & 15 December 1845 Nashville 'scullduggery' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-105",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "30 January 1846 Nashville 'skulduggery' from 'the gentleman from Tipton' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-106",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "18 August 1852 Muscatine Journal 'skull-duggery'/'skulduggery' (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-107",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "25 May 1854 St. Paul Daily Minnesotan Monroe pardon item (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-114",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "13 June 1856 Brookville Indiana American calibrating 1856 baseline (discovered).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-117",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "28 August 1858 Burlington noun and 16 September 1858 Wyandotte Western Argus verb 'skulldug' (discovered).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "41c0d0f2f29e0f2574db48eb286dde2c4a61075784c9663eb97f7cd9e976800b",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "41c0d0f2f29e0f2574db48eb286dde2c4a61075784c9663eb97f7cd9e976800b"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Merriam-Webster",
+          "publication": "Words of the Week: 'skulduggery'",
+          "date": "2020-08-28",
+          "url_or_ref": "https://www.merriam-webster.com/wordplay/the-words-of-the-week-august-28-2020",
+          "exact_scope": "Published the 15 December 1845 Nashville Republican Banner 'scullduggery' citation."
+        },
+        {
+          "recognizer": "Bonnie Taylor-Blake",
+          "publication": "ADS-L threads 160120–160122",
+          "date": "2021-07-25",
+          "url_or_ref": "https://listserv.linguistlist.org/pipermail/ads-l/2021-July/160120.html",
+          "exact_scope": "Published the 9 Dec 1845, 30 Jan 1846, 18 Aug 1852, 25 May 1854, and 16 Sep 1858 'skulldug' citations."
+        }
+      ]
+    },
+    {
+      "id": "CLM-2400-006",
+      "slug": "clm-2400-006",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "skulduggery, n. and skulduggers",
+      "case_section": "3. From Tipton County, Tennessee, up the Mississippi Corridor to Lincoln's Desk (1845–1867)",
+      "short_label": "30 May 1854 St. Paul earliest open-scan skulduggery (-13 calendar years vs. OED 1867), 1855/1863 skulduggers, and 1858 Kansas Scull-duddery",
+      "statement": "St. Paul's Minnesota Weekly Times (30 May 1854: 'no \"collusion or skulduggery\"') provides the earliest open scan of canonical skulduggery—13 calendar years before OED's 1867 baseline—followed on open scans by unrecorded agent noun skullduggers/skulduggers (1855, 1863), 7 December 1858 Kansas 'Scull-duddery' ('political trickery'), and 1862–1867 nationalization including DAE's 1863 Frank Leslie's source.",
+      "rationale": "Fifteen open-access scans verify St. Paul l/ll variation, rapid '-er' back-formation, direct 1858 dental-to-velar coexistence in Kansas, and Civil War coast-to-coast spread.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Open-scan verification of canonical skulduggery (30 May 1854), agent noun skullduggers/skulduggers (1855/1863), 1858 Kansas 'Scull-duddery', and 1862–1867 national diffusion.",
+        "does_not_establish": "De novo Minnesota coinage (preceded by 1845–1852 discovered prior art in CLM-2400-005).",
+        "remaining_uncertainty": "Digitizing surviving May 1854 daily issues of the Minnesota Daily Times."
+      },
+      "limitations": [
+        "OED's 1867 Richardson baseline carries year precision, bounding formal advance display to 13 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 May 1854 Minnesota Weekly Times [26 May daily] 'skulduggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 June 1854 Minnesota Weekly Times 'skullduggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "3 October 1854 New-York Daily Times St. Paul dispatch ('Skullduggery' / 'skull-duggery').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 February 1855 Stillwater Saint Croix Union.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "2 June 1855 Saint Croix Union (co-occurring with 'toggery').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "12 June 1855 Minnesota Weekly Times plural agent noun 'skulldug-gers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "27 July 1857 Minnesota Constitutional Convention Debates.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "15 April 1858 Washington National Era.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "7 December 1858 Meigs County Telegraph ('\"Scull-duddery\"... in Kansas to signify political trickery').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-124",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "10 July 1862 Portland Morning Oregonian.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-125",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "18 April 1863 Frank Leslie's 'skullduggery and chenanigan' (Bartlett/DAE source).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-126",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 July 1863 New York Vanity Fair.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-127",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "4 September 1863 Muscatine Weekly Journal single-l 'skulduggers'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-128",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "22 December 1865 Louisville Daily Democrat non-political divorce chicanery.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-129",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1867 A. D. Richardson Beyond the Mississippi OED baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-010",
+          "relationship": "qualifies",
+          "directness": "contextual",
+          "reason": "Documents the unified May–June 1854 St. Paul polemic across 107/108/109.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "skulduggery, n. ('underhand dealing, trickery, chicanery')",
+        "edition_or_revision": "Unrevised 1986 Supplement entry, modified December 2025",
+        "baseline_date": "1867",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/skulduggery_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2400-108",
+        "attested_date": "1854-05-30",
+        "attested_date_precision": "day",
+        "computed_advance_display": "13 calendar years (30 May 1854 vs. 1867)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "cd491f23a7da7b8492b312c5df72a1b7b2ff1be032bae6b14b06c06686dc6c32",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "cd491f23a7da7b8492b312c5df72a1b7b2ff1be032bae6b14b06c06686dc6c32"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-007",
+      "slug": "clm-2400-007",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "skulduggery ('malversation of public money')",
+      "case_section": "3. From Tipton County, Tennessee, up the Mississippi Corridor to Lincoln's Desk (1845–1867)",
+      "short_label": "10 September 1859 Joseph Medill-to-Abraham Lincoln confidential holograph ('skulduggery with the public moneys'; -8 calendar years vs. OED 1867)",
+      "statement": "In a Library of Congress holograph postscript dated 10 September 1859 and docketed in Abraham Lincoln's hand, Joseph Medill wrote 'there must be no more skulduggery with the public moneys', antedating OED Online's 1867 baseline by 8 calendar years and OED1's 20 September 1890 public-peculation baseline by 31 years and 10 days.",
+      "rationale": "High-resolution manuscript inspection alongside 1859 Nebraska, Denver, and 1861 Chicago Tribune witnesses proves elite private Republican currency eight calendar years before Richardson (1867).",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Primary manuscript verification of canonical 'skulduggery' in private Lincoln correspondence on 10 September 1859.",
+        "does_not_establish": "Outbound use of the word by Lincoln himself.",
+        "remaining_uncertainty": "None regarding manuscript authenticity or Lincoln's autograph docket."
+      },
+      "limitations": [
+        "OED Online's 1867 baseline carries year precision, bounding formal antedating_baseline display to 8 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-121",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "10 September 1859 Joseph Medill-to-Abraham Lincoln holograph (LoC mal0187700).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-119",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1859 J. Sterling Morton Nebraska pamphlet 'skull-duggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-120",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "26 August 1859 New-York Times Denver dispatch 'skulduggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-122",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "12 October 1861 Medill Chicago Tribune 'Oh Times! Oh sculduggery'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online",
+        "entry_and_sense": "skulduggery, n. (including OED1 'malversation of public money')",
+        "edition_or_revision": "Unrevised 1986 Supplement entry, modified December 2025",
+        "baseline_date": "1867",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/skulduggery_n",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2400-121",
+        "attested_date": "1859-09-10",
+        "attested_date_precision": "day",
+        "computed_advance_display": "8 calendar years (10 September 1859 vs. 1867)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "d7e65b248821a3fa3cd28a58e551af2ee5a6e4c45f5fc7c416b0d4def878ca79",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "d7e65b248821a3fa3cd28a58e551af2ee5a6e4c45f5fc7c416b0d4def878ca79"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2400-007-01",
+          "claim_id": "CLM-2400-007",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2400-121",
+            "CERT-2400-119",
+            "CERT-2400-120",
+            "CERT-2400-122"
+          ],
+          "findings": "Directly inspected CERT-2400-121.webp (Sept. 10, 1859 Joseph Medill holograph letter to Abraham Lincoln with Lincoln's autograph docket 'J. Medill / Sep 10/59': 'there must be no more skulduggery with the public moneys'), verifying iron-gall ink transcription, 8-calendar-year advance over OED's year-precise 1867 baseline, and clear inbound-vs.-outbound boundary scoping.",
+          "objections": [],
+          "material_fingerprint_at_review": "d7e65b248821a3fa3cd28a58e551af2ee5a6e4c45f5fc7c416b0d4def878ca79",
+          "evidence_fingerprints_at_review": {
+            "CERT-2400-119": "7186f95478e03d40d2a13425ad7da4be51b2339b7bba585d500ec0bdf958742b",
+            "CERT-2400-120": "bb34af6877b45f454d3449a2267a11508fbcd494ae08eb6bb9fac24521fd5141",
+            "CERT-2400-121": "709a3e803e2075796358059a626011738bdccf0a33fd06c3edd462ef1e54e6db",
+            "CERT-2400-122": "ff0e6e123a25788a1b324af3c2de39ef196edf5d41cd10fc2e0b1873ed69daba"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-008",
+      "slug": "clm-2400-008",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "Mississippi-corridor political-printer network",
+      "case_section": "3. From Tipton County, Tennessee, up the Mississippi Corridor to Lincoln's Desk (1845–1867)",
+      "short_label": "Prosopography of the Tipton County (Rep. Philip B. Glenn) -> Muscatine -> St. Paul -> Gov. Samuel Medary carrier corridor",
+      "statement": "Primary legislative and biographical records link the 1845–1862 -gg- adopters to an Upland-Southern and Anglo-American political-printer corridor—from Whig Rep. Philip B. Glenn of Ulster-Scots Tipton County, Tennessee, and Muscatine Whig printers Jacob/John Mahin and Orion Clemens to Anglo-American St. Paul officials and Minnesota/Kansas Gov. Samuel Medary.",
+      "rationale": "Every early adopter belonged to Mississippi-Valley Whig/Democratic politics rather than Scandinavian immigrant communities, with Gov. Medary personally carrying 'official sculduggery' from Minnesota and Kansas to Ohio (1862).",
+      "type": "historical_context",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Verified Ulster-Scots / Upland-Southern and Anglo-American identities of the 1845–1862 legislators, editors, and governors.",
+        "does_not_establish": "Exact person-to-person correspondence bridging 1846 Nashville, 1852 Muscatine, and 1854 St. Paul.",
+        "remaining_uncertainty": "Recovering 1846–1852 river-port newspapers or Tipton County family papers."
+      },
+      "limitations": [
+        "Interpersonal hops between 1846 Tennessee and 1852/1854 Iowa/Minnesota remain inferred across unrecorded speech."
+      ],
+      "resolution_criteria": [
+        "Search 1846–1852 West Tennessee, St. Louis, and Keokuk newspapers and Tipton County church/deed records."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2400-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Identifies 'the gentleman from Tipton' as Whig Rep. Philip B. Glenn of Ulster-Scots Tipton County.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Profiles 1845–1846 Nashville Whig editors McLeod, Barrow, and Hall.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-219",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Profiles Muscatine Whig printers Jacob/John Mahin and Tennessee-born Orion Clemens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-223",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Confirms Virginia/Kentucky/Maine/Ohio/NY nativity of the 1854 St. Paul polemicists.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-123",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "21 May 1862 Columbus Crisis editorial by former MN/KS Gov. Samuel Medary ('official sculduggery').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a6ade1a54f4c512f95fc5de22c50a90f9e2c671699aca0681990b5222800db58",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "a6ade1a54f4c512f95fc5de22c50a90f9e2c671699aca0681990b5222800db58"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-009",
+      "slug": "clm-2400-009",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": "-dd- -> -gg- velar assimilation, Scots origin, and Traps A–D",
+      "case_section": "4. Phonological Mechanism (`-dd-` to `-gg-`) and Deeper Scots Origins",
+      "short_label": "American velar assimilation + Humbuggery/Doggery/hugger-muggery analogy vs. rival donors, *duggery myth, and Traps A–D",
+      "statement": "With zero British -gg- forms in Wright's EDD (1900–1904) and 1858 Kansas 'Scull-duddery' surviving in the political sense, American -dd- -> -gg- plausibly arose via progressive velar assimilation (/k...d-d/ -> /k...ɡ/) reinforced by Jacksonian Humbuggery, Doggery, and hugger-muggery (while thuggery is unrepresented in skulduggery.json), outweighing OFr./Irish/Scandinavian donor proposals, the cant *duggery ghost word, and eight Trap A–D misdate/OCR/toponym false leads.",
+      "rationale": "Primary scans document Humbuggery, Doggery, and hugger-muggery in 1830–1845 caucus rhetoric, evaluate Norse-Scots skuld- + duddery (inconclusive pre-1663), trace internet '*duggery = cheating' to Farmer & Henley's 1891 'DOGGERY', and refute Burke-and-Hare, pirate, 'BUGGERY'/'doggery' OCR, Old Norwegian 'skuldug', Ulster townland 'Duggery', and 1807–1866 serial misdates.",
+      "type": "phonological",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of British -gg- forms, 1830–1845 American -uggery/-oggery caucus analogues, refutation of *duggery/pirate/resurrectionist myths, and Trap A–D scan quarantines.",
+        "does_not_establish": "Direct observation of the oral -dd- -> -gg- shift, pre-1663 closure of Older Scots sculdudry, or corpus testing of collateral thuggery.",
+        "remaining_uncertainty": "Pre-1845 West Tennessee transitional spellings and pre-1663 Scottish compound evidence."
+      },
+      "limitations": [
+        "Evaluated phonological/analogical hypothesis; skulduggery.json contains zero records testing thuggery, and CERT-2400-132 uses external_archive_link."
+      ],
+      "resolution_criteria": [
+        "Search 1835–1845 Ulster/West Tennessee manuscripts for transitional spellings and pre-1663 Scottish records for sculdudry morphology."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2400-308",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1837/1840 'Humbuggery' and 'Wiggery' political rhyme template.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1830–1839 legislative-caucus 'Doggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1797–February 1845 executive-cabal 'hugger-muggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "EDD (1900–1904) zero British -gg- variants + Farmer & Henley 1891 'DOGGERY' source of *duggery myth.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-315",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Jamieson 1808 schuld vs. Scots duds/duddery audit.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-318",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Cleasby & Vigfusson 1874 Old Norse skuld ('fault, fine').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Godefroy 1884 audit weighing against Spitzer's OFr. escolorgier.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1780–1911 Gaelic dictionary audit weighing against Irish glossary Sgaldruth.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-319",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": " Chronological and phonological rebuttal of Harris's 1991 Scandinavian *skyldigeri.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1785–1860 cant dictionaries showing 0 *duggery entries.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-320",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "0 hits in 1829 Burke-and-Hare and 1724 Pyrates corpora.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-132",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1847 Diplomatarium Norvegicum Old Norwegian legal adjective 'skuldug'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-323",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1756 Burn law-book OCR 'DUGGERY' = '1. BUGGERY'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-324",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1843/1847 newsprint OCR 'duggery' = 'doggery'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-002",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1871 Yale Literary Magazine mis-indexed as 1836.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-131",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1880 Iowa Legislative Documents mis-indexed as 1866.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-321",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1886 Milwaukee and 1887 Try-Square serial misdates.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-322",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1890 Notes and Queries (cat. 1849) and 1893 'druggery' (cat. 1858).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2400-325",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1662/1698 County Tyrone townland 'Duggery' (Doogary) and modern paratext.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-004",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the pre-1845 parliamentary sculduddery / SCULLDUDDERY input.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-006",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Supplies the 1858 Kansas 'Scull-duddery' dental-consonant survival.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2400-008",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Supplies Upland-Southern/Anglo-American carrier prosopography.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "5885a36a8ca10bba15302ffd7a9074dc855415002fc3dec39b06d70c9ef7d2e9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "5885a36a8ca10bba15302ffd7a9074dc855415002fc3dec39b06d70c9ef7d2e9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2400-010",
+      "slug": "clm-2400-010",
+      "case_slug": "skulduggery",
+      "headword": "skulduggery",
+      "target_lexeme": null,
+      "case_section": "1. Two Classical Mysteries and the Lexicographical Baseline",
+      "short_label": "Witness-cluster deduplication across Burt 1754, Jamieson 1808, UK/US Scots novel editions, and 1845/1854 press clusters",
+      "statement": "Collation deduplicates Burt 1754 across 304/204, Jamieson 1808 across 205/315, three Edinburgh/U.S. novel edition pairs (206/210, 207/211, 209/212), the 1845–1846 Nashville session (104/105), and the May–June 1854 St. Paul pardon polemic (107/108/109).",
+      "rationale": "Separating transatlantic reprints, role splits, and multi-turn newspaper feuds prevents double-counting independent attestations.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Exact edition-pair, proof-plate, role-split, and polemic-cluster links in skulduggery.json.",
+        "does_not_establish": "Open scans for paywalled items 104, 105, and 107.",
+        "remaining_uncertainty": "Locating the lost 24 May 1854 daily issue of the Minnesota Daily Times."
+      },
+      "limitations": [
+        "Preserves transatlantic reception evidence while deduplicating underlying literary works."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2400-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1720 Anti-Priapeia plate containing Burt 1754 comparison band.",
+          "witness_note": "Cluster WCL-2400-01."
+        },
+        {
+          "ref": "CERT-2400-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Standalone Burt 1754 prose record.",
+          "witness_note": "Cluster WCL-2400-01."
+        },
+        {
+          "ref": "CERT-2400-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jamieson 1808 semantic record.",
+          "witness_note": "Cluster WCL-2400-02."
+        },
+        {
+          "ref": "CERT-2400-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jamieson 1808 etymological audit on the same page.",
+          "witness_note": "Cluster WCL-2400-02."
+        },
+        {
+          "ref": "CERT-2400-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1818 Edinburgh Heart of Mid-Lothian.",
+          "witness_note": "Cluster WCL-2400-03a."
+        },
+        {
+          "ref": "CERT-2400-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1821 Philadelphia Heart of Mid-Lothian.",
+          "witness_note": "Cluster WCL-2400-03a."
+        },
+        {
+          "ref": "CERT-2400-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1821 Edinburgh Ayrshire Legatees.",
+          "witness_note": "Cluster WCL-2400-03b."
+        },
+        {
+          "ref": "CERT-2400-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1823 New York Ayrshire Legatees.",
+          "witness_note": "Cluster WCL-2400-03b."
+        },
+        {
+          "ref": "CERT-2400-209",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1824 Edinburgh Redgauntlet Vol. I.",
+          "witness_note": "Cluster WCL-2400-03c."
+        },
+        {
+          "ref": "CERT-2400-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1824 New York Redgauntlet Vol. II.",
+          "witness_note": "Cluster WCL-2400-03c."
+        },
+        {
+          "ref": "CERT-2400-104",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "December 1845 Nashville legislative reports.",
+          "witness_note": "Cluster WCL-2400-04."
+        },
+        {
+          "ref": "CERT-2400-105",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "30 January 1846 Nashville legislative report.",
+          "witness_note": "Cluster WCL-2400-04."
+        },
+        {
+          "ref": "CERT-2400-107",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "25 May 1854 St. Paul Daily Minnesotan.",
+          "witness_note": "Cluster WCL-2400-05."
+        },
+        {
+          "ref": "CERT-2400-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "30 May 1854 Minnesota Weekly Times.",
+          "witness_note": "Cluster WCL-2400-05."
+        },
+        {
+          "ref": "CERT-2400-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "6 June 1854 Minnesota Weekly Times.",
+          "witness_note": "Cluster WCL-2400-05."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "49432cf83c623d5670befac3fbf87ce451450da8ba196226355bc6dadc88b9d0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for Case 2400.",
+          "content_fingerprint": "49432cf83c623d5670befac3fbf87ce451450da8ba196226355bc6dadc88b9d0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

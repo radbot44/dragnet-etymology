@@ -1,6 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClaimBadges from '../../components/ClaimBadges.astro';
 import { SITE_ACRONYM, SITE_GITHUB_URL } from '../../consts';
+import {
+  EVIDENCE_RELATIONSHIP_LABELS,
+  getClaimsForCase,
+  getClaimsForCitation,
+  hasClaimLedger,
+} from '../../lib/claims';
 import {
   getAllCitations,
   VERIFICATION_LABELS,
@@ -17,6 +24,10 @@ export function getStaticPaths() {
 }
 
 const { citation: c } = Astro.props as { citation: CitationRecord };
+const backlinks = getClaimsForCitation(c.id).filter((b) => b.claim.lifecycle_status === 'active');
+const caseHasClaims = hasClaimLedger(c.case_slug);
+const caseClaimsCount = getClaimsForCase(c.case_slug, { includeNonActive: false }).length;
+
 const verifyTitle = `[Human Verification] ${c.id} (${c.attested_form}, ${c.date_display})`;
 const verifyBody = [
   `I independently inspected the primary source scan for **${c.id}** (${c.source_url}):`,
@@ -39,6 +50,14 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
       <a href={`/citations/?headword=${encodeURIComponent(c.headword)}`}>← More citations for {c.headword}</a>
       <span> · </span>
       <a href={`/cases/${c.case_slug}/`}>Case File ({c.headword})</a>
+      {caseHasClaims && (
+        <>
+          <span> · </span>
+          <a href={`/claims/?case=${encodeURIComponent(c.case_slug)}`}>
+            Claims ({caseClaimsCount})
+          </a>
+        </>
+      )}
       <span> · </span>
       <a href={`/ledgers/${c.case_slug}.json`} target="_blank" rel="noopener noreferrer">Raw JSON Ledger</a>
     </nav>
@@ -58,6 +77,7 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
     <nav class="jump-links" aria-label="On this record">
       <a href="#scan">{c.scan.hosted_path ? 'View scan' : 'Find at the archive'}</a>
       <a href="#transcription">Read transcription</a>
+      <a href="#claims-using-evidence">Claims using this evidence ({backlinks.length})</a>
     </nav>
     </header>
 
@@ -160,5 +180,107 @@ const verifyIssueUrl = `${SITE_GITHUB_URL}/issues/new?title=${encodeURIComponent
     )}
     </section>
     </div>
+
+    <section id="claims-using-evidence" class="split-section" style="margin-top: 2.25rem;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.55rem;">
+        <h2 style="font-family: var(--font-serif); font-size: 1.45rem; margin: 0;">
+          Claims Using This Evidence ({backlinks.length})
+        </h2>
+        {backlinks.length > 0 && (
+          <a href={`/claims/?ref=${encodeURIComponent(c.id)}`} style="font-size: 0.88rem;">
+            Open in Claim Index →
+          </a>
+        )}
+      </div>
+
+      {backlinks.length > 0 ? (
+        <div class="citation-table-wrap" role="region" aria-label={`Claims referencing ${c.id}`} tabindex="0">
+          <table class="citation-table responsive-evidence-table" role="table">
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">Claim</th>
+                <th scope="col" role="columnheader">Proposition</th>
+                <th scope="col" role="columnheader">Role &amp; Directness</th>
+                <th scope="col" role="columnheader">How {c.id} Bears on This Claim</th>
+                <th scope="col" role="columnheader">Claim Status</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              {backlinks.map(({ claim, edge, isAdvancingBaselineWitness }) => (
+                <tr role="row">
+                  <td role="cell" style="font-family: var(--font-mono); font-size: 0.8rem;">
+                    <span class="mobile-label" aria-hidden="true">Claim</span>
+                    <div>
+                      <a href={`/claims/${claim.slug}/`} style="font-weight: 700;">{claim.id}</a>
+                    </div>
+                    <div style="font-family: var(--font-sans); font-size: 0.76rem; color: var(--ink-muted);">
+                      {claim.headword}
+                    </div>
+                    {isAdvancingBaselineWitness && (
+                      <div style="margin-top: 0.25rem;">
+                        <span class="badge badge-class-documentary">Advancing witness</span>
+                      </div>
+                    )}
+                  </td>
+
+                  <td role="cell">
+                    <span class="mobile-label" aria-hidden="true">Proposition</span>
+                    <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 0.2rem;">
+                      <a href={`/claims/${claim.slug}/`}>{claim.short_label}</a>
+                    </div>
+                    <div class="citation-source-location">{claim.statement}</div>
+                  </td>
+
+                  <td role="cell">
+                    <span class="mobile-label" aria-hidden="true">Role &amp; directness</span>
+                    <div class="claim-badge-row">
+                      <span class={`badge badge-rel-${edge.relationship}`}>
+                        {EVIDENCE_RELATIONSHIP_LABELS[edge.relationship]}
+                      </span>
+                      <span class="badge badge-directness">{edge.directness}</span>
+                    </div>
+                  </td>
+
+                  <td role="cell" style="font-size: 0.86rem;">
+                    <span class="mobile-label" aria-hidden="true">How {c.id} bears on claim</span>
+                    <div>{edge.reason}</div>
+                    {edge.witness_note && (
+                      <div class="witness-note">
+                        <strong>Witness note:</strong> {edge.witness_note}
+                      </div>
+                    )}
+                  </td>
+
+                  <td role="cell">
+                    <span class="mobile-label" aria-hidden="true">Claim status</span>
+                    <ClaimBadges
+                      type={claim.type}
+                      assessment={claim.assessment}
+                      reviewStatus={claim.review_status}
+                      hasStaleReviews={claim.has_stale_reviews}
+                      externallyRecognized={claim.external_recognition.length > 0}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : caseHasClaims ? (
+        <p class="citation-empty" style="font-size: 0.9rem; color: var(--ink-muted);">
+          No active claim proposition directly links <code>{c.id}</code> as an individual edge (for example, individual
+          rejected leads or supplementary controls summarized at the corpus level).{' '}
+          <a href={`/claims/?case=${encodeURIComponent(c.case_slug)}`}>
+            Browse all {caseClaimsCount} structured claims for {c.headword} →
+          </a>
+        </p>
+      ) : (
+        <p class="citation-empty" style="font-size: 0.9rem; color: var(--ink-muted);">
+          Structured claim-ledger decomposition for <strong>{c.headword}</strong> is pending integration into{' '}
+          <a href="/claims/">the Claim Index</a>. Read the narrative synthesis in the{' '}
+          <a href={`/cases/${c.case_slug}/`}>{c.headword} Case File</a>.
+        </p>
+      )}
+    </section>
   </article>
 </BaseLayout>

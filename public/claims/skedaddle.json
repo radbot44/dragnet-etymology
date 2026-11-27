@@ -1,0 +1,1431 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "skedaddle",
+  "case_slug": "skedaddle",
+  "case_number": "Case 2600",
+  "target_id": "TGT-002",
+  "headword": "skedaddle",
+  "updated_at": "2026-11-26",
+  "summary_note": "Claim-level evidence decomposition for Case 2600 (skedaddle, dictionary_submitted): anchors intransitive skedaddle, v. at June 23, 1859 (Kenosha Telegraph and Tribune), collapses the 1859–1860 'Chickenville' exchange reprints, establishes July 11, 1861 Kansas–Missouri military usage and Bethany, MO provenance for OED's August 10, 1861 baseline, antedates nominal skedaddle, n. to July 25, 1861 and skedaddler, n. to May 9, 1862 (correcting Kenealy 1850 -> 1865), separates post-October 1862 British transitive 'spill' glosses from pre-1859 Northern British scaddle/skaddle ('bolt in fright'), and refutes Greek, Scandinavian, and Gaelic folk etymologies across all 53 top-level ledger citations.",
+  "claims": [
+    {
+      "id": "CLM-2600-001",
+      "slug": "clm-2600-001",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (intransitive: 'depart hastily, clear out, flee')",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "June 23, 1859 Kenosha Telegraph and Tribune antedating of skedaddle, v. ('skedaddled for home')",
+      "statement": "M. Loraine Taylor's 'A Pike's Peak Song' in The Kenosha Telegraph and Tribune (Kenosha, WI, June 23, 1859, p. 1, col. 4: 'Got aboard of the cars and skedaddled for home', narrating disillusioned gold-seekers reaching St. Joseph, Missouri on June 1, 1859) supplies the earliest known verified print attestation of skedaddle, v., antedating OED Online's August 10, 1861 baseline by 2 years, 1 month, and 18 days, Green's Dictionary of Slang's January 12, 1860 baseline by 6 months and 20 days, and Goranson & Liberman's August 13, 1859 Red Wing Sentinel baseline by 1 month and 21 days (51 days).",
+      "rationale": "Direct masthead and column-ink inspection of the June 23, 1859 Kenosha Telegraph and Tribune confirms unquoted past-tense 'skedaddled for home' in a contemporary St. Joseph / Hannibal & St. Joseph Railroad overland return ballad two years before the American Civil War.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Masthead-verified pre-Civil War print attestation of intransitive skedaddle, v. ('skedaddled for home') on June 23, 1859, tied directly to the June 1, 1859 St. Joseph, Missouri Pike's Peak turnaround corridor.",
+        "does_not_establish": "Military combat-rout specialization (which emerges in July 1861) or the ultimate pre-1859 oral date of coinage in frontier speech.",
+        "remaining_uncertainty": "Whether local St. Joseph, Hannibal, or Geneva (WI) sheets printed Taylor's song or oral 'skedaddle' between June 1 and June 22, 1859."
+      },
+      "limitations": [
+        "Attests civilian overland-emigrant hasty departure ('skedaddled for home') rather than battlefield desertion, though syntactically and semantically identical to OED's intransitive 'retreat or retire hastily; flee' entry.",
+        "Ignores the corrupted auto-ingested frontmatter date in skedaddle.md ('1911' / 1919 OED1 fascicle date) and compares directly against OED Online's true August 10, 1861 quotation baseline."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the masthead-verified June 23, 1859 Kenosha Telegraph and Tribune scan (p. 1, col. 4) printing 'Got aboard of the cars and skedaddled for home'.",
+          "witness_note": "Earliest verified print witness of skedaddle, v. (publication_status: dictionary_submitted)."
+        },
+        {
+          "ref": "CERT-2600-308",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Provides OED First Edition's (1911 fascicle / 1919 Vol. IX, p. 128) original 1862 verbal baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's August 10, 1861 New-York Daily Tribune baseline and Green's Dictionary of Slang's January 12, 1860 Wellsboro Agitator baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-310",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Documents Dave Wilton's (Wordorigins.org, 2021) summary of the January 12, 1860 Agitator verb baseline.",
+          "witness_note": "Secondary etymological reference (verification_level: discovered)."
+        },
+        {
+          "ref": "CERT-2600-311",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Documents Stephen Goranson and Mark Liberman's (Language Log, July 10, 2025) August 13, 1859 Red Wing Sentinel prior-art benchmark.",
+          "witness_note": "Secondary scholarly benchmark (verification_level: discovered)."
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "skedaddle, v. (intransitive: 'retreat or retire hastily; flee, run away')",
+        "edition_or_revision": "OED Online entry (from OED2 1989; consulted November 2026)",
+        "baseline_date": "1861-08-10",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.loc.gov/resource/sn83030213/1861-08-10/ed-1/?sp=5",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2600-101",
+        "attested_date": "1859-06-23",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 years, 1 month, and 18 days (1859-06-23 vs. 1861-08-10)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a56003e07359c71598b0749062f3f68d45f410e10e6f57f1cb434640d23d7b42",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for June 23, 1859 Kenosha Telegraph and Tribune verbal antedating.",
+          "content_fingerprint": "a56003e07359c71598b0749062f3f68d45f410e10e6f57f1cb434640d23d7b42"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2600-001-01",
+          "claim_id": "CLM-2600-001",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 7 (Independent Scholarly Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "archival",
+            "transcription",
+            "baseline"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2600-101",
+            "CERT-2600-308",
+            "CERT-2600-309",
+            "CERT-2600-310",
+            "CERT-2600-311"
+          ],
+          "findings": "Directly inspected CERT-2600-101.webp (June 23, 1859 Kenosha Telegraph and Tribune, Vol. 20, No. 2, p. 1, col. 4: 'Got aboard of the cars and skedaddled for home'), confirming masthead ink, 2-year, 1-month, 18-day advance over OED Online's Aug. 10, 1861 baseline (51 days ahead of Goranson & Liberman's Aug. 13, 1859 Red Wing Sentinel), and explicit rejection of the corrupted '1911'/1919 frontmatter date.",
+          "objections": [],
+          "material_fingerprint_at_review": "a56003e07359c71598b0749062f3f68d45f410e10e6f57f1cb434640d23d7b42",
+          "evidence_fingerprints_at_review": {
+            "CERT-2600-101": "4c427a6c4a809f85cf5e920419d9ecc18107f1bd64d8b6c675d6181caa946872",
+            "CERT-2600-308": "c7226c99c4a32ed736630fefa61a8b615c8bc646f90358062ba1b366307e65c2",
+            "CERT-2600-309": "76d8460b80c342eb63ed4d5cc89385f480a44bdfd2b8aeda59b9c7dca01f7b11",
+            "CERT-2600-310": "3e66a37f6bc489cbc594aa2a2ab396a83c18bae9c1e945b86227d3499393f46e",
+            "CERT-2600-311": "5447e366f3e948d652aaa34d0e0094ab27eacf8da8dfe754377e46cfa8bb2b2d"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-002",
+      "slug": "clm-2600-002",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (1859–1860 'Chickenville / Franklin' exchange-reprint substitution)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "1859–1860 'Chickenville' exchange-reprint collation proving minimal-pair replacement of 'scatter'",
+      "statement": "Textual collation across The Red Wing Sentinel (August 13, 1859, 'ske- / daddle' across a line break), The Daily Pittsburgh Post (December 13, 1859, earliest unhyphenated printing), and The Wellsboro Agitator (January 12, 1860) proves that all three pre-1861 items are newspaper-exchange reprints of one humorous 'Chickenville / steamboat Franklin' Hoosier flatboat sketch originally printed in 1850–1852 with the punchline 'You'd oughter see[n] the/that gang scatter', demonstrating exact syntactic and semantic substitution of skedaddle for intransitive scatter in summer 1859.",
+      "rationale": "Matching the 1859–1860 text word-for-word against the April 25, 1850 Star of the North and July 14, 1852 Palmetto Standard versions prevents false triple-counting of regional exchange reprints while supplying a controlled minimal pair ('scatter' -> 'skedaddle').",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Single-source exchange genealogy uniting the August 13, 1859, December 13, 1859, and January 12, 1860 printings as one rewritten 1850 flatboat yarn, plus exact minimal-pair synonymy with intransitive 'scatter'.",
+        "does_not_establish": "Three independent regional coinages in Minnesota, western Pennsylvania, and northern Pennsylvania.",
+        "remaining_uncertainty": "Identity of the summer-1859 Mississippi or Missouri Valley exchange paper that first replaced 'scatter' with 'skedaddle' prior to August 13, 1859."
+      },
+      "limitations": [
+        "CERT-2600-102 (Aug. 13, 1859), CERT-2600-103 (Dec. 13, 1859), and CERT-2600-104 (Jan. 12, 1860) must be collapsed to 1 underlying rewritten exchange text in all witness counts."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the primary Minnesota Historical Society scan of the August 13, 1859 Red Wing Sentinel printing ('ske- / daddle') and documents the 1850/1852 'scatter' parent text.",
+          "witness_note": "Exchange printing #1 of the rewritten 'Chickenville / Franklin' anecdote; collapse with CERT-2600-103 and CERT-2600-104 as 1 text."
+        },
+        {
+          "ref": "CERT-2600-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the December 13, 1859 Daily Pittsburgh Post reprint supplying the earliest verified continuous unhyphenated bare infinitive 'skedaddle'.",
+          "witness_note": "Exchange printing #2 of the same anecdote as CERT-2600-102."
+        },
+        {
+          "ref": "CERT-2600-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the January 12, 1860 Wellsboro Agitator reprint cited as the verb baseline in Green's Dictionary of Slang and Wordorigins.",
+          "witness_note": "Exchange printing #3 of the same anecdote as CERT-2600-102."
+        },
+        {
+          "ref": "CERT-2600-311",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Records Goranson & Liberman's July 10, 2025 Language Log identification of the August 13, 1859 Red Wing Sentinel witness.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "31925bd8e6ce1509d8318c2a119dd0f9168f58008a8b4824903420e4dc3f115e",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim collapsing the three 1859–1860 'Chickenville' reprints.",
+          "content_fingerprint": "31925bd8e6ce1509d8318c2a119dd0f9168f58008a8b4824903420e4dc3f115e"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-003",
+      "slug": "clm-2600-003",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (pre-Civil War Missouri–Kansas–Platte prose currency)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "February 28 and March 23, 1861 Kansas and Colorado prose antedatings prior to Fort Sumter",
+      "statement": "Independent pre-Fort Sumter prose attestations in Sol. Miller's White Cloud Kansas Chief (February 28, 1861, '\"skedaddled\" for home', printed directly across the Missouri River from Holt County, Missouri) and Rocky Mountain hunting correspondence signed 'ALGUNO' in New York's Wilkes' Spirit of the Times (March 23, 1861, 'before they skedaddle', unquoted near Denver) antedate OED Online's August 10, 1861 baseline by 5 months and 13 days and prove active Missouri–Kansas–Platte currency independent of the 1859 flatboat exchange item.",
+      "rationale": "Both early-1861 witnesses are newly composed non-syndicated prose texts along the same St. Joseph–White Cloud–Platte River overland corridor as the June 23, 1859 Pike's Peak ballad, confirming regional vernacular entrenchment before the outbreak of Civil War hostilities on April 12, 1861.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Two independent pre-Sumter 1861 prose witnesses along the Kansas–Missouri–Colorado trail corridor, including unquoted Eastern sporting-press reception in New York on March 23, 1861.",
+        "does_not_establish": "Widespread Eastern urban currency outside Western frontier correspondence prior to summer 1861.",
+        "remaining_uncertainty": "Identity of the Colorado Territory correspondent writing under the pseudonym 'ALGUNO' in Wilkes' Spirit of the Times."
+      },
+      "limitations": [
+        "CERT-2600-106 carries an internal composition dateline from Colorado Territory ('Feb. 20, 1861') but is anchored strictly to its March 23, 1861 New York print date."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the February 28, 1861 White Cloud Kansas Chief prose witness ('\"skedaddled\" for home') on the Kansas–Missouri border.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the March 23, 1861 Wilkes' Spirit of the Times witness ('before they skedaddle', unquoted in Rocky Mountain antelope-hunting prose).",
+          "witness_note": "Anchored to March 23, 1861 print issue date rather than internal Feb. 20, 1861 letter dateline."
+        },
+        {
+          "ref": "CERT-2600-101",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Establishes the earlier June 23, 1859 St. Joseph overland-corridor anchor on the same frontier route.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's August 10, 1861 verbal baseline.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "skedaddle, v. (intransitive: 'retreat or retire hastily; flee')",
+        "edition_or_revision": "OED Online entry (from OED2 1989; consulted November 2026)",
+        "baseline_date": "1861-08-10",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.loc.gov/resource/sn83030213/1861-08-10/ed-1/?sp=5",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2600-105",
+        "attested_date": "1861-02-28",
+        "attested_date_precision": "day",
+        "computed_advance_display": "5 months and 13 days (1861-02-28 vs. 1861-08-10)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "77ba783d33d26eb20660b0ccfb679b0f811e209c62d608a8262664cca38f95cb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for February–March 1861 pre-Sumter frontier prose attestations.",
+          "content_fingerprint": "77ba783d33d26eb20660b0ccfb679b0f811e209c62d608a8262664cca38f95cb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-004",
+      "slug": "clm-2600-004",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (Civil War military-rout sense)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "July 11, 1861 Kansas–Missouri military-raid antedating and Bethany, MO provenance of OED's 1861 baseline",
+      "statement": "Primary newsprint scans prove that skedaddle entered Civil War military reporting along the Kansas–Missouri border on July 11, 1861 in the White Cloud Kansas Chief (ten days before First Bull Run, reporting Iowa and Kansas Union troops arresting Holt County, Missouri secessionists who had not 'skedaddled'), and demonstrate that OED Online's canonical August 10, 1861 New-York Daily Tribune witness ('skiddaddled') was reprinted 'From The Missouri Democrat' (datelined Bethany, Harrison County, Missouri, July 31, 1861) with an explicit Iowa/Northwest Missouri Home-Guard slang gloss.",
+      "rationale": "Inspecting the full column of OED's August 10, 1861 Tribune citation alongside the July 11, 1861 Kansas Chief and 1862 Louisville/Chicago/Des Moines editorial testimonies overturns popular claims that the military verb was coined at First Bull Run in Virginia on July 21, 1861, pinning the military pivot to Iowa and Missouri regiments in northern Missouri.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Thirty-day print antedating (July 11, 1861 vs. August 10, 1861) of OED's military-flight usage prior to First Bull Run, plus proof that OED's August 10, 1861 New York Tribune witness reprints a July 31, 1861 Bethany, Missouri dispatch from the St. Louis Missouri Democrat.",
+        "does_not_establish": "Survival of the parent late-July or early-August 1861 St. Louis Missouri Democrat issue on open scans.",
+        "remaining_uncertainty": "Exact publication date between August 1 and August 7, 1861 of the parent St. Louis Missouri Democrat issue reprinted by the New-York Daily Tribune."
+      },
+      "limitations": [
+        "CERT-2600-109 is anchored strictly to its August 10, 1861 New-York Daily Tribune print date, noting its internal 'July 31, 1861' Bethany, Missouri dispatch dateline parenthetically per print-date rules."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the July 11, 1861 White Cloud Kansas Chief report of Union troops crossing into Holt Co., MO ('such Secessionists as had not \"skedaddled\"') ten days before First Bull Run.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the full scan of OED's August 10, 1861 New-York Daily Tribune citation ('skiddaddled'), revealing the credit 'From The Missouri Democrat' and Bethany, MO (July 31, 1861) dateline.",
+          "witness_note": "Reprint of St. Louis Missouri Democrat correspondence; anchored to Aug. 10, 1861 Tribune print date."
+        },
+        {
+          "ref": "CERT-2600-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides George D. Prentice's February 3, 1862 Louisville Daily Journal gloss identifying 'skedaddle' as a 'phrase of Western origin' for military retreat.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides the March 12, 1862 Chicago Daily Tribune reprinting the Des Moines Iowa State Register's testimony that 'skedaddle' was 'in common use among the \"Hawkeys\" ten years ago'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's August 10, 1861 New-York Daily Tribune baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2600-001",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Demonstrates pre-war civilian currency along the exact same St. Joseph / northern Missouri corridor two years before the July 1861 Home-Guard raids.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "skedaddle, v. (Civil War military-flight usage)",
+        "edition_or_revision": "OED Online entry (from OED2 1989; consulted November 2026)",
+        "baseline_date": "1861-08-10",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/skedaddle_v",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2600-107",
+        "attested_date": "1861-07-11",
+        "attested_date_precision": "day",
+        "computed_advance_display": "30 days (1861-07-11 vs. 1861-08-10)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f707cc6e9944802fd838e924fceb7e9fddeb1260dbdedada3e2906724345f8bf",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for July 11, 1861 military-sense antedating and Bethany, MO provenance.",
+          "content_fingerprint": "c4833045613fc3c531e2bac8ccf3dab06815ea694e331e2fda84a4ddfe82c438"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Set OED3 baseline source_url_or_ref to canonical OED entry URL and inspection_mode to inherited_from_existing_research.",
+          "content_fingerprint": "f707cc6e9944802fd838e924fceb7e9fddeb1260dbdedada3e2906724345f8bf"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-005",
+      "slug": "clm-2600-005",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "Fort Skadaddle (Eastern-theater Army of the Potomac proper-name bridge)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "October 18–23, 1861 'Fort Skadaddle' attribution to Capt. William N. Angle (35th NY Vol. Inf.)",
+      "statement": "While the October 18, 1861 New-York Daily Tribune reported that abandoned Confederate earthworks near Munson's Hill, Virginia had been christened 'Fort Skadaddle' by 'German soldiers', Sgt. J. C. Otis's October 23, 1861 letter from Co. B, 35th New York Volunteer Infantry (Rebellion Record Vol. III) proves the fort was named by Capt. William N. Angle of Copenhagen, Lewis County, Upstate New York—pairing 'Skadaddle' with Upstate New York vernacular 'Skioute' and confirming pre-war Northern New York regional currency parallel to the Missouri–Iowa frontier.",
+      "rationale": "Cross-checking the Tribune report with eyewitness regiment correspondence corrects a persistent ethnic misattribution ('German soldiers') and documents independent Army of the Potomac adoption in October 1861.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "October 18, 1861 Eastern-theater print debut of 'Fort Skadaddle' and eyewitness prosopographical attribution of the naming to Capt. William N. Angle of Lewis County, New York (35th NY Vol. Inf.).",
+        "does_not_establish": "Pre-1859 print attestation in Upstate New York newspapers.",
+        "remaining_uncertainty": "Location of the original October 26, 1861 New York Evening Post newspaper page from which Frank Moore's Rebellion Record Vol. III reprinted Sgt. Otis's October 23, 1861 letter."
+      },
+      "limitations": [
+        "CERT-2600-111 is verified on scan in Frank Moore's Rebellion Record Vol. III (1862/1866, ' Poetry and Incidents', p. 71), reprinting the October 26, 1861 New York Evening Post."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Fort Skadaddle' at Munson's Hill, Virginia in the October 18, 1861 New-York Daily Tribune (three days earlier than Wilton's Oct. 21 Baltimore American note).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Sgt. J. C. Otis's October 23, 1861 camp letter proving Capt. William N. Angle (Co. B, 35th NY Vols., Lewis County, NY) named 'Fort Skadaddle' and glossing regional 'skadaddle' and 'Skioute'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0fee01422d3a973fffead4fa08b7a040a268e92fde74d31cc234807e361d5334",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for October 1861 'Fort Skadaddle' prosopography in Virginia.",
+          "content_fingerprint": "0fee01422d3a973fffead4fa08b7a040a268e92fde74d31cc234807e361d5334"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-006",
+      "slug": "clm-2600-006",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, n. ('hasty flight or retreat') and skedaddling, ppl. adj.",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "July 25, 1861 White Cloud Kansas Chief antedating of nominal skedaddle, n. by 9 calendar years",
+      "statement": "White Cloud Kansas Chief (July 25, 1861, p. 2, col. 4: headline 'ANOTHER \"SKEDADDLE.\"' and body text 'So ended the \"Skedaddling\" expedition against St. Joseph') antedates OED1 and OED Online's 1870 baseline for nominal skedaddle, n. by nine calendar years (and Wilton's September 11, 1862 San Francisco Steamer Bulletin baseline by more than thirteen months), supplies the earliest verified participial adjective 'Skedaddling', and precedes August 23, 1862 Vanity Fair nominal and attributive usage ('Saddle vs. Skedaddle', 'Skedaddle horses').",
+      "rationale": "Direct scan inspection of the July 25, 1861 Kansas Chief confirms full count-noun conversion with indefinite determiner 'ANOTHER' four days after First Bull Run, proving immediate nominalization along the Missouri border.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Nine-calendar-year antedating (July 25, 1861 vs. 1870) of OED's baseline for skedaddle, n., simultaneous participial adjective 'Skedaddling', and 1862 Eastern magazine nominalization.",
+        "does_not_establish": "Unquoted lowercase nominal prose prior to 1862 (the July 25, 1861 Kansas Chief places 'SKEDADDLE' and 'Skedaddling' in quotation marks).",
+        "remaining_uncertainty": "None on the July 25, 1861 masthead and column text."
+      },
+      "limitations": [
+        "OED1 and OED Online's 1870 nominal baseline (Mortimer Collins, Vivian Romance) is recorded at year precision, bounding computed advance display to 9 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the July 25, 1861 White Cloud Kansas Chief scan attesting count noun 'ANOTHER \"SKEDADDLE.\"' and participial modifier '\"Skedaddling\" expedition'.",
+          "witness_note": "Submitted nominal antedating witness (publication_status: dictionary_submitted)."
+        },
+        {
+          "ref": "CERT-2600-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unquoted title noun 'Saddle vs. Skedaddle' and attributive compound 'Skedaddle horses' in the August 23, 1862 New York Vanity Fair.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-308",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED1's (1911/1919) 1870 baseline for skedaddle, n.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Records OED Online's 1870 baseline for skedaddle, n.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-310",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Records Dave Wilton's September 11, 1862 San Francisco Steamer Bulletin ('Their skedaddle') prior-art note.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "skedaddle, n. ('a hasty or precipitate retreat or flight')",
+        "edition_or_revision": "OED Online entry modified December 2024 (consulted November 2026)",
+        "baseline_date": "1870",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://archive.org/details/newenglishdictio91unse/page/n141/mode/1up",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2600-108",
+        "attested_date": "1861-07-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "9 calendar years (1861-07-25 vs. 1870)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "577772ba700e191314284601a164392d5eb2708a9797c2ca47c855ec3ab7c047",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for July 25, 1861 nominal skedaddle, n. antedating.",
+          "content_fingerprint": "577772ba700e191314284601a164392d5eb2708a9797c2ca47c855ec3ab7c047"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-007",
+      "slug": "clm-2600-007",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddler, n. ('fugitive, runaway, draft evader') and Skedaddledom, n.",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "May 9, 1862 Louisville Daily Democrat skedaddler, n. antedating and 1850/1865 Kenealy edition audit",
+      "statement": "Edition-by-edition collation of Edward Vaughan Kenealy's Goethe: A New Pantomime (1st ed. 1850: 0 hits) against his revised A New Pantomime (1865, p. 393: 'base Skedaddler') refutes Green's Dictionary of Slang's implied 1850 British dating for skedaddler, n., while the Louisville Daily Democrat (May 9, 1862, p. 1, col. 3: 'the skedaddlers driven South') antedates Kenealy's true 1865 edition by three calendar years, followed on June 18, 1862 by territorial 'Skedaddledom' (Urbana Union) and on April 24, 1868 by legal attributive '\"Skedaddler Act\"' (Bedford Gazette).",
+      "rationale": "Comparing Kenealy's 1850 and 1865 printings removes a false pre-Civil War British derivative mirage, restoring agentive skedaddler, n. and nonce-formation Skedaddledom to spring-1862 Union Civil War journalism.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Falsification of the '1850' Kenealy dating (actually 1865 revised edition), three-calendar-year antedating of skedaddler, n. to May 9, 1862, and 1862–1868 morphological radiation ('Skedaddledom', 'Skedaddler Act').",
+        "does_not_establish": "Any pre-1862 attestation of agentive skedaddler, n.",
+        "remaining_uncertainty": "Whether April 1862 Shiloh or Yorktown campaign columns printed 'skedaddler' slightly ahead of May 9, 1862."
+      },
+      "limitations": [
+        "Kenealy's revised A New Pantomime (1865) is dated at year precision, bounding computed advance display to 3 calendar years."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unquoted plural 'the skedaddlers driven South' in the May 9, 1862 Louisville Daily Democrat.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves 'base Skedaddler' appears on p. 393 of Kenealy's 1865 revised A New Pantomime and is completely absent from Kenealy's 1850 first edition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests morphological derivative 'Skedaddledom' ('Rebel territory') in an 86th Ohio Vol. Inf. camp letter printed June 18, 1862 in the Urbana Union.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-218",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Reconstruction statutory nickname '\"Skedaddler Act\"' (penalizing Civil War draft evaders returning from Canada) in the April 24, 1868 Bedford Gazette.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-309",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Green's Dictionary of Slang's entry for skedaddler, n. citing Kenealy under the 1850 first-edition date.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang (corrected Kenealy edition baseline)",
+        "entry_and_sense": "skedaddler, n. ('one who runs away, fugitive, deserter')",
+        "edition_or_revision": "E. V. Kenealy, A New Pantomime (London: Reeves & Turner, 1865, p. 393; misdated 1850 in GDoS)",
+        "baseline_date": "1865",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/ebr6wyy",
+        "checked_date": "2026-11-26",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-2600-114",
+        "attested_date": "1862-05-09",
+        "attested_date_precision": "day",
+        "computed_advance_display": "3 calendar years (1862-05-09 vs. 1865)",
+        "inspection_mode": "inherited_from_existing_research"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "8abc197179d5362a296c38b543179efc5f0e83036672613cf57c52a3bea9b82c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for May 9, 1862 skedaddler antedating and 1850/1865 Kenealy audit.",
+          "content_fingerprint": "54a39323afabea60683fdbd6da30202e1b2a8aa187a08aa77bb7c366246f6504"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Replaced mis-pasted Matsell 1859 IA URL on skedaddler baseline with Green's Dictionary of Slang entry URL and set inspection_mode to inherited_from_existing_research.",
+          "content_fingerprint": "8abc197179d5362a296c38b543179efc5f0e83036672613cf57c52a3bea9b82c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-008",
+      "slug": "clm-2600-008",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. and n. (1862–1892 national and imperial register diffusion)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "1862–1892 register elevation from Union sheet music and Lincoln's 1863 verse to British and colonial prose",
+      "statement": "Between 1862 and 1892, skedaddle diffused rapidly from Civil War parodies and sheet music (John C. Molter's 1862 Chicago 'Skedaddle' Comic Song / Quick Step and Frank Moore's 1864 Songs of the Soldiers) to President Abraham Lincoln's authenticated July 19, 1863 White House holograph verse ('And we skedaddled back again'), domestic British fiction in Anthony Trollope's The Last Chronicle of Barset (1867, where Mrs. Dale remarks 'Oh, Lily, what a word!'), and Anglo-Australian colonial memoirs in James Inglis's Tent Life in Tigerland (1888/1892).",
+      "rationale": "Authenticated manuscript and book scans trace both rapid wartime prestige adoption in the United States and contemporaneous British metalinguistic perception of skedaddle as a novel imported Americanism in 1867.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Primary manuscript, sheet-music, and literary milestones documenting American elite adoption (Lincoln July 19, 1863) and transatlantic/colonial literary diffusion (Trollope 1867; Inglis 1888/1892).",
+        "does_not_establish": "Pre-1862 British colloquial currency prior to American Civil War newspaper dispatches.",
+        "remaining_uncertainty": "None on the authenticated Brown University Lincoln holograph or published literary editions."
+      },
+      "limitations": [
+        "CERT-2600-213 (Molter 1862 sheet music) and CERT-2600-215 (Moore 1864 Songs of the Soldiers) both set or reprint Thomas Bailey Aldrich's May 31, 1862 Vanity Fair parody of Longfellow's 'Excelsior'."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies LoC 1862 Chicago sheet-music deposits ('\"Skedaddle\" Comic Song' and 'Skedaddle Quick Step' by John C. Molter).",
+          "witness_note": "Musical setting of T. B. Aldrich's May 1862 parody."
+        },
+        {
+          "ref": "CERT-2600-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies Abraham Lincoln's signed July 19, 1863 White House holograph verse ('And we skedaddled back again'), authenticated by John Hay.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents soldier-songbook canonization of 'Skedaddle!' in Frank Moore's 1864 Songs of the Soldiers (pp. 123–124).",
+          "witness_note": "Anthology reprint of T. B. Aldrich's parody."
+        },
+        {
+          "ref": "CERT-2600-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests British domestic literary reception ('you can skedaddle out of the house' — 'Oh, Lily, what a word!') in Anthony Trollope's 1867 Last Chronicle of Barset.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests unglossed Anglo-Australian/colonial prose usage ('made the elephants \"skedaddle\"') in James Inglis's Tent Life in Tigerland (1888/1892).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-201",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents May 1862 antiquarian debate over Civil War 'skedaddle' in The Historical Magazine (New York).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-202",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents August 2, 1862 editorial commentary on the wartime vogue of 'skedaddle' in Philadelphia's The Press.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c597da0900ad94068b39542f9c254b6acc8a17da1f548a92becb313383e513c3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 claim extraction for 1862–1892 national and imperial register diffusion.",
+          "content_fingerprint": "c597da0900ad94068b39542f9c254b6acc8a17da1f548a92becb313383e513c3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-009",
+      "slug": "clm-2600-009",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (British/Scots transitive 'spill milk, scatter potatoes/coals' vs. US intransitive 'flee')",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Post-October 1862 print chronology of British dialectal 'spill/scatter' attestations vs. 1859 US priority",
+      "statement": "Forensic audit of pre- and post-1862 British and Scottish regional glossaries proves that zero pre-October 1862 printed attestations exist for British dialectal transitive skedaddle ('to spill milk/liquids or scatter potatoes/coals from a cart'): the word is absent from Jamieson (1808/1825), Brockett (1825/1846), Halliwell (1847), Wright (1857), and William Dickinson's Glossary of the Words and Phrases of Cumberland (1859, directly across the Solway Firth from Dumfriesshire), whereas 100% of printed British 'spill' citations—beginning with Viscount Hill's October 13, 1862 London Times letter (Notes & Queries Oct. 25, 1862), Atlantic Monthly (Aug. 1877), Mackay (1888), and Wright's EDD (1904/1905)—were elicited after American Civil War fame.",
+      "rationale": "Separating documented print chronology from retrospective oral memory shows a 3-year, 3-month, and 20-day American print priority (June 23, 1859 vs. October 13, 1862) and exposes extensive post-1862 textual copying from Lord Hill, the London Spectator, and Atlantic Monthly into Hotten (1864), Mackay (1888), and Wright's EDD (1904/1905).",
+      "type": "semantic",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete absence of pre-October 1862 British or Scottish printed attestations of transitive 'spill/scatter' skedaddle, exact provenance of the October 13, 1862 Viscount Hill letter, and derivative recycling across 1864–1905 British slang and dialect dictionaries.",
+        "does_not_establish": "Categorical impossibility of unrecorded pre-1862 oral use of a 'spill' verb in Dumfriesshire or Lancashire farming speech.",
+        "remaining_uncertainty": "Whether localized Solway/Lancashire 'skedaddle' ('spill milk/potatoes') existed unrecorded in rural speech before 1859 or arose via jocular rural re-application/memory contamination after 1862."
+      },
+      "limitations": [
+        "Proves American print priority (1859 vs. Oct. 1862) and valency divergence (US intransitive motion vs. UK transitive spilling) while respecting Scottish National Dictionary (1971) caution regarding unrecorded rural dialect.",
+        "CERT-2600-205 (Oct. 1862 London Spectator in 1863 Rebellion Record) is copied verbatim by Hotten 1864 (CERT-2600-207); CERT-2600-211 (Aug. 1877 Atlantic Monthly) is recycled in EDD 1904/1905 (CERT-2600-307) and role-split with CERT-2600-317."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries for skedaddle in William Dickinson's 1859 Cumberland Glossary (and 1878 rev. ed.) directly bordering Dumfriesshire.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the October 25, 1862 Notes and Queries reprint of Viscount Hill's October 13, 1862 London Times letter first asserting Dumfriesshire/Cheshire 'to spill, to scatter' ('skedaddling all that milk').",
+          "witness_note": "Earliest printed British 'spill' claim (postdating US print by over 3 years)."
+        },
+        {
+          "ref": "CERT-2600-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Preserves the October 1862 London Spectator rebuttal ('Lord Hill must allow us to doubt...') in Rebellion Record Vol. VI (1863, p. 16).",
+          "witness_note": "Parent text copied verbatim without credit in Hotten 1864 (CERT-2600-207)."
+        },
+        {
+          "ref": "CERT-2600-207",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Shows John Camden Hotten's 1864 Slang Dictionary copying the October 1862 Spectator paragraph verbatim while popularizing the Dumfriesshire milkmaid story.",
+          "witness_note": "Derivative copy of CERT-2600-205."
+        },
+        {
+          "ref": "CERT-2600-208",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Schele De Vere (1872, pp. 634–635) repeating the post-1862 Scottish milk-spilling report alongside Civil War theories.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-209",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Bartlett (4th ed., 1877, p. 604) summarizing the post-1862 British dialect correspondence after omitting skedaddle in 1848–1860.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Supplies the August 1877 Atlantic Monthly Contributors' Club anecdote reporting Lancashire 'skedaddled' ('dropped/scattered potatoes and apples from a cart').",
+          "witness_note": "Same physical Aug. 1877 Atlantic Monthly p. 234 passage audited for serial misdating in CERT-2600-317; count as 1 witness."
+        },
+        {
+          "ref": "CERT-2600-212",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Shows Charles Mackay's 1888 Dictionary of Lowland Scotch citing only Viscount Hill's 1862 Times letter rather than any pre-1862 Scots text.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Shows Joseph Wright's English Dialect Dictionary (Vol. V, 1904/1905, p. 458) relying entirely on post-1877 sources (1877 Atlantic, 1881 Edwards, 1888 Mackay, 1894 Heslop) for Sense 1 ('to spill, scatter').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-310",
+          "relationship": "contextualizes",
+          "directness": "indirect",
+          "reason": "Notes the Scottish National Dictionary's (Vol. VIII, 1971) observation that Scottish transitive 'spill' records are post-1862 and poorly evidenced.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2600-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes June 23, 1859 American intransitive print currency more than three years before Viscount Hill's October 13, 1862 letter.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b53e0262937f47d2f90b338070a7946402ba4d566921f1f9577ff0ca1f6e92eb",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 semantic and print-chronology claim separating British 'spill' glosses from 1859 US 'flee' attestations.",
+          "content_fingerprint": "b53e0262937f47d2f90b338070a7946402ba4d566921f1f9577ff0ca1f6e92eb"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-010",
+      "slug": "clm-2600-010",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v.",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Zero-hit absence of skedaddle from Matsell's 1859 Vocabulum and Bartlett's 1848–1860 Americanisms",
+      "statement": "Alphabetical inspection confirms zero entries or occurrences of skedaddle in New York Police Chief George W. Matsell's thieves' cant glossary Vocabulum; or, The Rogue's Lexicon (deposited May 23, 1859—one month before the June 23, 1859 Kenosha Telegraph attestation) and across the 1st (1848), 2nd (1859), and 3rd (1860) editions of John Russell Bartlett's Dictionary of Americanisms.",
+      "rationale": "Immediate pre-summer-1859 absence from both Manhattan underworld cant and comprehensive Eastern Americanism dictionaries corroborates contemporary Midwestern newspaper testimony that skedaddle circulated orally on the Western frontier before entering national print.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete absence of skedaddle from Matsell (May 23, 1859) and Bartlett (1848, 1859, 1860), ruling out documented New York flash-cant or pre-1859 literary-Americanism status.",
+        "does_not_establish": "Absence of oral vernacular currency in 1850s Iowa, Missouri, or Upstate New York rural speech.",
+        "remaining_uncertainty": "Whether pre-June 1859 county weeklies in Iowa or northern Missouri printed the verb in un-digitized issues."
+      },
+      "limitations": [
+        "Lexicographical absence constrains register (non-thieves'-cant, non-literary Eastern Americanism before 1860) rather than rural oral existence."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies 0 entries for skedaddle on p. 81 of Matsell's May 23, 1859 Vocabulum and pp. 409–410 of Bartlett's 1859 2nd edition.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-209",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Confirms skedaddle was added to Bartlett's Dictionary of Americanisms only in the 4th edition (1877, p. 604).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "George W. Matsell's Vocabulum (1st ed., May 23, 1859) and John Russell Bartlett's Dictionary of Americanisms (1st ed. 1848, 2nd ed. 1859, 3rd ed. 1860)",
+        "search_date": "2026-11-26",
+        "search_period": "1848-1860",
+        "query_terms": [
+          "skedaddle",
+          "skadaddle",
+          "skiddaddle",
+          "skeedaddle",
+          "scaddle"
+        ],
+        "search_method": "Direct page-image inspection of alphabetical S-lemma sequences paired with full-volume OCR search.",
+        "corpus_coverage": "4 dictionary editions (Bartlett 1848, 1859, 1860; Matsell May 23, 1859).",
+        "known_limitations": [
+          "Matsell (1859) focuses on urban New York criminal cant rather than Western overland or rural agricultural speech.",
+          "Bartlett (1859) went to press in early 1859 prior to the Pike's Peak rush turnaround."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "2a27d4313ddb46a3bc413821bbd1184b1b21f6dcd70bb633767cc4af26df79ba",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 negative-evidence claim covering Matsell (1859) and Bartlett (1848–1860).",
+          "content_fingerprint": "2a27d4313ddb46a3bc413821bbd1184b1b21f6dcd70bb633767cc4af26df79ba"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-011",
+      "slug": "clm-2600-011",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (< Northern British scaddle / skaddle + expressive -addle)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Northern British/Scots-Irish scaddle/skaddle ('bolt in fright') + expressive -addle derivation hypothesis",
+      "statement": "Pre-1859 Northern English and Scots-border dialectal scaddle / SKADDLE ('skittish, wild, spoken of young horses that fly out; to scare, run off in a fright'—verified in Ray 1691, Grose 1787 'North.', Carr Craven 1828 SKADDLE beside SKALE 'disperse', Brockett 1846, and Wright EDD 1904/1905), reinforced by Scots skail ('disperse under terror', Jamieson 1808) and expressive American gait/motion verbs in -addle (straddle, waddle, paddle, scuddle/scuttle, Webster 1828), provides the strongest phonological and semantic pathway to American intransitive skedaddle (/skɪˈdæd.əl/).",
+      "rationale": "Unlike post-1862 transitive milk-spilling glosses or impossible Greek/Swedish/Gaelic etymologies, Northern British scaddle/skaddle is primary-scan verified from 1691–1846 in the exact intransitive 'bolt/run off in fright' semantic field and requires only standard American unstressed-prefix/expressive frequentative remodeling (Liberman 2008).",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 110,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Continuous 1691–1846 Northern English and Scots-border print attestation of scaddle/skaddle ('bolt, run off in fright') and Scots skail ('disperse in terror'), plus pre-1859 English availability of scuddle/scuttle and -addle motion templates.",
+        "does_not_establish": "Direct pre-1859 American print attestation of an intermediate trisyllabic bridge spelling (*scadaddle / *skaddle -> skedaddle) catching the morphological expansion in progress.",
+        "remaining_uncertainty": "Exact decade and regional American speech community (Midland/Scots-Irish vs. Upstate New York/Western Reserve) in which disyllabic scaddle/skaddle expanded to iambic-amphibrachic skedaddle."
+      },
+      "limitations": [
+        "Remains an inferential morphological reconstruction because no pre-1859 American text preserves an explicit metalinguistic bridge between regional 'scaddle/skaddle' and trisyllabic 'skedaddle'."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1859 American frontier manuscripts, county newspapers, or regional glossaries attesting disyllabic 'scaddle'/'skaddle' ('bolt, run off') or transitional spellings alongside 'skedaddle'."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-2600-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests 'Scaddle; To scare, or fright' and 'Scaddle, wild, mischievous, spoken of young horses that fly out' in John Ray's 1691 Collection of English Words (2nd ed., p. 159; absent in 1674 1st ed.).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Reclassifies 'SCADDLE' explicitly as Northern English ('North.') in Francis Grose's 1787 Provincial Glossary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-303",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Scots 'To SKAIL, SKALE' ('to disperse, scatter under the impression of terror') in Jamieson's 1808 Dictionary (and 1825 Supplement 'SCAWPATE').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Northern English <sk-> spelling 'SKADDLE' ('wild, mischievous, frightening') alongside 'SKALE' ('disperse') in William Carr's 1828 Yorkshire Craven Glossary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Attests Newcastle/Northumbrian 'SCADDLE, skittish, wild' in John Trotter Brockett's 1846 Glossary of North Country Words (3rd ed.).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Verifies pre-1859 American speed/gait templates SCUD, SCUDDLE, SCUTTLE ('run with affected precipitation'), and STRADDLE in Noah Webster's 1828 American Dictionary.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Documents regional British 'SCADDLE, v. To run off in a fright' (p. 233) alongside 'SKEDADDLE' in Wright's English Dialect Dictionary (1904/1905).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-310",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Synthesizes Anatoly Liberman's (2008) phonological analysis of expressive /sk-/ + '-addle' expansion from scaddle/skaddle.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2600-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Anchors the target American intransitive motion sense ('skedaddled for home') in June 1859 frontier speech.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2600-009",
+          "relationship": "depends_on",
+          "directness": "contextual",
+          "reason": "Separates pre-1859 documented scaddle/skaddle ('bolt in fright') from post-1862 British transitive 'spill milk' testimonies.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "9ad191fa515a522dc6448d590bc088f2faa12b82e8bd906c75c161f19b56c67a",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 derivation claim for Northern British scaddle/skaddle + expressive -addle.",
+          "content_fingerprint": "9ad191fa515a522dc6448d590bc088f2faa12b82e8bd906c75c161f19b56c67a"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-012",
+      "slug": "clm-2600-012",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (alleged Ancient Greek σκεδάννυμι derivation)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Rebuttal of the Civil War Harvard / Ancient Greek σκεδάννυμι (skedannymi) folk etymology",
+      "statement": "The popular 1861–1864 journalistic and dictionary derivation of skedaddle from Ancient Greek σκεδάννυμι (skedannymi, aorist ἐσκέδασα, 'scatter, disperse'—promoted in May–October 1862 press columns and copied into Hotten's 1864 Slang Dictionary before Hotten deleted it in 1874) is refuted on morphological and chronological grounds: Greek -άννυμι / -άσω has no regular or slang pathway to English -addle, and the earliest 1859–1861 witnesses belong to Missouri–Platte–Kansas frontier vernacular rather than Harvard or Army of the Potomac classical wit.",
+      "rationale": "Primary scans of Liddell & Scott (1851) and the 1862–1874 press/Hotten chain prove the Greek comparison was a facetious post-hoc Civil War pun invented after skedaddle reached Eastern newspapers in late 1861.",
+      "type": "rebuttal",
+      "assessment": "contradicted",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 120,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Morphological, register, and textual-genealogy refutation of deriving skedaddle from Ancient Greek σκεδάννυμι, including Hotten's own 1874 retraction.",
+        "does_not_establish": "Absence of secondary humorous awareness of Greek σκεδάννυμι among college-educated Eastern journalists in 1862.",
+        "remaining_uncertainty": "None; closed on morphological and 1859 frontier-chronology grounds."
+      },
+      "limitations": [
+        "CERT-2600-207 and CERT-2600-312 inspect Hotten's 1864/1874 Slang Dictionary editions, where the 1864 paragraph was lifted verbatim from the October 1862 London Spectator (CERT-2600-205)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-312",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Verifies Greek stem morphology (σκεδάννυμι, fut. σκεδάσω) in Liddell & Scott (1851, p. 1344) and documents Hotten's 1874 deletion of his 1864 Greek etymology.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-201",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents the May–June 1862 Historical Magazine antiquarian notes proposing Greek σκεδάννυμι.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-202",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents the August 2, 1862 Philadelphia Press embellishment attributing the Greek pun to a 'Harvard professor'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-205",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Supplies the October 1862 London Spectator critique mocking Lord Hill via Greek skedannumi.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-207",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Exposes Hotten's 1864 'Greek' entry as an uncredited verbatim copy of the October 1862 Spectator column.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2600-001",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Proves skedaddle circulated in low-register June 1859 Pike's Peak overland verse two years before Eastern wartime classical puns.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6ba41a6c64b2b2dd498a0970e12a7d88e119c5a860411d6d86164050eb8b49ac",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 rebuttal claim falsifying the Civil War Ancient Greek σκεδάννυμι folk etymology.",
+          "content_fingerprint": "6ba41a6c64b2b2dd498a0970e12a7d88e119c5a860411d6d86164050eb8b49ac"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-013",
+      "slug": "clm-2600-013",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (alleged Swedish *skuddadahl / Danish *skyededehl derivation)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Rebuttal of the 1864 Webster / 1872 Schele De Vere Swedish and Danish ghost-word etymology",
+      "statement": "The 1864 Webster Dictionary claim of Scandinavian immigrant origin in the Upper Midwest and Maximilian Schele De Vere's (1872) cited Swedish '*skuddadahl' and Danish '*skyededehl' are refuted by primary Scandinavian dictionaries: Carl Deleen's Swedish and English Pocket-Dictionary (1829, p. 413) records only skudda ('to shake off' dust, Matt. 10:14) and Ferrall & Repp's Danish-English Dictionary (1845, p. 288) records only skudde sig ('shrug, shake oneself'), proving '*skuddadahl' and '*skyededehl' are non-existent ghost words.",
+      "rationale": "Direct inspection of pre-1859 Swedish and Danish lexicons confirms OED1's 1911 skepticism: neither language possesses a '-dahl/-dehl' compound verb meaning 'flee', and Swedish palatalizes sk- before front vowels rather than preserving English [skɪ-].",
+      "type": "rebuttal",
+      "assessment": "contradicted",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 130,
+      "lifecycle_status": "active",
+      "revision": 2,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Lexicographical proof that Schele De Vere's '*skuddadahl' and '*skyededehl' are fabricated ghost words and that Swedish skudda / Danish skudde mean 'shake/shrug' rather than 'run away'.",
+        "does_not_establish": "Positive etymological origin outside refuting the Scandinavian hypothesis.",
+        "remaining_uncertainty": "None; closed by primary Swedish (1829) and Danish (1845) dictionary verification."
+      },
+      "limitations": [
+        "Evaluates standard and colloquial 19th-century Swedish and Danish lexical inventories cited by Webster (1864) and Schele De Vere (1872)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-313",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Verifies in Deleen (1829, p. 413) and Ferrall & Repp (1845, p. 288) that '*skuddadahl' and '*skyededehl' do not exist and skudda/skudde mean 'shake off / shrug'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-208",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Schele De Vere's 1872 Americanisms (pp. 634–635) printing the spurious forms 'skuddadahl' and 'skyededehl'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-308",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Records W. A. Craigie's OED1 note (1911) rejecting the alleged Swedish/Danish words as lacking any evidence of existence.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "7554feeb4d1c1efaedd3ef52b98f8506370d537c0ffafcd295c8b6c7c77386c7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 rebuttal claim falsifying the Swedish/Danish ghost-word etymology.",
+          "content_fingerprint": "2c9da49e7591c70548e26f463d6f3472f8170fb62bce857a0bae4efabb74ffce"
+        },
+        {
+          "revision": 2,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Adversarial Audit Reconciliation (Phase D)",
+          "summary": "Corrected Deleen (1829, p. 413) and Ferrall & Repp (1845, p. 288) dictionary pages and changed OED1 edge to contextualizes.",
+          "content_fingerprint": "7554feeb4d1c1efaedd3ef52b98f8506370d537c0ffafcd295c8b6c7c77386c7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-014",
+      "slug": "clm-2600-014",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle, v. (alleged Irish/Scottish Gaelic sgaoil, sgudal, and *sgedad ol derivations)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Rebuttal of Irish/Scottish Gaelic sgaoil, sgudal, sgath+adhl, and ghost '*sgedad ol' etymologies",
+      "statement": "Nineteenth-century Celtic derivations of skedaddle—from Irish/Gaelic sgaoil ('scatter'), Scottish Gaelic sgudal, Charles Mackay's (1877) arbitrary segmentation sgath + adhl, and the December 1862 Historical Magazine claim that the Irish New Testament prints '*sgedad ol' at Matthew 26:31—are refuted by primary Gaelic lexicons and biblical texts: sgaoil/scaoil is monosyllabic [sˠkiːlʲ] lacking dental stops -d-dd-, sgudal means 'fish-guts, offal' (Macbain 1896), and the 1602 Irish New Testament actually reads 'scaoilfidhear tréd na gcaorach' with zero trace of '*sgedad ol'.",
+      "rationale": "Checking O'Reilly (1817), Macbain (1896), and William Daniel's 1602 Tiomna Nuadh exposes '*sgedad ol' (repeated uncritically by Schele De Vere 1872 and Bartlett 1877) as a fabricated biblical ghost quotation.",
+      "type": "rebuttal",
+      "assessment": "contradicted",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 140,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Phonological, semantic, and textual falsification of Irish/Scottish Gaelic sgaoil, sgudal, sgath + adhl, and the spurious Matthew 26:31 '*sgedad ol' quotation.",
+        "does_not_establish": "Absence of Scots-Irish English dialect speakers (speaking Northern British/Ulster Scots English rather than Gaelic) in transmitting scaddle/skaddle.",
+        "remaining_uncertainty": "None; '*sgedad ol' is directly falsified against the Irish New Testament text of Matthew 26:31."
+      },
+      "limitations": [
+        "Separates Gaelic-language etymons (refuted here) from English-language Scots/Ulster-Scots dialectal scaddle/skaddle (evaluated in CLM-2600-011)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-314",
+          "relationship": "contradicts",
+          "directness": "direct",
+          "reason": "Verifies O'Reilly (1817, Sgaoil [sˠkiːlʲ]), Macbain (1896, sgudal 'fish-guts, offal'), Mackay's baseless 1877 sgath+adhl conjecture, and the 1602 Irish NT reading at Matt. 26:31.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-206",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Identifies the December 1862 Historical Magazine correspondent 'B. H. H.' who introduced the spurious Irish Testament '*sgedad ol' claim.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-208",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Schele De Vere (1872) propagating the false '*sgedad ol' Irish Testament claim.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-209",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Documents Bartlett (1877) repeating Irish 'sgaoil' from the 1862–1872 press literature.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "982b47f7e56fbbf20d2d0ed75d1f3a51ae7c96ffe2b4f8a8556cd81d1e583aec",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 rebuttal claim falsifying Gaelic sgaoil/sgudal and the '*sgedad ol' biblical ghost.",
+          "content_fingerprint": "982b47f7e56fbbf20d2d0ed75d1f3a51ae7c96ffe2b4f8a8556cd81d1e583aec"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-015",
+      "slug": "clm-2600-015",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "Skedaddles (Trap B November 11, 1856 Pittsburgh dirty-OCR ghost)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Disqualification of the November 11, 1856 Daily Pittsburgh Gazette dirty-OCR ghost ('Mechanics')",
+      "statement": "Zoomed newsprint inspection of The Daily Pittsburgh Gazette (November 11, 1856, p. 1, col. 3, Polytechnic College of the State of Pennsylvania advertisement) proves that Open-ONI's apparent pre-1859 full-text hit 'Skedaddles and Machinery' actually prints 'Mechanics and Machinery, Prof. H. H. BOUCHER'.",
+      "rationale": "Direct ink verification eliminates the sole pre-1859 newspaper OCR candidate surfaced in Pennsylvania and Chronicling America/Open-ONI searches.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 150,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Paleographic falsification of the November 11, 1856 Daily Pittsburgh Gazette 'Skedaddles' OCR hallucination.",
+        "does_not_establish": "Absence of genuine un-indexed 1850s occurrences elsewhere.",
+        "remaining_uncertainty": "None; 'Mechanics and Machinery' is unmistakable in letterpress ink."
+      },
+      "limitations": [
+        "Addresses a single high-salience pre-1859 Open-ONI OCR false positive."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Provides zoomed newsprint scan of the November 11, 1856 Daily Pittsburgh Gazette proving 'Mechanics and Machinery' was mis-OCRed as 'Skedaddles and Machinery'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1c7904f309b4dc157267ceba3e248ea04e980c7a73c940a599a176dcce269d3c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim eliminating the Nov. 11, 1856 Pittsburgh OCR ghost.",
+          "content_fingerprint": "1c7904f309b4dc157267ceba3e248ea04e980c7a73c940a599a176dcce269d3c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-2600-016",
+      "slug": "clm-2600-016",
+      "case_slug": "skedaddle",
+      "headword": "skedaddle",
+      "target_lexeme": "skedaddle (Trap A sheet-music plate and bound-serial founding-year misdates)",
+      "case_section": "1. Prior Scholarship and Lexicographical Baseline",
+      "short_label": "Disqualification of '1841', '1857', '1858', and '1859' plate-number and serial founding-year misdates",
+      "statement": "Engraved plate-number and running-header verification disqualifies four apparent pre-1861 catalog antedatings: G. Haghar's Skedaddle Galop (cataloged '[1858]' from Oliver Ditson's '277 Washington St.' imprint, but bearing engraved plate number 21820 = c. 1862–1863), Vanity Fair Vol. 5 (cataloged '1859', actual issue May 31, 1862), Punch Vol. XLIII (cataloged '1841', actual issue November 15, 1862), and The Atlantic Monthly Vol. XL (cataloged '1857', actual issues August and December 1877).",
+      "rationale": "Verifying Ditson's plate-number sequence (1858 plates ~18900 vs. 21820 = 1862–1863) and bound-periodical issue headers protects the June 23, 1859 baseline from spurious 1841–1859 catalog metadata.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 160,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "True Civil War and post-war publication dates (1862–1863 and 1877) for four library-catalog misdates indexed between 1841 and 1859.",
+        "does_not_establish": "Exact month within 1862–1863 when Oliver Ditson issued plate 21820 (Skedaddle Galop).",
+        "remaining_uncertainty": "Exact day of issue in 1862–1863 for Oliver Ditson plate 21820."
+      },
+      "limitations": [
+        "CERT-2600-317 audits the '1857' catalog metadata on the same August 1877 Atlantic Monthly p. 234 volume cited positively for Lancashire dialect testimony in CERT-2600-211."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2600-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Levy Sheet Music's '[1858]' Skedaddle Galop carries Oliver Ditson engraved plate number '21820', dating it to 1862–1863.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1859' Vanity Fair hit ('Skedaddle!') prints in Vol. 5, No. 127 (May 31, 1862, p. 262).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Google Books '1841' Punch hit prints in Vol. XLIII (November 15, 1862, p. 199).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2600-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Proves Internet Archive '1857' Atlantic Monthly hits print in Vol. XL (August 1877, p. 234, and December 1877, p. 748).",
+          "witness_note": "Role-split serial-misdate audit of the same Aug. 1877 volume as CERT-2600-211."
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "cf7ba587707e2041bcbbaa1e6329ae52d58e8bc193c5d3a2e13434e335f771d3",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline",
+          "summary": "Initial v1.0 source-relationship claim disqualifying plate-number and serial founding-year misdates.",
+          "content_fingerprint": "cf7ba587707e2041bcbbaa1e6329ae52d58e8bc193c5d3a2e13434e335f771d3"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}
