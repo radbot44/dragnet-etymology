@@ -130,9 +130,9 @@ const SUPPORTED_MCP_VERSIONS = [
 ];
 
 const DRAGNET_CONSTITUTION = [
-  'DRAgNEt Historical Lexicography Hub: Check queue via get_pipeline_status, inspect targets via get_target_brief, search citations via search_corpus, and score phonetics/OCR via score_phonetics_and_variants. Pass 1 Proposer (role="proposer") claims targets and logs candidates at verification_level="discovered"; Pass 2 Red-Team (role="redteam") audits physical scans/mastheads (Traps A-D), promotes survivors to "agent_verified", uploads pre-1931 WebP plates, and opens GitHub PRs.',
+  'DRAgNEt Historical Lexicography Hub: Check queue via get_pipeline_status, inspect targets via get_target_brief, search citations via search_corpus, and score phonetics/OCR via score_phonetics_and_variants. Pass 1 Proposer (role="proposer") claims targets (or reopens NEEDS_PHASE_2 runs in place via resume_phase2_run) and logs candidates at verification_level="discovered"; Pass 2 Red-Team (role="redteam") locks AWAITING_AUDIT -> AUDITING_REDTEAM with a distinct agent_name, verifies primary scans blindly first (get_target_brief with blind_audit=true), promotes survivors to "agent_verified", and opens Draft GitHub PRs.',
   'Rules:',
-  '1. Proposer != Judge: Pass 1 submits strictly at verification_level="discovered". Only Pass 2 promotes to "agent_verified" after primary-scan + masthead inspection.',
+  '1. Proposer != Judge & Single-Reviewer Lock: Pass 1 submits strictly at verification_level="discovered". Pass 2 must acquire an atomic AUDITING_REDTEAM lock using an agent_name distinct from proposer_agent, inspect primary scans with blind_audit=true before reading proposer prose, and hold that lock to advance to STAGE_B_PACK_READY or NEEDS_PHASE_2.',
   '2. Trap A (Serial/Stereotype Misdating): Verify masthead_year on the physical masthead, running header, or copyright leaf rather than catalog metadata alone.',
   '3. Trap B (Dirty-OCR Ghosts): Verify physical ink letter-by-letter on the page scan.',
   '4. Trap C & D (Homographs & Modern Apparatus): Separate proper names/surnames and reject modern preface/editorial hits.',
@@ -735,7 +735,7 @@ async function opGetPipelineStatus(env: Env, queueLimit = 10) {
   const activeRun = await env.DB.prepare(
     `SELECT run_id, block_number, target_id, slug, headword, status, proposer_agent, redteam_agent, pr_url, started_at, updated_at
      FROM runs
-     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM')
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
      ORDER BY updated_at DESC LIMIT 1`
   ).first();
   const nextQueued = await env.DB.prepare(
@@ -763,8 +763,9 @@ async function opGetPipelineStatus(env: Env, queueLimit = 10) {
   };
 }
 
-async function opGetTargetBrief(env: Env, slugOrId: string) {
+async function opGetTargetBrief(env: Env, slugOrId: string, opts: { blind_audit?: boolean } = {}) {
   const clean = slugOrId.trim();
+  const blindAudit = Boolean(opts.blind_audit);
   const target = await env.DB.prepare(
     `SELECT * FROM targets WHERE target_id = ? OR slug = ? LIMIT 1`
   )
@@ -774,18 +775,55 @@ async function opGetTargetBrief(env: Env, slugOrId: string) {
 
   const headword = String(target.headword);
   const baselineYear = Number(target.baseline_year);
-  const existingCites = await env.DB.prepare(
-    `SELECT id, attested_form, record_type, verification_level, publication_year, sort_date, json_extract(record_json, '$.short_gloss') AS short_gloss, json_extract(record_json, '$.source_publication') AS source_publication, source_url
-     FROM citations WHERE target_id = ? ORDER BY sort_date ASC, id ASC`
-  )
+  const citeSelectSql = blindAudit
+    ? `SELECT
+         id, attested_form, record_type, verification_level, publication_year, sort_date,
+         json_extract(record_json, '$.date_display') AS date_display,
+         json_extract(record_json, '$.catalog_year') AS catalog_year,
+         json_extract(record_json, '$.masthead_year') AS masthead_year,
+         masthead_date_verified,
+         json_extract(record_json, '$.source_publication') AS source_publication,
+         json_extract(record_json, '$.source_archive') AS source_archive,
+         json_extract(record_json, '$.page_and_column') AS page_and_column,
+         json_extract(record_json, '$.verbatim_quote') AS verbatim_quote,
+         source_url,
+         scan_hosted_path
+       FROM citations WHERE target_id = ? ORDER BY sort_date ASC, id ASC`
+    : `SELECT
+         id, attested_form, record_type, verification_level, publication_year, sort_date,
+         json_extract(record_json, '$.date_display') AS date_display,
+         json_extract(record_json, '$.catalog_year') AS catalog_year,
+         json_extract(record_json, '$.masthead_year') AS masthead_year,
+         masthead_date_verified,
+         json_extract(record_json, '$.short_gloss') AS short_gloss,
+         json_extract(record_json, '$.source_publication') AS source_publication,
+         json_extract(record_json, '$.source_archive') AS source_archive,
+         json_extract(record_json, '$.page_and_column') AS page_and_column,
+         json_extract(record_json, '$.verbatim_quote') AS verbatim_quote,
+         json_extract(record_json, '$.linguistic_note') AS linguistic_note,
+         json_extract(record_json, '$.analysis_notes') AS analysis_notes,
+         source_url,
+         scan_hosted_path
+       FROM citations WHERE target_id = ? ORDER BY sort_date ASC, id ASC`;
+
+  const existingCites = await env.DB.prepare(citeSelectSql)
     .bind(target.target_id)
     .all();
-  const latestRun = await env.DB.prepare(
-    `SELECT run_id, block_number, status, dossier_markdown, audit_report_markdown, notes, pr_url, updated_at
-     FROM runs WHERE target_id = ? ORDER BY block_number DESC LIMIT 1`
-  )
+
+  const runSelectSql = blindAudit
+    ? `SELECT run_id, block_number, status, proposer_agent, redteam_agent, pr_url, updated_at
+       FROM runs WHERE target_id = ? ORDER BY block_number DESC LIMIT 1`
+    : `SELECT run_id, block_number, status, proposer_agent, redteam_agent, dossier_markdown, monograph_markdown, audit_report_markdown, notes, pr_url, updated_at
+       FROM runs WHERE target_id = ? ORDER BY block_number DESC LIMIT 1`;
+
+  const latestRunRaw = await env.DB.prepare(runSelectSql)
     .bind(target.target_id)
-    .first();
+    .first<Record<string, unknown>>();
+  const latestRun = latestRunRaw
+    ? blindAudit
+      ? { ...latestRunRaw, blind_audit: true }
+      : latestRunRaw
+    : null;
 
   const baselineSummary = String(target.baseline_summary || '');
   const priorAuditContext = String(target.prior_audit_context || '');
@@ -811,6 +849,7 @@ async function opGetTargetBrief(env: Env, slugOrId: string) {
     : null;
 
   return {
+    blind_audit: blindAudit,
     target,
     baseline_windows: {
       earliest_baseline_year: milestones.earliest_baseline_year,
@@ -851,7 +890,7 @@ async function opClaimNextTarget(
   const active = await env.DB.prepare(
     `SELECT run_id, block_number, target_id, headword, status, updated_at
      FROM runs
-     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM')
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
      ORDER BY updated_at DESC LIMIT 1`
   ).first<Record<string, unknown>>();
 
@@ -922,6 +961,118 @@ async function opClaimNextTarget(
       headword: target.headword,
       slug,
       status: 'CLAIMING_DISCOVERY',
+    },
+    brief,
+  };
+}
+
+async function opResumePhase2Run(
+  env: Env,
+  opts: { run_id_or_slug: string; agent_name: string }
+) {
+  const runKey = String(opts.run_id_or_slug || '').trim();
+  const agentName = String(opts.agent_name || '').trim();
+  if (!runKey) throw new Error('run_id_or_slug is required (e.g. "RUN-3000-doozy", "doozy", or "TGT-029").');
+  if (!agentName) throw new Error('agent_name is required to resume a NEEDS_PHASE_2 run.');
+
+  const active = await env.DB.prepare(
+    `SELECT run_id, block_number, target_id, slug, headword, status, proposer_agent, redteam_agent, updated_at
+     FROM runs
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
+     ORDER BY updated_at DESC LIMIT 1`
+  ).first<Record<string, unknown>>();
+
+  if (active) {
+    const matchesSameRun =
+      String(active.run_id) === runKey ||
+      String(active.target_id || '').toUpperCase() === runKey.toUpperCase() ||
+      String(active.slug || '').toLowerCase() === runKey.toLowerCase();
+    if (matchesSameRun && active.status === 'CLAIMING_DISCOVERY' && String(active.proposer_agent || '') === agentName) {
+      const brief = await opGetTargetBrief(env, String(active.target_id));
+      return {
+        resumed_run: {
+          run_id: active.run_id,
+          block_number: Number(active.block_number),
+          certificate_id_prefix: `CERT-${active.block_number}-`,
+          target_id: active.target_id,
+          headword: active.headword,
+          slug: active.slug,
+          status: 'CLAIMING_DISCOVERY',
+          proposer_agent: agentName,
+        },
+        brief,
+      };
+    }
+
+    const ageHours = (Date.now() - Date.parse(String(active.updated_at))) / 3_600_000;
+    if (active.status !== 'CLAIMING_DISCOVERY' || ageHours < 18) {
+      throw new Error(
+        `Active run '${active.run_id}' (${active.headword}) is currently '${active.status}'. ` +
+          `Finish or park the active run before resuming a NEEDS_PHASE_2 run.`
+      );
+    }
+    await env.DB.batch([
+      env.DB.prepare(`UPDATE runs SET status = 'ABORTED_OR_STALLED', updated_at = ? WHERE run_id = ?`).bind(
+        nowIso(),
+        active.run_id
+      ),
+      env.DB.prepare(`UPDATE targets SET status = 'QUEUED', updated_at = ? WHERE target_id = ?`).bind(
+        nowIso(),
+        active.target_id
+      ),
+    ]);
+  }
+
+  const run = await env.DB.prepare(
+    `SELECT * FROM runs
+     WHERE run_id = ? OR UPPER(target_id) = ? OR LOWER(slug) = ?
+     ORDER BY block_number DESC LIMIT 1`
+  )
+    .bind(runKey, runKey.toUpperCase(), runKey.toLowerCase())
+    .first<Record<string, unknown>>();
+
+  if (!run) {
+    throw new Error(`No existing run found matching '${runKey}'.`);
+  }
+  if (String(run.status) !== 'NEEDS_PHASE_2') {
+    throw new Error(
+      `Run '${run.run_id}' (${run.headword}) has status '${run.status}'; only 'NEEDS_PHASE_2' runs can be resumed in place.`
+    );
+  }
+
+  const ts = nowIso();
+  const casRes = await env.DB.prepare(
+    `UPDATE runs
+     SET status = 'CLAIMING_DISCOVERY',
+         proposer_agent = ?,
+         redteam_agent = NULL,
+         updated_at = ?
+     WHERE run_id = ? AND status = 'NEEDS_PHASE_2'`
+  )
+    .bind(agentName, ts, run.run_id)
+    .run();
+
+  if (Number(casRes.meta?.changes ?? 0) !== 1) {
+    throw new Error(`Concurrency conflict: run '${run.run_id}' was concurrently resumed or modified by another agent.`);
+  }
+
+  await env.DB.prepare(
+    `UPDATE targets SET status = 'CLAIMING_DISCOVERY', updated_at = ? WHERE target_id = ?`
+  )
+    .bind(ts, run.target_id)
+    .run();
+
+  const brief = await opGetTargetBrief(env, String(run.target_id));
+  return {
+    resumed_run: {
+      run_id: run.run_id,
+      block_number: Number(run.block_number),
+      certificate_id_prefix: `CERT-${run.block_number}-`,
+      target_id: run.target_id,
+      headword: run.headword,
+      slug: run.slug,
+      status: 'CLAIMING_DISCOVERY',
+      proposer_agent: agentName,
     },
     brief,
   };
@@ -1014,6 +1165,7 @@ async function opUpsertCitations(
   params: {
     target_id: string;
     run_id?: string;
+    agent_name?: string;
     role: 'proposer' | 'redteam' | 'human';
     citations: CitationInput[];
   }
@@ -1025,6 +1177,57 @@ async function opUpsertCitations(
     .bind(params.target_id.toUpperCase())
     .first<{ target_id: string; slug: string }>();
   if (!target) throw new Error(`Unknown target_id '${params.target_id}'.`);
+
+  const callerAgent = String(params.agent_name || '').trim();
+  const associatedRun = params.run_id
+    ? await env.DB.prepare(
+        'SELECT run_id, target_id, status, proposer_agent, redteam_agent FROM runs WHERE run_id = ? LIMIT 1'
+      )
+        .bind(params.run_id)
+        .first<Record<string, unknown>>()
+    : await env.DB.prepare(
+        'SELECT run_id, target_id, status, proposer_agent, redteam_agent FROM runs WHERE target_id = ? ORDER BY block_number DESC LIMIT 1'
+      )
+        .bind(target.target_id)
+        .first<Record<string, unknown>>();
+
+  if (params.run_id && !associatedRun) {
+    throw new Error(`Run '${params.run_id}' not found.`);
+  }
+  if (associatedRun && String(associatedRun.target_id) !== target.target_id) {
+    throw new Error(`Run '${associatedRun.run_id}' does not belong to target '${target.target_id}'.`);
+  }
+
+  if (params.role === 'proposer' && associatedRun) {
+    const rStatus = String(associatedRun.status);
+    if (rStatus !== 'CLAIMING_DISCOVERY') {
+      throw new Error(
+        `Proposer citations may only be upserted while run '${associatedRun.run_id}' is in 'CLAIMING_DISCOVERY' (current status: '${rStatus}'). ` +
+          (rStatus === 'NEEDS_PHASE_2' ? 'Call resume_phase2_run first to reopen this run safely in place.' : '')
+      );
+    }
+    const propOwner = String(associatedRun.proposer_agent || '').trim();
+    if (callerAgent && propOwner && callerAgent !== propOwner) {
+      throw new Error(
+        `Proposer lock mismatch: run '${associatedRun.run_id}' is owned by '${propOwner}', not '${callerAgent}'.`
+      );
+    }
+  }
+
+  if (params.role === 'redteam' && associatedRun) {
+    const rStatus = String(associatedRun.status);
+    if (rStatus !== 'AUDITING_REDTEAM') {
+      throw new Error(
+        `Red-Team citations may only be upserted after acquiring the 'AUDITING_REDTEAM' lock via save_run_artifacts_and_advance (current status of '${associatedRun.run_id}': '${rStatus}').`
+      );
+    }
+    const rtOwner = String(associatedRun.redteam_agent || '').trim();
+    if (callerAgent && rtOwner && callerAgent !== rtOwner) {
+      throw new Error(
+        `Single-reviewer lock mismatch: run '${associatedRun.run_id}' is locked in AUDITING_REDTEAM by '${rtOwner}', not '${callerAgent}'.`
+      );
+    }
+  }
 
   const allErrors: string[] = [];
   const stmts: D1PreparedStatement[] = [];
@@ -1105,6 +1308,7 @@ async function opSaveRunArtifactsAndAdvance(
       | 'STAGE_B_PACK_READY'
       | 'NEEDS_PHASE_2';
     agent_name?: string;
+    allow_same_agent?: boolean;
     dossier_markdown?: string;
     monograph_markdown?: string;
     audit_report_markdown?: string;
@@ -1124,6 +1328,84 @@ async function opSaveRunArtifactsAndAdvance(
 
   const slug = String(run.slug);
   const targetId = String(run.target_id);
+  const currentStatus = String(run.status);
+  const agentName = String(params.agent_name || '').trim();
+  const proposerAgent = String(run.proposer_agent || '').trim();
+  const redteamAgent = String(run.redteam_agent || '').trim();
+
+  // Enforce strict state-machine transitions, Proposer != Judge independence, and single-reviewer locks
+  let whereClause = '';
+  let whereBinds: unknown[] = [];
+  let nextRedteamAgent: string | null = null;
+
+  if (params.next_status === 'CLAIMING_DISCOVERY') {
+    if (currentStatus === 'NEEDS_PHASE_2') {
+      throw new Error(
+        `Run '${params.run_id}' is closed as 'NEEDS_PHASE_2'. Call resume_phase2_run to verify no other run is active and reopen it safely in place.`
+      );
+    }
+    if (currentStatus !== 'CLAIMING_DISCOVERY') {
+      throw new Error(`Invalid state transition '${currentStatus}' -> 'CLAIMING_DISCOVERY' for '${params.run_id}'.`);
+    }
+    if (proposerAgent && agentName && agentName !== proposerAgent) {
+      throw new Error(`Proposer lock mismatch: '${params.run_id}' is owned by '${proposerAgent}', not '${agentName}'.`);
+    }
+    whereClause = `run_id = ? AND status = 'CLAIMING_DISCOVERY' AND (proposer_agent IS NULL OR ? = '' OR proposer_agent = ?)`;
+    whereBinds = [params.run_id, agentName, agentName];
+  } else if (params.next_status === 'AWAITING_AUDIT') {
+    if (currentStatus !== 'CLAIMING_DISCOVERY' && currentStatus !== 'AWAITING_AUDIT') {
+      throw new Error(`Invalid state transition '${currentStatus}' -> 'AWAITING_AUDIT' for '${params.run_id}'.`);
+    }
+    if (proposerAgent && agentName && agentName !== proposerAgent) {
+      throw new Error(`Proposer lock mismatch: '${params.run_id}' is owned by '${proposerAgent}', not '${agentName}'.`);
+    }
+    whereClause = `run_id = ? AND status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT') AND (proposer_agent IS NULL OR ? = '' OR proposer_agent = ?)`;
+    whereBinds = [params.run_id, agentName, agentName];
+  } else if (params.next_status === 'AUDITING_REDTEAM') {
+    if (!agentName) {
+      throw new Error(`agent_name is required to acquire the single-reviewer 'AUDITING_REDTEAM' lock on '${params.run_id}'.`);
+    }
+    if (proposerAgent && agentName === proposerAgent && !params.allow_same_agent) {
+      throw new Error(
+        `Reviewer independence violation: redteam agent_name '${agentName}' cannot match proposer_agent '${proposerAgent}'. ` +
+          `Execute Pass 2 from an independent task/session with a distinct reviewer agent_name.`
+      );
+    }
+    if (currentStatus === 'AUDITING_REDTEAM' && redteamAgent && redteamAgent !== agentName) {
+      throw new Error(
+        `Single-reviewer lock conflict: run '${params.run_id}' is already locked in 'AUDITING_REDTEAM' by '${redteamAgent}'.`
+      );
+    }
+    if (currentStatus !== 'AWAITING_AUDIT' && currentStatus !== 'AUDITING_REDTEAM') {
+      throw new Error(
+        `Invalid state transition '${currentStatus}' -> 'AUDITING_REDTEAM' for '${params.run_id}' (run must be 'AWAITING_AUDIT').`
+      );
+    }
+    nextRedteamAgent = agentName;
+    whereClause = `run_id = ? AND (status = 'AWAITING_AUDIT' OR (status = 'AUDITING_REDTEAM' AND redteam_agent = ?))`;
+    whereBinds = [params.run_id, agentName];
+  } else if (params.next_status === 'STAGE_B_PACK_READY' || params.next_status === 'NEEDS_PHASE_2') {
+    if (!agentName) {
+      throw new Error(
+        `agent_name is required when finalizing '${params.run_id}' from 'AUDITING_REDTEAM' to '${params.next_status}'.`
+      );
+    }
+    if (currentStatus !== 'AUDITING_REDTEAM') {
+      throw new Error(
+        `Invalid state transition '${currentStatus}' -> '${params.next_status}' for '${params.run_id}': acquire the 'AUDITING_REDTEAM' lock first.`
+      );
+    }
+    if (redteamAgent && redteamAgent !== agentName) {
+      throw new Error(
+        `Single-reviewer lock conflict: run '${params.run_id}' is locked by '${redteamAgent}', not '${agentName}'.`
+      );
+    }
+    nextRedteamAgent = agentName;
+    whereClause = `run_id = ? AND status = 'AUDITING_REDTEAM' AND (redteam_agent IS NULL OR redteam_agent = ?)`;
+    whereBinds = [params.run_id, agentName];
+  } else {
+    throw new Error(`Unsupported next_status '${params.next_status}'.`);
+  }
 
   if (params.case_markdown || params.next_status === 'STAGE_B_PACK_READY') {
     const md = params.case_markdown || String(run.case_markdown || '');
@@ -1144,50 +1426,61 @@ async function opSaveRunArtifactsAndAdvance(
   }
 
   const ts = nowIso();
-  await env.DB.batch([
-    env.DB.prepare(
-      `UPDATE runs SET
-        status = ?,
-        redteam_agent = COALESCE(?, redteam_agent),
-        dossier_markdown = COALESCE(?, dossier_markdown),
-        monograph_markdown = COALESCE(?, monograph_markdown),
-        audit_report_markdown = COALESCE(?, audit_report_markdown),
-        case_markdown = COALESCE(?, case_markdown),
-        oed_slips_markdown = COALESCE(?, oed_slips_markdown),
-        claims_json = COALESCE(?, claims_json),
-        prior_art_baselines_json = COALESCE(?, prior_art_baselines_json),
-        corpus_search_summary_json = COALESCE(?, corpus_search_summary_json),
-        notes = COALESCE(?, notes),
-        updated_at = ?
-      WHERE run_id = ?`
-    ).bind(
+  const casRes = await env.DB.prepare(
+    `UPDATE runs SET
+      status = ?,
+      redteam_agent = COALESCE(?, redteam_agent),
+      dossier_markdown = COALESCE(?, dossier_markdown),
+      monograph_markdown = COALESCE(?, monograph_markdown),
+      audit_report_markdown = COALESCE(?, audit_report_markdown),
+      case_markdown = COALESCE(?, case_markdown),
+      oed_slips_markdown = COALESCE(?, oed_slips_markdown),
+      claims_json = COALESCE(?, claims_json),
+      prior_art_baselines_json = COALESCE(?, prior_art_baselines_json),
+      corpus_search_summary_json = COALESCE(?, corpus_search_summary_json),
+      notes = COALESCE(?, notes),
+      updated_at = ?
+    WHERE ${whereClause}`
+  )
+    .bind(
       params.next_status,
-      params.next_status === 'AUDITING_REDTEAM' || params.next_status === 'STAGE_B_PACK_READY'
-        ? params.agent_name ?? null
-        : null,
+      nextRedteamAgent,
       params.dossier_markdown ?? null,
       params.monograph_markdown ?? null,
       params.audit_report_markdown ?? null,
       params.case_markdown ?? null,
       params.oed_slips_markdown ?? null,
-      params.claims_json ? (typeof params.claims_json === 'string' ? params.claims_json : JSON.stringify(params.claims_json, null, 2)) : null,
+      params.claims_json
+        ? typeof params.claims_json === 'string'
+          ? params.claims_json
+          : JSON.stringify(params.claims_json, null, 2)
+        : null,
       params.prior_art_baselines ? JSON.stringify(params.prior_art_baselines) : null,
       params.corpus_search_summary ? JSON.stringify(params.corpus_search_summary) : null,
       params.notes ?? null,
       ts,
-      params.run_id
-    ),
-    env.DB.prepare(
-      `UPDATE targets SET
-        status = ?,
-        best_verified_year = COALESCE(?, best_verified_year),
-        years_antedated = CASE
-          WHEN ? IS NOT NULL AND baseline_year > ? THEN baseline_year - ?
-          ELSE years_antedated
-        END,
-        updated_at = ?
-      WHERE target_id = ?`
-    ).bind(
+      ...whereBinds
+    )
+    .run();
+
+  if (Number(casRes.meta?.changes ?? 0) !== 1) {
+    throw new Error(
+      `Atomic CAS lock conflict on '${params.run_id}': run status or reviewer lock was concurrently changed by another agent.`
+    );
+  }
+
+  await env.DB.prepare(
+    `UPDATE targets SET
+      status = ?,
+      best_verified_year = COALESCE(?, best_verified_year),
+      years_antedated = CASE
+        WHEN ? IS NOT NULL AND baseline_year > ? THEN baseline_year - ?
+        ELSE years_antedated
+      END,
+      updated_at = ?
+    WHERE target_id = ?`
+  )
+    .bind(
       params.next_status,
       params.best_verified_year ?? null,
       params.best_verified_year ?? null,
@@ -1195,14 +1488,16 @@ async function opSaveRunArtifactsAndAdvance(
       params.best_verified_year ?? null,
       ts,
       targetId
-    ),
-  ]);
+    )
+    .run();
 
   return {
     run_id: params.run_id,
     target_id: targetId,
     slug,
     status: params.next_status,
+    proposer_agent: proposerAgent || null,
+    redteam_agent: nextRedteamAgent || redteamAgent || null,
     updated_at: ts,
   };
 }
@@ -1230,11 +1525,33 @@ async function githubApi(env: Env, endpoint: string, init: RequestInit = {}) {
   return data;
 }
 
-async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_title?: string; draft?: boolean }) {
+async function opOpenCasePullRequest(
+  env: Env,
+  params: { run_id: string; agent_name?: string; pr_title?: string; draft?: boolean }
+) {
   const run = await env.DB.prepare('SELECT * FROM runs WHERE run_id = ? LIMIT 1')
     .bind(params.run_id)
     .first<Record<string, unknown>>();
   if (!run) throw new Error(`Run '${params.run_id}' not found.`);
+
+  const currentStatus = String(run.status);
+  if (currentStatus === 'PR_OPENED') {
+    throw new Error(
+      `Pull request already opened for '${params.run_id}': ${run.pr_url || `PR #${run.pr_number}`}.`
+    );
+  }
+  if (currentStatus !== 'STAGE_B_PACK_READY') {
+    throw new Error(
+      `Run '${params.run_id}' must be in 'STAGE_B_PACK_READY' before opening a pull request (current status: '${currentStatus}').`
+    );
+  }
+  const callerAgent = String(params.agent_name || '').trim();
+  const rtOwner = String(run.redteam_agent || '').trim();
+  if (callerAgent && rtOwner && callerAgent !== rtOwner) {
+    throw new Error(
+      `Single-reviewer lock mismatch: run '${params.run_id}' was certified by '${rtOwner}', not '${callerAgent}'.`
+    );
+  }
 
   const target = await env.DB.prepare('SELECT * FROM targets WHERE target_id = ? LIMIT 1')
     .bind(run.target_id)
@@ -1272,6 +1589,17 @@ async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_titl
     throw new Error(`Pre-PR validation failed:\n- ${lintErrors.join('\n- ')}`);
   }
 
+  // Acquire atomic OPENING_PR gate so duplicate concurrent calls cannot open two PRs
+  const lockRes = await env.DB.prepare(
+    `UPDATE runs SET status = 'OPENING_PR', updated_at = ? WHERE run_id = ? AND status = 'STAGE_B_PACK_READY'`
+  )
+    .bind(nowIso(), params.run_id)
+    .run();
+  if (Number(lockRes.meta?.changes ?? 0) !== 1) {
+    throw new Error(`Concurrency conflict: another request is already opening a pull request for '${params.run_id}'.`);
+  }
+
+  try {
   const ledgerPayload = {
     schema_version: '3.0',
     ledger_id: slug,
@@ -1448,9 +1776,18 @@ async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_titl
   return {
     pr_url: pr.html_url,
     pr_number: pr.number,
+    draft: Boolean(pr.draft ?? (params.draft ?? true)),
     branch: branchName,
     committed_files: filesToCommit.map((f) => f.path),
   };
+  } catch (err) {
+    await env.DB.prepare(
+      `UPDATE runs SET status = 'STAGE_B_PACK_READY', updated_at = ? WHERE run_id = ? AND status = 'OPENING_PR'`
+    )
+      .bind(nowIso(), params.run_id)
+      .run();
+    throw err;
+  }
 }
 
 async function opSearchCorpus(
@@ -1537,12 +1874,17 @@ const MCP_TOOLS = [
     annotations: READ_ONLY_ANNOTATIONS,
     _meta: READ_SECURITY_META,
     description:
-      'Fetch complete target brief, consonant skeleton, dirty-OCR regex, pre-cutoff Chronicling America & Internet Archive search queries, existing citations/dead ends, and DRAgNEt Trap A-D rules.',
+      'Fetch complete target brief, consonant skeleton, dirty-OCR regex, pre-cutoff Chronicling America & Internet Archive search queries, existing citations/dead ends, and DRAgNEt Trap A-D rules. Pass blind_audit=true at the start of Pass 2 Red-Team to verify primary scans and mastheads blindly without Pass 1 prose conclusions.',
     inputSchema: {
       type: 'object',
       required: ['slug_or_id'],
       properties: {
         slug_or_id: { type: 'string', description: "Target ID (e.g. 'TGT-029') or slug (e.g. 'doozy')." },
+        blind_audit: {
+          type: 'boolean',
+          description:
+            'When true, omit Pass 1 dossier_markdown, notes, short_gloss, linguistic_note, and analysis_notes so Pass 2 Red-Team checks scans/mastheads independently first.',
+        },
       },
     },
   },
@@ -1558,6 +1900,27 @@ const MCP_TOOLS = [
         target_id: { type: 'string', description: 'Optional specific target_id to claim instead of queue head.' },
         agent_name: { type: 'string', description: 'Identifier of the calling AI model/agent.' },
         force: { type: 'boolean', description: 'Override active run lock only when explicitly instructed.' },
+      },
+    },
+  },
+  {
+    name: 'resume_phase2_run',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
+    description:
+      'Safely reopen an existing NEEDS_PHASE_2 run in place (preserving its block_number and CERT-XXXX-* citations, verifying no other run is active, and clearing redteam_agent) so follow-up archival discovery can proceed cleanly.',
+    inputSchema: {
+      type: 'object',
+      required: ['run_id_or_slug', 'agent_name'],
+      properties: {
+        run_id_or_slug: {
+          type: 'string',
+          description: "Existing NEEDS_PHASE_2 run_id (e.g. 'RUN-3000-doozy'), slug ('doozy'), or target_id ('TGT-029').",
+        },
+        agent_name: {
+          type: 'string',
+          description: 'Identifier of the Proposer agent resuming discovery (e.g. "dot-proposer").',
+        },
       },
     },
   },
@@ -1602,13 +1965,17 @@ const MCP_TOOLS = [
     annotations: WRITE_ANNOTATIONS,
     _meta: WRITE_SECURITY_META,
     description:
-      'Validate and upsert schema v3.0 CitationRecord entries into D1. Pass 1 (role="proposer") records are clamped to verification_level="discovered"; Pass 2 (role="redteam") promotes verified survivors to "agent_verified" or reclassifies myths as "rejected_lead".',
+      'Validate and upsert schema v3.0 CitationRecord entries into D1. Pass 1 (role="proposer", requires CLAIMING_DISCOVERY) records are clamped to verification_level="discovered"; Pass 2 (role="redteam", requires active AUDITING_REDTEAM lock) promotes verified survivors to "agent_verified" or reclassifies myths as "rejected_lead".',
     inputSchema: {
       type: 'object',
       required: ['target_id', 'role', 'citations'],
       properties: {
         target_id: { type: 'string' },
         run_id: { type: 'string' },
+        agent_name: {
+          type: 'string',
+          description: 'Caller agent identifier matching proposer_agent or the locked redteam_agent.',
+        },
         role: { type: 'string', enum: ['proposer', 'redteam', 'human'] },
         citations: { type: 'array', items: { type: 'object' } },
       },
@@ -1619,7 +1986,7 @@ const MCP_TOOLS = [
     annotations: WRITE_ANNOTATIONS,
     _meta: WRITE_SECURITY_META,
     description:
-      'Store Markdown artifacts (dossier, monograph, red-team audit report, Case File Markdown, OED slips) and advance run status (CLAIMING_DISCOVERY -> AWAITING_AUDIT -> AUDITING_REDTEAM -> STAGE_B_PACK_READY or NEEDS_PHASE_2).',
+      'Store Markdown artifacts and atomically advance run status with Compare-And-Swap single-reviewer locking (CLAIMING_DISCOVERY -> AWAITING_AUDIT -> AUDITING_REDTEAM -> STAGE_B_PACK_READY or NEEDS_PHASE_2). AUDITING_REDTEAM requires a unique agent_name != proposer_agent and locks the run to that single reviewer.',
     inputSchema: {
       type: 'object',
       required: ['run_id', 'next_status'],
@@ -1629,12 +1996,21 @@ const MCP_TOOLS = [
           type: 'string',
           enum: ['CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'STAGE_B_PACK_READY', 'NEEDS_PHASE_2'],
         },
-        agent_name: { type: 'string' },
+        agent_name: {
+          type: 'string',
+          description:
+            'Required for AUDITING_REDTEAM, STAGE_B_PACK_READY, and NEEDS_PHASE_2; must match the redteam_agent lock holder and differ from proposer_agent.',
+        },
+        allow_same_agent: {
+          type: 'boolean',
+          description: 'Coordinator manual override only; omit or set false in automated Proposer/Red-Team runs.',
+        },
         dossier_markdown: { type: 'string' },
         monograph_markdown: { type: 'string' },
         audit_report_markdown: { type: 'string' },
         case_markdown: { type: 'string' },
         oed_slips_markdown: { type: 'string' },
+        claims_json: { type: 'object' },
         prior_art_baselines: { type: 'object' },
         corpus_search_summary: { type: 'object' },
         best_verified_year: { type: 'integer' },
@@ -1647,12 +2023,13 @@ const MCP_TOOLS = [
     annotations: WRITE_ANNOTATIONS,
     _meta: WRITE_SECURITY_META,
     description:
-      'Assemble public/ledgers/{slug}.json, src/content/cases/{slug}.md, open-questions.json, and r2-scan-manifest.json from D1 and open an automated GitHub Pull Request on dragnet-etymology.',
+      'Assemble public/ledgers/{slug}.json, src/content/cases/{slug}.md, open-questions.json, and r2-scan-manifest.json from D1 for a STAGE_B_PACK_READY run and open an automated Draft GitHub Pull Request on dragnet-etymology.',
     inputSchema: {
       type: 'object',
       required: ['run_id'],
       properties: {
         run_id: { type: 'string' },
+        agent_name: { type: 'string', description: 'Optional reviewer agent_name matching redteam_agent.' },
         pr_title: { type: 'string' },
         draft: { type: 'boolean', description: 'Open as a GitHub Draft PR (default true so coordinator controls merge).' },
       },
@@ -1689,9 +2066,11 @@ async function dispatchToolCall(name: string, args: Record<string, any>, env: En
     case 'get_pipeline_status':
       return opGetPipelineStatus(env, Number(args.queue_limit || 10));
     case 'get_target_brief':
-      return opGetTargetBrief(env, String(args.slug_or_id || ''));
+      return opGetTargetBrief(env, String(args.slug_or_id || ''), { blind_audit: Boolean(args.blind_audit) });
     case 'claim_next_target':
       return opClaimNextTarget(env, args);
+    case 'resume_phase2_run':
+      return opResumePhase2Run(env, args as any);
     case 'score_phonetics_and_variants': {
       const hw = String(args.english_headword || '');
       if (!hw) throw new Error('english_headword is required.');
@@ -1751,7 +2130,7 @@ async function handleSingleJsonRpc(msg: Record<string, any>, env: Env): Promise<
           },
           serverInfo: {
             name: 'dragnet-etymology-hub',
-            version: '3.4.0',
+            version: '3.5.0',
           },
           instructions: DRAGNET_CONSTITUTION,
         },
@@ -1850,7 +2229,7 @@ async function handleSingleJsonRpc(msg: Record<string, any>, env: Env): Promise<
       const text =
         pName === 'proposer_pass1'
           ? 'Call claim_next_target, calibrate modern scholarly baselines first, sweep newspapers/serials/cant/hinges, upload composite pre-1931 WebP proof plates via upload_proof_scan, upsert candidates via upsert_citations with role="proposer", and advance status to AWAITING_AUDIT with dossier_markdown.'
-          : 'Call get_pipeline_status to inspect the active AWAITING_AUDIT run, advance to AUDITING_REDTEAM, verify every candidate scan and masthead against Traps A-D, update records via upsert_citations with role="redteam", save Case File Markdown via save_run_artifacts_and_advance (STAGE_B_PACK_READY), and call open_case_pull_request.';
+          : 'Call get_pipeline_status to inspect the active AWAITING_AUDIT run, acquire the single-reviewer lock via save_run_artifacts_and_advance (next_status="AUDITING_REDTEAM", distinct agent_name), call get_target_brief with blind_audit=true to verify primary scans and mastheads against Traps A-D before reading Pass 1 dossier prose, update records via upsert_citations with role="redteam", save Case File Markdown via save_run_artifacts_and_advance (STAGE_B_PACK_READY), and call open_case_pull_request (draft=true).';
       return {
         jsonrpc: '2.0',
         id,
@@ -1982,7 +2361,7 @@ function buildOpenApiSpec(origin: string) {
     openapi: '3.1.0',
     info: {
       title: 'DRAgNEt Historical Lexicography Hub API',
-      version: '3.4.0',
+      version: '3.5.0',
       description:
         'Unified REST interface mirroring the DRAgNEt MCP server for ChatGPT Custom GPT Actions, Gemini scheduled tasks, and CLI scripts.',
     },
@@ -2010,9 +2389,12 @@ function buildOpenApiSpec(origin: string) {
       '/targets/{slugOrId}': {
         get: {
           operationId: 'getTargetBrief',
-          summary: 'Fetch target metadata, phonetic skeleton, OCR regex, pre-cutoff archive queries, and Trap A-D rules.',
+          summary: 'Fetch target metadata, phonetic skeleton, OCR regex, pre-cutoff archive queries, and Trap A-D rules (pass blind=true for blind Red-Team scan check).',
           'x-openai-isConsequential': false,
-          parameters: [{ name: 'slugOrId', in: 'path', required: true, schema: { type: 'string' } }],
+          parameters: [
+            { name: 'slugOrId', in: 'path', required: true, schema: { type: 'string' } },
+            { name: 'blind', in: 'query', required: false, schema: { type: 'boolean', default: false } },
+          ],
           responses: { '200': { description: 'Complete target brief' } },
         },
       },
@@ -2036,6 +2418,29 @@ function buildOpenApiSpec(origin: string) {
             },
           },
           responses: { '200': { description: 'Claimed run and target brief' } },
+        },
+      },
+      '/runs/resume': {
+        post: {
+          operationId: 'resumePhase2Run',
+          summary: 'Safely reopen a closed NEEDS_PHASE_2 run in place while preserving its block_number and CERT IDs.',
+          'x-openai-isConsequential': false,
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['run_id_or_slug', 'agent_name'],
+                  properties: {
+                    run_id_or_slug: { type: 'string' },
+                    agent_name: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+          responses: { '200': { description: 'Resumed run and target brief' } },
         },
       },
       '/phonetics/score': {
@@ -2213,7 +2618,7 @@ async function handleRestApi(request: Request, url: URL, env: Env): Promise<Resp
 
   try {
     if (request.method === 'GET' && (sub === 'health' || sub === '')) {
-      return jsonResponse({ ok: true, service: 'dragnet-etymology-hub', version: '3.4.0' });
+      return jsonResponse({ ok: true, service: 'dragnet-etymology-hub', version: '3.5.0' });
     }
     if (request.method === 'GET' && sub === 'openapi.json') {
       return jsonResponse(buildOpenApiSpec(origin));
@@ -2229,7 +2634,9 @@ async function handleRestApi(request: Request, url: URL, env: Env): Promise<Resp
 
     if (request.method === 'GET' && sub.startsWith('targets/')) {
       const slugOrId = decodeURIComponent(sub.slice('targets/'.length));
-      return jsonResponse(await opGetTargetBrief(env, slugOrId));
+      const blindParam = (url.searchParams.get('blind') || url.searchParams.get('blind_audit') || '').toLowerCase();
+      const blindAudit = blindParam === '1' || blindParam === 'true';
+      return jsonResponse(await opGetTargetBrief(env, slugOrId, { blind_audit: blindAudit }));
     }
     if (request.method === 'GET' && sub === 'search') {
       return jsonResponse(
@@ -2245,6 +2652,7 @@ async function handleRestApi(request: Request, url: URL, env: Env): Promise<Resp
     if (request.method === 'POST') {
       const body = (await request.json().catch(() => ({}))) as Record<string, any>;
       if (sub === 'runs/claim') return jsonResponse(await opClaimNextTarget(env, body));
+      if (sub === 'runs/resume') return jsonResponse(await opResumePhase2Run(env, body as any));
       if (sub === 'phonetics/score') return jsonResponse(await dispatchToolCall('score_phonetics_and_variants', body, env));
       if (sub === 'scans/upload') return jsonResponse(await opUploadProofScan(env, body as any));
       if (sub === 'citations/upsert') return jsonResponse(await opUpsertCitations(env, body as any));
