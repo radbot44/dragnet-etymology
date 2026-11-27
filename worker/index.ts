@@ -794,8 +794,8 @@ async function opGetTargetBrief(env: Env, slugOrId: string) {
   const hasSecondarySenseWindow = milestones.latest_sense_baseline_year > milestones.earliest_baseline_year;
 
   const chronAmUrl =
-    `https://chroniclingamerica.loc.gov/search/pages/results/?proxtext=${encodeURIComponent(headword)}` +
-    `&dateFilterType=yearRange&date1=1770&date2=${preBaselineEndYear}&format=json&page=1`;
+    `https://www.loc.gov/collections/chronicling-america/?ops=~&qs=${encodeURIComponent(headword)}` +
+    `&dates=1770/${preBaselineEndYear}&fo=json&c=25`;
   const iaQuery = `("${headword}") AND mediatype:(texts) AND date:[1650-01-01 TO ${preBaselineEndYear}-12-31]`;
 
   const secondarySenseWindow = hasSecondarySenseWindow
@@ -803,8 +803,8 @@ async function opGetTargetBrief(env: Env, slugOrId: string) {
         window_years: `${milestones.earliest_baseline_year}..${milestones.latest_sense_baseline_year}`,
         note: 'Covers sense/part-of-speech milestones after earliest_baseline_year (e.g. nominal vs. adjectival or figurative shifts noted in baseline_summary).',
         chronicling_america_sense_window_url:
-          `https://chroniclingamerica.loc.gov/search/pages/results/?proxtext=${encodeURIComponent(headword)}` +
-          `&dateFilterType=yearRange&date1=${milestones.earliest_baseline_year}&date2=${milestones.latest_sense_baseline_year}&format=json&page=1`,
+          `https://www.loc.gov/collections/chronicling-america/?ops=~&qs=${encodeURIComponent(headword)}` +
+          `&dates=${milestones.earliest_baseline_year}/${milestones.latest_sense_baseline_year}&fo=json&c=25`,
         internet_archive_sense_window_query:
           `("${headword}") AND mediatype:(texts) AND date:[${milestones.earliest_baseline_year}-01-01 TO ${milestones.latest_sense_baseline_year}-12-31]`,
       }
@@ -1230,7 +1230,7 @@ async function githubApi(env: Env, endpoint: string, init: RequestInit = {}) {
   return data;
 }
 
-async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_title?: string }) {
+async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_title?: string; draft?: boolean }) {
   const run = await env.DB.prepare('SELECT * FROM runs WHERE run_id = ? LIMIT 1')
     .bind(params.run_id)
     .first<Record<string, unknown>>();
@@ -1426,6 +1426,7 @@ async function opOpenCasePullRequest(env: Env, params: { run_id: string; pr_titl
       head: branchName,
       base: baseBranch,
       body: prBody,
+      draft: params.draft ?? true,
     }),
   });
 
@@ -1653,6 +1654,7 @@ const MCP_TOOLS = [
       properties: {
         run_id: { type: 'string' },
         pr_title: { type: 'string' },
+        draft: { type: 'boolean', description: 'Open as a GitHub Draft PR (default true so coordinator controls merge).' },
       },
     },
   },
