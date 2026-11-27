@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "total_targets": 160,
   "description": "English words and phrases of unknown, disputed, or insufficiently antedated origin tracked by DRAgNEt.",
   "targets": [
@@ -289,10 +289,10 @@
       "headword": "doozy",
       "category": "vernacular_slang",
       "baseline_year": 1903,
-      "baseline_summary": "Attested 1903 as adjective ('excellent, splendid', Ohio) and 1916 as noun ('extraordinary thing')",
-      "open_question": "Phonetic alteration of 19th-c. slang daisy ('first-rate specimen')",
-      "status": "under_investigation",
-      "case_slug": null
+      "baseline_summary": "1903 standalone adjective (Kleberg); 1916 count noun (Pound); 1901 baby-talk rhyme is contextual only.",
+      "open_question": "Did approving slang daisy develop into doozy, and is there an earlier securely dated standalone use?",
+      "status": "published_case",
+      "case_slug": "doozy"
     },
     {
       "target_id": "TGT-030",
