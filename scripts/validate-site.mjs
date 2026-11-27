@@ -63,6 +63,10 @@ export function validateSite(rootDir = ROOT) {
   const ledgersDir = path.join(rootDir, 'public', 'ledgers');
   const claimsDir = path.join(rootDir, 'public', 'claims');
   const publicDir = path.join(rootDir, 'public');
+  const r2ManifestPath = path.join(publicDir, 'data', 'r2-scan-manifest.json');
+  const r2Manifest = fs.existsSync(r2ManifestPath)
+    ? JSON.parse(fs.readFileSync(r2ManifestPath, 'utf-8'))
+    : {};
 
   // 1. Check workspace leaks
   const checkExts = new Set(['.json', '.md', '.astro', '.ts', '.js', '.mjs', '.py']);
@@ -141,14 +145,20 @@ export function validateSite(rootDir = ROOT) {
       const pubYr = c.publication_year;
       if (hosted) {
         const diskPath = path.join(publicDir, String(hosted).replace(/^\/+/, ''));
-        if (!fs.existsSync(diskPath)) {
-          errors.push(`${lf} [${cid}]: Missing hosted scan file '${hosted}'`);
-        } else {
+        const r2Entry = r2Manifest[hosted];
+        if (fs.existsSync(diskPath)) {
           const sz = fs.statSync(diskPath).size;
           if (sz > MAX_IMAGE_BYTES) {
             errors.push(`${lf} [${cid}]: Hosted scan '${hosted}' exceeds 5 MB (${sz} bytes)`);
           }
           totalHostedScans += 1;
+        } else if (r2Entry && typeof r2Entry.bytes === 'number') {
+          if (r2Entry.bytes > MAX_IMAGE_BYTES) {
+            errors.push(`${lf} [${cid}]: R2-hosted scan '${hosted}' exceeds 5 MB (${r2Entry.bytes} bytes)`);
+          }
+          totalHostedScans += 1;
+        } else {
+          errors.push(`${lf} [${cid}]: Missing hosted scan file '${hosted}' (not in public/scans/ or r2-scan-manifest.json)`);
         }
         if (typeof pubYr === 'number' && pubYr > 1930 && c.scan.rights_cleared !== true) {
           errors.push(

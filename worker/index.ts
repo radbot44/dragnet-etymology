@@ -130,10 +130,11 @@ const SUPPORTED_MCP_VERSIONS = [
 ];
 
 const DRAGNET_CONSTITUTION = [
-  'DRAgNEt Operating Rules (Proposer != Judge & Traps A-D):',
-  '1. Proposer != Judge: Pass 1 (role="proposer") submits candidates strictly at verification_level="discovered". Only Pass 2 (role="redteam") promotes records to "agent_verified" after independent primary-scan + masthead inspection.',
-  '2. Trap A (Serial/Stereotype Misdating): Never trust catalog metadata year alone; verify masthead_year from the physical masthead, running header, or copyright deposit state.',
-  '3. Trap B (Dirty-OCR Ghosts): Raw OCR is an index only; verify physical ink letter-by-letter on the page scan.',
+  'DRAgNEt Historical Lexicography Hub: Check queue via get_pipeline_status, inspect targets via get_target_brief, search citations via search_corpus, and score phonetics/OCR via score_phonetics_and_variants. Pass 1 Proposer (role="proposer") claims targets and logs candidates at verification_level="discovered"; Pass 2 Red-Team (role="redteam") audits physical scans/mastheads (Traps A-D), promotes survivors to "agent_verified", uploads pre-1931 WebP plates, and opens GitHub PRs.',
+  'Rules:',
+  '1. Proposer != Judge: Pass 1 submits strictly at verification_level="discovered". Only Pass 2 promotes to "agent_verified" after primary-scan + masthead inspection.',
+  '2. Trap A (Serial/Stereotype Misdating): Verify masthead_year on the physical masthead, running header, or copyright leaf rather than catalog metadata alone.',
+  '3. Trap B (Dirty-OCR Ghosts): Verify physical ink letter-by-letter on the page scan.',
   '4. Trap C & D (Homographs & Modern Apparatus): Separate proper names/surnames and reject modern preface/editorial hits.',
   '5. Pre-1931 Scan Rights Gate: Only works with publication_year <= 1930 (or explicit rights_cleared=true) may set scan.hosted_path. Post-1930 works must set scan.hosted_path=null and link externally via https:// source_url.',
   '6. Editorial Cleanliness: Express antedatings in natural years, months, and days (never decimal years), omit raw 4-decimal harness scores from Case File prose, and include zero cloud-drive or Zenodo references.',
@@ -311,6 +312,7 @@ function corsHeaders(): Record<string, string> {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Authorization, Content-Type, Accept, Mcp-Session-Id, MCP-Protocol-Version',
+    'Access-Control-Expose-Headers': 'WWW-Authenticate, Mcp-Session-Id',
     'Access-Control-Max-Age': '86400',
   };
 }
@@ -336,7 +338,100 @@ function timingSafeEqualString(a: string, b: string): boolean {
   return diff === 0;
 }
 
-function checkBearerAuth(request: Request, env: Env): Response | null {
+function resolveCanonicalOrigin(url: URL, env: Env): string {
+  return (env.SITE_ORIGIN || `${url.protocol}//${url.host}`).replace(/\/+$/, '');
+}
+
+function base64UrlEncodeBytes(bytes: Uint8Array): string {
+  let bin = '';
+  for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function base64UrlEncodeText(text: string): string {
+  return base64UrlEncodeBytes(new TextEncoder().encode(text));
+}
+
+function base64UrlDecodeText(b64u: string): string {
+  const padLen = (4 - (b64u.length % 4)) % 4;
+  const b64 = b64u.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat(padLen);
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
+async function importOAuthHmacKey(secret: string): Promise<CryptoKey> {
+  const keyData = new TextEncoder().encode(`dragnet-mcp-oauth-v1:${secret}`);
+  return crypto.subtle.importKey('raw', keyData, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign', 'verify']);
+}
+
+async function signOAuthJwt(payload: Record<string, unknown>, secret: string): Promise<string> {
+  const headerB64 = base64UrlEncodeText(JSON.stringify({ alg: 'HS256', typ: 'JWT' }));
+  const payloadB64 = base64UrlEncodeText(JSON.stringify(payload));
+  const signingInput = `${headerB64}.${payloadB64}`;
+  const key = await importOAuthHmacKey(secret);
+  const sig = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(signingInput));
+  return `${signingInput}.${base64UrlEncodeBytes(new Uint8Array(sig))}`;
+}
+
+async function verifyOAuthJwt(token: string, secret: string): Promise<Record<string, any> | null> {
+  const parts = token.split('.');
+  if (parts.length !== 3) return null;
+  try {
+    const key = await importOAuthHmacKey(secret);
+    const signingInput = `${parts[0]}.${parts[1]}`;
+    const padLen = (4 - (parts[2].length % 4)) % 4;
+    const sigBin = atob(parts[2].replace(/-/g, '+').replace(/_/g, '/') + '='.repeat(padLen));
+    const sigBytes = new Uint8Array(sigBin.length);
+    for (let i = 0; i < sigBin.length; i++) sigBytes[i] = sigBin.charCodeAt(i);
+    const valid = await crypto.subtle.verify('HMAC', key, sigBytes, new TextEncoder().encode(signingInput));
+    if (!valid) return null;
+    const payload = JSON.parse(base64UrlDecodeText(parts[1])) as Record<string, any>;
+    const nowSec = Math.floor(Date.now() / 1000);
+    if (typeof payload.exp !== 'number' || payload.exp <= nowSec) return null;
+    return payload;
+  } catch {
+    return null;
+  }
+}
+
+async function pkceChallengeS256(verifier: string): Promise<string> {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier));
+  return base64UrlEncodeBytes(new Uint8Array(digest));
+}
+
+function isAllowedOAuthRedirectUri(rawUri: string): boolean {
+  try {
+    const u = new URL(rawUri);
+    if (u.protocol === 'https:') {
+      if (u.hostname === 'chatgpt.com' || u.hostname.endsWith('.chatgpt.com')) return true;
+      if (u.hostname === 'openai.com' || u.hostname.endsWith('.openai.com')) return true;
+      if (u.hostname === 'claude.ai' || u.hostname === 'claude.com') return true;
+    }
+    if (u.protocol === 'http:' && (u.hostname === '127.0.0.1' || u.hostname === 'localhost')) {
+      return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function buildWwwAuthenticateHeader(origin: string): string {
+  return `Bearer resource_metadata="${origin}/.well-known/oauth-protected-resource", scope="dragnet:read dragnet:write offline_access"`;
+}
+
+async function checkBearerAuth(request: Request, env: Env, url?: URL): Promise<Response | null> {
   const configured = (env.DRAGNET_API_KEY || '').trim();
   if (!configured) {
     return jsonResponse(
@@ -344,14 +439,34 @@ function checkBearerAuth(request: Request, env: Env): Response | null {
       500
     );
   }
+  const reqUrl = url || new URL(request.url);
+  const origin = resolveCanonicalOrigin(reqUrl, env);
+
+  // 1. Optional capability path `/mcp/<DRAGNET_API_KEY>` for clients using "No authentication"
+  if (reqUrl.pathname.startsWith('/mcp/')) {
+    const seg = decodeURIComponent(reqUrl.pathname.slice('/mcp/'.length)).replace(/\/+$/, '');
+    if (seg && timingSafeEqualString(seg, configured)) {
+      return null;
+    }
+  }
+
+  // 2. Authorization: Bearer <DRAGNET_API_KEY | signed_oauth_access_token>
   const header = request.headers.get('Authorization') || '';
   const m = header.match(/^Bearer\s+(.+)$/i);
-  if (!m || !timingSafeEqualString(m[1].trim(), configured)) {
-    return jsonResponse({ error: 'Unauthorized: valid Bearer DRAGNET_API_KEY required.' }, 401, {
-      'WWW-Authenticate': 'Bearer realm="dragnet"',
-    });
+  if (m) {
+    const token = m[1].trim();
+    if (timingSafeEqualString(token, configured)) {
+      return null;
+    }
+    const jwt = await verifyOAuthJwt(token, configured);
+    if (jwt && jwt.token_use === 'access' && jwt.iss === origin) {
+      return null;
+    }
   }
-  return null;
+
+  return jsonResponse({ error: 'Unauthorized: valid Bearer token or OAuth 2.1 authorization required.' }, 401, {
+    'WWW-Authenticate': buildWwwAuthenticateHeader(origin),
+  });
 }
 
 async function sha256Hex(bytes: Uint8Array): Promise<string> {
@@ -1253,9 +1368,40 @@ async function opSearchCorpus(
 // 5. MCP Tool Definitions & Stateless JSON-RPC 2.0 Handler (/mcp)
 // ============================================================================
 
+const READ_ONLY_ANNOTATIONS = { readOnlyHint: true, destructiveHint: false, openWorldHint: false };
+const WRITE_ANNOTATIONS = { readOnlyHint: false, destructiveHint: false, openWorldHint: true };
+const READ_SECURITY_META = { securitySchemes: [{ type: 'oauth2', scopes: ['dragnet:read'] }] };
+const WRITE_SECURITY_META = { securitySchemes: [{ type: 'oauth2', scopes: ['dragnet:write'] }] };
+
 const MCP_TOOLS = [
   {
+    name: 'get_profile',
+    description:
+      "Return the authenticated DRAgNEt coordinator profile represented by this connection's credentials.",
+    inputSchema: {
+      type: 'object',
+      properties: {},
+      additionalProperties: false,
+    },
+    outputSchema: {
+      $schema: 'https://json-schema.org/draft/2020-12/schema',
+      type: 'object',
+      properties: {
+        id: { type: 'string', minLength: 1, pattern: '\\S' },
+        name: { type: 'string' },
+        nickname: { type: 'string' },
+      },
+      required: ['id'],
+      additionalProperties: false,
+    },
+    annotations: READ_ONLY_ANNOTATIONS,
+    securitySchemes: [{ type: 'oauth2', scopes: ['dragnet:read'] }],
+    _meta: { 'openai/profile': true, ...READ_SECURITY_META },
+  },
+  {
     name: 'get_pipeline_status',
+    annotations: READ_ONLY_ANNOTATIONS,
+    _meta: READ_SECURITY_META,
     description:
       'Return DRAgNEt queue counts across all 160 targets, any active Proposer/Red-Team run lock, next_open_block, and top queued headwords.',
     inputSchema: {
@@ -1267,6 +1413,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'get_target_brief',
+    annotations: READ_ONLY_ANNOTATIONS,
+    _meta: READ_SECURITY_META,
     description:
       'Fetch complete target brief, consonant skeleton, dirty-OCR regex, pre-cutoff Chronicling America & Internet Archive search queries, existing citations/dead ends, and DRAgNEt Trap A-D rules.',
     inputSchema: {
@@ -1279,6 +1427,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'claim_next_target',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
     description:
       'Atomically claim the next QUEUED target (or specified target_id) for Pass 1 Proposer discovery, allocate its 100-slot block number, and return its full brief.',
     inputSchema: {
@@ -1292,6 +1442,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'score_phonetics_and_variants',
+    annotations: READ_ONLY_ANNOTATIONS,
+    _meta: READ_SECURITY_META,
     description:
       'Run deterministic DRAgNEt articulatory consonant-skeleton contact scoring, OCR variant expansion, phonetic variant expansion, and column-wrap regex generation.',
     inputSchema: {
@@ -1307,6 +1459,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'upload_proof_scan',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
     description:
       'Upload a pre-1931 composite WebP proof scan (full page + masthead + zoomed ink crop, <= 5 MB) to Cloudflare R2 and return its canonical hosted_path and SHA-256.',
     inputSchema: {
@@ -1324,6 +1478,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'upsert_citations',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
     description:
       'Validate and upsert schema v3.0 CitationRecord entries into D1. Pass 1 (role="proposer") records are clamped to verification_level="discovered"; Pass 2 (role="redteam") promotes verified survivors to "agent_verified" or reclassifies myths as "rejected_lead".',
     inputSchema: {
@@ -1339,6 +1495,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'save_run_artifacts_and_advance',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
     description:
       'Store Markdown artifacts (dossier, monograph, red-team audit report, Case File Markdown, OED slips) and advance run status (CLAIMING_DISCOVERY -> AWAITING_AUDIT -> AUDITING_REDTEAM -> STAGE_B_PACK_READY or NEEDS_PHASE_2).',
     inputSchema: {
@@ -1365,6 +1523,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'open_case_pull_request',
+    annotations: WRITE_ANNOTATIONS,
+    _meta: WRITE_SECURITY_META,
     description:
       'Assemble public/ledgers/{slug}.json, src/content/cases/{slug}.md, open-questions.json, and r2-scan-manifest.json from D1 and open an automated GitHub Pull Request on dragnet-etymology.',
     inputSchema: {
@@ -1378,6 +1538,8 @@ const MCP_TOOLS = [
   },
   {
     name: 'search_corpus',
+    annotations: READ_ONLY_ANNOTATIONS,
+    _meta: READ_SECURITY_META,
     description: 'Search across all stored D1 citations by keyword, case_slug, record_type, or verification_level.',
     inputSchema: {
       type: 'object',
@@ -1392,8 +1554,16 @@ const MCP_TOOLS = [
   },
 ];
 
+const COORDINATOR_PROFILE = {
+  id: 'prf_dragnet_coordinator_01',
+  name: 'Joshua Callahan',
+  nickname: 'DRAgNEt Coordinator (@radbot44)',
+};
+
 async function dispatchToolCall(name: string, args: Record<string, any>, env: Env): Promise<unknown> {
   switch (name) {
+    case 'get_profile':
+      return COORDINATOR_PROFILE;
     case 'get_pipeline_status':
       return opGetPipelineStatus(env, Number(args.queue_limit || 10));
     case 'get_target_brief':
@@ -1480,6 +1650,7 @@ async function handleSingleJsonRpc(msg: Record<string, any>, env: Env): Promise<
           id,
           result: {
             content: [{ type: 'text', text: JSON.stringify(out, null, 2) }],
+            ...(toolName === 'get_profile' ? { structuredContent: out } : {}),
             isError: false,
           },
         };
@@ -1581,10 +1752,13 @@ async function handleSingleJsonRpc(msg: Record<string, any>, env: Env): Promise<
   }
 }
 
-async function handleMcpRequest(request: Request, env: Env): Promise<Response> {
+async function handleMcpRequest(request: Request, url: URL, env: Env): Promise<Response> {
   if (request.method === 'OPTIONS') {
     return new Response(null, { status: 204, headers: corsHeaders() });
   }
+  const authErr = await checkBearerAuth(request, env, url);
+  if (authErr) return authErr;
+
   if (request.method !== 'POST') {
     return jsonResponse(
       { error: 'Stateless Streamable HTTP MCP endpoint accepts POST JSON-RPC 2.0 requests.' },
@@ -1592,8 +1766,6 @@ async function handleMcpRequest(request: Request, env: Env): Promise<Response> {
       { Allow: 'POST, OPTIONS' }
     );
   }
-  const authErr = checkBearerAuth(request, env);
-  if (authErr) return authErr;
 
   let payload: unknown;
   try {
@@ -1929,7 +2101,7 @@ async function handleRestApi(request: Request, url: URL, env: Env): Promise<Resp
     }
 
     // All remaining /api/v1/* endpoints require Bearer authentication
-    const authErr = checkBearerAuth(request, env);
+    const authErr = await checkBearerAuth(request, env, url);
     if (authErr) return authErr;
 
     if (request.method === 'GET' && sub.startsWith('targets/')) {
@@ -1997,6 +2169,394 @@ async function handleScanRequest(request: Request, url: URL, env: Env, ctx: Exec
   return env.ASSETS.fetch(request);
 }
 
+
+// ============================================================================
+// 5B. Stateless OAuth 2.1 + PKCE + DCR Discovery & Consent Flow (ChatGPT & Claude MCP)
+// ============================================================================
+
+const SUPPORTED_OAUTH_SCOPES = ['dragnet:read', 'dragnet:write', 'offline_access'];
+
+function buildProtectedResourceMetadata(origin: string) {
+  return {
+    resource: `${origin}/mcp`,
+    authorization_servers: [origin],
+    scopes_supported: SUPPORTED_OAUTH_SCOPES,
+    bearer_methods_supported: ['header'],
+    resource_documentation: `${origin}/protocols/`,
+  };
+}
+
+function buildAuthServerMetadata(origin: string) {
+  return {
+    issuer: origin,
+    authorization_response_iss_parameter_supported: true,
+    authorization_endpoint: `${origin}/oauth/authorize`,
+    token_endpoint: `${origin}/oauth/token`,
+    registration_endpoint: `${origin}/oauth/register`,
+    client_id_metadata_document_supported: true,
+    response_types_supported: ['code'],
+    grant_types_supported: ['authorization_code', 'refresh_token'],
+    token_endpoint_auth_methods_supported: ['none', 'client_secret_post', 'client_secret_basic'],
+    code_challenge_methods_supported: ['S256'],
+    scopes_supported: SUPPORTED_OAUTH_SCOPES,
+  };
+}
+
+function renderAuthorizePage(params: {
+  clientId: string;
+  redirectUri: string;
+  scope: string;
+  state: string;
+  codeChallenge: string;
+  codeChallengeMethod: string;
+  resource: string;
+  errorMsg?: string;
+}): Response {
+  const html = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authorize DRAgNEt MCP</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f6f4ef; color: #1c1917; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 1rem; }
+    .card { background: #fff; border: 1px solid #d6d3cd; border-radius: 10px; max-width: 420px; width: 100%; padding: 1.5rem; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+    .kicker { font-family: ui-monospace, monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #7c2d12; font-weight: 700; }
+    h1 { font-size: 1.25rem; margin: 0.35rem 0 0.6rem; }
+    p { font-size: 0.9rem; color: #57534e; line-height: 1.45; margin: 0 0 1rem; word-break: break-word; }
+    .meta { background: #faf8f5; border: 1px solid #e7e5e4; border-radius: 6px; padding: 0.65rem 0.75rem; font-family: ui-monospace, monospace; font-size: 0.78rem; margin-bottom: 1rem; color: #44403c; }
+    label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; }
+    input[type="password"] { width: 100%; box-sizing: border-box; padding: 0.6rem 0.75rem; border: 1px solid #a8a29e; border-radius: 6px; font-size: 0.95rem; margin-bottom: 1rem; }
+    .err { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; padding: 0.6rem 0.75rem; border-radius: 6px; font-size: 0.85rem; margin-bottom: 1rem; }
+    .actions { display: flex; gap: 0.6rem; }
+    button { flex: 1; padding: 0.65rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border: 1px solid transparent; }
+    .btn-primary { background: #7c2d12; color: #fff; }
+    .btn-secondary { background: #f5f5f4; color: #44403c; border-color: #d6d3cd; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="kicker">DRAgNEt · MCP OAuth 2.1</div>
+    <h1>Authorize MCP Client</h1>
+    <p>Enter your <code>DRAGNET_API_KEY</code> once to issue a scoped OAuth 2.1 session for this MCP connector.</p>
+    <div class="meta">
+      <div><strong>Client:</strong> ${escapeHtml(params.clientId)}</div>
+      <div><strong>Callback:</strong> ${escapeHtml(new URL(params.redirectUri).host)}</div>
+      <div><strong>Scopes:</strong> ${escapeHtml(params.scope || 'dragnet:read dragnet:write offline_access')}</div>
+    </div>
+    ${params.errorMsg ? `<div class="err">${escapeHtml(params.errorMsg)}</div>` : ''}
+    <form method="POST" action="/oauth/authorize">
+      <input type="hidden" name="client_id" value="${escapeHtml(params.clientId)}" />
+      <input type="hidden" name="redirect_uri" value="${escapeHtml(params.redirectUri)}" />
+      <input type="hidden" name="scope" value="${escapeHtml(params.scope)}" />
+      <input type="hidden" name="state" value="${escapeHtml(params.state)}" />
+      <input type="hidden" name="code_challenge" value="${escapeHtml(params.codeChallenge)}" />
+      <input type="hidden" name="code_challenge_method" value="${escapeHtml(params.codeChallengeMethod)}" />
+      <input type="hidden" name="resource" value="${escapeHtml(params.resource)}" />
+      <label for="api_key">Coordinator API Key</label>
+      <input id="api_key" name="api_key" type="password" required autofocus autocomplete="current-password" />
+      <div class="actions">
+        <button type="submit" name="decision" value="deny" class="btn-secondary" formnovalidate>Cancel</button>
+        <button type="submit" name="decision" value="allow" class="btn-primary">Authorize</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>`;
+  return new Response(html, {
+    status: params.errorMsg ? 401 : 200,
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'",
+    },
+  });
+}
+
+async function handleOAuthAndDiscovery(request: Request, url: URL, env: Env): Promise<Response> {
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers: corsHeaders() });
+  }
+  const origin = resolveCanonicalOrigin(url, env);
+  const configured = (env.DRAGNET_API_KEY || '').trim();
+
+  if (request.method === 'GET' && url.pathname.startsWith('/.well-known/oauth-protected-resource')) {
+    return jsonResponse(buildProtectedResourceMetadata(origin), 200, { 'Cache-Control': 'no-store' });
+  }
+  if (
+    request.method === 'GET' &&
+    (url.pathname.startsWith('/.well-known/oauth-authorization-server') ||
+      url.pathname.startsWith('/.well-known/openid-configuration'))
+  ) {
+    return jsonResponse(buildAuthServerMetadata(origin), 200, { 'Cache-Control': 'no-store' });
+  }
+
+  // RFC 7591 Dynamic Client Registration (DCR)
+  if (request.method === 'POST' && url.pathname === '/oauth/register') {
+    const body = (await request.json().catch(() => ({}))) as Record<string, any>;
+    const redirectUris = Array.isArray(body.redirect_uris) ? body.redirect_uris.map(String) : [];
+    if (redirectUris.length === 0 || !redirectUris.every(isAllowedOAuthRedirectUri)) {
+      return jsonResponse(
+        { error: 'invalid_redirect_uri', error_description: 'Redirect URI must be an approved ChatGPT, Claude, or localhost callback.' },
+        400
+      );
+    }
+    const rand = new Uint8Array(12);
+    crypto.getRandomValues(rand);
+    const clientId = `dragnet_client_${base64UrlEncodeBytes(rand)}`;
+    const requestedMethod = String(body.token_endpoint_auth_method || 'none');
+    const authMethod = ['none', 'client_secret_post', 'client_secret_basic'].includes(requestedMethod)
+      ? requestedMethod
+      : 'none';
+    const resp: Record<string, unknown> = {
+      client_id: clientId,
+      client_id_issued_at: Math.floor(Date.now() / 1000),
+      client_name: String(body.client_name || 'MCP Client'),
+      redirect_uris: redirectUris,
+      grant_types: ['authorization_code', 'refresh_token'],
+      response_types: ['code'],
+      token_endpoint_auth_method: authMethod,
+    };
+    if (authMethod !== 'none' && configured) {
+      resp.client_secret = await signOAuthJwt({ token_use: 'client_secret', client_id: clientId, exp: Math.floor(Date.now() / 1000) + 315360000 }, configured);
+      resp.client_secret_expires_at = 0;
+    }
+    return jsonResponse(resp, 201, { 'Cache-Control': 'no-store' });
+  }
+
+  // OAuth 2.1 Authorization Endpoint (GET renders consent card, POST validates DRAGNET_API_KEY & issues PKCE code)
+  if (url.pathname === '/oauth/authorize') {
+    if (!configured) {
+      return jsonResponse({ error: 'server_error', error_description: 'DRAGNET_API_KEY secret is not configured.' }, 500);
+    }
+    if (request.method === 'GET') {
+      const clientId = url.searchParams.get('client_id') || '';
+      const redirectUri = url.searchParams.get('redirect_uri') || '';
+      const responseType = url.searchParams.get('response_type') || 'code';
+      const scope = url.searchParams.get('scope') || SUPPORTED_OAUTH_SCOPES.join(' ');
+      const state = url.searchParams.get('state') || '';
+      const codeChallenge = url.searchParams.get('code_challenge') || '';
+      const codeChallengeMethod = url.searchParams.get('code_challenge_method') || 'S256';
+      const resource = url.searchParams.get('resource') || `${origin}/mcp`;
+
+      if (!clientId || !redirectUri || !isAllowedOAuthRedirectUri(redirectUri)) {
+        return jsonResponse({ error: 'invalid_request', error_description: 'Missing client_id or unapproved redirect_uri.' }, 400);
+      }
+      if (responseType !== 'code' || !codeChallenge || codeChallengeMethod !== 'S256') {
+        const cb = new URL(redirectUri);
+        cb.searchParams.set('error', 'invalid_request');
+        cb.searchParams.set('error_description', 'PKCE S256 and response_type=code are required.');
+        if (state) cb.searchParams.set('state', state);
+        cb.searchParams.set('iss', origin);
+        return Response.redirect(cb.toString(), 302);
+      }
+      return renderAuthorizePage({
+        clientId,
+        redirectUri,
+        scope,
+        state,
+        codeChallenge,
+        codeChallengeMethod,
+        resource,
+      });
+    }
+
+    if (request.method === 'POST') {
+      const form = await request.formData();
+      const clientId = String(form.get('client_id') || '');
+      const redirectUri = String(form.get('redirect_uri') || '');
+      const scope = String(form.get('scope') || SUPPORTED_OAUTH_SCOPES.join(' '));
+      const state = String(form.get('state') || '');
+      const codeChallenge = String(form.get('code_challenge') || '');
+      const codeChallengeMethod = String(form.get('code_challenge_method') || 'S256');
+      const resource = String(form.get('resource') || `${origin}/mcp`);
+      const decision = String(form.get('decision') || '');
+      const apiKey = String(form.get('api_key') || '').trim();
+
+      if (!clientId || !redirectUri || !isAllowedOAuthRedirectUri(redirectUri)) {
+        return jsonResponse({ error: 'invalid_request', error_description: 'Invalid redirect_uri or client_id.' }, 400);
+      }
+      if (decision !== 'allow') {
+        const cb = new URL(redirectUri);
+        cb.searchParams.set('error', 'access_denied');
+        cb.searchParams.set('error_description', 'User cancelled authorization.');
+        if (state) cb.searchParams.set('state', state);
+        cb.searchParams.set('iss', origin);
+        return Response.redirect(cb.toString(), 302);
+      }
+      if (!apiKey || !timingSafeEqualString(apiKey, configured)) {
+        return renderAuthorizePage({
+          clientId,
+          redirectUri,
+          scope,
+          state,
+          codeChallenge,
+          codeChallengeMethod,
+          resource,
+          errorMsg: 'Invalid DRAGNET_API_KEY. Check your Worker secret and try again.',
+        });
+      }
+
+      const nowSec = Math.floor(Date.now() / 1000);
+      const code = await signOAuthJwt(
+        {
+          token_use: 'auth_code',
+          iss: origin,
+          client_id: clientId,
+          redirect_uri: redirectUri,
+          code_challenge: codeChallenge,
+          code_challenge_method: 'S256',
+          scope,
+          resource,
+          iat: nowSec,
+          exp: nowSec + 300,
+        },
+        configured
+      );
+      const cb = new URL(redirectUri);
+      cb.searchParams.set('code', code);
+      if (state) cb.searchParams.set('state', state);
+      cb.searchParams.set('iss', origin);
+      return Response.redirect(cb.toString(), 302);
+    }
+  }
+
+  // OAuth 2.1 Token Endpoint (authorization_code + PKCE S256 & refresh_token)
+  if (request.method === 'POST' && url.pathname === '/oauth/token') {
+    if (!configured) {
+      return jsonResponse({ error: 'server_error', error_description: 'DRAGNET_API_KEY secret is not configured.' }, 500);
+    }
+    const ct = (request.headers.get('Content-Type') || '').toLowerCase();
+    let params: Record<string, string> = {};
+    if (ct.includes('application/json')) {
+      const jb = (await request.json().catch(() => ({}))) as Record<string, any>;
+      for (const [k, v] of Object.entries(jb)) if (v != null) params[k] = String(v);
+    } else {
+      const text = await request.text();
+      new URLSearchParams(text).forEach((v, k) => { params[k] = v; });
+    }
+
+    const grantType = params.grant_type || '';
+    const nowSec = Math.floor(Date.now() / 1000);
+
+    if (grantType === 'authorization_code') {
+      const code = params.code || '';
+      const verifier = params.code_verifier || '';
+      const clientId = params.client_id || '';
+      const redirectUri = params.redirect_uri || '';
+
+      const claims = await verifyOAuthJwt(code, configured);
+      if (!claims || claims.token_use !== 'auth_code' || claims.iss !== origin) {
+        return jsonResponse({ error: 'invalid_grant', error_description: 'Authorization code is invalid or expired.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+      if (clientId && claims.client_id !== clientId) {
+        return jsonResponse({ error: 'invalid_grant', error_description: 'client_id mismatch.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+      if (redirectUri && claims.redirect_uri !== redirectUri) {
+        return jsonResponse({ error: 'invalid_grant', error_description: 'redirect_uri mismatch.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+      if (!verifier) {
+        return jsonResponse({ error: 'invalid_request', error_description: 'Missing PKCE code_verifier.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+      const computedChallenge = await pkceChallengeS256(verifier);
+      if (!timingSafeEqualString(computedChallenge, String(claims.code_challenge || ''))) {
+        return jsonResponse({ error: 'invalid_grant', error_description: 'PKCE S256 verification failed.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+
+      const aud = params.resource || claims.resource || `${origin}/mcp`;
+      const scope = String(claims.scope || SUPPORTED_OAUTH_SCOPES.join(' '));
+      const accessToken = await signOAuthJwt(
+        {
+          token_use: 'access',
+          iss: origin,
+          aud,
+          sub: COORDINATOR_PROFILE.id,
+          client_id: claims.client_id,
+          scope,
+          iat: nowSec,
+          exp: nowSec + 43200,
+        },
+        configured
+      );
+      const refreshToken = await signOAuthJwt(
+        {
+          token_use: 'refresh',
+          iss: origin,
+          aud,
+          sub: COORDINATOR_PROFILE.id,
+          client_id: claims.client_id,
+          scope,
+          iat: nowSec,
+          exp: nowSec + 7776000,
+        },
+        configured
+      );
+      return jsonResponse(
+        {
+          access_token: accessToken,
+          token_type: 'Bearer',
+          expires_in: 43200,
+          refresh_token: refreshToken,
+          scope,
+        },
+        200,
+        { 'Cache-Control': 'no-store' }
+      );
+    }
+
+    if (grantType === 'refresh_token') {
+      const rt = params.refresh_token || '';
+      const claims = await verifyOAuthJwt(rt, configured);
+      if (!claims || claims.token_use !== 'refresh' || claims.iss !== origin) {
+        return jsonResponse({ error: 'invalid_grant', error_description: 'Refresh token is invalid or expired.' }, 400, { 'Cache-Control': 'no-store' });
+      }
+      const aud = params.resource || claims.aud || `${origin}/mcp`;
+      const scope = String(claims.scope || SUPPORTED_OAUTH_SCOPES.join(' '));
+      const accessToken = await signOAuthJwt(
+        {
+          token_use: 'access',
+          iss: origin,
+          aud,
+          sub: COORDINATOR_PROFILE.id,
+          client_id: claims.client_id,
+          scope,
+          iat: nowSec,
+          exp: nowSec + 43200,
+        },
+        configured
+      );
+      const nextRefresh = await signOAuthJwt(
+        {
+          token_use: 'refresh',
+          iss: origin,
+          aud,
+          sub: COORDINATOR_PROFILE.id,
+          client_id: claims.client_id,
+          scope,
+          iat: nowSec,
+          exp: nowSec + 7776000,
+        },
+        configured
+      );
+      return jsonResponse(
+        {
+          access_token: accessToken,
+          token_type: 'Bearer',
+          expires_in: 43200,
+          refresh_token: nextRefresh,
+          scope,
+        },
+        200,
+        { 'Cache-Control': 'no-store' }
+      );
+    }
+
+    return jsonResponse({ error: 'unsupported_grant_type', error_description: `Unsupported grant_type '${grantType}'.` }, 400, { 'Cache-Control': 'no-store' });
+  }
+
+  return jsonResponse({ error: 'Not Found' }, 404);
+}
+
 // ============================================================================
 // 8. Worker Entrypoint
 // ============================================================================
@@ -2004,8 +2564,11 @@ async function handleScanRequest(request: Request, url: URL, env: Env, ctx: Exec
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    if (url.pathname.startsWith('/.well-known/') || url.pathname.startsWith('/oauth/')) {
+      return handleOAuthAndDiscovery(request, url, env);
+    }
     if (url.pathname === '/mcp' || url.pathname.startsWith('/mcp/')) {
-      return handleMcpRequest(request, env);
+      return handleMcpRequest(request, url, env);
     }
     if (url.pathname.startsWith('/api/v1')) {
       return handleRestApi(request, url, env);
