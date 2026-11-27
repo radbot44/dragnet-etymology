@@ -735,7 +735,7 @@ async function opGetPipelineStatus(env: Env, queueLimit = 10) {
   const activeRun = await env.DB.prepare(
     `SELECT run_id, block_number, target_id, slug, headword, status, proposer_agent, redteam_agent, pr_url, started_at, updated_at
      FROM runs
-     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM')
      ORDER BY updated_at DESC LIMIT 1`
   ).first();
   const nextQueued = await env.DB.prepare(
@@ -890,7 +890,7 @@ async function opClaimNextTarget(
   const active = await env.DB.prepare(
     `SELECT run_id, block_number, target_id, headword, status, updated_at
      FROM runs
-     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM')
      ORDER BY updated_at DESC LIMIT 1`
   ).first<Record<string, unknown>>();
 
@@ -978,7 +978,7 @@ async function opResumePhase2Run(
   const active = await env.DB.prepare(
     `SELECT run_id, block_number, target_id, slug, headword, status, proposer_agent, redteam_agent, updated_at
      FROM runs
-     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM', 'OPENING_PR')
+     WHERE status IN ('CLAIMING_DISCOVERY', 'AWAITING_AUDIT', 'AUDITING_REDTEAM')
      ORDER BY updated_at DESC LIMIT 1`
   ).first<Record<string, unknown>>();
 
@@ -1589,11 +1589,12 @@ async function opOpenCasePullRequest(
     throw new Error(`Pre-PR validation failed:\n- ${lintErrors.join('\n- ')}`);
   }
 
-  // Acquire atomic OPENING_PR gate so duplicate concurrent calls cannot open two PRs
+  // Acquire atomic PR lock in pipeline_meta (compatible with existing D1 runs.status CHECK constraint)
+  const prLockKey = `opening_pr_lock:${params.run_id}`;
   const lockRes = await env.DB.prepare(
-    `UPDATE runs SET status = 'OPENING_PR', updated_at = ? WHERE run_id = ? AND status = 'STAGE_B_PACK_READY'`
+    `INSERT INTO pipeline_meta (key, value) VALUES (?, ?) ON CONFLICT(key) DO NOTHING`
   )
-    .bind(nowIso(), params.run_id)
+    .bind(prLockKey, nowIso())
     .run();
   if (Number(lockRes.meta?.changes ?? 0) !== 1) {
     throw new Error(`Concurrency conflict: another request is already opening a pull request for '${params.run_id}'.`);
@@ -1780,13 +1781,8 @@ async function opOpenCasePullRequest(
     branch: branchName,
     committed_files: filesToCommit.map((f) => f.path),
   };
-  } catch (err) {
-    await env.DB.prepare(
-      `UPDATE runs SET status = 'STAGE_B_PACK_READY', updated_at = ? WHERE run_id = ? AND status = 'OPENING_PR'`
-    )
-      .bind(nowIso(), params.run_id)
-      .run();
-    throw err;
+  } finally {
+    await env.DB.prepare(`DELETE FROM pipeline_meta WHERE key = ?`).bind(prLockKey).run();
   }
 }
 

@@ -4462,5 +4462,257 @@
   "/scans/yegg/CERT-1500-310.webp": {
     "bytes": 77420,
     "sha256": "464eb65b09101792e509b5f70198b8770d644d16d2e02e78ab0179f48d438475"
+  },
+  "/scans/persnickety/CERT-3100-202.webp": {
+    "bytes": 289638,
+    "sha256": "2e9f355e83629aa65935e6822520b029e30abf8171bd495c24b50ab54298f213"
+  },
+  "/scans/persnickety/CERT-3100-204.webp": {
+    "bytes": 284214,
+    "sha256": "d9757ccae7c360d28a9c303cd4cea65afc083256c77e5e09b9ab70a691a1a45e"
+  },
+  "/scans/persnickety/CERT-3100-206.webp": {
+    "bytes": 375978,
+    "sha256": "d1963b7035c1f37b34b3d1c15d00a51abd97635e46b8e35beabbd74b7a019425"
+  },
+  "/scans/persnickety/CERT-3100-211.webp": {
+    "bytes": 401588,
+    "sha256": "dccffaeb2170122aeb7e7b96ad20fa048cd76ff0f14ee17960a21f10eeace8ab"
+  },
+  "/scans/persnickety/CERT-3100-212.webp": {
+    "bytes": 182878,
+    "sha256": "5d98ec436d3712f4ba283d5c3deead7e9bdc2a73c73d64c0147ae9ee4748cb19"
+  },
+  "/scans/persnickety/CERT-3100-301.webp": {
+    "bytes": 408584,
+    "sha256": "6c863d42f09b99506bb22087ee02eb01ddf1b5cfe27048b1ffa8cfec7844a83f"
+  },
+  "/scans/persnickety/CERT-3100-308.webp": {
+    "bytes": 437382,
+    "sha256": "613d76d6774717e369d686e82650650ecda1d782e94c0b5f850631d324eba58b"
+  },
+  "/scans/persnickety/CERT-3100-314.webp": {
+    "bytes": 372478,
+    "sha256": "1639be646aa58e5c66fb91da15a496f402dc93ce93d14b0a45861fee1e68faa1"
+  },
+  "/scans/persnickety/CERT-3100-315.webp": {
+    "bytes": 585496,
+    "sha256": "0e08cf1b507d0cf3f41796a5460ef00522e1c011a5042403fe17a01ed5898dde"
+  },
+  "/scans/persnickety/CERT-3100-403.webp": {
+    "bytes": 361588,
+    "sha256": "f6966ac0b3898a7e9c687bc0ccafaa9249c25692072f4dafbe09269743d9039c"
+  },
+  "/scans/persnickety/CERT-3100-405.webp": {
+    "bytes": 476304,
+    "sha256": "c6c48fbf27196d4f032238c0e2e2142304206944cd951823c88c67236e010656"
+  },
+  "/scans/persnickety/CERT-3100-406.webp": {
+    "bytes": 398808,
+    "sha256": "519fc4ed170980f6317e876feefacb5a1e9363d25cd7720579c9de3d464bff8c"
+  },
+  "/scans/persnickety/CERT-3100-410.webp": {
+    "bytes": 342706,
+    "sha256": "13ec59d7aab1107d81de6606b0329549320022f33bb1d450b0433c0cd4d9a948"
+  },
+  "/scans/persnickety/CERT-3100-411.webp": {
+    "bytes": 387342,
+    "sha256": "3ca7bb9d151ad7d7156167a6456f568a41da508d72bff2e4e480e567dade9fd8"
+  },
+  "/scans/persnickety/CERT-3100-414.webp": {
+    "bytes": 470348,
+    "sha256": "3d056105f40a8ccac093c0fe658686850d1528140fe834666933c20ad18bde82"
+  },
+  "/scans/persnickety/CERT-3100-416.webp": {
+    "bytes": 471490,
+    "sha256": "8d595561ef6cdbfdb3af390d51d050678ecf13b3fd94de52eb257a9afea460e7"
+  },
+  "/scans/persnickety/CERT-3100-302.webp": {
+    "bytes": 233184,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-303.webp": {
+    "bytes": 229434,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-304.webp": {
+    "bytes": 274214,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-401.webp": {
+    "bytes": 315810,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-114.webp": {
+    "bytes": 575882,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-305.webp": {
+    "bytes": 153850,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-306.webp": {
+    "bytes": 230088,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-307.webp": {
+    "bytes": 304122,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-402.webp": {
+    "bytes": 362674,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-309.webp": {
+    "bytes": 240026,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-101.webp": {
+    "bytes": 403240,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-310.webp": {
+    "bytes": 241530,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-311.webp": {
+    "bytes": 154516,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-102.webp": {
+    "bytes": 357972,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-103.webp": {
+    "bytes": 717768,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-415.webp": {
+    "bytes": 492648,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-104.webp": {
+    "bytes": 866726,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-312.webp": {
+    "bytes": 208596,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-105.webp": {
+    "bytes": 415896,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-316.webp": {
+    "bytes": 339990,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-313.webp": {
+    "bytes": 282494,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-115.webp": {
+    "bytes": 605438,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-413.webp": {
+    "bytes": 436220,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-404.webp": {
+    "bytes": 219548,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-106.webp": {
+    "bytes": 558464,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-107.webp": {
+    "bytes": 201886,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-203.webp": {
+    "bytes": 320168,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-108.webp": {
+    "bytes": 732152,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-109.webp": {
+    "bytes": 449540,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-110.webp": {
+    "bytes": 755930,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-111.webp": {
+    "bytes": 753484,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-112.webp": {
+    "bytes": 411600,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-407.webp": {
+    "bytes": 461272,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-207.webp": {
+    "bytes": 266380,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-113.webp": {
+    "bytes": 418668,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-408.webp": {
+    "bytes": 484936,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-208.webp": {
+    "bytes": 246968,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-116.webp": {
+    "bytes": 417850,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-201.webp": {
+    "bytes": 206768,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-412.webp": {
+    "bytes": 296368,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-213.webp": {
+    "bytes": 241950,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-205.webp": {
+    "bytes": 440602,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-215.webp": {
+    "bytes": 342474,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-209.webp": {
+    "bytes": 298662,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-210.webp": {
+    "bytes": 340224,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-214.webp": {
+    "bytes": 270700,
+    "sha256": null
+  },
+  "/scans/persnickety/CERT-3100-409.webp": {
+    "bytes": 529156,
+    "sha256": null
   }
 }

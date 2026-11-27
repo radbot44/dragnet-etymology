@@ -1,0 +1,556 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "persnickety",
+  "case_slug": "persnickety",
+  "case_number": "Case 3100",
+  "target_id": "TGT-008",
+  "headword": "persnickety",
+  "updated_at": "2026-11-27",
+  "summary_note": "Eight claims separate first-edition Scots forms, the pre-1885 American non-sibilant bridge, open-scan 1885 sibilant witnesses, derivative milestones, dictionary omission, and proposed phonological remodeling.",
+  "claims": [
+    {
+      "id": "CLM-3100-001",
+      "slug": "clm-3100-001",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "pernicketie / perknicketties (Lowland Scots precursor)",
+      "case_section": "First-edition Lowland Scots lineage, 1721–1882",
+      "short_label": "Jamieson prints four-syllable PERNICKITIE in 1808 and Galt prints perknicketties in 1822",
+      "statement": "Jamieson’s 1808 Etymological Dictionary Vol. II (sig. 3G2r) prints four-syllable PERNICKITIE, and Galt’s January 1822 first edition of Sir Andrew Wylie prints velarized plural perknicketties alongside May 1822 New York per-nicketty.",
+      "rationale": "Establish exact first-edition ink forms in place of modern secondary transcription ghosts and later reprint normalizations.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Jamieson printed four-syllable PERNICKITIE in 1808, Galt printed perknicketties in January 1822, and Harper reprinted Galt’s per-nicketty in New York in May 1822.",
+        "does_not_establish": "It does not push the Scots word earlier than 1808 or establish sibilant persnickety in Scotland.",
+        "remaining_uncertainty": "Whether pre-1808 Scottish manuscripts or chapbooks preserve pernicketie remains open."
+      },
+      "limitations": [
+        "Corrects headword orthography and reprint variants within the established 1808–1822 Scots baseline window rather than antedating 1808."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1808 Vol. II title leaf and sig. 3G2r ink inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1822 Vol. III first-edition title leaf and p. 181 ink inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1822 Edinburgh and New York editions of The Provost inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c6f416b622e68d726b8c2b155c4bb6cf8200d5256e6dff1ff97b9c05ddb23661",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "c6f416b622e68d726b8c2b155c4bb6cf8200d5256e6dff1ff97b9c05ddb23661"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-002",
+      "slug": "clm-3100-002",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "pernickety / pernickity (North American non-sibilant bridge)",
+      "case_section": "The North American bridge (1834–1880) and the 1885 sibilant witnesses",
+      "short_label": "Non-sibilant pernickity circulated in American and Northeast Ohio print from 1834 to 1880",
+      "statement": "Non-sibilant pernickity and pernicketty appeared in American prose by 1834 and in Ohio newspapers—including Canfield’s Mahoning Dispatch bordering Stark County—by September 17, 1880.",
+      "rationale": "Document the regional presence of the non-sibilant Scots loanword in the exact Ohio corridor immediately preceding the 1885 sibilant shift.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "American writers and Ohio newspapers used non-sibilant pernickity and pernicketty between 1834 and 1880.",
+        "does_not_establish": "Non-sibilant American occurrences are precursor context and do not antedate sibilant persnickety.",
+        "remaining_uncertainty": "Spoken transition dates between non-sibilant and sibilant forms before 1885 are unrecorded."
+      },
+      "limitations": [
+        "Documents the non-sibilant precursor in the United States rather than sibilant persnickety."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1834 Philadelphia title leaf and pp. 66, 78 inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-104",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "November 10, 1879 Cincinnati Daily Star masthead and column inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 17, 1880 Mahoning Dispatch masthead and front-page text inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1750511c62b719df94a92bc4a1ae3f15b16e80b536168f0c0c75ded613312abe",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "1750511c62b719df94a92bc4a1ae3f15b16e80b536168f0c0c75ded613312abe"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-003",
+      "slug": "clm-3100-003",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "persnickety / persnickity / persnickerty",
+      "case_section": "The North American bridge (1834–1880) and the 1885 sibilant witnesses",
+      "short_label": "Two open-scan 1885 witnesses corroborate the 1885 sibilant baseline horizon",
+      "statement": "The Boston Weekly Globe (September 22, 1885, reprinting the Chicago Herald) prints persnickity and Metta V. F. Victor’s October 1885 The Bad Boy at Home prints persnickerty, followed by standard persnickety in Good Housekeeping on October 26, 1889.",
+      "rationale": "Provide open-scan primary verification of the 1885 sibilant emergence year while the 1885 Canton Repository reel remains offline.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Sibilant persnickity and persnickerty were in Chicago, Boston, and Northeast Ohio-authored print in September–October 1885, and standard persnickety by October 1889.",
+        "does_not_establish": "Neither 1885 open-scan witness precedes the year 1885 cited by the OED from the Canton Repository.",
+        "remaining_uncertainty": "Exact day-level precedence in 1885 awaits microfilm inspection of the Canton Repository."
+      },
+      "limitations": [
+        "Matches the 1885 OED baseline year without claiming a pre-1885 antedating."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "September 22, 1885 Boston Weekly Globe masthead and p. 5 text inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1885 Ogilvie copyright leaf and p. 110 text inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "October 26, 1889 Good Housekeeping issue header and p. 298 text inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1e3e5fa132a4a53fa3a7c756408466148ee3b1733bdb2eb4c230b51b5d4a09ab",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "1e3e5fa132a4a53fa3a7c756408466148ee3b1733bdb2eb4c230b51b5d4a09ab"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-004",
+      "slug": "clm-3100-004",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "pernicketyness / pernicketiness / persnicketiness",
+      "case_section": "Derivatives, grammatical shifts, and reverse transatlantic export",
+      "short_label": "Non-sibilant pernicketyness appears in 1888 and 1913 persnicketiness traces to Cleveland",
+      "statement": "The Engineer prints non-sibilant pernicketyness on August 3, 1888 (followed by 1897 NEA pernicketiness), while the February 17, 1913 Rock Island Argus baseline for persnicketiness is a syndicated column by Mrs. Alice Gitchell Kirk of Cleveland, Ohio.",
+      "rationale": "Separate non-sibilant -ness precursors from the 1913 sibilant baseline and establish the Northern Ohio authorship of the 1913 citation.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Non-sibilant pernicketyness was printed in August 1888 and sibilant persnicketiness in the February 17, 1913 Rock Island Argus by Alice Gitchell Kirk.",
+        "does_not_establish": "The 1888 and 1897 non-sibilant forms do not antedate sibilant persnicketiness (1913).",
+        "remaining_uncertainty": "Earlier syndicated printings of Kirk’s column or pre-1913 sibilant -ness tokens may exist on unindexed reels."
+      },
+      "limitations": [
+        "Keeps non-sibilant pernicketyness (1888) distinct from sibilant persnicketiness (1913)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "August 3, 1888 running header and p. 100 column in The Engineer inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1897 NEA Proceedings title page and p. 846 text inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "February 17, 1913 Rock Island Argus masthead and p. 6 column inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "78a0022fae8caac0ff7088cd8208b8da8a73ad5833221b40b9332aa7512cf3c2",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "78a0022fae8caac0ff7088cd8208b8da8a73ad5833221b40b9332aa7512cf3c2"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-005",
+      "slug": "clm-3100-005",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "persnickety (reverse literary export to Scotland)",
+      "case_section": "Derivatives, grammatical shifts, and reverse transatlantic export",
+      "short_label": "Lorna Moon’s Scottish persnickety witness originated in July 1922 American magazine prose",
+      "statement": "Lorna Moon’s story printing persnickety in her 1926 Scottish collection Doorways in Drumorty first appeared in New York in The Century Magazine in July 1922 while Moon lived in Hollywood.",
+      "rationale": "Clarify the provenance of the sole sibilant persnickety quotation in the Scottish National Dictionary.",
+      "type": "source_relationship",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Moon published 'Silk Both Sides' with sibilant persnickety in The Century Magazine (July 1922, p. 386) four years before its 1926 book collection.",
+        "does_not_establish": "It does not rule out later twentieth-century borrowing of American persnickety into spoken Scots.",
+        "remaining_uncertainty": "Whether Moon’s American editors or Moon herself selected the -s- spelling cannot be determined from print alone."
+      },
+      "limitations": [
+        "Addresses literary text provenance rather than spoken Aberdeenshire usage."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1922 Century Magazine issue header and p. 386 text inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-314",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Wright’s English Dialect Dictionary Vol. IV records thirteen non-sibilant UK forms and zero persnickety forms.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "843f88ec1ecfedb350131c92d5efe99ff099b832f66d4bc54f550f07ace05b96",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "843f88ec1ecfedb350131c92d5efe99ff099b832f66d4bc54f550f07ace05b96"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-006",
+      "slug": "clm-3100-006",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "persnickety vs. pernickety in reference dictionaries",
+      "case_section": "Forty-nine years of dictionary omission, 1885–1934",
+      "short_label": "Major British and American dictionaries through OED1 (1909) and Webster’s (1909 plates) omitted persnickety",
+      "statement": "Bartlett (1884), The Century Dictionary (1890 and 1910 Supplement), Funk & Wagnalls (1895), Farmer & Henley (1902), OED1 Vol. VII (1909), and Webster’s New International (1909 plates, including the lower pearl-type deck) all entered pernickety while omitting persnickety.",
+      "rationale": "Establish the multi-decade lag between popular American print diffusion (1885–1892) and general dictionary recognition.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "The inspected 1884–1927 dictionary printings enter non-sibilant pernickety and omit persnickety across the persiflage–persimmon alphabetical span.",
+        "does_not_establish": "Omission from general dictionaries does not indicate rarity in newspapers after 1892 (Dialect Notes recorded persnickety in 1905).",
+        "remaining_uncertainty": "Smaller desk or regional glossaries between 1913 and 1933 may contain transitional notices."
+      },
+      "limitations": [
+        "Covers the specific unabridged and dialect dictionaries inspected on primary page scans."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-404",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Bartlett 1884 p. 460 inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-405",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Century Dictionary 1890 pp. 4408, 4413 inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-315",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "OED1 Vol. VII (1909) pp. 713, 724 inspected.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-409",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Webster’s New International (1927 impression of 1909 plates) pp. 1607, 1609 main and pearl decks inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1c33a4582f7af9466cfc21e5594a562b3578db263692626e5d3eed58b2c8945f",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "1c33a4582f7af9466cfc21e5594a562b3578db263692626e5d3eed58b2c8945f"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-007",
+      "slug": "clm-3100-007",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "pernicketie -> persnickety",
+      "case_section": "Two-stage morphological and phonological pathway",
+      "short_label": "Scots intensive per- + nick/nicket reshaped in rhotic American speech by expressive sn- adjectives",
+      "statement": "Lowland Scots pernicketie plausibly combines intensive per- (as in perjink and pershittie) with nick or nicket, while North American persnickety arose via rhotic /ərˈnɪk-/ sibilant intrusion reinforced by expressive sn- adjectives (snicket, snippety) in the Pennsylvania–Ohio corridor.",
+      "rationale": "Account for both the 1808 Scots morphological structure (including Galt’s 1822 perknicketties) and the exclusively North American -s- innovation and 'snippy' gloss.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "All structural components (Scots per-, nicket, knick, Pennsylvania–Ohio settlement demographics, and pejorative sn- adjectives) are attested prior to the respective 1808 and 1885 thresholds.",
+        "does_not_establish": "No contemporary speaker commentary directly witnesses the moment of either coinage.",
+        "remaining_uncertainty": "The relative weight of purely phonetic rhotic transition versus lexical blending with snippety or snicket cannot be proven from print alone."
+      },
+      "limitations": [
+        "Remains a comparative morphophonological reconstruction rather than a directly witnessed coinage event."
+      ],
+      "resolution_criteria": [
+        "Locate pre-1808 Scottish transitional forms or pre-1885 American metalinguistic commentary explicitly linking pernickety with snippy or snicket."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-3100-401",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Jamieson 1808 co-attests NICKET alongside intensive per- adjectives PERNICKITIE, PERJINK, and PERSHITTIE.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-403",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Wright EDD Vol. V documents the pejorative-fastidious sn- cluster (SNICKET, SNIFFLTIE, SNIPPET).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-413",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1880 U.S. Census Table XXXI documents the Pennsylvania and Scottish nativity corridor across Stark and Mahoning counties.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-208",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Pound 1905 glosses American persnickety specifically as 'Disagreeable, or snippy'.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "fe161d3c66720e86153d743d146b75999d4e1ba508f060843a69d6cc58098663",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "fe161d3c66720e86153d743d146b75999d4e1ba508f060843a69d6cc58098663"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3100-008",
+      "slug": "clm-3100-008",
+      "case_slug": "persnickety",
+      "headword": "persnickety",
+      "target_lexeme": "par chiquet / pernicitas / finicky rival etymologies",
+      "case_section": "Falsified folk etymologies and archival mirages",
+      "short_label": "Primary French, Latin, and Northern English lexicons refute par chiquet, pernicitas, and pre-1808 finicky derivations",
+      "statement": "Cotgrave (1611) and Littré (1873) show French chiquet ([ʃikɛ], silent -t) is restricted to quantitative 'in small driblets' idioms lacking medial -n-; Latin pernicitas meant 'swiftness'; and dialectal finniky (Brockett 1825) postdates 1808 PERNICKITIE.",
+      "rationale": "Eliminate persistent popular etymologies that violate historical phonology, syntax, semantics, and chronology.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "French par chiquet and Latin pernicitas fail phonologically and semantically on primary dictionary evidence, and Brockett’s 1825 finniky postdates Jamieson’s 1808 PERNICKITIE by seventeen years.",
+        "does_not_establish": "Later secondary blending between finicky and pernickety (as in 1912 finickety) did occur downstream.",
+        "remaining_uncertainty": "None regarding pre-1808 primary derivation from French or Latin."
+      },
+      "limitations": [
+        "Excludes finicky only as the pre-1808 primary root, not as a twentieth-century secondary blend partner."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3100-414",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Cotgrave 1611 omits chiquet and par chiquet.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-415",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Littré 1873 Tome I p. 606 documents [ʃikɛ] pronunciation and quantitative payment syntax.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-416",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "OED1 Vol. VII (1909) and Harpers’ Latin Dictionary (1899 [1879 plates]) confirm pernicitas = 'swiftness'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3100-402",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Brockett 1825 p. 72 first records dialectal FINNIKING, FINNIKY seventeen years after 1808.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "b14b7ca797eed78d1c8c85b225aa2f7241d18c455605d98c539d3d48ddc403b0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "b14b7ca797eed78d1c8c85b225aa2f7241d18c455605d98c539d3d48ddc403b0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}

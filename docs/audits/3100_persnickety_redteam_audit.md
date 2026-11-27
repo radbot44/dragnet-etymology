@@ -1,0 +1,20 @@
+# Case 3100 Blind Adversarial Red-Team Audit Report — `persnickety` (`TGT-008`, `RUN-3100-persnickety`)
+
+## 1. Blind-First Protocol & Single-Reviewer Lock Compliance
+- **Single-Reviewer Lock**: `RUN-3100-persnickety` transitioned from `CLAIMING_DISCOVERY` (`gemini-swarm-proposer`) -> `AWAITING_AUDIT` -> `AUDITING_REDTEAM` (`gemini-swarm-redteam`, enforcing `proposer_agent != redteam_agent`).
+- **Blind Scan Inspection (`blind_audit: True` First)**: Three independent Red-Team Judge shards (`3100-RT1`: `CERT-3100-101..116, 201..205`; `3100-RT2`: `CERT-3100-206..215, 301..311`; `3100-RT3`: `CERT-3100-312..316, 401..416`, 21 certificates per shard) fetched `get_target_brief(blind_audit=true)` first, visually inspected all 63 R2 WebP scans and underlying archive mastheads/imprints, and locked all blind verdicts before comparing against Pass 1's prose via `get_target_brief(blind_audit=false)`.
+
+## 2. Summary of Verdicts & Remediations (`63` Records Audited)
+- **Promoted to `agent_verified`**: **62 of 63** certificates (`13` `attestation`, `37` `contextual_evidence`, `2` `hypothesis`, `10` dated `rejected_lead`), all verified with `masthead_date_verified: True` and diplomatic `verbatim_quote >= 40` characters.
+- **Retained at `discovered` (`masthead_date_verified: False`)**: **1** undated `rejected_lead` (`CERT-3100-113`, A. F. Nail’s `n.d.` promptbook of *The "Drummer Boy"*, proved post-1892 via attorney notice `Hon. W. S. Kerr` against IA’s false `1884` catalog tag, but lacking a printed date leaf).
+- **Rebuilt & Re-Uploaded R2 Pre-1931 WebP Proof Plates**: **16** plates (`CERT-3100-202`, `204`, `206`, `211`, `212`, `301`, `308`, `314`, `315`, `403`, `405`, `406`, `410`, `411`, `414`, `416`).
+
+## 3. High-Impact Red-Team Catches
+1. **Pre-1931 Rights-Gate Remediation (`CERT-3100-416`)**: Caught that Pass 1’s secondary inset of Lewis & Short (`latindictionaryf00andr`) came from Oxford University Press’s **1984 impression** (`ISBN 0-19-864201-6`); purged and replaced it on R2 with the public-domain 1899 Harper & Clarendon impression from the 1879 stereotype plates ([*Harpers’ Latin Dictionary*, p. 1349](https://archive.org/details/harperslatindict02lewi/page/n1366/mode/1up)).
+2. **Bylined Author, Page & URL Correction (`CERT-3100-211`)**: Caught that Pass 1 misread cursive column byline **Mary O’Connor Newell** as `'Mary Flourney'` and cited p. 18 (`leaf n17`, movie directory) instead of **p. 19 (`leaf n18`)** on the June 12, 1923 [*Chicago Daily Tribune*](https://archive.org/details/per_chicago-daily-tribune_1923-06-12_82_140/page/n18/mode/1up) witness for `persnicketiest`; rebuilt WebP and repointed `source_url`.
+3. **Trap A Print-vs-Composition & Reissue Imprint Calibrations (`CERT-3100-107`, `201`, `314`, `315`, `403`)**:
+   - Updated `CERT-3100-107` (*The Bad Boy at Home*) `sort_date` from author death ceiling `1885-06-26` to print listing `1885-10-17` (noting undated title leaf `n9` + `COPYRIGHT, 1885` verso `n10`), making Sept. 22, 1885 *Boston Weekly Globe* (`CERT-3100-106`) the earliest day-dated open-scan 1885 witness.
+   - Updated `CERT-3100-201` (Marcus Dods July 1854 letter) `sort_date` from `1854-07-15` to November 1910 first publication (`1910-11-01`).
+   - Updated `CERT-3100-314` and `CERT-3100-403` (Wright *EDD* Vols. IV & V) `publication_year` from `1903`/`1904` to the scanned `1905` complete-set reissue title leaves (`n6`), and corrected Trap B misreading `SNIFFITIE` -> physical ink **`SNIFFLTIE`** on Vol. V, p. 581.
+   - Updated `CERT-3100-315` (Murray *OED1* Vol. VII) `publication_year` from `1905` to the scanned `1909` bound volume (`leaf n5`, Preface Aug. 31, 1909) and fixed three diplomatic punctuation slips on p. 713.
+4. **Diplomatic Ink & Margin Unclipping (`CERT-3100-102`, `105`, `106`, `109`, `111`, `202`, `204`, `206`, `301`..`303`, `308`, `405`, `406`, `410`, `411`, `414`)**: Restored 18th-century long-s (`ſ`) characters in Ramsay (1721), Elphinston (1787), and Sibbald (1802), removed synthetic boundary quotation marks, replaced undated drop-titles with dated wrappers/engraved title leaves/library accession plates, and unclipped margin crops.
