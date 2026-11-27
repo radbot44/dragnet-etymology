@@ -136,13 +136,25 @@ def validate_ledger(ledger_path: Path, public_dir: Path = PUBLIC_DIR) -> tuple[s
         pub_yr = c.get("publication_year")
         if hosted:
             disk_path = public_dir / str(hosted).lstrip("/")
-            if not disk_path.exists():
-                errors.append(f"{ledger_path.name} [{cid}]: Missing hosted scan file {hosted}")
-            else:
+            r2_manifest_path = public_dir / "data" / "r2-scan-manifest.json"
+            r2_entry = None
+            if not disk_path.exists() and r2_manifest_path.exists():
+                try:
+                    r2_entry = (json.loads(r2_manifest_path.read_text(encoding="utf-8")) or {}).get(str(hosted))
+                except Exception:
+                    r2_entry = None
+            if disk_path.exists():
                 hosted_count += 1
                 sz = disk_path.stat().st_size
                 if sz > MAX_IMAGE_BYTES:
                     errors.append(f"{ledger_path.name} [{cid}]: Scan {hosted} exceeds 5 MB ({sz} bytes)")
+            elif isinstance(r2_entry, dict) and isinstance(r2_entry.get("bytes"), int):
+                hosted_count += 1
+                sz = int(r2_entry["bytes"])
+                if sz > MAX_IMAGE_BYTES:
+                    errors.append(f"{ledger_path.name} [{cid}]: R2-hosted scan {hosted} exceeds 5 MB ({sz} bytes)")
+            else:
+                errors.append(f"{ledger_path.name} [{cid}]: Missing hosted scan file {hosted} (not in public/scans/ or r2-scan-manifest.json)")
             if isinstance(pub_yr, int) and pub_yr > 1930 and not scan.get("rights_cleared"):
                 errors.append(
                     f"{ledger_path.name} [{cid}]: Work published in {pub_yr} (> 1930) may not bundle hosted scan {hosted} without explicit rights_cleared=true"

@@ -156,7 +156,7 @@ const OCR_SUBS: ReadonlyArray<[string, string]> = [
 const PHONETIC_SUBS: ReadonlyArray<[string, string]> = [
   ['ph', 'f'], ['f', 'ph'], ['sh', 'sch'], ['sh', 's'],
   ['ck', 'k'], ['c', 'k'], ['dg', 'g'], ['j', 'g'], ['g', 'j'],
-  ['oo', 'ou'], ['oo', 'u'], ['ee', 'ea'],
+  ['oo', 'o'], ['o', 'oo'], ['oo', 'ou'], ['oo', 'u'], ['ee', 'ea'], ['ee', 'e'],
   ['ey', 'y'], ['ey', 'ie'], ['y', 'ie'], ['y', 'ey'], ['ie', 'y'],
   ['in', 'ing'], ['ing', 'in'], ['wh', 'w'], ['z', 's'], ['s', 'z'],
   ['ll', 'l'], ['l', 'll'], ['dd', 'd'], ['mm', 'm'],
@@ -243,10 +243,20 @@ export function compileDirtyOcrRegexPattern(word: string): string {
   }
 
   const pieces: string[] = [];
-  for (const ch of stem) {
-    if (ch === ' ') pieces.push('\\s+');
-    else if (ch === '-') pieces.push('[-\\s]*');
-    else pieces.push(charClasses[ch] ?? ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  for (let i = 0; i < stem.length; i++) {
+    const ch = stem[i];
+    if (ch === ' ') {
+      pieces.push('\\s+');
+    } else if (ch === '-') {
+      pieces.push('[-\\s]*');
+    } else if ((ch === 'o' || ch === 'e') && stem[i + 1] === ch) {
+      // Allow doubled oo/ee to match single o/e (e.g. doozy -> dozy, shebang -> sheebang)
+      const cls = charClasses[ch];
+      pieces.push(`${cls}(?:${joiner}${cls})?`);
+      i += 1;
+    } else {
+      pieces.push(charClasses[ch] ?? ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    }
   }
   if (terminalPattern) {
     pieces.push(terminalPattern);
@@ -260,7 +270,7 @@ export function compileOrthographicVariantRegex(word: string): string {
     ...generatePhoneticVariants(word, 60),
     ...generateOcrVariants(word, 30),
   ]);
-  // Explicitly include -y / -ie / -ey / -ies family if word ends in -y, -ey, or -ie
+  // Explicitly include -y / -ie / -ey / -ies family across both original stem and oo<->o / ee<->e stems (e.g. doozy -> dozy/dozie/dozey)
   const clean = word.toLowerCase().trim();
   const yStem = clean.endsWith('ey') || clean.endsWith('ie')
     ? clean.slice(0, -2)
@@ -268,8 +278,15 @@ export function compileOrthographicVariantRegex(word: string): string {
     ? clean.slice(0, -1)
     : null;
   if (yStem && yStem.length >= 2) {
-    for (const suf of ['y', 'ie', 'ey', 'ies', 'eys', 'ys']) {
-      all.add(`${yStem}${suf}`);
+    const candidateStems = new Set<string>([yStem]);
+    if (yStem.includes('oo')) candidateStems.add(yStem.replace(/oo/g, 'o'));
+    if (yStem.includes('ee')) candidateStems.add(yStem.replace(/ee/g, 'e'));
+    for (const st of candidateStems) {
+      if (st.length >= 2) {
+        for (const suf of ['y', 'ie', 'ey', 'ies', 'eys', 'ys']) {
+          all.add(`${st}${suf}`);
+        }
+      }
     }
   }
   const escaped = Array.from(all)
