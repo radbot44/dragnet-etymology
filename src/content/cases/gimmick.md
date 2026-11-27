@@ -1,6 +1,6 @@
 ---
 title: 'Electrical Crew Hardware, Carnival Wheels, and Conjurers: Early Evidence for Gimmick (1893–1936)'
-subtitle: Uniting the 1893 Bucksport electric-plant baselines, uncovering four 1897 Boston trolley-line tool entries, antedating carnival and magic usage, and surveying 1828–1901 dictionary pronunciations.
+subtitle: Uniting the 1893 Bucksport electric-plant baselines, documenting four 1897 Boston trolley-line tool entries, antedating carnival and magic usage, and surveying 1828–1901 dictionary pronunciations.
 headword: gimmick
 relatedForms:
 - gimmick
@@ -62,7 +62,7 @@ chronologyTimeline:
 - date: 30 Sep 1897
   form: Gimmick / Gimmicks / Wire Gimmick
   source: West End Street Railway Co. Inventory, Vol. 4 (Boston), pp. 53, 61, 62, 64
-  note: 'Earliest newly uncovered evidence: four unquoted line-department entries equating Special Gimmick with an eccentric Comealong wire-pulling clamp and recording the earliest known plural Gimmicks.'
+  note: 'Four unquoted line-department entries equating Special Gimmick with an eccentric Comealong wire-pulling clamp and recording the earliest known plural Gimmicks.'
   certId: CERT-900-102
 - date: Nov 1901
   form: Gimmick
@@ -130,7 +130,7 @@ reuseKit:
   oedSlipSummary: 'gimmick, n. | Sense 1.a gap-filler & earliest plural/compound: 30 Sept. 1897, West End St. Ry. Co. Inventory, Vol. 4, pp. 53, 61, 62, 64 (''1 Special Gimmick ( Comealong)'', ''2 Gimmicks'' x2, ''1 Wire Gimmick''). | Sense 1.b (OED 21 Aug. 1923, antedated by 9 years, 7 months): 10 Jan. 1914, NY Clipper, p. 5/2 (''gimicks'') & 21 Mar. 1914, Billboard, p. 14/4 (''WITHOUT GIMMICK, $35.00''). | Stage magic (OED 25 July 1932, antedated by 8 years, 8 months): 1 Dec. 1923, Billboard, p. 53/1.'
 ---
 
-## Uniting the 1893 Bucksport Baselines and Uncovering the 1897 Boston Tool Inventory
+## Uniting the 1893 Bucksport Baselines and Documenting the 1897 Boston Tool Inventory
 
 Two reference monuments open the history of *gimmick* in early 1893: the [*Oxford English Dictionary*](https://www.oed.com/dictionary/gimmick_n) quotes the *Bangor (Maine) Daily News* of **24 February 1893** (p. 5, col. 2), while [*Green's Dictionary of Slang*](https://greensdictofslang.com/entry/uewciia) and J. E. Lighter's *Historical Dictionary of American Slang* cite New York's *Electrical Review* of **11 March 1893** (p. 56, col. 2). Inspecting the [*Illustrated Electrical Review* scan](https://archive.org/details/sim_factory_1893-03-11_22_3/page/n13/mode/1up) (`CERT-900-101`) confirms that these are the exact same Bucksport, Maine electric-light plant item, explicitly credited at the foot to **`—Bangor, Me., News.`**:
 
@@ -138,12 +138,14 @@ Two reference monuments open the history of *gimmick* in early 1893: the [*Oxfor
 
 Tracing the mock-technical phrase *dewflicker* back to humorist Bill Nye's 1884 collection *Baled Hay* (`CERT-1100-109`, which contains *dewflicker* and *dewdad* but zero occurrences of *gimmick*) shows that the 1893 Maine paragraph grafted an unfamiliar local word—*gimmick*—into an established comic machinery routine.
 
-Four years later—bridging *OED3*'s thirteen-year gap between 1893 and 1906 (`CERT-900-106`)—Volume 4 of Boston's five-volume [*Inventory of the West End Street Railway Company* (dated 30 September 1897)](https://archive.org/details/inventoryofweste04west/page/n112/mode/1up) supplies the earliest newly uncovered evidence: **four unquoted administrative inventory entries** across Boston's overhead trolley-wire crews (`CERT-900-102`, `CERT-900-103`, `CERT-900-104`, and `CERT-1100-101`, the fourth hidden in raw OCR as `2 Gininiicks`):
+Four years later—bridging *OED3*'s thirteen-year gap between 1893 and 1906 (`CERT-900-106`)—Volume 4 of Boston's five-volume [*Inventory of the West End Street Railway Company* (dated 30 September 1897)](https://archive.org/details/inventoryofweste04west/page/n112/mode/1up) documents **four unquoted administrative inventory entries** across Boston's overhead trolley-wire crews (`CERT-900-102`, `CERT-900-103`, `CERT-900-104`, and `CERT-1100-101`, the fourth hidden in raw OCR as `2 Gininiicks`):
 
 * **Central Power Station, Line Construction Dept. (Vol. 4, p. 53):** `1 Special Gimmick ( Comealong)` (`CERT-900-102`)
 * **Emergency Station District #4 (Vol. 4, p. 61):** `2 Gimmicks` (`CERT-900-103` — earliest known plural, predating *Green's* 1917 plural by 19 years and 7 months)
 * **Emergency Station District #5 (Vol. 4, p. 62):** `2 Gimmicks` (`CERT-1100-101`)
 * **Emergency Station District #6 (Vol. 4, p. 64):** `1 Wire Gimmick` (`CERT-900-104`)
+
+[Owlmirror previously noted](https://languagehat.com/sebiro/#comment-4611301) the p. 53 and p. 64 entries in a Languagehat comment on 2 September 2024.
 
 Across all seven emergency line districts in Volume 4 (pp. 58–65), *Comealong* (Districts #1, #2, #3, #7) and *Gimmick* (Districts #4, #5, #6) appear in one-to-one complementary distribution, while the central storeroom in Volume 5 (p. 38, `CERT-1100-102`) books the tool under its formal catalog name (`13 Come Alongs Spec. @ 2.50`—a hinged eccentric wire-pulling clamp, `CERT-1100-103`, `CERT-1100-105`, `CERT-1100-106`). Note what this evidence does and does not prove: it establishes that Boston overhead-line crews used *gimmick* as ordinary shop terminology for a come-along clamp by September 1897, without proving that the noun originally denoted *only* that clamp rather than a small mechanical device more generally (compare radiator valves in February 1908, `CERT-900-107`, and telephone-lineman tools broadly by 1925, `CERT-900-109`).
 
