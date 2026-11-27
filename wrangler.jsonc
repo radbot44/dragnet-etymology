@@ -1,9 +1,35 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "dragnet-etymology",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-11-25",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": [
+      "/mcp",
+      "/mcp/*",
+      "/api/*",
+      "/scans/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dragnet-db",
+      "database_id": "[YOUR_D1_DATABASE_ID]"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "SCANS",
+      "bucket_name": "dragnet-scans"
+    }
+  ],
+  "vars": {
+    "GITHUB_REPO": "radbot44/dragnet-etymology",
+    "GITHUB_BASE_BRANCH": "main",
+    "SITE_ORIGIN": "https://dragnet.tch.one"
   }
 }

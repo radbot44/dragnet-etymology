@@ -1,135 +1,846 @@
 {
   "schema_version": "1.0",
+  "claim_ledger_id": "newport-news",
   "case_slug": "newport-news",
+  "case_number": "Case 2900",
   "target_id": "TGT-161",
   "headword": "Newport News",
-  "updated_at": "2026-11-26T23:40:00Z",
-  "claim_count": 6,
-  "principal_claim_count": 6,
+  "updated_at": "2026-11-26",
+  "summary_note": "Case 2900 claim ledger (6 principal claims): establishes the Nov. 11, 1619 manuscript and spring 1619 spoken baseline after Smith's 1612 'Poynt hope', documents 28/32 overt genitive -s/-es spellings and same-page Newce scribal contrast (1619-1634), refutes the 'New Port Newce' / 'Port Newce', June 1610 Starving-Time rescue, and 'Newport Ness' (0/11 maps) myths, and situates 'Newportes Newes' inside the 1617-1624 James River alliterative naming micro-system.",
   "claims": [
     {
-      "claim_id": "CLM-2900-01",
+      "id": "CLM-2900-001",
+      "slug": "clm-2900-001",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "Newportes Newes / Newports Newes (1619 Tidewater Virginia toponym)",
+      "case_section": "2. From Poynt Hope (1612) to Newportes Newes (May-November 1619): Primary Chronology and the 32-Entry Orthographic Census",
+      "short_label": "Earliest dated manuscript attestation 'Newportes Newes' (Nov. 11, 1619) and spring 1619 spoken currency after 'Poynt hope' (1612-1618)",
+      "statement": "Prior to 1619, Newport News Point was mapped as unlabeled (1608 Tindall/Zuniga) or engraved as 'Poynt hope' (1612 Smith/Hole and 1618 Hondius); the earliest surviving dated manuscript attestation is 'Newportes Newes' on November 11, 1619, with John Rolfe's January 1619/20 letter documenting spoken currency ('neere Newports Newes') during Capt. Stallinge's spring 1619 grounding.",
+      "rationale": "Virginia Company manuscript records and seventeenth-century copperplate maps establish a sharp chronological terminus post quem (1612-1618 'Poynt hope') and terminus ante quem (spring to November 11, 1619 'Newportes Newes'), ruling out both pre-1612 christening myths and post-1619 settler eponyms.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "chronological_baseline",
-      "status": "established",
-      "statement": "Prior to 1619, Newport News Point was mapped as unlabeled (1608 Tindall/Zuniga) or engraved as 'Poynt hope' (1612 Smith/Hole & 1618 Hondius); the earliest surviving dated manuscript attestation is 'Newportes Newes' on November 11, 1619, with John Rolfe's January 1619/20 letter documenting spoken currency ('neere Newports Newes') during Capt. Stallinge's spring/May 1619 grounding.",
-      "supporting_citation_ids": [
-        "CERT-2900-101",
-        "CERT-2900-102",
-        "CERT-2900-103",
-        "CERT-2900-105",
-        "CERT-2900-113",
-        "CERT-2900-309"
-      ],
-      "evidence_sha256": "86176a87b4923a27f8b0bcf429e482f81bb36044a4936a33b02f3eb08133c868",
+      "sort_order": 10,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Written Virginia Company currency of 'Newportes Newes' on November 11, 1619 and retrospective eyewitness testimony placing 'Newports Newes' in spoken Tidewater use by spring 1619.",
+        "does_not_establish": "The exact month between 1612 and spring 1619 when mariners or colonists replaced Smith's 'Poynt hope' with 'Newportes Newes'.",
+        "remaining_uncertainty": "Whether a pre-1619 ship log or private letter in unindexed British family muniments preserves an earlier written token."
+      },
+      "limitations": [
+        "CERT-2900-103 survives in the contemporary Virginia Company court/council transcript edited by Kingsbury (Vol. III, p. 227) rather than a standalone loose sheet."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2900-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newportes Newes in Council in Virginia Order at James City, Nov. 11, 1619 (Ferrar Papers; Kingsbury Vol. III, 1933) — Earliest Dated MS",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-105",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newports Newes in John Rolfe ALS to Sir Edwin Sandys, Jan. 1619/20 [re: May 1619 Stallinge grounding] (Ferrar Papers; Kingsbury III:242)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newports Newes in Sir George Yeardley's Feb. 4, 1624/25 sworn Answer recalling Capt. Stallinge's May 1619 landing (VMHB VII, Oct. 1899)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-101",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Contextual Evidence: 1608 Tindall Draught ('Newportes poynte' -es genitive; Newport News Point unlabeled) & 1608 Zuniga / 1610 Velasco maps",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-102",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Contextual Evidence: Capt. John Smith's 1612 Map of Virginia (1624 folio impression) labels Newport News Point 'Poynt hope'",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-309",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "17th-Century Map Audit I: John Smith (1612/1624) & Jodocus Hondius (1618) Engrave 'Poynt hope' (Zero 'Newport Ness')",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "97d5de6c7fa21cdcf128d0c7377df32efe27bb47915fe99a239ea6e3f99ab360",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "97d5de6c7fa21cdcf128d0c7377df32efe27bb47915fe99a239ea6e3f99ab360"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-001-01",
+          "claim_id": "CLM-2900-001",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2900-103",
+            "CERT-2900-105",
+            "CERT-2900-113",
+            "CERT-2900-101",
+            "CERT-2900-102",
+            "CERT-2900-309"
+          ],
+          "findings": "Upheld CLM-2900-001 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "97d5de6c7fa21cdcf128d0c7377df32efe27bb47915fe99a239ea6e3f99ab360",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-101": "f71234e74ed77dc9f101f4ca86435dda5860e10f7676f1de648a33df17219922",
+            "CERT-2900-102": "544623719a2113311b06af0da1ecb630cddd37df43fb01854ff0b5cc6f3ae760",
+            "CERT-2900-103": "9f6951832110449129814b8dc517445616d06c896423014fabd77d64162cc561",
+            "CERT-2900-105": "68d75822413e0315df859b5655a94b803c6ed83ebf96f68a28765ffdcc8c963f",
+            "CERT-2900-113": "d208fdd409673e8a1e9dc8969e74ccd85197934a164f20e6a1a818490c9a9db7",
+            "CERT-2900-309": "44cc2d3096e54133b64cfc316a9b2e3f6c53054b4eaeaaa432f774f55f5814cb"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     },
     {
-      "claim_id": "CLM-2900-02",
+      "id": "CLM-2900-002",
+      "slug": "clm-2900-002",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "Newportes Newes / Newports Newes / Nuports-newes (1619-1634 genitive distribution)",
+      "case_section": "2. From Poynt Hope (1612) to Newportes Newes (May-November 1619): Primary Chronology and the 32-Entry Orthographic Census",
+      "short_label": "28 of 32 primary 1619-1634 entries spell overt genitive -s/-es and 0 of 32 spell 'Newce', 'Nuce', or 'Ness'",
+      "statement": "Across 32 contemporaneous primary documentary entries from 1619 to 1634, 28 of 32 carry overt genitive -s or -es ('Newportes Newes', 'Newports Newes', 'Nuports-newes'), 4 of 32 omit -s via sibilant haplology before initial /n/, and 0 of 32 spell the second element 'Newce', 'Nuce', 'Nuse', or 'Ness', while identical scribes distinguish 'Newports news' from 'Capt Newces' and 'Sir William Nuce' on the same page.",
+      "rationale": "Same-page scribal minimal pairs in Virginia Company and General Court records demonstrate that seventeenth-century clerks consistently analyzed the toponym as the possessive surname 'Newport's' plus plural 'Newes', never confusing it with the surname Newce/Nuce.",
+      "type": "phonological",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "orthographic_and_morphological_distribution",
-      "status": "established",
-      "statement": "Across 32 contemporaneous primary documentary entries from 1619 to 1634, 28 of 32 (87.5%) carry overt genitive -s or -es ('Newportes Newes', 'Newports Newes', 'Nuports-newes'), 4 of 32 (12.5%) omit -s via sibilant haplology before initial /n/, and 0 of 32 (0.0%) spell the second element 'Newce', 'Nuce', 'Nuse', or 'Ness', while identical scribes distinguish 'Newports news' from 'Capt Newces' / 'Sir William Nuce' on the same page.",
-      "supporting_citation_ids": [
-        "CERT-2900-103",
-        "CERT-2900-106",
-        "CERT-2900-108",
-        "CERT-2900-109",
-        "CERT-2900-111",
-        "CERT-2900-114",
-        "CERT-2900-115"
-      ],
-      "evidence_sha256": "1c0507e4634792fc6424598d1ab9586641b92c9a3f756b020b9c7a338add73eb",
+      "sort_order": 20,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Overwhelming genitive -s/-es morphology across 1619-1634 primary witnesses and regular English sibilant haplology (/-ts n-/ -> /-t n-/) for the modern uninflected form 'Newport News'.",
+        "does_not_establish": "Complete survival of every routine local parish or shipping bill drafted in Elizabeth City prior to the 1622 uprising.",
+        "remaining_uncertainty": "Exact date in the late seventeenth or eighteenth century when uninflected 'Newport News' fully displaced possessive 'Newport's News' in local Tidewater legal deeds."
+      },
+      "limitations": [
+        "The 32-entry census is bounded to surviving 1619-1634 Virginia Company, General Court, Muster, and Smith Generall Historie records."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2900-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newportes Newes in Council in Virginia Order at James City, Nov. 11, 1619 (Ferrar Papers; Kingsbury Vol. III, 1933) — Earliest Dated MS",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-106",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newports news vs. Capt Newces on the same page of Jan. 1621/22 Virginia Council dispatch & Apr. 1622 Newports News (Neill 1869)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newports Newes [holograph: Nuports Newes] vs. Capt. Nuce in Treasurer George Sandys's April 8, 1623 letter from Newport News (VMHB VI, 1899)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newports News & sibilant-haplologized Newporte Newes in 'Answers to Capt. Butler', April 30, 1623 (Kingsbury Vol. II, 1906)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nuports-newes (3x) vs. Capt. Nuse in Capt. John Smith's Generall Historie of Virginia (London, 1624 folio) — Earliest Contemporary Print",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-114",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newportes newes ('Mr Danniell Gookines muster') & Newports Newes (1,300 acres) in the 1624/25 Virginia Muster (Hotten 1874)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newport Newes in Capt. Samuel Mathews's May 25, 1635 letter to Sir John Wolstenholme (VMHB I, April 1894) — 1635 Haplology Benchmark",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e010a8cd824c855960424c41ff582a9bb6295c8516ac287419635d56e0113784",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "e010a8cd824c855960424c41ff582a9bb6295c8516ac287419635d56e0113784"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-002-01",
+          "claim_id": "CLM-2900-002",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2900-103",
+            "CERT-2900-106",
+            "CERT-2900-108",
+            "CERT-2900-109",
+            "CERT-2900-111",
+            "CERT-2900-114",
+            "CERT-2900-115"
+          ],
+          "findings": "Upheld CLM-2900-002 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "e010a8cd824c855960424c41ff582a9bb6295c8516ac287419635d56e0113784",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-103": "9f6951832110449129814b8dc517445616d06c896423014fabd77d64162cc561",
+            "CERT-2900-106": "92fc497cbdb8a48d750fc5b709b75ea7d42f239442f4903f8fe7bbd648ef5b15",
+            "CERT-2900-108": "c6903ed9138702c3fc0bba2aca0e3173f432c7d1153d6958a46a5560e044e424",
+            "CERT-2900-109": "cf64ae08866daf243d516af3fc396d3bc8838ec68547a4c7f1de2b5c3a805ef1",
+            "CERT-2900-111": "d792db3f3cb255697f352fadaf32e1177e2d3289cf94a3d0a34ff1794f673149",
+            "CERT-2900-114": "b700faa70a6d2dabeeded8d60419477ebe44e46356201f1c7f5e1c8d644173d4",
+            "CERT-2900-115": "a65383eb709c8d01a0c68737ec22f323d281f48bfd208de0f9a8d24eaa02de0c"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     },
     {
-      "claim_id": "CLM-2900-03",
+      "id": "CLM-2900-003",
+      "slug": "clm-2900-003",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "New Port Newce / Port Newce (falsified William Newce / Gookin eponym hypothesis)",
+      "case_section": "3. Forensic Falsification of the Rival Origin Myths",
+      "short_label": "Chronological, topographical, and prosopographical records refute the 'New Port Newce' / 'Port Newce' hypothesis",
+      "statement": "The 'New Port Newce' / 'Port Newce' hypothesis is refuted topographically, prosopographically, and chronologically: 'Port Newce' occurs zero times across five volumes of CSPI James I (inland Nucestowne in County Cork lies 12 to 14 miles from the coast and was first indexed as 'Newce's Town or Port' by Alexander Brown in 1898); Capt. Thomas Newce settled at Elizabeth City (May 1620 to September 1622); Daniel Gookin arrived November 22, 1621 at pre-existing 'Newports news' and named his plantation 'Marie's Mount'; and Sir William Newce did not arrive in Virginia until October 1622 (per the Old-Style January 20, 1622/23 Council dispatch), nearly three years after November 11, 1619.",
+      "rationale": "Hugh Blair Grigsby's nineteenth-century 'Newport-Newce' conjecture (first printed in 1851) and Alexander Brown's 1898 index gloss rested on misreading Old-Style '1622' dates and inventing an Irish seaport that never existed.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "myth_falsification",
-      "status": "falsified_rival_hypothesis",
-      "statement": "The 'New Port Newce' / 'Port Newce' hypothesis is falsified topographically, prosopographically, and chronologically: 'Port Newce' occurs 0 times across 5 volumes of CSPI James I (inland Nucestowne in Co. Cork lies 12-14 miles from the coast and was first indexed as 'Newce's Town or Port' by Alexander Brown in 1898); Capt. Thomas Newce settled at Elizabeth City (May 1620 - Sept. 1622); Daniel Gookin arrived Nov. 22, 1621 at pre-existing 'Newports news' and named his plantation 'Marie's Mount'; and Sir William Newce did not arrive in Virginia until October 1622 (per the Old-Style Jan. 20, 1622/23 Council dispatch), nearly three years after Nov. 11, 1619.",
-      "supporting_citation_ids": [
-        "CERT-2900-201",
-        "CERT-2900-202",
-        "CERT-2900-203",
-        "CERT-2900-205",
-        "CERT-2900-206",
-        "CERT-2900-210",
-        "CERT-2900-212",
-        "CERT-2900-216",
-        "CERT-2900-307",
-        "CERT-2900-409",
-        "CERT-2900-414"
-      ],
-      "evidence_sha256": "e7a95bf3a4684dbdb762eeedd92f80b2a06c96bdb18ae301de608c91bee00b8f",
+      "sort_order": 30,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Chronological impossibility of Capt. Thomas Newce (arrived May 1620), Daniel Gookin (arrived November 1621), or Sir William Newce (arrived October 1622) originating a toponym already attested in spring and November 1619, and absence of any coastal 'Port Newce' in Munster.",
+        "does_not_establish": "Why nineteenth-century Virginia antiquarians preferred an aristocratic colonist surname over the transparent noun 'news'.",
+        "remaining_uncertainty": "Whether Grigsby coined 'Newport-Newce' orally before Charles Campbell's 1851 Southern Literary Messenger note."
+      },
+      "limitations": [
+        "Evaluates published CSPI James I calendars and nineteenth-century Munster topographical surveys rather than uncalendared local Bandon estate deeds."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2900-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Capt. William Newce at Kinsale (1611) & Crown fiant for Nucestowne in Kinalmeaky (1618); 0 \"Port Newce\"",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Lewis Topographical Dictionary II (1837) proves Nucestown is landlocked inland in Templemartin/Murragh, Co. Cork",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Bennett History of Bandon (1862) documents Nucestown water deficiency & William Nuce's 1613 Provostship",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Capt. Thomas Nuce appointed Deputy for Company Lands on May 17, 1620 at Kequotan / Elizabeth City",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Gookin cattle treaty (Nov. 1620), Capt. William Newce Virginia offer & Marshal election (Apr.-May 1621)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nuports-newes vs. Captaine Nuse in Capt. John Smith's Generall Historie (1624; Arber ed. 1910), proving Sept. 1622 survival of Thomas Nuce",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Marie's mount & Newports Newes in McIlwaine Minutes of the Council and General Court (1924), proving Gookin's actual plantation name",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-216",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Contextual Evidence: Sr. William Nuce October 1622 Arrival & Death (Jan. 20, 1622/23 Council Dispatch)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-414",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Mariners' Museum Librarian Cerinda W. Evans's definitive 1947 archival audit establishing the Nov. 11, 1619 'Newportes Newes' terminus ante ",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-307",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Rejected Eponym Myth: Brown's Silent Substitution 'New Porte Newce' (1898) Refuted by Tyler (1901)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-409",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "First printed invention of Hugh Blair Grigsby's 'Newport-Newce' compound theory and earliest explicit rebuttal of the ship/news legend",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0c6cb8401b2d2ea7731401e2e3e7da3a1ebc0b27486c50063d9692c616479451",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "0c6cb8401b2d2ea7731401e2e3e7da3a1ebc0b27486c50063d9692c616479451"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-003-01",
+          "claim_id": "CLM-2900-003",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2900-201",
+            "CERT-2900-202",
+            "CERT-2900-203",
+            "CERT-2900-205",
+            "CERT-2900-206",
+            "CERT-2900-210",
+            "CERT-2900-212",
+            "CERT-2900-216",
+            "CERT-2900-414",
+            "CERT-2900-307",
+            "CERT-2900-409"
+          ],
+          "findings": "Upheld CLM-2900-003 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "0c6cb8401b2d2ea7731401e2e3e7da3a1ebc0b27486c50063d9692c616479451",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-201": "69f398cb619d16c56e33956df6aae3c3f808c3b3f922c4de7e37d221c328d7e9",
+            "CERT-2900-202": "b710a7185100aac081d5933ab9af06e53e44caee8f2c934e8fc45953808a6c33",
+            "CERT-2900-203": "d24dca1744ffa4d9e07f9dc9a36c666271a7ac447e22a095d6506de21a499804",
+            "CERT-2900-205": "3b721459617d6b92e416425a3ad872cdbec30619227063cbb177f2a22d150aac",
+            "CERT-2900-206": "b8be0bb0f8ccd2c10e865e60ede9f6ad94a035bf8941cc27f30e5674061fb5d3",
+            "CERT-2900-210": "3de33aed96461349dfafda06adcbbc4d020657bea6beadadd0e5858f46dd2505",
+            "CERT-2900-212": "ee9e3a2d613eda4517a17e519041cbae40d19d6727fbef59d110a21768a48cf7",
+            "CERT-2900-216": "b7de51ccfc47d0670a4ee4e9645a9ec3cb856aae33c62f816477eb7c190d1615",
+            "CERT-2900-307": "e9fce3d25376bcfbeae78463defd3d616e3ca2d018d81bb0a7100bb9f21b91cc",
+            "CERT-2900-409": "4a1f7ecae4a76ac09a8175cfbd8d98a4817515408790c87cedaa3aa2d0208f22",
+            "CERT-2900-414": "7ee908c727d794e495c276a2db8fe1c7924cd30f96bab7e7aec70c82df7c30ea"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     },
     {
-      "claim_id": "CLM-2900-04",
+      "id": "CLM-2900-004",
+      "slug": "clm-2900-004",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "June 1610 Starving-Time rescue anecdote (Benson J. Lossing 1866)",
+      "case_section": "3. Forensic Falsification of the Rival Origin Myths",
+      "short_label": "Contemporary 1610-1625 Jamestown eyewitness narratives refute the June 1610 Starving-Time rescue myth",
+      "statement": "The June 1610 Starving-Time rescue legend (printed by Benson J. Lossing in 1866) is refuted by all five contemporary 1610-1625 Jamestown narratives: Capt. Christopher Newport was already aboard the retreating ships with Sir Thomas Gates after wrecking on Bermuda, Lord De La Warr's relief message was carried upriver from Point Comfort by Capt. Edward Brewster, and the encounter occurred 12 to 15 miles upriver at Mulberry Island ('Mulbery point'), not at Newport News Point.",
+      "rationale": "Eyewitness accounts by the Virginia Company (1610), Lord De La Warr (1611), William Strachey (1610-1612), and George Percy (c. 1625) agree on both Newport's location aboard the evacuating flotilla and the Mulberry Island rendezvous, proving Lossing's 1866 story to be post-bellum folklore.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "myth_falsification",
-      "status": "falsified_rival_hypothesis",
-      "statement": "The June 1610 Starving-Time rescue legend (printed by Benson J. Lossing in 1866) is falsified by all five contemporary 1610-1625 Jamestown narratives: Capt. Christopher Newport was already aboard the retreating ships with Sir Thomas Gates after wrecking on Bermuda, Lord De La Warr's relief message was carried from Point Comfort by Capt. Edward Brewster, and the encounter occurred 12-15 miles upriver at Mulberry Island ('Mulbery point'), not at Newport News Point.",
-      "supporting_citation_ids": [
-        "CERT-2900-401",
-        "CERT-2900-402",
-        "CERT-2900-403",
-        "CERT-2900-404",
-        "CERT-2900-405",
-        "CERT-2900-410"
-      ],
-      "evidence_sha256": "d60d28388740950213f38db982428b322dca19969c260dcda670c0811a1d0b04",
+      "sort_order": 40,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Historical falsity of the claim that Christopher Newport met evacuating Jamestown colonists off Newport News Point in June 1610.",
+        "does_not_establish": "That Newport's broader reputation for bringing news across five 1607-1611 Atlantic supply voyages played no role in the later 1612-1619 naming (evaluated in CLM-2900-006).",
+        "remaining_uncertainty": "How local Hampton Roads oral tradition merged Mulberry Island (1610) with Newport News Point prior to Lossing's 1866 visit."
+      },
+      "limitations": [
+        "Addresses specifically the June 7-8, 1610 Lord De La Warr evacuation-turnaround episode."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2900-402",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Lord De La Warr's 1611 Relation naming 'Poynt Comfort' and 'the Falles' with zero mention of Newport News",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-403",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Earliest printed book attestation 'Nuports-newes' (Nov. 22, 1621 Gookin settlement) & June 1610 'Mulbery point' account",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-405",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Starving-Time President George Percy's c. 1625 'Trewe Relacyon' confirming Capt. Brewster intercepted the retreating pinnaces",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-401",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Primary 1610 Virginia Company narrative falsifying the June 1610 Starving-Time Newport 'good news' myth",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-404",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Eyewitness narrative by William Strachey proving Newport evacuated Jamestown with Gates and met Capt. Bruster off Mulberry Island",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-410",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Benson J. Lossing's 1866 Civil War history recording the Starving-Time supply-ship 'good news' legend and adopting Grigsby's 'Newport-Newce'",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "71a35c44435b145b9ca78ebfb89106d505a3d02c9bee3a306ed7d467035ec46c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "71a35c44435b145b9ca78ebfb89106d505a3d02c9bee3a306ed7d467035ec46c"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-004-01",
+          "claim_id": "CLM-2900-004",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2900-402",
+            "CERT-2900-403",
+            "CERT-2900-405",
+            "CERT-2900-401",
+            "CERT-2900-404",
+            "CERT-2900-410"
+          ],
+          "findings": "Upheld CLM-2900-004 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "71a35c44435b145b9ca78ebfb89106d505a3d02c9bee3a306ed7d467035ec46c",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-401": "7bc98c698d87f0941783060f402d0e001b8cb78f6784d7833bfc556b9f1923fd",
+            "CERT-2900-402": "b7c22d6313e049aee6325a4ccdc84e2a1f431322a67a9a0f464d828a4258e4cf",
+            "CERT-2900-403": "a9f5b5860cd0eb5840cb69bc1340129f50dcb7249ac19538cebcf5e2fea5a7ee",
+            "CERT-2900-404": "ae35c78a2c9b1716cf39779e6d58a01a1ed01d4359e9c445e93025ca700f284d",
+            "CERT-2900-405": "8b2a6262ca4327f6ec281df60943a66f343d1149dc17ae07c47a1a6b04d6d33e",
+            "CERT-2900-410": "2fac8f78cb91084a4368814a79c46308d59e6163a8a33966d082a2c24488e84a"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     },
     {
-      "claim_id": "CLM-2900-05",
+      "id": "CLM-2900-005",
+      "slug": "clm-2900-005",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "Newport Ness (< OE naess 'headland', Fiske 1897 / Hale 1867)",
+      "case_section": "3. Forensic Falsification of the Rival Origin Myths",
+      "short_label": "Eleven 17th-century Chesapeake maps (0/11 'Ness') and OED/EDD form histories refute the 'Newport Ness' hypothesis",
+      "statement": "Edward Everett Hale's (1867) and John Fiske's (1897) assertion that several old maps write 'Newport Ness' is refuted across 11 inspected seventeenth-century Chesapeake copperplate maps (1612-1693, which engrave 'Poynt hope', 'Newportnews', or 'Newport / news', with zero tokens of 'Ness'), while OED1 (1908) and Wright's English Dialect Dictionary (1903) exclude <ew> spellings for 'ness' and exclude Old English niwan husum (> Newsham) or ghost Old English *news ('new town').",
+      "rationale": "Inspecting the primary cartographic plates from Smith (1612) and Hondius (1618) through Herrmann (1673) and Speed/Lamb (1676) together with historical English dialectology eliminates both the alleged map spelling and any phonological pathway from 'ness' to 'Newes'.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "cartographic_and_dialectal_audit",
-      "status": "falsified_rival_hypothesis",
-      "statement": "Edward Everett Hale's (1867) and John Fiske's (1897) claim that several old maps write 'Newport Ness' (< OE naess 'headland') is falsified 0/11 across inspected 17th-century Chesapeake copperplate maps (1612-1693, which engrave 'Poynt hope', 'Newportnews', or 'Newport / news'), while OED1 (1908) and Wright's EDD (1903) exclude <ew> spellings for ness and exclude OE niwan husum (> Newsham) or ghost OE *news = 'new town'.",
-      "supporting_citation_ids": [
-        "CERT-2900-308",
-        "CERT-2900-309",
-        "CERT-2900-310",
-        "CERT-2900-311",
-        "CERT-2900-312",
-        "CERT-2900-313",
-        "CERT-2900-314",
-        "CERT-2900-415"
-      ],
-      "evidence_sha256": "c2b8bceae141324689f71e7886158219fe9bc4c04809ba0e07f0291bd5c68d1d",
+      "sort_order": 50,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Absence of 'Newport Ness' across all 11 major seventeenth-century Chesapeake engraved maps (1612-1693) and absence of <ew> spellings in historical English 'ness' form history.",
+        "does_not_establish": "Inspection of every late-eighteenth-century manuscript harbor chart.",
+        "remaining_uncertainty": "Which secondary nineteenth-century gazetteer misled Hale (1867) and Fiske (1897) into asserting that old maps printed 'Newport Ness'."
+      },
+      "limitations": [
+        "Cartographic sweep covers 11 primary printed Chesapeake maps from 1612 to 1693."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-2900-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17th-Century Map Audit I: John Smith (1612/1624) & Jodocus Hondius (1618) Engrave 'Poynt hope' (Zero 'Newport Ness')",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "17th-Century Map Audit II: Blaeu (c. 1635/1650), Hondius (c. 1644) & Farrer (1651/1667) — Zero 'Newport Ness'",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newportnews + Two Ships Anchored in 8 Fathoms off Newport News Point on Augustine Herrman's 1670/1673 Map",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-312",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newport / news on John Speed & Francis Lamb (1676), Completing 0/11 Falsification of 'Newport Ness' (with Thornton–Morden c. 1685–1693)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-313",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "OED1 Historical Form-History Audit of 'Ness, sb.' vs. 'News, sb. (pl.)' (Craigie, Vol. VI Pt. II, 1908)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-314",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dialectal & Place-Name Falsification of '-ness', 'neese', and '*new-house -> news' (Wright EDD 1903 & Ekwall 1922)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-415",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Mariners' Museum & Quarstein/Rouse synthesis documenting Collis P. Huntington's blocked Dec. 6, 1880 'Minnetta' renaming and modern folk myt",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-308",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Rejected Cartographic Myth: John Fiske's Unverified 'Newport Ness' Claim in Old Virginia and Her Neighbours (1897)",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "97b4cade2573cd5f4414468c04d57e3a1546e25aef277fa0411e95156f36d0c6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "97b4cade2573cd5f4414468c04d57e3a1546e25aef277fa0411e95156f36d0c6"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-005-01",
+          "claim_id": "CLM-2900-005",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CERT-2900-309",
+            "CERT-2900-310",
+            "CERT-2900-311",
+            "CERT-2900-312",
+            "CERT-2900-313",
+            "CERT-2900-314",
+            "CERT-2900-415",
+            "CERT-2900-308"
+          ],
+          "findings": "Upheld CLM-2900-005 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "97b4cade2573cd5f4414468c04d57e3a1546e25aef277fa0411e95156f36d0c6",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-308": "da33d8081d6aa898530aa3b614bc9cfc113afc6900b6e03d62ec90be66a19fa6",
+            "CERT-2900-309": "44cc2d3096e54133b64cfc316a9b2e3f6c53054b4eaeaaa432f774f55f5814cb",
+            "CERT-2900-310": "46ee2dcc47c41d3dac365444fb91aff7f924638b5881093e927bbc11784ce03c",
+            "CERT-2900-311": "fcb6142545a7121415a035e1cbc8ade92e2fc5f2369cc6cf3465afe2fc932f37",
+            "CERT-2900-312": "b4e2416a71fe0a52518c5afe04803b9a96a033401fc5897256c548ae798a300d",
+            "CERT-2900-313": "aa77d7dda4db7fb980c3052908ef9a75bc979df67d4a93116c4138b8d2f44281",
+            "CERT-2900-314": "09a1aadcbb3eccfd2e9df85f2c9dbea2fb5ffb5474c6acdc8bff549ed2f8b827",
+            "CERT-2900-415": "798a6e46fff0784f7d57799534c81289eaee739afaf029a6bf3c6f8e2e00ca69"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     },
     {
-      "claim_id": "CLM-2900-06",
+      "id": "CLM-2900-006",
+      "slug": "clm-2900-006",
       "case_slug": "newport-news",
+      "headword": "Newport News",
+      "target_lexeme": "Newportes Newes ('Christopher Newport's news' Tidewater naming pattern)",
+      "case_section": "4. Solving the Linguistic Structure: The 1617-1624 James River Alliterative Naming System",
+      "short_label": "Partially supported derivation of 'Newportes Newes' within the 1617-1624 James River [Surname + -s] + [Abstract Noun] micro-system",
+      "statement": "'Newportes Newes' ('Christopher Newport's news') was formed between 1612 and spring 1619 as a member of the 1617-1624 lower James River [Surname + -s] + [Abstract/Affective Noun] alliterative plantation-naming micro-system alongside 'Jordans Jorney', 'Paces Paines', 'Cawseys Care', and 'Chaplains Choyse'; while Christopher Newport's eponymic possessive and literal English 'Newes' are established, the exact unrecorded 1612-1619 naming occasion (habitual 5-voyage lookout anchorage where Newport was famed 'for carrying newes' vs. the 1618-1619 arrival of Newport's Bantam death news aboard the Hope and family land grants) remains open.",
+      "rationale": "Situating 'Newportes Newes' inside the 1624/25 Muster and 1626 Patent Roll plantation names resolves why a headland bore a possessive surname paired with an abstract noun ('Newes'), while grading the specific historical trigger 'partially_supported' preserves strict separation between proven linguistic morphology and unrecorded Naming-Day anecdote.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "independently_agent_reviewed",
       "is_principal": true,
-      "claim_type": "etymological_synthesis",
-      "status": "supported_hypothesis",
-      "statement": "'Newportes Newes' ('Christopher Newport's news') was coined between 1612 and spring 1619 as a canonical member of the 1617-1624 lower James River [Surname + -s] + [Abstract/Affective Noun] alliterative naming micro-system alongside 'Jordans Jorney', 'Paces Paines', 'Cawseys Care', and 'Chaplains Choyse'; while its morphological structure and eponym are established, the exact unrecorded 1612-1619 christening occasion (habitual 5-voyage lookout anchorage where Newport was famed 'for carrying newes' vs. the Sept. 1618-1619 arrival of Newport's death news aboard the Hope and family land claims) remains open.",
-      "supporting_citation_ids": [
-        "CERT-2900-104",
-        "CERT-2900-301",
-        "CERT-2900-303",
-        "CERT-2900-304",
-        "CERT-2900-305",
-        "CERT-2900-306",
-        "CERT-2900-311",
-        "CERT-2900-315"
-      ],
-      "evidence_sha256": "a91659bf97ae9ae14ff2fac564805b8503f57a9ca4defd149ef326bc6d68bdce",
+      "sort_order": 60,
+      "lifecycle_status": "active",
       "revision": 1,
-      "review_status": "independently_agent_reviewed"
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Structural alignment with contemporaneous 1617-1624 James River [Surname + -s] + [Abstract Noun] alliterative toponyms, 8-fathom Hampton Roads lookout anchorage geography on Herrmann's 1673 chart, and 1618-1619 Newport death-news/land-grant chronology.",
+        "does_not_establish": "A surviving 1612-1619 sentence explicitly stating which specific ship arrival or remark triggered the coiners to dub Point Hope 'Newportes Newes'.",
+        "remaining_uncertainty": "Whether mariners named the anchorage prospectively for Newport's habitual news-bearing landfalls (1607-1611) or colonists coined it around September 1618-spring 1619 upon news of Newport's death at Bantam and his widow's Virginia land bill."
+      },
+      "limitations": [
+        "No surviving 1612-1619 Virginia Company minute records the naming act itself.",
+        "CERT-2900-315 (Stewart 1945/1958) is a modern secondary onomastic synthesis."
+      ],
+      "resolution_criteria": [
+        "Locate a 1612-1619 ship log, Ferrar/Sandys paper, or private colonist letter explicitly explaining the replacement of 'Poynt hope' by 'Newportes Newes'."
+      ],
+      "evidence": [
+        {
+          "ref": "CLM-2900-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1612-1619 chronological window between 'Poynt hope' and 'Newportes Newes'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-2900-002",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes possessive 'Newport's' + 'Newes' morphology across 28 of 32 early tokens.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-304",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1624/25 Virginia Muster & 1626 Patent Roll Naming Micro-System in Hotten, Original Lists (1874)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Tidewater Plantation Naming System & Hampton Roads Lookout Geography in Tyler, Cradle of the Republic (1906)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-301",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nuports-newes and Nupors-newes vs. Captaine Nuse in John Smith, Generall Historie of Virginia (1624)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Newportnews + Two Ships Anchored in 8 Fathoms off Newport News Point on Augustine Herrman's 1670/1673 Map",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-104",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Contextual Evidence: Nov. 17, 1619 London Quarter Court order laying out Capt. Christopher Newport's £400 adventure for his son (0 toponym h",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-303",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Virginia Company Land & Share Grants to Widow Elizabeth Newport and Son John Newport (1619–1623)",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-2900-306",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Christopher Newport's 5 Virginia Voyages (1607–1611) & Aug. 1617 Bantam Death / Sept. 1, 1618 News Arrival (Brown 1890)",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "259b592c899d2465d4f71972e29ec453f2e9dd17e002d4a1ea2218b0e83d2d96",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-26",
+          "author": "DRAgNEt Claim Extraction Pipeline (Agent 2900)",
+          "summary": "Initial v1.0 schema-validated claim extraction from Case 2900 monograph and v3.0 citation ledger.",
+          "content_fingerprint": "259b592c899d2465d4f71972e29ec453f2e9dd17e002d4a1ea2218b0e83d2d96"
+        }
+      ],
+      "reviews": [
+        {
+          "review_id": "REV-2900-006-01",
+          "claim_id": "CLM-2900-006",
+          "claim_revision": 1,
+          "reviewer_id": "Agent 2900-R (Independent Red-Team Auditor)",
+          "reviewer_kind": "independent_agent",
+          "model_version": "gemini-3-pro",
+          "review_date": "2026-11-26",
+          "review_scopes": [
+            "structural",
+            "archival",
+            "linguistic_argument"
+          ],
+          "inspected_evidence_refs": [
+            "CLM-2900-001",
+            "CLM-2900-002",
+            "CERT-2900-304",
+            "CERT-2900-305",
+            "CERT-2900-301",
+            "CERT-2900-311",
+            "CERT-2900-104",
+            "CERT-2900-303",
+            "CERT-2900-306"
+          ],
+          "findings": "Upheld CLM-2900-006 against Case 2900 primary scans, masthead/colophon dates, and v1.0 evidence-boundary rules.",
+          "objections": [],
+          "material_fingerprint_at_review": "259b592c899d2465d4f71972e29ec453f2e9dd17e002d4a1ea2218b0e83d2d96",
+          "evidence_fingerprints_at_review": {
+            "CERT-2900-104": "b5eb91684d270e97210c20cbad5fb44e3a5a42d5fb77f8313de25da2f10df8c9",
+            "CERT-2900-301": "c9e5b11d99d3037be7a21ac8b6126b56f249b422e0984f44f3e22962b92a6d2e",
+            "CERT-2900-303": "863d51fc347e3be1c89ce65497633f137ec1e5859b2702143a68e6d825eacece",
+            "CERT-2900-304": "b7d4fdc7bf1b0c341cadbdc67c53df2e7e55f81732d3c4395a22869850a1a810",
+            "CERT-2900-305": "0af3bac84208bd923afbcb40db482efae7934e848cb7afba7eae6578e4acab5d",
+            "CERT-2900-306": "b0fe88cbef132b026e0a3284e18788f9c970b380eacd3a4f80866c53260c70f5",
+            "CERT-2900-311": "fcb6142545a7121415a035e1cbc8ade92e2fc5f2369cc6cf3465afe2fc932f37",
+            "CLM-2900-001": "97d5de6c7fa21cdcf128d0c7377df32efe27bb47915fe99a239ea6e3f99ab360",
+            "CLM-2900-002": "e010a8cd824c855960424c41ff582a9bb6295c8516ac287419635d56e0113784"
+          },
+          "recommendation": "uphold"
+        }
+      ],
+      "external_recognition": []
     }
   ]
 }
