@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "doozy",
+  "case_slug": "doozy",
+  "case_number": "Case 3000",
+  "target_id": "TGT-029",
+  "headword": "doozy",
+  "updated_at": "2026-11-27",
+  "summary_note": "Six claims separate exact wording, sense, provenance, and unproved derivation.",
+  "claims": [
+    {
+      "id": "CLM-3000-001",
+      "slug": "clm-3000-001",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "The 1901 rhyme is contextual evidence",
+      "short_label": "The 1901 rhyme is contextual evidence",
+      "statement": "The Sunny South prints woozy at a line end followed by doozy ducky in exaggerated baby talk on June 1, 1901.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "The Sunny South prints woozy at a line end followed by doozy ducky in exaggerated baby talk on June 1, 1901.",
+        "does_not_establish": "It does not establish a pre-1903 ordinary adjective or a pre-1916 count noun.",
+        "remaining_uncertainty": "Whether the author adapted existing slang or invented the rhyme is unknown."
+      },
+      "limitations": [
+        "It does not establish a pre-1903 ordinary adjective or a pre-1916 count noun."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3000-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Original column and issue date inspected.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1ad08402a3d0fa695ee2d2df468f72cc05111a77e952afe1bde78b8016281f83",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "1ad08402a3d0fa695ee2d2df468f72cc05111a77e952afe1bde78b8016281f83"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3000-002",
+      "slug": "clm-3000-002",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "Kleberg’s page verifies the established 1903 adjective",
+      "short_label": "Kleberg’s page verifies the established 1903 adjective",
+      "statement": "Kleberg prints one Doozy scheme in his 1903 Baltimore book; the preceding verb is evolve.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Kleberg prints one Doozy scheme in his 1903 Baltimore book; the preceding verb is evolve.",
+        "does_not_establish": "This is a verification and transcription correction, not a new earliest date or proof of geographic origin.",
+        "remaining_uncertainty": "Earlier independent adjectival use may survive elsewhere."
+      },
+      "limitations": [
+        "This is a verification and transcription correction, not a new earliest date or proof of geographic origin."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3000-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Original printed page, title and copyright were checked.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "5e71ccccb4f7c1961739e539be3ada103437fdfb87c2d1d7f254050e27778250",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "5e71ccccb4f7c1961739e539be3ada103437fdfb87c2d1d7f254050e27778250"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3000-003",
+      "slug": "clm-3000-003",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "The Nebraska gloss appears in 1911 and again in the 1913 fascicle",
+      "short_label": "The Nebraska gloss appears in 1911 and again in the 1913 fascicle",
+      "statement": "Pound records sporty or flossy in 1911; Warnock gives two adjectival examples in 1913 and refers back to Pound.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pound records sporty or flossy in 1911; Warnock gives two adjectival examples in 1913 and refers back to Pound.",
+        "does_not_establish": "This does not show two independent discoveries of the gloss or an earlier general adjective than Kleberg.",
+        "remaining_uncertainty": "Warnock gives no individual dates for the two examples."
+      },
+      "limitations": [
+        "This does not show two independent discoveries of the gloss or an earlier general adjective than Kleberg."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3000-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1911 issue and p. 543.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3000-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1913 Part I opening and p. 21, including the cross-reference.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "142fca8060370a7a396f9ce23490ecdc9cd6a557070f02c8901b193675ee73a0",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "142fca8060370a7a396f9ce23490ecdc9cd6a557070f02c8901b193675ee73a0"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3000-004",
+      "slug": "clm-3000-004",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "Pound’s 1916 example is nominal",
+      "short_label": "Pound’s 1916 example is nominal",
+      "statement": "The sequence a dozy makes the 1916 quotation nominal despite the printed adjective label.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "The sequence a dozy makes the 1916 quotation nominal despite the printed adjective label.",
+        "does_not_establish": "It does not exclude earlier noun use or locate the word’s origin.",
+        "remaining_uncertainty": "A securely dated earlier nominal witness is still wanted."
+      },
+      "limitations": [
+        "It does not exclude earlier noun use or locate the word’s origin."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3000-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "The printed example has an indefinite article.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3000-106",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Later story of a possible earlier letter, not primary evidence.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c8ed93675c5b8948bb8cf1007457dba1ecb4543044666f6ca1b4c4fb23b05af6",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "c8ed93675c5b8948bb8cf1007457dba1ecb4543044666f6ca1b4c4fb23b05af6"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3000-005",
+      "slug": "clm-3000-005",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "Daisy is a plausible but unproven antecedent",
+      "short_label": "Daisy is a plausible but unproven antecedent",
+      "statement": "Approving slang daisy is a plausible antecedent, but no dated source ties it directly to doozy.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Approving slang daisy is a plausible antecedent, but no dated source ties it directly to doozy.",
+        "does_not_establish": "The current forms and senses do not document a sound change or rule out another source.",
+        "remaining_uncertainty": "How or whether speakers linked the forms is unknown."
+      },
+      "limitations": [
+        "The current forms and senses do not document a sound change or rule out another source."
+      ],
+      "resolution_criteria": [
+        "Find dated transitional spellings or contemporary evidence deliberately relating the forms."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-3000-104",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Earlier favorable comparative recorded by Wilton.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3000-105",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Earlier approving superlative and noun recorded by Wilton.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3000-102",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Early established doozy adjective.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "a679e10608581609fe5845b693ea01c3928ef95db80ca5e3316e99dda3b318a7",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "a679e10608581609fe5845b693ea01c3928ef95db80ca5e3316e99dda3b318a7"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3000-006",
+      "slug": "clm-3000-006",
+      "case_slug": "doozy",
+      "headword": "doozy",
+      "target_lexeme": "doozy / dozy",
+      "case_section": "The Model A did not originate the word",
+      "short_label": "The Model A did not originate the word",
+      "statement": "The known 1903 adjectival use rules out origin in the Duesenberg Model A passenger car, shown in 1920.",
+      "rationale": "Preserve the distinction between what the dated sources show and what the sources leave open.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "The known 1903 adjectival use rules out origin in the Duesenberg Model A passenger car, shown in 1920.",
+        "does_not_establish": "It does not determine whether the car name later reinforced or borrowed the expression.",
+        "remaining_uncertainty": "The history of any later association is separate."
+      },
+      "limitations": [
+        "It does not determine whether the car name later reinforced or borrowed the expression."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3000-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Original page predates the passenger car.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3000-109",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Museum history dates the debut well after the word.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "c84a28ce356827f456cbb6e53a487143ffff2aed6a55f02c67fb9186a29bbc8d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-27",
+          "author": "DRAgNEt editorial draft",
+          "summary": "Initial claim and evidence boundaries.",
+          "content_fingerprint": "c84a28ce356827f456cbb6e53a487143ffff2aed6a55f02c67fb9186a29bbc8d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}
