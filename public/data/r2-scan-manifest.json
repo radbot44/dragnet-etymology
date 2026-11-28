@@ -4714,5 +4714,225 @@
   "/scans/persnickety/CERT-3100-409.webp": {
     "bytes": 529156,
     "sha256": null
+  },
+  "/scans/snollygoster/CERT-3200-301.webp": {
+    "bytes": 208666,
+    "sha256": "04e8ae61e63aad77b6aae8a52f7dab9a60bb0d942bf0d73101ef23cefd7bdc4a"
+  },
+  "/scans/snollygoster/CERT-3200-302.webp": {
+    "bytes": 176530,
+    "sha256": "6ed37736828df0f533c02bb25ec61f0f4745eae88060bab104ce2c9e539c8d60"
+  },
+  "/scans/snollygoster/CERT-3200-309.webp": {
+    "bytes": 291830,
+    "sha256": "41cf3a8990da14c6b2690578bc9dfcd283823741013ee455febd8125bcc8300e"
+  },
+  "/scans/snollygoster/CERT-3200-303.webp": {
+    "bytes": 186694,
+    "sha256": "a2391686e081c8f866a9c9fa42984da5a9d0d46197758a1f2f43a7e89bfcbe8a"
+  },
+  "/scans/snollygoster/CERT-3200-304.webp": {
+    "bytes": 129250,
+    "sha256": "191419a5900a0fcf26a3ac0344057301f6a10db6894bc8237ec2cbdd46274235"
+  },
+  "/scans/snollygoster/CERT-3200-115.webp": {
+    "bytes": 660880,
+    "sha256": "610cd61aada6a1bbea1cc5b86e3df1ec4a2d78191ee1065afb5ecf84a157834d"
+  },
+  "/scans/snollygoster/CERT-3200-101.webp": {
+    "bytes": 619226,
+    "sha256": "2f3cab6d2b66377a0e3c5622e0b03de0cbf62fc1ec685d7e5e30655c55e09f86"
+  },
+  "/scans/snollygoster/CERT-3200-102.webp": {
+    "bytes": 945038,
+    "sha256": "afb560fe343f7bd8ed3717c69a15ddb578e90886a61963847b133dd1059e3a6d"
+  },
+  "/scans/snollygoster/CERT-3200-103.webp": {
+    "bytes": 636876,
+    "sha256": "2d3c5e4b9f06ea4ff1e411393dfcdc735743cfeef04817ea350f0f6a0d2f86e5"
+  },
+  "/scans/snollygoster/CERT-3200-104.webp": {
+    "bytes": 740198,
+    "sha256": "730d09cdcbeb252b198e30e82b4fc6d00960bd123e897078a9cf3122ef1861c3"
+  },
+  "/scans/snollygoster/CERT-3200-105.webp": {
+    "bytes": 907486,
+    "sha256": "c51043097f3ce624c5abf14c425ddd42ada9c855ab52261132aa91d35f3d1f3e"
+  },
+  "/scans/snollygoster/CERT-3200-106.webp": {
+    "bytes": 562184,
+    "sha256": "4b52e939cdd64f7c2d20936c75191c3c8fc43b99886a8191d2c748da666f3d58"
+  },
+  "/scans/snollygoster/CERT-3200-305.webp": {
+    "bytes": 283468,
+    "sha256": "4bffc4110547e19bb9e79a1262dd940e71cf83ae410c748dea0d97a5cf8e7b7d"
+  },
+  "/scans/snollygoster/CERT-3200-107.webp": {
+    "bytes": 835218,
+    "sha256": "284fbffbfe0fee47ca877e5c45537b88479797d990a25b57d575b630ed675a32"
+  },
+  "/scans/snollygoster/CERT-3200-108.webp": {
+    "bytes": 773260,
+    "sha256": "13eb08d1c2405f9f7bedd0bb0ff59eac0ab34f636c061bb5d10d22d5aa227d35"
+  },
+  "/scans/snollygoster/CERT-3200-109.webp": {
+    "bytes": 751518,
+    "sha256": "4a3419ad9837b0057722887177197efc8fa9ba758fb788010e82e86b521cdb7e"
+  },
+  "/scans/snollygoster/CERT-3200-110.webp": {
+    "bytes": 973072,
+    "sha256": "5e7a6e6c2f56a9b476d12aa3d76cf129f535b59c8a2a152826d6a4ab614f65a6"
+  },
+  "/scans/snollygoster/CERT-3200-111.webp": {
+    "bytes": 766768,
+    "sha256": "ca186b3c485dc9f6c87347c3f1d89c7508da321ecd8466894721740d399f011c"
+  },
+  "/scans/snollygoster/CERT-3200-112.webp": {
+    "bytes": 618082,
+    "sha256": "c3ddcc7d97d88ea34309b7b47f44f9de53a0cc005d868c6ccf5c76cff8b421d2"
+  },
+  "/scans/snollygoster/CERT-3200-311.webp": {
+    "bytes": 176462,
+    "sha256": "e966956641fa44c50f51bc2ba95cc4a1922e86c1a7e96d37678dd86824bbc138"
+  },
+  "/scans/snollygoster/CERT-3200-113.webp": {
+    "bytes": 895516,
+    "sha256": "b6dc1c10fab01cb3a1e4acb4709e697fb3b1cde0cde0a371ac098a1b0a18748e"
+  },
+  "/scans/snollygoster/CERT-3200-306.webp": {
+    "bytes": 169978,
+    "sha256": "5e1a74b44c2821db6fbad5709b69edfea62ce04eb4fa0815d0f46327fdb1ba19"
+  },
+  "/scans/snollygoster/CERT-3200-201.webp": {
+    "bytes": 565366,
+    "sha256": "4a5de54b9bce3b00ef1eeb55b6461c10aff15ab2e6fda77d543cd51ea6bdf024"
+  },
+  "/scans/snollygoster/CERT-3200-202.webp": {
+    "bytes": 453992,
+    "sha256": "178b0272f53033162fb3d6ebadd9fe27e6e7c7298ac80f04e7f9bac90ff99f67"
+  },
+  "/scans/snollygoster/CERT-3200-312.webp": {
+    "bytes": 205234,
+    "sha256": "0dafea9719a574c91c286e6f3f5e32aee3b8600eb2dfb1b12503adc598ea8cfb"
+  },
+  "/scans/snollygoster/CERT-3200-203.webp": {
+    "bytes": 643946,
+    "sha256": "16935c82a774dda8b193e67884e461a27489f3de927cc3a5d0df6f7aca915697"
+  },
+  "/scans/snollygoster/CERT-3200-204.webp": {
+    "bytes": 175458,
+    "sha256": "a5820a042480052070bec790b968351d294aec6e4953e57157e9c5c2a394c127"
+  },
+  "/scans/snollygoster/CERT-3200-205.webp": {
+    "bytes": 229502,
+    "sha256": "b13044a4e165cb30dc7c43bb411044f78433dce960f4ec5848c138584b4fe161"
+  },
+  "/scans/snollygoster/CERT-3200-206.webp": {
+    "bytes": 508836,
+    "sha256": "3dff6607a67c67d4026785e7b3f60f9879e262bf0858e18bc06ad8dbf5baa4ee"
+  },
+  "/scans/snollygoster/CERT-3200-406.webp": {
+    "bytes": 415930,
+    "sha256": "3807b1edf463a5baf0f8a7374a32b6de5b21fd6b68641aea9d17819f521bf538"
+  },
+  "/scans/snollygoster/CERT-3200-207.webp": {
+    "bytes": 479824,
+    "sha256": "c4fb2fe7ba9aa56bc28649834878e28bb0d85f3a5913e75d0d5a21d380d11b46"
+  },
+  "/scans/snollygoster/CERT-3200-208.webp": {
+    "bytes": 467962,
+    "sha256": "be44aa5fef537b281a51f24334466dd04dbaca76f7fcf3c73e5521533c2621ae"
+  },
+  "/scans/snollygoster/CERT-3200-401.webp": {
+    "bytes": 510268,
+    "sha256": "1b2fa9461862eb4fdf0022000e9d318a2b88e189ec3bf301a721b11573d4ecd9"
+  },
+  "/scans/snollygoster/CERT-3200-410.webp": {
+    "bytes": 270180,
+    "sha256": "39a8840fbffbb11fa0aa201ac8cfd8e96dbc983705e09a409b27051c07318fa8"
+  },
+  "/scans/snollygoster/CERT-3200-408.webp": {
+    "bytes": 432988,
+    "sha256": "d8530440d8cdd0beb3af1f4bb1f4a8a99f20c70f9e62930a5eda0064bb5acba8"
+  },
+  "/scans/snollygoster/CERT-3200-313.webp": {
+    "bytes": 284270,
+    "sha256": "8de6d6463fc239b2d5a5beda6804ed3e3dfa1a1b70ed3bc1ce02d5f4533f63f4"
+  },
+  "/scans/snollygoster/CERT-3200-403.webp": {
+    "bytes": 350210,
+    "sha256": "2ca4261c770c1c49d72683611279a39e887f24f8020e3bea480078eaeb75e043"
+  },
+  "/scans/snollygoster/CERT-3200-209.webp": {
+    "bytes": 688228,
+    "sha256": "e0ecb6b3cd2f543d9cab744518f77586744c3295838ab97347aaaac7233306e7"
+  },
+  "/scans/snollygoster/CERT-3200-210.webp": {
+    "bytes": 336458,
+    "sha256": "dfdbbe0e658e99abffcb02b4ae14430b7e482b5f5bdf260ab411cf807e047380"
+  },
+  "/scans/snollygoster/CERT-3200-211.webp": {
+    "bytes": 551856,
+    "sha256": "20f5d8153da8898e118af6f56ea11c410ed289b4320dec08baa72bfc08feab92"
+  },
+  "/scans/snollygoster/CERT-3200-114.webp": {
+    "bytes": 932754,
+    "sha256": "efd4c3c6986e693ae45fef85efb3f8f59edb71203869e66e3e0b96fdbe95ae31"
+  },
+  "/scans/snollygoster/CERT-3200-212.webp": {
+    "bytes": 538064,
+    "sha256": "e720d4e7b662e5eb8f80fa4b4174de0182ab4f5cd97edeb5efeee96979afcb22"
+  },
+  "/scans/snollygoster/CERT-3200-307.webp": {
+    "bytes": 304164,
+    "sha256": "f55d58e2fe6b956d6f2b282d570092300bd5467c06b612f54bff0a7657663545"
+  },
+  "/scans/snollygoster/CERT-3200-402.webp": {
+    "bytes": 398870,
+    "sha256": "a0a5d9d9f0c76ea63b3b6be4ecbfe042cfdbfd975b57783faa4d4bbe6f3dc2f2"
+  },
+  "/scans/snollygoster/CERT-3200-213.webp": {
+    "bytes": 519254,
+    "sha256": "1f4c69a66fe8f714173ca5ecff9351339a160cbc9326e497bba90e966cc89806"
+  },
+  "/scans/snollygoster/CERT-3200-407.webp": {
+    "bytes": 313418,
+    "sha256": "81d4f8e02fc54bfb9060a6a21276e06319e720ad4a7a89c1611a450e7f547362"
+  },
+  "/scans/snollygoster/CERT-3200-412.webp": {
+    "bytes": 251002,
+    "sha256": "d9b4b5d01c3b9d8f42006c3d65ef214b1ae018225a51b8228ccdaf03ed642ba9"
+  },
+  "/scans/snollygoster/CERT-3200-411.webp": {
+    "bytes": 271564,
+    "sha256": "0fde1e932dd834c3bf6d431dd7257783b368dfc36b4ea3b64cb53a5e8c728174"
+  },
+  "/scans/snollygoster/CERT-3200-308.webp": {
+    "bytes": 298318,
+    "sha256": "038ce08ab6879ee32795c3611fdbe43dd4b051d38f899804610afd2bbaf71b33"
+  },
+  "/scans/snollygoster/CERT-3200-404.webp": {
+    "bytes": 283332,
+    "sha256": "8f69a07a8b794544ac1bd43a04eac7ddd224428921bd936f17d7ff057dcc4b4a"
+  },
+  "/scans/snollygoster/CERT-3200-310.webp": {
+    "bytes": 216510,
+    "sha256": "bf4a3052d63189c9ec82ede7e7a1f6957b79c9ccef5f5aa105984157589c8f77"
+  },
+  "/scans/snollygoster/CERT-3200-214.webp": {
+    "bytes": 345666,
+    "sha256": "21c3f8eef29981bb2c391af07689ecca20d34eebc9a3cfb8ea92d9643a30f3ed"
+  },
+  "/scans/snollygoster/CERT-3200-405.webp": {
+    "bytes": 258696,
+    "sha256": "1e034c3f62a6e0199017b28f9b2d56d8be3c54b7f1c0f4d84a3233024178ed8b"
+  },
+  "/scans/snollygoster/CERT-3200-314.webp": {
+    "bytes": 205652,
+    "sha256": "4b611f9b23462ff9e30a019cab799437b200d20d9a8ded9e385df7f41e53ab80"
+  },
+  "/scans/snollygoster/CERT-3200-409.webp": {
+    "bytes": 340948,
+    "sha256": "fd280576e9b49cd04697542c7c2c1056d529ccd5bbdc11a325ba2787973e343a"
   }
 }
