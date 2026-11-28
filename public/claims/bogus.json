@@ -1,0 +1,1047 @@
+{
+  "schema_version": "1.0",
+  "claim_ledger_id": "bogus",
+  "case_slug": "bogus",
+  "case_number": "Case 3300",
+  "target_id": "TGT-004",
+  "headword": "bogus",
+  "updated_at": "2026-11-28",
+  "summary_note": "Ten atomic documentary and interpretive claims for Case 3300 (bogus, TGT-004) covering all 70 agent-verified citations across the 1847 Secret Band of Brothers dating calibration, 1825–1842 apparatus-to-sham chronology, four 1853–1889 derivative antedatings, competing tantrabogus/calibogus donor pathways, and falsified folk myths.",
+  "claims": [
+    {
+      "id": "CLM-3300-001",
+      "slug": "clm-3300-001",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogus",
+      "case_section": "Unmasking the \"c. 1798 *Band of Brothers*\" Mirage",
+      "short_label": "Falsification of the alleged \"c. 1798 Band of Brothers\" baseline to Jonathan H. Green's 1846–1847 composition",
+      "statement": "The alleged \"c. 1798\" Band of Brothers quotation (\"Coney means Counterfeit paper money ... Bogus means spurious coin\") cited in HDAS (1994), World Wide Words (2000), and Grammarphobia (2014) is not an 18th-century text, but Chapter XII (p. 113) of Jonathan Harrington Green's spring 1847 book The Secret Band of Brothers, exposed as an 1846–1847 composition by statutory, toponymic, serial, and lexical anachronisms.",
+      "rationale": "Congress did not create the 'Western District of Virginia' named in the p. 90 charter header until Feb. 4, 1819 (3 Stat. 478); Chapter XII letters dated '1825' cite post-1834 'Toronto' and post-1835 'Manhattan, Ohio'; Chapters I–X were serialized July–Sept. 1846 in The Casket; Green admitted post-charter vocabulary additions on p. 112 and printed identical footnotes in Gambling Unmasked! (1847); and clipped 'Coney' postdates 1823 'Cogniac' and 1836 'coniackers'.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 10,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "That Secret Band of Brothers p. 113 was composed and published in 1846–1847 and cannot serve as a 1798 attestation of bogus or coney.",
+        "does_not_establish": "Whether oral counterfeiters' cant used bogus locally prior to 1825–1827 without surviving print witnesses.",
+        "remaining_uncertainty": "Exact informants from whom J. H. Green gathered his 1840s Ohio and Mississippi Valley flash vocabulary."
+      },
+      "limitations": [
+        "CERT-3300-201 cites the 2006 Project Gutenberg transcription of the 1858 T. B. Peterson stereotype reissue alongside 1846–1847 primary serial and companion-book scans in CERT-3300-202 through CERT-3300-204."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-201",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Full text of Chapter XII pp. 90, 112–113, 122, 125 exposing internal anachronisms and p. 112 editorial admission.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-202",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sept. 16, 1846 Casket editorial announcing original July–Sept. 1846 serialization and withholding of the Constitution/By-Laws.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-203",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 13, 1847 National Police Gazette G. B. Zieber & Co. pre-publication advertisement ('now in press').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-204",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1847 Gambling Unmasked! p. 123 printing Green's identical 1847 footnotes defining 'Coney' and 'Bogus'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-205",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "U.S. Statutes at Large Vol. III p. 478 proving Virginia's Western District was created Feb. 4, 1819, 21 years after 'July 12, 1798'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-208",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1823 Coffey Inside Out p. 108 showing NY prisoners still used unclipped 'imported Cogniac' (0x coney, 0x bogus).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-209",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "Oct. 11, 1836 Missiskoui Standard p. 3 attesting unclipped 'coniackers' in Lower Canada.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "2ca9ca2a3d090c8372bdd35fb371e87d68e416e738ad490ca127ea6c44ce83b9",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial claim and six-point forensic proof.",
+          "content_fingerprint": "2ca9ca2a3d090c8372bdd35fb371e87d68e416e738ad490ca127ea6c44ce83b9"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-002",
+      "slug": "clm-3300-002",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "Bogus / bogus",
+      "case_section": "Pre-Painesville Onomastic Precursor and the 1827–1833 Coining Apparatus",
+      "short_label": "1825 Frankfort rag-money stage sobriquet 'Bogus' and 1827–1833 coining-press apparatus witnesses",
+      "statement": "Primary scans document a February 19, 1825 Ohio Valley rag-money satirical stage sobriquet 'Bogus' (for KY Attorney General Solomon P. Sharp), followed by May–July 1827 Painesville counterfeiting-raid dispatches, Eber D. Howe's firsthand 1827 press account, and a September 3, 1833 Lower Canada seizure explicitly defining 'One bogus, or machine impressing dies on the coin'.",
+      "rationale": "Preserves strict Trap C separation between the 1825 proper stage name and the 1827–1833 common count noun designating a counterfeiter's cast-iron die press.",
+      "type": "attestation",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 20,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Authentic 1825 B-o-g-u-s ink as an Ohio Valley rag-money stage sobriquet and 1827–1833 common-noun usage for a coining press.",
+        "does_not_establish": "Unqualified common-noun or adjectival currency of bogus in 1825.",
+        "remaining_uncertainty": "Whether the 1825 Kentucky/Indiana dramatist adapted an oral Ohio River slang term or coined an expressive stage name."
+      },
+      "limitations": [
+        "Original July 6 and Nov. 2, 1827 issues of the Painesville Telegraph are represented via contemporary May–July 1827 exchange dispatches (CERT-3300-105, CERT-3300-106) and editor Eber D. Howe's 1878 memoir (CERT-3300-306)."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-104",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Feb. 19, 1825 New Albany Microscope printing character name 'Bogus' in a Frankfort Bank of the Commonwealth rag-money satire.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-105",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "May 19, 1827 Saturday Evening Post reporting the Painesville half-dollar and Spanish-dollar counterfeiting arrests.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-106",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "July 14, 1827 Auburn Gospel Advocate p. 224 quoting Eber D. Howe's Painesville Telegraph raid polemic.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-306",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Eber D. Howe's 1878 Pioneer Printer memoir pp. 34–35 recounting the May 1827 Painesville cast-iron press ('some one called it a Bogus').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-107",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sept. 3, 1833 Fayetteville Observer p. 3 defining 'One bogus, or machine impressing dies on the coin' in Lower Canada.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "bfc5aa40b1148fcebc4ce428e85c5796198c83d1e303f3ae4af6b2abc7f33760",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial apparatus and 1825 precursor claim.",
+          "content_fingerprint": "bfc5aa40b1148fcebc4ce428e85c5796198c83d1e303f3ae4af6b2abc7f33760"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-003",
+      "slug": "clm-3300-003",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "Bogus Money / bogus",
+      "case_section": "From Machine to Spurious Coin and General Sham (1835–1842)",
+      "short_label": "4-year antedating of attributive 'Bogus Money' and spurious-coin sense (Jan. 17, 1835 vs. 1838–1839) plus 1837–1842 sham transfers",
+      "statement": "The January 17, 1835 Working Man's Advocate (reprinting a Detroit Journal report of a Dec. 30, 1834 Brownstown, Michigan raid seizing 'Bogus Money') advances the 1839 OED/GDoS attributive/adjectival baseline by 4 calendar years and Green's Dec. 7, 1838 counterfeit-coin baseline by 3 years, 10 months, and 20 days, initiating a continuous 1837–1842 chain to count-noun 'a BOGUS' (1837) and non-monetary 'a \"bogus\" gentleman' (1841).",
+      "rationale": "Tracks every syntactic step from apparatus noun to coin mass noun, attributive modifier, compound reversal ('bogus machine', 1839), and personal sham modifier.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 30,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print currency of attributive 'Bogus Money' by Jan. 17, 1835, personal count noun 'a BOGUS' by July 1837, and non-monetary attributive sham usage by Nov. 20, 1841.",
+        "does_not_establish": "Exact month between Sept. 1833 and Dec. 1834 when metonymic shift from die press to stamped coin first occurred in speech.",
+        "remaining_uncertainty": "Whether an unlocated 1834 Detroit Journal issue survives in physical library holdings."
+      },
+      "limitations": [
+        "CERT-3300-108 preserves the Detroit Journal report via its Jan. 17, 1835 New York Working Man's Advocate reprint."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-108",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jan. 17, 1835 Working Man's Advocate p. 3 ('designate it as \"Bogus Money.\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-211",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 15, 1837 Plainfield Union p. 1 (ex Hudson Ohio Observer) 'THE BOGUS BOX' and 'Bogus money'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-109",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 7, 1837 Pontiac copyright deposit of Robert McCracken's 'ON BOGUS MONEY' ('now he is a BOGUS').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-110",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 8, 1837 Baltimore Monument p. 319 ('Bogus men', 'dear \"Bogus,\"', 'Bogus money').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-111",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dec. 1, 1837 Gettysburg Star & Republican Banner p. 2 ('is bogus, a term to express spurious coin').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-112",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "May 22, 1838 Star & Republican Banner p. 2 ('Counterfeits and BOGUS in any quantity').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-113",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Aug. 1838 Elders' Journal p. 58 linking Kirtland and Tinker's Creek black-legs to 'bogus or counterfeit coin'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-114",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1839 C. M. Kirkland A New Home 1st ed. ch. XXXII, p. 212 baseline ('half-dollars, principally \"bogus.\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-115",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nov. 26, 1839 Oxford Democrat (Maine) p. 2 ('Red-dog, Wild-cats, Bogus').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-116",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dec. 21, 1839 Columbia Democrat p. 2 ('the \"bogus machine\" was found' at Niles, MI).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-117",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Nov. 20, 1841 American Masonic Register p. 94 non-monetary 'a \"bogus\" gentleman'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-118",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Oct. 15, 1842 American Masonic Register p. 54 ('all bogus ... a bogus Man and a bogus Eagle').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-212",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "June 1842 Eckfeldt & Du Bois U.S. Mint Manual p. 169 ('diffusion of \"bogus money\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-401",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1842 London imprint Life in the West pp. 297–298 glossing 'bogus (base coin)' for British readers.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-214",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Aug. 12, 1846 Cincinnati Casket p. 142 ('Bogus Press' and 'bogus-making', published by J. H. Green).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-402",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Dec. 8, 1849 Sunbury American p. 1 plural count noun ('Coppers, boguses, and Bungtown cents').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-215",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1850 Edward Bonney Banditti of the Prairies (Chicago 1st ed.) p. 78 ('a little bogus gold').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-405",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "July 4, 1857 Punch Vol. 33 p. 7 & 1859 Hotten p. lviii documenting British reception of American bogus.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-216",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "George W. Matsell Vocabulum p. 13 ('BOGUS. Bad coin; false.', 1859 copyright / c. 1877 Worthington stereotype).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-217",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1862 Richard Owen Indiana Geological Survey p. 213 documenting counterfeiters' stronghold 'Bogus Island'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-218",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1872 Capt. George P. Burnham Secret Service Memoirs pp. vi–viii & 52 ('bogus bank-notes', 'bogus money').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3) & Green's Dictionary of Slang",
+        "entry_and_sense": "bogus, n.1 & adj., attributive/adjectival sense ('counterfeit, spurious')",
+        "edition_or_revision": "OED Online modified June 2026; Green's Dictionary of Slang consulted November 2026",
+        "baseline_date": "1839",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/bogus_n1",
+        "checked_date": "2026-11-28",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-3300-108",
+        "attested_date": "1835-01-17",
+        "attested_date_precision": "day",
+        "computed_advance_display": "4 calendar years (17 January 1835 vs. 1839)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "058ed364d365f7b0507032fd13458e496309c7a1e0777c959ed51acadedcc02c",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial 1835–1842 sense-bridge antedating claim.",
+          "content_fingerprint": "058ed364d365f7b0507032fd13458e496309c7a1e0777c959ed51acadedcc02c"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-004",
+      "slug": "clm-3300-004",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogus, v. (bogusing / bogused)",
+      "case_section": "Word-Family Antedatings Across Four Derivatives (1853–1893)",
+      "short_label": "142-year antedating of verbal bogus, v. (Oct. 27, 1853 'bogusing' & July 20, 1873 'bogused' vs. GDoS 1995)",
+      "statement": "Primary Georgia newspaper scans attest participial/gerund 'bogusing' on October 27, 1853 (Savannah Daily Morning News: 'no bogusing in building Railroads') and finite past-tense 'bogused' on July 20, 1873 (Columbus Daily Sun: 'bogused and fled'), advancing Green's Dictionary of Slang's 1995 verbal baseline by 142 calendar years.",
+      "rationale": "High-magnification paleographic inspection rules out broken type or OCR confusion with focusing/hocussing and pairs 1853 intransitive shamming with 1873/1881 finite and transitive verbal inflections.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 40,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "19th-century American verbal conversion of bogus in gerund ('bogusing', 1853), finite preterite ('bogused', 1873), and prefixed ('out-bogussing', 1881) forms.",
+        "does_not_establish": "Continuous high-frequency verbal use between 1882 and 1995.",
+        "remaining_uncertainty": "Whether passive participial 'bogused' ('hoodwinked') appears prior to 1900."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-403",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Oct. 27, 1853 Savannah Daily Morning News Vol. IV, No. 241, p. 1 ('no bogusing in building Railroads' & 'playing bogus').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-408",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 20, 1873 Columbus Daily Sun Vol. XVIII, No. 271, p. 1 ('bogused and fled') & Oct. 1881 Art Amateur ('out-bogussing').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Green's Dictionary of Slang",
+        "entry_and_sense": "bogus, v. ('to sham, cheat, hoodwink')",
+        "edition_or_revision": "Online edition, consulted November 2026",
+        "baseline_date": "1995",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://greensdictofslang.com/entry/ptgteoa",
+        "checked_date": "2026-11-28",
+        "comparison_kind": "earlier_derivative_or_inflected",
+        "advancing_citation_ref": "CERT-3300-403",
+        "attested_date": "1853-10-27",
+        "attested_date_precision": "day",
+        "computed_advance_display": "142 calendar years (27 October 1853 vs. 1995)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "f36944bba705869c63630423942cff0139cf99b2ffc81cba16d9ab111348c588",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial verbal bogus antedating claim.",
+          "content_fingerprint": "f36944bba705869c63630423942cff0139cf99b2ffc81cba16d9ab111348c588"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-005",
+      "slug": "clm-3300-005",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogus (composing-room filler sense)",
+      "case_section": "Word-Family Antedatings Across Four Derivatives (1853–1893)",
+      "short_label": "19-year antedating of composing-room printer's bogus (1855 'Bogus minion' / 'bogus-hook' vs. OED 1874)",
+      "statement": "James Parton's 1855 Life of Horace Greeley (pp. 394–395: 'Bogus minion' and 'bogus-hook') and J. L. Ringwalt's 1871 American Encyclopaedia of Printing (p. 368: 'bogus copy' in 1867 NY Typographical Union No. 6 rules) antedate OED's 1874 composing-room sense by 19 calendar years and demonstrate downstream specialization from 'sham/dummy'.",
+      "rationale": "Establishes both a 19-year OED sense antedating and chronological directionality ruling out composing-room jargon as the origin of 1827 bogus.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 50,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Daily newspaper composing-room usage of bogus for non-live filler copy by Jan. 1855 (copyright 1854).",
+        "does_not_establish": "Any pre-1850 typographic usage preceding counterfeiting bogus.",
+        "remaining_uncertainty": "Exact year between 1841 (founding of NY Tribune) and 1854 when Tribune compositors coined 'bogus-hook'."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-404",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1855 James Parton Life of Horace Greeley pp. 394–395 ('Bogus minion', 'bogus-hook').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-407",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1871 Ringwalt American Encyclopaedia of Printing p. 368 ('bogus copy', 1867 NYTU No. 6 rules) & 1891 Munson p. 24.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "bogus, n.1 & adj., printing/composing-room filler copy sense",
+        "edition_or_revision": "Modified June 2026",
+        "baseline_date": "1874",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/bogus_n1",
+        "checked_date": "2026-11-28",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-3300-404",
+        "attested_date": "1855",
+        "attested_date_precision": "year",
+        "computed_advance_display": "19 calendar years (1855 [copyright 1854] vs. 1874)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "e7ccf5cd17c10a0192c804fab9944433b631016fc241ae093f021dc566551a77",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial composing-room sense antedating claim.",
+          "content_fingerprint": "e7ccf5cd17c10a0192c804fab9944433b631016fc241ae093f021dc566551a77"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-006",
+      "slug": "clm-3300-006",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogusly, adv.",
+      "case_section": "Word-Family Antedatings Across Four Derivatives (1853–1893)",
+      "short_label": "Antedating of bogusly, adv. by 2 years, 6 months, and 21 days (Jan. 2, 1860 vs. July 23, 1862)",
+      "statement": "Hodges' Journal of Finance, and Bank Reporter (New York, January 2, 1860, p. 2, col. 2: 'the bogusly organized Tioga County Bank') advances OED Online's July 23, 1862 New York Herald baseline for bogusly, adv. by 2 years, 6 months, and 21 days.",
+      "rationale": "Issue masthead on leaf n0 ('NEW-YORK, JAN. 2, 1860.') and leaf n1 printed p. 2 column ink verified against bound-volume misdating.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 60,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Print attestation of adverbial bogusly in New York financial journalism on Jan. 2, 1860.",
+        "does_not_establish": "Pre-1860 usage outside banking/corporate-charter polemics.",
+        "remaining_uncertainty": "Whether 1850s wild-cat bank detectors contain still earlier tokens."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-406",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jan. 2, 1860 Hodges' Journal of Finance p. 2, col. 2 ('the bogusly organized Tioga County Bank').",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "bogusly, adv.",
+        "edition_or_revision": "Modified July 2023",
+        "baseline_date": "1862-07-23",
+        "baseline_date_precision": "day",
+        "source_url_or_ref": "https://www.oed.com/dictionary/bogusly_adv",
+        "checked_date": "2026-11-28",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-3300-406",
+        "attested_date": "1860-01-02",
+        "attested_date_precision": "day",
+        "computed_advance_display": "2 years, 6 months, and 21 days (2 January 1860 vs. 23 July 1862)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "cffc0989bff4dabe193e5045155e39157de4aac80ac455b2fb52b9174fb3c700",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial bogusly adverbial antedating claim.",
+          "content_fingerprint": "cffc0989bff4dabe193e5045155e39157de4aac80ac455b2fb52b9174fb3c700"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-007",
+      "slug": "clm-3300-007",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogusness, n. / bogosity, n.",
+      "case_section": "Word-Family Antedatings Across Four Derivatives (1853–1893)",
+      "short_label": "40-year antedating of bogusness, n. (Jan. 25, 1881 & Sept. 4, 1889 vs. OED 1921) and verification of 1893 bogosity",
+      "statement": "Hansard's Parliamentary Debates (January 25, 1881, Vol. 257, col. 1390: 'a specimen of their \"bogus-ness\"') advances OED Online's 1921 H. L. Mencken baseline for bogusness, n. by 40 calendar years, paired with unhyphenated American 'genuineness or bogusness' in The Musical Courier (September 4, 1889, p. 215) and page-corrected verification of OED's February 26, 1893 New-York Times bogosity baseline (p. 18).",
+      "rationale": "Demonstrates transatlantic parliamentary and trade-press currency of abstract bogusness four decades ahead of Mencken while confirming 1893 bogosity and rejecting a 1908->1982 bogus caller catalog misdate.",
+      "type": "antedating",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 70,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Hyphenated British parliamentary 'bogus-ness' on Jan. 25, 1881 and unhyphenated US 'bogusness' on Sept. 4, 1889.",
+        "does_not_establish": "Any pre-1893 attestation of bogosity or pre-1917 attestation of bogus caller.",
+        "remaining_uncertainty": "Whether 1870s state legislative debates preserve unindexed tokens of bogusness."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-409",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Jan. 25, 1881 Hansard 3rd Ser. Vol. 257, col. 1390 ('a specimen of their \"bogus-ness\"').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-410",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Sept. 4, 1889 Musical Courier p. 215 ('genuineness or bogusness') & Sept. 26, 1891 Americus Times-Recorder.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-411",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Feb. 26, 1893 New-York Times p. 18 (corrected from p. 17) verifying OED's bogosity baseline.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-412",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "Exposes 1908->1982 Trap A catalog misdate on Indiana State Medical Assoc. Vol. 75, leaving OED's 1917 bogus caller intact.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": {
+        "authority": "Oxford English Dictionary Online (OED3)",
+        "entry_and_sense": "bogusness, n.",
+        "edition_or_revision": "Modified December 2024",
+        "baseline_date": "1921",
+        "baseline_date_precision": "year",
+        "source_url_or_ref": "https://www.oed.com/dictionary/bogusness_n",
+        "checked_date": "2026-11-28",
+        "comparison_kind": "earlier_same_sense",
+        "advancing_citation_ref": "CERT-3300-409",
+        "attested_date": "1881-01-25",
+        "attested_date_precision": "day",
+        "computed_advance_display": "40 calendar years (25 January 1881 vs. 1921; unhyphenated 4 September 1889 = 32 calendar years)",
+        "inspection_mode": "directly_inspected"
+      },
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "0afe0267cb02bfa9993dec8d28fa59348a2cff584be3a7c379af0c432d160a53",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial bogusness antedating and bogosity/bogus caller calibration.",
+          "content_fingerprint": "0afe0267cb02bfa9993dec8d28fa59348a2cff584be3a7c379af0c432d160a53"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-008",
+      "slug": "clm-3300-008",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "tantrabogus / calibogus",
+      "case_section": "Evaluating *Tantrabogus* vs. *Calibogus* and Rebutting Rival Folk Myths",
+      "short_label": "Comparative evaluation of aphetic New England tantrabogus ('ill-looking contraption') vs. maritime calibogus ('spruce beer and rum')",
+      "statement": "Both New England colloquial tantrabogus (attested orally in a 1759 Massachusetts journal, in 1838 Boston /ˌboʊɡəs/ rhyme, and in Dr. Samuel Willard's pre-1831 Vermont testimony, though never mentioned by Eber D. Howe in 1878) and North Atlantic cant calibogus (attested 1766–1811, with simplex beverage BOGUS first printed in Bartlett 1848) supply viable Northern phonological shapes, with semantics favoring tantrabogus for the 1827 cast-iron press while leaving oral convergence with calibogus open.",
+      "rationale": "Preserves scholarly candor: primary scans confirm pre-1827 oral currency for both donor stems while exposing both the Howe=Willard conflation and the 1811 'Cali BOGUS' OCR-split mirage.",
+      "type": "derivation",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 80,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Pre-1827 Northern currency of both tantrabogus (1759 MS, pre-1831 VT memory, 1838 rhyme) and calibogus (1766–1811), plus exact 1848 print debut of beverage BOGUS.",
+        "does_not_establish": "Direct metalinguistic witness of the clipping event prior to May–July 1827.",
+        "remaining_uncertainty": "Whether 1825–1827 speakers clipped tantrabogus directly for the Painesville press or merged it with oral tavern calibogus/bogus."
+      },
+      "limitations": [
+        "Constantine Hardy's 1759 journal (CERT-3300-301) survives via a 1906 NEHGR antiquarian transcription, and Joseph Banks's 1766 Newfoundland journal (CERT-3300-309) via Lysaght's 1971 edition."
+      ],
+      "resolution_criteria": [
+        "Discovery of a pre-1827 New England or Western Reserve manuscript, tavern ledger, or court deposition explicitly linking bogus either to tantrabogus ('contraption') or to calibogus/bogus ('adulterated liquor')."
+      ],
+      "evidence": [
+        {
+          "ref": "CERT-3300-301",
+          "relationship": "supports",
+          "directness": "indirect",
+          "reason": "1759 Crown Point journal (pub. 1906 NEHGR) attesting Massachusetts soldier's oral 'tantrabogus' for Ticonderoga.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-303",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "May 12, 1832 New-York Mirror p. 355 attesting bogey-sense 'Mrs. Tabitha Tantrabobus' beside 'boogaboes'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-304",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1837 Palmer Devonshire Dialogue pp. 6, 89 attesting West Country labial 'TANTARABOBS or TANTARABOBUS, s. the Diable'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-305",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1838 [c. 1837] Samuel Kettell Yankee Notions p. 105 proving /ˌboʊɡəs/ rhyme on 'Tantrabogus'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-306",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "Full-book regex audit of Eber D. Howe (1878) proving 0 hits for tantrabogus (correcting modern attributions).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-307",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "OED1 (1887/1888) pp. 967–968 preserving Dr. Samuel Willard's pre-1831 Vermont 'tantrabogus' ('ill-looking object') testimony.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-308",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1892 Sarah Hewett Peasant Speech of Devon p. 132 attesting conservative West Country velar 'Tankerabogus = a bogie'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-309",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1766 Joseph Banks Newfoundland journal (DNE Slip #12642) segmentation 'callibogus, egg calli and king calli'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-310",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 4, 1771 Cartwright Labrador diary & 1792 Vol. I p. ix glossary ('CALLIBOGUS. A mixture of spruce-beer and rum').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-311",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1785 Grose Classical Dictionary 1st ed. sig. D4r ('CALIBOGUS, rum and spruce beer, an American beverage').",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-312",
+          "relationship": "contextualizes",
+          "directness": "direct",
+          "reason": "1786 Charles Fletcher Maritime State Considered pp. liv & 170 confirming Royal Navy North Atlantic usage.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-313",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1811 Lexicon Balatronicum leaf n44 physical ink proving single-word 'CALIBOGUS.' (refuting 'Cali BOGUS' OCR split).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-314",
+          "relationship": "qualifies",
+          "directness": "direct",
+          "reason": "1848 Bartlett Dict. Americanisms 1st ed. p. 41 earliest print witness of beverage 'BOGUS. A liquor made of rum and molasses' (21 years after 1827).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-315",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "1872 Schele De Vere Americanisms pp. 343, 444, 589 on New England coastal fishermen's beverage Bogus < calibogus.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "1ef2491813f548b1102ce880f3d486f1fed154515c8f9093c57bb27d7e6f8ddc",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial dual-donor comparative evaluation.",
+          "content_fingerprint": "1ef2491813f548b1102ce880f3d486f1fed154515c8f9093c57bb27d7e6f8ddc"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-009",
+      "slug": "clm-3300-009",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "Borghese / bagasse / Tantrabobus",
+      "case_section": "Evaluating *Tantrabogus* vs. *Calibogus* and Rebutting Rival Folk Myths",
+      "short_label": "Primary-scan falsification of the 1857 'Borghese' counterfeiter hoax, 1867 French bagasse conjecture, 1768 Antrobus pun, and pre-1827 OCR/homograph ghosts",
+      "statement": "Primary scans trace the alleged swindler 'Borghese' to an anonymous June 12, 1857 Boston Daily Courier squib ('the Norman name of Borghese', postdating 1827 by 30 years and absent from all 1790–1856 press records), refute James Russell Lowell's 1867 French bagasse ([ba-ga-s]) conjecture on prosodic, vocalic, and geographic grounds, and eliminate the 1768 Old Bailey John Antrobus -> Tantrabobus surname pun and three pre-1827 OCR/Batak homograph ghosts.",
+      "rationale": "Documents the exact textual genealogy of both 19th-century folk etymologies while shielding future corpus searches against pre-1827 false positives.",
+      "type": "rebuttal",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": true,
+      "sort_order": 90,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Post-hoc 1857 fabrication of the 'Borghese' counterfeiter story, prosodic/geographic impossibility of French bagasse, and physical-ink falsification of pre-1827 OCR/homograph ghosts.",
+        "does_not_establish": "Identity of the anonymous 'R. T.' / Boston Daily Courier humorist of June 1857.",
+        "remaining_uncertainty": "None regarding etymological exclusion."
+      },
+      "limitations": [],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-413",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Aug. 14, 1817 Savannah Republican p. 2 control showing pre-1857 American Borghese hits refer solely to Roman Prince Camillo Borghese.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-414",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 1857 Historical Magazine p. 215 preserving the June 12, 1857 Boston Daily Courier 'Norman name of Borghese' squib.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-415",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1858 New American Cyclopaedia Vol. III p. 433 ('Norman' -> 'Italian') and 1859 Mackay Vol. I p. 161 transatlantic export.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-316",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "March 1859 Bartlett Dict. Americanisms 2nd ed. p. 42 canonizing the Boston Courier Borghese yarn.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-417",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1872 Schele De Vere Americanisms pp. 296–297 inventing 'In the year 1837' (20 years before 1857) & 1890 Farmer & Henley.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-317",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1867 James Russell Lowell Biglow Papers 2nd Ser. p. xli proposing New Orleans sugar-cane refuse bagasse.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-416",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1863 Spiers & Surenne p. 53 ('[ba-ga-s]') & 1752 Boyer proving oxytone stress and cane-trash semantics incompatible with /ˈboʊɡəs/.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-302",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Oct. 19, 1768 Old Bailey t17681019-25 proving 'Tantrabobus' was a rhyming nickname for pickpocket John Antrobus.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-101",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "July 26, 1773 Boston-Gazette p. 1 column-rule bleed misread by OCR as '\"Bogus Meeting'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-102",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1822 James Harley The Press p. 29 small-caps speaker tag 'HOCUS.' misread by OCR as 'BOGUS.'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-103",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Oct. 4, 1825 Pittsburgh Recorder p. 1 Batak spirit plural 'Bogus' (< begu) in Sumatra.",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": null,
+      "content_fingerprint": "6e9d0717483a4ee2b086d9ccdb02cb5125d29f5d033e1eb835e525602d3b4934",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial folk-myth and Trap B/C rebuttal claim.",
+          "content_fingerprint": "6e9d0717483a4ee2b086d9ccdb02cb5125d29f5d033e1eb835e525602d3b4934"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    },
+    {
+      "id": "CLM-3300-010",
+      "slug": "clm-3300-010",
+      "case_slug": "bogus",
+      "headword": "bogus",
+      "target_lexeme": "bogus / coney",
+      "case_section": "Unmasking the \"c. 1798 *Band of Brothers*\" Mirage",
+      "short_label": "Negative-corpus absence of bogus and coney across 1798–1844 Northeastern counterfeiting memoirs, prison glossaries, and bank-note detectors",
+      "statement": "Full-text primary-scan audits of Stephen Burroughs's Memoirs (1798), Henry Tufts's Dover 'Nomenclature of the Flash Language' (1807), William A. Coffey's NY State Prison Inside Out (1823), Bicknell's Counterfeit Detector (Feb. 1836), and Richard H. Phelps's Newgate of Connecticut (1844) yield zero occurrences of bogus or clipped coney.",
+      "rationale": "Bounds the geographic and chronological emergence of bogus: pre-1827 New England, New York, and Philadelphia counterfeiting literature relied exclusively on English flash ('lour', 'queer', 'imported Cogniac') before Western Reserve foundry slang ('bogus', 1827–1835) spread eastward.",
+      "type": "negative_evidence",
+      "assessment": "supported",
+      "review_status": "unreviewed",
+      "is_principal": false,
+      "sort_order": 100,
+      "lifecycle_status": "active",
+      "revision": 1,
+      "supersedes": [],
+      "superseded_by": null,
+      "evidence_boundary": {
+        "establishes": "Complete absence of bogus and coney across five canonical 1798–1844 Northeastern counterfeiting and prison-flash texts.",
+        "does_not_establish": "Absence in unprinted Western frontier speech prior to 1825–1827.",
+        "remaining_uncertainty": "Whether manuscript county-court files in Vermont or Ohio preserve pre-1827 cant tokens."
+      },
+      "limitations": [
+        "Published memoirs and Eastern bank-note detectors reflect Northeastern print registers prior to the 1835–1838 Western currency-slang wave."
+      ],
+      "resolution_criteria": [],
+      "evidence": [
+        {
+          "ref": "CERT-3300-206",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1798 Stephen Burroughs Memoirs (Hanover, NH) full-text negative control (0x bogus, 0x coney).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-207",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1807 Henry Tufts 'Nomenclature of the Flash Language' (1930 Pearson ed. w/ 1807 title facsimile) negative control (0x bogus).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-208",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1823 William A. Coffey Inside Out (NY State Prison) negative control for bogus/coney alongside positive 'imported Cogniac'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-210",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "Feb. 1, 1836 Bicknell's Counterfeit Detector (Philadelphia) negative control (0x bogus).",
+          "witness_note": null
+        },
+        {
+          "ref": "CERT-3300-213",
+          "relationship": "supports",
+          "directness": "direct",
+          "reason": "1844 Richard H. Phelps Newgate of Connecticut 3rd ed. negative control across Granby/Wethersfield counterfeiting accounts (0x bogus).",
+          "witness_note": null
+        }
+      ],
+      "antedating_baseline": null,
+      "negative_evidence_bounds": {
+        "corpus_identity": "Five primary Northeastern counterfeiting, prison-flash, and bank-note detector texts (Burroughs 1798, Tufts 1807, Coffey 1823, Bicknell Feb. 1836, Phelps 1844)",
+        "search_date": "2026-11-28",
+        "search_period": "1798-1844",
+        "query_terms": [
+          "bogus",
+          "boguses",
+          "boguf",
+          "bogns",
+          "coney",
+          "koniacker",
+          "cogniac"
+        ],
+        "search_method": "Full-text OCR regex sweep paired with visual page-by-page inspection of embedded flash vocabularies and counterfeiting chapters.",
+        "corpus_coverage": "Complete digitized editions (~920 pages total) of the principal 1798–1844 Northeastern American counterfeiting memoirs and detectors",
+        "known_limitations": [
+          "Reflects New England, New York, Connecticut, and Philadelphia imprints rather than post-1827 Western Reserve Ohio newspapers."
+        ],
+        "qualifying_results_count": 0
+      },
+      "content_fingerprint": "9089fec7f85cb8fc541557bd188ba0fa70a87e078ea48024028755d43334b45d",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-11-28",
+          "author": "DRAgNEt Red-Team Judge",
+          "summary": "Initial negative-corpus flash boundary claim.",
+          "content_fingerprint": "9089fec7f85cb8fc541557bd188ba0fa70a87e078ea48024028755d43334b45d"
+        }
+      ],
+      "reviews": [],
+      "external_recognition": []
+    }
+  ]
+}
