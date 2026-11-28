@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "updated_at": "2026-11-27",
+  "updated_at": "2026-11-28",
   "total_targets": 160,
   "description": "English words and phrases of unknown, disputed, or insufficiently antedated origin tracked by DRAgNEt.",
   "targets": [
@@ -41,8 +41,8 @@
       "baseline_year": 1798,
       "baseline_summary": "Counterfeiters' cant glossary in 'Band of Brothers' (1798, cited in Lighter HDAS): 'Coney means Counterfeit paper money ... Bogus means spurious coin' — 29 years earlier than May/July 1827 Painesville (Ohio) Telegraph counterfeiting-press report",
       "open_question": "Tantrabobus / tantrabogus (18th-c. New England/Devonshire dialectal name for a bogey/strange contraption)",
-      "status": "under_investigation",
-      "case_slug": null
+      "status": "published_case",
+      "case_slug": "bogus"
     },
     {
       "target_id": "TGT-005",

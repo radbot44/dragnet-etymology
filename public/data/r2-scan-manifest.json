@@ -4934,5 +4934,273 @@
   "/scans/snollygoster/CERT-3200-409.webp": {
     "bytes": 340948,
     "sha256": "fd280576e9b49cd04697542c7c2c1056d529ccd5bbdc11a325ba2787973e343a"
+  },
+  "/scans/bogus/CERT-3300-301.webp": {
+    "bytes": 266544,
+    "sha256": "bc9cbf4661925acb611624f82b5b7b52b55528b5054bbf8b508a812a80488968"
+  },
+  "/scans/bogus/CERT-3300-302.webp": {
+    "bytes": 376462,
+    "sha256": "a499e8712a897da980472096a7f09f56ce13279672cd029deac315ecf2b756b6"
+  },
+  "/scans/bogus/CERT-3300-310.webp": {
+    "bytes": 282084,
+    "sha256": "301f708944811e360e8526aa2f68b61a3678499e022ee9ecb510f45ae9bca37a"
+  },
+  "/scans/bogus/CERT-3300-101.webp": {
+    "bytes": 492174,
+    "sha256": "8c76dc821491717d2ba84a464f748ad5c1f51f9c62f30b23b0f58234c21b8942"
+  },
+  "/scans/bogus/CERT-3300-311.webp": {
+    "bytes": 262988,
+    "sha256": "da785bb957abe20de8f58638078e58cd02e6a4bd19102819167363ed290b6289"
+  },
+  "/scans/bogus/CERT-3300-312.webp": {
+    "bytes": 220974,
+    "sha256": "d7263e55f0b17f6c57c9ada0c59b9698c5f0ef29f2d13bb7de4cb09069a18a5a"
+  },
+  "/scans/bogus/CERT-3300-206.webp": {
+    "bytes": 1253776,
+    "sha256": "0609c520e892d4ea48a6e4bd9a33ae6c1fbc9559051c976be7c04b73cf8275c2"
+  },
+  "/scans/bogus/CERT-3300-207.webp": {
+    "bytes": 517144,
+    "sha256": "7ec6a884d2ac69f49ac6bbbe48a6cf07e26a9a52b3ee846c2f9bf7947cd4cc1f"
+  },
+  "/scans/bogus/CERT-3300-313.webp": {
+    "bytes": 233108,
+    "sha256": "153553876cc096572a11a46e54ca51211120ee6c08285dac7457fd10cb40282a"
+  },
+  "/scans/bogus/CERT-3300-413.webp": {
+    "bytes": 824782,
+    "sha256": "1a453e8559452399915bbbdeae675d008417e7f797c6f46b8fa977a5e19c0989"
+  },
+  "/scans/bogus/CERT-3300-205.webp": {
+    "bytes": 435688,
+    "sha256": "490f2f3d28401391a8ace2f281efaaafd794a2acd3101916ca55b1c663f9b34f"
+  },
+  "/scans/bogus/CERT-3300-102.webp": {
+    "bytes": 178082,
+    "sha256": "92ef0836582df678bd228acca9f0be5e8e1367741302877bc7e40d06db169272"
+  },
+  "/scans/bogus/CERT-3300-208.webp": {
+    "bytes": 445082,
+    "sha256": "b7c3a16684a6dd0bd9c8fcb8f5cb885574f9231296087942f43285e4446188dc"
+  },
+  "/scans/bogus/CERT-3300-104.webp": {
+    "bytes": 467376,
+    "sha256": "64bfa0ac7d20fae7626b627dce7a8c1dbe0fbf16400e7cd015d2fa69d63351a3"
+  },
+  "/scans/bogus/CERT-3300-103.webp": {
+    "bytes": 513958,
+    "sha256": "77d74116fb6ed35ffadd29e738065c611431f40795371efc10f30fda080752d7"
+  },
+  "/scans/bogus/CERT-3300-105.webp": {
+    "bytes": 580502,
+    "sha256": "698312a5f138660f6cf76987f34c518ae8e176aedc6f89142c28fd76547ebdb1"
+  },
+  "/scans/bogus/CERT-3300-106.webp": {
+    "bytes": 434744,
+    "sha256": "234a053dbfbcc35b51516f253e1d769a1f3ede1939bc6cf275ee2b77103a249b"
+  },
+  "/scans/bogus/CERT-3300-303.webp": {
+    "bytes": 282328,
+    "sha256": "eb3c3a6a0e74e26e4f3366bd914b36b1930d3ef4d3b0494f12baa420f6e3fd45"
+  },
+  "/scans/bogus/CERT-3300-107.webp": {
+    "bytes": 620108,
+    "sha256": "f95229074069e48a76055203b90d7adcc2a1f1ba1f0e7e284f9597953e8c2508"
+  },
+  "/scans/bogus/CERT-3300-108.webp": {
+    "bytes": 409758,
+    "sha256": "86bd2296505bb30857006e7b94932d903b3171f3362659fb75f5bb04b605daa7"
+  },
+  "/scans/bogus/CERT-3300-210.webp": {
+    "bytes": 1101844,
+    "sha256": "0fef925fa077149dc9e4f95d193c94461f0cf6d195177c3624e77fff9048ca58"
+  },
+  "/scans/bogus/CERT-3300-209.webp": {
+    "bytes": 1372070,
+    "sha256": "c4fb105f74cb652be6cb8c3befd4985cd0f60b4c042f37e6a64989219f0b4316"
+  },
+  "/scans/bogus/CERT-3300-304.webp": {
+    "bytes": 293736,
+    "sha256": "632c7fe48690fae4c9fdcfb14c0cead364d498583abcb41fd1d496424efe5852"
+  },
+  "/scans/bogus/CERT-3300-211.webp": {
+    "bytes": 1913242,
+    "sha256": "03a4cc4c1b2dc1353966f8e105441a2341f47c3de3da7d25ba188b738e8aa338"
+  },
+  "/scans/bogus/CERT-3300-109.webp": {
+    "bytes": 269172,
+    "sha256": "44aaafef5378735afee9efe75fef8a7e17b44ed1b52261b2787779c2c4e697d0"
+  },
+  "/scans/bogus/CERT-3300-110.webp": {
+    "bytes": 428100,
+    "sha256": "a5e89579987943ceb42c8f1c1c20d04f7fc4d0ae41ca10a797d855da63e33292"
+  },
+  "/scans/bogus/CERT-3300-111.webp": {
+    "bytes": 413810,
+    "sha256": "fbf82707b3cbc7cc68347ed54d2e9243eb3a81c0bc777e3ae5842cf3d81adb0e"
+  },
+  "/scans/bogus/CERT-3300-305.webp": {
+    "bytes": 172576,
+    "sha256": "8c38c2d1b29c718ce769c9f6a673dac665dc75b1a0a6096c664373bb56b213b7"
+  },
+  "/scans/bogus/CERT-3300-112.webp": {
+    "bytes": 419882,
+    "sha256": "d1076b4e6eaf9fb20061ed3e6b5b3758355ec05cb7cdd71ce2e23f49e8ad415d"
+  },
+  "/scans/bogus/CERT-3300-113.webp": {
+    "bytes": 578618,
+    "sha256": "21499756c65b4acc876696504288c3074d5c8b28e3c2cc0b6ea9e32aba3504cc"
+  },
+  "/scans/bogus/CERT-3300-114.webp": {
+    "bytes": 283184,
+    "sha256": "420b7fc7a394084af957356214a32afc7c207d173d1615a0e61e63970a7959a7"
+  },
+  "/scans/bogus/CERT-3300-115.webp": {
+    "bytes": 615618,
+    "sha256": "ea268f310c2bfa7534fe78e672112242488919c939b581252bde7ff17b26dd98"
+  },
+  "/scans/bogus/CERT-3300-116.webp": {
+    "bytes": 504162,
+    "sha256": "ad88f47ddcfab5692a52c06087dc438d1905e1bd28e7317ee49f786df30ef80f"
+  },
+  "/scans/bogus/CERT-3300-117.webp": {
+    "bytes": 457188,
+    "sha256": "4ec40fd0448ae3d1c5ab19ac2eb1d705587004a1fef5d03e1623ccc1c70de4ba"
+  },
+  "/scans/bogus/CERT-3300-401.webp": {
+    "bytes": 297732,
+    "sha256": "711671457077461bea6bcf25900ab4e5de13e96c0cb778de66f520c8a0045eb6"
+  },
+  "/scans/bogus/CERT-3300-212.webp": {
+    "bytes": 576900,
+    "sha256": "3dd82682854afe7c908244e1b3ea9d2a6886280a70e47f30179f9c181efe6414"
+  },
+  "/scans/bogus/CERT-3300-118.webp": {
+    "bytes": 437690,
+    "sha256": "4d5947ca6d98425f6e1c37a7a46d1ca814e81a065912b5366b38db5a4c7f203f"
+  },
+  "/scans/bogus/CERT-3300-213.webp": {
+    "bytes": 704148,
+    "sha256": "bb255681bd8980c1d3ee52be712b99390c83d0484b7b48a2ec83ccfb8fac3a1d"
+  },
+  "/scans/bogus/CERT-3300-214.webp": {
+    "bytes": 1074706,
+    "sha256": "6b95316f14475246ad6bca630da386a4c0ae29647dd6d7ee860f9302884cc51f"
+  },
+  "/scans/bogus/CERT-3300-202.webp": {
+    "bytes": 1105698,
+    "sha256": "8d8d5f7a21a6fe03175b7c5fd284072cba851730df5db6f0ae71af5197d3ad88"
+  },
+  "/scans/bogus/CERT-3300-203.webp": {
+    "bytes": 1205824,
+    "sha256": "d55bb54fb4de6b9c6106eaf649dfc588a83904833ede4f9862ba89bdd280827e"
+  },
+  "/scans/bogus/CERT-3300-204.webp": {
+    "bytes": 443624,
+    "sha256": "fde26281f4f15e7cf97042280df2a0f359344e9213d5aa4e23468aa0891860c3"
+  },
+  "/scans/bogus/CERT-3300-314.webp": {
+    "bytes": 210062,
+    "sha256": "672e80849d86859d28c45a84345b65af1ffb4117e61ab98aebe24147f3ef93fb"
+  },
+  "/scans/bogus/CERT-3300-402.webp": {
+    "bytes": 577862,
+    "sha256": "310136391adeea67da1f88023a1415b26702a32255f6b6168c8efd26174f53fe"
+  },
+  "/scans/bogus/CERT-3300-215.webp": {
+    "bytes": 833756,
+    "sha256": "dfd22015338c1836d25e2d28f51f374ab22b3ffa6aa44fb43e983900e8db3d07"
+  },
+  "/scans/bogus/CERT-3300-403.webp": {
+    "bytes": 716528,
+    "sha256": "af14d11206ecf3df2848b13297e0a90a32229fdf08eee4b4d1ffb0552ccd1ae2"
+  },
+  "/scans/bogus/CERT-3300-404.webp": {
+    "bytes": 410334,
+    "sha256": "d4622eface4c802be3249035e5a6ff695c1416a42f4e523cbde5abb65c8c69eb"
+  },
+  "/scans/bogus/CERT-3300-414.webp": {
+    "bytes": 341824,
+    "sha256": "42dd456d9ce8e8e6a525b549331180d16b1efa25fe224213f7f452169f9d6bb4"
+  },
+  "/scans/bogus/CERT-3300-405.webp": {
+    "bytes": 496732,
+    "sha256": "3253844f2fdb1c84c30786fadab4fdb19bd99d39cc245abf777e926ad1cf2364"
+  },
+  "/scans/bogus/CERT-3300-415.webp": {
+    "bytes": 410522,
+    "sha256": "dc45e5903111727f91365d4c317ad5d581a8553c26947b4e120624b80a2d0fe5"
+  },
+  "/scans/bogus/CERT-3300-316.webp": {
+    "bytes": 297678,
+    "sha256": "7cafbff69d09bb45bc2ffaa623023a5cee4f512413ae046534915cd8a56fd46e"
+  },
+  "/scans/bogus/CERT-3300-216.webp": {
+    "bytes": 319968,
+    "sha256": "370bdb4fd332d9cd14e1165e3746cb2d234e1a53355ed631daf7d69cce2a417b"
+  },
+  "/scans/bogus/CERT-3300-406.webp": {
+    "bytes": 492174,
+    "sha256": "0495c35614166ee846cdac4ab2f690f326014270388a85da5bacd59febbce087"
+  },
+  "/scans/bogus/CERT-3300-217.webp": {
+    "bytes": 471952,
+    "sha256": "12f66653ab986c930fee1d9c7bb874310e9e5e5e69c7bc628608581a635bcef9"
+  },
+  "/scans/bogus/CERT-3300-416.webp": {
+    "bytes": 537316,
+    "sha256": "7aa7f0c4bf49726d5ae24561705925f1bfeae0b48cda6f27b9db3ed8844307a2"
+  },
+  "/scans/bogus/CERT-3300-317.webp": {
+    "bytes": 206104,
+    "sha256": "1c10a15d55625775ee116be6f41c36bd6abc7366123aa7f6ddae3ac516e49535"
+  },
+  "/scans/bogus/CERT-3300-407.webp": {
+    "bytes": 411716,
+    "sha256": "69719847186fc2268837bb3ac9de57eade95b58e97d1b0ade572310420e6d7e4"
+  },
+  "/scans/bogus/CERT-3300-218.webp": {
+    "bytes": 596024,
+    "sha256": "0b9d49e05aaa9de03505defa65431bbb532434a416a431dfca867e3c73a7f803"
+  },
+  "/scans/bogus/CERT-3300-315.webp": {
+    "bytes": 291300,
+    "sha256": "a978192dee05a92230c50827cac396fe422385e9c133ea944a1713c1edeeac3a"
+  },
+  "/scans/bogus/CERT-3300-417.webp": {
+    "bytes": 441116,
+    "sha256": "11436255bbbdb1ab425a5e39f511023ebb100b589b53831781f60ffb86550931"
+  },
+  "/scans/bogus/CERT-3300-408.webp": {
+    "bytes": 582076,
+    "sha256": "efecf0ac73e3f7a4f62d9b5198d2c335e453bd465010519e9473cac77633b81b"
+  },
+  "/scans/bogus/CERT-3300-306.webp": {
+    "bytes": 349064,
+    "sha256": "8b486675a2cd30389dc38a11440609a0a6b5859fb41b8132483b41358b2d3597"
+  },
+  "/scans/bogus/CERT-3300-409.webp": {
+    "bytes": 417856,
+    "sha256": "09349dd36069dd9455a878ba454ee31b76ddf8ac2c3a671a380a2d1f6afad164"
+  },
+  "/scans/bogus/CERT-3300-307.webp": {
+    "bytes": 399362,
+    "sha256": "50f24d6e6e4fd039eedc4c7dd3a483c4fe233cd4cfaaa7452721bfda69c3c659"
+  },
+  "/scans/bogus/CERT-3300-410.webp": {
+    "bytes": 504354,
+    "sha256": "95a8b2bf68e90365db3625b4361b69df79303f1acb825d27af05500d72c78a63"
+  },
+  "/scans/bogus/CERT-3300-308.webp": {
+    "bytes": 343218,
+    "sha256": "7e021a54615409b7caabdcf39cc6c659017c05f32ce004f8fb4bd87bb96d5485"
+  },
+  "/scans/bogus/CERT-3300-411.webp": {
+    "bytes": 621234,
+    "sha256": "6c9615a6b500898ec0581f4218c79afdda51d400cc47eff0b6643ab825792590"
   }
 }
