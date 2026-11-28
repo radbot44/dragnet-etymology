@@ -6,50 +6,58 @@
   "target_id": "TGT-034",
   "headword": "snollygoster",
   "updated_at": "2026-11-27",
-  "summary_note": "Case 3200 claim ledger (7 principal claims): establishes the co-earliest Oct. 9, 1845 Cincinnati Commercial / Fulton Institute debut (-5 mos., 29 days vs. OED April 7, 1846), Oct. 13, 1846 solid univerbation, 1855-1866 political bridges (-29 yrs., 3 days vs. OED Oct. 28, 1895), 1877-1895 semantic evolution, British/American goster + Scots-Ulster snoll(y)- tall-talk compounding, and primary-scan falsification of deriving 1845 snollygoster from post-1894/1909 snallygaster or 1940 *schnellegeister.",
+  "summary_note": "Case 3200 claim ledger (7 principal claims, Revision 2): documents two Oct. 9, 1845 scan-verified reprints following Ben Zimmer's reported Sept. 10–27, 1845 reprints, Oct. 13, 1846 solid lowercase 'snollygoster' and 1853 freestanding 'snolly-gloster', 1855–1866 political context/insult (crediting Lighter 2024 & Merriam-Webster) and Oct. 27, 1892 H. W. J. Ham office-seeking definition, dialectal 'goster' as a plausible ingredient (partially_supported), and the 64-year chronological gap weakening deriving snollygoster from 1909 Snallygaster without proving the reverse.",
   "claims": [
     {
       "id": "CLM-3200-001",
       "slug": "clm-3200-001",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "Snolly Goster (1845 frontier tall-talk open compound)",
-      "case_section": "2. Cincinnati's Fulton Institute (1845) and Early Univerbation (1846–1853)",
-      "short_label": "Co-earliest Oct. 9, 1845 printings ('Snolly Goster' < Cincinnati Commercial) antedate OED April 7, 1846 by 5 mos., 29 days",
-      "statement": "Woodstock, Virginia's Sentinel of the Valley and southern Maryland's Port Tobacco Times independently printed 'a rale self-propelling double-revolving locomotive Snolly Goster' on October 9, 1845—both crediting the Cincinnati Commercial—and Scientific American's December 18, 1845 printing preserved the performance subtitle '(AS SPOKEN AT THE FULTON INSTITUTE.)', advancing OED Online's April 7, 1846 Frankfort Commonwealth baseline by 5 months and 29 days.",
-      "rationale": "Two geographically separate October 9, 1845 newspaper issues and Scientific American's Fulton Institute header establish late-September/early-October 1845 Cincinnati popular recitation as the source of the ring-tailed-roarer monologue from which OED's abridged 1846 Branch II text descended.",
-      "type": "antedating",
+      "target_lexeme": "Snolly Goster (1845 Fulton Institute tall-talk reprints)",
+      "case_section": "2. The 1845 Fulton Institute Reprints and 1846–1853 Spelling Shifts",
+      "short_label": "Two Oct. 9, 1845 scan-verified reprints ('Snolly Goster' < Cincinnati Commercial) follow Sept. 10–27, 1845 reprints reported by Zimmer (2017)",
+      "statement": "Following three September 1845 reprints of 'That Tarnal Railroad, as spoken at the Fulton Institute' reported by Ben Zimmer (beginning September 10, 1845 in Philadelphia's Dollar Newspaper), two scan-verified reprints—Woodstock's Sentinel of the Valley (reported by Jonathan Lighter) and Maryland's Port Tobacco Times—printed 'a rale self-propelling double-revolving locomotive Snolly Goster' on October 9, 1845, both crediting the Cincinnati Commercial, while Scientific American's December 18, 1845 issue provides an open scan of the Fulton Institute performance subtitle.",
+      "rationale": "Distinguishing verified public scholarship from directly inspected page images anchors the October 9, 1845 witnesses accurately as two scan-verified reprints corroborating exchange circulation from the Cincinnati Commercial rather than independent coinages or an exact premiere date.",
+      "type": "attestation",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 10,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Verified print currency of open compound 'Snolly Goster' on October 9, 1845 across two Chesapeake/Shenandoah newspapers crediting the Cincinnati Commercial, plus Cincinnati Fulton Institute oral-recitation provenance.",
-        "does_not_establish": "The exact September or early October 1845 issue date of the lost upstream Cincinnati Commercial printing or the name of the Fulton Institute speaker.",
-        "remaining_uncertainty": "Whether an unmicrofilmed autumn 1845 issue of the Cincinnati Commercial survives in physical Ohio library holdings."
+        "establishes": "Direct open-scan verification of two October 9, 1845 reprints crediting the Cincinnati Commercial and December 18, 1845 Fulton Institute subtitle ink, alongside Ben Zimmer's verified 2017 public report of earlier September 10–27, 1845 reprints.",
+        "does_not_establish": "Direct visual inspection of the September 1845 newspaper scans, the exact publication date of the upstream Cincinnati Commercial printing, or the date and speaker of the Fulton Institute recitation.",
+        "remaining_uncertainty": "Whether the September 10–27, 1845 reprints carry any additional header or variant text on scan, and whether an unmicrofilmed 1845 issue of the Cincinnati Commercial survives in physical library holdings."
       },
       "limitations": [
-        "Jonathan Lighter previously reported the October 9, 1845 Woodstock Sentinel of the Valley printing on ADS-L (Jan. 6, 2024); Port Tobacco Times (Oct. 9, 1845) is newly added co-earliest corroboration."
+        "October 9, 1845 is not the earliest reported date: Ben Zimmer (ADS-L, Feb. 7, 2017) reported September 10, 23, and 27, 1845 reprints (cited to GenealogyBank and a Hoosier State Chronicles page returning HTTP 403).",
+        "Jonathan Lighter reported the January 1, 1846 Detroit reprint (ADS-L, Mar. 2013) and the October 9, 1845 Woodstock Sentinel of the Valley reprint (ADS-L, Jan. 6, 2024), while Hans Sperber (1953) supplied OED's April 7, 1846 Frankfort Commonwealth citation."
       ],
       "resolution_criteria": [],
       "evidence": [
         {
+          "ref": "CERT-3200-100",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Ben Zimmer's Feb. 7, 2017 ADS-L report naming Sept. 10, 1845 Dollar Newspaper, Sept. 23 Easton Star, and Sept. 27 Indianapolis Locomotive reprints crediting the Cincinnati Commercial.",
+          "witness_note": "Public ADS-L report verified; September 1845 newspaper scans not directly inspected."
+        },
+        {
           "ref": "CERT-3200-102",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Co-earliest October 9, 1845 Sentinel of the Valley (Woodstock, VA, p. 4, cols. 1-2) printing of 'Snolly Goster' crediting 'Cin. Com.'",
-          "witness_note": "Previously noted by Jonathan Lighter on ADS-L (Jan. 6, 2024); masthead and col. 2 ink scan-verified."
+          "reason": "October 9, 1845 Sentinel of the Valley (Woodstock, VA, p. 4, cols. 1–2) scan-verified reprint crediting 'Cin. Com.'",
+          "witness_note": "Previously reported by Jonathan Lighter on ADS-L (Jan. 6, 2024)."
         },
         {
           "ref": "CERT-3200-103",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Newly discovered co-earliest October 9, 1845 Port Tobacco Times (Port Tobacco, MD, p. 4, col. 1) printing crediting 'Cincinnati Commercial.'",
-          "witness_note": null
+          "reason": "October 9, 1845 Port Tobacco Times (Port Tobacco, MD, p. 4, col. 1) scan-verified reprint crediting 'Cincinnati Commercial.'",
+          "witness_note": "Corroborates exchange circulation of the same Cincinnati Commercial sketch; not an independent coinage."
         },
         {
           "ref": "CERT-3200-104",
@@ -62,41 +70,27 @@
           "ref": "CERT-3200-105",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "December 18, 1845 Scientific American (Vol. 1, No. 14, p. 1, col. 4) printing preserving '(AS SPOKEN AT THE FULTON INSTITUTE.)'.",
+          "reason": "December 18, 1845 Scientific American (Vol. 1, No. 14, p. 1, col. 4) open scan preserving '(AS SPOKEN AT THE FULTON INSTITUTE.)'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-107",
           "relationship": "contextualizes",
           "directness": "contextual",
-          "reason": "January 24, 1846 Monticello Southern Journal (p. 1, col. 5) witnessing the abridged 'rale propelling' Branch II text prior to OED's April 1846 citation.",
+          "reason": "January 24, 1846 Monticello Southern Journal (p. 1, col. 5) witnessing the shortened 'rale propelling' text prior to OED's April 1846 citation.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-108",
           "relationship": "contextualizes",
           "directness": "contextual",
-          "reason": "March 24, 1846 Somerset Herald (p. 4, col. 2) Branch II printing fourteen days prior to OED's April 7, 1846 Frankfort Commonwealth citation.",
+          "reason": "March 24, 1846 Somerset Herald (p. 4, col. 2) shortened reprint prior to OED's April 7, 1846 Frankfort Commonwealth citation.",
           "witness_note": null
         }
       ],
-      "antedating_baseline": {
-        "authority": "Oxford English Dictionary Online",
-        "entry_and_sense": "snollygoster, n.",
-        "edition_or_revision": "1933 Supplement entry, unrevised (last modified December 2024)",
-        "baseline_date": "1846-04-07",
-        "baseline_date_precision": "day",
-        "source_url_or_ref": "https://www.oed.com/dictionary/snollygoster_n",
-        "checked_date": "2026-11-27",
-        "comparison_kind": "earlier_same_sense",
-        "advancing_citation_ref": "CERT-3200-103",
-        "attested_date": "1845-10-09",
-        "attested_date_precision": "day",
-        "computed_advance_display": "5 months and 29 days",
-        "inspection_mode": "directly_inspected"
-      },
+      "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "996bc7d81671cf89638a4a28c358a9544987b00fb385816913f8806d798df9ba",
+      "content_fingerprint": "d53e02d0bbc8dd92dbc28e239a3a1d89ecc159950ed9ef2f91b695855886f4b2",
       "revision_history": [
         {
           "revision": 1,
@@ -104,51 +98,30 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "996bc7d81671cf89638a4a28c358a9544987b00fb385816913f8806d798df9ba"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-001-01",
-          "claim_id": "CLM-3200-001",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "transcription",
-            "baseline"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-102",
-            "CERT-3200-103",
-            "CERT-3200-104",
-            "CERT-3200-105",
-            "CERT-3200-107",
-            "CERT-3200-108"
-          ],
-          "findings": "Upheld CLM-3200-001 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "996bc7d81671cf89638a4a28c358a9544987b00fb385816913f8806d798df9ba",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-102": "9a1ebeb618a01514e8740b7b60a47910148e93b15fd0f36a91221a176e626c93",
-            "CERT-3200-103": "2a7e37f866e1a5629ff5d010cba3e2eea52d159881a1abd2d39d9a075bbdae9f",
-            "CERT-3200-104": "2156987705787afae0615ef544ea114a5c4e92ffed5bbca14122cd5707bade6d",
-            "CERT-3200-105": "b02a9c8d4264b047bcd63292575fb745f9b8acd4b78bdc69a1bc9a26d75f9892",
-            "CERT-3200-107": "2c3f6aef946a53c45e5da4c21ed4b4e4afa1bb07ea530d776c6cd2f3bb83e465",
-            "CERT-3200-108": "175665415d4b9985f6ff3ceb1fd18d2b2c22efffab8ecdf2c51ec8fca7613728"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Reframed Oct. 9, 1845 witnesses from earliest antedating to two scan-verified reprints following Ben Zimmer's Feb. 7, 2017 report of Sept. 10–27, 1845 reprints, credited Zimmer and Lighter separately, and removed the guessed Sept.–Oct. premiere.",
+          "content_fingerprint": "d53e02d0bbc8dd92dbc28e239a3a1d89ecc159950ed9ef2f91b695855886f4b2"
         }
       ],
+      "reviews": [],
       "external_recognition": [
+        {
+          "recognizer": "Ben Zimmer",
+          "publication": "American Dialect Society Mailing List (ADS-L)",
+          "date": "2017-02-07",
+          "url_or_ref": "https://listserv.linguistlist.org/pipermail/ads-l/2017-February/146378.html",
+          "exact_scope": "Reported three September 1845 reprints of 'That Tarnal Railroad, as spoken at the Fulton Institute' credited to the Cincinnati Commercial, beginning September 10, 1845 in Philadelphia's Dollar Newspaper."
+        },
         {
           "recognizer": "Jonathan Lighter",
           "publication": "American Dialect Society Mailing List (ADS-L)",
           "date": "2024-01-06",
           "url_or_ref": "https://listserv.linguistlist.org/pipermail/ads-l/2024-January/164683.html",
-          "exact_scope": "Reported the October 9, 1845 Woodstock, Virginia Sentinel of the Valley printing ('Cin. Com.') of 'Snolly Goster'."
+          "exact_scope": "Reported the October 9, 1845 Woodstock, Virginia Sentinel of the Valley reprint ('Cin. Com.') after earlier reporting the January 1, 1846 Detroit Democratic Free Press reprint (ADS-L, March 2013)."
         }
       ]
     },
@@ -157,35 +130,36 @@
       "slug": "clm-3200-002",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "Snolly-Goster / snollygoster / snolly-gloster (1846–1853 univerbation and head-noun shift)",
-      "case_section": "2. Cincinnati's Fulton Institute (1845) and Early Univerbation (1846–1853)",
-      "short_label": "Unbroken lowercase solid 'snollygoster' attested Oct. 13, 1846 and freestanding nominal head Jan. 12, 1853",
-      "statement": "Within twelve months of its open-compound debut, 'Snolly Goster' progressed through hyphenated 'Snolly-Goster' (September 30, 1846) to unbroken solid lowercase 'snollygoster' in Macon's Georgia Telegraph on October 13, 1846 and Michigan's Hillsdale Whig Standard on November 3, 1846, reached San Francisco by April 17, 1847, and shed its preceding noun 'locomotive' to function as an autonomous human nominal head ('a real double revolving snolly-gloster') by January 12, 1853.",
-      "rationale": "Tracking physical line-end vs. mid-line typesetting across regional reprints demonstrates that solid lowercase univerbation and syntactic emancipation occurred in antebellum print nearly half a century before the 1890s.",
+      "target_lexeme": "snollygoster / snolly-gloster (1846 solid spelling and 1853 freestanding variant)",
+      "case_section": "2. The 1845 Fulton Institute Reprints and 1846–1853 Spelling Shifts",
+      "short_label": "Unbroken solid lowercase 'snollygoster' attested Oct. 13, 1846 and freestanding 'snolly-gloster' within the same sketch Jan. 12, 1853",
+      "statement": "Unbroken mid-line solid lowercase 'snollygoster' appears in Macon's Georgia Telegraph on October 13, 1846 and Michigan's Hillsdale Whig Standard on November 3, 1846 (whereas the September 30, 1846 Mississippi Democrat hyphen falls at a line break), the open form reached San Francisco by April 17, 1847, and an 1853 Columbus, Georgia reprint of the same sketch drops 'locomotive' to print freestanding 'snolly-gloster' ('a real double revolving snolly-gloster') on January 12, 1853.",
+      "rationale": "Separating end-of-line compositor division from unbroken mid-line setting anchors solid lowercase 'snollygoster' securely on October 13, 1846 without positing an unproven hyphenated intermediate stage.",
       "type": "attestation",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 20,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Unbroken mid-line solid lowercase 'snollygoster' by October 13, 1846, Pacific Coast diffusion by April 17, 1847, and ellipsis of 'locomotive' leaving the compound as sole predicate noun by January 12, 1853.",
-        "does_not_establish": "Pejorative political specialization prior to Major Beatty's June 1855 Kentucky anti-Know-Nothing order.",
-        "remaining_uncertainty": "Whether solid 'snollygoster' appeared a few weeks earlier in an unindexed summer 1846 exchange source shared by Georgia and Michigan editors."
+        "establishes": "Unbroken mid-line solid lowercase 'snollygoster' by October 13, 1846, Pacific Coast newspaper circulation by April 17, 1847, and omission of 'locomotive' before 'snolly-gloster' within a January 12, 1853 reprint of the same railroad monologue.",
+        "does_not_establish": "An intermediate mid-line hyphenated spelling stage in September 1846 (since CERT-3200-109 divides at a line break) or freestanding nominal use outside reprints of 'That Tarnal Railroad' prior to 1855.",
+        "remaining_uncertainty": "Whether solid lowercase 'snollygoster' appeared earlier in an unindexed 1846 exchange paper shared by the Georgia and Michigan editors."
       },
       "limitations": [
-        "CERT-3200-109 ('Snolly-Goster', Sept. 30, 1846) occurs across a column line break with retained capital 'G', whereas CERT-3200-110 and CERT-3200-111 print solid lowercase 'snollygoster' unbroken within a single line."
+        "The hyphen in CERT-3200-109 ('Snolly- | Goster', Sept. 30, 1846) occurs at a column line break and therefore does not establish an intermediate spelling stage.",
+        "CERT-3200-113 ('snolly-gloster', Jan. 12, 1853) occurs within a reprint of the same railroad sketch rather than in newly composed prose."
       ],
       "resolution_criteria": [],
       "evidence": [
         {
           "ref": "CERT-3200-109",
-          "relationship": "supports",
-          "directness": "direct",
-          "reason": "September 30, 1846 Mississippi Democrat (p. 2, col. 2) line-break hyphenated 'Snolly-Goster'.",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "September 30, 1846 Mississippi Democrat (p. 2, col. 2) dividing 'Snolly- | Goster' at a line break rather than mid-line.",
           "witness_note": null
         },
         {
@@ -199,27 +173,27 @@
           "ref": "CERT-3200-111",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "November 3, 1846 Hillsdale Whig Standard (p. 4, col. 1) northern confirmation of solid lowercase 'snollygoster'.",
+          "reason": "November 3, 1846 Hillsdale Whig Standard (p. 4, col. 1) northern confirmation of unbroken solid lowercase 'snollygoster'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-112",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "April 17, 1847 San Francisco California Star (Vol. 1, No. 15, p. 4) pre-Gold-Rush Pacific Coast printing.",
+          "reason": "April 17, 1847 San Francisco California Star (Vol. 1, No. 15, p. 4) Pacific Coast reprint.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-113",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "January 12, 1853 Columbus Tri-Weekly Times and Sentinel (p. 2, cols. 1-2) dropping 'locomotive' ('a real double revolving snolly-gloster').",
+          "reason": "January 12, 1853 Columbus Tri-Weekly Times and Sentinel (p. 2, cols. 1–2) dropping 'locomotive' ('a real double revolving snolly-gloster') within the same sketch.",
           "witness_note": null
         }
       ],
       "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "136dad81fd820f59872ad5de75671ae50ace926b79ef814681b74089f7902d31",
+      "content_fingerprint": "95b7be71fc90afec122d6cd381b1621e149c50a1b44617b1f7a2387c987ad4ab",
       "revision_history": [
         {
           "revision": 1,
@@ -227,41 +201,16 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "136dad81fd820f59872ad5de75671ae50ace926b79ef814681b74089f7902d31"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-002-01",
-          "claim_id": "CLM-3200-002",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "transcription"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-109",
-            "CERT-3200-110",
-            "CERT-3200-111",
-            "CERT-3200-112",
-            "CERT-3200-113"
-          ],
-          "findings": "Upheld CLM-3200-002 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "136dad81fd820f59872ad5de75671ae50ace926b79ef814681b74089f7902d31",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-109": "fb1cd47c878766b5361a8f2e9b774bc2cd48dc8547605dc139bc318d5e462723",
-            "CERT-3200-110": "6217d7932c5c1ca28d58d6b770c90cebd1bd0438196b36f2ac5241c58268a215",
-            "CERT-3200-111": "b8228f559f7b4251c4ba2be99579c5089983073d863aeed59bb6e9a2b8f99158",
-            "CERT-3200-112": "911883500c3b5d4abd3d5cc406bfd9a592830afa0d9499d4123f2c0ea42c7276",
-            "CERT-3200-113": "47c3ec2da06c6ea70883fb70b032218c86cb2c6eaee20fbf54deb4a5f550adb7"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Removed claim that Sept. 30, 1846 line-break 'Snolly- | Goster' establishes an intermediate hyphenated spelling stage and noted Jan. 12, 1853 'snolly-gloster' occurs within the same sketch.",
+          "content_fingerprint": "95b7be71fc90afec122d6cd381b1621e149c50a1b44617b1f7a2387c987ad4ab"
         }
       ],
+      "reviews": [],
       "external_recognition": []
     },
     {
@@ -269,27 +218,28 @@
       "slug": "clm-3200-003",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "Snollygosters / Snolly-goster (1855–1866 political faction and candidate epithet)",
-      "case_section": "3. Bridging the Half-Century Chasm: From Kentucky Anti-Know-Nothings (1855) to H. W. J. Ham (1892–1895)",
-      "short_label": "1855 KY 'Immortal Snollygosters' and Oct. 25, 1866 candidate slur ('the Snolly-goster') antedate OED 1895 political sense by 29 yrs., 3 days",
-      "statement": "Partisan political application of snollygoster emerged in June 1855 with Major Beatty's Bath County, Kentucky anti-Know-Nothing burlesque order 'The Immortal Snollygosters', entered Civil War political caricature (1861 'Snolligoster' for Gen. Zollicoffer; 1863 Emmett's Black Brigade; 1864 J. B. Murphy's Snolly-goster Ebenezer mocking 'hungry politicians'), and appeared as a singular personal candidate slur ('R. Cole Foster, the Snolly-goster,' nominee for Kansas State Senate) on October 25, 1866—advancing OED Online's October 28, 1895 political-shyster citation by 29 years and 3 days.",
-      "rationale": "Primary newspaper and sheet-music scans supply the missing antebellum and Reconstruction links connecting 1840s Ohio-Kentucky tall talk directly to Gilded Age electoral invective.",
-      "type": "antedating",
+      "target_lexeme": "Immortal Snollygosters / Snolly-goster (1855 lodge context, 1864 satire, and 1866 candidate insult)",
+      "case_section": "3. Political Context, Satire, and the Office-Seeking Sense, 1855–1953",
+      "short_label": "1855 KY lodge parody, 1864 wartime satire, and prior-art Oct. 25, 1866 candidate insult document political context before explicit office-seeker definitions",
+      "statement": "Between 1855 and 1866, snollygoster appeared in partisan political contexts—Major Beatty's June 1855 Bath County, Kentucky anti-Know-Nothing lodge parody 'The Immortal Snollygosters', Civil War caricature and song including J. B. Murphy's 1864 Snolly-goster Ebenezer (satirizing 'hungry politicians'), and the October 25, 1866 White Cloud Kansas Chief squib calling State Senate nominee 'R. Cole Foster, the Snolly-goster' and questioning who would 'take care of his morals'—establishing political insult currency without yet defining the word specifically as an office-seeker.",
+      "rationale": "Keeping lodge parody, topical song satire, and personal insult distinct from explicit lexical definition preserves the genuine 1855–1866 political bridge while crediting Jonathan Lighter and Merriam-Webster for the 1866 Foster quotation.",
+      "type": "attestation",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 30,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Partisan anti-Know-Nothing club satire in Kentucky by June 28, 1855, explicit 'hungry politicians' sheet-music satire in 1864, and singular personal candidate invective ('the Snolly-goster') on October 25, 1866.",
-        "does_not_establish": "Col. H. W. J. Ham's specific mock-dictionary gloss ('unquenchable thirst for office' / 'talknophical assumnacy'), which crystallized in 1892–1895.",
-        "remaining_uncertainty": "Exact June 1855 issue date of the upstream Lexington Kentucky Statesman notice cited by the Canton Weekly Register."
+        "establishes": "Scan-verified 1855 anti-Know-Nothing lodge parody ('The Immortal Snollygosters'), 1861–1864 wartime satirical uses, and the previously reported October 25, 1866 personal insult against Kansas State Senate nominee R. Cole Foster (including the accompanying morals barb).",
+        "does_not_establish": "An explicit lexical definition of 'snollygoster' as 'an unprincipled office-seeker'—which is more clearly documented in October 1892 (CLM-3200-004)—or novel discovery credit for CERT-3200-206.",
+        "remaining_uncertainty": "Exact June 1855 issue date of the upstream Lexington Kentucky Statesman item cited by the Canton Weekly Register."
       },
       "limitations": [
-        "Merriam-Webster's Wordplay essay noted in prose without quoting a citation that by the 1850s the word referred derogatorily to politicians in the South; CERT-3200-201, CERT-3200-205, and CERT-3200-206 supply the dated primary scans."
+        "CERT-3200-206 (Oct. 25, 1866 White Cloud Kansas Chief) was previously quoted by both Jonathan Lighter (ADS-L, Jan. 6, 2024) and Merriam-Webster ('Snollygoster vs. Snallygaster').",
+        "Neither the 1855 lodge name (CERT-3200-201, CERT-3200-202) nor the 1864 song (CERT-3200-205) defines 'snollygoster', and the 1866 Foster item insults a candidate's morals without stating the full office-seeking definition."
       ],
       "resolution_criteria": [],
       "evidence": [
@@ -297,21 +247,21 @@
           "ref": "CERT-3200-201",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "June 28, 1855 Athens Southern Banner (p. 3, col. 4) reporting Bath County, KY anti-Know-Nothing order 'The Immortal Snollygosters'.",
-          "witness_note": null
+          "reason": "June 28, 1855 Athens Southern Banner (p. 3, col. 4) partisan lodge parody 'The Immortal Snollygosters' in Bath County, KY.",
+          "witness_note": "Provides political context without defining 'snollygoster'."
         },
         {
           "ref": "CERT-3200-202",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "August 2, 1855 Canton Weekly Register (p. 1, col. 4) tracing 'Immortal Snollygosters' to the Lexington Kentucky Statesman.",
+          "reason": "August 2, 1855 Canton Weekly Register (p. 1, col. 4) crediting 'Immortal Snollygosters' to the Lexington Kentucky Statesman.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-203",
-          "relationship": "supports",
-          "directness": "direct",
-          "reason": "November 1, 1861 Pennsylvania Daily Telegraph (p. 2, col. 4) Unionist epithet 'Snolligoster' for Confederate Gen. Zollicoffer.",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "November 1, 1861 Pennsylvania Daily Telegraph (p. 2, col. 4) mocking Confederate Gen. Zollicoffer as 'Snolligoster'.",
           "witness_note": null
         },
         {
@@ -325,34 +275,20 @@
           "ref": "CERT-3200-205",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "1864 J. B. Murphy St. Louis sheet music Snolly-goster Ebenezer (pp. 3, 5) pairing 'Snolly-goster' with 'honeyswoglers' and 'hungry politicians'.",
-          "witness_note": null
+          "reason": "1864 J. B. Murphy St. Louis sheet music Snolly-goster Ebenezer (pp. 3, 5) combining 'Snolly-goster' with wartime satire on 'hungry politicians'.",
+          "witness_note": "Satirical association rather than a lexical definition."
         },
         {
           "ref": "CERT-3200-206",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "October 25, 1866 White Cloud Kansas Chief (p. 2, col. 2) calling State Senate nominee 'R. Cole Foster, the Snolly-goster'.",
-          "witness_note": null
+          "reason": "October 25, 1866 White Cloud Kansas Chief (p. 2, col. 2) calling State Senate nominee 'R. Cole Foster, the Snolly-goster' and mocking his morals.",
+          "witness_note": "Previously quoted by Jonathan Lighter (2024) and Merriam-Webster."
         }
       ],
-      "antedating_baseline": {
-        "authority": "Oxford English Dictionary Online",
-        "entry_and_sense": "snollygoster, n. (political office-seeker / shyster sense)",
-        "edition_or_revision": "1933 Supplement entry, unrevised (last modified December 2024)",
-        "baseline_date": "1895-10-28",
-        "baseline_date_precision": "day",
-        "source_url_or_ref": "https://www.oed.com/dictionary/snollygoster_n",
-        "checked_date": "2026-11-27",
-        "comparison_kind": "earlier_same_sense",
-        "advancing_citation_ref": "CERT-3200-206",
-        "attested_date": "1866-10-25",
-        "attested_date_precision": "day",
-        "computed_advance_display": "29 years and 3 days",
-        "inspection_mode": "directly_inspected"
-      },
+      "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "5b50065cbb3a227d03456d1a5e873e679c652a3c0a1cd14e26d1e2cdcbfccb68",
+      "content_fingerprint": "dd50cfb9e3ba51822a02f981b824b6db64c846fa093d7195d38765ff38ab1faa",
       "revision_history": [
         {
           "revision": 1,
@@ -360,71 +296,59 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "5b50065cbb3a227d03456d1a5e873e679c652a3c0a1cd14e26d1e2cdcbfccb68"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-003-01",
-          "claim_id": "CLM-3200-003",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "transcription",
-            "baseline"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-201",
-            "CERT-3200-202",
-            "CERT-3200-203",
-            "CERT-3200-204",
-            "CERT-3200-205",
-            "CERT-3200-206"
-          ],
-          "findings": "Upheld CLM-3200-003 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "5b50065cbb3a227d03456d1a5e873e679c652a3c0a1cd14e26d1e2cdcbfccb68",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-201": "d0099acb6f05676f7a9ec42819c93cc27b2e0dd573eab34a3552b81a4bcf83d6",
-            "CERT-3200-202": "7ea2d05326f82a517edb10d436dd1dfe8921e0d3eebfcda49c7865421b5b620f",
-            "CERT-3200-203": "11f154e4fa8f9fa2d702141d141b3e4ebc5fc8f3a27b697e64fa0bfb65f310bf",
-            "CERT-3200-204": "ad16ea9c50282fcba6b88672c1daecd607361bf808507a848d56a2c66b95990d",
-            "CERT-3200-205": "bb1866a56bf81b2f0844b85457caed396541b858f64372a6cab9b2d7bb50e505",
-            "CERT-3200-206": "55297c828f0dfc67892c5e593cdafa71b167baae309ac514f92f421e19d5f1da"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Credited Jonathan Lighter (2024) and Merriam-Webster on CERT-3200-206, removed new-discovery/antedating framing, added the morals sentence context, and distinguished 1855 lodge context and 1864 satire from explicit definition.",
+          "content_fingerprint": "dd50cfb9e3ba51822a02f981b824b6db64c846fa093d7195d38765ff38ab1faa"
         }
       ],
-      "external_recognition": []
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Jonathan Lighter",
+          "publication": "American Dialect Society Mailing List (ADS-L)",
+          "date": "2024-01-06",
+          "url_or_ref": "https://listserv.linguistlist.org/pipermail/ads-l/2024-January/164683.html",
+          "exact_scope": "Quoted the October 25, 1866 White Cloud Kansas Chief item ('R. Cole Foster, the Snolly-goster' ... 'properly take care of his morals')."
+        },
+        {
+          "recognizer": "Merriam-Webster Editorial Staff",
+          "publication": "Merriam-Webster Grammar ('Snollygoster vs. Snallygaster: What is the Difference?')",
+          "date": "2024-01-01",
+          "url_or_ref": "https://www.merriam-webster.com/grammar/snollygoster-or-snallygaster-usage",
+          "exact_scope": "Quoted the October 25, 1866 White Cloud Kansas Chief item alongside note of 1850s Southern political usage."
+        }
+      ]
     },
     {
       "id": "CLM-3200-004",
       "slug": "clm-3200-004",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "snolligoster / snollygoster / super-snolly-gonchus (1873–1953 semantic and rhetorical branches)",
-      "case_section": "3. Bridging the Half-Century Chasm: From Kentucky Anti-Know-Nothings (1855) to H. W. J. Ham (1892–1895)",
-      "short_label": "1873–1879 'whopper' transfers, Sept. 1892–1895 Col. H. W. J. Ham Georgia Cracker attribution, 1905 Ozark derivative, and Sept. 2, 1952 Truman revival",
-      "statement": "Between 1873 and 1953, snollygoster branched into an inanimate/zoological 'crusher, whopper' sense (Feb. 26, 1873 Huntingdon Journal; Oct. 4, 1877 Carson City Morning Appeal; Oct. 9, 1879 Forest and Stream) and Ozark intensifier 'super-snolly-gonchus' (1905 Dialect Notes), while Hon. Henry W. J. Ham popularized the anti-Populist political epithet in September–October 1892 speeches and authored the 1895 'monumental, talknophical assumnacy' definition as editor of The Georgia Cracker (refuting his own Jan. 1893 '1848 coinage' yarn), before President Harry S. Truman revived the word at Parkersburg, West Virginia on September 2, 1952.",
-      "rationale": "Dated primary printings calibrate four secondary milestones simultaneously: pushing the 'outsized thing' sense from 1884 to 1877/1879, 'super-snolly-gonchus' from 1913 to 1905, Ham's campaign usage to September 29, 1892 (identifying him as the anonymous 'Georgia editor' of 1895), and Truman's Parkersburg speech to September 2, 1952.",
+      "target_lexeme": "snollygoster / snolligoster / super-snolly-gonchus (1873–1879 whopper uses & Oct. 1892–1952 political definitions)",
+      "case_section": "3. Political Context, Satire, and the Office-Seeking Sense, 1855–1953",
+      "short_label": "Oct. 27, 1892 Gold Leaf quotes H. W. J. Ham's office-seeking definition alongside 1877–1879 whopper uses, 1895 Georgia Cracker credit, and 1952 Truman",
+      "statement": "Clearer pre-1895 evidence for the specific office-seeking sense appears on October 27, 1892 in Henderson, North Carolina's Gold Leaf—quoting Georgia orator H. W. J. Ham's definition of a snollygoster as a 'fellow with an unquenchable thirst for office with neither the power to get it nor capacity to fill it' (followed by November 15, 1895 syndication crediting 'monumental, talknophical assumnacy' to 'Col. Hamm, editor of the Georgia Cracker' and September 2, 1952 Truman whistlestop remarks)—alongside a parallel 1873–1905 'crusher / outsized specimen' branch (1877 Carson City range use, 1879 Florida forty-pound fish, and 1905 Ozark 'super-snolly-gonchus').",
+      "rationale": "Highlighting CERT-3200-211 (Oct. 27, 1892) anchors the narrow office-seeking definition in explicit contemporary glossing rather than extrapolating it backward onto 1855–1866 political insults.",
       "type": "semantic",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 40,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "1873–1879 'whopper' semantic extension, September–October 1892 live Georgia campaign usage by H. W. J. Ham, attribution of the 1895 definition to Ham's Georgia Cracker, 1905 Ozark 'super-snolly-gonchus', and exact September 2, 1952 date of Truman's Parkersburg speech.",
-        "does_not_establish": "Any genuine Southern dialect currency for Truman's jocular November 1953 'man born out of wedlock' gloss, which contemporary dialect checks failed to corroborate.",
-        "remaining_uncertainty": "Exact autumn 1895 issue date of the Gainesville Georgia Cracker from which the October 28, 1895 Columbus Evening Dispatch and November 15, 1895 Iowa State Bystander clipped Ham's definition."
+        "establishes": "Explicit October 27, 1892 North Carolina print witness to H. W. J. Ham's 'unquenchable thirst for office' definition, attribution of the 1895 definition to Ham's Georgia Cracker, 1873–1879 'crusher / whopper' uses, 1905 Ozark 'super-snolly-gonchus', and the September 2, 1952 date of Truman's Parkersburg speech.",
+        "does_not_establish": "The exact upstream autumn 1892 Georgia speech or Gainesville Georgia Cracker issue from which out-of-state papers clipped Ham's definitions, or any dialectal basis for Truman's jocular November 1953 gloss.",
+        "remaining_uncertainty": "Whether an earlier September or October 1892 Georgia newspaper printing of Ham's 'unquenchable thirst for office' definition survives in physical or unindexed Georgia files."
       },
       "limitations": [
+        "A separate check for H. W. J. Ham's upstream 1892 Georgia text behind CERT-3200-211 is advisable before formal OED slip submission.",
         "CERT-3200-215 and CERT-3200-216 are post-1930 public records linked externally without hosted R2 scans per the pre-1931 scan rights policy."
       ],
       "resolution_criteria": [],
@@ -440,7 +364,7 @@
           "ref": "CERT-3200-208",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "October 4, 1877 Carson City Morning Appeal (p. 3, col. 3) outsized-thing sense antedating 1884 by seven years.",
+          "reason": "October 4, 1877 Carson City Morning Appeal (p. 3, col. 3) range/outsized-specimen use.",
           "witness_note": null
         },
         {
@@ -461,42 +385,42 @@
           "ref": "CERT-3200-210",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "October 4, 1892 Savannah Morning News (p. 4, col. 1) election-eve editorial correcting OCR 'suollygoster' to ink 'snollygoster'.",
+          "reason": "October 4, 1892 Savannah Morning News (p. 4, col. 1) election-eve editorial ('Don't be a \"snollygoster\" to-morrow').",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-211",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "October 27, 1892 Henderson Gold Leaf (p. 2, col. 3) printing Ham's 'unquenchable thirst for office' definition four months before Feb. 1893.",
-          "witness_note": null
+          "reason": "October 27, 1892 Henderson Gold Leaf (p. 2, col. 3) quoting Ham's explicit 'unquenchable thirst for office' definition and applying it to Third-Party candidates.",
+          "witness_note": "Clearer pre-1895 evidence in the ledger for the specific office-seeking definition."
         },
         {
           "ref": "CERT-3200-213",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "November 15, 1895 Iowa State Bystander (p. 2, col. 1) crediting 'monumental, talknophical assumnacy' explicitly to 'Col. Hamm, editor of the Georgia Cracker'.",
+          "reason": "November 15, 1895 Iowa State Bystander (p. 2, col. 1) crediting 'monumental, talknophical assumnacy' to 'Col. Hamm, editor of the Georgia Cracker'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-214",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "1905 Dialect Notes Vol. III, Part I (p. 97) attesting northwest Arkansas 'super-snolly-gonchus' eight years before 1913.",
+          "reason": "1905 Dialect Notes Vol. III, Part I (p. 97) attesting northwest Arkansas 'super-snolly-gonchus'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-114",
           "relationship": "contradicts",
           "directness": "direct",
-          "reason": "January 27, 1893 Newnan Herald and Advertiser recording Ham's fabricated '1848 Rabun County' coinage tale (contradicted by 1845 prints and CERT-3200-412).",
+          "reason": "January 27, 1893 Newnan Herald and Advertiser recording Ham's retrospective '1848 Rabun County' coinage tale (contradicted by 1845–1846 newspapers and CERT-3200-412).",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-412",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "June 20, 1896 Salt Lake City Utahnian ([p. 3], col. 2) refuting Ham's authorship claim ('in common use in the backwoods... for a half-century').",
+          "reason": "June 20, 1896 Salt Lake City Utahnian ([p. 3], col. 2) refuting Ham's authorship claim.",
           "witness_note": null
         },
         {
@@ -516,7 +440,7 @@
       ],
       "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "cfc6a312f82c148f304c8f8637a2736fe25eb03b371afa68d51ed7656ad006c9",
+      "content_fingerprint": "48b7635535f2132364edc99dd7e946fc9fe527dbef549328e53dd99754d63b2f",
       "revision_history": [
         {
           "revision": 1,
@@ -524,55 +448,16 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "cfc6a312f82c148f304c8f8637a2736fe25eb03b371afa68d51ed7656ad006c9"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-004-01",
-          "claim_id": "CLM-3200-004",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "linguistic_argument"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-207",
-            "CERT-3200-208",
-            "CERT-3200-401",
-            "CERT-3200-209",
-            "CERT-3200-210",
-            "CERT-3200-211",
-            "CERT-3200-213",
-            "CERT-3200-214",
-            "CERT-3200-114",
-            "CERT-3200-412",
-            "CERT-3200-215",
-            "CERT-3200-216"
-          ],
-          "findings": "Upheld CLM-3200-004 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "cfc6a312f82c148f304c8f8637a2736fe25eb03b371afa68d51ed7656ad006c9",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-114": "e719be734c2b233d18aa9c0744b47cf7b342b3dbe1911d64f276978e98a50c65",
-            "CERT-3200-207": "7306e53598d480ad2211ae6796d4b2e684938e143e74aa29e2be253bba6458f4",
-            "CERT-3200-208": "affa7cee9dd6132d8f2c45845706f81d5cf861580b6d803d0b1316ba8639e898",
-            "CERT-3200-209": "53c63a93f1d4fb46f1382c4ac8a12cbeba2c01e9ed3d4ef131b0d59ba44a2a9c",
-            "CERT-3200-210": "e58ac4f98b75933ec21dd8346ee003d907bede2e3f9ec5f6022197a02e50007b",
-            "CERT-3200-211": "44d91700d0dfba16a2e853a6956858d12cab28b7c0f8e2962623510e8afa754c",
-            "CERT-3200-213": "f97bf921764fd3e92c0f98a592096980e5e834448fd109b9b72246513e7eaeb9",
-            "CERT-3200-214": "ca6d79d86972325ceac70f4d80bb25e9af911359983af5a47b0f6b957d420134",
-            "CERT-3200-215": "093490817a4ae5a667225ef1db89a570782c3116f58fb589da84271a49d45d65",
-            "CERT-3200-216": "176eecf6b7bfc39685c86e6846fd2fc95a1c7315f31838f4a8b9d294216af4ba",
-            "CERT-3200-401": "c334ae1daa582cc3ddacc2a6d9df0c3b5df0d2d8b7222cc64edaa31c538d1d89",
-            "CERT-3200-412": "31a4cc45e64672c1d5400800cbcb7188e6100f4a64bc169a7d728520366f65bb"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Foregrounded CERT-3200-211 (Oct. 27, 1892 Gold Leaf) as the clearer pre-1895 evidence for the specific office-seeking definition and noted the upstream Georgia source check.",
+          "content_fingerprint": "48b7635535f2132364edc99dd7e946fc9fe527dbef549328e53dd99754d63b2f"
         }
       ],
+      "reviews": [],
       "external_recognition": []
     },
     {
@@ -580,42 +465,45 @@
       "slug": "clm-3200-005",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "Snolly Goster < snoll(y)- + dialectal goster / gauster",
-      "case_section": "4. Dialectal Donor Morphology (goster + snoll-) vs. the Snallygaster Inversion",
-      "short_label": "Coined in Ohio Valley tall talk from transplanted British/Hiberno-English 'goster' ('boisterous bragging') + pejorative 'snoll(y)-'",
-      "statement": "Snolly Goster (1845) is best explained as an American Ohio Valley tall-talk compound built on transplanted northern British and Hiberno-English dialectal goster / gauster ('boisterous bragging; to boast, bully, domineer', < Middle English galstren, attested 1674–1829 in England, November 16, 1841 in Georgetown, Ohio thirty-five miles upriver from Cincinnati, and 1894 in U.S. Dialect Notes) combined with Scots/Ulster snool ~ snoll ('cringing sneak; to browbeat') or expressive American sn- pejorative prefixation on the Jacksonian quadrisyllabic tall-talk model (absquatulate, catawamptiously, hornswoggle, sockdolager).",
-      "rationale": "Primary Ohio Valley newspaper proof of standalone 'goster' in congressional-bluster dialogue four years before 'Snolly Goster' anchors the second element geographically, phonologically, and semantically, whereas the first element fits both Scots/Ulster snool ~ snoll and productive Jacksonian comic compounding.",
+      "target_lexeme": "Snolly Goster ?< pejorative sn- / snoll(y)- + dialectal goster / gauster",
+      "case_section": "4. Dialectal Ingredients and the Chronological Gap Before Snallygaster",
+      "short_label": "Dialectal 'goster' ('boisterous bragging') is a plausible ingredient in 1845 tall-talk compounding, not an established derivation",
+      "statement": "Northern British, Hiberno-English, and regional American dialectal goster / gauster ('boisterous bragging; to boast, bully, domineer', attested 1674–1829 in England, reprinted from the New Orleans Picayune in stylized stage-Irish dialogue in Georgetown, Ohio on November 16, 1841, and recorded in New Jersey in 1894 Dialect Notes) is a plausible second-element ingredient in 1845 'Snolly Goster' alongside expressive pejorative sn- or Scots/Ulster snool ~ snoll within Jacksonian four-syllable comic compounding, though no primary source directly links the elements.",
+      "rationale": "Dialectal goster matches the form and 'boisterous bragging' semantics of the 1845 ring-tailed-roarer boast, but because the 1841 Ohio token is a stylized New Orleans reprint and the first element snolly- lacks a direct witness, the derivation remains plausible rather than established.",
       "type": "derivation",
-      "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "assessment": "partially_supported",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 50,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Direct lexical, geographic, semantic, and consonant-skeleton alignment for second element -goster (< dialectal goster / gauster) in the 1841–1845 Cincinnati hinterland alongside a viable Scots-Ulster/expressive snoll(y)- first constituent.",
-        "does_not_establish": "An explicit metalinguistic gloss by the anonymous 1845 Fulton Institute speaker explaining why 'Snolly' was paired with 'Goster'.",
-        "remaining_uncertainty": "Whether initial 'Snolly-' directly adapted Scots/Ulster snool ~ snoll or emerged as playful American sn- phonaesthemic prefixation."
+        "establishes": "Formal and semantic viability of British and regional American dialectal goster ('boisterous bragging; to boast, bully, domineer') as a plausible ingredient in a Jacksonian tall-talk compound.",
+        "does_not_establish": "Vernacular use of 'goster' by the 1845 Cincinnati performer (since CERT-3200-101 is a stylized New Orleans Picayune reprint) or a proven etymological link explaining how 'Snolly-' and 'Goster' were combined.",
+        "remaining_uncertainty": "Whether the anonymous Fulton Institute author drew consciously on dialectal goster (and Scots/Ulster snool ~ snoll) or coined 'Snolly Goster' primarily through playful tall-talk sound symbolism."
       },
       "limitations": [
-        "No pre-1845 British dialect dictionary records the full compound *snollygoster, confirming the compound was assembled in North America."
+        "CERT-3200-101 (Nov. 16, 1841 Georgetown, Ohio Democratic Standard) reprints stylized stage-Irish dialogue from the New Orleans Picayune and does not prove local Cincinnati vernacular use.",
+        "No pre-1845 British or American text records the compound *snollygoster or explicitly glosses its formation."
       ],
-      "resolution_criteria": [],
+      "resolution_criteria": [
+        "Discovery of the upstream 1845 Cincinnati Commercial text, a Fulton Institute manuscript/program, or contemporary 1840s commentary explicitly connecting 'Snolly Goster' to dialectal 'goster'."
+      ],
       "evidence": [
         {
           "ref": "CERT-3200-101",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "November 16, 1841 Georgetown, Ohio Democratic Standard (p. 1, col. 5) attesting 'What do you mane by all this goster?' thirty-five miles upriver from Cincinnati.",
-          "witness_note": null
+          "directness": "indirect",
+          "reason": "November 16, 1841 Georgetown, Ohio Democratic Standard (p. 1, col. 5) reprinting 'What do you mane by all this goster?' from the New Orleans Picayune in stylized dialogue.",
+          "witness_note": "Demonstrates newspaper circulation, not Cincinnati vernacular speech."
         },
         {
           "ref": "CERT-3200-301",
           "relationship": "supports",
           "directness": "indirect",
-          "reason": "John Ray (1674, p. 67) earliest English dialect glossary attestation of 'To Goyſter: to be frolick and ramp, to laugh aloud'.",
+          "reason": "John Ray (1674, p. 67) English dialect glossary entry 'To Goyſter: to be frolick and ramp, to laugh aloud'.",
           "witness_note": null
         },
         {
@@ -628,15 +516,15 @@
         {
           "ref": "CERT-3200-303",
           "relationship": "supports",
-          "directness": "direct",
+          "directness": "indirect",
           "reason": "William Carr (1828, Craven Vol. I, p. 177) 'GAUSTERING, Imperious, boasting'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-304",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "Joseph Hunter (1829, Hallamshire Glossary, p. 45) exact o-vocalism 'GOSTER, to boast, to bully, to hector'.",
+          "directness": "indirect",
+          "reason": "Joseph Hunter (1829, Hallamshire Glossary, p. 45) o-spelled 'GOSTER, to boast, to bully, to hector'.",
           "witness_note": null
         },
         {
@@ -649,29 +537,29 @@
         {
           "ref": "CERT-3200-307",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "Francis Bazley Lee in Dialect Notes Vol. I, Part VII (1894, p. 331) recording living American 'goster: to domineer. gosterer: one who boasts or brags'.",
+          "directness": "indirect",
+          "reason": "Francis Bazley Lee in Dialect Notes Vol. I, Part VII (1894, p. 331) recording New Jersey 'goster: to domineer. gosterer: one who boasts or brags'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-308",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "Joseph Wright, English Dialect Dictionary Vol. II (1900, pp. 579-580) synthesizing British and American 'GAUSTER / goster'.",
+          "directness": "indirect",
+          "reason": "Joseph Wright, English Dialect Dictionary Vol. II (1900, pp. 579–580) synthesizing British and American 'GAUSTER / goster'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-309",
-          "relationship": "supports",
-          "directness": "indirect",
-          "reason": "John Jamieson, Scottish Dictionary Vol. II (1808, sig. 4X2r) documenting 'To SNOOL / snool' ('to subjugate; a cringing sneak').",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "John Jamieson, Scottish Dictionary Vol. II (1808, sig. 4X2r) documenting 'To SNOOL / snool'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-310",
-          "relationship": "supports",
-          "directness": "indirect",
-          "reason": "Joseph Wright, EDD Vol. V (1905, pp. 590, 592) attesting short-vowel 'SNÖLL, SNOLL' alongside 'SNOOL' in Scots, Ulster, and Northern English.",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "Joseph Wright, EDD Vol. V (1905, pp. 590, 592) attesting short-vowel 'SNÖLL, SNOLL' alongside 'SNOOL' with zero British *snollygoster.",
           "witness_note": null
         },
         {
@@ -692,13 +580,13 @@
           "ref": "CLM-3200-001",
           "relationship": "depends_on",
           "directness": "direct",
-          "reason": "Anchors the October 1845 Cincinnati Fulton Institute origin point in the same Ohio River valley where 'goster' is attested in 1841.",
+          "reason": "Establishes the 1845 Fulton Institute / Cincinnati Commercial tall-talk context in which 'Snolly Goster' first circulated.",
           "witness_note": null
         }
       ],
       "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "4136f28b87ecc2b6db8629adfcbf67a7f12613bcd75f5f452e9c3854e13bcd81",
+      "content_fingerprint": "047670a4742bef066a3d6347fd2194e745f7cc31d18c1bf0a3bf86e593169d78",
       "revision_history": [
         {
           "revision": 1,
@@ -706,114 +594,82 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "4136f28b87ecc2b6db8629adfcbf67a7f12613bcd75f5f452e9c3854e13bcd81"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-005-01",
-          "claim_id": "CLM-3200-005",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "linguistic_argument"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-101",
-            "CERT-3200-301",
-            "CERT-3200-302",
-            "CERT-3200-303",
-            "CERT-3200-304",
-            "CERT-3200-306",
-            "CERT-3200-307",
-            "CERT-3200-308",
-            "CERT-3200-309",
-            "CERT-3200-310",
-            "CERT-3200-311",
-            "CERT-3200-313",
-            "CLM-3200-001"
-          ],
-          "findings": "Upheld CLM-3200-005 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "4136f28b87ecc2b6db8629adfcbf67a7f12613bcd75f5f452e9c3854e13bcd81",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-101": "29dbaec306f12e98bc73734cda7bf6086ed7ae4be044385f433dcb742215313b",
-            "CERT-3200-301": "2bc0685c00fd46cb2c4c6c216724f6b4e62bab3cc67baae13bb4b44f4e4d297d",
-            "CERT-3200-302": "77e1ac9b4c3b1eff4b861881885af867427f29a5fabf512155a69fc82f3dc572",
-            "CERT-3200-303": "0fa4817e27c00913178af5308aaf708d06bf07e562708a47625b194b3789e0f4",
-            "CERT-3200-304": "efe15a480d83ac29ced5308fd24954c0ed9598061d88f19449a707d8b351f204",
-            "CERT-3200-306": "a630b1625e18e8d85b0b78459551283201f160ed09df8d4c2242b50b7b68ef2c",
-            "CERT-3200-307": "db1e0768412a811a6286911e5e8fd69f675e027051ebbf57b1a76ae4d14855cc",
-            "CERT-3200-308": "52c9e2ec108ae2b33f8d7d0129da3cddfc485aa912a0376534e15a86f92d96c1",
-            "CERT-3200-309": "7ffaff223f796a9b8f0b0b660b5a1531157c8d74e9341041ec94a81f4386c577",
-            "CERT-3200-310": "4311b2cc5d28e49b55680ed11012e3247940b21e182d91d937bb562248fa3c72",
-            "CERT-3200-311": "fbc84a93fa1be9071e95433786e05354b608b52ae8b7225b14fe190d47e009f1",
-            "CERT-3200-313": "0c5ec51091c9a6d4ca573ab92d463c0aadd3cbf5be410cff8ff5ba94ad60e36d",
-            "CLM-3200-001": "996bc7d81671cf89638a4a28c358a9544987b00fb385816913f8806d798df9ba"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Recalibrated from supported to partially_supported: framed dialectal 'goster' as a plausible ingredient rather than an established derivation and noted CERT-3200-101 is a stylized New Orleans Picayune reprint.",
+          "content_fingerprint": "047670a4742bef066a3d6347fd2194e745f7cc31d18c1bf0a3bf86e593169d78"
         }
       ],
-      "external_recognition": []
+      "reviews": [],
+      "external_recognition": [
+        {
+          "recognizer": "Douglas Harper & Merriam-Webster Editorial Staff",
+          "publication": "Online Etymology Dictionary ('snollygoster') & Merriam-Webster Grammar ('Snollygoster vs. Snallygaster')",
+          "date": "2017-02-01",
+          "url_or_ref": "https://www.etymonline.com/word/snollygoster",
+          "exact_scope": "Suggested dialectal English goster ('boisterous bragging / blusterer', < ME galstren) as a plausible source element."
+        }
+      ]
     },
     {
       "id": "CLM-3200-006",
       "slug": "clm-3200-006",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "snallygaster / *Schnellegeister / schnieke (falsified donor derivations)",
-      "case_section": "4. Dialectal Donor Morphology (goster + snoll-) vs. the Snallygaster Inversion",
-      "short_label": "Falsifies deriving 1845 'snollygoster' from post-1894/1909 'snallygaster', 1940 '*schnellegeister', or Berlin 'schnieke'",
-      "statement": "Deriving 1845 snollygoster from Maryland monster snallygaster (< alleged Pennsylvania German *Schnellegeister) or Berlin slang schnieke is chronologically and phonologically falsified: monster/bogeyman uses (1879 'snolligoster', 1890 'snolly-goster men') and unrounded -gaster spellings (Nov. 29, 1894 'The Snollygaster in Pollytics'; July 1903 'The Ticklish Snollygaster') radiated downstream from snollygoster prior to the February 1909 Middletown Valley Register hoax, while 'schnellegeister' first entered print in the August 1940 WPA Maryland Guide and violates mandatory Pennsylvania German st > scht palatalization (geescht / geisht).",
-      "rationale": "Primary chronological ordering and dialectal sound laws reverse OED Supplement's tentative etymological arrow: Maryland's 1909 Snallygaster borrowed its name from already-established American snollygoster/Snollygaster, and the 1940 WPA guide invented an ungrammatical German folk etymology to explain the cryptid.",
+      "target_lexeme": "snollygoster vs. 1909 Maryland Snallygaster and Berlin schnieke",
+      "case_section": "4. Dialectal Ingredients and the Chronological Gap Before Snallygaster",
+      "short_label": "64-year gap between 1845 'Snolly Goster' and 1909 'Snallygaster' weakens the monster-origin story without proving the reverse",
+      "statement": "The sixty-four-year chronological gap between 1845 'Snolly Goster' and the February 1909 Middletown Valley Register 'Snallygaster' stories—together with the twentieth-century date of Berlin slang schnieke—weakens deriving snollygoster from Maryland's monster name, without proving the reverse derivation of 1909 Snallygaster from snollygoster: the 1890 Judge poem explicitly identifies its 'snolly-goster men' as human White Caps vigilantes, neither the 1894 lecture spelling 'Snollygaster' nor Walt McDougall's 1903 fictional beast 'The Ticklish Snollygaster' is linked to the 1909 Maryland writers, and the August 1940 WPA Maryland Guide (p. 7) explicitly hedges its German 'schnellegeister' explanation rather than claiming to have invented it.",
+      "rationale": "Calibrating the claim strictly to dated attestations preserves the chronological argument against deriving 1845 snollygoster from a 1909 monster story while avoiding unproven claims about how the uninspected 1909 Middletown Valley Register stories were composed.",
       "type": "rebuttal",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 60,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Chronological priority of snollygoster (1845) and political/fable Snollygaster (1894, 1903) over the 1909 Middletown Snallygaster hoax and the August 1940 print debut of 'schnellegeister', plus phonological exclusion of Pennsylvania German *-gaster/*-goster and Berlin schnieke.",
-        "does_not_establish": "That 20th-century speakers never blended or confused snollygoster and snallygaster after 1909.",
-        "remaining_uncertainty": "Whether an unindexed February–March 1909 Frederick County rural weekly floated an informal 'German spirit' guess prior to the August 1940 WPA Maryland Guide."
+        "establishes": "Sixty-four-year chronological priority of snollygoster (1845) over the 1909 Middletown Valley Register Snallygaster stories, genuine pre-1909 printings of '-gaster' in political and children's-fable contexts (1894, 1903), human White Caps identity in the 1890 'snolly-goster men' verse, hedged framing on p. 7 of the 1940 WPA Maryland Guide, and exclusion of twentieth-century Berlin schnieke.",
+        "does_not_establish": "That the 1909 Maryland writers derived 'Snallygaster' from political 'snollygoster' (proposed by Blank & Puglia 2014 and Jack Daly, Contemporary Legend, 2026, without direct proof), or that the 1940 WPA guide's authors invented the German 'schnelle Geister / schnelle geeschter' explanation.",
+        "remaining_uncertainty": "What exact wording or etymological hints appear in the uninspected February–March 1909 Middletown Valley Register issues on Frederick County microfilm."
       },
       "limitations": [
-        "Original February–March 1909 Middletown Valley Register physical issues are held on local Frederick County microfilm rather than open R2 scans; pre-1909 Snollygaster bridges (1894, 1903) and the 1940 WPA Maryland Guide are directly verified."
+        "Original February–March 1909 Middletown Valley Register issues have not been inspected directly in this case.",
+        "Merriam-Webster cites an earlier January 25, 1890 Buffalo Morning Express printing of the 1890 White Caps verse (CERT-3200-403) and discusses Pennsylvania German 'schnelle geeschter', which already contains palatalized /ʃt/."
       ],
       "resolution_criteria": [],
       "evidence": [
         {
           "ref": "CERT-3200-401",
-          "relationship": "supports",
-          "directness": "direct",
-          "reason": "October 9, 1879 Forest and Stream ([p. 703], col. 3) showing monster-sized animal 'snolligoster' growing out of tall-talk usage.",
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "October 9, 1879 Forest and Stream ([p. 703], col. 3) applying 'snolligoster' to an outsized forty-pound Florida redfish.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-403",
-          "relationship": "supports",
-          "directness": "direct",
-          "reason": "February 15, 1890 Judge (p. 313, col. 2, 'AN INDIANA HYMN.') depicting nocturnal 'snolly-goster men' abducting victims through windows nineteen years before 1909.",
-          "witness_note": null
+          "relationship": "contextualizes",
+          "directness": "contextual",
+          "reason": "February 15, 1890 Judge (p. 313, col. 2, 'AN INDIANA HYMN.') identifying 'the snolly-goster men' in its refrain as human Indiana 'White Caps' vigilantes (earlier Jan. 25, 1890 Buffalo Morning Express printing cited by Merriam-Webster).",
+          "witness_note": "Vigilante verse rather than supernatural abduction lore."
         },
         {
           "ref": "CERT-3200-402",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "November 29, 1894 Bellefonte Centre Democrat (p. 8, col. 3) respelling Col. Ham's political lecture as 'The Snollygaster in Pollytics' fourteen years before 1909.",
+          "directness": "indirect",
+          "reason": "November 29, 1894 Bellefonte Centre Democrat (p. 8, col. 3) printing 'The Snollygaster in Pollytics' fourteen years before 1909, without tying the spelling to the 1909 Maryland writers.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-404",
           "relationship": "supports",
-          "directness": "direct",
-          "reason": "July 1903 Walt McDougall Rambillicus Book (p. 140) fable beast 'The Ticklish Snollygaster' five years and seven months before Feb. 1909.",
+          "directness": "indirect",
+          "reason": "July 1903 Walt McDougall Rambillicus Book (p. 140) printing fictional beast 'The Ticklish Snollygaster', without tying the book to the 1909 Maryland writers.",
           "witness_note": null
         },
         {
@@ -824,37 +680,37 @@
           "witness_note": null
         },
         {
-          "ref": "CERT-3200-406",
-          "relationship": "supports",
-          "directness": "direct",
-          "reason": "Haldeman (1872, p. 12) establishing mandatory Pennsylvania German st > scht palatalization ('geescht', 'hascht'), ruling out *-goster/*-gaster.",
-          "witness_note": null
-        },
-        {
           "ref": "CERT-3200-413",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "August 1940 WPA Maryland: A Guide to the Old Line State (p. 7; cf. p. 348) marking the print debut of ungrammatical 'schnellegeister'.",
-          "witness_note": null
+          "reason": "August 1940 WPA Maryland: A Guide to the Old Line State (p. 7; cf. p. 348) hedging that investigators believe snallygaster 'may well have been a corruption of the German schnellegeister'.",
+          "witness_note": "Explicitly hedged attribution; does not state that the 1940 guide's authors invented the explanation."
         },
         {
           "ref": "CERT-3200-414",
           "relationship": "supports",
           "directness": "indirect",
-          "reason": "Merriam-Webster usage analysis confirming snallygaster appears in print decades later than snollygoster.",
+          "reason": "Merriam-Webster analysis noting snallygaster enters print decades after 1845 snollygoster while discussing Pennsylvania German 'schnelle geeschter'.",
+          "witness_note": null
+        },
+        {
+          "ref": "CLM-3200-001",
+          "relationship": "depends_on",
+          "directness": "direct",
+          "reason": "Establishes the 1845 print horizon of 'Snolly Goster' more than sixty years before the 1909 Maryland monster stories.",
           "witness_note": null
         },
         {
           "ref": "CLM-3200-007",
           "relationship": "depends_on",
           "directness": "direct",
-          "reason": "Incorporates the zero-hit negative-evidence sweep across 1872–1924 Pennsylvania German and 1880–1899 German slang dictionaries.",
+          "reason": "Supplies the bounded lexical checks across 1872–1924 Pennsylvania German and 1880–1899 German slang dictionaries.",
           "witness_note": null
         }
       ],
       "antedating_baseline": null,
       "negative_evidence_bounds": null,
-      "content_fingerprint": "2a307fec069adb1c769aee44c50ecea4d64be2e2f409c6349e0d70e1a6ea59ec",
+      "content_fingerprint": "cb51a35fd46930a6b2bb4b998c4329e964589906267293bf625e226d08dc1f69",
       "revision_history": [
         {
           "revision": 1,
@@ -862,56 +718,30 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "2a307fec069adb1c769aee44c50ecea4d64be2e2f409c6349e0d70e1a6ea59ec"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-006-01",
-          "claim_id": "CLM-3200-006",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "linguistic_argument"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-401",
-            "CERT-3200-403",
-            "CERT-3200-402",
-            "CERT-3200-404",
-            "CERT-3200-405",
-            "CERT-3200-406",
-            "CERT-3200-413",
-            "CERT-3200-414",
-            "CLM-3200-007"
-          ],
-          "findings": "Upheld CLM-3200-006 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "2a307fec069adb1c769aee44c50ecea4d64be2e2f409c6349e0d70e1a6ea59ec",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-401": "c334ae1daa582cc3ddacc2a6d9df0c3b5df0d2d8b7222cc64edaa31c538d1d89",
-            "CERT-3200-402": "24d1e8db1a47a4ec1bfd4c7ffe6375648e77cb6851451c858afd85d31e766248",
-            "CERT-3200-403": "0d7bdde6abe68fc60a2791d76fa05c1851dcd385386531e4ee71106169dd9208",
-            "CERT-3200-404": "4e6e9b8298f1515a1d1794f8d5d0f029dabc7ae2b7cf7585a8dd33d76fe112e3",
-            "CERT-3200-405": "21cb4f1d60012fc38af5d26a9a9e121f718595e3fdbf6a37954267822830f4b3",
-            "CERT-3200-406": "f9667fdaf402aac129c12f7eb9e29011ac730faa5e866c3571eb7bcee81dd427",
-            "CERT-3200-413": "260d66256e4774e342f0922fe6ba6b0fba578426caef7e9488b6773933f27499",
-            "CERT-3200-414": "c2bd8d50c12a4f79f0ae199dc2f228a79f1c6a47a134abb01b7136cdac08d263",
-            "CLM-3200-007": "0a89096bc19fcf60d0a2252948f3bc2571343d54d118182388716b12f504038e"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Rewrote around what dated sources establish: chronology weakens deriving 1845 snollygoster from 1909 snallygaster without proving the reverse; corrected 1890 White Caps framing, bounded 1894/1903 -gaster witnesses, noted the 1940 WPA guide's explicit hedge, and cited Daly (2026) without treating reverse influence as proof.",
+          "content_fingerprint": "cb51a35fd46930a6b2bb4b998c4329e964589906267293bf625e226d08dc1f69"
         }
       ],
+      "reviews": [],
       "external_recognition": [
         {
           "recognizer": "Merriam-Webster Editorial Staff",
-          "publication": "Merriam-Webster Wordplay & Usage Notes ('What's a snollygoster?' / 'Snollygoster vs. Snallygaster')",
+          "publication": "Merriam-Webster Wordplay & Grammar ('What's a snollygoster?' / 'Snollygoster vs. Snallygaster')",
           "date": "2016-03-09",
-          "url_or_ref": "https://www.merriam-webster.com/wordplay/whats-a-snollygoster",
-          "exact_scope": "Noted that snallygaster appears in print much later than 1840s snollygoster and found little evidence for deriving snollygoster from snallygaster."
+          "url_or_ref": "https://www.merriam-webster.com/grammar/snollygoster-or-snallygaster-usage",
+          "exact_scope": "Noted that snallygaster appears in print decades after 1840s snollygoster and found little evidence for deriving snollygoster from snallygaster."
+        },
+        {
+          "recognizer": "Jack Daly (citing Trevor J. Blank & David J. Puglia)",
+          "publication": "Contemporary Legend 4.04 (2026), 'Devil in the Skies, Stars on the Barns: The Snallygaster, Hex Signs, and Barn Stars', pp. 154–169 (at pp. 160–162)",
+          "date": "2026-01-01",
+          "url_or_ref": "https://scholarworks.iu.edu/journals/index.php/cl/article/download/41748/44361",
+          "exact_scope": "Proposed earlier that political snollygoster influenced the name Snallygaster alongside German lore (cited here as a plausible prior hypothesis rather than proof)."
         }
       ]
     },
@@ -920,27 +750,28 @@
       "slug": "clm-3200-007",
       "case_slug": "snollygoster",
       "headword": "snollygoster",
-      "target_lexeme": "*schnellegeischt / *schnellegeister / schnieke (negative lexicon controls)",
-      "case_section": "4. Dialectal Donor Morphology (goster + snoll-) vs. the Snallygaster Inversion",
-      "short_label": "Zero occurrences of '*schnellegeischt' / '*schnellegeister' in 1872–1924 Pa.-German lexicons and zero 'schnieke' in 1880–1899 German lexicons",
-      "statement": "Targeted lexical audits across four foundational 1872–1924 Pennsylvania German grammars and dictionaries (Haldeman 1872, Grumbine 1887, Horne 1896, and Lambert's 16,000-entry 1924 dictionary) yield zero occurrences of *schnellegeischt, *schnellegeister, or *snallygaster, and audits of Meyer's Der richtige Berliner (1880) and Kluge's Etymologisches Wörterbuch (1899) yield zero occurrences of Berlin slang schnieke.",
-      "rationale": "Explicit negative-evidence controls verify that neither Pennsylvania German nor nineteenth-century Berlin urban slang possessed a pre-existing lexicalized donor compound capable of generating 1845 American Snolly Goster.",
+      "target_lexeme": "*schnellegeischt / *schnellegeeschter / *schnellegeister / schnieke (dictionary negative controls)",
+      "case_section": "4. Dialectal Ingredients and the Chronological Gap Before Snallygaster",
+      "short_label": "Zero lexicalized '*schnellegeischt' / '*schnellegeister' entries in four 1872–1924 Pa.-German works and zero 'schnieke' in 1880–1899 German dictionaries",
+      "statement": "Alphabetical and full-text checks across four 1872–1924 Pennsylvania German reference works (Haldeman 1872, Grumbine 1887, Horne 1896, and Lambert's 16,438-entry 1924 dictionary) find zero lexicalized compound entries for *schnellegeischt, *schnellegeeschter, *schnellegeister, or *snallygaster, and checks of Meyer's Der richtige Berliner (1880) and Kluge's Etymologisches Wörterbuch (1899) find zero entries for twentieth-century Berlin slang schnieke.",
+      "rationale": "Bounded dictionary checks confirm that no pre-1845 lexicalized compound is recorded in standard Pennsylvania German or nineteenth-century Berlin lexicons, while keeping lexical absence distinct from claims of phonological impossibility.",
       "type": "negative_evidence",
       "assessment": "supported",
-      "review_status": "independently_agent_reviewed",
+      "review_status": "unreviewed",
       "is_principal": true,
       "sort_order": 70,
       "lifecycle_status": "active",
-      "revision": 1,
+      "revision": 2,
       "supersedes": [],
       "superseded_by": null,
       "evidence_boundary": {
-        "establishes": "Complete absence of *schnellegeischt / *schnellegeister across standard 1872–1924 Pennsylvania German reference lexicons and absence of schnieke in 1880–1899 Berlin/German dictionaries.",
-        "does_not_establish": "Absolute impossibility of an unrecorded ad hoc spoken phrase 'schnelle Geeschter' ('fast ghosts'), though such a phrase would still pronounce /ʃt/ rather than /-st-/.",
-        "remaining_uncertainty": "Unindexed nineteenth-century Pennsylvania German broadsides not incorporated into Lambert (1924)."
+        "establishes": "Absence of a recorded compound entry *schnellegeischt, *schnellegeeschter, *schnellegeister, or *snallygaster across Haldeman (1872), Grumbine (1887), Horne (1896), and Lambert (1924), and absence of schnieke in Meyer (1880) and Kluge (1899).",
+        "does_not_establish": "That an unrecorded compositional phrase such as Pennsylvania German 'schnelle geeschter' ('quick spirits', discussed by Merriam-Webster and already containing palatalized /ʃt/) could never have been spoken or adapted into the 1909 Maryland monster name.",
+        "remaining_uncertainty": "Unindexed nineteenth- or early twentieth-century Pennsylvania German or western Maryland newspaper folklore outside Lambert's 1924 dictionary."
       },
       "limitations": [
-        "Negative corpus bounds cover digitized editions of Haldeman (1872), Grumbine (1887), Horne (1896), Lambert (1924), Meyer (1880), and Kluge (1899)."
+        "Haldeman (1872, p. 12) writes 'perhaps universally' for Pennsylvania German sp/st > schp/scht (citing verbal 'geescht' for gehest), and Merriam-Webster's discussed form 'schnelle geeschter' already reflects palatalized /ʃt/.",
+        "Absence of a dictionary compound in 1872–1924 word-lists does not by itself exclude ad hoc oral phrasing in western Maryland."
       ],
       "resolution_criteria": [],
       "evidence": [
@@ -948,53 +779,54 @@
           "ref": "CERT-3200-406",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Haldeman (1872, p. 12) records 'geescht' without any *schnellegeischt compound.",
+          "reason": "Haldeman (1872, p. 12) stating 'sp, st, are perhaps universally converted into \"schp\" and \"scht\" in PG.' ('geescht' for gehest) with zero *schnellegeischt/*schnellegeeschter compound.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-407",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Horne (1896, p. 157) lists 'găshwind' ('fast, quick') and 'geisht' ('spirit, apparition') with zero *shnelgeisht.",
+          "reason": "Horne (1896, p. 157) listing 'găshwind' ('fast, quick') and 'geisht' ('spirit, apparition') with zero *shnelgeisht compound.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-408",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Grumbine (1887, p. xii) documents 'Spook' as the dialect term for ghost/hobgoblin with zero *snallygaster.",
+          "reason": "Grumbine (1887, p. xii) documenting 'Spook' for ghost/hobgoblin and 'Snitz' (< Schnitz) with zero *snallygaster.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-409",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Lambert (1924, p. 137, col. 2) lists only three compounds under 'schnell' (schnellkeffer, =schreiwer, =wok) and zero *schnellegeischt.",
+          "reason": "Lambert (1924, p. 137, col. 2) listing only three compounds under 'schnell' (schnellkeffer, =schreiwer, =wok) and zero *schnellegeischt/*schnellegeeschter.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-410",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Meyer (1880, 3rd ed., p. 72, col. 1) jumps directly from 'Schniepel' to 'Schnipsel' with zero 'schnieke'.",
+          "reason": "Meyer (1880, 3rd ed., p. 72, col. 1) passing directly from 'Schniepel' to 'Schnipsel' with zero 'schnieke'.",
           "witness_note": null
         },
         {
           "ref": "CERT-3200-411",
           "relationship": "supports",
           "directness": "direct",
-          "reason": "Kluge (1899, 6th ed., p. 350, col. 1) treats 'schniegeln' with zero mention of colloquial 'schnieke'.",
+          "reason": "Kluge (1899, 6th ed., p. 350, col. 1) treating 'schniegeln' with zero mention of colloquial 'schnieke'.",
           "witness_note": null
         }
       ],
       "antedating_baseline": null,
       "negative_evidence_bounds": {
-        "corpus_identity": "Internet Archive digitized Pennsylvania German lexicons (Haldeman 1872, Grumbine 1887, Horne 1896, Lambert 1924) and German slang/etymological dictionaries (Meyer 1880, Kluge 1899)",
+        "corpus_identity": "Internet Archive digitized Pennsylvania German reference works (Haldeman 1872, Grumbine 1887, Horne 1896, Lambert 1924) and German slang/etymological dictionaries (Meyer 1880, Kluge 1899)",
         "search_date": "2026-11-27",
         "search_period": "1872–1924",
         "query_terms": [
           "schnellegeister",
           "schnellegeischt",
+          "schnellegeeschter",
           "schnellgeischt",
           "shnelgeisht",
           "snallygaster",
@@ -1002,13 +834,13 @@
           "schnieke"
         ],
         "search_method": "Full-text OCR search combined with manual alphabetical page inspection of the G- and S-ranges on primary scans",
-        "corpus_coverage": "Complete alphabetical word-lists of Haldeman (1872), Grumbine (1887), Horne (1896), Lambert (1924, ~16,000 entries), Meyer (1880), and Kluge (1899)",
+        "corpus_coverage": "Complete alphabetical word-lists of Haldeman (1872), Grumbine (1887), Horne (1896), Lambert (1924, 16,438 entries), Meyer (1880), and Kluge (1899)",
         "known_limitations": [
-          "Ephemeral unindexed rural Pennsylvania German newspaper columns outside Lambert's 1924 lexical compilation are not exhaustively covered."
+          "Unrecorded oral phrases (such as compositional 'schnelle geeschter') and unindexed local newspapers outside Lambert (1924) are not covered."
         ],
         "qualifying_results_count": 0
       },
-      "content_fingerprint": "0a89096bc19fcf60d0a2252948f3bc2571343d54d118182388716b12f504038e",
+      "content_fingerprint": "3f0189a15c1e847cfdf6840bfb49beaaace629239a9d82db6414750d2421f448",
       "revision_history": [
         {
           "revision": 1,
@@ -1016,43 +848,16 @@
           "author": "DRAgNEt Claim Extraction Pipeline (Agent 3200)",
           "summary": "Initial v1.0 schema-validated claim extraction from Case 3200 monograph and v3.0 citation ledger.",
           "content_fingerprint": "0a89096bc19fcf60d0a2252948f3bc2571343d54d118182388716b12f504038e"
-        }
-      ],
-      "reviews": [
+        },
         {
-          "review_id": "REV-3200-007-01",
-          "claim_id": "CLM-3200-007",
-          "claim_revision": 1,
-          "reviewer_id": "Agent 3200-R (Independent Blind Red-Team Audit Swarm)",
-          "reviewer_kind": "independent_agent",
-          "model_version": "gemini-3-pro",
-          "review_date": "2026-11-27",
-          "review_scopes": [
-            "archival",
-            "structural"
-          ],
-          "inspected_evidence_refs": [
-            "CERT-3200-406",
-            "CERT-3200-407",
-            "CERT-3200-408",
-            "CERT-3200-409",
-            "CERT-3200-410",
-            "CERT-3200-411"
-          ],
-          "findings": "Upheld CLM-3200-007 after blind-first primary scan, masthead/imprint, diplomatic paleography, and chronological boundary verification across Shards RT-1..RT-3.",
-          "objections": [],
-          "material_fingerprint_at_review": "0a89096bc19fcf60d0a2252948f3bc2571343d54d118182388716b12f504038e",
-          "evidence_fingerprints_at_review": {
-            "CERT-3200-406": "f9667fdaf402aac129c12f7eb9e29011ac730faa5e866c3571eb7bcee81dd427",
-            "CERT-3200-407": "ef21357aae818c39cab1a7043d4723fd6cd59b8865346558977eaaf7607444ba",
-            "CERT-3200-408": "0857504e0bb45466b7b2a207dc969e9c445c4687572e074acd1dddf920620cc4",
-            "CERT-3200-409": "1e7baea00ddbad1a88bbbd481ea8b253ffb519ece84d80326e35f936a01b8469",
-            "CERT-3200-410": "236d59836a9c12563a6c8b293ca3869d9d7b300473d267b8b75955b2e86ab519",
-            "CERT-3200-411": "00f004472ae3674d362d830f1c152a0ec1e4053910a9ab5fe053ec1ab24fd8d0"
-          },
-          "recommendation": "uphold"
+          "revision": 2,
+          "date": "2026-11-27",
+          "author": "DRAgNEt Editorial Audit Reconciliation (Case 3200)",
+          "summary": "Bounded negative-evidence claim strictly to dictionary absence of lexicalized compounds, quoted Haldeman's 'perhaps universally' qualifier accurately, and noted Merriam-Webster's palatalized 'schnelle geeschter' discussion.",
+          "content_fingerprint": "3f0189a15c1e847cfdf6840bfb49beaaace629239a9d82db6414750d2421f448"
         }
       ],
+      "reviews": [],
       "external_recognition": []
     }
   ]
